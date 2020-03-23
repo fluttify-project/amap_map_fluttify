@@ -24,7 +24,6 @@ import io.flutter.plugin.platform.PlatformViewFactory;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
-import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getFluttifySequence;
 
 @SuppressWarnings("ALL")
 class MapViewFactory extends PlatformViewFactory {
@@ -85,7 +84,7 @@ class MapViewFactory extends PlatformViewFactory {
             // convert result to jsonable result
             Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = getFluttifySequence();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
         

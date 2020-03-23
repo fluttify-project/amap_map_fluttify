@@ -10,7 +10,6 @@ extern NSMutableDictionary<NSString*, NSObject*>* STACK;
 extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
-extern int getFluttifySequence(void);
 
 @implementation AmapMapFluttifyPlugin (SubHandler7)
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
@@ -139,10 +138,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineCity* ref = [[MAOfflineCity alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -154,10 +152,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -169,10 +166,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiPoint* ref = [[MAMultiPoint alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -184,10 +180,9 @@ extern int getFluttifySequence(void);
             }
         
             MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -199,10 +194,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -214,10 +208,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -229,10 +222,9 @@ extern int getFluttifySequence(void);
             }
         
             MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -244,10 +236,9 @@ extern int getFluttifySequence(void);
             }
         
             MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -259,10 +250,9 @@ extern int getFluttifySequence(void);
             }
         
             MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -274,10 +264,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMapStatus* ref = [[MAMapStatus alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -289,10 +278,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -304,10 +292,9 @@ extern int getFluttifySequence(void);
             }
         
             MACircle* ref = [[MACircle alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -319,10 +306,9 @@ extern int getFluttifySequence(void);
             }
         
             MAArcRenderer* ref = [[MAArcRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -334,10 +320,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -349,10 +334,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPolygon* ref = [[MAPolygon alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -364,10 +348,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -379,10 +362,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPolyline* ref = [[MAPolyline alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -394,10 +376,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -409,10 +390,9 @@ extern int getFluttifySequence(void);
             }
         
             MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -424,10 +404,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -439,10 +418,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -454,10 +432,9 @@ extern int getFluttifySequence(void);
             }
         
             MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -469,10 +446,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineItem* ref = [[MAOfflineItem alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -484,10 +460,9 @@ extern int getFluttifySequence(void);
             }
         
             MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -499,10 +474,9 @@ extern int getFluttifySequence(void);
             }
         
             MATouchPoi* ref = [[MATouchPoi alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -514,10 +488,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -529,10 +502,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -544,10 +516,9 @@ extern int getFluttifySequence(void);
             }
         
             MATraceManager* ref = [[MATraceManager alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -559,10 +530,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -574,10 +544,9 @@ extern int getFluttifySequence(void);
             }
         
             MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -589,10 +558,9 @@ extern int getFluttifySequence(void);
             }
         
             MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -604,10 +572,9 @@ extern int getFluttifySequence(void);
             }
         
             MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -619,10 +586,9 @@ extern int getFluttifySequence(void);
             }
         
             MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -634,10 +600,9 @@ extern int getFluttifySequence(void);
             }
         
             MAShape* ref = [[MAShape alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -649,10 +614,9 @@ extern int getFluttifySequence(void);
             }
         
             MAAnnotationView* ref = [[MAAnnotationView alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -664,10 +628,9 @@ extern int getFluttifySequence(void);
             }
         
             MATileOverlay* ref = [[MATileOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -681,10 +644,9 @@ extern int getFluttifySequence(void);
             MATileOverlayPath data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MATileOverlayPath)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -696,10 +658,9 @@ extern int getFluttifySequence(void);
             }
         
             MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -711,10 +672,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -726,10 +686,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOfflineMap* ref = [[MAOfflineMap alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -741,10 +700,9 @@ extern int getFluttifySequence(void);
             }
         
             MACircleRenderer* ref = [[MACircleRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -756,10 +714,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -773,10 +730,9 @@ extern int getFluttifySequence(void);
             MACoordinateBounds data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateBounds)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -790,10 +746,9 @@ extern int getFluttifySequence(void);
             MACoordinateSpan data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateSpan)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -807,10 +762,9 @@ extern int getFluttifySequence(void);
             MACoordinateRegion data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -824,10 +778,9 @@ extern int getFluttifySequence(void);
             MAMapPoint data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -841,10 +794,9 @@ extern int getFluttifySequence(void);
             MAMapSize data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapSize)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -858,10 +810,9 @@ extern int getFluttifySequence(void);
             MAMapRect data;
         
             NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = dataValue;
+            HEAP[@(dataValue.hash)] = dataValue;
         
-            methodResult(@(seqNumber));
+            methodResult(@(dataValue.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -873,10 +824,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -888,10 +838,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -903,10 +852,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -918,10 +866,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -933,10 +880,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -948,10 +894,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -963,10 +908,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -978,10 +922,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -993,10 +936,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1008,10 +950,9 @@ extern int getFluttifySequence(void);
             }
         
             MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1023,10 +964,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1038,10 +978,9 @@ extern int getFluttifySequence(void);
             }
         
             MAUserLocation* ref = [[MAUserLocation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1053,10 +992,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1068,10 +1006,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1083,10 +1020,9 @@ extern int getFluttifySequence(void);
             }
         
             MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1098,10 +1034,9 @@ extern int getFluttifySequence(void);
             }
         
             MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1113,10 +1048,9 @@ extern int getFluttifySequence(void);
             }
         
             MATracePoint* ref = [[MATracePoint alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1128,10 +1062,9 @@ extern int getFluttifySequence(void);
             }
         
             MATraceLocation* ref = [[MATraceLocation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1143,10 +1076,9 @@ extern int getFluttifySequence(void);
             }
         
             MAArc* ref = [[MAArc alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1158,10 +1090,9 @@ extern int getFluttifySequence(void);
             }
         
             MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1173,10 +1104,9 @@ extern int getFluttifySequence(void);
             }
         
             MAMapView* ref = [[MAMapView alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1188,10 +1118,9 @@ extern int getFluttifySequence(void);
             }
         
             MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1203,10 +1132,9 @@ extern int getFluttifySequence(void);
             }
         
             MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1218,10 +1146,9 @@ extern int getFluttifySequence(void);
             }
         
             MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = ref;
+            HEAP[@(ref.hash)] = ref;
         
-            methodResult(@(seqNumber));
+            methodResult(@(ref.hash));
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1231,10 +1158,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineCity* ref = [[MAOfflineCity alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1247,10 +1173,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1263,10 +1188,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiPoint* ref = [[MAMultiPoint alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1279,10 +1203,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1295,10 +1218,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1311,10 +1233,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1327,10 +1248,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1343,10 +1263,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1359,10 +1278,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1375,10 +1293,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMapStatus* ref = [[MAMapStatus alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1391,10 +1308,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1407,10 +1323,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACircle* ref = [[MACircle alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1423,10 +1338,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAArcRenderer* ref = [[MAArcRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1439,10 +1353,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1455,10 +1368,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPolygon* ref = [[MAPolygon alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1471,10 +1383,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1487,10 +1398,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPolyline* ref = [[MAPolyline alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1503,10 +1413,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1519,10 +1428,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1535,10 +1443,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1551,10 +1458,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1567,10 +1473,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1583,10 +1488,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineItem* ref = [[MAOfflineItem alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1599,10 +1503,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1615,10 +1518,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATouchPoi* ref = [[MATouchPoi alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1631,10 +1533,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1647,10 +1548,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1663,10 +1563,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATraceManager* ref = [[MATraceManager alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1679,10 +1578,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1695,10 +1593,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1711,10 +1608,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1727,10 +1623,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1743,10 +1638,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1759,10 +1653,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAShape* ref = [[MAShape alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1775,10 +1668,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAAnnotationView* ref = [[MAAnnotationView alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1791,10 +1683,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATileOverlay* ref = [[MATileOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1809,10 +1700,9 @@ extern int getFluttifySequence(void);
                 MATileOverlayPath data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MATileOverlayPath)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1825,10 +1715,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1841,10 +1730,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1857,10 +1745,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOfflineMap* ref = [[MAOfflineMap alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1873,10 +1760,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACircleRenderer* ref = [[MACircleRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1889,10 +1775,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -1907,10 +1792,9 @@ extern int getFluttifySequence(void);
                 MACoordinateBounds data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateBounds)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1925,10 +1809,9 @@ extern int getFluttifySequence(void);
                 MACoordinateSpan data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateSpan)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1943,10 +1826,9 @@ extern int getFluttifySequence(void);
                 MACoordinateRegion data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateRegion)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1961,10 +1843,9 @@ extern int getFluttifySequence(void);
                 MAMapPoint data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapPoint)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1979,10 +1860,9 @@ extern int getFluttifySequence(void);
                 MAMapSize data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapSize)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -1997,10 +1877,9 @@ extern int getFluttifySequence(void);
                 MAMapRect data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapRect)];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = dataValue;
+                HEAP[@(dataValue.hash)] = dataValue;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(dataValue.hash)];
             }
         
             methodResult(resultList);
@@ -2013,10 +1892,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2029,10 +1907,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2045,10 +1922,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2061,10 +1937,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2077,10 +1952,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2093,10 +1967,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2109,10 +1982,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2125,10 +1997,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2141,10 +2012,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2157,10 +2027,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2173,10 +2042,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2189,10 +2057,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAUserLocation* ref = [[MAUserLocation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2205,10 +2072,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2221,10 +2087,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2237,10 +2102,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2253,10 +2117,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2269,10 +2132,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATracePoint* ref = [[MATracePoint alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2285,10 +2147,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MATraceLocation* ref = [[MATraceLocation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2301,10 +2162,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAArc* ref = [[MAArc alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2317,10 +2177,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2333,10 +2192,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAMapView* ref = [[MAMapView alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2349,10 +2207,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2365,10 +2222,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2381,10 +2237,9 @@ extern int getFluttifySequence(void);
         
             for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
                 MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
-                int seqNumber = getFluttifySequence();
-                HEAP[@(seqNumber)] = ref;
+                HEAP[@(ref.hash)] = ref;
         
-                [resultList addObject:@(seqNumber)];
+                [resultList addObject:@(ref.hash)];
             }
         
             methodResult(resultList);
@@ -2417,9 +2272,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateBounds)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2444,9 +2298,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2475,9 +2328,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2506,9 +2358,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2533,9 +2384,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2560,9 +2410,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2587,9 +2436,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2614,9 +2462,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2745,9 +2592,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2776,9 +2622,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3055,9 +2900,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3114,9 +2958,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3141,9 +2984,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3172,9 +3014,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },

@@ -25,7 +25,6 @@ import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
-import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getFluttifySequence;
 
 @SuppressWarnings("ALL")
 public class SubHandler26 {
@@ -58,15 +57,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapEngine.InitParam obj = new com.autonavi.ae.gmap.GLMapEngine.InitParam();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -98,15 +96,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -138,15 +135,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.NetworkState obj = new com.autonavi.amap.mapcore.maploader.NetworkState();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -183,15 +179,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest(var1, var2, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -228,15 +223,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.AMapLoader obj = new com.autonavi.amap.mapcore.maploader.AMapLoader(var1, var2, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -268,15 +262,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.MapProjection obj = new com.autonavi.amap.mapcore.MapProjection();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -308,15 +301,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.tools.TextTextureGenerator obj = new com.autonavi.amap.mapcore.tools.TextTextureGenerator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -348,15 +340,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.tools.GLFileUtil obj = new com.autonavi.amap.mapcore.tools.GLFileUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -388,15 +379,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.tools.GlMapUtil obj = new com.autonavi.amap.mapcore.tools.GlMapUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -428,15 +418,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.tools.GLMapStaticValue obj = new com.autonavi.amap.mapcore.tools.GLMapStaticValue();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -468,15 +457,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.tools.GLConvertUtil obj = new com.autonavi.amap.mapcore.tools.GLConvertUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -508,15 +496,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.MsgProcessor obj = new com.autonavi.amap.mapcore.MsgProcessor();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -548,15 +535,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake obj = new com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -588,15 +574,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AbstractNativeInstance obj = new com.autonavi.amap.mapcore.AbstractNativeInstance();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -628,15 +613,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.LinkInfo obj = new com.autonavi.amap.mapcore.LinkInfo();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -668,15 +652,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapNativePolyline obj = new com.autonavi.amap.mapcore.AMapNativePolyline();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -708,15 +691,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -751,15 +733,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -791,15 +772,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager obj = new com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -831,15 +811,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -874,15 +853,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint(var1, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -914,15 +892,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapNativeRenderer obj = new com.autonavi.amap.mapcore.AMapNativeRenderer();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -954,15 +931,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FileUtil obj = new com.autonavi.amap.mapcore.FileUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -995,15 +971,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLTranslateAnimation obj = new com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1044,15 +1019,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLRotateAnimation obj = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1087,15 +1061,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLAlphaAnimation obj = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1134,15 +1107,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLScaleAnimation obj = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1174,15 +1146,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLTransformation obj = new com.autonavi.amap.mapcore.animation.GLTransformation();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1215,15 +1186,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLAnimationSet obj = new com.autonavi.amap.mapcore.animation.GLAnimationSet(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1256,15 +1226,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLEmergeAnimation obj = new com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1296,15 +1265,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLAnimation obj = new com.autonavi.amap.mapcore.animation.GLAnimation();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1337,15 +1305,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.MapConfig obj = new com.autonavi.amap.mapcore.MapConfig(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1380,15 +1347,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1425,15 +1391,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1472,15 +1437,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1519,15 +1483,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1562,15 +1525,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPointBounds obj = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1602,15 +1564,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.CoordUtil obj = new com.autonavi.amap.mapcore.CoordUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1642,15 +1603,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AeUtil obj = new com.autonavi.amap.mapcore.AeUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1682,15 +1642,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.VirtualEarthProjection obj = new com.autonavi.amap.mapcore.VirtualEarthProjection();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1722,15 +1681,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1769,15 +1727,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1810,15 +1767,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1851,15 +1807,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1891,15 +1846,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapEngineUtils obj = new com.autonavi.amap.mapcore.AMapEngineUtils();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1931,15 +1885,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -1976,15 +1929,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2016,15 +1968,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapEtaDecoder obj = new com.autonavi.amap.mapcore.AMapEtaDecoder();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2056,15 +2007,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPointBounds.Builder obj = new com.autonavi.amap.mapcore.FPointBounds.Builder();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2096,15 +2046,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Inner_3dMap_locationOption obj = new com.autonavi.amap.mapcore.Inner_3dMap_locationOption();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2136,15 +2085,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2179,15 +2127,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2219,15 +2166,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapNativeParticleSystem obj = new com.autonavi.amap.mapcore.AMapNativeParticleSystem();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2259,15 +2205,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.AMapNativeBuildingRenderer obj = new com.autonavi.amap.mapcore.AMapNativeBuildingRenderer();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2299,15 +2244,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.autonavi.amap.mapcore.Convert obj = new com.autonavi.amap.mapcore.Convert();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2339,15 +2283,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.offlineservice.AMapPermissionActivity obj = new com.amap.api.offlineservice.AMapPermissionActivity();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2379,15 +2322,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.InfoWindowParams obj = new com.amap.api.maps.InfoWindowParams();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2419,15 +2361,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.CameraUpdateFactory obj = new com.amap.api.maps.CameraUpdateFactory();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2460,15 +2401,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2500,15 +2440,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2540,15 +2479,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.AMapOptions obj = new com.amap.api.maps.AMapOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2580,15 +2518,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.AMapOptionsCreator obj = new com.amap.api.maps.AMapOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2621,15 +2558,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.CoordinateConverter obj = new com.amap.api.maps.CoordinateConverter(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2661,15 +2597,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.utils.SpatialRelationUtil obj = new com.amap.api.maps.utils.SpatialRelationUtil();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2704,15 +2639,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.utils.overlay.MovingPointOverlay obj = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2745,15 +2679,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.utils.overlay.SmoothMoveMarker obj = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2786,15 +2719,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.SwipeDismissCallBack obj = new com.amap.api.maps.SwipeDismissCallBack(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2829,15 +2761,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.SwipeDismissView obj = new com.amap.api.maps.SwipeDismissView(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2869,15 +2800,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.MapsInitializer obj = new com.amap.api.maps.MapsInitializer();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2909,15 +2839,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapStatus obj = new com.amap.api.maps.offlinemap.OfflineMapStatus();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2949,15 +2878,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapProvince obj = new com.amap.api.maps.offlinemap.OfflineMapProvince();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -2990,15 +2918,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.DownloadProgressView obj = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3030,15 +2957,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.Province obj = new com.amap.api.maps.offlinemap.Province();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3070,15 +2996,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.OfflineMapCity obj = new com.amap.api.maps.offlinemap.OfflineMapCity();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3110,15 +3035,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.offlinemap.City obj = new com.amap.api.maps.offlinemap.City();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3150,15 +3074,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PolygonHoleOptions obj = new com.amap.api.maps.model.PolygonHoleOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3190,15 +3113,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TileOverlayOptionsCreator obj = new com.amap.api.maps.model.TileOverlayOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3235,15 +3157,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.Poi obj = new com.amap.api.maps.model.Poi(var1, var2, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3275,15 +3196,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MyLocationStyle obj = new com.amap.api.maps.model.MyLocationStyle();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3324,15 +3244,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.VisibleRegion obj = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3364,15 +3283,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLngCreator obj = new com.amap.api.maps.model.LatLngCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3404,15 +3322,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CircleHoleOptions obj = new com.amap.api.maps.model.CircleHoleOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3444,15 +3361,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLngBounds.Builder obj = new com.amap.api.maps.model.LatLngBounds.Builder();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3484,15 +3400,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.NavigateArrowOptions obj = new com.amap.api.maps.model.NavigateArrowOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3524,15 +3439,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.BitmapDescriptorFactory obj = new com.amap.api.maps.model.BitmapDescriptorFactory();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3564,15 +3478,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MultiPointOverlayOptions obj = new com.amap.api.maps.model.MultiPointOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3604,15 +3517,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PoiCreator obj = new com.amap.api.maps.model.PoiCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3644,15 +3556,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PolylineOptions obj = new com.amap.api.maps.model.PolylineOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3689,15 +3600,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.Tile obj = new com.amap.api.maps.model.Tile(var1, var2, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3732,15 +3642,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.Gradient obj = new com.amap.api.maps.model.Gradient(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3772,15 +3681,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.NaviPara obj = new com.amap.api.maps.model.NaviPara();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3812,15 +3720,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.GroundOverlayOptions obj = new com.amap.api.maps.model.GroundOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3852,15 +3759,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.GL3DModelOptions obj = new com.amap.api.maps.model.GL3DModelOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3892,15 +3798,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MyTrafficStyle obj = new com.amap.api.maps.model.MyTrafficStyle();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3939,15 +3844,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CameraPosition obj = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3979,15 +3883,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TextOptionsCreator obj = new com.amap.api.maps.model.TextOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4019,15 +3922,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PoiPara obj = new com.amap.api.maps.model.PoiPara();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4059,15 +3961,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MarkerOptions obj = new com.amap.api.maps.model.MarkerOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4100,15 +4001,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.AnimationSet obj = new com.amap.api.maps.model.animation.AnimationSet(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4149,15 +4049,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4192,15 +4091,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4233,15 +4131,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.TranslateAnimation obj = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4274,15 +4171,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.EmergeAnimation obj = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4317,15 +4213,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.AlphaAnimation obj = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4364,15 +4259,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.animation.ScaleAnimation obj = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4407,15 +4301,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLngBounds obj = new com.amap.api.maps.model.LatLngBounds(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4447,15 +4340,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CustomMapStyleOptions obj = new com.amap.api.maps.model.CustomMapStyleOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4487,15 +4379,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.BuildingOverlayOptions obj = new com.amap.api.maps.model.BuildingOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4527,15 +4418,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CrossOverlayOptions obj = new com.amap.api.maps.model.CrossOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4567,15 +4457,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.VisibleRegionCreator obj = new com.amap.api.maps.model.VisibleRegionCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4610,15 +4499,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4655,15 +4543,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3, var5);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4706,15 +4593,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TileProjection obj = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4746,15 +4632,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.AMapPara obj = new com.amap.api.maps.model.AMapPara();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4786,15 +4671,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CircleOptionsCreator obj = new com.amap.api.maps.model.CircleOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4837,15 +4721,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.AMapCameraInfo obj = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4877,15 +4760,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PolygonOptions obj = new com.amap.api.maps.model.PolygonOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4920,15 +4802,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4961,15 +4842,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5001,15 +4881,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MyLocationStyleCreator obj = new com.amap.api.maps.model.MyLocationStyleCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5041,15 +4920,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MarkerOptionsCreator obj = new com.amap.api.maps.model.MarkerOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5082,15 +4960,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.MultiPointItem obj = new com.amap.api.maps.model.MultiPointItem(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5122,15 +4999,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.LatLngBoundsCreator obj = new com.amap.api.maps.model.LatLngBoundsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5162,15 +5038,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.ArcOptions obj = new com.amap.api.maps.model.ArcOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5202,15 +5077,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.BitmapDescriptorCreator obj = new com.amap.api.maps.model.BitmapDescriptorCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5242,15 +5116,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CircleOptions obj = new com.amap.api.maps.model.CircleOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5282,15 +5155,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.NavigateArrowOptionsCreator obj = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5323,15 +5195,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.RuntimeRemoteException obj = new com.amap.api.maps.model.RuntimeRemoteException(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5363,15 +5234,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.HeatmapTileProvider.Builder obj = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5403,15 +5273,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.BaseOptions obj = new com.amap.api.maps.model.BaseOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5443,15 +5312,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PolylineOptionsCreator obj = new com.amap.api.maps.model.PolylineOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5483,15 +5351,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.BaseOverlay obj = new com.amap.api.maps.model.BaseOverlay();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5523,15 +5390,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TileOverlayOptions obj = new com.amap.api.maps.model.TileOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5563,15 +5429,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.RoutePara obj = new com.amap.api.maps.model.RoutePara();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5603,15 +5468,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.ArcOptionsCreator obj = new com.amap.api.maps.model.ArcOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5643,15 +5507,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.CameraPositionCreator obj = new com.amap.api.maps.model.CameraPositionCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5683,15 +5546,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.ParticleOverLifeModule obj = new com.amap.api.maps.model.particle.ParticleOverLifeModule();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5724,15 +5586,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.ConstantRotationOverLife obj = new com.amap.api.maps.model.particle.ConstantRotationOverLife(new Double(var1).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5771,15 +5632,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5816,15 +5676,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5867,15 +5726,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants obj = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5912,15 +5770,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.CurveSizeOverLife obj = new com.amap.api.maps.model.particle.CurveSizeOverLife(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -5955,15 +5812,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.ParticleEmissionModule obj = new com.amap.api.maps.model.particle.ParticleEmissionModule(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6004,15 +5860,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.RectParticleShape obj = new com.amap.api.maps.model.particle.RectParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), var5);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6059,15 +5914,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants obj = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6099,15 +5953,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory obj = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6139,15 +5992,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.particle.ParticleOverlayOptions obj = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6179,15 +6031,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TextOptions obj = new com.amap.api.maps.model.TextOptions();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6219,15 +6070,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.PolygonOptionsCreator obj = new com.amap.api.maps.model.PolygonOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6259,15 +6109,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.TileProjectionCreator obj = new com.amap.api.maps.model.TileProjectionCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6299,15 +6148,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.GroundOverlayOptionsCreator obj = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6339,15 +6187,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.model.IndoorBuildingInfo obj = new com.amap.api.maps.model.IndoorBuildingInfo();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6380,15 +6227,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6423,15 +6269,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6463,15 +6308,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.AMapUtils obj = new com.amap.api.maps.AMapUtils();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6504,15 +6348,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6547,15 +6390,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6588,15 +6430,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6631,15 +6472,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1, var2);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6680,15 +6520,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6720,15 +6559,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation();
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6761,15 +6599,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.trace.LBSTraceClient obj = new com.amap.api.trace.LBSTraceClient(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6808,15 +6645,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1, new ArrayList(var2));
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -6849,15 +6685,14 @@ public class SubHandler26 {
             
                     // create target object
                     com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1);
-                    int seqNumber = getFluttifySequence();
-                    getHEAP().put(seqNumber, obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(seqNumber);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);

@@ -12,7 +12,6 @@ extern NSMutableDictionary<NSString*, NSObject*>* STACK;
 extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
-extern int getFluttifySequence(void);
 
 @implementation MACustomCalloutViewFactory {
 }
@@ -72,9 +71,8 @@ extern int getFluttifySequence(void);
       
           // result
           // return a ref
-          int seqNumber = getFluttifySequence();
-          HEAP[@(seqNumber)] = result;
-          NSNumber* jsonableResult = @(seqNumber);
+          HEAP[@(((NSObject*) result).hash)] = result;
+          NSNumber* jsonableResult = @(((NSObject*) result).hash);
       
           methodResult(jsonableResult);
       },
@@ -91,9 +89,8 @@ extern int getFluttifySequence(void);
           UIView* result = ref.customView;
       
           // return a ref
-          int seqNumber = getFluttifySequence();
-          HEAP[@(seqNumber)] = result;
-          NSNumber* jsonableResult = @(seqNumber);
+          HEAP[@((result).hash)] = result;
+          NSNumber* jsonableResult = @((result).hash);
       
           methodResult(jsonableResult);
       },
@@ -111,9 +108,8 @@ extern int getFluttifySequence(void);
           NSObject* result = ref.userData;
       
           // return a ref
-          int seqNumber = getFluttifySequence();
-          HEAP[@(seqNumber)] = result;
-          NSNumber* jsonableResult = @(seqNumber);
+          HEAP[@(((NSObject*) result).hash)] = result;
+          NSNumber* jsonableResult = @(((NSObject*) result).hash);
       
           methodResult(jsonableResult);
       },
@@ -171,32 +167,30 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmanager = @(getFluttifySequence());
+  NSNumber* argmanager = @(manager.hash);
   HEAP[argmanager] = manager;
   // list callback arg
   NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
       NSObject* item = ((NSObject*) [locations objectAtIndex:i]);
       // return to dart side data
-      int seqNumber = getFluttifySequence();
-      arglocations[i] = @(seqNumber);
+      arglocations[i] = @(item.hash);
       // add to HEAP
-      HEAP[@(seqNumber)] = item;
+      HEAP[@(item.hash)] = item;
   }
   // list callback arg
   NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
   for (int i = 0; i < tracePoints.count; i++) {
       NSObject* item = ((NSObject*) [tracePoints objectAtIndex:i]);
       // return to dart side data
-      int seqNumber = getFluttifySequence();
-      argtracePoints[i] = @(seqNumber);
+      argtracePoints[i] = @(item.hash);
       // add to HEAP
-      HEAP[@(seqNumber)] = item;
+      HEAP[@(item.hash)] = item;
   }
   // primitive callback arg
   NSNumber* argdistance = @(distance);
   // ref callback arg
-  NSNumber* argerror = @(getFluttifySequence());
+  NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError" arguments:@{@"manager": argmanager, @"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
@@ -215,7 +209,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* arglocationManager = @(getFluttifySequence());
+  NSNumber* arglocationManager = @(locationManager.hash);
   HEAP[arglocationManager] = locationManager;
 
   [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": arglocationManager}];
@@ -234,10 +228,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argrenderer = @(getFluttifySequence());
+  NSNumber* argrenderer = @(renderer.hash);
   HEAP[argrenderer] = renderer;
   // ref callback arg
-  NSNumber* argitem = @(getFluttifySequence());
+  NSNumber* argitem = @(item.hash);
   HEAP[argitem] = item;
 
   [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped" arguments:@{@"renderer": argrenderer, @"item": argitem}];
@@ -256,7 +250,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": argmapView}];
@@ -275,7 +269,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
@@ -296,7 +290,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* arganimated = @(animated);
@@ -317,7 +311,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
@@ -338,7 +332,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
@@ -359,7 +353,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
@@ -380,7 +374,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
@@ -401,7 +395,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": argmapView}];
@@ -420,7 +414,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": argmapView}];
@@ -439,10 +433,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argerror = @(getFluttifySequence());
+  NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError" arguments:@{@"mapView": argmapView, @"error": argerror}];
@@ -461,10 +455,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argannotation = @(getFluttifySequence());
+  NSNumber* argannotation = @(annotation.hash);
   HEAP[argannotation] = annotation;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_viewForAnnotation"
@@ -494,17 +488,16 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
   for (int i = 0; i < views.count; i++) {
       NSObject* item = ((NSObject*) [views objectAtIndex:i]);
       // return to dart side data
-      int seqNumber = getFluttifySequence();
-      argviews[i] = @(seqNumber);
+      argviews[i] = @(item.hash);
       // add to HEAP
-      HEAP[@(seqNumber)] = item;
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
@@ -523,10 +516,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didSelectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
@@ -545,10 +538,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
@@ -567,7 +560,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": argmapView}];
@@ -586,7 +579,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": argmapView}];
@@ -605,10 +598,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* arguserLocation = @(getFluttifySequence());
+  NSNumber* arguserLocation = @(userLocation.hash);
   HEAP[arguserLocation] = userLocation;
   // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
@@ -629,10 +622,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argerror = @(getFluttifySequence());
+  NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
@@ -651,10 +644,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
   // enum callback arg
   NSNumber* argnewState = @((NSInteger) newState);
@@ -677,10 +670,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argoverlay = @(getFluttifySequence());
+  NSNumber* argoverlay = @(overlay.hash);
   HEAP[argoverlay] = overlay;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_rendererForOverlay"
@@ -710,17 +703,16 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
   for (int i = 0; i < overlayRenderers.count; i++) {
       NSObject* item = ((NSObject*) [overlayRenderers objectAtIndex:i]);
       // return to dart side data
-      int seqNumber = getFluttifySequence();
-      argoverlayRenderers[i] = @(seqNumber);
+      argoverlayRenderers[i] = @(item.hash);
       // add to HEAP
-      HEAP[@(seqNumber)] = item;
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers" arguments:@{@"mapView": argmapView, @"overlayRenderers": argoverlayRenderers}];
@@ -739,13 +731,13 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
   // ref callback arg
-  NSNumber* argcontrol = @(getFluttifySequence());
+  NSNumber* argcontrol = @(control.hash);
   HEAP[argcontrol] = control;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped" arguments:@{@"mapView": argmapView, @"view": argview, @"control": argcontrol}];
@@ -764,10 +756,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
@@ -786,10 +778,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argview = @(getFluttifySequence());
+  NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
@@ -808,7 +800,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // enum callback arg
   NSNumber* argmode = @((NSInteger) mode);
@@ -831,7 +823,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
@@ -852,17 +844,16 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // list callback arg
   NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
   for (int i = 0; i < pois.count; i++) {
       NSObject* item = ((NSObject*) [pois objectAtIndex:i]);
       // return to dart side data
-      int seqNumber = getFluttifySequence();
-      argpois[i] = @(seqNumber);
+      argpois[i] = @(item.hash);
       // add to HEAP
-      HEAP[@(seqNumber)] = item;
+      HEAP[@(item.hash)] = item;
   }
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didTouchPois" arguments:@{@"mapView": argmapView, @"pois": argpois}];
@@ -881,11 +872,11 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
-  NSNumber* argcoordinate = @(getFluttifySequence());
+  NSNumber* argcoordinate = @(coordinateValue.hash);
   HEAP[argcoordinate] = coordinateValue;
   
 
@@ -905,11 +896,11 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
-  NSNumber* argcoordinate = @(getFluttifySequence());
+  NSNumber* argcoordinate = @(coordinateValue.hash);
   HEAP[argcoordinate] = coordinateValue;
   
 
@@ -929,7 +920,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": argmapView}];
@@ -948,10 +939,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argindoorInfo = @(getFluttifySequence());
+  NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapShowed" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
@@ -970,10 +961,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argindoorInfo = @(getFluttifySequence());
+  NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
@@ -992,10 +983,10 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   // ref callback arg
-  NSNumber* argindoorInfo = @(getFluttifySequence());
+  NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapHidden" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
@@ -1014,7 +1005,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": argmapView}];
@@ -1033,7 +1024,7 @@ extern int getFluttifySequence(void);
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(getFluttifySequence());
+  NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": argmapView}];

@@ -10,7 +10,6 @@ extern NSMutableDictionary<NSString*, NSObject*>* STACK;
 extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
-extern int getFluttifySequence(void);
 
 @implementation AmapMapFluttifyPlugin (SubHandler0)
 - (NSDictionary<NSString*, Handler>*) getSubHandler0 {
@@ -37,9 +36,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -67,9 +65,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -145,9 +142,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -176,9 +172,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -212,9 +207,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -248,9 +242,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(((NSObject*) result).hash)] = result;
+            NSNumber* jsonableResult = @(((NSObject*) result).hash);
         
             methodResult(jsonableResult);
         },
@@ -276,9 +269,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -302,9 +294,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -352,9 +343,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -495,9 +485,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -529,9 +518,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -617,9 +605,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -673,9 +660,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -707,9 +693,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -795,9 +780,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -850,9 +834,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -914,7 +897,7 @@ extern int getFluttifySequence(void);
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argcurrentAni = @(getFluttifySequence());
+                NSNumber* argcurrentAni = @(currentAni.hash);
                 HEAP[argcurrentAni] = currentAni;
         
                 [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni" arguments:@{@"currentAni": argcurrentAni}];
@@ -923,9 +906,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -968,9 +950,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -992,9 +973,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1098,9 +1078,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1146,10 +1125,9 @@ extern int getFluttifySequence(void);
                 for (int i = 0; i < points.count; i++) {
                     NSObject* item = ((NSObject*) [points objectAtIndex:i]);
                     // return to dart side data
-                    int seqNumber = getFluttifySequence();
-                    argpoints[i] = @(seqNumber);
+                    argpoints[i] = @(item.hash);
                     // add to HEAP
-                    HEAP[@(seqNumber)] = item;
+                    HEAP[@(item.hash)] = item;
                 }
         
                 [channel invokeMethod:@"Callback::MAProcessingCallback::MAProcessingCallback" arguments:@{@"index": argindex, @"points": argpoints}];
@@ -1170,10 +1148,9 @@ extern int getFluttifySequence(void);
                 for (int i = 0; i < points.count; i++) {
                     NSObject* item = ((NSObject*) [points objectAtIndex:i]);
                     // return to dart side data
-                    int seqNumber = getFluttifySequence();
-                    argpoints[i] = @(seqNumber);
+                    argpoints[i] = @(item.hash);
                     // add to HEAP
-                    HEAP[@(seqNumber)] = item;
+                    HEAP[@(item.hash)] = item;
                 }
                 // primitive callback arg
                 NSNumber* argdistance = @(distance);
@@ -1202,9 +1179,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1292,9 +1268,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1316,9 +1291,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1361,9 +1335,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D*)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -1537,9 +1510,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(((NSObject*) result).hash)] = result;
+            NSNumber* jsonableResult = @(((NSObject*) result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1606,9 +1578,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(((NSObject*) result).hash)] = result;
+            NSNumber* jsonableResult = @(((NSObject*) result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1641,10 +1612,10 @@ extern int getFluttifySequence(void);
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argtileData = @(getFluttifySequence());
+                NSNumber* argtileData = @(tileData.hash);
                 HEAP[argtileData] = tileData;
                 // ref callback arg
-                NSNumber* argerror = @(getFluttifySequence());
+                NSNumber* argerror = @(error.hash);
                 HEAP[argerror] = error;
         
                 [channel invokeMethod:@"Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error" arguments:@{@"tileData": argtileData, @"error": argerror}];
@@ -1699,9 +1670,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(((NSObject*) result).hash)] = result;
+            NSNumber* jsonableResult = @(((NSObject*) result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1722,9 +1692,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1794,12 +1763,12 @@ extern int getFluttifySequence(void);
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argdownloadItem = @(getFluttifySequence());
+                NSNumber* argdownloadItem = @(downloadItem.hash);
                 HEAP[argdownloadItem] = downloadItem;
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSNumber* arginfo = @(getFluttifySequence());
+                NSNumber* arginfo = @(((NSObject*) info).hash);
                 HEAP[arginfo] = ((NSObject*) info);
         
                 [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
@@ -1975,9 +1944,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -1999,9 +1967,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2096,9 +2063,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2120,9 +2086,8 @@ extern int getFluttifySequence(void);
             // result
             // return a (value)*
             NSValue* resultValue = [NSValue valueWithPointer:result];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -2158,9 +2123,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2203,9 +2167,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2297,9 +2260,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2323,9 +2285,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2347,9 +2308,8 @@ extern int getFluttifySequence(void);
             // result
             // return a (value)*
             NSValue* resultValue = [NSValue valueWithPointer:result];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -2398,9 +2358,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2430,9 +2389,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2542,9 +2500,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -2566,9 +2523,8 @@ extern int getFluttifySequence(void);
             // result
             // return a (value)*
             NSValue* resultValue = [NSValue valueWithPointer:result];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -2590,9 +2546,8 @@ extern int getFluttifySequence(void);
             // result
             // return a (value)*
             NSValue* resultValue = [NSValue valueWithPointer:result];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((resultValue).hash)] = resultValue;
+            NSNumber* jsonableResult = @((resultValue).hash);
         
             methodResult(jsonableResult);
         },
@@ -2614,9 +2569,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2662,9 +2616,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -2697,9 +2650,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint*)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3060,9 +3012,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -3094,9 +3045,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -3204,9 +3154,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -3257,9 +3206,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3310,9 +3258,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3341,9 +3288,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3524,9 +3470,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -3631,7 +3576,7 @@ extern int getFluttifySequence(void);
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argresultImage = @(getFluttifySequence());
+                NSNumber* argresultImage = @(resultImage.hash);
                 HEAP[argresultImage] = resultImage;
                 // primitive callback arg
                 NSNumber* argstate = @(state);
@@ -3691,9 +3636,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3720,9 +3664,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3749,9 +3692,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -3778,9 +3720,8 @@ extern int getFluttifySequence(void);
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = resultValue;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
         
             methodResult(jsonableResult);
         },
@@ -4026,9 +3967,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -4050,9 +3990,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -4233,9 +4172,8 @@ extern int getFluttifySequence(void);
             NSMutableArray* jsonableResult = [NSMutableArray array];
             for (int i = 0; i < result.count; i++) {
                 NSObject* object = [result objectAtIndex:i];
-                int seqNumber = getFluttifySequence();
-                [jsonableResult addObject: @(seqNumber)];
-                HEAP[@(seqNumber)] = object;
+                [jsonableResult addObject: @(object.hash)];
+                HEAP[@([object hash])] = object;
             }
         
             methodResult(jsonableResult);
@@ -4581,9 +4519,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -4992,9 +4929,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -5239,9 +5175,8 @@ extern int getFluttifySequence(void);
         
             // result
             // return a ref
-            int seqNumber = getFluttifySequence();
-            HEAP[@(seqNumber)] = result;
-            NSNumber* jsonableResult = @(seqNumber);
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
