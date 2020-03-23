@@ -25,6 +25,7 @@ import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getFluttifySequence;
 
 @SuppressWarnings("ALL")
 public class SubHandler14 {
@@ -252,7 +253,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -352,7 +353,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -390,7 +391,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -507,7 +508,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -607,7 +608,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -643,7 +644,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -681,7 +682,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -710,7 +711,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -775,7 +776,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -840,7 +841,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -905,7 +906,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -970,7 +971,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1035,7 +1036,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1100,7 +1101,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1165,7 +1166,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1230,7 +1231,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1259,7 +1260,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1288,7 +1289,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1353,7 +1354,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1450,7 +1451,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1573,7 +1574,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1638,7 +1639,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1703,7 +1704,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1768,7 +1769,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -1797,7 +1798,7 @@ public class SubHandler14 {
                         // ref arg
                         final Integer argvar1;
                         if (var1 != null) {
-                            argvar1 = var1.hashCode();
+                            argvar1 = getFluttifySequence();
                             getHEAP().put(argvar1, var1);
                         } else {
                             argvar1 = null;
@@ -2527,7 +2528,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -2563,7 +2564,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -2769,7 +2770,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -2805,7 +2806,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -3392,7 +3393,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -3562,7 +3563,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -3859,8 +3860,9 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar3 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var3) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar3.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar3.add(seqNumber);
                         }
             
                         // call dart method
@@ -3890,8 +3892,9 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar2 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar2.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar2.add(seqNumber);
                         }
                         // jsonable arg
                         int argvar3 = var3;
@@ -4024,14 +4027,16 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar1 = new ArrayList<>();
                         for (com.amap.api.trace.TraceLocation item : var1) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar1.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar1.add(seqNumber);
                         }
                         // list arg
                         List<Integer> argvar2 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar2.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar2.add(seqNumber);
                         }
                         // jsonable arg
                         String argvar3 = var3;
@@ -4637,7 +4642,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -4673,7 +4678,7 @@ public class SubHandler14 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = getFluttifySequence();
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -4750,8 +4755,9 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar3 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var3) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar3.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar3.add(seqNumber);
                         }
             
                         // call dart method
@@ -4781,8 +4787,9 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar2 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar2.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar2.add(seqNumber);
                         }
                         // jsonable arg
                         int argvar3 = var3;
@@ -4851,14 +4858,16 @@ public class SubHandler14 {
                         // list arg
                         List<Integer> argvar1 = new ArrayList<>();
                         for (com.amap.api.trace.TraceLocation item : var1) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar1.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar1.add(seqNumber);
                         }
                         // list arg
                         List<Integer> argvar2 = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(item.hashCode(), item);
-                            argvar2.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            argvar2.add(seqNumber);
                         }
                         // jsonable arg
                         String argvar3 = var3;
@@ -5310,7 +5319,7 @@ public class SubHandler14 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5543,7 +5552,7 @@ public class SubHandler14 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6189,7 +6198,7 @@ public class SubHandler14 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6229,7 +6238,7 @@ public class SubHandler14 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6268,7 +6277,7 @@ public class SubHandler14 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             

@@ -24,6 +24,7 @@ import io.flutter.plugin.platform.PlatformViewFactory;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getFluttifySequence;
 
 @SuppressWarnings("ALL")
 class DownloadProgressViewFactory extends PlatformViewFactory {

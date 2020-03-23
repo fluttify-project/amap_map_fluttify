@@ -25,6 +25,7 @@ import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getFluttifySequence;
 
 @SuppressWarnings("ALL")
 public class SubHandler21 {
@@ -198,7 +199,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -905,7 +906,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -944,7 +945,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -984,7 +985,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1028,7 +1029,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1068,7 +1069,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1108,7 +1109,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1148,7 +1149,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1188,7 +1189,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1228,7 +1229,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1268,7 +1269,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1309,8 +1310,9 @@ public class SubHandler21 {
                     if (result != null) {
                         jsonableResult = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : result) {
-                            getHEAP().put(item.hashCode(), item);
-                            jsonableResult.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            jsonableResult.add(seqNumber);
                         }
                     }
             
@@ -1598,7 +1600,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1637,7 +1639,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1676,7 +1678,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1715,7 +1717,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1754,7 +1756,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1792,7 +1794,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1831,7 +1833,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1870,7 +1872,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1908,7 +1910,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -1987,7 +1989,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2097,7 +2099,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2136,7 +2138,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2176,7 +2178,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2216,7 +2218,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2255,7 +2257,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2299,7 +2301,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2340,8 +2342,9 @@ public class SubHandler21 {
                     if (result != null) {
                         jsonableResult = new ArrayList<>();
                         for (com.amap.api.maps.model.BitmapDescriptor item : result) {
-                            getHEAP().put(item.hashCode(), item);
-                            jsonableResult.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            jsonableResult.add(seqNumber);
                         }
                     }
             
@@ -2381,7 +2384,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2456,7 +2459,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2531,7 +2534,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2676,7 +2679,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2720,7 +2723,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2760,7 +2763,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2800,7 +2803,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2840,7 +2843,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2880,7 +2883,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2920,7 +2923,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -2960,7 +2963,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3035,7 +3038,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3075,7 +3078,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3115,7 +3118,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3154,7 +3157,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3193,7 +3196,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3269,8 +3272,9 @@ public class SubHandler21 {
                     if (result != null) {
                         jsonableResult = new ArrayList<>();
                         for (com.amap.api.maps.model.LatLng item : result) {
-                            getHEAP().put(item.hashCode(), item);
-                            jsonableResult.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            jsonableResult.add(seqNumber);
                         }
                     }
             
@@ -3450,7 +3454,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3525,7 +3529,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3674,7 +3678,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3716,7 +3720,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -3829,7 +3833,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4013,7 +4017,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4192,7 +4196,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4267,7 +4271,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4309,7 +4313,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4351,7 +4355,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4395,7 +4399,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4435,7 +4439,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4475,7 +4479,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4515,7 +4519,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4555,7 +4559,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4595,7 +4599,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4634,7 +4638,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4673,7 +4677,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -4782,7 +4786,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5032,7 +5036,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5074,7 +5078,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5114,7 +5118,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5154,7 +5158,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5298,7 +5302,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5337,7 +5341,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5377,7 +5381,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5555,7 +5559,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -5806,7 +5810,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6581,7 +6585,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6619,7 +6623,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6658,7 +6662,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6697,7 +6701,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6846,7 +6850,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -6892,7 +6896,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7003,8 +7007,9 @@ public class SubHandler21 {
                     if (result != null) {
                         jsonableResult = new ArrayList<>();
                         for (com.amap.api.maps.model.BitmapDescriptor item : result) {
-                            getHEAP().put(item.hashCode(), item);
-                            jsonableResult.add(item.hashCode());
+                            int seqNumber = getFluttifySequence();
+                            getHEAP().put(seqNumber, item);
+                            jsonableResult.add(seqNumber);
                         }
                     }
             
@@ -7044,7 +7049,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7154,7 +7159,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7194,7 +7199,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7234,7 +7239,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7274,7 +7279,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7316,7 +7321,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7358,7 +7363,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7398,7 +7403,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7438,7 +7443,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7478,7 +7483,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             
@@ -7518,7 +7523,7 @@ public class SubHandler21 {
                     // convert result to jsonable result
                     Integer jsonableResult = null;
                     if (result != null) {
-                        jsonableResult = result.hashCode();
+                        jsonableResult = getFluttifySequence();
                         getHEAP().put(jsonableResult, result);
                     }
             

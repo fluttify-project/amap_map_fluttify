@@ -10,6 +10,7 @@ extern NSMutableDictionary<NSString*, NSObject*>* STACK;
 extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 // 日志打印开关
 extern BOOL enableLog;
+extern int getFluttifySequence(void);
 
 @implementation AmapMapFluttifyPlugin (SubHandler4)
 - (NSDictionary<NSString*, Handler>*) getSubHandler4 {
@@ -117,8 +118,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -141,8 +143,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -242,8 +245,9 @@ extern BOOL enableLog;
                 UIImage* result = ref.icon;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -264,8 +268,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -305,8 +310,9 @@ extern BOOL enableLog;
                 id<MAParticleColorGenerate> result = ref.particleStartColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -326,8 +332,9 @@ extern BOOL enableLog;
                 id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -347,8 +354,9 @@ extern BOOL enableLog;
                 MAParticleEmissionModule* result = ref.particleEmissionModule;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -368,8 +376,9 @@ extern BOOL enableLog;
                 id<MAParticleShapeModule> result = ref.particleShapeModule;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -389,8 +398,9 @@ extern BOOL enableLog;
                 MAParticleOverLifeModule* result = ref.particleOverLifeModule;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -410,8 +420,9 @@ extern BOOL enableLog;
                 id<MAOverlay> result = ref.overlay;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -432,8 +443,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint*)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -473,8 +485,9 @@ extern BOOL enableLog;
                 UIImage* result = ref.strokeImage;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -554,8 +567,9 @@ extern BOOL enableLog;
                 CLLocation* result = ref.location;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -575,8 +589,9 @@ extern BOOL enableLog;
                 CLHeading* result = ref.heading;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -597,8 +612,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -681,8 +697,9 @@ extern BOOL enableLog;
                 NSMutableArray* jsonableResult = [NSMutableArray array];
                 for (int i = 0; i < result.count; i++) {
                     NSObject* object = [result objectAtIndex:i];
-                    [jsonableResult addObject: @(object.hash)];
-                    HEAP[@([object hash])] = object;
+                    int seqNumber = getFluttifySequence();
+                    [jsonableResult addObject: @(seqNumber)];
+                    HEAP[@(seqNumber)] = object;
                 }
         
                 [resultList addObject:jsonableResult];
@@ -743,8 +760,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.topColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -764,8 +782,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.sideColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -805,8 +824,9 @@ extern BOOL enableLog;
                 MACustomBuildingOverlayOption* result = ref.defaultOption;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -829,8 +849,9 @@ extern BOOL enableLog;
                 NSMutableArray* jsonableResult = [NSMutableArray array];
                 for (int i = 0; i < result.count; i++) {
                     NSObject* object = [result objectAtIndex:i];
-                    [jsonableResult addObject: @(object.hash)];
-                    HEAP[@([object hash])] = object;
+                    int seqNumber = getFluttifySequence();
+                    [jsonableResult addObject: @(seqNumber)];
+                    HEAP[@(seqNumber)] = object;
                 }
         
                 [resultList addObject:jsonableResult];
@@ -892,8 +913,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -974,8 +996,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -996,8 +1019,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1018,8 +1042,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1040,8 +1065,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1101,8 +1127,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.fillColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1122,8 +1149,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.strokeColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1163,8 +1191,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.locationDotBgColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1184,8 +1213,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.locationDotFillColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1225,8 +1255,9 @@ extern BOOL enableLog;
                 UIImage* result = ref.image;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1267,8 +1298,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1289,8 +1321,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1311,8 +1344,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1333,8 +1367,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1355,8 +1390,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1717,8 +1753,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1739,8 +1776,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1781,8 +1819,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1803,8 +1842,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1825,8 +1865,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1847,8 +1888,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -1969,8 +2011,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2033,8 +2076,9 @@ extern BOOL enableLog;
                 NSMutableArray* jsonableResult = [NSMutableArray array];
                 for (int i = 0; i < result.count; i++) {
                     NSObject* object = [result objectAtIndex:i];
-                    [jsonableResult addObject: @(object.hash)];
-                    HEAP[@([object hash])] = object;
+                    int seqNumber = getFluttifySequence();
+                    [jsonableResult addObject: @(seqNumber)];
+                    HEAP[@(seqNumber)] = object;
                 }
         
                 [resultList addObject:jsonableResult];
@@ -2058,8 +2102,9 @@ extern BOOL enableLog;
                 NSMutableArray* jsonableResult = [NSMutableArray array];
                 for (int i = 0; i < result.count; i++) {
                     NSObject* object = [result objectAtIndex:i];
-                    [jsonableResult addObject: @(object.hash)];
-                    HEAP[@([object hash])] = object;
+                    int seqNumber = getFluttifySequence();
+                    [jsonableResult addObject: @(seqNumber)];
+                    HEAP[@(seqNumber)] = object;
                 }
         
                 [resultList addObject:jsonableResult];
@@ -2081,8 +2126,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGRect)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2142,8 +2188,9 @@ extern BOOL enableLog;
                 MAUserLocation* result = ref.userLocation;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2183,8 +2230,9 @@ extern BOOL enableLog;
                 MACircle* result = ref.userLocationAccuracyCircle;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2347,8 +2395,9 @@ extern BOOL enableLog;
                 NSMutableArray* jsonableResult = [NSMutableArray array];
                 for (int i = 0; i < result.count; i++) {
                     NSObject* object = [result objectAtIndex:i];
-                    [jsonableResult addObject: @(object.hash)];
-                    HEAP[@([object hash])] = object;
+                    int seqNumber = getFluttifySequence();
+                    [jsonableResult addObject: @(seqNumber)];
+                    HEAP[@(seqNumber)] = object;
                 }
         
                 [resultList addObject:jsonableResult];
@@ -2410,8 +2459,9 @@ extern BOOL enableLog;
         
                 // 返回值: 结构体
                 NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
-                HEAP[@(resultValue.hash)] = resultValue;
-                NSNumber* jsonableResult = @(resultValue.hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = resultValue;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2451,8 +2501,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.fillColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2472,8 +2523,9 @@ extern BOOL enableLog;
                 UIColor* result = ref.strokeColor;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2613,8 +2665,9 @@ extern BOOL enableLog;
                 MAGroundOverlay* result = ref.groundOverlay;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2634,8 +2687,9 @@ extern BOOL enableLog;
                 MACustomBuildingOverlay* result = ref.customBuildingOverlay;
         
                 // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
+                int seqNumber = getFluttifySequence();
+                HEAP[@(seqNumber)] = result;
+                NSNumber* jsonableResult = @(seqNumber);
         
                 [resultList addObject:jsonableResult];
             }
