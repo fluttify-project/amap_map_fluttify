@@ -532,15 +532,31 @@ class Marker {
 class SmoothMoveMarker {
   SmoothMoveMarker.android(this._androidModel);
 
-  SmoothMoveMarker.ios(this._iosModel);
+  SmoothMoveMarker.ios(
+    this._iosAnnotation,
+    this._iosController,
+    this._iosAnimation,
+  );
 
   com_amap_api_maps_utils_overlay_SmoothMoveMarker _androidModel;
-  MAAnnotationMoveAnimation _iosModel;
 
-  Future<void> stop() async {
+  MAAnnotationMoveAnimation _iosAnimation;
+  MAAnimatedAnnotation _iosAnnotation;
+  MAMapView _iosController;
+
+  Future<void> start() async {
+    return platform(
+      android: (pool) => _androidModel.startSmoothMove(),
+      ios: (pool) async {
+        await _iosController.addAnnotation(_iosAnnotation);
+      },
+    );
+  }
+
+  Future<void> pause() async {
     return platform(
       android: (pool) => _androidModel.stopMove(),
-      ios: (pool) => _iosModel.cancel(),
+      ios: (pool) => _iosAnimation.cancel(),
     );
   }
 }
