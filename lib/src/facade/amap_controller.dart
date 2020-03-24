@@ -1101,6 +1101,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         await marker.setPoints(points);
         // 设置动画时长
         await marker.setTotalDuration(option.duration.inSeconds);
+        // 执行动画
+        await marker.startSmoothMove();
 
         pool
           ..add(map)
@@ -1139,16 +1141,19 @@ class AmapController with WidgetsBindingObserver, _Private {
         await annotation.set_coordinate(points[0]);
 
         // 添加动画
+        final animation = await annotation
+            .addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(
+          points,
+          points.length,
+          option.duration.inSeconds.toDouble(),
+          'name',
+          (finished) {},
+        );
         await iosController.addAnnotation(annotation);
 
         pool..addAll(points);
 
-        return SmoothMoveMarker.ios(
-          annotation,
-          iosController,
-          points,
-          option.duration.inSeconds.toDouble(),
-        );
+        return SmoothMoveMarker.ios(animation);
       },
     );
   }
