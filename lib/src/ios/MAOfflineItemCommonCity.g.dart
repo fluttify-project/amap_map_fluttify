@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAOfflineItemCommonCity extends MAOfflineCity  {
   //region constants
+  static const String name__ = 'MAOfflineItemCommonCity';
+
   
   //endregion
 

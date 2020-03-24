@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotationGenerate {
   //region constants
+  static const String name__ = 'MAParticleConstantRotationGenerate';
+
   
   //endregion
 

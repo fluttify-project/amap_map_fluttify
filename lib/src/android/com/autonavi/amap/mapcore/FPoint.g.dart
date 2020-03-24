@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.FPoint';
+
   
   //endregion
 

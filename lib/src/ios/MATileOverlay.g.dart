@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //region constants
+  static const String name__ = 'MATileOverlay';
+
   
   //endregion
 

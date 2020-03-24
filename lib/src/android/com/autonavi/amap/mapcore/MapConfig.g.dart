@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.MapConfig';
+
   static final int MSG_AUTH_FAILURE = 2;
   static final int MSG_CAMERAUPDATE_CHANGE = 10;
   static final int MSG_CAMERAUPDATE_FINISH = 11;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.MapsInitializer';
+
   static final int HTTP = 1;
   static final int HTTPS = 2;
   //endregion

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMapStatus extends NSObject  {
   //region constants
+  static const String name__ = 'MAMapStatus';
+
   
   //endregion
 

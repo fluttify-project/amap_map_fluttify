@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityGenerate {
   //region constants
+  static const String name__ = 'MAParticleRandomVelocityGenerate';
+
   
   //endregion
 

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup';
+
   static final int CAMERA_MAX_DEGREE = 60;
   static final int CAMERA_MIN_DEGREE = 0;
   static final int MAXMAPLEVEL = 20;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory';
+
   static final int PARTICLE_TYPE_SUNNY = 0;
   static final int PARTICLE_TYPE_RAIN = 1;
   static final int PARTICLE_TYPE_SNOWY = 2;

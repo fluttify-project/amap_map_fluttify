@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.InfoWindowParams';
+
   static final int INFOWINDOW_TYPE_IMAGE = 1;
   static final int INFOWINDOW_TYPE_VIEW = 2;
   //endregion

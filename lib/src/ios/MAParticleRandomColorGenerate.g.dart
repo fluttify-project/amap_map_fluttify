@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerate {
   //region constants
+  static const String name__ = 'MAParticleRandomColorGenerate';
+
   
   //endregion
 

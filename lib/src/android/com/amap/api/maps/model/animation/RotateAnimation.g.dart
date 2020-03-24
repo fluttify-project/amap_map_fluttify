@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_animation_RotateAnimation extends com_amap_api_maps_model_animation_Animation  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.animation.RotateAnimation';
+
   
   //endregion
 

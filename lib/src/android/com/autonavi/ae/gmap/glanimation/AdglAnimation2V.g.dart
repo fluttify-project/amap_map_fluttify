@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.glanimation.AdglAnimation2V';
+
   
   //endregion
 

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.utils.SpatialRelationUtil';
+
   static final int MIN_POLYLINE_POINT_SIZE = 2;
   static final int A_HALF_CIRCLE_DEGREE = 180;
   static final int A_CIRCLE_DEGREE = 360;

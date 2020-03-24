@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //region constants
+  static const String name__ = 'MAPolygonRenderer';
+
   
   //endregion
 

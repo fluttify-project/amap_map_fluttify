@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends com_autonavi_amap_mapcore_animation_GLAnimation  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.animation.GLTranslateAnimation';
+
   
   //endregion
 

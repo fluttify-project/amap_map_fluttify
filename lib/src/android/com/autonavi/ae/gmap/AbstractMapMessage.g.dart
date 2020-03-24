@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.AbstractMapMessage';
+
   static final int GESTURE_STATE_BEGIN = 100;
   static final int GESTURE_STATE_CHANGE = 101;
   static final int GESTURE_STATE_END = 102;

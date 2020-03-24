@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.VirtualEarthProjection';
+
   static final int MAXZOOMLEVEL = 20;
   static final int PIXELS_PER_TILE = 256;
   static final double MIN_LATITUDE = -85.0511287798;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Activity  {
   //region constants
+  static const String name__ = 'com.amap.api.offlineservice.AMapPermissionActivity';
+
   
   //endregion
 

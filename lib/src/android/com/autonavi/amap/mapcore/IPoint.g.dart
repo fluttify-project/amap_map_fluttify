@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.IPoint';
+
   
   //endregion
 

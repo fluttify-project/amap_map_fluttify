@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.trace.TraceOverlay';
+
   static final int TRACE_STATUS_PROCESSING = 1;
   static final int TRACE_STATUS_FINISH = 2;
   static final int TRACE_STATUS_FAILURE = 3;

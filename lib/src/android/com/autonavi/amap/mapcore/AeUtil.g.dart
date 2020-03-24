@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.AeUtil';
+
   static final String ROOTPATH = "/amap/";
   static final String ROOT_DATA_PATH_OLD_NAME = "data";
   static final String ROOT_DATA_PATH_NAME = "data_v6";

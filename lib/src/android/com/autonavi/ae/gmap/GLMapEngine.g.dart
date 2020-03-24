@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener, com_autonavi_amap_mapcore_IAMapEngineCallback {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.GLMapEngine';
+
   
   //endregion
 

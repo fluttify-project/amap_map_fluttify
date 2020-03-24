@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAAnnotationMoveAnimation extends NSObject  {
   //region constants
+  static const String name__ = 'MAAnnotationMoveAnimation';
+
   
   //endregion
 

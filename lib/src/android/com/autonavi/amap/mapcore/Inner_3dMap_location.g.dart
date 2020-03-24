@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Location  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.Inner_3dMap_location';
+
   static final int LOCATION_SUCCESS = 0;
   static final int ERROR_CODE_INVALID_PARAMETER = 1;
   static final int ERROR_CODE_FAILURE_WIFI_INFO = 2;

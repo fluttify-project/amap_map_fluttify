@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.ParticleOverlayOptions';
+
   
   //endregion
 

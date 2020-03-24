@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
   //region constants
+  static const String name__ = 'MAHeatMapTileOverlay';
+
   
   //endregion
 

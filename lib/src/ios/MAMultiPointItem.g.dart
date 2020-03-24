@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMultiPointItem extends NSObject with MAAnnotation, NSCopying {
   //region constants
+  static const String name__ = 'MAMultiPointItem';
+
   
   //endregion
 

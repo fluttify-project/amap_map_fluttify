@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //region constants
+  static const String name__ = 'MAParticleCurveSizeGenerate';
+
   
   //endregion
 

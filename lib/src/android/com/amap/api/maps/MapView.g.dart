@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.MapView';
+
   
   //endregion
 

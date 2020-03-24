@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
+  static const String name__ = 'MACustomBuildingOverlay';
+
   
   //endregion
 

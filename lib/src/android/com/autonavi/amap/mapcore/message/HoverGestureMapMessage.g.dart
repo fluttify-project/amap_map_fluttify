@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.message.HoverGestureMapMessage';
+
   
   //endregion
 

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMultiPoint extends MAShape with MAAnnotation {
   //region constants
+  static const String name__ = 'MAMultiPoint';
+
   
   //endregion
 

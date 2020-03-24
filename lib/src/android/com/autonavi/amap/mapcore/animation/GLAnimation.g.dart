@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.animation.GLAnimation';
+
   static final int INFINITE = -1;
   static final int RESTART = 1;
   static final int REVERSE = 2;

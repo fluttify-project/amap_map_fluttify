@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.animation.Animation';
+
   static final int FILL_MODE_FORWARDS = 0;
   static final int FILL_MODE_BACKWARDS = 1;
   static final int INFINITE = -1;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.glinterface.MapLabelItem';
+
   static final int LABEL_TYPE_NORMAL = 0;
   static final int LABEL_TYPE_SCENIC = 1;
   static final int LABEL_TYPE_INDOOR = 2;

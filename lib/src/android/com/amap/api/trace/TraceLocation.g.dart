@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.trace.TraceLocation';
+
   
   //endregion
 

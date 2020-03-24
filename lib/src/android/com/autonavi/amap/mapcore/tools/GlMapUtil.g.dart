@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.tools.GlMapUtil';
+
   static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1 = 2;
   static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1_EAGLE_EYE = 3;
   static final int AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2 = 4;

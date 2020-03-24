@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
+  static const String name__ = 'MAParticleSinglePointShapeModule';
+
   
   //endregion
 

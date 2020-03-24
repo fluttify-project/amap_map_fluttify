@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   //region constants
+  static const String name__ = 'MAMultiPointOverlayRenderer';
+
   
   //endregion
 

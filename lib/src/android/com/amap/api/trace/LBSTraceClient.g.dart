@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.trace.LBSTraceClient';
+
   static final int TYPE_AMAP = 1;
   static final int TYPE_GPS = 2;
   static final int TYPE_BAIDU = 3;

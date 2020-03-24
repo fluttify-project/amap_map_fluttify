@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_autonavi_ae_gmap_AbstractMapMessage  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.message.AbstractGestureMapMessage';
+
   
   //endregion
 

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.AMapUtils';
+
   static final int DRIVING_DEFAULT = 0;
   static final int DRIVING_SAVE_MONEY = 1;
   static final int DRIVING_SHORT_DISTANCE = 2;

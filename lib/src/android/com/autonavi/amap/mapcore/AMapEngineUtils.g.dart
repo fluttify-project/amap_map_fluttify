@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AMapEngineUtils extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.AMapEngineUtils';
+
   static final int AMAP_ENGINE_TYPE_MAIN = 1;
   static final int AMAP_ENGINE_TYPE_EAGLEEYE = 2;
   static final String MAP_MAP_ASSETS_NAME = "map_assets";

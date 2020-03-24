@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation';
+
   static final int INVALIDE_VALUE = -9999;
   static final int INTERPOLATOR_LINEAR = 0;
   static final int INTERPOLATOR_ACCELERATE = 1;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.ParticleShapeModule';
+
   
   //endregion
 

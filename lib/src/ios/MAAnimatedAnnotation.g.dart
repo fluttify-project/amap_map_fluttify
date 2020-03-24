@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation, MAAnnotation {
   //region constants
+  static const String name__ = 'MAAnimatedAnnotation';
+
   
   //endregion
 

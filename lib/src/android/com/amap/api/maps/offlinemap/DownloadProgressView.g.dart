@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_View  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.offlinemap.DownloadProgressView';
+
   
   //endregion
 

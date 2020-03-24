@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_AMap extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.AMap';
+
   static final int MAP_TYPE_NORMAL = 1;
   static final int MAP_TYPE_SATELLITE = 2;
   static final int MAP_TYPE_NIGHT = 3;

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAPolylineRenderer extends MAOverlayPathRenderer  {
   //region constants
+  static const String name__ = 'MAPolylineRenderer';
+
   
   //endregion
 

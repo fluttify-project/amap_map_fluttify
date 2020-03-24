@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.WearMapView';
+
   
   //endregion
 

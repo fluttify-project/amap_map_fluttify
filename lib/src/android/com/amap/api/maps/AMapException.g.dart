@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_AMapException extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.AMapException';
+
   static final String ERROR_IO = "IO 操作异常 - IOException";
   static final String ERROR_SOCKET = "socket 连接异常 - SocketException";
   static final String ERROR_SOCKE_TIME_OUT = "socket 连接超时 - SocketTimeoutException";

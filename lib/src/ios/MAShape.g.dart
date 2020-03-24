@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAShape extends NSObject with MAAnnotation {
   //region constants
+  static const String name__ = 'MAShape';
+
   
   //endregion
 

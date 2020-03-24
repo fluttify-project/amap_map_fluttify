@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.amap.mapcore.tools.TextTextureGenerator';
+
   static final int CHAR_MAX = 256;
   static final int MIN_DIFF_SIZE = 4;
   //endregion

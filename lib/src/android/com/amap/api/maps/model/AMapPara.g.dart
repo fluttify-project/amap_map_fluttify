@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_AMapPara extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.AMapPara';
+
   static final int DOTTEDLINE_TYPE_DEFAULT = -1;
   static final int DOTTEDLINE_TYPE_SQUARE = 0;
   static final int DOTTEDLINE_TYPE_CIRCLE = 1;

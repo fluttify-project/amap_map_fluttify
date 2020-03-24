@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   //region constants
+  static const String name__ = 'MAParticleOverlayRenderer';
+
   
   //endregion
 

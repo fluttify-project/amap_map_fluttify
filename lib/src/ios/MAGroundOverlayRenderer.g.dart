@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //region constants
+  static const String name__ = 'MAGroundOverlayRenderer';
+
   
   //endregion
 

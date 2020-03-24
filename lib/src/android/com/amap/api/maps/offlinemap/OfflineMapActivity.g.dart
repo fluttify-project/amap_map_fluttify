@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offlineservice_AMapPermissionActivity with android_view_View_OnClickListener {
   //region constants
+  static const String name__ = 'com.amap.api.maps.offlinemap.OfflineMapActivity';
+
   
   //endregion
 

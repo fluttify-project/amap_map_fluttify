@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMapView extends UIView  {
   //region constants
+  static const String name__ = 'MAMapView';
+
   
   //endregion
 
