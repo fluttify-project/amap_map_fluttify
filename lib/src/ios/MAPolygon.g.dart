@@ -42,8 +42,8 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
   //region getters
   Future<List<MAOverlay>> get_hollowShapes() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList();
   }
   
   //endregion
@@ -152,8 +152,8 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
 extension MAPolygon_Batch on List<MAPolygon> {
   //region getters
   Future<List<List<MAOverlay>>> get_hollowShapes_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => MAGroundOverlay()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
@@ -162,7 +162,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
 
   //region setters
   Future<void> set_hollowShapes_batch(List<List<MAOverlay>> hollowShapes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::set_hollowShapes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "hollowShapes": hollowShapes[i].map((it) => it.refId).toList()}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::set_hollowShapes_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "hollowShapes": hollowShapes[__i__].map((it) => it.refId).toList()}]);
   
   
   }
@@ -176,7 +176,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coords": coords[__i__].map((it) => it.refId).toList(), "count": count[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -195,7 +195,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "count": count[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -214,7 +214,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count_batch', [for (int i = 0; i < this.length; i++) {"points": points[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "count": count[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -233,7 +233,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count_batch', [for (int i = 0; i < this.length; i++) {"coords": coords[i].map((it) => it.refId).toList(), "count": count[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coords": coords[__i__].map((it) => it.refId).toList(), "count": count[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

@@ -77,14 +77,14 @@ class MACoordinateRegion extends NSObject  {
 extension MACoordinateRegion_Batch on List<MACoordinateRegion> {
   //region getters
   Future<List<CLLocationCoordinate2D>> get_center_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateRegion::get_center_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateRegion::get_center_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<MACoordinateSpan>> get_span_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateRegion::get_span_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateRegion::get_span_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -94,13 +94,13 @@ extension MACoordinateRegion_Batch on List<MACoordinateRegion> {
 
   //region setters
   Future<void> set_center_batch(List<CLLocationCoordinate2D> center) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "center": center[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_center_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "center": center[__i__].refId}]);
   
   
   }
   
   Future<void> set_span_batch(List<MACoordinateSpan> span) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_span_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "span": span[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegion::set_span_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "span": span[__i__].refId}]);
   
   
   }

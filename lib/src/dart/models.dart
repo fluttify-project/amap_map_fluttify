@@ -535,7 +535,8 @@ class SmoothMoveMarker {
   SmoothMoveMarker.ios(
     this._iosAnnotation,
     this._iosController,
-    this._iosAnimation,
+    this._iosPoints,
+    this._iosSeconds,
   );
 
   com_amap_api_maps_utils_overlay_SmoothMoveMarker _androidModel;
@@ -543,12 +544,22 @@ class SmoothMoveMarker {
   MAAnnotationMoveAnimation _iosAnimation;
   MAAnimatedAnnotation _iosAnnotation;
   MAMapView _iosController;
+  List<CLLocationCoordinate2D> _iosPoints;
+  double _iosSeconds;
 
   Future<void> start() async {
     return platform(
       android: (pool) => _androidModel.startSmoothMove(),
       ios: (pool) async {
-        await _iosController.addAnnotation(_iosAnnotation);
+        _iosAnimation = await _iosAnnotation
+            .addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(
+          _iosPoints,
+          _iosPoints.length,
+          _iosSeconds,
+          'name',
+          (finished) {},
+        );
+//        await _iosController.addAnnotation(_iosAnnotation);
       },
     );
   }

@@ -30,7 +30,7 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
   
     final List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -65,7 +65,7 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
 extension com_autonavi_amap_mapcore_animation_GLEmergeAnimation_Batch on List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> {
   //region getters
   Future<List<com_amap_api_maps_model_LatLng>> get_mStartPoint_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -75,7 +75,7 @@ extension com_autonavi_amap_mapcore_animation_GLEmergeAnimation_Batch on List<co
 
   //region setters
   Future<void> set_mStartPoint_batch(List<com_amap_api_maps_model_LatLng> mStartPoint) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mStartPoint": mStartPoint[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "mStartPoint": mStartPoint[__i__].refId}]);
   
   
   }

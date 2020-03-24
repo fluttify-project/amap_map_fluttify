@@ -1139,21 +1139,16 @@ class AmapController with WidgetsBindingObserver, _Private {
         await annotation.set_coordinate(points[0]);
 
         // 添加动画
-        final animation = await annotation
-            .addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(
-          points,
-          points.length,
-          option.duration.inSeconds.toDouble(),
-          'name',
-          (finished) {},
-        );
         await iosController.addAnnotation(annotation);
 
-        pool
-          ..add(annotation)
-          ..addAll(points);
+        pool..addAll(points);
 
-        return SmoothMoveMarker.ios(annotation, iosController, animation);
+        return SmoothMoveMarker.ios(
+          annotation,
+          iosController,
+          points,
+          option.duration.inSeconds.toDouble(),
+        );
       },
     );
   }

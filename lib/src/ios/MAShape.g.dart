@@ -77,14 +77,14 @@ class MAShape extends NSObject with MAAnnotation {
 extension MAShape_Batch on List<MAShape> {
   //region getters
   Future<List<String>> get_title_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_subtitle_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +94,13 @@ extension MAShape_Batch on List<MAShape> {
 
   //region setters
   Future<void> set_title_batch(List<String> title) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "title": title[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_title_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "title": title[__i__]}]);
   
   
   }
   
   Future<void> set_subtitle_batch(List<String> subtitle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "subtitle": subtitle[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAShape::set_subtitle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "subtitle": subtitle[__i__]}]);
   
   
   }

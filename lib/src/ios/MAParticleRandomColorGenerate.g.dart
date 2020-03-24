@@ -89,7 +89,7 @@ extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGener
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch', [for (int i = 0; i < this.length; i++) {"r1": r1[i], "g1": g1[i], "b1": b1[i], "a1": a1[i], "r2": r2[i], "g2": g2[i], "b2": b2[i], "a2": a2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"r1": r1[__i__], "g1": g1[__i__], "b1": b1[__i__], "a1": a1[__i__], "r2": r2[__i__], "g2": g2[__i__], "b2": b2[__i__], "a2": a2[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

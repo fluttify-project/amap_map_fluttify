@@ -65,7 +65,7 @@ class com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake extends java_lang_Object  
 extension com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake_Batch on List<com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake> {
   //region getters
   Future<List<bool>> get_mIsAborted_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::get_mIsAborted_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::get_mIsAborted_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -75,7 +75,7 @@ extension com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake_Batch on List<com_auto
 
   //region setters
   Future<void> set_mIsAborted_batch(List<bool> mIsAborted) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mIsAborted": mIsAborted[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "mIsAborted": mIsAborted[__i__]}]);
   
   
   }

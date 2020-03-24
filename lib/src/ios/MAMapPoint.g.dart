@@ -77,14 +77,14 @@ class MAMapPoint extends NSObject  {
 extension MAMapPoint_Batch on List<MAMapPoint> {
   //region getters
   Future<List<double>> get_x_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_y_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +94,13 @@ extension MAMapPoint_Batch on List<MAMapPoint> {
 
   //region setters
   Future<void> set_x_batch(List<double> x) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_x_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "x": x[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
   
   
   }
   
   Future<void> set_y_batch(List<double> y) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_y_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "y": y[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPoint::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
   
   
   }

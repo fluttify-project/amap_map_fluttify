@@ -111,7 +111,7 @@ extension com_autonavi_amap_mapcore_MapProjection_Batch on List<com_autonavi_ama
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::lonlat2Geo_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var2": var2[i], "var4": var4[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::lonlat2Geo_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var4": var4[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -130,7 +130,7 @@ extension com_autonavi_amap_mapcore_MapProjection_Batch on List<com_autonavi_ama
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::geo2LonLat_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "var1": var1[i], "var2": var2[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.MapProjection::geo2LonLat_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

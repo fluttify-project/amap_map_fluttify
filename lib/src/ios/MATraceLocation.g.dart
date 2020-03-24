@@ -101,28 +101,28 @@ class MATraceLocation extends NSObject  {
 extension MATraceLocation_Batch on List<MATraceLocation> {
   //region getters
   Future<List<CLLocationCoordinate2D>> get_loc_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_loc_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_loc_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<double>> get_angle_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_angle_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_angle_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_speed_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_speed_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_speed_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_time_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_time_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATraceLocation::get_time_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -132,25 +132,25 @@ extension MATraceLocation_Batch on List<MATraceLocation> {
 
   //region setters
   Future<void> set_loc_batch(List<CLLocationCoordinate2D> loc) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_loc_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "loc": loc[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_loc_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "loc": loc[__i__].refId}]);
   
   
   }
   
   Future<void> set_angle_batch(List<double> angle) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_angle_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "angle": angle[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_angle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "angle": angle[__i__]}]);
   
   
   }
   
   Future<void> set_speed_batch(List<double> speed) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_speed_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "speed": speed[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_speed_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "speed": speed[__i__]}]);
   
   
   }
   
   Future<void> set_time_batch(List<double> time) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_time_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "time": time[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceLocation::set_time_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "time": time[__i__]}]);
   
   
   }

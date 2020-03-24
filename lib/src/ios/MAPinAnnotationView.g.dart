@@ -77,14 +77,14 @@ class MAPinAnnotationView extends MAAnnotationView  {
 extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
   //region getters
   Future<List<MAPinAnnotationColor>> get_pinColor_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_pinColor_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_pinColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MAPinAnnotationColor.values[result]).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_animatesDrop_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_animatesDrop_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_animatesDrop_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +94,13 @@ extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
 
   //region setters
   Future<void> set_pinColor_batch(List<MAPinAnnotationColor> pinColor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "pinColor": pinColor[i].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "pinColor": pinColor[__i__].index}]);
   
   
   }
   
   Future<void> set_animatesDrop_batch(List<bool> animatesDrop) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_animatesDrop_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "animatesDrop": animatesDrop[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_animatesDrop_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "animatesDrop": animatesDrop[__i__]}]);
   
   
   }

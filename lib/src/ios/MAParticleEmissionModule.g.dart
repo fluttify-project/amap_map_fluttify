@@ -89,7 +89,7 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime_batch', [for (int i = 0; i < this.length; i++) {"rate": rate[i], "rateTime": rateTime[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"rate": rate[__i__], "rateTime": rateTime[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

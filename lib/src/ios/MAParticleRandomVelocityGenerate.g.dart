@@ -89,7 +89,7 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int i = 0; i < this.length; i++) {"x1": x1[i], "y1": y1[i], "z1": z1[i], "x2": x2[i], "y2": y2[i], "z2": z2[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x1": x1[__i__], "y1": y1[__i__], "z1": z1[__i__], "x2": x2[__i__], "y2": y2[__i__], "z2": z2[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

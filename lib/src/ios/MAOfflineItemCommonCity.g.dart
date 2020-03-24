@@ -65,7 +65,7 @@ class MAOfflineItemCommonCity extends MAOfflineCity  {
 extension MAOfflineItemCommonCity_Batch on List<MAOfflineItemCommonCity> {
   //region getters
   Future<List<MAOfflineItem>> get_province_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItemCommonCity::get_province_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItemCommonCity::get_province_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MAOfflineItem()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -75,7 +75,7 @@ extension MAOfflineItemCommonCity_Batch on List<MAOfflineItemCommonCity> {
 
   //region setters
   Future<void> set_province_batch(List<MAOfflineItem> province) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineItemCommonCity::set_province_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "province": province[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineItemCommonCity::set_province_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "province": province[__i__].refId}]);
   
   
   }

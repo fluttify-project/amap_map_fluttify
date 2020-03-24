@@ -177,7 +177,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
 extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   //region getters
   Future<List<double>> get_movingDirection_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -187,7 +187,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
 
   //region setters
   Future<void> set_movingDirection_batch(List<double> movingDirection) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "movingDirection": movingDirection[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::set_movingDirection_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "movingDirection": movingDirection[__i__]}]);
   
   
   }
@@ -201,7 +201,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

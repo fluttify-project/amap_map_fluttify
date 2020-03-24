@@ -1156,7 +1156,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineCity* ref = [[MAOfflineCity alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1171,7 +1171,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1186,7 +1186,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPoint* ref = [[MAMultiPoint alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1201,7 +1201,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1216,7 +1216,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1231,7 +1231,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1246,7 +1246,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1261,7 +1261,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1276,7 +1276,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1291,7 +1291,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapStatus* ref = [[MAMapStatus alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1306,7 +1306,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1321,7 +1321,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACircle* ref = [[MACircle alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1336,7 +1336,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAArcRenderer* ref = [[MAArcRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1351,7 +1351,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1366,7 +1366,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolygon* ref = [[MAPolygon alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1381,7 +1381,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1396,7 +1396,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolyline* ref = [[MAPolyline alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1411,7 +1411,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1426,7 +1426,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1441,7 +1441,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1456,7 +1456,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1471,7 +1471,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1486,7 +1486,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItem* ref = [[MAOfflineItem alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1501,7 +1501,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1516,7 +1516,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATouchPoi* ref = [[MATouchPoi alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1531,7 +1531,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1546,7 +1546,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1561,7 +1561,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATraceManager* ref = [[MATraceManager alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1576,7 +1576,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1591,7 +1591,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1606,7 +1606,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1621,7 +1621,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1636,7 +1636,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1651,7 +1651,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAShape* ref = [[MAShape alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1666,7 +1666,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnnotationView* ref = [[MAAnnotationView alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1681,7 +1681,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATileOverlay* ref = [[MATileOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1696,7 +1696,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATileOverlayPath": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATileOverlayPath data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MATileOverlayPath)];
@@ -1713,7 +1713,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1728,7 +1728,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1743,7 +1743,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineMap* ref = [[MAOfflineMap alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1758,7 +1758,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACircleRenderer* ref = [[MACircleRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1773,7 +1773,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1788,7 +1788,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACoordinateBounds": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACoordinateBounds data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateBounds)];
@@ -1805,7 +1805,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACoordinateSpan": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACoordinateSpan data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateSpan)];
@@ -1822,7 +1822,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACoordinateRegion data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateRegion)];
@@ -1839,7 +1839,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapPoint data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapPoint)];
@@ -1856,7 +1856,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapSize data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapSize)];
@@ -1873,7 +1873,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapRect data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapRect)];
@@ -1890,7 +1890,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1905,7 +1905,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1920,7 +1920,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1935,7 +1935,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1950,7 +1950,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1965,7 +1965,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1980,7 +1980,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -1995,7 +1995,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2010,7 +2010,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2025,7 +2025,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2040,7 +2040,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2055,7 +2055,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAUserLocation* ref = [[MAUserLocation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2070,7 +2070,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2085,7 +2085,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2100,7 +2100,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2115,7 +2115,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2130,7 +2130,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATracePoint* ref = [[MATracePoint alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2145,7 +2145,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATraceLocation* ref = [[MATraceLocation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2160,7 +2160,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAArc* ref = [[MAArc alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2175,7 +2175,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2190,7 +2190,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapView* ref = [[MAMapView alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2205,7 +2205,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2220,7 +2220,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2235,7 +2235,7 @@ extern BOOL enableLog;
         @"ObjectFactory::create_batchMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; i++) {
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
@@ -2809,11 +2809,11 @@ extern BOOL enableLog;
             NSArray* polygonRefIdArray = (NSArray*) args[@"polygon"];
             MAMapPoint polygon[polygonRefIdArray.count];
         
-            for (int i = 0; i < polygonRefIdArray.count; i++) {
-                NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < polygonRefIdArray.count; __i__++) {
+                NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:__i__]];
                 MAMapPoint polygonItem;
                 [polygonValue getValue:&polygonItem];
-                polygon[i] = polygonItem;
+                polygon[__i__] = polygonItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -2845,11 +2845,11 @@ extern BOOL enableLog;
             NSArray* polygonRefIdArray = (NSArray*) args[@"polygon"];
             CLLocationCoordinate2D polygon[polygonRefIdArray.count];
         
-            for (int i = 0; i < polygonRefIdArray.count; i++) {
-                NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < polygonRefIdArray.count; __i__++) {
+                NSValue* polygonValue = (NSValue*) HEAP[[polygonRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D polygonItem;
                 [polygonValue getValue:&polygonItem];
-                polygon[i] = polygonItem;
+                polygon[__i__] = polygonItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -2911,11 +2911,11 @@ extern BOOL enableLog;
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
             CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
         
-            for (int i = 0; i < coordinatesRefIdArray.count; i++) {
-                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordinatesRefIdArray.count; __i__++) {
+                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordinatesItem;
                 [coordinatesValue getValue:&coordinatesItem];
-                coordinates[i] = coordinatesItem;
+                coordinates[__i__] = coordinatesItem;
             }
             // jsonable arg
             int count = [args[@"count"] intValue];

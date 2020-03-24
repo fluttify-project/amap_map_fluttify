@@ -138,6 +138,7 @@ export 'com/amap/api/maps/AMapOptions.g.dart';
 export 'com/amap/api/maps/SwipeDismissView.g.dart';
 export 'com/amap/api/maps/WearMapView.g.dart';
 export 'com/amap/api/maps/CoordinateConverter.g.dart';
+export 'com/amap/api/maps/offlinemap/OfflineMapActivity.g.dart';
 export 'com/amap/api/maps/offlinemap/Province.g.dart';
 export 'com/amap/api/maps/offlinemap/OfflineMapStatus.g.dart';
 export 'com/amap/api/maps/offlinemap/DownloadProgressView.g.dart';

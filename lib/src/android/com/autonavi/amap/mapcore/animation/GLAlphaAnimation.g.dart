@@ -30,7 +30,7 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i]}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
     final List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
@@ -89,21 +89,21 @@ class com_autonavi_amap_mapcore_animation_GLAlphaAnimation extends com_autonavi_
 extension com_autonavi_amap_mapcore_animation_GLAlphaAnimation_Batch on List<com_autonavi_amap_mapcore_animation_GLAlphaAnimation> {
   //region getters
   Future<List<double>> get_mFromAlpha_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mFromAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mFromAlpha_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_mToAlpha_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mToAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mToAlpha_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_mCurAlpha_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mCurAlpha_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::get_mCurAlpha_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -113,19 +113,19 @@ extension com_autonavi_amap_mapcore_animation_GLAlphaAnimation_Batch on List<com
 
   //region setters
   Future<void> set_mFromAlpha_batch(List<double> mFromAlpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mFromAlpha": mFromAlpha[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "mFromAlpha": mFromAlpha[__i__]}]);
   
   
   }
   
   Future<void> set_mToAlpha_batch(List<double> mToAlpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mToAlpha": mToAlpha[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "mToAlpha": mToAlpha[__i__]}]);
   
   
   }
   
   Future<void> set_mCurAlpha_batch(List<double> mCurAlpha) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "mCurAlpha": mCurAlpha[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "mCurAlpha": mCurAlpha[__i__]}]);
   
   
   }
