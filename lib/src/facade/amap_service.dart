@@ -319,6 +319,10 @@ class AmapService {
       },
     );
   }
+
+  static Future<void> startOfflineManagerActivity() async {
+    await startActivity(com_amap_api_maps_offlinemap_OfflineMapActivity.name__);
+  }
 }
 
 class _TraceListener extends java_lang_Object

@@ -16,6 +16,7 @@ import 'interact_with_map/screen_shot_screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
+import 'tools/offline_manager_screen.dart';
 import 'tools/processed_trace.screen.dart';
 
 class MapDemo extends StatelessWidget {
@@ -113,6 +114,11 @@ class MapDemo extends StatelessWidget {
               label: "轨迹纠偏",
               sublabel: "ProcessedTraceScreen",
               target: ProcessedTraceScreen(),
+            ),
+            FunctionItem(
+              label: "离线地图",
+              sublabel: "OfflineManagerScreen",
+              target: OfflineManagerScreen(),
             ),
           ],
         ),
