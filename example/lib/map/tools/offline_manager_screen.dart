@@ -14,7 +14,7 @@ class _OfflineManagerScreenState extends State<OfflineManagerScreen> {
       body: Center(
         child: RaisedButton(
           onPressed: () {
-            AmapService.startOfflineManagerActivity();
+            AmapService.openOfflineMapManager();
           },
           child: Text('离线地图管理'),
         ),
