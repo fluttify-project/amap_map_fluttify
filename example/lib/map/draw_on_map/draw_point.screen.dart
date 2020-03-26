@@ -250,18 +250,10 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         duration: Duration(seconds: 10),
                       ),
                     );
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('开始平滑移动')),
-                  onTap: () async {
-                    await _moveMarker?.start();
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('暂停平滑移动')),
-                  onTap: () async {
-                    await _moveMarker?.pause();
+                    Future.delayed(
+                      Duration(seconds: 5),
+                      () => _moveMarker.stop(),
+                    );
                   },
                 ),
               ],
