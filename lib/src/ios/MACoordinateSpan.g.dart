@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MACoordinateSpan extends NSObject  {
   //region constants
+  static const String name__ = 'MACoordinateSpan';
+
   
   //endregion
 
@@ -77,14 +79,14 @@ class MACoordinateSpan extends NSObject  {
 extension MACoordinateSpan_Batch on List<MACoordinateSpan> {
   //region getters
   Future<List<double>> get_latitudeDelta_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_longitudeDelta_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +96,13 @@ extension MACoordinateSpan_Batch on List<MACoordinateSpan> {
 
   //region setters
   Future<void> set_latitudeDelta_batch(List<double> latitudeDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_latitudeDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "latitudeDelta": latitudeDelta[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_latitudeDelta_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "latitudeDelta": latitudeDelta[__i__]}]);
   
   
   }
   
   Future<void> set_longitudeDelta_batch(List<double> longitudeDelta) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_longitudeDelta_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "longitudeDelta": longitudeDelta[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateSpan::set_longitudeDelta_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "longitudeDelta": longitudeDelta[__i__]}]);
   
   
   }

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_VisibleRegionCreator extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.VisibleRegionCreator';
+
   static final int CONTENT_DESCRIPTION = 0;
   //endregion
 

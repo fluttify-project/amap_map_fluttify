@@ -1072,6 +1072,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 根据[options]批量创建Marker
   Future<SmoothMoveMarker> addSmoothMoveMarker(SmoothMoveMarkerOption option) {
     assert(option != null);
+    final latitudeBatch = option.path.map((e) => e.latitude).toList();
+    final longitudeBatch = option.path.map((e) => e.longitude).toList();
     return platform(
       android: (pool) async {
         // 获取地图
@@ -1092,11 +1094,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         await marker.setDescriptor(bitmapDescriptor);
 
         // 动画途经点
-        final points = [
-          for (final latLng in option.path)
-            await com_amap_api_maps_model_LatLng.create__double__double(
-                latLng.latitude, latLng.longitude)
-        ];
+        final points = await com_amap_api_maps_model_LatLng
+            .create_batch__double__double(latitudeBatch, longitudeBatch);
 
         // 设置途经点
         await marker.setPoints(points);
@@ -1121,11 +1120,8 @@ class AmapController with WidgetsBindingObserver, _Private {
         final annotation = await MAAnimatedAnnotation.create__();
 
         // 动画途经点
-        final points = <CLLocationCoordinate2D>[
-          for (final latLng in option.path)
-            await CLLocationCoordinate2D.create(
-                latLng.latitude, latLng.longitude)
-        ];
+        final points = await CLLocationCoordinate2D.create_batch(
+            latitudeBatch, longitudeBatch);
 
         // 设置图片
         // 普通图片
@@ -1155,9 +1151,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
         await iosController.addAnnotation(annotation);
 
-        pool
-          ..add(annotation)
-          ..addAll(points);
+        pool..addAll(points);
 
         return SmoothMoveMarker.ios(animation);
       },

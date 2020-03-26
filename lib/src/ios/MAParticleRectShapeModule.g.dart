@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
+  static const String name__ = 'MAParticleRectShapeModule';
+
   
   //endregion
 
@@ -89,7 +91,7 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int i = 0; i < this.length; i++) {"left": left[i], "top": top[i], "right": right[i], "bottom": bottom[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"left": left[__i__], "top": top[__i__], "right": right[__i__], "bottom": bottom[__i__], "isUseRatio": isUseRatio[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

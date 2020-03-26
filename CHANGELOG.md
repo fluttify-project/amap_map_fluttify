@@ -1,3 +1,6 @@
+## 0.18.3
+- feat: 增加打开离线地图管理器
+
 ## 0.18.2
 - fix: 调用fromScreenLocation后调用Circle.remove方法报错处理
 - fix: ios端回调无效处理

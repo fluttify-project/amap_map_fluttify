@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMapStatus extends NSObject  {
   //region constants
+  static const String name__ = 'MAMapStatus';
+
   
   //endregion
 
@@ -156,35 +158,35 @@ class MAMapStatus extends NSObject  {
 extension MAMapStatus_Batch on List<MAMapStatus> {
   //region getters
   Future<List<CLLocationCoordinate2D>> get_centerCoordinate_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_centerCoordinate_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_centerCoordinate_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<double>> get_zoomLevel_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_zoomLevel_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_zoomLevel_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_rotationDegree_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_rotationDegree_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_rotationDegree_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_cameraDegree_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_cameraDegree_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_cameraDegree_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<CGPoint>> get_screenAnchor_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_screenAnchor_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapStatus::get_screenAnchor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => CGPoint()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -194,31 +196,31 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
 
   //region setters
   Future<void> set_centerCoordinate_batch(List<CLLocationCoordinate2D> centerCoordinate) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_centerCoordinate_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "centerCoordinate": centerCoordinate[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_centerCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "centerCoordinate": centerCoordinate[__i__].refId}]);
   
   
   }
   
   Future<void> set_zoomLevel_batch(List<double> zoomLevel) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_zoomLevel_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "zoomLevel": zoomLevel[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_zoomLevel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "zoomLevel": zoomLevel[__i__]}]);
   
   
   }
   
   Future<void> set_rotationDegree_batch(List<double> rotationDegree) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_rotationDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "rotationDegree": rotationDegree[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_rotationDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "rotationDegree": rotationDegree[__i__]}]);
   
   
   }
   
   Future<void> set_cameraDegree_batch(List<double> cameraDegree) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_cameraDegree_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "cameraDegree": cameraDegree[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_cameraDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "cameraDegree": cameraDegree[__i__]}]);
   
   
   }
   
   Future<void> set_screenAnchor_batch(List<CGPoint> screenAnchor) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_screenAnchor_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "screenAnchor": screenAnchor[i].refId}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::set_screenAnchor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "screenAnchor": screenAnchor[__i__].refId}]);
   
   
   }
@@ -232,7 +234,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "rotationDegree": rotationDegree[i], "cameraDegree": cameraDegree[i], "screenAnchor": screenAnchor[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coordinate": coordinate[__i__].refId, "zoomLevel": zoomLevel[__i__], "rotationDegree": rotationDegree[__i__], "cameraDegree": cameraDegree[__i__], "screenAnchor": screenAnchor[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -251,7 +253,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch', [for (int i = 0; i < this.length; i++) {"coordinate": coordinate[i].refId, "zoomLevel": zoomLevel[i], "rotationDegree": rotationDegree[i], "cameraDegree": cameraDegree[i], "screenAnchor": screenAnchor[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"coordinate": coordinate[__i__].refId, "zoomLevel": zoomLevel[__i__], "rotationDegree": rotationDegree[__i__], "cameraDegree": cameraDegree[__i__], "screenAnchor": screenAnchor[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

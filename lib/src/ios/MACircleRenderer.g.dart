@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MACircleRenderer extends MAOverlayPathRenderer  {
   //region constants
+  static const String name__ = 'MACircleRenderer';
+
   
   //endregion
 
@@ -81,7 +83,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
 extension MACircleRenderer_Batch on List<MACircleRenderer> {
   //region getters
   Future<List<MACircle>> get_circle_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircleRenderer::get_circle_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircleRenderer::get_circle_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MACircle()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -100,7 +102,7 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int i = 0; i < this.length; i++) {"circle": circle[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"circle": circle[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

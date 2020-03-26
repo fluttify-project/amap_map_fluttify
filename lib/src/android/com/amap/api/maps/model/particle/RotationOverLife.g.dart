@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_RotationOverLife extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.RotationOverLife';
+
   
   //endregion
 
@@ -71,7 +73,7 @@ extension com_amap_api_maps_model_particle_RotationOverLife_Batch on List<com_am
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RotationOverLife::getRotate_batch', [for (int i = 0; i < this.length; i++) {"refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.RotationOverLife::getRotate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

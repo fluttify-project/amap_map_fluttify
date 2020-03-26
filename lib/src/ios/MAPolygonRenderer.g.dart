@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //region constants
+  static const String name__ = 'MAPolygonRenderer';
+
   
   //endregion
 
@@ -81,7 +83,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
 extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
   //region getters
   Future<List<MAPolygon>> get_polygon_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygonRenderer::get_polygon_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygonRenderer::get_polygon_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -100,7 +102,7 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int i = 0; i < this.length; i++) {"polygon": polygon[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"polygon": polygon[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

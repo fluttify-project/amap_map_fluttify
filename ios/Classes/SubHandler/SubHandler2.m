@@ -17,8 +17,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -44,8 +44,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -73,8 +73,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -100,8 +100,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didTouchPois_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -109,8 +109,8 @@ extern BOOL enableLog;
                 // list arg
                 NSArray<NSNumber*>* poisRefArray = (NSArray<NSNumber*> *) args[@"pois"];
                 NSMutableArray<NSArray*>* pois = [NSMutableArray arrayWithCapacity:poisRefArray.count];
-                for (int i = 0; i < poisRefArray.count; i++) {
-                    NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:i]];
+                for (int __i__ = 0; __i__ < poisRefArray.count; __i__++) {
+                    NSArray* item = (NSArray*) HEAP[[poisRefArray objectAtIndex:__i__]];
                     [pois addObject:item];
                 }
         
@@ -132,8 +132,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didSingleTappedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -161,8 +161,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didLongPressedAtCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -190,8 +190,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapInitComplete_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -215,8 +215,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didIndoorMapShowed_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -242,8 +242,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -269,8 +269,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::mapView_didIndoorMapHidden_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -296,8 +296,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::offlineDataWillReload_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -321,8 +321,8 @@ extern BOOL enableLog;
         @"MAMapViewDelegate::offlineDataDidReload_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -346,8 +346,8 @@ extern BOOL enableLog;
         @"MAGroundOverlayRenderer::initWithGroundOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -372,8 +372,8 @@ extern BOOL enableLog;
         @"MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
-            for (int i = 0; i < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; i++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:i];
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
                 // ref arg
@@ -705,8 +705,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -746,8 +746,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -994,8 +994,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -1225,8 +1225,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -1286,8 +1286,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -1404,8 +1404,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -1445,8 +1445,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -1909,8 +1909,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -2606,8 +2606,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -2629,8 +2629,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -2671,8 +2671,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -2712,8 +2712,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -3491,8 +3491,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -3625,8 +3625,8 @@ extern BOOL enableLog;
         
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }

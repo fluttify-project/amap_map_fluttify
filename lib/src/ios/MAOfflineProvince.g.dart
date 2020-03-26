@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAOfflineProvince extends MAOfflineItem  {
   //region constants
+  static const String name__ = 'MAOfflineProvince';
+
   
   //endregion
 
@@ -42,8 +44,8 @@ class MAOfflineProvince extends MAOfflineItem  {
   //region getters
   Future<List> get_cities() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineProvince::get_cities", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList());
+    return (result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList();
   }
   
   //endregion
@@ -60,8 +62,8 @@ class MAOfflineProvince extends MAOfflineItem  {
 extension MAOfflineProvince_Batch on List<MAOfflineProvince> {
   //region getters
   Future<List<List>> get_cities_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineProvince::get_cities_batch", [for (final item in this) {'refId': item.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => NSObject()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineProvince::get_cities_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }

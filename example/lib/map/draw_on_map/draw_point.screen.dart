@@ -21,6 +21,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
   AmapController _controller;
   List<Marker> _markers = [];
   Marker _hiddenMarker;
+  SmoothMoveMarker _moveMarker;
 
   @override
   Widget build(BuildContext context) {
@@ -241,7 +242,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ListTile(
                   title: Center(child: Text('添加平滑移动点')),
                   onTap: () async {
-                    final moveMarker = await _controller?.addSmoothMoveMarker(
+                    _moveMarker = await _controller?.addSmoothMoveMarker(
                       SmoothMoveMarkerOption(
                         path: [for (int i = 0; i < 10; i++) getNextLatLng()],
                         iconUri: _assetsIcon1,
@@ -251,7 +252,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     );
                     Future.delayed(
                       Duration(seconds: 5),
-                      () => moveMarker.stop(),
+                      () => _moveMarker.stop(),
                     );
                   },
                 ),

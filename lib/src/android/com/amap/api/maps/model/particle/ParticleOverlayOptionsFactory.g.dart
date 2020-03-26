@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory';
+
   static final int PARTICLE_TYPE_SUNNY = 0;
   static final int PARTICLE_TYPE_RAIN = 1;
   static final int PARTICLE_TYPE_SNOWY = 2;
@@ -68,8 +70,8 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory extends jav
     if (result == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList());
-      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__..tag = 'amap_map_fluttify').toList());
+      return (result as List).cast<int>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__..tag = 'amap_map_fluttify').toList();
     }
   }
   
@@ -92,14 +94,14 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory_Batch o
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch', [for (int i = 0; i < this.length; i++) {"var0": var0[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((it) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = it..tag = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
       kNativeObjectPool.addAll(typedResult.expand((e) => e));
       return typedResult;
     }

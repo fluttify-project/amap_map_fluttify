@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ConstantRotationOverLife extends com_amap_api_maps_model_particle_RotationOverLife  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.ConstantRotationOverLife';
+
   
   //endregion
 
@@ -30,7 +32,7 @@ class com_amap_api_maps_model_particle_ConstantRotationOverLife extends com_amap
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ConstantRotationOverLife__float', [for (int i = 0; i < var1.length; i++) {"var1": var1[i]}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ConstantRotationOverLife__float', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
     final List<com_amap_api_maps_model_particle_ConstantRotationOverLife> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

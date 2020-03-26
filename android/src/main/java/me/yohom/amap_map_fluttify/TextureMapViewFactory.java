@@ -84,7 +84,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // convert result to jsonable result
             Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = result.hashCode();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
         

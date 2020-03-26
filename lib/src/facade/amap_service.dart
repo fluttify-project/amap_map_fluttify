@@ -319,6 +319,19 @@ class AmapService {
       },
     );
   }
+
+  /// 打开离线地图管理器
+  static Future<void> openOfflineMapManager() async {
+    platform(
+      android: (pool) async {
+        await startActivity(
+            com_amap_api_maps_offlinemap_OfflineMapActivity.name__);
+      },
+      ios: (pool) async {
+        await presentViewController("MAOfflineMapViewController");
+      },
+    );
+  }
 }
 
 class _TraceListener extends java_lang_Object

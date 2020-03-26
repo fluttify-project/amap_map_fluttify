@@ -152,8 +152,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
             NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
-            for (int i = 0; i < colorsRefArray.count; i++) {
-                UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < colorsRefArray.count; __i__++) {
+                UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:__i__]];
                 [colors addObject:item];
             }
             // jsonable arg
@@ -463,11 +463,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -496,11 +496,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 MAMapPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -529,11 +529,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 MAMapPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSInteger count = [args[@"count"] longValue];
@@ -561,11 +561,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSInteger count = [args[@"count"] longValue];
@@ -638,11 +638,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 MAMapPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -671,11 +671,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -704,11 +704,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             MAMapPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 MAMapPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSInteger count = [args[@"count"] longValue];
@@ -736,11 +736,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSInteger count = [args[@"count"] longValue];
@@ -791,11 +791,11 @@ extern BOOL enableLog;
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
             CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
         
-            for (int i = 0; i < coordinatesRefIdArray.count; i++) {
-                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordinatesRefIdArray.count; __i__++) {
+                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordinatesItem;
                 [coordinatesValue getValue:&coordinatesItem];
-                coordinates[i] = coordinatesItem;
+                coordinates[__i__] = coordinatesItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -845,11 +845,11 @@ extern BOOL enableLog;
             NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
             CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
         
-            for (int i = 0; i < coordinatesRefIdArray.count; i++) {
-                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordinatesRefIdArray.count; __i__++) {
+                NSValue* coordinatesValue = (NSValue*) HEAP[[coordinatesRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordinatesItem;
                 [coordinatesValue getValue:&coordinatesItem];
-                coordinates[i] = coordinatesItem;
+                coordinates[__i__] = coordinatesItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -1006,15 +1006,15 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
             NSMutableArray<CLLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
-            for (int i = 0; i < locationsRefArray.count; i++) {
-                CLLocation* item = (CLLocation*) HEAP[[locationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < locationsRefArray.count; __i__++) {
+                CLLocation* item = (CLLocation*) HEAP[[locationsRefArray objectAtIndex:__i__]];
                 [locations addObject:item];
             }
             // list arg
             NSArray<NSNumber*>* tracePointsRefArray = (NSArray<NSNumber*> *) args[@"tracePoints"];
             NSMutableArray<MATracePoint*>* tracePoints = [NSMutableArray arrayWithCapacity:tracePointsRefArray.count];
-            for (int i = 0; i < tracePointsRefArray.count; i++) {
-                MATracePoint* item = (MATracePoint*) HEAP[[tracePointsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < tracePointsRefArray.count; __i__++) {
+                MATracePoint* item = (MATracePoint*) HEAP[[tracePointsRefArray objectAtIndex:__i__]];
                 [tracePoints addObject:item];
             }
             // jsonable arg
@@ -1088,8 +1088,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
             NSMutableArray<MATraceLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
-            for (int i = 0; i < locationsRefArray.count; i++) {
-                MATraceLocation* item = (MATraceLocation*) HEAP[[locationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < locationsRefArray.count; __i__++) {
+                MATraceLocation* item = (MATraceLocation*) HEAP[[locationsRefArray objectAtIndex:__i__]];
                 [locations addObject:item];
             }
             // enum arg
@@ -1122,10 +1122,10 @@ extern BOOL enableLog;
                 NSNumber* argindex = @(index);
                 // list callback arg
                 NSMutableArray<NSNumber*>* argpoints = [NSMutableArray arrayWithCapacity:points.count];
-                for (int i = 0; i < points.count; i++) {
-                    NSObject* item = ((NSObject*) [points objectAtIndex:i]);
+                for (int __i__ = 0; __i__ < points.count; __i__++) {
+                    NSObject* item = ((NSObject*) [points objectAtIndex:__i__]);
                     // return to dart side data
-                    argpoints[i] = @(item.hash);
+                    argpoints[__i__] = @(item.hash);
                     // add to HEAP
                     HEAP[@(item.hash)] = item;
                 }
@@ -1145,10 +1145,10 @@ extern BOOL enableLog;
                 // 构造可以直接传输的参数
                 // list callback arg
                 NSMutableArray<NSNumber*>* argpoints = [NSMutableArray arrayWithCapacity:points.count];
-                for (int i = 0; i < points.count; i++) {
-                    NSObject* item = ((NSObject*) [points objectAtIndex:i]);
+                for (int __i__ = 0; __i__ < points.count; __i__++) {
+                    NSObject* item = ((NSObject*) [points objectAtIndex:__i__]);
                     // return to dart side data
-                    argpoints[i] = @(item.hash);
+                    argpoints[__i__] = @(item.hash);
                     // add to HEAP
                     HEAP[@(item.hash)] = item;
                 }
@@ -2627,11 +2627,11 @@ extern BOOL enableLog;
             NSArray* mapPointsRefIdArray = (NSArray*) args[@"mapPoints"];
             MAMapPoint mapPoints[mapPointsRefIdArray.count];
         
-            for (int i = 0; i < mapPointsRefIdArray.count; i++) {
-                NSValue* mapPointsValue = (NSValue*) HEAP[[mapPointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < mapPointsRefIdArray.count; __i__++) {
+                NSValue* mapPointsValue = (NSValue*) HEAP[[mapPointsRefIdArray objectAtIndex:__i__]];
                 MAMapPoint mapPointsItem;
                 [mapPointsValue getValue:&mapPointsItem];
-                mapPoints[i] = mapPointsItem;
+                mapPoints[__i__] = mapPointsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -2683,11 +2683,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
@@ -2721,11 +2721,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
@@ -2765,11 +2765,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
@@ -2778,15 +2778,15 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* textureIDsRefArray = (NSArray<NSNumber*> *) args[@"textureIDs"];
             NSMutableArray<NSArray*>* textureIDs = [NSMutableArray arrayWithCapacity:textureIDsRefArray.count];
-            for (int i = 0; i < textureIDsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[textureIDsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < textureIDsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[textureIDsRefArray objectAtIndex:__i__]];
                 [textureIDs addObject:item];
             }
             // list arg
             NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
             NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-            for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < drawStyleIndexesRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:__i__]];
                 [drawStyleIndexes addObject:item];
             }
             // jsonable arg
@@ -2815,26 +2815,26 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
             // list arg
             NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
             NSMutableArray<NSArray*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
-            for (int i = 0; i < strokeColorsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[strokeColorsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
                 [strokeColors addObject:item];
             }
             // list arg
             NSArray<NSNumber*>* drawStyleIndexesRefArray = (NSArray<NSNumber*> *) args[@"drawStyleIndexes"];
             NSMutableArray<NSArray*>* drawStyleIndexes = [NSMutableArray arrayWithCapacity:drawStyleIndexesRefArray.count];
-            for (int i = 0; i < drawStyleIndexesRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < drawStyleIndexesRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[drawStyleIndexesRefArray objectAtIndex:__i__]];
                 [drawStyleIndexes addObject:item];
             }
             // jsonable arg
@@ -2873,11 +2873,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
@@ -2909,11 +2909,11 @@ extern BOOL enableLog;
             NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
             CGPoint points[pointsRefIdArray.count];
         
-            for (int i = 0; i < pointsRefIdArray.count; i++) {
-                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
+                NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
                 CGPoint pointsItem;
                 [pointsValue getValue:&pointsItem];
-                points[i] = pointsItem;
+                points[__i__] = pointsItem;
             }
             // jsonable arg
             NSUInteger pointCount = [args[@"pointCount"] unsignedIntegerValue];
@@ -2994,8 +2994,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* itemsRefArray = (NSArray<NSNumber*> *) args[@"items"];
             NSMutableArray<MAMultiPointItem*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
-            for (int i = 0; i < itemsRefArray.count; i++) {
-                MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < itemsRefArray.count; __i__++) {
+                MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:__i__]];
                 [items addObject:item];
             }
         
@@ -3023,11 +3023,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -3056,11 +3056,11 @@ extern BOOL enableLog;
             NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
             CLLocationCoordinate2D coords[coordsRefIdArray.count];
         
-            for (int i = 0; i < coordsRefIdArray.count; i++) {
-                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
+                NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
                 CLLocationCoordinate2D coordsItem;
                 [coordsValue getValue:&coordsItem];
-                coords[i] = coordsItem;
+                coords[__i__] = coordsItem;
             }
             // jsonable arg
             NSUInteger count = [args[@"count"] unsignedIntegerValue];
@@ -3878,8 +3878,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
             NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-            for (int i = 0; i < annotationsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
                 [annotations addObject:item];
             }
         
@@ -3927,8 +3927,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
             NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-            for (int i = 0; i < annotationsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
                 [annotations addObject:item];
             }
         
@@ -4048,8 +4048,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
             NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-            for (int i = 0; i < annotationsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
                 [annotations addObject:item];
             }
             // jsonable arg
@@ -4077,8 +4077,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* annotationsRefArray = (NSArray<NSNumber*> *) args[@"annotations"];
             NSMutableArray<NSArray*>* annotations = [NSMutableArray arrayWithCapacity:annotationsRefArray.count];
-            for (int i = 0; i < annotationsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < annotationsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[annotationsRefArray objectAtIndex:__i__]];
                 [annotations addObject:item];
             }
             // struct arg
@@ -4170,8 +4170,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 列表
             NSMutableArray* jsonableResult = [NSMutableArray array];
-            for (int i = 0; i < result.count; i++) {
-                NSObject* object = [result objectAtIndex:i];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
                 [jsonableResult addObject: @(object.hash)];
                 HEAP[@([object hash])] = object;
             }
@@ -4205,8 +4205,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
             NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-            for (int i = 0; i < overlaysRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
                 [overlays addObject:item];
             }
         
@@ -4256,8 +4256,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
             NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-            for (int i = 0; i < overlaysRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
                 [overlays addObject:item];
             }
             // enum arg
@@ -4307,8 +4307,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
             NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-            for (int i = 0; i < overlaysRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
                 [overlays addObject:item];
             }
         
@@ -4529,8 +4529,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
             NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-            for (int i = 0; i < overlaysRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
                 [overlays addObject:item];
             }
             // jsonable arg
@@ -4558,8 +4558,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlaysRefArray = (NSArray<NSNumber*> *) args[@"overlays"];
             NSMutableArray<NSArray*>* overlays = [NSMutableArray arrayWithCapacity:overlaysRefArray.count];
-            for (int i = 0; i < overlaysRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlaysRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlaysRefArray objectAtIndex:__i__]];
                 [overlays addObject:item];
             }
             // struct arg
@@ -4941,8 +4941,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* viewsRefArray = (NSArray<NSNumber*> *) args[@"views"];
             NSMutableArray<NSArray*>* views = [NSMutableArray arrayWithCapacity:viewsRefArray.count];
-            for (int i = 0; i < viewsRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[viewsRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < viewsRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[viewsRefArray objectAtIndex:__i__]];
                 [views addObject:item];
             }
         
@@ -5187,8 +5187,8 @@ extern BOOL enableLog;
             // list arg
             NSArray<NSNumber*>* overlayRenderersRefArray = (NSArray<NSNumber*> *) args[@"overlayRenderers"];
             NSMutableArray<NSArray*>* overlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderersRefArray.count];
-            for (int i = 0; i < overlayRenderersRefArray.count; i++) {
-                NSArray* item = (NSArray*) HEAP[[overlayRenderersRefArray objectAtIndex:i]];
+            for (int __i__ = 0; __i__ < overlayRenderersRefArray.count; __i__++) {
+                NSArray* item = (NSArray*) HEAP[[overlayRenderersRefArray objectAtIndex:__i__]];
                 [overlayRenderers addObject:item];
             }
         

@@ -65,8 +65,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mKeyName = (String) ((Map<String, Object>) args).get("mKeyName");
@@ -81,8 +81,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long mCreateTime = (long) (int) ((Map<String, Object>) args).get("mCreateTime");
@@ -97,8 +97,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String name = (String) ((Map<String, Object>) args).get("name");
@@ -113,8 +113,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String poiid = (String) ((Map<String, Object>) args).get("poiid");
@@ -129,8 +129,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_angle_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int angle = (int) ((Map<String, Object>) args).get("angle");
@@ -145,8 +145,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int strWidth = (int) ((Map<String, Object>) args).get("strWidth");
@@ -161,8 +161,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strHeight_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int strHeight = (int) ((Map<String, Object>) args).get("strHeight");
@@ -177,8 +177,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_iconID_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int iconID = (int) ((Map<String, Object>) args).get("iconID");
@@ -193,8 +193,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labelx_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int labelx = (int) ((Map<String, Object>) args).get("labelx");
@@ -209,8 +209,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labely_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int labely = (int) ((Map<String, Object>) args).get("labely");
@@ -225,8 +225,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20X_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pixel20X = (int) ((Map<String, Object>) args).get("pixel20X");
@@ -241,8 +241,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Y_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pixel20Y = (int) ((Map<String, Object>) args).get("pixel20Y");
@@ -257,8 +257,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Z_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pixel20Z = (int) ((Map<String, Object>) args).get("pixel20Z");
@@ -273,8 +273,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int fontColor = (int) ((Map<String, Object>) args).get("fontColor");
@@ -289,8 +289,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_borderColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int borderColor = (int) ((Map<String, Object>) args).get("borderColor");
@@ -305,8 +305,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_type_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int type = (int) ((Map<String, Object>) args).get("type");
@@ -321,8 +321,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_anchor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int anchor = (int) ((Map<String, Object>) args).get("anchor");
@@ -337,8 +337,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontSize_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int fontSize = (int) ((Map<String, Object>) args).get("fontSize");
@@ -353,8 +353,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mSublayerId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mSublayerId = (int) ((Map<String, Object>) args).get("mSublayerId");
@@ -369,8 +369,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mIsFouces_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean mIsFouces = (boolean) ((Map<String, Object>) args).get("mIsFouces");
@@ -385,8 +385,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_timeStamp_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int timeStamp = (int) ((Map<String, Object>) args).get("timeStamp");
@@ -401,8 +401,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean needMove = (boolean) ((Map<String, Object>) args).get("needMove");
@@ -417,8 +417,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double fromXValue = (double) ((Map<String, Object>) args).get("fromXValue");
@@ -433,8 +433,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double toXValue = (double) ((Map<String, Object>) args).get("toXValue");
@@ -449,8 +449,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double fromYValue = (double) ((Map<String, Object>) args).get("fromYValue");
@@ -465,8 +465,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double toYValue = (double) ((Map<String, Object>) args).get("toYValue");
@@ -481,8 +481,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleItem::set_mainKey_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mainKey = (int) ((Map<String, Object>) args).get("mainKey");
@@ -497,8 +497,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleItem::set_subKey_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int[] subKey = (int[]) ((Map<String, Object>) args).get("subKey");
@@ -513,8 +513,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_styleElementType_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int styleElementType = (int) ((Map<String, Object>) args).get("styleElementType");
@@ -529,8 +529,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_value_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int value = (int) ((Map<String, Object>) args).get("value");
@@ -545,8 +545,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_textureId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int textureId = (int) ((Map<String, Object>) args).get("textureId");
@@ -561,8 +561,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_opacity_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double opacity = (Double) ((Map<String, Object>) args).get("opacity");
@@ -577,8 +577,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_lineWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int lineWidth = (int) ((Map<String, Object>) args).get("lineWidth");
@@ -593,8 +593,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.style.StyleElement::set_visible_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int visible = (int) ((Map<String, Object>) args).get("visible");
@@ -609,8 +609,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int engineId = (int) ((Map<String, Object>) args).get("engineId");
@@ -625,8 +625,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_width_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int width = (int) ((Map<String, Object>) args).get("width");
@@ -641,8 +641,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_height_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int height = (int) ((Map<String, Object>) args).get("height");
@@ -657,8 +657,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int screenWidth = (int) ((Map<String, Object>) args).get("screenWidth");
@@ -673,8 +673,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenHeight_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int screenHeight = (int) ((Map<String, Object>) args).get("screenHeight");
@@ -689,8 +689,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double screenScale = (Double) ((Map<String, Object>) args).get("screenScale");
@@ -705,8 +705,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double textScale = (Double) ((Map<String, Object>) args).get("textScale");
@@ -721,8 +721,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mapZoomScale = (Double) ((Map<String, Object>) args).get("mapZoomScale");
@@ -737,8 +737,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mGestureState = (int) ((Map<String, Object>) args).get("mGestureState");
@@ -753,8 +753,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mGestureType = (int) ((Map<String, Object>) args).get("mGestureType");
@@ -769,8 +769,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     float[] mLocation = (float[]) ((Map<String, Object>) args).get("mLocation");
@@ -785,8 +785,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mScale = (Double) ((Map<String, Object>) args).get("mScale");
@@ -801,8 +801,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mRotation = (Double) ((Map<String, Object>) args).get("mRotation");
@@ -817,8 +817,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mVeLocityFloat = (Double) ((Map<String, Object>) args).get("mVeLocityFloat");
@@ -833,8 +833,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     float[] mVelocityPoint = (float[]) ((Map<String, Object>) args).get("mVelocityPoint");
@@ -849,8 +849,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mId = (int) ((Map<String, Object>) args).get("mId");
@@ -865,8 +865,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     android.graphics.Bitmap mBitmap = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) args).get("mBitmap"));
@@ -881,8 +881,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     byte[] mPngBuffer = (byte[]) ((Map<String, Object>) args).get("mPngBuffer");
@@ -897,8 +897,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
@@ -913,8 +913,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mXRatio = (Double) ((Map<String, Object>) args).get("mXRatio");
@@ -929,8 +929,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mYRatio = (Double) ((Map<String, Object>) args).get("mYRatio");
@@ -945,8 +945,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isGenMimps = (boolean) ((Map<String, Object>) args).get("isGenMimps");
@@ -961,8 +961,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isRepeat = (boolean) ((Map<String, Object>) args).get("isRepeat");
@@ -977,8 +977,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long mOverlayHashCode = (long) (int) ((Map<String, Object>) args).get("mOverlayHashCode");
@@ -993,8 +993,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long mHitedIndex = (long) (int) ((Map<String, Object>) args).get("mHitedIndex");
@@ -1009,8 +1009,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long mHitedTimes = (long) (int) ((Map<String, Object>) args).get("mHitedTimes");
@@ -1025,8 +1025,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int stAreaColor = (int) ((Map<String, Object>) args).get("stAreaColor");
@@ -1041,8 +1041,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int stArrowBorderColor = (int) ((Map<String, Object>) args).get("stArrowBorderColor");
@@ -1057,8 +1057,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int fArrowBorderWidth = (int) ((Map<String, Object>) args).get("fArrowBorderWidth");
@@ -1073,8 +1073,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int fArrowLineWidth = (int) ((Map<String, Object>) args).get("fArrowLineWidth");
@@ -1089,8 +1089,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int stArrowLineColor = (int) ((Map<String, Object>) args).get("stArrowLineColor");
@@ -1105,8 +1105,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean dayMode = (boolean) ((Map<String, Object>) args).get("dayMode");
@@ -1121,8 +1121,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // enum arg
                     com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture euRouteTexture = com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture.values()[(int) ((Map<String, Object>) args).get("euRouteTexture")];
@@ -1137,8 +1137,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mFilledResId = (int) ((Map<String, Object>) args).get("mFilledResId");
@@ -1153,8 +1153,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DFillResId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mSimple3DFillResId = (int) ((Map<String, Object>) args).get("mSimple3DFillResId");
@@ -1169,8 +1169,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mFilledColor = (int) ((Map<String, Object>) args).get("mFilledColor");
@@ -1185,8 +1185,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgResId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mBgResId = (int) ((Map<String, Object>) args).get("mBgResId");
@@ -1201,8 +1201,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mBgColor = (int) ((Map<String, Object>) args).get("mBgColor");
@@ -1217,8 +1217,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mLineWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mLineWidth = (int) ((Map<String, Object>) args).get("mLineWidth");
@@ -1233,8 +1233,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBorderLineWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mBorderLineWidth = (int) ((Map<String, Object>) args).get("mBorderLineWidth");
@@ -1249,8 +1249,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mX1 = (Double) ((Map<String, Object>) args).get("mX1");
@@ -1265,8 +1265,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mY1 = (Double) ((Map<String, Object>) args).get("mY1");
@@ -1281,8 +1281,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mX2 = (Double) ((Map<String, Object>) args).get("mX2");
@@ -1297,8 +1297,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mY2 = (Double) ((Map<String, Object>) args).get("mY2");
@@ -1313,8 +1313,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mGLStart = (Double) ((Map<String, Object>) args).get("mGLStart");
@@ -1329,8 +1329,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mTextureLen = (Double) ((Map<String, Object>) args).get("mTextureLen");
@@ -1345,8 +1345,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DX1 = (Double) ((Map<String, Object>) args).get("mSimple3DX1");
@@ -1361,8 +1361,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DY1 = (Double) ((Map<String, Object>) args).get("mSimple3DY1");
@@ -1377,8 +1377,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DX2 = (Double) ((Map<String, Object>) args).get("mSimple3DX2");
@@ -1393,8 +1393,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DY2 = (Double) ((Map<String, Object>) args).get("mSimple3DY2");
@@ -1409,8 +1409,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DGLStart = (Double) ((Map<String, Object>) args).get("mSimple3DGLStart");
@@ -1425,8 +1425,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mSimple3DTextureLen = (Double) ((Map<String, Object>) args).get("mSimple3DTextureLen");
@@ -1441,8 +1441,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mCapX1 = (Double) ((Map<String, Object>) args).get("mCapX1");
@@ -1457,8 +1457,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mCapY1 = (Double) ((Map<String, Object>) args).get("mCapY1");
@@ -1473,8 +1473,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mCapX2 = (Double) ((Map<String, Object>) args).get("mCapX2");
@@ -1489,8 +1489,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mCapY2 = (Double) ((Map<String, Object>) args).get("mCapY2");
@@ -1505,8 +1505,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isLineExtract = (boolean) ((Map<String, Object>) args).get("isLineExtract");
@@ -1521,8 +1521,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isCanCovered_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isCanCovered = (boolean) ((Map<String, Object>) args).get("isCanCovered");
@@ -1537,8 +1537,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseColor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isUseColor = (boolean) ((Map<String, Object>) args).get("isUseColor");
@@ -1553,8 +1553,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseCap_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isUseCap = (boolean) ((Map<String, Object>) args).get("isUseCap");
@@ -1569,8 +1569,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mShowArrow_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean mShowArrow = (boolean) ((Map<String, Object>) args).get("mShowArrow");
@@ -1585,8 +1585,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean mbTexPreMulAlpha = (boolean) ((Map<String, Object>) args).get("mbTexPreMulAlpha");
@@ -1601,8 +1601,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mResId = (int) ((Map<String, Object>) args).get("mResId");
@@ -1617,8 +1617,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mWidth = (int) ((Map<String, Object>) args).get("mWidth");
@@ -1633,8 +1633,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mHeight_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mHeight = (int) ((Map<String, Object>) args).get("mHeight");
@@ -1649,8 +1649,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResWidth_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mResWidth = (int) ((Map<String, Object>) args).get("mResWidth");
@@ -1665,8 +1665,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResHeight_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mResHeight = (int) ((Map<String, Object>) args).get("mResHeight");
@@ -1681,8 +1681,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mAnchorXRatio = (Double) ((Map<String, Object>) args).get("mAnchorXRatio");
@@ -1697,8 +1697,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mAnchorYRatio = (Double) ((Map<String, Object>) args).get("mAnchorYRatio");
@@ -1713,8 +1713,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
@@ -1729,8 +1729,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mRootPath_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mRootPath = (String) ((Map<String, Object>) args).get("mRootPath");
@@ -1745,8 +1745,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigPath_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mConfigPath = (String) ((Map<String, Object>) args).get("mConfigPath");
@@ -1761,8 +1761,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigContent_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mConfigContent = (String) ((Map<String, Object>) args).get("mConfigContent");
@@ -1777,8 +1777,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mOfflineDataPath_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mOfflineDataPath = (String) ((Map<String, Object>) args).get("mOfflineDataPath");
@@ -1793,8 +1793,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mP3dCrossPath_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String mP3dCrossPath = (String) ((Map<String, Object>) args).get("mP3dCrossPath");
@@ -1809,8 +1809,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String requestUrl = (String) ((Map<String, Object>) args).get("requestUrl");
@@ -1825,8 +1825,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long handler = (long) (int) ((Map<String, Object>) args).get("handler");
@@ -1841,8 +1841,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int nRequestType = (int) ((Map<String, Object>) args).get("nRequestType");
@@ -1857,8 +1857,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     byte[] enCodeString = (byte[]) ((Map<String, Object>) args).get("enCodeString");
@@ -1873,8 +1873,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nCompress_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int nCompress = (int) ((Map<String, Object>) args).get("nCompress");
@@ -1889,8 +1889,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String requestBaseUrl = (String) ((Map<String, Object>) args).get("requestBaseUrl");
@@ -1905,8 +1905,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isFinish = (boolean) ((Map<String, Object>) args).get("isFinish");
@@ -1921,8 +1921,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean mIsAborted = (boolean) ((Map<String, Object>) args).get("mIsAborted");
@@ -1937,8 +1937,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mFromXDelta = (double) ((Map<String, Object>) args).get("mFromXDelta");
@@ -1953,8 +1953,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mFromYDelta = (double) ((Map<String, Object>) args).get("mFromYDelta");
@@ -1969,8 +1969,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mToXDelta = (double) ((Map<String, Object>) args).get("mToXDelta");
@@ -1985,8 +1985,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mToYDelta = (double) ((Map<String, Object>) args).get("mToYDelta");
@@ -2001,8 +2001,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mCurXDelta = (double) ((Map<String, Object>) args).get("mCurXDelta");
@@ -2017,8 +2017,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double mCurYDelta = (double) ((Map<String, Object>) args).get("mCurYDelta");
@@ -2033,8 +2033,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mFromAlpha = (Double) ((Map<String, Object>) args).get("mFromAlpha");
@@ -2049,8 +2049,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mToAlpha = (Double) ((Map<String, Object>) args).get("mToAlpha");
@@ -2065,8 +2065,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double mCurAlpha = (Double) ((Map<String, Object>) args).get("mCurAlpha");
@@ -2081,8 +2081,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double alpha = (double) ((Map<String, Object>) args).get("alpha");
@@ -2097,8 +2097,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double rotate = (double) ((Map<String, Object>) args).get("rotate");
@@ -2113,8 +2113,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double scaleX = (double) ((Map<String, Object>) args).get("scaleX");
@@ -2129,8 +2129,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     double scaleY = (double) ((Map<String, Object>) args).get("scaleY");
@@ -2145,8 +2145,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     com.amap.api.maps.model.LatLng mStartPoint = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("mStartPoint"));
@@ -2161,8 +2161,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double maxZoomLevel = (Double) ((Map<String, Object>) args).get("maxZoomLevel");
@@ -2177,8 +2177,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double minZoomLevel = (Double) ((Map<String, Object>) args).get("minZoomLevel");
@@ -2193,8 +2193,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
@@ -2209,8 +2209,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double touchDeltaX = (Double) ((Map<String, Object>) args).get("touchDeltaX");
@@ -2225,8 +2225,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double touchDeltaY = (Double) ((Map<String, Object>) args).get("touchDeltaY");
@@ -2241,8 +2241,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double scaleDelta = (Double) ((Map<String, Object>) args).get("scaleDelta");
@@ -2257,8 +2257,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
@@ -2273,8 +2273,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
@@ -2289,8 +2289,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int width = (int) ((Map<String, Object>) args).get("width");
@@ -2305,8 +2305,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int height = (int) ((Map<String, Object>) args).get("height");
@@ -2321,8 +2321,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isGestureScaleByMapCenter = (boolean) ((Map<String, Object>) args).get("isGestureScaleByMapCenter");
@@ -2337,8 +2337,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isUseAnchor = (boolean) ((Map<String, Object>) args).get("isUseAnchor");
@@ -2353,8 +2353,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int anchorX = (int) ((Map<String, Object>) args).get("anchorX");
@@ -2369,8 +2369,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int anchorY = (int) ((Map<String, Object>) args).get("anchorY");
@@ -2385,8 +2385,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
@@ -2401,8 +2401,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
@@ -2417,8 +2417,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
@@ -2433,8 +2433,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.Rectangle::set_left_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double left = (Double) ((Map<String, Object>) args).get("left");
@@ -2449,8 +2449,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.Rectangle::set_right_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double right = (Double) ((Map<String, Object>) args).get("right");
@@ -2465,8 +2465,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.Rectangle::set_bottom_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double bottom = (Double) ((Map<String, Object>) args).get("bottom");
@@ -2481,8 +2481,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.Rectangle::set_top_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double top = (Double) ((Map<String, Object>) args).get("top");
@@ -2497,8 +2497,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.FPoint3::set_colorIndex_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int colorIndex = (int) ((Map<String, Object>) args).get("colorIndex");
@@ -2513,8 +2513,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // enum arg
                     com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type nowType = com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type.values()[(int) ((Map<String, Object>) args).get("nowType")];
@@ -2529,8 +2529,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double xPixel = (Double) ((Map<String, Object>) args).get("xPixel");
@@ -2545,8 +2545,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double yPixel = (Double) ((Map<String, Object>) args).get("yPixel");
@@ -2561,8 +2561,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double amount = (Double) ((Map<String, Object>) args).get("amount");
@@ -2577,8 +2577,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_cameraPosition_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     com.amap.api.maps.model.CameraPosition cameraPosition = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) ((Map<String, Object>) args).get("cameraPosition"));
@@ -2593,8 +2593,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bounds_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     com.amap.api.maps.model.LatLngBounds bounds = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("bounds"));
@@ -2609,8 +2609,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_focus_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     android.graphics.Point focus = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("focus"));
@@ -2625,8 +2625,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double zoom = (Double) ((Map<String, Object>) args).get("zoom");
@@ -2641,8 +2641,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double tilt = (Double) ((Map<String, Object>) args).get("tilt");
@@ -2657,8 +2657,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     Double bearing = (Double) ((Map<String, Object>) args).get("bearing");
@@ -2673,8 +2673,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_geoPoint_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     android.graphics.Point geoPoint = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("geoPoint"));
@@ -2689,8 +2689,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isUseAnchor_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isUseAnchor = (boolean) ((Map<String, Object>) args).get("isUseAnchor");
@@ -2705,8 +2705,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorX_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int anchorX = (int) ((Map<String, Object>) args).get("anchorX");
@@ -2721,8 +2721,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_anchorY_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int anchorY = (int) ((Map<String, Object>) args).get("anchorY");
@@ -2737,8 +2737,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isChangeFinished_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     boolean isChangeFinished = (boolean) ((Map<String, Object>) args).get("isChangeFinished");
@@ -2753,8 +2753,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     com.autonavi.amap.mapcore.MapConfig mapConfig = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) ((Map<String, Object>) args).get("mapConfig"));
@@ -2769,8 +2769,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int paddingLeft = (int) ((Map<String, Object>) args).get("paddingLeft");
@@ -2785,8 +2785,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingRight_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int paddingRight = (int) ((Map<String, Object>) args).get("paddingRight");
@@ -2801,8 +2801,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingTop_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int paddingTop = (int) ((Map<String, Object>) args).get("paddingTop");
@@ -2817,8 +2817,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingBottom_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int paddingBottom = (int) ((Map<String, Object>) args).get("paddingBottom");
@@ -2833,8 +2833,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     long mDuration = (long) (int) ((Map<String, Object>) args).get("mDuration");
@@ -2849,8 +2849,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_width_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int width = (int) ((Map<String, Object>) args).get("width");
@@ -2865,8 +2865,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_height_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int height = (int) ((Map<String, Object>) args).get("height");
@@ -2881,8 +2881,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.animation.Animation::set_glAnimation_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref arg
                     com.autonavi.amap.mapcore.animation.GLAnimation glAnimation = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get((int) ((Map<String, Object>) args).get("glAnimation"));
@@ -2897,8 +2897,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorName_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String activeFloorName = (String) ((Map<String, Object>) args).get("activeFloorName");
@@ -2913,8 +2913,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_activeFloorIndex_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int activeFloorIndex = (int) ((Map<String, Object>) args).get("activeFloorIndex");
@@ -2929,8 +2929,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_poiid_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     String poiid = (String) ((Map<String, Object>) args).get("poiid");
@@ -2945,8 +2945,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     int[] floor_indexs = (int[]) ((Map<String, Object>) args).get("floor_indexs");
@@ -2961,8 +2961,8 @@ public class SubHandler3 {
             });
             // setter batch
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names_batch", (argsBatch, methodResult) -> {
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
                     List<String> floor_names = (List<String>) ((Map<String, Object>) args).get("floor_names");
@@ -3005,7 +3005,7 @@ public class SubHandler3 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = System.identityHashCode(result);
                     getHEAP().put(jsonableResult, result);
                 }
             
@@ -3220,7 +3220,7 @@ public class SubHandler3 {
                 // convert result to jsonable result
                 Integer jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = result.hashCode();
+                    jsonableResult = System.identityHashCode(result);
                     getHEAP().put(jsonableResult, result);
                 }
             

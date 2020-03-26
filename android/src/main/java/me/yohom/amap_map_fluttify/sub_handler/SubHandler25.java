@@ -31,6 +31,175 @@ public class SubHandler25 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr();
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation2V__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglAnimation2V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation2V(var1);
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues obj = new com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues();
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglMapAnimFling obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimFling(var1, var2, var3);
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglAnimation1V__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglAnimation1V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1);
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1);
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V();
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // create target object
+                com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1);
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (args, methodResult) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__");
@@ -41,14 +210,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int", (args, methodResult) -> {
@@ -62,14 +231,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.style.StyleItem obj = new com.autonavi.ae.gmap.style.StyleItem(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__", (args, methodResult) -> {
@@ -82,14 +251,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.style.StyleElement obj = new com.autonavi.ae.gmap.style.StyleElement();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__", (args, methodResult) -> {
@@ -102,14 +271,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam obj = new com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (args, methodResult) -> {
@@ -122,14 +291,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo obj = new com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long", (args, methodResult) -> {
@@ -145,14 +314,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long", (args, methodResult) -> {
@@ -168,14 +337,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (args, methodResult) -> {
@@ -188,14 +357,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty obj = new com.autonavi.ae.gmap.gloverlay.GLTextureProperty();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (args, methodResult) -> {
@@ -208,14 +377,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (args, methodResult) -> {
@@ -228,14 +397,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr obj = new com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (args, methodResult) -> {
@@ -248,14 +417,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty obj = new com.autonavi.ae.gmap.gloverlay.GLRouteProperty();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (args, methodResult) -> {
@@ -275,14 +444,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3, var4);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (args, methodResult) -> {
@@ -306,14 +475,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue(), var5, var6);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__", (args, methodResult) -> {
@@ -326,14 +495,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.ae.gmap.GLMapEngine.InitParam obj = new com.autonavi.ae.gmap.GLMapEngine.InitParam();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__", (args, methodResult) -> {
@@ -346,14 +515,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__", (args, methodResult) -> {
@@ -366,14 +535,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.maploader.NetworkState obj = new com.autonavi.amap.mapcore.maploader.NetworkState();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (args, methodResult) -> {
@@ -391,14 +560,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest(var1, var2, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (args, methodResult) -> {
@@ -416,14 +585,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.maploader.AMapLoader obj = new com.autonavi.amap.mapcore.maploader.AMapLoader(var1, var2, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__", (args, methodResult) -> {
@@ -436,14 +605,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.MapProjection obj = new com.autonavi.amap.mapcore.MapProjection();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__", (args, methodResult) -> {
@@ -456,14 +625,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.tools.TextTextureGenerator obj = new com.autonavi.amap.mapcore.tools.TextTextureGenerator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__", (args, methodResult) -> {
@@ -476,14 +645,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.tools.GLFileUtil obj = new com.autonavi.amap.mapcore.tools.GLFileUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__", (args, methodResult) -> {
@@ -496,14 +665,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.tools.GlMapUtil obj = new com.autonavi.amap.mapcore.tools.GlMapUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__", (args, methodResult) -> {
@@ -516,14 +685,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.tools.GLMapStaticValue obj = new com.autonavi.amap.mapcore.tools.GLMapStaticValue();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__", (args, methodResult) -> {
@@ -536,14 +705,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.tools.GLConvertUtil obj = new com.autonavi.amap.mapcore.tools.GLConvertUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__", (args, methodResult) -> {
@@ -556,14 +725,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.MsgProcessor obj = new com.autonavi.amap.mapcore.MsgProcessor();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__", (args, methodResult) -> {
@@ -576,14 +745,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake obj = new com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__", (args, methodResult) -> {
@@ -596,14 +765,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AbstractNativeInstance obj = new com.autonavi.amap.mapcore.AbstractNativeInstance();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__", (args, methodResult) -> {
@@ -616,14 +785,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.LinkInfo obj = new com.autonavi.amap.mapcore.LinkInfo();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__", (args, methodResult) -> {
@@ -636,14 +805,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapNativePolyline obj = new com.autonavi.amap.mapcore.AMapNativePolyline();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__", (args, methodResult) -> {
@@ -656,14 +825,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int", (args, methodResult) -> {
@@ -679,14 +848,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (args, methodResult) -> {
@@ -699,14 +868,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager obj = new com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__", (args, methodResult) -> {
@@ -719,14 +888,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double", (args, methodResult) -> {
@@ -742,14 +911,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint(var1, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__", (args, methodResult) -> {
@@ -762,14 +931,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapNativeRenderer obj = new com.autonavi.amap.mapcore.AMapNativeRenderer();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__", (args, methodResult) -> {
@@ -782,14 +951,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FileUtil obj = new com.autonavi.amap.mapcore.FileUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -803,14 +972,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation obj = new com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (args, methodResult) -> {
@@ -832,14 +1001,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLRotateAnimation obj = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (args, methodResult) -> {
@@ -855,14 +1024,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLAlphaAnimation obj = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (args, methodResult) -> {
@@ -882,14 +1051,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLScaleAnimation obj = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__", (args, methodResult) -> {
@@ -902,14 +1071,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLTransformation obj = new com.autonavi.amap.mapcore.animation.GLTransformation();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (args, methodResult) -> {
@@ -923,14 +1092,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLAnimationSet obj = new com.autonavi.amap.mapcore.animation.GLAnimationSet(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -944,14 +1113,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLEmergeAnimation obj = new com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__", (args, methodResult) -> {
@@ -964,14 +1133,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.animation.GLAnimation obj = new com.autonavi.amap.mapcore.animation.GLAnimation();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean", (args, methodResult) -> {
@@ -985,14 +1154,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.MapConfig obj = new com.autonavi.amap.mapcore.MapConfig(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (args, methodResult) -> {
@@ -1008,14 +1177,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (args, methodResult) -> {
@@ -1033,14 +1202,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (args, methodResult) -> {
@@ -1060,14 +1229,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (args, methodResult) -> {
@@ -1087,14 +1256,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
@@ -1110,14 +1279,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPointBounds obj = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__", (args, methodResult) -> {
@@ -1130,14 +1299,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.CoordUtil obj = new com.autonavi.amap.mapcore.CoordUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__", (args, methodResult) -> {
@@ -1150,14 +1319,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AeUtil obj = new com.autonavi.amap.mapcore.AeUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__", (args, methodResult) -> {
@@ -1170,14 +1339,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.VirtualEarthProjection obj = new com.autonavi.amap.mapcore.VirtualEarthProjection();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__", (args, methodResult) -> {
@@ -1190,14 +1359,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (args, methodResult) -> {
@@ -1217,14 +1386,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (args, methodResult) -> {
@@ -1238,14 +1407,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (args, methodResult) -> {
@@ -1259,14 +1428,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__", (args, methodResult) -> {
@@ -1279,14 +1448,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapEngineUtils obj = new com.autonavi.amap.mapcore.AMapEngineUtils();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__", (args, methodResult) -> {
@@ -1299,14 +1468,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (args, methodResult) -> {
@@ -1324,14 +1493,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__", (args, methodResult) -> {
@@ -1344,14 +1513,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapEtaDecoder obj = new com.autonavi.amap.mapcore.AMapEtaDecoder();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__", (args, methodResult) -> {
@@ -1364,14 +1533,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPointBounds.Builder obj = new com.autonavi.amap.mapcore.FPointBounds.Builder();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__", (args, methodResult) -> {
@@ -1384,14 +1553,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Inner_3dMap_locationOption obj = new com.autonavi.amap.mapcore.Inner_3dMap_locationOption();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__", (args, methodResult) -> {
@@ -1404,14 +1573,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float", (args, methodResult) -> {
@@ -1427,14 +1596,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__", (args, methodResult) -> {
@@ -1447,14 +1616,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapNativeParticleSystem obj = new com.autonavi.amap.mapcore.AMapNativeParticleSystem();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__", (args, methodResult) -> {
@@ -1467,14 +1636,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.AMapNativeBuildingRenderer obj = new com.autonavi.amap.mapcore.AMapNativeBuildingRenderer();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_autonavi_amap_mapcore_Convert__", (args, methodResult) -> {
@@ -1487,14 +1656,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.autonavi.amap.mapcore.Convert obj = new com.autonavi.amap.mapcore.Convert();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (args, methodResult) -> {
@@ -1507,14 +1676,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.offlineservice.AMapPermissionActivity obj = new com.amap.api.offlineservice.AMapPermissionActivity();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (args, methodResult) -> {
@@ -1527,14 +1696,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.InfoWindowParams obj = new com.amap.api.maps.InfoWindowParams();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (args, methodResult) -> {
@@ -1547,14 +1716,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.CameraUpdateFactory obj = new com.amap.api.maps.CameraUpdateFactory();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (args, methodResult) -> {
@@ -1568,14 +1737,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapException__", (args, methodResult) -> {
@@ -1588,14 +1757,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (args, methodResult) -> {
@@ -1608,14 +1777,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.AMapOptions obj = new com.amap.api.maps.AMapOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (args, methodResult) -> {
@@ -1628,14 +1797,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.AMapOptionsCreator obj = new com.amap.api.maps.AMapOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (args, methodResult) -> {
@@ -1649,14 +1818,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.CoordinateConverter obj = new com.amap.api.maps.CoordinateConverter(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (args, methodResult) -> {
@@ -1669,14 +1838,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.utils.SpatialRelationUtil obj = new com.amap.api.maps.utils.SpatialRelationUtil();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (args, methodResult) -> {
@@ -1692,14 +1861,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.utils.overlay.MovingPointOverlay obj = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (args, methodResult) -> {
@@ -1713,14 +1882,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.utils.overlay.SmoothMoveMarker obj = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (args, methodResult) -> {
@@ -1734,14 +1903,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.SwipeDismissCallBack obj = new com.amap.api.maps.SwipeDismissCallBack(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (args, methodResult) -> {
@@ -1757,14 +1926,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.SwipeDismissView obj = new com.amap.api.maps.SwipeDismissView(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (args, methodResult) -> {
@@ -1777,14 +1946,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.MapsInitializer obj = new com.amap.api.maps.MapsInitializer();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (args, methodResult) -> {
@@ -1797,14 +1966,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapStatus obj = new com.amap.api.maps.offlinemap.OfflineMapStatus();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (args, methodResult) -> {
@@ -1817,14 +1986,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapProvince obj = new com.amap.api.maps.offlinemap.OfflineMapProvince();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (args, methodResult) -> {
@@ -1838,14 +2007,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.DownloadProgressView obj = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (args, methodResult) -> {
@@ -1858,14 +2027,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.Province obj = new com.amap.api.maps.offlinemap.Province();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (args, methodResult) -> {
@@ -1878,14 +2047,34 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.OfflineMapCity obj = new com.amap.api.maps.offlinemap.OfflineMapCity();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
+            });
+            // factory
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (args, methodResult) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapActivity__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.amap.api.maps.offlinemap.OfflineMapActivity obj = new com.amap.api.maps.offlinemap.OfflineMapActivity();
+                getHEAP().put(System.identityHashCode(obj), obj);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (args, methodResult) -> {
@@ -1898,14 +2087,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.offlinemap.City obj = new com.amap.api.maps.offlinemap.City();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (args, methodResult) -> {
@@ -1918,14 +2107,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonHoleOptions obj = new com.amap.api.maps.model.PolygonHoleOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (args, methodResult) -> {
@@ -1938,14 +2127,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TileOverlayOptionsCreator obj = new com.amap.api.maps.model.TileOverlayOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (args, methodResult) -> {
@@ -1963,14 +2152,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.Poi obj = new com.amap.api.maps.model.Poi(var1, var2, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (args, methodResult) -> {
@@ -1983,14 +2172,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MyLocationStyle obj = new com.amap.api.maps.model.MyLocationStyle();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (args, methodResult) -> {
@@ -2012,14 +2201,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.VisibleRegion obj = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (args, methodResult) -> {
@@ -2032,14 +2221,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngCreator obj = new com.amap.api.maps.model.LatLngCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (args, methodResult) -> {
@@ -2052,14 +2241,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CircleHoleOptions obj = new com.amap.api.maps.model.CircleHoleOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (args, methodResult) -> {
@@ -2072,14 +2261,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngBounds.Builder obj = new com.amap.api.maps.model.LatLngBounds.Builder();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (args, methodResult) -> {
@@ -2092,14 +2281,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.NavigateArrowOptions obj = new com.amap.api.maps.model.NavigateArrowOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (args, methodResult) -> {
@@ -2112,14 +2301,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.BitmapDescriptorFactory obj = new com.amap.api.maps.model.BitmapDescriptorFactory();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (args, methodResult) -> {
@@ -2132,14 +2321,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MultiPointOverlayOptions obj = new com.amap.api.maps.model.MultiPointOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (args, methodResult) -> {
@@ -2152,14 +2341,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PoiCreator obj = new com.amap.api.maps.model.PoiCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (args, methodResult) -> {
@@ -2172,14 +2361,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PolylineOptions obj = new com.amap.api.maps.model.PolylineOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (args, methodResult) -> {
@@ -2197,14 +2386,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.Tile obj = new com.amap.api.maps.model.Tile(var1, var2, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (args, methodResult) -> {
@@ -2220,14 +2409,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.Gradient obj = new com.amap.api.maps.model.Gradient(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (args, methodResult) -> {
@@ -2240,14 +2429,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.NaviPara obj = new com.amap.api.maps.model.NaviPara();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (args, methodResult) -> {
@@ -2260,14 +2449,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.GroundOverlayOptions obj = new com.amap.api.maps.model.GroundOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (args, methodResult) -> {
@@ -2280,14 +2469,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.GL3DModelOptions obj = new com.amap.api.maps.model.GL3DModelOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (args, methodResult) -> {
@@ -2300,14 +2489,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MyTrafficStyle obj = new com.amap.api.maps.model.MyTrafficStyle();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (args, methodResult) -> {
@@ -2327,14 +2516,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CameraPosition obj = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (args, methodResult) -> {
@@ -2347,14 +2536,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TextOptionsCreator obj = new com.amap.api.maps.model.TextOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (args, methodResult) -> {
@@ -2367,14 +2556,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PoiPara obj = new com.amap.api.maps.model.PoiPara();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (args, methodResult) -> {
@@ -2387,14 +2576,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MarkerOptions obj = new com.amap.api.maps.model.MarkerOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (args, methodResult) -> {
@@ -2408,14 +2597,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.AnimationSet obj = new com.amap.api.maps.model.animation.AnimationSet(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (args, methodResult) -> {
@@ -2437,14 +2626,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (args, methodResult) -> {
@@ -2460,14 +2649,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -2481,14 +2670,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.TranslateAnimation obj = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -2502,14 +2691,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.EmergeAnimation obj = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (args, methodResult) -> {
@@ -2525,14 +2714,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.AlphaAnimation obj = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (args, methodResult) -> {
@@ -2552,14 +2741,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.animation.ScaleAnimation obj = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -2575,14 +2764,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngBounds obj = new com.amap.api.maps.model.LatLngBounds(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (args, methodResult) -> {
@@ -2595,14 +2784,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CustomMapStyleOptions obj = new com.amap.api.maps.model.CustomMapStyleOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (args, methodResult) -> {
@@ -2615,14 +2804,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.BuildingOverlayOptions obj = new com.amap.api.maps.model.BuildingOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (args, methodResult) -> {
@@ -2635,14 +2824,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CrossOverlayOptions obj = new com.amap.api.maps.model.CrossOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (args, methodResult) -> {
@@ -2655,14 +2844,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.VisibleRegionCreator obj = new com.amap.api.maps.model.VisibleRegionCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
@@ -2678,14 +2867,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (args, methodResult) -> {
@@ -2703,14 +2892,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3, var5);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (args, methodResult) -> {
@@ -2734,14 +2923,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TileProjection obj = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (args, methodResult) -> {
@@ -2754,14 +2943,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.AMapPara obj = new com.amap.api.maps.model.AMapPara();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (args, methodResult) -> {
@@ -2774,14 +2963,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CircleOptionsCreator obj = new com.amap.api.maps.model.CircleOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (args, methodResult) -> {
@@ -2805,14 +2994,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.AMapCameraInfo obj = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (args, methodResult) -> {
@@ -2825,14 +3014,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonOptions obj = new com.amap.api.maps.model.PolygonOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (args, methodResult) -> {
@@ -2848,14 +3037,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -2869,14 +3058,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (args, methodResult) -> {
@@ -2889,14 +3078,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MyLocationStyleCreator obj = new com.amap.api.maps.model.MyLocationStyleCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (args, methodResult) -> {
@@ -2909,14 +3098,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MarkerOptionsCreator obj = new com.amap.api.maps.model.MarkerOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -2930,14 +3119,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.MultiPointItem obj = new com.amap.api.maps.model.MultiPointItem(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (args, methodResult) -> {
@@ -2950,14 +3139,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.LatLngBoundsCreator obj = new com.amap.api.maps.model.LatLngBoundsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (args, methodResult) -> {
@@ -2970,14 +3159,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.ArcOptions obj = new com.amap.api.maps.model.ArcOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (args, methodResult) -> {
@@ -2990,14 +3179,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.BitmapDescriptorCreator obj = new com.amap.api.maps.model.BitmapDescriptorCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (args, methodResult) -> {
@@ -3010,14 +3199,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CircleOptions obj = new com.amap.api.maps.model.CircleOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (args, methodResult) -> {
@@ -3030,14 +3219,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.NavigateArrowOptionsCreator obj = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (args, methodResult) -> {
@@ -3051,14 +3240,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.RuntimeRemoteException obj = new com.amap.api.maps.model.RuntimeRemoteException(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (args, methodResult) -> {
@@ -3071,14 +3260,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.HeatmapTileProvider.Builder obj = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (args, methodResult) -> {
@@ -3091,14 +3280,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.BaseOptions obj = new com.amap.api.maps.model.BaseOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (args, methodResult) -> {
@@ -3111,14 +3300,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PolylineOptionsCreator obj = new com.amap.api.maps.model.PolylineOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__", (args, methodResult) -> {
@@ -3131,14 +3320,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.BaseOverlay obj = new com.amap.api.maps.model.BaseOverlay();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (args, methodResult) -> {
@@ -3151,14 +3340,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TileOverlayOptions obj = new com.amap.api.maps.model.TileOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (args, methodResult) -> {
@@ -3171,14 +3360,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.RoutePara obj = new com.amap.api.maps.model.RoutePara();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (args, methodResult) -> {
@@ -3191,14 +3380,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.ArcOptionsCreator obj = new com.amap.api.maps.model.ArcOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (args, methodResult) -> {
@@ -3211,14 +3400,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.CameraPositionCreator obj = new com.amap.api.maps.model.CameraPositionCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__", (args, methodResult) -> {
@@ -3231,14 +3420,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverLifeModule obj = new com.amap.api.maps.model.particle.ParticleOverLifeModule();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (args, methodResult) -> {
@@ -3252,14 +3441,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ConstantRotationOverLife obj = new com.amap.api.maps.model.particle.ConstantRotationOverLife(new Double(var1).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (args, methodResult) -> {
@@ -3279,14 +3468,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (args, methodResult) -> {
@@ -3304,14 +3493,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (args, methodResult) -> {
@@ -3335,14 +3524,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants obj = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (args, methodResult) -> {
@@ -3360,14 +3549,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.CurveSizeOverLife obj = new com.amap.api.maps.model.particle.CurveSizeOverLife(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (args, methodResult) -> {
@@ -3383,14 +3572,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleEmissionModule obj = new com.amap.api.maps.model.particle.ParticleEmissionModule(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (args, methodResult) -> {
@@ -3412,14 +3601,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.RectParticleShape obj = new com.amap.api.maps.model.particle.RectParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), var5);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (args, methodResult) -> {
@@ -3447,14 +3636,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants obj = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (args, methodResult) -> {
@@ -3467,14 +3656,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory obj = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (args, methodResult) -> {
@@ -3487,14 +3676,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverlayOptions obj = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (args, methodResult) -> {
@@ -3507,14 +3696,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TextOptions obj = new com.amap.api.maps.model.TextOptions();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (args, methodResult) -> {
@@ -3527,14 +3716,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.PolygonOptionsCreator obj = new com.amap.api.maps.model.PolygonOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (args, methodResult) -> {
@@ -3547,14 +3736,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.TileProjectionCreator obj = new com.amap.api.maps.model.TileProjectionCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (args, methodResult) -> {
@@ -3567,14 +3756,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.GroundOverlayOptionsCreator obj = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (args, methodResult) -> {
@@ -3587,14 +3776,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.model.IndoorBuildingInfo obj = new com.amap.api.maps.model.IndoorBuildingInfo();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (args, methodResult) -> {
@@ -3608,14 +3797,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
@@ -3631,14 +3820,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (args, methodResult) -> {
@@ -3651,14 +3840,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.AMapUtils obj = new com.amap.api.maps.AMapUtils();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (args, methodResult) -> {
@@ -3672,14 +3861,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
@@ -3695,14 +3884,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (args, methodResult) -> {
@@ -3716,14 +3905,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
@@ -3739,14 +3928,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1, var2);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (args, methodResult) -> {
@@ -3768,14 +3957,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (args, methodResult) -> {
@@ -3788,14 +3977,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation();
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (args, methodResult) -> {
@@ -3809,14 +3998,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.trace.LBSTraceClient obj = new com.amap.api.trace.LBSTraceClient(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
@@ -3836,14 +4025,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1, new ArrayList(var2));
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (args, methodResult) -> {
@@ -3857,14 +4046,14 @@ public class SubHandler25 {
             
                 // create target object
                 com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1);
-                getHEAP().put(obj.hashCode(), obj);
+                getHEAP().put(System.identityHashCode(obj), obj);
             
                 // print current HEAP
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(obj.hashCode());
+                methodResult.success(System.identityHashCode(obj));
             });
             // factory
             put("ObjectFactory::create_batchcom_autonavi_ae_gmap_maploader_ProcessingTile__String", (argsBatch, methodResult) -> {
@@ -3881,11 +4070,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -3894,14 +4083,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.maploader.ProcessingTile obj = new com.autonavi.ae.gmap.maploader.ProcessingTile(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3921,11 +4110,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -3933,14 +4122,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glinterface.MapLabelItem obj = new com.autonavi.ae.gmap.glinterface.MapLabelItem();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3960,11 +4149,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -3972,14 +4161,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -3999,11 +4188,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4012,14 +4201,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglAnimation2V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation2V(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4039,11 +4228,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4051,14 +4240,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues obj = new com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4078,11 +4267,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4095,14 +4284,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimFling obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimFling(var1, var2, var3);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4122,11 +4311,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4135,14 +4324,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglAnimation1V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4162,11 +4351,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4175,14 +4364,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4202,11 +4391,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4214,14 +4403,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4241,11 +4430,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4254,14 +4443,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4281,11 +4470,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4293,14 +4482,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4320,11 +4509,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4333,14 +4522,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.style.StyleItem obj = new com.autonavi.ae.gmap.style.StyleItem(var1);
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4360,11 +4549,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4372,14 +4561,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.style.StyleElement obj = new com.autonavi.ae.gmap.style.StyleElement();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
@@ -4399,11 +4588,11 @@ public class SubHandler25 {
                     length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                for (int i = 0; i < length; i++) {
+                for (int __i__ = 0; __i__ < length; __i__++) {
                     Map<String, Object> args = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
                     if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
                     // args
@@ -4411,389 +4600,14 @@ public class SubHandler25 {
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam obj = new com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam();
-                    getHEAP().put(obj.hashCode(), obj);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
                     // print current HEAP
                     if (getEnableLog()) {
                         Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo obj = new com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo();
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__int__long", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
-            
-                    // create target object
-                    com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var2);
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__long__long", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    long var3 = (long) (int) ((Map<String, Object>) args).get("var3");
-            
-                    // create target object
-                    com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var3);
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty obj = new com.autonavi.ae.gmap.gloverlay.GLTextureProperty();
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits();
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr obj = new com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr();
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty obj = new com.autonavi.ae.gmap.gloverlay.GLRouteProperty();
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3, var4);
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
-                }
-            
-                methodResult.success(resultList);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                int length = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    length = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int i = 0; i < length; i++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(i);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
-                    // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
-                    // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
-            
-                    // create target object
-                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue(), var5, var6);
-                    getHEAP().put(obj.hashCode(), obj);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    resultList.add(obj.hashCode());
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);

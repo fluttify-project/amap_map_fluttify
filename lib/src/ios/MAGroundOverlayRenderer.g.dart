@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //region constants
+  static const String name__ = 'MAGroundOverlayRenderer';
+
   
   //endregion
 
@@ -81,7 +83,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
 extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
   //region getters
   Future<List<MAGroundOverlay>> get_groundOverlay_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
@@ -100,7 +102,7 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay_batch', [for (int i = 0; i < this.length; i++) {"groundOverlay": groundOverlay[i].refId, "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"groundOverlay": groundOverlay[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

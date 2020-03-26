@@ -13,7 +13,6 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
-import 'list.x.dart';
 import 'models.dart';
 
 part 'amap_controller.dart';
@@ -232,7 +231,7 @@ class _AmapViewState extends State<AmapView> {
   Future<com_amap_api_maps_AMapOptions> _androidOptions() async {
     final option = await com_amap_api_maps_AMapOptions.create__();
     if (widget.mapType != null) {
-      await option.mapType(widget.mapType.index);
+      await option.mapType(widget.mapType.index + 1);
     }
     if (widget.showZoomControl != null) {
       await option.zoomControlsEnabled(widget.showZoomControl);

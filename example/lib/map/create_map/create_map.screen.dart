@@ -22,6 +22,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
           Flexible(
             flex: 1,
             child: AmapView(
+              mapType: MapType.Satellite,
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {

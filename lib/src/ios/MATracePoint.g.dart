@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MATracePoint extends NSObject with NSCoding {
   //region constants
+  static const String name__ = 'MATracePoint';
+
   
   //endregion
 
@@ -77,14 +79,14 @@ class MATracePoint extends NSObject with NSCoding {
 extension MATracePoint_Batch on List<MATracePoint> {
   //region getters
   Future<List<double>> get_latitude_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_longitude_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_longitude_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_longitude_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => result).toList();
   
     return typedResult;
@@ -94,13 +96,13 @@ extension MATracePoint_Batch on List<MATracePoint> {
 
   //region setters
   Future<void> set_latitude_batch(List<double> latitude) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_latitude_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "latitude": latitude[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_latitude_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "latitude": latitude[__i__]}]);
   
   
   }
   
   Future<void> set_longitude_batch(List<double> longitude) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_longitude_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "longitude": longitude[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATracePoint::set_longitude_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "longitude": longitude[__i__]}]);
   
   
   }

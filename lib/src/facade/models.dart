@@ -532,15 +532,15 @@ class Marker {
 class SmoothMoveMarker {
   SmoothMoveMarker.android(this._androidModel);
 
-  SmoothMoveMarker.ios(this._iosModel);
+  SmoothMoveMarker.ios(this._iosAnimation);
 
   com_amap_api_maps_utils_overlay_SmoothMoveMarker _androidModel;
-  MAAnnotationMoveAnimation _iosModel;
+  MAAnnotationMoveAnimation _iosAnimation;
 
   Future<void> stop() async {
     return platform(
       android: (pool) => _androidModel.stopMove(),
-      ios: (pool) => _iosModel.cancel(),
+      ios: (pool) => _iosAnimation.cancel(),
     );
   }
 }

@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
+  static const String name__ = 'MAParticleSinglePointShapeModule';
+
   
   //endregion
 
@@ -89,7 +91,7 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch', [for (int i = 0; i < this.length; i++) {"x": x[i], "y": y[i], "z": z[i], "isUseRatio": isUseRatio[i], "refId": this[i].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX_Y_Z_useRatio_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"x": x[__i__], "y": y[__i__], "z": z[__i__], "isUseRatio": isUseRatio[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

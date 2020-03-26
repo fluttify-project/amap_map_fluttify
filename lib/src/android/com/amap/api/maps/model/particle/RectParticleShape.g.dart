@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_particle_RectParticleShape extends com_amap_api_maps_model_particle_ParticleShapeModule  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.particle.RectParticleShape';
+
   
   //endregion
 
@@ -30,7 +32,7 @@ class com_amap_api_maps_model_particle_RectParticleShape extends com_amap_api_ma
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean', [for (int i = 0; i < var1.length; i++) {"var1": var1[i], "var2": var2[i], "var3": var3[i], "var4": var4[i], "var5": var5[i]}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__]}]);
   
     final List<com_amap_api_maps_model_particle_RectParticleShape> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_RectParticleShape()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

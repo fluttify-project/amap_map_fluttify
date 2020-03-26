@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_model_animation_EmergeAnimation extends com_amap_api_maps_model_animation_Animation  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.model.animation.EmergeAnimation';
+
   
   //endregion
 
@@ -30,7 +32,7 @@ class com_amap_api_maps_model_animation_EmergeAnimation extends com_amap_api_map
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng', [for (int i = 0; i < var1.length; i++) {"var1": var1[i].refId}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
   
     final List<com_amap_api_maps_model_animation_EmergeAnimation> typedResult = resultBatch.map((result) => com_amap_api_maps_model_animation_EmergeAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

@@ -34,8 +34,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.CameraPosition::get_isAbroad_batch", (argsBatch, methodResult) -> {
                 List<Boolean> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
@@ -53,8 +53,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.animation.Animation::get_glAnimation_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) args.get("refId"));
@@ -63,7 +63,7 @@ public class SubHandler2 {
             
                     Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = result.hashCode();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
             
@@ -76,8 +76,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.LatLngBounds::get_southwest_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
@@ -86,7 +86,7 @@ public class SubHandler2 {
             
                     Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = result.hashCode();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
             
@@ -99,8 +99,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.LatLngBounds::get_northeast_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
@@ -109,7 +109,7 @@ public class SubHandler2 {
             
                     Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = result.hashCode();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
             
@@ -122,8 +122,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.LatLng::get_latitude_batch", (argsBatch, methodResult) -> {
                 List<Double> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
@@ -141,8 +141,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.LatLng::get_longitude_batch", (argsBatch, methodResult) -> {
                 List<Double> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
@@ -160,8 +160,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_offsetX_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -179,8 +179,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_offsetY_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -198,8 +198,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_minX_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -217,8 +217,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_maxX_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -236,8 +236,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_minY_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -255,8 +255,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.TileProjection::get_maxY_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
@@ -274,8 +274,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.WeightedLatLng::get_intensity_batch", (argsBatch, methodResult) -> {
                 List<Double> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
@@ -293,8 +293,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.WeightedLatLng::get_latLng_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
@@ -303,7 +303,7 @@ public class SubHandler2 {
             
                     Integer jsonableResult = null;
             if (result != null) {
-                jsonableResult = result.hashCode();
+                jsonableResult = System.identityHashCode(result);
                 getHEAP().put(jsonableResult, result);
             }
             
@@ -316,8 +316,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get((int) args.get("refId"));
@@ -335,8 +335,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
@@ -354,8 +354,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
@@ -373,8 +373,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
@@ -392,8 +392,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs_batch", (argsBatch, methodResult) -> {
                 List<int[]> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
@@ -411,8 +411,8 @@ public class SubHandler2 {
             put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names_batch", (argsBatch, methodResult) -> {
                 List<List<String>> resultList = new ArrayList<>();
             
-                for (int i = 0; i < ((List<Map<String, Object>>) argsBatch).size(); i++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(i);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // ref object
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));

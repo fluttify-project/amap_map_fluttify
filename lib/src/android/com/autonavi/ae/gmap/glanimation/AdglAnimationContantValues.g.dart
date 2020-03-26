@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues';
+
   static final int ADGLANIMATOIN_TWO_INT = 2;
   static final int ADGLANIMATOIN_FOUR_INT = 2;
   static final int ADGLANIMATOIN_TWO_POWER_TEN = 1024;

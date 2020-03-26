@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
   //region constants
+  static const String name__ = 'MAMultiPolyline';
+
   
   //endregion
 
@@ -65,7 +67,7 @@ class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
 extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
   //region getters
   Future<List<List<num>>> get_drawStyleIndexes_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes_batch", [for (final item in this) {'refId': item.refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).map((result) => (result as List).cast<num>()).toList();
   
     return typedResult;
@@ -75,7 +77,7 @@ extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
 
   //region setters
   Future<void> set_drawStyleIndexes_batch(List<List<num>> drawStyleIndexes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPolyline::set_drawStyleIndexes_batch', [for (int i = 0; i < this.length; i++) {'refId': this[i].refId, "drawStyleIndexes": drawStyleIndexes[i]}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPolyline::set_drawStyleIndexes_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "drawStyleIndexes": drawStyleIndexes[__i__]}]);
   
   
   }

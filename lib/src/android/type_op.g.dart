@@ -524,6 +524,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_amap_api_maps_offlinemap_OfflineMapActivity() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapActivity', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_amap_api_maps_offlinemap_City() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_City', {'refId': refId});
     return result;
@@ -1598,6 +1603,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   Future<com_amap_api_maps_offlinemap_OfflineMapCity> ascom_amap_api_maps_offlinemap_OfflineMapCity() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_offlinemap_OfflineMapCity', {'refId': refId});
     return com_amap_api_maps_offlinemap_OfflineMapCity()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_offlinemap_OfflineMapActivity> ascom_amap_api_maps_offlinemap_OfflineMapActivity() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_offlinemap_OfflineMapActivity', {'refId': refId});
+    return com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = result;
   }
   
   Future<com_amap_api_maps_offlinemap_City> ascom_amap_api_maps_offlinemap_City() async {

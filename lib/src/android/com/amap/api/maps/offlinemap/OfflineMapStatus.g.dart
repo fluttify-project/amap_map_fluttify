@@ -14,6 +14,8 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapStatus extends java_lang_Object  {
   //region constants
+  static const String name__ = 'com.amap.api.maps.offlinemap.OfflineMapStatus';
+
   static final int CHECKUPDATES = 6;
   static final int ERROR = -1;
   static final int STOP = 5;
