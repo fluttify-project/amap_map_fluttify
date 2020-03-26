@@ -14,6 +14,80 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler6)
 - (NSDictionary<NSString*, Handler>*) getSubHandler6 {
     return @{
+        @"MAOverlayRenderer::set_strokeImage_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // ref arg
+                UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                ref.strokeImage = strokeImage;
+                methodResult(@"success");
+            }
+        
+            methodResult(@"success");
+        },
+        
+        @"MAOverlayRenderer::set_alpha_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // jsonable arg
+                CGFloat alpha = [args[@"alpha"] floatValue];
+        
+                // ref
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                ref.alpha = alpha;
+                methodResult(@"success");
+            }
+        
+            methodResult(@"success");
+        },
+        
+        @"MAMultiPointItem::set_coordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // struct arg
+                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+                CLLocationCoordinate2D coordinate;
+                [coordinateValue getValue:&coordinate];
+        
+                // ref
+                MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                ref.coordinate = coordinate;
+                methodResult(@"success");
+            }
+        
+            methodResult(@"success");
+        },
+        
+        @"MAMultiPointItem::set_customID_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // jsonable arg
+                NSString* customID = (NSString*) args[@"customID"];
+        
+                // ref
+                MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                ref.customID = customID;
+                methodResult(@"success");
+            }
+        
+            methodResult(@"success");
+        },
+        
         @"MAMultiPointItem::set_title_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
@@ -1584,6 +1658,15 @@ extern BOOL enableLog;
             methodResult(@(isTargetType));
         },
         
+        @"RefClass::isKindOfMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            BOOL isTargetType = [ref isKindOfClass:[MAOfflineMapViewController class]];
+            methodResult(@(isTargetType));
+        },
+        
         @"RefClass::isKindOfMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // 引用对象
             NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
@@ -2221,6 +2304,19 @@ extern BOOL enableLog;
             methodResult(refId);
         },
         
+        @"RefClass::asMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAOfflineMapViewController *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
         @"RefClass::asMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // 引用对象
             NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
@@ -2696,84 +2792,6 @@ extern BOOL enableLog;
         
             // 转型
             ref = (MAParticleOverlayOptions *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MAParticleOverlayOptionsFactory *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MAOverlayRenderer *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MAUserLocation *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MAMultiPointItem *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MAMultiPointOverlay *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"RefClass::asMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MACustomBuildingOverlayOption *) ref;
             // 放回HEAP
             HEAP[refId] = ref;
         

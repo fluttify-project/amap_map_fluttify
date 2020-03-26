@@ -12,6 +12,7 @@
 #import "SubHandler/SubHandler5.h"
 #import "SubHandler/SubHandler6.h"
 #import "SubHandler/SubHandler7.h"
+#import "SubHandler/SubHandler8.h"
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
@@ -39,6 +40,7 @@ extern BOOL enableLog;
     [_handlerMap addEntriesFromDictionary: [self getSubHandler5]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler6]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler7]];
+    [_handlerMap addEntriesFromDictionary: [self getSubHandler8]];
   }
 
   return self;

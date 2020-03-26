@@ -14,6 +14,62 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler2)
 - (NSDictionary<NSString*, Handler>*) getSubHandler2 {
     return @{
+        @"MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // ref arg
+                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+                // ref arg
+                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
+                // ref arg
+                UIControl* control = (UIControl*) HEAP[@([args[@"control"] integerValue])];
+        
+                // ref
+                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                [ref mapView : mapView annotationView: view calloutAccessoryControlTapped: control];
+        
+                // result
+                // 无返回值
+                NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+                // ref arg
+                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+                // ref arg
+                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
+        
+                // ref
+                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                // invoke native method
+                [ref mapView : mapView didAnnotationViewCalloutTapped: view];
+        
+                // result
+                // 无返回值
+                NSString* jsonableResult = @"success";
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
         @"MAMapViewDelegate::mapView_didAnnotationViewTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -1132,6 +1188,25 @@ extern BOOL enableLog;
         
             // 返回值: jsonable
             id jsonableResult = result;
+        
+            methodResult(jsonableResult);
+        },
+        
+        @"MAOfflineMapViewController::get_offlineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAOfflineMapViewController::get_offlineMap");
+            }
+        
+            // ref object
+            MAOfflineMapViewController* ref = (MAOfflineMapViewController*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // invoke native method
+            MAOfflineMap* result = ref.offlineMap;
+        
+            // return a ref
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
         
             methodResult(jsonableResult);
         },
@@ -3890,62 +3965,6 @@ extern BOOL enableLog;
         
             // invoke native method
             UIColor* result = ref.strokeColor;
-        
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAUserLocationRepresentation::get_lineWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAUserLocationRepresentation::get_lineWidth");
-            }
-        
-            // ref object
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            CGFloat result = ref.lineWidth;
-        
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAUserLocationRepresentation::get_locationDotBgColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAUserLocationRepresentation::get_locationDotBgColor");
-            }
-        
-            // ref object
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            UIColor* result = ref.locationDotBgColor;
-        
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAUserLocationRepresentation::get_locationDotFillColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAUserLocationRepresentation::get_locationDotFillColor");
-            }
-        
-            // ref object
-            MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            UIColor* result = ref.locationDotFillColor;
         
             // return a ref
             HEAP[@((result).hash)] = result;

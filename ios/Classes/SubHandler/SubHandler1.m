@@ -14,6 +14,30 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler1)
 - (NSDictionary<NSString*, Handler>*) getSubHandler1 {
     return @{
+        @"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
+            // jsonable arg
+            BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
+        
+            // ref
+            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"openGLESDisabled"]);
+            }
+        
+            // invoke native method
+            [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
         @"MAMapViewDelegate::mapView_didTouchPois": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
@@ -767,6 +791,31 @@ extern BOOL enableLog;
                 // result
                 // 返回值: Value
                 id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        @"MAOfflineMapViewController::sharedInstance_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // args
+        
+        
+                // ref
+        
+        
+                // invoke native method
+                MAOfflineMapViewController* result = [MAOfflineMapViewController sharedInstance];
+        
+                // result
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
         
                 [resultList addObject:jsonableResult];
             }
@@ -5588,62 +5637,6 @@ extern BOOL enableLog;
         
                 // invoke native method
                 [ref mapView : mapView didAddOverlayRenderers: overlayRenderers];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
-                // ref arg
-                UIControl* control = (UIControl*) HEAP[@([args[@"control"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView annotationView: view calloutAccessoryControlTapped: control];
-        
-                // result
-                // 无返回值
-                NSString* jsonableResult = @"success";
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // ref arg
-                MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-                // ref arg
-                MAAnnotationView* view = (MAAnnotationView*) HEAP[@([args[@"view"] integerValue])];
-        
-                // ref
-                id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                [ref mapView : mapView didAnnotationViewCalloutTapped: view];
         
                 // result
                 // 无返回值

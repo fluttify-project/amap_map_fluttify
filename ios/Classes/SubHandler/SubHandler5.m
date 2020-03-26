@@ -14,6 +14,86 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler5)
 - (NSDictionary<NSString*, Handler>*) getSubHandler5 {
     return @{
+        @"MACoordinateSpan::set_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACoordinateSpan::set_latitudeDelta");
+            }
+        
+            // args
+            // jsonable arg
+            CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACoordinateSpan ref;
+            [dataValue getValue:&ref];
+        
+            ref.latitudeDelta = latitudeDelta;
+            methodResult(@"success");
+        },
+        
+        @"MACoordinateSpan::set_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACoordinateSpan::set_longitudeDelta");
+            }
+        
+            // args
+            // jsonable arg
+            CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACoordinateSpan ref;
+            [dataValue getValue:&ref];
+        
+            ref.longitudeDelta = longitudeDelta;
+            methodResult(@"success");
+        },
+        
+        @"MACoordinateRegion::set_center": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACoordinateRegion::set_center");
+            }
+        
+            // args
+            // struct arg
+            NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+            CLLocationCoordinate2D center;
+            [centerValue getValue:&center];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACoordinateRegion ref;
+            [dataValue getValue:&ref];
+        
+            ref.center = center;
+            methodResult(@"success");
+        },
+        
+        @"MACoordinateRegion::set_span": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACoordinateRegion::set_span");
+            }
+        
+            // args
+            // struct arg
+            NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+            MACoordinateSpan span;
+            [spanValue getValue:&span];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MACoordinateRegion ref;
+            [dataValue getValue:&ref];
+        
+            ref.span = span;
+            methodResult(@"success");
+        },
+        
         @"MAMapPoint::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -3593,80 +3673,6 @@ extern BOOL enableLog;
                 MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
                 ref.glPointCount = glPointCount;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_strokeImage_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // ref arg
-                UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
-        
-                // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.strokeImage = strokeImage;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_alpha_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // jsonable arg
-                CGFloat alpha = [args[@"alpha"] floatValue];
-        
-                // ref
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.alpha = alpha;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAMultiPointItem::set_coordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
-                CLLocationCoordinate2D coordinate;
-                [coordinateValue getValue:&coordinate];
-        
-                // ref
-                MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.coordinate = coordinate;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAMultiPointItem::set_customID_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // jsonable arg
-                NSString* customID = (NSString*) args[@"customID"];
-        
-                // ref
-                MAMultiPointItem* ref = (MAMultiPointItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.customID = customID;
                 methodResult(@"success");
             }
         

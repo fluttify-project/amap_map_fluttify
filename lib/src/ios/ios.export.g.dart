@@ -96,6 +96,7 @@ export 'MATraceDelegate.g.dart';
 export 'MAAnnotationViewDragState.g.dart';
 export 'MAParticleOverlayType.g.dart';
 export 'MAParticleOverlayOptionsFactory.g.dart';
+export 'MAOfflineMapViewController.g.dart';
 export 'MAPolygonRenderer.g.dart';
 export 'MACoordinateBounds.g.dart';
 export 'MALineJoinType.g.dart';

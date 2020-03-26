@@ -14,6 +14,98 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler4)
 - (NSDictionary<NSString*, Handler>*) getSubHandler4 {
     return @{
+        @"MACoordinateSpan::get_latitudeDelta_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACoordinateSpan ref;
+                [dataValue getValue:&ref];
+        
+                CLLocationDegrees result = ref.latitudeDelta;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MACoordinateSpan::get_longitudeDelta_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACoordinateSpan ref;
+                [dataValue getValue:&ref];
+        
+                CLLocationDegrees result = ref.longitudeDelta;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MACoordinateRegion::get_center_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACoordinateRegion ref;
+                [dataValue getValue:&ref];
+        
+                CLLocationCoordinate2D result = ref.center;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+                HEAP[@(resultValue.hash)] = resultValue;
+                NSNumber* jsonableResult = @(resultValue.hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MACoordinateRegion::get_span_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+                MACoordinateRegion ref;
+                [dataValue getValue:&ref];
+        
+                MACoordinateSpan result = ref.span;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
+                HEAP[@(resultValue.hash)] = resultValue;
+                NSNumber* jsonableResult = @(resultValue.hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
         @"MAMapPoint::get_x_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -3893,86 +3985,6 @@ extern BOOL enableLog;
             [dataValue getValue:&ref];
         
             ref.southWest = southWest;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateSpan::set_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateSpan::set_latitudeDelta");
-            }
-        
-            // args
-            // jsonable arg
-            CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateSpan ref;
-            [dataValue getValue:&ref];
-        
-            ref.latitudeDelta = latitudeDelta;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateSpan::set_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateSpan::set_longitudeDelta");
-            }
-        
-            // args
-            // jsonable arg
-            CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateSpan ref;
-            [dataValue getValue:&ref];
-        
-            ref.longitudeDelta = longitudeDelta;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateRegion::set_center": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateRegion::set_center");
-            }
-        
-            // args
-            // struct arg
-            NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
-            CLLocationCoordinate2D center;
-            [centerValue getValue:&center];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateRegion ref;
-            [dataValue getValue:&ref];
-        
-            ref.center = center;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateRegion::set_span": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateRegion::set_span");
-            }
-        
-            // args
-            // struct arg
-            NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
-            MACoordinateSpan span;
-            [spanValue getValue:&span];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateRegion ref;
-            [dataValue getValue:&ref];
-        
-            ref.span = span;
             methodResult(@"success");
         },
         
