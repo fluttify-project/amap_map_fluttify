@@ -256,6 +256,15 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     );
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('进入二级地图页面')),
+                  onTap: () async {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => DrawPointScreen()),
+                    );
+                  },
+                ),
               ],
             ),
           ),
