@@ -22,7 +22,7 @@ class MAOfflineItem extends NSObject  {
   //region creators
   static Future<MAOfflineItem> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineItem');
-    final object = MAOfflineItem()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOfflineItem()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOfflineItem extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItem', {'length': length});
   
-    final List<MAOfflineItem> typedResult = resultBatch.map((result) => MAOfflineItem()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOfflineItem> typedResult = resultBatch.map((result) => MAOfflineItem()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,33 +43,33 @@ class MAOfflineItem extends NSObject  {
 
   //region getters
   Future<String> get_name() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_name", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_name", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_jianpin() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_jianpin", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_jianpin", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_pinyin() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_pinyin", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_pinyin", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_adcode() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_adcode", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_adcode", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<MAOfflineItemStatus> get_itemStatus() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus", {'refId': refId});
   
-    return MAOfflineItemStatus.values[result];
+    return MAOfflineItemStatus.values[__result__];
   }
   
   //endregion
@@ -87,35 +87,35 @@ extension MAOfflineItem_Batch on List<MAOfflineItem> {
   //region getters
   Future<List<String>> get_name_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_name_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_jianpin_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_jianpin_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_pinyin_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_pinyin_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_adcode_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_adcode_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<MAOfflineItemStatus>> get_itemStatus_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAOfflineItemStatus.values[result]).toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAOfflineItemStatus.values[__result__]).toList();
   
     return typedResult;
   }

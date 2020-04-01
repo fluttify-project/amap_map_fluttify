@@ -22,7 +22,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   //region creators
   static Future<com_amap_api_maps_model_MultiPointOverlayOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__');
-    final object = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointOverlayOptions__', {'length': length});
   
-    final List<com_amap_api_maps_model_MultiPointOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_MultiPointOverlayOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::anchor', {"var1": var1, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::anchor', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -79,18 +79,18 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getAnchorU', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getAnchorU', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -101,18 +101,18 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getAnchorV', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getAnchorV', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::icon', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::icon', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -145,18 +145,18 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getIcon', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlayOptions::getIcon', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -186,7 +186,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -205,7 +205,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -224,7 +224,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -243,7 +243,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -262,7 +262,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_BitmapDescriptor()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

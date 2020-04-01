@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   //region creators
   static Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__');
-    final object = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -101,18 +101,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -145,18 +145,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -167,18 +167,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -189,18 +189,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -211,18 +211,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -233,18 +233,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -255,18 +255,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -277,18 +277,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -299,18 +299,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -321,18 +321,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -343,18 +343,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result];
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__];
     }
   }
   
@@ -365,18 +365,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result];
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__];
     }
   }
   
@@ -387,18 +387,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -409,18 +409,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -431,18 +431,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -453,18 +453,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -475,18 +475,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -497,18 +497,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -519,18 +519,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -541,18 +541,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -563,18 +563,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -585,18 +585,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -607,18 +607,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -629,18 +629,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -651,18 +651,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -673,18 +673,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -695,18 +695,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -717,18 +717,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -739,18 +739,18 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -780,7 +780,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -799,7 +799,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -818,7 +818,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -837,7 +837,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -856,7 +856,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -875,7 +875,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -894,7 +894,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -913,7 +913,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -932,7 +932,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -951,7 +951,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -970,7 +970,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -989,7 +989,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1008,7 +1008,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1027,7 +1027,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result]).toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__]).toList();
     
       return typedResult;
     }
@@ -1046,7 +1046,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result]).toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__]).toList();
     
       return typedResult;
     }
@@ -1065,7 +1065,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1084,7 +1084,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1103,7 +1103,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1122,7 +1122,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1141,7 +1141,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1160,7 +1160,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1179,7 +1179,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1198,7 +1198,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1217,7 +1217,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1236,7 +1236,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1255,7 +1255,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1274,7 +1274,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1293,7 +1293,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1312,7 +1312,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1331,7 +1331,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1350,7 +1350,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1369,7 +1369,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

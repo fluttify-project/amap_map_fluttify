@@ -22,7 +22,7 @@ class MACoordinateBounds extends NSObject  {
   //region creators
   static Future<MACoordinateBounds> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateBounds');
-    final object = MACoordinateBounds()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MACoordinateBounds()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MACoordinateBounds extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACoordinateBounds', {'length': length});
   
-    final List<MACoordinateBounds> typedResult = resultBatch.map((result) => MACoordinateBounds()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MACoordinateBounds> typedResult = resultBatch.map((result) => MACoordinateBounds()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MACoordinateBounds extends NSObject  {
 
   //region getters
   Future<CLLocationCoordinate2D> get_northEast() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_northEast", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
-    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_northEast", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<CLLocationCoordinate2D> get_southWest() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_southWest", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
-    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_southWest", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MACoordinateBounds_Batch on List<MACoordinateBounds> {
   //region getters
   Future<List<CLLocationCoordinate2D>> get_northEast_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_northEast_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<CLLocationCoordinate2D>> get_southWest_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateBounds::get_southWest_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

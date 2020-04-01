@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   //region creators
   static Future<com_autonavi_amap_mapcore_tools_GLFileUtil> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__');
-    final object = com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLFileUtil__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_tools_GLFileUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_tools_GLFileUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::readFileContents', {"var0": var0});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -120,7 +120,7 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -139,7 +139,7 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }

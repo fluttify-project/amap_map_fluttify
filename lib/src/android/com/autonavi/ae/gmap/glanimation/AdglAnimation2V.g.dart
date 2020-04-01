@@ -22,7 +22,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   //region creators
   static Future<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> create__int(int var1) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_ae_gmap_glanimation_AdglAnimation2V> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::reset', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::reset', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getCurValue', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getCurValue', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -101,18 +101,18 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getStartValue', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getStartValue', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getEndValue', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglAnimation2V::getEndValue', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -164,7 +164,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -183,7 +183,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -202,7 +202,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -221,7 +221,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation2V_Batch on List<com_aut
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

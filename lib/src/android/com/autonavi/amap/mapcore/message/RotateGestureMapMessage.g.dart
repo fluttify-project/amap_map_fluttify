@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
   //region creators
   static Future<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> create__int__float__int__int(int var1, double var2, int var3, int var4) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int', {"var1": var1, "var2": var2, "var3": var3, "var4": var4});
-    final object = com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__]}]);
   
-    final List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_message_RotateGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,21 +43,21 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
 
   //region getters
   Future<int> get_pivotX() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<int> get_pivotY() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_angleDelta() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -91,18 +91,18 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain', {"var0": var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -113,18 +113,18 @@ class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends com_auto
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.RotateGestureMapMessage::destory', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -135,21 +135,21 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
   //region getters
   Future<List<int>> get_pivotX_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotX_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_pivotY_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_pivotY_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_angleDelta_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::get_angleDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -191,7 +191,7 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -210,7 +210,7 @@ extension com_autonavi_amap_mapcore_message_RotateGestureMapMessage_Batch on Lis
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

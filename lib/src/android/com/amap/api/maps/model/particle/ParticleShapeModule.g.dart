@@ -39,18 +39,18 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -61,18 +61,18 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return (result as List).cast<double>();
+      return (__result__ as List).cast<double>();
     }
   }
   
@@ -102,7 +102,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -121,7 +121,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<double>()).toList();
     
       return typedResult;
     }

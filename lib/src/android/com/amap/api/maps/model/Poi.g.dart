@@ -22,7 +22,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   //region creators
   static Future<com_amap_api_maps_model_Poi> create__String__com_amap_api_maps_model_LatLng__String(String var1, com_amap_api_maps_model_LatLng var2, String var3) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String', {"var1": var1, "var2": var2.refId, "var3": var3});
-    final object = com_amap_api_maps_model_Poi()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_Poi()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__].refId, "var3": var3[__i__]}]);
   
-    final List<com_amap_api_maps_model_Poi> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Poi()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_Poi> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Poi()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getName', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getName', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getCoordinate', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getCoordinate', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -101,18 +101,18 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getPoiId', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Poi::getPoiId', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -142,7 +142,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -161,7 +161,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -180,7 +180,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

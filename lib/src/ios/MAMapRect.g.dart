@@ -22,7 +22,7 @@ class MAMapRect extends NSObject  {
   //region creators
   static Future<MAMapRect> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapRect');
-    final object = MAMapRect()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAMapRect()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAMapRect extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapRect', {'length': length});
   
-    final List<MAMapRect> typedResult = resultBatch.map((result) => MAMapRect()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAMapRect> typedResult = resultBatch.map((result) => MAMapRect()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MAMapRect extends NSObject  {
 
   //region getters
   Future<MAMapPoint> get_origin() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin", {'refId': refId});
-    kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
-    return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin", {'refId': refId});
+    kNativeObjectPool.add(MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<MAMapSize> get_size() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_size", {'refId': refId});
-    kNativeObjectPool.add(MAMapSize()..refId = result..tag = 'amap_map_fluttify');
-    return MAMapSize()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_size", {'refId': refId});
+    kNativeObjectPool.add(MAMapSize()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAMapSize()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MAMapRect_Batch on List<MAMapRect> {
   //region getters
   Future<List<MAMapPoint>> get_origin_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_origin_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAMapPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<MAMapSize>> get_size_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapRect::get_size_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAMapSize()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAMapSize()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

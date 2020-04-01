@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   //region creators
   static Future<com_autonavi_amap_mapcore_CoordUtil> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__');
-    final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_CoordUtil()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_CoordUtil__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_CoordUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_CoordUtil()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_CoordUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_CoordUtil()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.CoordUtil::convertToGcj', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.CoordUtil::convertToGcj', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -98,7 +98,7 @@ extension com_autonavi_amap_mapcore_CoordUtil_Batch on List<com_autonavi_amap_ma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

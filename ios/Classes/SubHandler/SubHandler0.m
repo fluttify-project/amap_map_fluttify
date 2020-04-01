@@ -457,6 +457,28 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"MAOfflineMapViewController::sharedInstance": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAOfflineMapViewController::sharedInstance()");
+            }
+        
+            // invoke native method
+            MAOfflineMapViewController* result = [MAOfflineMapViewController sharedInstance];
+        
+            // result
+            // return a ref
+            HEAP[@((result).hash)] = result;
+            NSNumber* jsonableResult = @((result).hash);
+        
+            methodResult(jsonableResult);
+        },
         @"MAPolygon::polygonWithCoordinates_count": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // list arg struct
@@ -5302,30 +5324,6 @@ extern BOOL enableLog;
         
             // invoke native method
             [ref mapView : mapView didChangeUserTrackingMode: mode animated: animated];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
-        @"MAMapViewDelegate::mapView_didChangeOpenGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // ref arg
-            MAMapView* mapView = (MAMapView*) HEAP[@([args[@"mapView"] integerValue])];
-            // jsonable arg
-            BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
-        
-            // ref
-            id<MAMapViewDelegate> ref = (id<MAMapViewDelegate>) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapViewDelegate@%@::mapView(%@, %@)", args[@"refId"], args[@"mapView"], args[@"openGLESDisabled"]);
-            }
-        
-            // invoke native method
-            [ref mapView : mapView didChangeOpenGLESDisabled: openGLESDisabled];
         
             // result
             // 无返回值

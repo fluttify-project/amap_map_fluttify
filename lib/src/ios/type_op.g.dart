@@ -79,6 +79,11 @@ extension TypeOpAmapMapFluttifyIOS on Ref {
     return result;
   }
   
+  Future<bool> isMAOfflineMapViewController() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineMapViewController', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isMAMapCustomStyleOptions() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAMapCustomStyleOptions', {'refId': refId});
     return result;
@@ -438,6 +443,11 @@ extension TypeOpAmapMapFluttifyIOS on Ref {
   Future<MAArcRenderer> asMAArcRenderer() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::asMAArcRenderer', {'refId': refId});
     return MAArcRenderer()..refId = result;
+  }
+  
+  Future<MAOfflineMapViewController> asMAOfflineMapViewController() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::asMAOfflineMapViewController', {'refId': refId});
+    return MAOfflineMapViewController()..refId = result;
   }
   
   Future<MAMapCustomStyleOptions> asMAMapCustomStyleOptions() async {

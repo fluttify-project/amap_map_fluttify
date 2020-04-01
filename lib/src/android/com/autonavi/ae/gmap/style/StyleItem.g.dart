@@ -22,7 +22,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   //region creators
   static Future<com_autonavi_ae_gmap_style_StyleItem> create__int(int var1) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int', {"var1": var1});
-    final object = com_autonavi_ae_gmap_style_StyleItem()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_ae_gmap_style_StyleItem()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleItem__int', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_autonavi_ae_gmap_style_StyleItem> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_style_StyleItem()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_ae_gmap_style_StyleItem> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_style_StyleItem()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
 
   //region getters
   Future<int> get_mainKey() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_mainKey", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_mainKey", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<Int32List> get_subKey() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -79,18 +79,18 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -101,18 +101,18 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put', {"var1": var1, "var2": var2.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::put', {"var1": var1, "var2": var2.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::isValid', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.style.StyleItem::isValid', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -145,14 +145,14 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   //region getters
   Future<List<int>> get_mainKey_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_mainKey_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<Int32List>> get_subKey_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -188,7 +188,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_ae_gmap_style_StyleElement()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -207,7 +207,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -226,7 +226,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

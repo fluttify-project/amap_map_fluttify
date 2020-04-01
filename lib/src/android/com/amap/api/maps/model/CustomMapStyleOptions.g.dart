@@ -22,7 +22,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_model_CustomMapStyleOptions> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__');
-    final object = com_amap_api_maps_model_CustomMapStyleOptions()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_CustomMapStyleOptions()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_CustomMapStyleOptions__', {'length': length});
   
-    final List<com_amap_api_maps_model_CustomMapStyleOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_CustomMapStyleOptions> typedResult = resultBatch.map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -101,18 +101,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -145,18 +145,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleData', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleData', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -167,18 +167,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleData', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleData', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -189,18 +189,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -211,18 +211,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -233,18 +233,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleId', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleId', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -255,18 +255,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleId', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleId', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -277,18 +277,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::isEnable', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::isEnable', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -299,18 +299,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setEnable', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setEnable', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -321,18 +321,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -343,18 +343,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -365,18 +365,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -387,18 +387,18 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -428,7 +428,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -447,7 +447,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -466,7 +466,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -485,7 +485,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -504,7 +504,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -523,7 +523,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -542,7 +542,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -561,7 +561,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -580,7 +580,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -599,7 +599,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -618,7 +618,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -637,7 +637,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -656,7 +656,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -675,7 +675,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -694,7 +694,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -713,7 +713,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

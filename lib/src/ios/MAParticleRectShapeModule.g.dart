@@ -22,7 +22,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //region creators
   static Future<MAParticleRectShapeModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRectShapeModule');
-    final object = MAParticleRectShapeModule()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleRectShapeModule()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRectShapeModule', {'length': length});
   
-    final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleRectShapeModule> typedResult = resultBatch.map((result) => MAParticleRectShapeModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRectShapeModule::initWithLeft_top_right_bottom_useRatio', {"left": left, "top": top, "right": right, "bottom": bottom, "isUseRatio": isUseRatio, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -98,7 +98,7 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleRectShapeModule()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

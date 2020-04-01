@@ -22,7 +22,7 @@ class MACoordinateSpan extends NSObject  {
   //region creators
   static Future<MACoordinateSpan> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMACoordinateSpan');
-    final object = MACoordinateSpan()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MACoordinateSpan()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MACoordinateSpan extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMACoordinateSpan', {'length': length});
   
-    final List<MACoordinateSpan> typedResult = resultBatch.map((result) => MACoordinateSpan()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MACoordinateSpan> typedResult = resultBatch.map((result) => MACoordinateSpan()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MACoordinateSpan extends NSObject  {
 
   //region getters
   Future<double> get_latitudeDelta() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_longitudeDelta() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MACoordinateSpan_Batch on List<MACoordinateSpan> {
   //region getters
   Future<List<double>> get_latitudeDelta_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_latitudeDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_longitudeDelta_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACoordinateSpan::get_longitudeDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

@@ -22,7 +22,7 @@ class MAOverlayRenderer extends NSObject  {
   //region creators
   static Future<MAOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayRenderer');
-    final object = MAOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOverlayRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOverlayRenderer extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayRenderer', {'length': length});
   
-    final List<MAOverlayRenderer> typedResult = resultBatch.map((result) => MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOverlayRenderer> typedResult = resultBatch.map((result) => MAOverlayRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,39 +43,39 @@ class MAOverlayRenderer extends NSObject  {
 
   //region getters
   Future<MAOverlay> get_overlay() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
-    return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
+    kNativeObjectPool.add(MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<List<CGPoint>> get_glPoints() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag = 'amap_map_fluttify').toList();
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints", {'refId': refId});
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<int> get_glPointCount() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPointCount", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPointCount", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<UIImage> get_strokeImage() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_strokeImage", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
-    return UIImage()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_strokeImage", {'refId': refId});
+    kNativeObjectPool.add(UIImage()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIImage()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<double> get_alpha() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_alpha", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_alpha", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_contentScale() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_contentScale", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_contentScale", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -115,18 +115,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay', {"overlay": overlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay', {"overlay": overlay.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
-      return MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -137,18 +137,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getViewMatrix', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getViewMatrix', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify');
-      return NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -159,18 +159,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getProjectionMatrix', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getProjectionMatrix', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify');
-      return NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -181,18 +181,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getOffsetPoint', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getOffsetPoint', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapPoint()..refId = result..tag = 'amap_map_fluttify');
-      return MAMapPoint()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -203,18 +203,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getMapZoomLevel', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::getMapZoomLevel', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -225,18 +225,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint', {"mapPoint": mapPoint.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint', {"mapPoint": mapPoint.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
-      return CGPoint()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -247,18 +247,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPoints_count', {"mapPoints": mapPoints.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPoints_count', {"mapPoints": mapPoints.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = result..tag = 'amap_map_fluttify');
-      return CGPoint()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -269,18 +269,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glWidthForWindowWidth', {"windowWidth": windowWidth, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glWidthForWindowWidth', {"windowWidth": windowWidth, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -291,18 +291,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -313,18 +313,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -335,18 +335,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureIDs": textureIDs.map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((it) => it.refId).toList(), "looped": looped, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureIDs": textureIDs.map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((it) => it.refId).toList(), "looped": looped, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -357,18 +357,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((it) => it.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((it) => it.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -379,18 +379,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -401,18 +401,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index, "strokeLineDash": strokeLineDash.index, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((it) => it.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index, "strokeLineDash": strokeLineDash.index, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -423,18 +423,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glRender', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glRender', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -445,18 +445,18 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::setNeedsUpdate', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::setNeedsUpdate', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -467,42 +467,42 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   //region getters
   Future<List<MAOverlay>> get_overlay_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<List<CGPoint>>> get_glPoints_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPoints_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
   Future<List<int>> get_glPointCount_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_glPointCount_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<UIImage>> get_strokeImage_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_strokeImage_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIImage()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIImage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<double>> get_alpha_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_alpha_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_contentScale_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_contentScale_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -550,7 +550,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -569,7 +569,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -588,7 +588,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => NSValue/* float* */()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -607,7 +607,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAMapPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -626,7 +626,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -645,7 +645,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => CGPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -664,7 +664,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => CGPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -683,7 +683,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -702,7 +702,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -721,7 +721,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -740,7 +740,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -759,7 +759,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -778,7 +778,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -797,7 +797,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -816,7 +816,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -835,7 +835,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

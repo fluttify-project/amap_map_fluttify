@@ -22,7 +22,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //region creators
   static Future<MAParticleCurveSizeGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleCurveSizeGenerate');
-    final object = MAParticleCurveSizeGenerate()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleCurveSizeGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleCurveSizeGenerate', {'length': length});
   
-    final List<MAParticleCurveSizeGenerate> typedResult = resultBatch.map((result) => MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleCurveSizeGenerate> typedResult = resultBatch.map((result) => MAParticleCurveSizeGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveX_Y_Z', {"x": x, "y": y, "z": z, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleCurveSizeGenerate::initWithCurveX_Y_Z', {"x": x, "y": y, "z": z, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -98,7 +98,7 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleCurveSizeGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

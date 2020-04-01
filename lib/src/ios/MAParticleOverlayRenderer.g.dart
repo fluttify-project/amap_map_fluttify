@@ -22,7 +22,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   //region creators
   static Future<MAParticleOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlayRenderer');
-    final object = MAParticleOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleOverlayRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlayRenderer', {'length': length});
   
-    final List<MAParticleOverlayRenderer> typedResult = resultBatch.map((result) => MAParticleOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleOverlayRenderer> typedResult = resultBatch.map((result) => MAParticleOverlayRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
 
   //region getters
   Future<MAParticleOverlay> get_particleOverlay() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
-    kNativeObjectPool.add(MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify');
-    return MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay", {'refId': refId});
+    kNativeObjectPool.add(MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -62,18 +62,18 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayRenderer::initWithParticleOverlay', {"particleOverlay": particleOverlay.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -84,7 +84,7 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
   //region getters
   Future<List<MAParticleOverlay>> get_particleOverlay_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlayRenderer::get_particleOverlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -109,7 +109,7 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

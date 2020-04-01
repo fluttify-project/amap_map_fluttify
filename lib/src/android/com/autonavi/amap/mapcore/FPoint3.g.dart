@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   //region creators
   static Future<com_autonavi_amap_mapcore_FPoint3> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__');
-    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,7 +30,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   
   static Future<com_autonavi_amap_mapcore_FPoint3> create__float__float__int(double var1, double var2, int var3) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int', {"var1": var1, "var2": var2, "var3": var3});
-    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_FPoint3()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -42,7 +42,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -53,7 +53,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__float__float__int', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__]}]);
   
-    final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_FPoint3> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_FPoint3()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -62,9 +62,9 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
 
   //region getters
   Future<int> get_colorIndex() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPoint3::get_colorIndex", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPoint3::get_colorIndex", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -86,18 +86,18 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint3::setColorIndex', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FPoint3::setColorIndex', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -108,7 +108,7 @@ extension com_autonavi_amap_mapcore_FPoint3_Batch on List<com_autonavi_amap_mapc
   //region getters
   Future<List<int>> get_colorIndex_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPoint3::get_colorIndex_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -138,7 +138,7 @@ extension com_autonavi_amap_mapcore_FPoint3_Batch on List<com_autonavi_amap_mapc
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

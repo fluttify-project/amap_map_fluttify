@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   //region creators
   static Future<com_autonavi_amap_mapcore_tools_GLConvertUtil> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__');
-    final object = com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLConvertUtil__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_tools_GLConvertUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_tools_GLConvertUtil> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -101,18 +101,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -145,18 +145,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt', {"var0": var0});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -167,18 +167,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort', {"var0": var0});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -189,18 +189,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -211,18 +211,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt', {"var0": var0, "var1": var1, "var2": var2});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -233,18 +233,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray', {"var0": var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -255,18 +255,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString', {"var0": var0});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -277,18 +277,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString', {"var0": var0, "var1": var1, "var2": var2});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -299,18 +299,18 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes', {"var0": var0, "var1": var1, "var2": var2});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes', {"var0": var0, "var1": var1, "var2": var2});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result as Uint8List;
+      return __result__ as Uint8List;
     }
   }
   
@@ -340,7 +340,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -359,7 +359,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -378,7 +378,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -397,7 +397,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -416,7 +416,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -435,7 +435,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -454,7 +454,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -473,7 +473,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -492,7 +492,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -511,7 +511,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -530,7 +530,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -549,7 +549,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result as Uint8List).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }

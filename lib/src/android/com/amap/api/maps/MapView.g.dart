@@ -22,7 +22,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   //region creators
   static Future<com_amap_api_maps_MapView> create__android_content_Context(android_content_Context var1) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context', {"var1": var1.refId});
-    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_MapView()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,7 +30,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   
   static Future<com_amap_api_maps_MapView> create__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    final object = com_amap_api_maps_MapView()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_MapView()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -42,7 +42,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
   
-    final List<com_amap_api_maps_MapView> typedResult = resultBatch.map((result) => com_amap_api_maps_MapView()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_MapView> typedResult = resultBatch.map((result) => com_amap_api_maps_MapView()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -53,7 +53,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__].refId}]);
   
-    final List<com_amap_api_maps_MapView> typedResult = resultBatch.map((result) => com_amap_api_maps_MapView()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_MapView> typedResult = resultBatch.map((result) => com_amap_api_maps_MapView()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -76,18 +76,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::getMap', {"refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::getMap', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMap()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_AMap()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -98,18 +98,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -120,18 +120,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onResume', {"refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onResume', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -142,18 +142,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onPause', {"refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onPause', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -164,18 +164,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onDestroy', {"refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onDestroy', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -186,18 +186,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onLowMemory', {"refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onLowMemory', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -208,18 +208,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -230,18 +230,18 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final result = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::setVisibility', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::setVisibility', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -271,7 +271,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_AMap()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -290,7 +290,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -309,7 +309,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -328,7 +328,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -347,7 +347,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -366,7 +366,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -385,7 +385,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -404,7 +404,7 @@ extension com_amap_api_maps_MapView_Batch on List<com_amap_api_maps_MapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

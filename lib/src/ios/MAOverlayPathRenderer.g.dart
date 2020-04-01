@@ -22,7 +22,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   //region creators
   static Future<MAOverlayPathRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOverlayPathRenderer');
-    final object = MAOverlayPathRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOverlayPathRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOverlayPathRenderer', {'length': length});
   
-    final List<MAOverlayPathRenderer> typedResult = resultBatch.map((result) => MAOverlayPathRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOverlayPathRenderer> typedResult = resultBatch.map((result) => MAOverlayPathRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,51 +43,51 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
 
   //region getters
   Future<UIColor> get_fillColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<UIColor> get_strokeColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_strokeColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_strokeColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<double> get_lineWidth() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<MALineJoinType> get_lineJoinType() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType", {'refId': refId});
   
-    return MALineJoinType.values[result];
+    return MALineJoinType.values[__result__];
   }
   
   Future<MALineCapType> get_lineCapType() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType", {'refId': refId});
   
-    return MALineCapType.values[result];
+    return MALineCapType.values[__result__];
   }
   
   Future<double> get_miterLimit() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_miterLimit", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_miterLimit", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<bool> get_lineDash() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDash", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDash", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<MALineDashType> get_lineDashType() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType", {'refId': refId});
   
-    return MALineDashType.values[result];
+    return MALineDashType.values[__result__];
   }
   
   //endregion
@@ -152,56 +152,56 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
   //region getters
   Future<List<UIColor>> get_fillColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_fillColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<UIColor>> get_strokeColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_strokeColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<double>> get_lineWidth_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineWidth_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<MALineJoinType>> get_lineJoinType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MALineJoinType.values[result]).toList();
+    final typedResult = (resultBatch as List).map((__result__) => MALineJoinType.values[__result__]).toList();
   
     return typedResult;
   }
   
   Future<List<MALineCapType>> get_lineCapType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MALineCapType.values[result]).toList();
+    final typedResult = (resultBatch as List).map((__result__) => MALineCapType.values[__result__]).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_miterLimit_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_miterLimit_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_lineDash_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDash_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<MALineDashType>> get_lineDashType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MALineDashType.values[result]).toList();
+    final typedResult = (resultBatch as List).map((__result__) => MALineDashType.values[__result__]).toList();
   
     return typedResult;
   }

@@ -22,7 +22,7 @@ class MAUserLocationRepresentation extends NSObject  {
   //region creators
   static Future<MAUserLocationRepresentation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAUserLocationRepresentation');
-    final object = MAUserLocationRepresentation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAUserLocationRepresentation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAUserLocationRepresentation extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAUserLocationRepresentation', {'length': length});
   
-    final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAUserLocationRepresentation> typedResult = resultBatch.map((result) => MAUserLocationRepresentation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,57 +43,57 @@ class MAUserLocationRepresentation extends NSObject  {
 
   //region getters
   Future<bool> get_showsAccuracyRing() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsAccuracyRing", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsAccuracyRing", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<bool> get_showsHeadingIndicator() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsHeadingIndicator", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsHeadingIndicator", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<UIColor> get_fillColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_fillColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_fillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<UIColor> get_strokeColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_strokeColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_strokeColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<double> get_lineWidth() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_lineWidth", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_lineWidth", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<UIColor> get_locationDotBgColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<UIColor> get_locationDotFillColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<bool> get_enablePulseAnnimation() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_enablePulseAnnimation", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_enablePulseAnnimation", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<UIImage> get_image() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_image", {'refId': refId});
-    kNativeObjectPool.add(UIImage()..refId = result..tag = 'amap_map_fluttify');
-    return UIImage()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_image", {'refId': refId});
+    kNativeObjectPool.add(UIImage()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIImage()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -164,63 +164,63 @@ extension MAUserLocationRepresentation_Batch on List<MAUserLocationRepresentatio
   //region getters
   Future<List<bool>> get_showsAccuracyRing_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsAccuracyRing_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_showsHeadingIndicator_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_showsHeadingIndicator_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<UIColor>> get_fillColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_fillColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<UIColor>> get_strokeColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_strokeColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<double>> get_lineWidth_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_lineWidth_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<UIColor>> get_locationDotBgColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotBgColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<UIColor>> get_locationDotFillColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_locationDotFillColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<bool>> get_enablePulseAnnimation_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_enablePulseAnnimation_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<UIImage>> get_image_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocationRepresentation::get_image_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIImage()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIImage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -22,7 +22,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
   //region creators
   static Future<MAPolygon> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolygon');
-    final object = MAPolygon()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAPolygon()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolygon', {'length': length});
   
-    final List<MAPolygon> typedResult = resultBatch.map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAPolygon> typedResult = resultBatch.map((result) => MAPolygon()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
 
   //region getters
   Future<List<MAOverlay>> get_hollowShapes() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList();
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes", {'refId': refId});
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   //endregion
@@ -67,18 +67,18 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = result..tag = 'amap_map_fluttify');
-      return MAPolygon()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -89,18 +89,18 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = result..tag = 'amap_map_fluttify');
-      return MAPolygon()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -111,18 +111,18 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -133,18 +133,18 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -155,7 +155,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
   //region getters
   Future<List<List<MAOverlay>>> get_hollowShapes_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolygon::get_hollowShapes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
@@ -185,7 +185,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -204,7 +204,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAPolygon()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -223,7 +223,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -242,7 +242,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

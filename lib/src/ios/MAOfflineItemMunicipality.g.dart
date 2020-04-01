@@ -22,7 +22,7 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
   //region creators
   static Future<MAOfflineItemMunicipality> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineItemMunicipality');
-    final object = MAOfflineItemMunicipality()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOfflineItemMunicipality()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOfflineItemMunicipality extends MAOfflineCity  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineItemMunicipality', {'length': length});
   
-    final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOfflineItemMunicipality> typedResult = resultBatch.map((result) => MAOfflineItemMunicipality()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

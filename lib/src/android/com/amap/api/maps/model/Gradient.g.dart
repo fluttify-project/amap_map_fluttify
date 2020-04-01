@@ -22,7 +22,7 @@ class com_amap_api_maps_model_Gradient extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_model_Gradient> create__intArray__floatArray(Int32List var1, Float64List var2) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_Gradient()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_Gradient()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_Gradient extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_Gradient__intArray__floatArray', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
-    final List<com_amap_api_maps_model_Gradient> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Gradient()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_Gradient> typedResult = resultBatch.map((result) => com_amap_api_maps_model_Gradient()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

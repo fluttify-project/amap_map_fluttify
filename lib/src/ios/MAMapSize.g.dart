@@ -22,7 +22,7 @@ class MAMapSize extends NSObject  {
   //region creators
   static Future<MAMapSize> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapSize');
-    final object = MAMapSize()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAMapSize()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAMapSize extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapSize', {'length': length});
   
-    final List<MAMapSize> typedResult = resultBatch.map((result) => MAMapSize()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAMapSize> typedResult = resultBatch.map((result) => MAMapSize()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MAMapSize extends NSObject  {
 
   //region getters
   Future<double> get_width() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_width", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_width", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_height() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_height", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_height", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MAMapSize_Batch on List<MAMapSize> {
   //region getters
   Future<List<double>> get_width_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_width_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_height_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapSize::get_height_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

@@ -22,7 +22,7 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
   //region creators
   static Future<MAUserLocation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAUserLocation');
-    final object = MAUserLocation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAUserLocation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAUserLocation', {'length': length});
   
-    final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAUserLocation> typedResult = resultBatch.map((result) => MAUserLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,21 +43,21 @@ class MAUserLocation extends MAAnimatedAnnotation with MAAnimatableAnnotation, M
 
   //region getters
   Future<bool> get_updating() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_isUpdating", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_isUpdating", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<CLLocation> get_location() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_location", {'refId': refId});
-    kNativeObjectPool.add(CLLocation()..refId = result..tag = 'amap_map_fluttify');
-    return CLLocation()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_location", {'refId': refId});
+    kNativeObjectPool.add(CLLocation()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return CLLocation()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<CLHeading> get_heading() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_heading", {'refId': refId});
-    kNativeObjectPool.add(CLHeading()..refId = result..tag = 'amap_map_fluttify');
-    return CLHeading()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_heading", {'refId': refId});
+    kNativeObjectPool.add(CLHeading()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return CLHeading()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -75,21 +75,21 @@ extension MAUserLocation_Batch on List<MAUserLocation> {
   //region getters
   Future<List<bool>> get_updating_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_isUpdating_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<CLLocation>> get_location_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_location_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => CLLocation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => CLLocation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<CLHeading>> get_heading_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAUserLocation::get_heading_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => CLHeading()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => CLHeading()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

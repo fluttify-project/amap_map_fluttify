@@ -22,7 +22,7 @@ class MAMapPoint extends NSObject  {
   //region creators
   static Future<MAMapPoint> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMapPoint');
-    final object = MAMapPoint()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAMapPoint()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAMapPoint extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMapPoint', {'length': length});
   
-    final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAMapPoint> typedResult = resultBatch.map((result) => MAMapPoint()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MAMapPoint extends NSObject  {
 
   //region getters
   Future<double> get_x() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_y() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MAMapPoint_Batch on List<MAMapPoint> {
   //region getters
   Future<List<double>> get_x_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_y_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapPoint::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

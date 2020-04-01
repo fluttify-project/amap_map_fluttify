@@ -22,7 +22,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   //region creators
   static Future<com_amap_api_maps_offlinemap_OfflineMapActivity> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__');
-    final object = com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapActivity__', {'length': length});
   
-    final List<com_amap_api_maps_offlinemap_OfflineMapActivity> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_offlinemap_OfflineMapActivity> typedResult = resultBatch.map((result) => com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::showScr', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::showScr', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -101,18 +101,18 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -123,18 +123,18 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::onClick', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::onClick', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -164,7 +164,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -183,7 +183,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -202,7 +202,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -221,7 +221,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

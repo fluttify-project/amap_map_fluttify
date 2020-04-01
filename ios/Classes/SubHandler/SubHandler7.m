@@ -14,6 +14,84 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler7)
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
     return @{
+        @"RefClass::asMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAParticleOverlayOptionsFactory *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
+        @"RefClass::asMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAOverlayRenderer *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
+        @"RefClass::asMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAUserLocation *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
+        @"RefClass::asMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAMultiPointItem *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
+        @"RefClass::asMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MAMultiPointOverlay *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
+        @"RefClass::asMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // 引用对象
+            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
+            id ref = HEAP[refId];
+        
+            // 转型
+            ref = (MACustomBuildingOverlayOption *) ref;
+            // 放回HEAP
+            HEAP[refId] = ref;
+        
+            methodResult(refId);
+        },
+        
         @"RefClass::asMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // 引用对象
             NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
@@ -306,6 +384,20 @@ extern BOOL enableLog;
             }
         
             MAArcRenderer* ref = [[MAArcRenderer alloc] init];
+            HEAP[@(ref.hash)] = ref;
+        
+            methodResult(@(ref.hash));
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAOfflineMapViewController");
+            }
+        
+            MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
             HEAP[@(ref.hash)] = ref;
         
             methodResult(@(ref.hash));
@@ -1338,6 +1430,21 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAArcRenderer* ref = [[MAArcRenderer alloc] init];
+                HEAP[@(ref.hash)] = ref;
+        
+                [resultList addObject:@(ref.hash)];
+            }
+        
+            methodResult(resultList);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::create_batchMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
+                MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
                 HEAP[@(ref.hash)] = ref;
         
                 [resultList addObject:@(ref.hash)];
@@ -3312,190 +3419,6 @@ extern BOOL enableLog;
         
             // invoke native method
             BOOL result = MAMapRectIsNull(rect);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAMapRectIsEmpty::MAMapRectIsEmpty": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
-            MAMapRect rect;
-            [rectValue getValue:&rect];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapRectIsEmpty::MAMapRectIsEmpty(%@)", args[@"rect"]);
-            }
-        
-            // invoke native method
-            BOOL result = MAMapRectIsEmpty(rect);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAStringFromMapPoint::MAStringFromMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
-            MAMapPoint point;
-            [pointValue getValue:&point];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAStringFromMapPoint::MAStringFromMapPoint(%@)", args[@"point"]);
-            }
-        
-            // invoke native method
-            NSString* result = MAStringFromMapPoint(point);
-        
-            // result
-            // 返回值: jsonable
-            id jsonableResult = result;
-        
-            methodResult(jsonableResult);
-        },
-        @"MAStringFromMapSize::MAStringFromMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
-            MAMapSize size;
-            [sizeValue getValue:&size];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAStringFromMapSize::MAStringFromMapSize(%@)", args[@"size"]);
-            }
-        
-            // invoke native method
-            NSString* result = MAStringFromMapSize(size);
-        
-            // result
-            // 返回值: jsonable
-            id jsonableResult = result;
-        
-            methodResult(jsonableResult);
-        },
-        @"MAStringFromMapRect::MAStringFromMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
-            MAMapRect rect;
-            [rectValue getValue:&rect];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAStringFromMapRect::MAStringFromMapRect(%@)", args[@"rect"]);
-            }
-        
-            // invoke native method
-            NSString* result = MAStringFromMapRect(rect);
-        
-            // result
-            // 返回值: jsonable
-            id jsonableResult = result;
-        
-            methodResult(jsonableResult);
-        },
-        @"MAGetDirectionFromCoords::MAGetDirectionFromCoords": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* fromCoordValue = (NSValue*) HEAP[@([args[@"fromCoord"] integerValue])];
-            CLLocationCoordinate2D fromCoord;
-            [fromCoordValue getValue:&fromCoord];
-            // struct arg
-            NSValue* toCoordValue = (NSValue*) HEAP[@([args[@"toCoord"] integerValue])];
-            CLLocationCoordinate2D toCoord;
-            [toCoordValue getValue:&toCoord];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAGetDirectionFromCoords::MAGetDirectionFromCoords(%@, %@)", args[@"fromCoord"], args[@"toCoord"]);
-            }
-        
-            // invoke native method
-            CLLocationDirection result = MAGetDirectionFromCoords(fromCoord, toCoord);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAGetDirectionFromPoints::MAGetDirectionFromPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* fromPointValue = (NSValue*) HEAP[@([args[@"fromPoint"] integerValue])];
-            MAMapPoint fromPoint;
-            [fromPointValue getValue:&fromPoint];
-            // struct arg
-            NSValue* toPointValue = (NSValue*) HEAP[@([args[@"toPoint"] integerValue])];
-            MAMapPoint toPoint;
-            [toPointValue getValue:&toPoint];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAGetDirectionFromPoints::MAGetDirectionFromPoints(%@, %@)", args[@"fromPoint"], args[@"toPoint"]);
-            }
-        
-            // invoke native method
-            CLLocationDirection result = MAGetDirectionFromPoints(fromPoint, toPoint);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
-            MAMapPoint point;
-            [pointValue getValue:&point];
-            // struct arg
-            NSValue* lineBeginValue = (NSValue*) HEAP[@([args[@"lineBegin"] integerValue])];
-            MAMapPoint lineBegin;
-            [lineBeginValue getValue:&lineBegin];
-            // struct arg
-            NSValue* lineEndValue = (NSValue*) HEAP[@([args[@"lineEnd"] integerValue])];
-            MAMapPoint lineEnd;
-            [lineEndValue getValue:&lineEnd];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine(%@, %@, %@)", args[@"point"], args[@"lineBegin"], args[@"lineEnd"]);
-            }
-        
-            // invoke native method
-            double result = MAGetDistanceFromPointToLine(point, lineBegin, lineEnd);
         
             // result
             // 返回值: Value

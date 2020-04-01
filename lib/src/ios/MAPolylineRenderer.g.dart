@@ -22,7 +22,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   //region creators
   static Future<MAPolylineRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAPolylineRenderer');
-    final object = MAPolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAPolylineRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAPolylineRenderer', {'length': length});
   
-    final List<MAPolylineRenderer> typedResult = resultBatch.map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAPolylineRenderer> typedResult = resultBatch.map((result) => MAPolylineRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,21 +43,21 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
 
   //region getters
   Future<MAPolyline> get_polyline() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
-    kNativeObjectPool.add(MAPolyline()..refId = result..tag = 'amap_map_fluttify');
-    return MAPolyline()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
+    kNativeObjectPool.add(MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<bool> get_is3DArrowLine() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_is3DArrowLine", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_is3DArrowLine", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<UIColor> get_sideColor() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_sideColor", {'refId': refId});
-    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_map_fluttify');
-    return UIColor()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_sideColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -85,18 +85,18 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
-      return MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -107,21 +107,21 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   //region getters
   Future<List<MAPolyline>> get_polyline_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<bool>> get_is3DArrowLine_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_is3DArrowLine_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<UIColor>> get_sideColor_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_sideColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => UIColor()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => UIColor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -157,7 +157,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAPolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

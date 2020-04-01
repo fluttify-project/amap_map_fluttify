@@ -22,7 +22,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   //region creators
   static Future<MAMultiTexturePolylineRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiTexturePolylineRenderer');
-    final object = MAMultiTexturePolylineRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAMultiTexturePolylineRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiTexturePolylineRenderer', {'length': length});
   
-    final List<MAMultiTexturePolylineRenderer> typedResult = resultBatch.map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAMultiTexturePolylineRenderer> typedResult = resultBatch.map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,21 +43,21 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
 
   //region getters
   Future<MAMultiPolyline> get_multiPolyline() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
-    kNativeObjectPool.add(MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify');
-    return MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
+    kNativeObjectPool.add(MAMultiPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAMultiPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<List> get_strokeTextureImages() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList();
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages", {'refId': refId});
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<List<num>> get_strokeTextureIDs() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureIDs", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureIDs", {'refId': refId});
   
-    return (result as List).cast<num>();
+    return (__result__ as List).cast<num>();
   }
   
   //endregion
@@ -79,18 +79,18 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify');
-      return MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -101,21 +101,21 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
   //region getters
   Future<List<MAMultiPolyline>> get_multiPolyline_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAMultiPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<List>> get_strokeTextureImages_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureImages_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
   Future<List<List<num>>> get_strokeTextureIDs_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureIDs_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<num>()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<num>()).toList();
   
     return typedResult;
   }
@@ -145,7 +145,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAMultiTexturePolylineRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

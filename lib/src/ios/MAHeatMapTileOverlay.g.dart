@@ -22,7 +22,7 @@ class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
   //region creators
   static Future<MAHeatMapTileOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAHeatMapTileOverlay');
-    final object = MAHeatMapTileOverlay()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAHeatMapTileOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAHeatMapTileOverlay', {'length': length});
   
-    final List<MAHeatMapTileOverlay> typedResult = resultBatch.map((result) => MAHeatMapTileOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAHeatMapTileOverlay> typedResult = resultBatch.map((result) => MAHeatMapTileOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,33 +43,33 @@ class MAHeatMapTileOverlay extends MATileOverlay with MAAnnotation, MAOverlay {
 
   //region getters
   Future<List<MAHeatMapNode>> get_data() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_data", {'refId': refId});
-    kNativeObjectPool.addAll((result as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag = 'amap_map_fluttify').toList());
-    return (result as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag = 'amap_map_fluttify').toList();
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_data", {'refId': refId});
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<int> get_radius() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_radius", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_radius", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_opacity() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_opacity", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_opacity", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<MAHeatMapGradient> get_gradient() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_gradient", {'refId': refId});
-    kNativeObjectPool.add(MAHeatMapGradient()..refId = result..tag = 'amap_map_fluttify');
-    return MAHeatMapGradient()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_gradient", {'refId': refId});
+    kNativeObjectPool.add(MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<bool> get_allowRetinaAdapting() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_allowRetinaAdapting", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_allowRetinaAdapting", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -116,35 +116,35 @@ extension MAHeatMapTileOverlay_Batch on List<MAHeatMapTileOverlay> {
   //region getters
   Future<List<List<MAHeatMapNode>>> get_data_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_data_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
   Future<List<int>> get_radius_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_radius_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_opacity_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_opacity_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<MAHeatMapGradient>> get_gradient_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_gradient_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAHeatMapGradient()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<bool>> get_allowRetinaAdapting_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAHeatMapTileOverlay::get_allowRetinaAdapting_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

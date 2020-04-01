@@ -22,7 +22,7 @@ class MAShape extends NSObject with MAAnnotation {
   //region creators
   static Future<MAShape> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAShape');
-    final object = MAShape()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAShape()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAShape extends NSObject with MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAShape', {'length': length});
   
-    final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAShape> typedResult = resultBatch.map((result) => MAShape()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MAShape extends NSObject with MAAnnotation {
 
   //region getters
   Future<String> get_title() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_subtitle() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MAShape_Batch on List<MAShape> {
   //region getters
   Future<List<String>> get_title_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_title_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_subtitle_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAShape::get_subtitle_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

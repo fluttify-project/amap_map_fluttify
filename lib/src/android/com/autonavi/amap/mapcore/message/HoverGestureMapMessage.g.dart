@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
   //region creators
   static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> create__int__float(int var1, double var2) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', {"var1": var1, "var2": var2});
-    final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
-    final List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
 
   //region getters
   Future<double> get_angleDelta() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -67,18 +67,18 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain', {"var0": var0, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain', {"var0": var0, "var1": var1});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -89,18 +89,18 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -111,7 +111,7 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
   //region getters
   Future<List<double>> get_angleDelta_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::get_angleDelta_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -141,7 +141,7 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -160,7 +160,7 @@ extension com_autonavi_amap_mapcore_message_HoverGestureMapMessage_Batch on List
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

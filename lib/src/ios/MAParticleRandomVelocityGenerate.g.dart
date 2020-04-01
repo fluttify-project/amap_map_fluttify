@@ -22,7 +22,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   //region creators
   static Future<MAParticleRandomVelocityGenerate> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleRandomVelocityGenerate');
-    final object = MAParticleRandomVelocityGenerate()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleRandomVelocityGenerate()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleRandomVelocityGenerate', {'length': length});
   
-    final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleRandomVelocityGenerate> typedResult = resultBatch.map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRandomVelocityGenerate::initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2', {"x1": x1, "y1": y1, "z1": z1, "x2": x2, "y2": y2, "z2": z2, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -98,7 +98,7 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleRandomVelocityGenerate()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
