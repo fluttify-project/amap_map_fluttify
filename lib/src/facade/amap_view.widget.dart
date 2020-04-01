@@ -216,7 +216,7 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
-    final isCurrentPlugin = (it) => it.tag == 'amap_map_fluttify';
+    final isCurrentPlugin = (Ref it) => it.tag__ == 'amap_map_fluttify';
     kNativeObjectPool
         .where(isCurrentPlugin)
         .release_batch()
