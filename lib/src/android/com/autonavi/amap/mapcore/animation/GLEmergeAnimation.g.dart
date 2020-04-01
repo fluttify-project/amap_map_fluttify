@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
   //region creators
   static Future<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> create__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', {"var1": var1.refId});
-    final object = com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
   
-    final List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_animation_GLEmergeAnimation> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class com_autonavi_amap_mapcore_animation_GLEmergeAnimation extends com_autonavi
 
   //region getters
   Future<com_amap_api_maps_model_LatLng> get_mStartPoint() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint", {'refId': refId});
-    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify');
-    return com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint", {'refId': refId});
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -68,7 +68,7 @@ extension com_autonavi_amap_mapcore_animation_GLEmergeAnimation_Batch on List<co
   //region getters
   Future<List<com_amap_api_maps_model_LatLng>> get_mStartPoint_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::get_mStartPoint_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_LatLng()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

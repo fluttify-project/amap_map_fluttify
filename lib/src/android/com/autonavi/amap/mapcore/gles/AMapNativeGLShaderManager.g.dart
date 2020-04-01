@@ -22,7 +22,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   //region creators
   static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__');
-    final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -79,18 +79,18 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager', {"var0": var0});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -120,7 +120,7 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -139,7 +139,7 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

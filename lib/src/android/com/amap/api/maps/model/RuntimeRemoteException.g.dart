@@ -22,7 +22,7 @@ class com_amap_api_maps_model_RuntimeRemoteException extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_model_RuntimeRemoteException> create__String(String var1) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String', {"var1": var1});
-    final object = com_amap_api_maps_model_RuntimeRemoteException()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_RuntimeRemoteException()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_RuntimeRemoteException extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_RuntimeRemoteException__String', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
-    final List<com_amap_api_maps_model_RuntimeRemoteException> typedResult = resultBatch.map((result) => com_amap_api_maps_model_RuntimeRemoteException()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_RuntimeRemoteException> typedResult = resultBatch.map((result) => com_amap_api_maps_model_RuntimeRemoteException()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

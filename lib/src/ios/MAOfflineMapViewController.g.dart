@@ -22,7 +22,7 @@ class MAOfflineMapViewController extends UIViewController  {
   //region creators
   static Future<MAOfflineMapViewController> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineMapViewController');
-    final object = MAOfflineMapViewController()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOfflineMapViewController()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOfflineMapViewController extends UIViewController  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineMapViewController', {'length': length});
   
-    final List<MAOfflineMapViewController> typedResult = resultBatch.map((result) => MAOfflineMapViewController()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOfflineMapViewController> typedResult = resultBatch.map((result) => MAOfflineMapViewController()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAOfflineMapViewController extends UIViewController  {
 
   //region getters
   Future<MAOfflineMap> get_offlineMap() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMapViewController::get_offlineMap", {'refId': refId});
-    kNativeObjectPool.add(MAOfflineMap()..refId = result..tag = 'amap_map_fluttify');
-    return MAOfflineMap()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMapViewController::get_offlineMap", {'refId': refId});
+    kNativeObjectPool.add(MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -62,18 +62,18 @@ class MAOfflineMapViewController extends UIViewController  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMapViewController::sharedInstance', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMapViewController::sharedInstance', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOfflineMapViewController()..refId = result..tag = 'amap_map_fluttify');
-      return MAOfflineMapViewController()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAOfflineMapViewController()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAOfflineMapViewController()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -84,7 +84,7 @@ extension MAOfflineMapViewController_Batch on List<MAOfflineMapViewController> {
   //region getters
   Future<List<MAOfflineMap>> get_offlineMap_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMapViewController::get_offlineMap_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAOfflineMap()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -109,7 +109,7 @@ extension MAOfflineMapViewController_Batch on List<MAOfflineMapViewController> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAOfflineMapViewController()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAOfflineMapViewController()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

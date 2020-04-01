@@ -22,7 +22,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_trace_TraceLocation> create__double__double__float__float__long(double var1, double var3, double var5, double var6, int var7) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long', {"var1": var1, "var3": var3, "var5": var5, "var6": var6, "var7": var7});
-    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -30,7 +30,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
   
   static Future<com_amap_api_trace_TraceLocation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceLocation__');
-    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_trace_TraceLocation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -42,7 +42,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__double__double__float__float__long', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var3": var3[__i__], "var5": var5[__i__], "var6": var6[__i__], "var7": var7[__i__]}]);
   
-    final List<com_amap_api_trace_TraceLocation> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceLocation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_trace_TraceLocation> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -53,7 +53,7 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__', {'length': length});
   
-    final List<com_amap_api_trace_TraceLocation> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceLocation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_trace_TraceLocation> typedResult = resultBatch.map((result) => com_amap_api_trace_TraceLocation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -76,18 +76,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLatitude', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLatitude', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -98,18 +98,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLatitude', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLatitude', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -120,18 +120,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLongitude', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getLongitude', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -142,18 +142,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLongitude', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setLongitude', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -164,18 +164,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getSpeed', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getSpeed', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -186,18 +186,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setSpeed', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setSpeed', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -208,18 +208,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getBearing', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getBearing', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -230,18 +230,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setBearing', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setBearing', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -252,18 +252,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getTime', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::getTime', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -274,18 +274,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setTime', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::setTime', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -296,18 +296,18 @@ class com_amap_api_trace_TraceLocation extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::copy', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceLocation::copy', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_trace_TraceLocation()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_trace_TraceLocation()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_trace_TraceLocation()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_trace_TraceLocation()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -337,7 +337,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -356,7 +356,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -375,7 +375,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -394,7 +394,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -413,7 +413,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -432,7 +432,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -451,7 +451,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -470,7 +470,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -489,7 +489,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -508,7 +508,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -527,7 +527,7 @@ extension com_amap_api_trace_TraceLocation_Batch on List<com_amap_api_trace_Trac
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_trace_TraceLocation()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_trace_TraceLocation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

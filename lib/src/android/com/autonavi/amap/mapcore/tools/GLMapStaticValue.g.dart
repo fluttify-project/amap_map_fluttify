@@ -216,7 +216,7 @@ class com_autonavi_amap_mapcore_tools_GLMapStaticValue extends java_lang_Object 
   //region creators
   static Future<com_autonavi_amap_mapcore_tools_GLMapStaticValue> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__');
-    final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -228,7 +228,7 @@ class com_autonavi_amap_mapcore_tools_GLMapStaticValue extends java_lang_Object 
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLMapStaticValue__', {'length': length});
   
-    final List<com_autonavi_amap_mapcore_tools_GLMapStaticValue> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_amap_mapcore_tools_GLMapStaticValue> typedResult = resultBatch.map((result) => com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

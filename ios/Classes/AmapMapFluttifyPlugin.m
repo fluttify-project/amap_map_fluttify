@@ -13,6 +13,7 @@
 #import "SubHandler/SubHandler6.h"
 #import "SubHandler/SubHandler7.h"
 #import "SubHandler/SubHandler8.h"
+#import "SubHandler/SubHandlerCustom.h"
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
 extern NSMutableDictionary<NSString*, NSObject*>* STACK;
@@ -41,6 +42,7 @@ extern BOOL enableLog;
     [_handlerMap addEntriesFromDictionary: [self getSubHandler6]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler7]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler8]];
+    [_handlerMap addEntriesFromDictionary: [self getSubHandlerCustom]];
   }
 
   return self;
@@ -55,6 +57,7 @@ extern BOOL enableLog;
                            channel:channel];
 
   // 注册View
+  [registrar registerViewFactory: [[MAPinAnnotationViewFactory alloc] initWithRegistrar:registrar] withId: @"me.yohom/MAPinAnnotationView"];
   [registrar registerViewFactory: [[MAAnnotationViewFactory alloc] initWithRegistrar:registrar] withId: @"me.yohom/MAAnnotationView"];
   [registrar registerViewFactory: [[MACustomCalloutViewFactory alloc] initWithRegistrar:registrar] withId: @"me.yohom/MACustomCalloutView"];
   [registrar registerViewFactory: [[MAMapViewFactory alloc] initWithRegistrar:registrar] withId: @"me.yohom/MAMapView"];

@@ -22,7 +22,7 @@ class com_amap_api_maps_model_MyLocationStyleCreator extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_model_MyLocationStyleCreator> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__');
-    final object = com_amap_api_maps_model_MyLocationStyleCreator()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_MyLocationStyleCreator()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_MyLocationStyleCreator extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyleCreator__', {'length': length});
   
-    final List<com_amap_api_maps_model_MyLocationStyleCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MyLocationStyleCreator()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_MyLocationStyleCreator> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MyLocationStyleCreator()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -62,6 +62,7 @@
 #import <MAMapKit/MAOverlayPathRenderer.h>
 #import <MAMapKit/MAGroundOverlayRenderer.h>
 #import <MAMapKit/MACustomBuildingOverlayRenderer.h>
+#import "MAPinAnnotationViewFactory.h"
 #import "MAAnnotationViewFactory.h"
 #import "MACustomCalloutViewFactory.h"
 #import "MAMapViewFactory.h"

@@ -22,7 +22,7 @@ class com_amap_api_maps_model_particle_ParticleEmissionModule extends com_autona
   //region creators
   static Future<com_amap_api_maps_model_particle_ParticleEmissionModule> create__int__int(int var1, int var2) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int', {"var1": var1, "var2": var2});
-    final object = com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_particle_ParticleEmissionModule extends com_autona
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__]}]);
   
-    final List<com_amap_api_maps_model_particle_ParticleEmissionModule> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_particle_ParticleEmissionModule> typedResult = resultBatch.map((result) => com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -59,6 +59,7 @@ export 'MAMapCustomStyleOptions.g.dart';
 export 'MAMapStatus.g.dart';
 export 'MAOfflineCity.g.dart';
 export 'MACustomBuildingOverlayRenderer.g.dart';
+export 'platformview/MAPinAnnotationView.g.dart';
 export 'platformview/MACustomCalloutView.g.dart';
 export 'platformview/MAAnnotationView.g.dart';
 export 'platformview/MAMapView.g.dart';

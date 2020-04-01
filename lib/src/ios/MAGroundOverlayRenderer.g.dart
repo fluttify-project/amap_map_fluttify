@@ -22,7 +22,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //region creators
   static Future<MAGroundOverlayRenderer> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAGroundOverlayRenderer');
-    final object = MAGroundOverlayRenderer()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAGroundOverlayRenderer()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAGroundOverlayRenderer', {'length': length});
   
-    final List<MAGroundOverlayRenderer> typedResult = resultBatch.map((result) => MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAGroundOverlayRenderer> typedResult = resultBatch.map((result) => MAGroundOverlayRenderer()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
 
   //region getters
   Future<MAGroundOverlay> get_groundOverlay() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify');
-    return MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
+    kNativeObjectPool.add(MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -62,18 +62,18 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay', {"groundOverlay": groundOverlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay', {"groundOverlay": groundOverlay.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify');
-      return MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -84,7 +84,7 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
   //region getters
   Future<List<MAGroundOverlay>> get_groundOverlay_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAGroundOverlayRenderer::get_groundOverlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAGroundOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -109,7 +109,7 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAGroundOverlayRenderer()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

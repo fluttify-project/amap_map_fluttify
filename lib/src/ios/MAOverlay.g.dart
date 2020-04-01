@@ -16,15 +16,15 @@ mixin MAOverlay on MAAnnotation {
   
 
   Future<CLLocationCoordinate2D> get_coordinate() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_coordinate", {'refId': refId});
-    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify');
-    return CLLocationCoordinate2D()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_coordinate", {'refId': refId});
+    kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_boundingMapRect", {'refId': refId});
-    kNativeObjectPool.add(MAMapRect()..refId = result..tag = 'amap_map_fluttify');
-    return MAMapRect()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_boundingMapRect", {'refId': refId});
+    kNativeObjectPool.add(MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
 

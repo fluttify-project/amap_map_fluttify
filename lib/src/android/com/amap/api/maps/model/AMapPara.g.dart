@@ -24,7 +24,7 @@ class com_amap_api_maps_model_AMapPara extends java_lang_Object  {
   //region creators
   static Future<com_amap_api_maps_model_AMapPara> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_AMapPara__');
-    final object = com_amap_api_maps_model_AMapPara()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_AMapPara()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -36,7 +36,7 @@ class com_amap_api_maps_model_AMapPara extends java_lang_Object  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_AMapPara__', {'length': length});
   
-    final List<com_amap_api_maps_model_AMapPara> typedResult = resultBatch.map((result) => com_amap_api_maps_model_AMapPara()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_AMapPara> typedResult = resultBatch.map((result) => com_amap_api_maps_model_AMapPara()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

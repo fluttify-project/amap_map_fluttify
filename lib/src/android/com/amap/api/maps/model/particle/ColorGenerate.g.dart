@@ -39,18 +39,18 @@ class com_amap_api_maps_model_particle_ColorGenerate extends com_autonavi_amap_m
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ColorGenerate::getColor', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return (result as List).cast<double>();
+      return (__result__ as List).cast<double>();
     }
   }
   
@@ -80,7 +80,7 @@ extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => (result as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<double>()).toList();
     
       return typedResult;
     }

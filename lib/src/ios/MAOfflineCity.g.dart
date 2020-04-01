@@ -22,7 +22,7 @@ class MAOfflineCity extends MAOfflineItem  {
   //region creators
   static Future<MAOfflineCity> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAOfflineCity');
-    final object = MAOfflineCity()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAOfflineCity()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAOfflineCity extends MAOfflineItem  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAOfflineCity', {'length': length});
   
-    final List<MAOfflineCity> typedResult = resultBatch.map((result) => MAOfflineCity()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAOfflineCity> typedResult = resultBatch.map((result) => MAOfflineCity()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,27 +43,27 @@ class MAOfflineCity extends MAOfflineItem  {
 
   //region getters
   Future<String> get_cityCode() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityCode", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityCode", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_cityName() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityName", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityName", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_urlString() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_urlString", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_urlString", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<MAOfflineCityStatus> get_status() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_status", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_status", {'refId': refId});
   
-    return MAOfflineCityStatus.values[result];
+    return MAOfflineCityStatus.values[__result__];
   }
   
   //endregion
@@ -81,28 +81,28 @@ extension MAOfflineCity_Batch on List<MAOfflineCity> {
   //region getters
   Future<List<String>> get_cityCode_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityCode_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_cityName_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_cityName_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_urlString_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_urlString_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<MAOfflineCityStatus>> get_status_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_status_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAOfflineCityStatus.values[result]).toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAOfflineCityStatus.values[__result__]).toList();
   
     return typedResult;
   }

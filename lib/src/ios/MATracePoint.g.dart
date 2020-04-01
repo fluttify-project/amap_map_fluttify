@@ -22,7 +22,7 @@ class MATracePoint extends NSObject with NSCoding {
   //region creators
   static Future<MATracePoint> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATracePoint');
-    final object = MATracePoint()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MATracePoint()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MATracePoint extends NSObject with NSCoding {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATracePoint', {'length': length});
   
-    final List<MATracePoint> typedResult = resultBatch.map((result) => MATracePoint()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MATracePoint> typedResult = resultBatch.map((result) => MATracePoint()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,15 +43,15 @@ class MATracePoint extends NSObject with NSCoding {
 
   //region getters
   Future<double> get_latitude() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<double> get_longitude() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_longitude", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_longitude", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -80,14 +80,14 @@ extension MATracePoint_Batch on List<MATracePoint> {
   //region getters
   Future<List<double>> get_latitude_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_latitude_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<double>> get_longitude_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MATracePoint::get_longitude_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

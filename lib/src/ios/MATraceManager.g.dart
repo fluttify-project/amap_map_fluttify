@@ -22,7 +22,7 @@ class MATraceManager extends NSObject  {
   //region creators
   static Future<MATraceManager> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMATraceManager');
-    final object = MATraceManager()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MATraceManager()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MATraceManager extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMATraceManager', {'length': length});
   
-    final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MATraceManager> typedResult = resultBatch.map((result) => MATraceManager()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -63,7 +63,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.traceManager_didTrace_correct_distance_withError(MATraceManager()..refId = (args['manager'])..tag = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag = 'amap_map_fluttify');
+            delegate?.traceManager_didTrace_correct_distance_withError(MATraceManager()..refId = (args['manager'])..tag__ = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -72,7 +72,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag = 'amap_map_fluttify');
+            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify');
             break;
           default:
             break;
@@ -90,18 +90,18 @@ class MATraceManager extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance', );
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATraceManager()..refId = result..tag = 'amap_map_fluttify');
-      return MATraceManager()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -112,7 +112,7 @@ class MATraceManager extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback', {"locations": locations.map((it) => it.refId).toList(), "type": type.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback', {"locations": locations.map((it) => it.refId).toList(), "type": type.index, "refId": refId});
   
   
     // handle native call
@@ -130,7 +130,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              processingCallback(args['index'], (args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList());
+              processingCallback(args['index'], (args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList());
               break;
             case 'Callback::MAFinishCallback::MAFinishCallback':
               // print log
@@ -139,7 +139,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              finishCallback((args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag = 'amap_map_fluttify').toList(), args['distance']);
+              finishCallback((args['points'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance']);
               break;
             case 'Callback::MAFailedCallback::MAFailedCallback':
               // print log
@@ -156,11 +156,11 @@ class MATraceManager extends NSObject  {
         });
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSOperation()..refId = result..tag = 'amap_map_fluttify');
-      return NSOperation()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -171,18 +171,18 @@ class MATraceManager extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::start', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -193,18 +193,18 @@ class MATraceManager extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stop', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -234,7 +234,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MATraceManager()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -253,7 +253,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -272,7 +272,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

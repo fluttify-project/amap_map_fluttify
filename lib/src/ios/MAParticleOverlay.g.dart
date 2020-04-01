@@ -22,7 +22,7 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region creators
   static Future<MAParticleOverlay> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleOverlay');
-    final object = MAParticleOverlay()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleOverlay', {'length': length});
   
-    final List<MAParticleOverlay> typedResult = resultBatch.map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleOverlay> typedResult = resultBatch.map((result) => MAParticleOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
 
   //region getters
   Future<MAParticleOverlayOptions> get_overlayOption() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
-    kNativeObjectPool.add(MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify');
-    return MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify';
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
+    kNativeObjectPool.add(MAParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -62,18 +62,18 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option.refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -84,18 +84,18 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -106,7 +106,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
   //region getters
   Future<List<MAParticleOverlayOptions>> get_overlayOption_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAParticleOverlay::get_overlayOption_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => MAParticleOverlayOptions()..refId = result..tag = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).map((__result__) => MAParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -131,7 +131,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleOverlay()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -150,7 +150,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

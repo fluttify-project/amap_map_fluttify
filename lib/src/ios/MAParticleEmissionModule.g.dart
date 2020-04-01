@@ -22,7 +22,7 @@ class MAParticleEmissionModule extends NSObject  {
   //region creators
   static Future<MAParticleEmissionModule> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAParticleEmissionModule');
-    final object = MAParticleEmissionModule()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAParticleEmissionModule()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAParticleEmissionModule extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAParticleEmissionModule', {'length': length});
   
-    final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAParticleEmissionModule> typedResult = resultBatch.map((result) => MAParticleEmissionModule()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class MAParticleEmissionModule extends NSObject  {
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleEmissionModule::initWithEmissionRate_rateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify');
-      return MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -98,7 +98,7 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => MAParticleEmissionModule()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

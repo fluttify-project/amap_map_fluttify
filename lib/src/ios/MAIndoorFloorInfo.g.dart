@@ -22,7 +22,7 @@ class MAIndoorFloorInfo extends NSObject  {
   //region creators
   static Future<MAIndoorFloorInfo> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAIndoorFloorInfo');
-    final object = MAIndoorFloorInfo()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAIndoorFloorInfo()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAIndoorFloorInfo extends NSObject  {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAIndoorFloorInfo', {'length': length});
   
-    final List<MAIndoorFloorInfo> typedResult = resultBatch.map((result) => MAIndoorFloorInfo()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAIndoorFloorInfo> typedResult = resultBatch.map((result) => MAIndoorFloorInfo()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,27 +43,27 @@ class MAIndoorFloorInfo extends NSObject  {
 
   //region getters
   Future<String> get_floorName() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorName", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorName", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<int> get_floorIndex() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorIndex", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorIndex", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<String> get_floorNona() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorNona", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorNona", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   Future<bool> get_isPark() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_isPark", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_isPark", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -81,28 +81,28 @@ extension MAIndoorFloorInfo_Batch on List<MAIndoorFloorInfo> {
   //region getters
   Future<List<String>> get_floorName_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorName_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<int>> get_floorIndex_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorIndex_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<String>> get_floorNona_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_floorNona_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_isPark_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorFloorInfo::get_isPark_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }

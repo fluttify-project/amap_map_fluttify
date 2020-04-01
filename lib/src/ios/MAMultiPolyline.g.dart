@@ -22,7 +22,7 @@ class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
   //region creators
   static Future<MAMultiPolyline> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAMultiPolyline');
-    final object = MAMultiPolyline()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAMultiPolyline()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAMultiPolyline', {'length': length});
   
-    final List<MAMultiPolyline> typedResult = resultBatch.map((result) => MAMultiPolyline()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAMultiPolyline> typedResult = resultBatch.map((result) => MAMultiPolyline()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAMultiPolyline extends MAPolyline with MAOverlay, MAAnnotation {
 
   //region getters
   Future<List<num>> get_drawStyleIndexes() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes", {'refId': refId});
   
-    return (result as List).cast<num>();
+    return (__result__ as List).cast<num>();
   }
   
   //endregion
@@ -68,7 +68,7 @@ extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
   //region getters
   Future<List<List<num>>> get_drawStyleIndexes_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => (result as List).cast<num>()).toList();
+    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<num>()).toList();
   
     return typedResult;
   }

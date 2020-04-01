@@ -22,7 +22,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   //region creators
   static Future<MAAnimatedAnnotation> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createMAAnimatedAnnotation');
-    final object = MAAnimatedAnnotation()..refId = refId..tag = 'amap_map_fluttify';
+    final object = MAAnimatedAnnotation()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchMAAnimatedAnnotation', {'length': length});
   
-    final List<MAAnimatedAnnotation> typedResult = resultBatch.map((result) => MAAnimatedAnnotation()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<MAAnimatedAnnotation> typedResult = resultBatch.map((result) => MAAnimatedAnnotation()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -43,9 +43,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
 
   //region getters
   Future<double> get_movingDirection() async {
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection", {'refId': refId});
   
-    return result;
+    return __result__;
   }
   
   //endregion
@@ -67,7 +67,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
   
   
     // handle native call
@@ -93,11 +93,11 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
         });
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify');
-      return MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -108,7 +108,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
   
   
     // handle native call
@@ -135,7 +135,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback(MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag = 'amap_map_fluttify');
+              stepCallback(MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag__ = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -143,11 +143,11 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
         });
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify');
-      return MAAnnotationMoveAnimation()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -158,18 +158,18 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::setNeedsStart', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
     
-      return result;
+      return __result__;
     }
   }
   
@@ -180,7 +180,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   //region getters
   Future<List<double>> get_movingDirection_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((result) => result).toList();
+    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -210,7 +210,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => result).toList();
+      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
     
       return typedResult;
     }

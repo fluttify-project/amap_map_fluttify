@@ -22,7 +22,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   //region creators
   static Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__');
-    final object = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -34,7 +34,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_HeatmapTileProvider_Builder__', {'length': length});
   
-    final List<com_amap_api_maps_model_HeatmapTileProvider_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_amap_api_maps_model_HeatmapTileProvider_Builder> typedResult = resultBatch.map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -57,18 +57,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::data', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::data', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -79,18 +79,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -101,18 +101,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::radius', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::radius', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -123,18 +123,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -145,18 +145,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency', {"var1": var1, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency', {"var1": var1, "refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -167,18 +167,18 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     }
   
     // invoke native method
-    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::build', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.HeatmapTileProvider.Builder::build', {"refId": refId});
   
   
     // handle native call
   
   
     // convert native result to dart side object
-    if (result == null) {
+    if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider()..refId = result..tag = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider()..refId = result..tag = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -208,7 +208,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -227,7 +227,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -246,7 +246,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -265,7 +265,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -284,7 +284,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -303,7 +303,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((result) => com_amap_api_maps_model_HeatmapTileProvider()..refId = result..tag = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

@@ -26,7 +26,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_l
   //region creators
   static Future<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> create__() async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__');
-    final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag = 'amap_map_fluttify';
+    final object = com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
@@ -38,7 +38,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues extends java_l
     }
     final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__', {'length': length});
   
-    final List<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = result..tag = 'amap_map_fluttify').toList();
+    final List<com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
