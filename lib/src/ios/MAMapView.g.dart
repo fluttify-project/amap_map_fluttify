@@ -396,7 +396,7 @@ class MAMapView extends UIView  {
   Future<void> set_delegate(MAMapViewDelegate delegate, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
-    MethodChannel('MAMapViewDelegate::Callback')
+    MethodChannel('MAMapViewDelegate::Callback@$refId')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
         // final refId = args['callerRefId'] as int;
@@ -1353,7 +1353,7 @@ class MAMapView extends UIView  {
   
   
     // handle native call
-    MethodChannel('MAMapView::takeSnapshotInRect_withCompletionBlock::Callback')
+    MethodChannel('MAMapView::takeSnapshotInRect_withCompletionBlock::Callback@$refId')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

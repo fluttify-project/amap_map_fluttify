@@ -150,7 +150,7 @@ extern BOOL enableLog;
 - (void)traceManager : (MATraceManager*)manager didTrace: (NSArray<CLLocation*>*)locations correct: (NSArray<MATracePoint*>*)tracePoints distance: (double)distance withError: (NSError*)error
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MATraceDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MATraceDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -192,7 +192,7 @@ extern BOOL enableLog;
 - (void)mapViewRequireLocationAuth : (CLLocationManager*)locationManager
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MATraceDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MATraceDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -211,7 +211,7 @@ extern BOOL enableLog;
 - (void)multiPointOverlayRenderer : (MAMultiPointOverlayRenderer*)renderer didItemTapped: (MAMultiPointItem*)item
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMultiPointOverlayRendererDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMultiPointOverlayRendererDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -233,7 +233,7 @@ extern BOOL enableLog;
 - (void)mapViewRegionChanged : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -252,7 +252,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -273,7 +273,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -294,7 +294,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView mapWillMoveByUser: (BOOL)wasUserAction
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -315,7 +315,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView mapDidMoveByUser: (BOOL)wasUserAction
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -336,7 +336,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView mapWillZoomByUser: (BOOL)wasUserAction
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -357,7 +357,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView mapDidZoomByUser: (BOOL)wasUserAction
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -378,7 +378,7 @@ extern BOOL enableLog;
 - (void)mapViewWillStartLoadingMap : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -397,7 +397,7 @@ extern BOOL enableLog;
 - (void)mapViewDidFinishLoadingMap : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -416,7 +416,7 @@ extern BOOL enableLog;
 - (void)mapViewDidFailLoadingMap : (MAMapView*)mapView withError: (NSError*)error
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -438,7 +438,7 @@ extern BOOL enableLog;
 - (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (id<MAAnnotation>)annotation
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -471,7 +471,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didAddAnnotationViews: (NSArray*)views
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -499,7 +499,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -521,7 +521,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didDeselectAnnotationView: (MAAnnotationView*)view
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -543,7 +543,7 @@ extern BOOL enableLog;
 - (void)mapViewWillStartLocatingUser : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -562,7 +562,7 @@ extern BOOL enableLog;
 - (void)mapViewDidStopLocatingUser : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -581,7 +581,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didUpdateUserLocation: (MAUserLocation*)userLocation updatingLocation: (BOOL)updatingLocation
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -605,7 +605,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didFailToLocateUserWithError: (NSError*)error
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -627,7 +627,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView annotationView: (MAAnnotationView*)view didChangeDragState: (MAAnnotationViewDragState)newState fromOldState: (MAAnnotationViewDragState)oldState
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -653,7 +653,7 @@ extern BOOL enableLog;
 - (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (id<MAOverlay>)overlay
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -686,7 +686,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didAddOverlayRenderers: (NSArray*)overlayRenderers
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -714,7 +714,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView annotationView: (MAAnnotationView*)view calloutAccessoryControlTapped: (UIControl*)control
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -739,7 +739,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didAnnotationViewCalloutTapped: (MAAnnotationView*)view
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -761,7 +761,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didAnnotationViewTapped: (MAAnnotationView*)view
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -783,7 +783,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didChangeUserTrackingMode: (MAUserTrackingMode)mode animated: (BOOL)animated
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -806,7 +806,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didChangeOpenGLESDisabled: (BOOL)openGLESDisabled
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -827,7 +827,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didTouchPois: (NSArray*)pois
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -855,7 +855,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -879,7 +879,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -903,7 +903,7 @@ extern BOOL enableLog;
 - (void)mapInitComplete : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -922,7 +922,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didIndoorMapShowed: (MAIndoorInfo*)indoorInfo
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -944,7 +944,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didIndoorMapFloorIndexChanged: (MAIndoorInfo*)indoorInfo
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -966,7 +966,7 @@ extern BOOL enableLog;
 - (void)mapView : (MAMapView*)mapView didIndoorMapHidden: (MAIndoorInfo*)indoorInfo
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -988,7 +988,7 @@ extern BOOL enableLog;
 - (void)offlineDataWillReload : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
@@ -1007,7 +1007,7 @@ extern BOOL enableLog;
 - (void)offlineDataDidReload : (MAMapView*)mapView
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"MAMapViewDelegate::Callback"
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
             binaryMessenger:[_registrar messenger]];
   // print log
   if (enableLog) {
