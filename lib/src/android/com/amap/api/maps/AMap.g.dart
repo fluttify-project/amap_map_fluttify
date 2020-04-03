@@ -503,7 +503,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarkers', {"var1": var1.map((it) => it.refId).toList(), "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarkers', {"var1": var1.map((__it__) => __it__.refId).toList(), "var2": var2, "refId": refId});
   
   
     // handle native call

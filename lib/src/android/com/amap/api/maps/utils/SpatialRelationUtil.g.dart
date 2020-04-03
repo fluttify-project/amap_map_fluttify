@@ -60,7 +60,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId, "var2": var2, "var3": var3});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double', {"var0": var0.map((__it__) => __it__.refId).toList(), "var1": var1.refId, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -82,7 +82,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0.map((__it__) => __it__.refId).toList(), "var1": var1.refId});
   
   
     // handle native call
@@ -104,7 +104,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint', {"var0": var0.map((__it__) => __it__.refId).toList(), "var1": var1.refId});
   
   
     // handle native call
@@ -126,7 +126,7 @@ class com_amap_api_maps_utils_SpatialRelationUtil extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double', {"var0": var0.map((it) => it.refId).toList(), "var1": var1.refId, "var2": var2});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double', {"var0": var0.map((__it__) => __it__.refId).toList(), "var1": var1.refId, "var2": var2});
   
   
     // handle native call

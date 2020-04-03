@@ -460,7 +460,7 @@ extern BOOL enableLog;
           // invoke native method
           [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
               FlutterMethodChannel *channel = [FlutterMethodChannel
-                  methodChannelWithName:[NSString stringWithFormat:@"MAMapView::takeSnapshotInRect_withCompletionBlock::Callback@%@", @(ref.hash)]
+                  methodChannelWithName:@"MAMapView::takeSnapshotInRect_withCompletionBlock::Callback"
                         binaryMessenger:[[self registrar] messenger]];
       
               // print log

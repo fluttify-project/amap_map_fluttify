@@ -838,7 +838,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -893,7 +893,7 @@ extern BOOL enableLog;
             // invoke native method
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -909,7 +909,7 @@ extern BOOL enableLog;
         
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1131,7 +1131,7 @@ extern BOOL enableLog;
             // invoke native method
             NSOperation* result = [ref queryProcessedTraceWith: locations type: type processingCallback: ^(int index, NSArray<MATracePoint*>* points) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1156,7 +1156,7 @@ extern BOOL enableLog;
         
             } finishCallback: ^(NSArray<MATracePoint*>* points, double distance) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1181,7 +1181,7 @@ extern BOOL enableLog;
         
             } failedCallback: ^(int errorCode, NSString* errorDesc) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1624,7 +1624,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MATileOverlay::loadTileAtPath_result::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MATileOverlay::loadTileAtPath_result::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1734,7 +1734,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMap::setupWithCompletionBlock::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAOfflineMap::setupWithCompletionBlock::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1775,7 +1775,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -1926,7 +1926,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAOfflineMap::checkNewestVersion::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAOfflineMap::checkNewestVersion::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
@@ -3588,7 +3588,7 @@ extern BOOL enableLog;
             // invoke native method
             [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
-                    methodChannelWithName:[NSString stringWithFormat:@"MAMapView::takeSnapshotInRect_withCompletionBlock::Callback@%@", @(ref.hash)]
+                    methodChannelWithName:@"MAMapView::takeSnapshotInRect_withCompletionBlock::Callback"
                           binaryMessenger:[[self registrar] messenger]];
         
                 // print log
