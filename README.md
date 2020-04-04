@@ -19,7 +19,6 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
   2. 填写原生SDK相关的信息, 填写maven坐标和cocoapods名称的时候会进行联网自动补全;
   3. 提交请求, 目前默认获取目标SDK的最新版本来生成插件;
   4. 请求完成后会往github账号关联的邮箱地址发一份邮件, 产物插件便在邮件的附件中; 
-- 网站前端使用flutter for web编写(目前产物可能会比较大, 随着flutter官方的优化这些问题会逐步改善), 部署在github pages上, 所以首次访问可能会异常的慢, 请耐心等待或者多试几次. 
 
 ## 接外包
 **本人承接外包项目(地图类app优先), 有意者请联系qq 382146139.**
