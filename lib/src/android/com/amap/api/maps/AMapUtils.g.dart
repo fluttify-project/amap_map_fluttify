@@ -115,7 +115,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng', {"var0": var0.map((it) => it.refId).toList()});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng', {"var0": var0.map((__it__) => __it__.refId).toList()});
   
   
     // handle native call

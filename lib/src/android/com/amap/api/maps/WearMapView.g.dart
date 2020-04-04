@@ -256,7 +256,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback')
+    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback@$refId')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

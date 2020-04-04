@@ -67,7 +67,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithCoordinates_count', {"coords": coords.map((__it__) => __it__.refId).toList(), "count": count});
   
   
     // handle native call
@@ -89,7 +89,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::polygonWithPoints_count', {"points": points.map((__it__) => __it__.refId).toList(), "count": count});
   
   
     // handle native call
@@ -111,7 +111,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithPoints_count', {"points": points.map((__it__) => __it__.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
@@ -133,7 +133,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygon::setPolygonWithCoordinates_count', {"coords": coords.map((__it__) => __it__.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call

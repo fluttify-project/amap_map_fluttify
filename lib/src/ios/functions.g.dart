@@ -459,7 +459,7 @@ Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, 
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsPoint::MAPolygonContainsPoint', {"point": point.refId, "polygon": polygon.map((it) => it.refId).toList(), "count": count});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsPoint::MAPolygonContainsPoint', {"point": point.refId, "polygon": polygon.map((__it__) => __it__.refId).toList(), "count": count});
   
 
   // handle native call
@@ -481,7 +481,7 @@ Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLo
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsCoordinate::MAPolygonContainsCoordinate', {"point": point.refId, "polygon": polygon.map((it) => it.refId).toList(), "count": count});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsCoordinate::MAPolygonContainsCoordinate', {"point": point.refId, "polygon": polygon.map((__it__) => __it__.refId).toList(), "count": count});
   
 
   // handle native call
@@ -566,7 +566,7 @@ Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int co
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAreaForPolygon::MAAreaForPolygon', {"coordinates": coordinates.map((it) => it.refId).toList(), "count": count});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAreaForPolygon::MAAreaForPolygon', {"coordinates": coordinates.map((__it__) => __it__.refId).toList(), "count": count});
   
 
   // handle native call
