@@ -164,7 +164,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -183,7 +183,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -202,7 +202,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -221,7 +221,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => android_graphics_Bitmap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_graphics_Bitmap()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

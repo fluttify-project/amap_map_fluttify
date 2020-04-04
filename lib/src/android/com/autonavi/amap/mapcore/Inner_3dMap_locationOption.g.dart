@@ -780,7 +780,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -799,7 +799,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -818,7 +818,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -837,7 +837,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -856,7 +856,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -875,7 +875,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -894,7 +894,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -913,7 +913,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -932,7 +932,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -951,7 +951,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -970,7 +970,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -989,7 +989,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1008,7 +1008,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1027,7 +1027,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__]).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__]).toList();
     
       return typedResult;
     }
@@ -1046,7 +1046,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__]).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__]).toList();
     
       return typedResult;
     }
@@ -1065,7 +1065,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1084,7 +1084,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1103,7 +1103,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1122,7 +1122,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1141,7 +1141,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1160,7 +1160,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1179,7 +1179,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1198,7 +1198,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1217,7 +1217,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1236,7 +1236,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1255,7 +1255,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1274,7 +1274,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1293,7 +1293,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1312,7 +1312,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1331,7 +1331,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1350,7 +1350,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1369,7 +1369,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

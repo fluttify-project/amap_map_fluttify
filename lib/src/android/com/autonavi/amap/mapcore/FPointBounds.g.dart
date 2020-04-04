@@ -156,14 +156,14 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
   //region getters
   Future<List<com_autonavi_amap_mapcore_FPoint>> get_southwest_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_southwest_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
   
   Future<List<com_autonavi_amap_mapcore_FPoint>> get_northeast_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_northeast_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -188,7 +188,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -207,7 +207,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -226,7 +226,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -245,7 +245,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

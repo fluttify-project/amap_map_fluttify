@@ -68,7 +68,7 @@ extension MAMultiPolyline_Batch on List<MAMultiPolyline> {
   //region getters
   Future<List<List<num>>> get_drawStyleIndexes_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiPolyline::get_drawStyleIndexes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<num>()).toList();
+    final typedResult = (resultBatch as List).cast<num>().map((__result__) => (__result__ as List).cast<num>()).toList();
   
     return typedResult;
   }

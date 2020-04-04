@@ -180,7 +180,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   //region getters
   Future<List<double>> get_movingDirection_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnimatedAnnotation::get_movingDirection_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -210,7 +210,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

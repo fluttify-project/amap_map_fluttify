@@ -124,7 +124,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -143,7 +143,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -162,7 +162,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
