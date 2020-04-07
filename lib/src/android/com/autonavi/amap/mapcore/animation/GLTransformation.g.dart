@@ -42,6 +42,18 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   //endregion
 
   //region getters
+  Future<double> get_x() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_x", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<double> get_y() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_y", {'refId': refId});
+  
+    return __result__;
+  }
+  
   Future<double> get_alpha() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_alpha", {'refId': refId});
   
@@ -69,6 +81,18 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
   //endregion
 
   //region setters
+  Future<void> set_x(double x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_x', {'refId': refId, "x": x});
+  
+  
+  }
+  
+  Future<void> set_y(double y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_y', {'refId': refId, "y": y});
+  
+  
+  }
+  
   Future<void> set_alpha(double alpha) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha', {'refId': refId, "alpha": alpha});
   
@@ -123,6 +147,20 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends java_lang_Obj
 
 extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com_autonavi_amap_mapcore_animation_GLTransformation> {
   //region getters
+  Future<List<double>> get_x_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_y_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
   Future<List<double>> get_alpha_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.animation.GLTransformation::get_alpha_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
@@ -154,6 +192,18 @@ extension com_autonavi_amap_mapcore_animation_GLTransformation_Batch on List<com
   //endregion
 
   //region setters
+  Future<void> set_x_batch(List<double> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_y_batch(List<double> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
+  
+  
+  }
+  
   Future<void> set_alpha_batch(List<double> alpha) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "alpha": alpha[__i__]}]);
   

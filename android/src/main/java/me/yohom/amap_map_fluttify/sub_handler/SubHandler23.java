@@ -30,2139 +30,6509 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 public class SubHandler23 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
-            // method
-            put("com.amap.api.maps.model.ArcOptions::getEnd_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
             
+                    // create target object
+                    com.autonavi.ae.gmap.glanimation.AdglAnimation1V obj = new com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.ArcOptions ref = (com.amap.api.maps.model.ArcOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.LatLng result;
-                    try {
-                        result = ref.getEnd();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::center_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup obj = new com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V obj = new com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleItem__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.style.StyleItem obj = new com.autonavi.ae.gmap.style.StyleItem(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleElement__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.style.StyleElement obj = new com.autonavi.ae.gmap.style.StyleElement();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam obj = new com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo obj = new com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__int__long", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__long__long", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    long var3 = (long) (int) ((Map<String, Object>) args).get("var3");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.GLMapState obj = new com.autonavi.ae.gmap.GLMapState(var1, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLTextureProperty obj = new com.autonavi.ae.gmap.gloverlay.GLTextureProperty();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr obj = new com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLRouteProperty obj = new com.autonavi.ae.gmap.gloverlay.GLRouteProperty();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    int var4 = (int) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3, var4);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    int var5 = (int) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    int var6 = (int) ((Map<String, Object>) args).get("var6");
+            
+                    // create target object
+                    com.autonavi.ae.gmap.gloverlay.GLOverlayTexture obj = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue(), var5, var6);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_InitParam__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.ae.gmap.GLMapEngine.InitParam obj = new com.autonavi.ae.gmap.GLMapEngine.InitParam();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_NetworkState__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.maploader.NetworkState obj = new com.autonavi.amap.mapcore.maploader.NetworkState();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // jsonable arg
+                    String var2 = (String) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    String var3 = (String) ((Map<String, Object>) args).get("var3");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest obj = new com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.center(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::radius_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // ref arg
+                    com.autonavi.ae.gmap.GLMapEngine var2 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                    // ref arg
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam var3 = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.maploader.AMapLoader obj = new com.autonavi.amap.mapcore.maploader.AMapLoader(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapProjection__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.MapProjection obj = new com.autonavi.amap.mapcore.MapProjection();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_TextTextureGenerator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.tools.TextTextureGenerator obj = new com.autonavi.amap.mapcore.tools.TextTextureGenerator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLFileUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.tools.GLFileUtil obj = new com.autonavi.amap.mapcore.tools.GLFileUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GlMapUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.tools.GlMapUtil obj = new com.autonavi.amap.mapcore.tools.GlMapUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLMapStaticValue__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.tools.GLMapStaticValue obj = new com.autonavi.amap.mapcore.tools.GLMapStaticValue();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLConvertUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.tools.GLConvertUtil obj = new com.autonavi.amap.mapcore.tools.GLConvertUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MsgProcessor__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.MsgProcessor obj = new com.autonavi.amap.mapcore.MsgProcessor();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake obj = new com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AbstractNativeInstance__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AbstractNativeInstance obj = new com.autonavi.amap.mapcore.AbstractNativeInstance();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_LinkInfo__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.LinkInfo obj = new com.autonavi.amap.mapcore.LinkInfo();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativePolyline__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapNativePolyline obj = new com.autonavi.amap.mapcore.AMapNativePolyline();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.IPoint obj = new com.autonavi.amap.mapcore.IPoint(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager obj = new com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__double__double", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     double var1 = (double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) args).get("var3");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.DPoint obj = new com.autonavi.amap.mapcore.DPoint(var1, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.radius(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::strokeWidth_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeRenderer__", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapNativeRenderer obj = new com.autonavi.amap.mapcore.AMapNativeRenderer();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FileUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FileUtil obj = new com.autonavi.amap.mapcore.FileUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLTranslateAnimation obj = new com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.strokeWidth(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::strokeColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.strokeColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::fillColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLRotateAnimation obj = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.fillColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::zIndex_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLAlphaAnimation obj = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.zIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::visible_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLScaleAnimation obj = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTransformation__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLTransformation obj = new com.autonavi.amap.mapcore.animation.GLTransformation();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLAnimationSet obj = new com.autonavi.amap.mapcore.animation.GLAnimationSet(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.visible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getCenter_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.LatLng result;
-                    try {
-                        result = ref.getCenter();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getRadius_batch", (argsBatch, methodResult) -> {
-                List<Double> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    double result;
-                    try {
-                        result = ref.getRadius();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    double jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getStrokeWidth_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getStrokeWidth();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getStrokeColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getStrokeColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getFillColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getFillColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::isVisible_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isVisible();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.BaseHoleOptions var1 = (com.amap.api.maps.model.BaseHoleOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLEmergeAnimation obj = new com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.addHoles(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getHoleOptions_batch", (argsBatch, methodResult) -> {
-                List<List<Integer>> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAnimation__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
             
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.animation.GLAnimation obj = new com.autonavi.amap.mapcore.animation.GLAnimation();
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    List<com.amap.api.maps.model.BaseHoleOptions> result;
-                    try {
-                        result = ref.getHoleOptions();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    List<Integer> jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = new ArrayList<>();
-                        for (com.amap.api.maps.model.BaseHoleOptions item : result) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            jsonableResult.add(System.identityHashCode(item));
-                        }
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::setStrokeDottedLineType_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapConfig__boolean", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.MapConfig obj = new com.autonavi.amap.mapcore.MapConfig(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.message.HoverGestureMapMessage obj = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.CircleOptions result;
-                    try {
-                        result = ref.setStrokeDottedLineType(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CircleOptions::getStrokeDottedLineType_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CircleOptions ref = (com.amap.api.maps.model.CircleOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getStrokeDottedLineType();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onDoubleTap_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onDoubleTap(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onSingleTap_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onSingleTap(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onFling_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onFling(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onScroll_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onScroll(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onLongPress_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onLongPress(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onDown_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onDown(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onUp_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onUp(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGestureListener::onMapStable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGestureListener ref = (com.amap.api.maps.model.AMapGestureListener) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.onMapStable();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions.LineJoinType::getTypeValue_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.PolylineOptions.LineJoinType ref = (com.amap.api.maps.model.PolylineOptions.LineJoinType) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getTypeValue();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions.LineJoinType::valueOf_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    com.amap.api.maps.model.PolylineOptions.LineJoinType result;
-                    try {
-                        result = com.amap.api.maps.model.PolylineOptions.LineJoinType.valueOf(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.AMapGLOverlay::destroy_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.AMapGLOverlay ref = (com.amap.api.maps.model.AMapGLOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.destroy();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::data_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
-                    for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
-                    }
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder result;
-                    try {
-                        result = ref.data(new ArrayList(var1));
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::weightedData_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.WeightedLatLng> var1 = new ArrayList<>();
-                    for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId));
-                    }
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder result;
-                    try {
-                        result = ref.weightedData(new ArrayList(var1));
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::radius_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // jsonable arg
                     int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage obj = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder result;
-                    try {
-                        result = ref.radius(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::gradient_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    int var4 = (int) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage obj = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    int var4 = (int) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage obj = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.Gradient var1 = (com.amap.api.maps.model.Gradient) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.autonavi.amap.mapcore.FPoint var2 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+                    // create target object
+                    com.autonavi.amap.mapcore.FPointBounds obj = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder result;
-                    try {
-                        result = ref.gradient(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::transparency_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_CoordUtil__", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.CoordUtil obj = new com.autonavi.amap.mapcore.CoordUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AeUtil obj = new com.autonavi.amap.mapcore.AeUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_VirtualEarthProjection__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.VirtualEarthProjection obj = new com.autonavi.amap.mapcore.VirtualEarthProjection();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Rectangle obj = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    android.location.Location var1 = (android.location.Location) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Inner_3dMap_location obj = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapEngineUtils__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapEngineUtils obj = new com.autonavi.amap.mapcore.AMapEngineUtils();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint3__float__float__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FPoint3 obj = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapEtaDecoder__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapEtaDecoder obj = new com.autonavi.amap.mapcore.AMapEtaDecoder();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPointBounds_Builder__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FPointBounds.Builder obj = new com.autonavi.amap.mapcore.FPointBounds.Builder();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Inner_3dMap_locationOption obj = new com.autonavi.amap.mapcore.Inner_3dMap_locationOption();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPoint__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.FPoint obj = new com.autonavi.amap.mapcore.FPoint(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeParticleSystem__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem obj = new com.autonavi.amap.mapcore.AMapNativeParticleSystem();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.AMapNativeBuildingRenderer obj = new com.autonavi.amap.mapcore.AMapNativeBuildingRenderer();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Convert__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.autonavi.amap.mapcore.Convert obj = new com.autonavi.amap.mapcore.Convert();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_offlineservice_AMapPermissionActivity__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.offlineservice.AMapPermissionActivity obj = new com.amap.api.offlineservice.AMapPermissionActivity();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_InfoWindowParams__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.InfoWindowParams obj = new com.amap.api.maps.InfoWindowParams();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_CameraUpdateFactory__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.CameraUpdateFactory obj = new com.amap.api.maps.CameraUpdateFactory();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__String", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.AMapException obj = new com.amap.api.maps.AMapException();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.AMapOptions obj = new com.amap.api.maps.AMapOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.AMapOptionsCreator obj = new com.amap.api.maps.AMapOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_CoordinateConverter__android_content_Context", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.CoordinateConverter obj = new com.amap.api.maps.CoordinateConverter(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_SpatialRelationUtil__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.utils.SpatialRelationUtil obj = new com.amap.api.maps.utils.SpatialRelationUtil();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
+                    // create target object
+                    com.amap.api.maps.utils.overlay.MovingPointOverlay obj = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.utils.overlay.SmoothMoveMarker obj = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.SwipeDismissView var1 = (com.amap.api.maps.SwipeDismissView) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.SwipeDismissCallBack obj = new com.amap.api.maps.SwipeDismissCallBack(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    android.view.View var2 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
+                    // create target object
+                    com.amap.api.maps.SwipeDismissView obj = new com.amap.api.maps.SwipeDismissView(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapsInitializer__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.MapsInitializer obj = new com.amap.api.maps.MapsInitializer();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapStatus__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapStatus obj = new com.amap.api.maps.offlinemap.OfflineMapStatus();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapProvince__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapProvince obj = new com.amap.api.maps.offlinemap.OfflineMapProvince();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.DownloadProgressView obj = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_Province__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.Province obj = new com.amap.api.maps.offlinemap.Province();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapCity__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapCity obj = new com.amap.api.maps.offlinemap.OfflineMapCity();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapActivity__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapActivity obj = new com.amap.api.maps.offlinemap.OfflineMapActivity();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_City__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.City obj = new com.amap.api.maps.offlinemap.City();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonHoleOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PolygonHoleOptions obj = new com.amap.api.maps.model.PolygonHoleOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.TileOverlayOptionsCreator obj = new com.amap.api.maps.model.TileOverlayOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) args).get("var1");
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                    // jsonable arg
+                    String var3 = (String) ((Map<String, Object>) args).get("var3");
+            
+                    // create target object
+                    com.amap.api.maps.model.Poi obj = new com.amap.api.maps.model.Poi(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyle__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MyLocationStyle obj = new com.amap.api.maps.model.MyLocationStyle();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var3 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var4 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
+                    // ref arg
+                    com.amap.api.maps.model.LatLngBounds var5 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var5"));
+            
+                    // create target object
+                    com.amap.api.maps.model.VisibleRegion obj = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.LatLngCreator obj = new com.amap.api.maps.model.LatLngCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleHoleOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CircleHoleOptions obj = new com.amap.api.maps.model.CircleHoleOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBounds_Builder__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.LatLngBounds.Builder obj = new com.amap.api.maps.model.LatLngBounds.Builder();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NavigateArrowOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.NavigateArrowOptions obj = new com.amap.api.maps.model.NavigateArrowOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BitmapDescriptorFactory__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.BitmapDescriptorFactory obj = new com.amap.api.maps.model.BitmapDescriptorFactory();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MultiPointOverlayOptions obj = new com.amap.api.maps.model.MultiPointOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PoiCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PoiCreator obj = new com.amap.api.maps.model.PoiCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolylineOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PolylineOptions obj = new com.amap.api.maps.model.PolylineOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Tile__int__int__byteArray", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    byte[] var3 = (byte[]) ((Map<String, Object>) args).get("var3");
+            
+                    // create target object
+                    com.amap.api.maps.model.Tile obj = new com.amap.api.maps.model.Tile(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Gradient__intArray__floatArray", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    int[] var1 = (int[]) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.amap.api.maps.model.Gradient obj = new com.amap.api.maps.model.Gradient(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NaviPara__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.NaviPara obj = new com.amap.api.maps.model.NaviPara();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.GroundOverlayOptions obj = new com.amap.api.maps.model.GroundOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GL3DModelOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.GL3DModelOptions obj = new com.amap.api.maps.model.GL3DModelOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyTrafficStyle__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MyTrafficStyle obj = new com.amap.api.maps.model.MyTrafficStyle();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.amap.api.maps.model.CameraPosition obj = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TextOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.TextOptionsCreator obj = new com.amap.api.maps.model.TextOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PoiPara__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PoiPara obj = new com.amap.api.maps.model.PoiPara();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MarkerOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MarkerOptions obj = new com.amap.api.maps.model.MarkerOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_AnimationSet__boolean", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.AnimationSet obj = new com.amap.api.maps.model.animation.AnimationSet(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_RotateAnimation__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.RotateAnimation obj = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.TranslateAnimation obj = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.EmergeAnimation obj = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.AlphaAnimation obj = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+            
+                    // create target object
+                    com.amap.api.maps.model.animation.ScaleAnimation obj = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
+                    // create target object
+                    com.amap.api.maps.model.LatLngBounds obj = new com.amap.api.maps.model.LatLngBounds(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CustomMapStyleOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CustomMapStyleOptions obj = new com.amap.api.maps.model.CustomMapStyleOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BuildingOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.BuildingOverlayOptions obj = new com.amap.api.maps.model.BuildingOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CrossOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CrossOverlayOptions obj = new com.amap.api.maps.model.CrossOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_VisibleRegionCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.VisibleRegionCreator obj = new com.amap.api.maps.model.VisibleRegionCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     double var1 = (double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) args).get("var3");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder result;
-                    try {
-                        result = ref.transparency(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.HeatmapTileProvider.Builder::build_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double__boolean", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
+                    // jsonable arg
+                    double var1 = (double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    boolean var5 = (boolean) ((Map<String, Object>) args).get("var5");
             
+                    // create target object
+                    com.amap.api.maps.model.LatLng obj = new com.amap.api.maps.model.LatLng(var1, var3, var5);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.HeatmapTileProvider.Builder ref = (com.amap.api.maps.model.HeatmapTileProvider.Builder) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.HeatmapTileProvider result;
-                    try {
-                        result = ref.build();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.MultiPointOverlay::setItems_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
-                    // list arg
-                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.MultiPointItem> var1 = new ArrayList<>();
-                    for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.MultiPointItem) getHEAP().get(refId));
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    int var4 = (int) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    int var5 = (int) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    int var6 = (int) ((Map<String, Object>) args).get("var6");
+            
+                    // create target object
+                    com.amap.api.maps.model.TileProjection obj = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.MultiPointOverlay ref = (com.amap.api.maps.model.MultiPointOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setItems(new ArrayList(var1));
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.MultiPointOverlay::setAnchor_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_AMapPara__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.AMapPara obj = new com.amap.api.maps.model.AMapPara();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CircleOptionsCreator obj = new com.amap.api.maps.model.CircleOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
                     Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.MultiPointOverlay ref = (com.amap.api.maps.model.MultiPointOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.MultiPointOverlay::setEnable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.MultiPointOverlay ref = (com.amap.api.maps.model.MultiPointOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setEnable(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.MultiPointOverlay::remove_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.MultiPointOverlay ref = (com.amap.api.maps.model.MultiPointOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.remove();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.MultiPointOverlay::destroy_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.MultiPointOverlay ref = (com.amap.api.maps.model.MultiPointOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.destroy();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setPeriod_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) args).get("var6");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.AMapCameraInfo obj = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setPeriod(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::getPeriod_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonOptions__", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
             
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.PolygonOptions obj = new com.amap.api.maps.model.PolygonOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getPeriod();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setIcons_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
-                    for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
-                    }
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setIcons(new ArrayList(var1));
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getIcons_batch", (argsBatch, methodResult) -> {
-                List<List<Integer>> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    List<com.amap.api.maps.model.BitmapDescriptor> result;
-                    try {
-                        result = ref.getIcons();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    List<Integer> jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = new ArrayList<>();
-                        for (com.amap.api.maps.model.BitmapDescriptor item : result) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            jsonableResult.add(System.identityHashCode(item));
-                        }
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setPerspective_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setPerspective(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isPerspective_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isPerspective();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setIcon_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // jsonable arg
+                    double var2 = (double) ((Map<String, Object>) args).get("var2");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setIcon(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setAnchor_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.model.WeightedLatLng obj = new com.amap.api.maps.model.WeightedLatLng(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyleCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MyLocationStyleCreator obj = new com.amap.api.maps.model.MyLocationStyleCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MarkerOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.MarkerOptionsCreator obj = new com.amap.api.maps.model.MarkerOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                    // create target object
+                    com.amap.api.maps.model.MultiPointItem obj = new com.amap.api.maps.model.MultiPointItem(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBoundsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.LatLngBoundsCreator obj = new com.amap.api.maps.model.LatLngBoundsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_ArcOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.ArcOptions obj = new com.amap.api.maps.model.ArcOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BitmapDescriptorCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.BitmapDescriptorCreator obj = new com.amap.api.maps.model.BitmapDescriptorCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CircleOptions obj = new com.amap.api.maps.model.CircleOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.NavigateArrowOptionsCreator obj = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_RuntimeRemoteException__String", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.amap.api.maps.model.RuntimeRemoteException obj = new com.amap.api.maps.model.RuntimeRemoteException(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.HeatmapTileProvider.Builder obj = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BaseOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.BaseOptions obj = new com.amap.api.maps.model.BaseOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolylineOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PolylineOptionsCreator obj = new com.amap.api.maps.model.PolylineOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BaseOverlay__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.BaseOverlay obj = new com.amap.api.maps.model.BaseOverlay();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.TileOverlayOptions obj = new com.amap.api.maps.model.TileOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_RoutePara__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.RoutePara obj = new com.amap.api.maps.model.RoutePara();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_ArcOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.ArcOptionsCreator obj = new com.amap.api.maps.model.ArcOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CameraPositionCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.CameraPositionCreator obj = new com.amap.api.maps.model.CameraPositionCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverLifeModule__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleOverLifeModule obj = new com.amap.api.maps.model.particle.ParticleOverLifeModule();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                    // create target object
+                    com.amap.api.maps.model.particle.ConstantRotationOverLife obj = new com.amap.api.maps.model.particle.ConstantRotationOverLife(new Double(var1).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
                     Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAnchor(new Double(var1).floatValue(), new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setDraggable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    boolean var4 = (boolean) ((Map<String, Object>) args).get("var4");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setDraggable(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::isDraggable_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isDraggable();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::hideInfoWindow_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.hideInfoWindow();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isInfoWindowShown_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isInfoWindowShown();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setToTop_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setToTop();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getGeoPoint_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.autonavi.amap.mapcore.IPoint result;
-                    try {
-                        result = ref.getGeoPoint();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setFlat_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.particle.SinglePointParticleShape obj = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setFlat(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::isFlat_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) args).get("var6");
             
+                    // create target object
+                    com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants obj = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isFlat();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setPositionByPixels_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+            
+                    // create target object
+                    com.amap.api.maps.model.particle.CurveSizeOverLife obj = new com.amap.api.maps.model.particle.CurveSizeOverLife(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
@@ -2170,5214 +6540,889 @@ public class SubHandler23 {
                     // jsonable arg
                     int var2 = (int) ((Map<String, Object>) args).get("var2");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleEmissionModule obj = new com.amap.api.maps.model.particle.ParticleEmissionModule(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setPositionByPixels(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setZIndex_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    boolean var5 = (boolean) ((Map<String, Object>) args).get("var5");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.particle.RectParticleShape obj = new com.amap.api.maps.model.particle.RectParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), var5);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setZIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getAlpha_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getAlpha();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setAlpha_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // jsonable arg
                     Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAlpha(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getDisplayLevel_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getDisplayLevel();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getOptions_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.MarkerOptions result;
-                    try {
-                        result = ref.getOptions();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isClickable_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isClickable();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isInfoWindowAutoOverturn_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isInfoWindowAutoOverturn();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isInfoWindowEnable_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isInfoWindowEnable();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setInfoWindowEnable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                    // jsonable arg
+                    Double var7 = (Double) ((Map<String, Object>) args).get("var7");
+                    // jsonable arg
+                    Double var8 = (Double) ((Map<String, Object>) args).get("var8");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants obj = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setInfoWindowEnable(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setMarkerOptions_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory obj = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleOverlayOptions obj = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TextOptions__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.TextOptions obj = new com.amap.api.maps.model.TextOptions();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.PolygonOptionsCreator obj = new com.amap.api.maps.model.PolygonOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileProjectionCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.TileProjectionCreator obj = new com.amap.api.maps.model.TileProjectionCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.GroundOverlayOptionsCreator obj = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_IndoorBuildingInfo__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.model.IndoorBuildingInfo obj = new com.amap.api.maps.model.IndoorBuildingInfo();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.MarkerOptions var1 = (com.amap.api.maps.model.MarkerOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setMarkerOptions(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setAutoOverturnInfoWindow_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAutoOverturnInfoWindow(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setClickable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setClickable(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setDisplayLevel_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setDisplayLevel(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setFixingPointEnable_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setFixingPointEnable(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::isRemoved_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isRemoved();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setPositionNotUpdate_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.TextureMapView obj = new com.amap.api.maps.TextureMapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setPositionNotUpdate(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Marker::setRotateAngleNotUpdate_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setRotateAngleNotUpdate(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::setBelowMaskLayer_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setBelowMaskLayer(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getAnchorU_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getAnchorU();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Marker::getAnchorV_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Marker ref = (com.amap.api.maps.model.Marker) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getAnchorV();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::tileProvider_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapUtils__", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.maps.AMapUtils obj = new com.amap.api.maps.AMapUtils();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_WearMapView__android_content_Context", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.TileProvider var1 = (com.amap.api.maps.model.TileProvider) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.tileProvider(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::zIndex_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.zIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::visible_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.visible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::memCacheSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.memCacheSize(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::diskCacheSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.diskCacheSize(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::diskCacheDir_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.diskCacheDir(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::memoryCacheEnabled_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.memoryCacheEnabled(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::diskCacheEnabled_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TileOverlayOptions result;
-                    try {
-                        result = ref.diskCacheEnabled(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::isVisible_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isVisible();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getMemCacheSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getMemCacheSize();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getDiskCacheSize_batch", (argsBatch, methodResult) -> {
-                List<Long> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    long result;
-                    try {
-                        result = ref.getDiskCacheSize();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    long jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getDiskCacheDir_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getDiskCacheDir();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getMemoryCacheEnabled_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.getMemoryCacheEnabled();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlayOptions::getDiskCacheEnabled_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.getDiskCacheEnabled();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getDrivingRouteStyle_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getDrivingRouteStyle();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setDrivingRouteStyle_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setDrivingRouteStyle(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getTransitRouteStyle_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getTransitRouteStyle();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setTransitRouteStyle_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setTransitRouteStyle(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getStartPoint_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.LatLng result;
-                    try {
-                        result = ref.getStartPoint();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setStartPoint_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.WearMapView obj = new com.amap.api.maps.WearMapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setStartPoint(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getEndPoint_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.LatLng result;
-                    try {
-                        result = ref.getEndPoint();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setEndPoint_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setEndPoint(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getEndName_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getEndName();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setEndName_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setEndName(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::getStartName_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getStartName();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.RoutePara::setStartName_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.RoutePara ref = (com.amap.api.maps.model.RoutePara) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setStartName(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CrossOverlay::setData_batch", (argsBatch, methodResult) -> {
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    byte[] var1 = (byte[]) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.setData(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CrossOverlay::setAttribute_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr var1 = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    // ref arg
+                    com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.MapView obj = new com.amap.api.maps.MapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setAttribute(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.CrossOverlay::setVisible_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__double__double__float__float__long", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setVisible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CrossOverlay::remove_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.remove();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.CrossOverlay::setImageMode_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
+                    double var1 = (double) ((Map<String, Object>) args).get("var1");
                     // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                    double var3 = (double) ((Map<String, Object>) args).get("var3");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                    // jsonable arg
+                    long var7 = (long) (int) ((Map<String, Object>) args).get("var7");
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.CrossOverlay ref = (com.amap.api.maps.model.CrossOverlay) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setImageMode(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverLifeModule::setVelocityOverLife_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
+            
+                    // args
+            
+            
+                    // create target object
+                    com.amap.api.trace.TraceLocation obj = new com.amap.api.trace.TraceLocation();
+                    getHEAP().put(System.identityHashCode(obj), obj);
+            
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
+            
+                    resultList.add(System.identityHashCode(obj));
+                }
+            
+                methodResult.success(resultList);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_LBSTraceClient__android_content_Context", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.particle.VelocityGenerate var1 = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule ref = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.trace.LBSTraceClient obj = new com.amap.api.trace.LBSTraceClient(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setVelocityOverLife(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverLifeModule::setRotateOverLife_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
+                }
+            
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.particle.RotationOverLife var1 = (com.amap.api.maps.model.particle.RotationOverLife) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule ref = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setRotateOverLife(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverLifeModule::setSizeOverLife_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.SizeOverLife var1 = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule ref = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setSizeOverLife(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverLifeModule::setColorGenerate_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ColorGenerate var1 = (com.amap.api.maps.model.particle.ColorGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule ref = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setColorGenerate(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.SizeOverLife::getSizeX_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getSizeX(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.SizeOverLife::getSizeY_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getSizeY(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.SizeOverLife::getSizeZ_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getSizeZ(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ColorGenerate::getColor_batch", (argsBatch, methodResult) -> {
-                List<float[]> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ColorGenerate ref = (com.amap.api.maps.model.particle.ColorGenerate) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float[] result;
-                    try {
-                        result = ref.getColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float[] jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.VelocityGenerate::getX_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.VelocityGenerate ref = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getX();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.VelocityGenerate::getY_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.VelocityGenerate ref = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getY();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.VelocityGenerate::getZ_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.VelocityGenerate ref = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZ();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.RotationOverLife::getRotate_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.RotationOverLife ref = (com.amap.api.maps.model.particle.RotationOverLife) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getRotate();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleShapeModule::isUseRatio_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleShapeModule ref = (com.amap.api.maps.model.particle.ParticleShapeModule) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isUseRatio();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleShapeModule::getPoint_batch", (argsBatch, methodResult) -> {
-                List<float[]> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleShapeModule ref = (com.amap.api.maps.model.particle.ParticleShapeModule) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float[] result;
-                    try {
-                        result = ref.getPoint();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float[] jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory::defaultOptions_batch", (argsBatch, methodResult) -> {
-                List<List<Integer>> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var0 = (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    List<com.amap.api.maps.model.particle.ParticleOverlayOptions> result;
-                    try {
-                        result = com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory.defaultOptions(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    List<Integer> jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = new ArrayList<>();
-                        for (com.amap.api.maps.model.particle.ParticleOverlayOptions item : result) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            jsonableResult.add(System.identityHashCode(item));
-                        }
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::icon_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.icon(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getIcon_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.BitmapDescriptor result;
-                    try {
-                        result = ref.getIcon();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getMaxParticles_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getMaxParticles();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setMaxParticles_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setMaxParticles(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::isLoop_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isLoop();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setLoop_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setLoop(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getDuration_batch", (argsBatch, methodResult) -> {
-                List<Long> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    long result;
-                    try {
-                        result = ref.getDuration();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    long jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setDuration_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setDuration(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleLifeTime_batch", (argsBatch, methodResult) -> {
-                List<Long> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    long result;
-                    try {
-                        result = ref.getParticleLifeTime();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    long jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleLifeTime_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleLifeTime(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleEmissionModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleEmissionModule result;
-                    try {
-                        result = ref.getParticleEmissionModule();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleEmissionModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleEmissionModule var1 = (com.amap.api.maps.model.particle.ParticleEmissionModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleEmissionModule(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleShapeModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleShapeModule result;
-                    try {
-                        result = ref.getParticleShapeModule();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleShapeModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleShapeModule var1 = (com.amap.api.maps.model.particle.ParticleShapeModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleShapeModule(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartSpeed_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.VelocityGenerate result;
-                    try {
-                        result = ref.getParticleStartSpeed();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleStartSpeed_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.VelocityGenerate var1 = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleStartSpeed(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleStartColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ColorGenerate var1 = (com.amap.api.maps.model.particle.ColorGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleStartColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ColorGenerate result;
-                    try {
-                        result = ref.getParticleStartColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleOverLifeModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule var1 = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setParticleOverLifeModule(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleOverLifeModule_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule result;
-                    try {
-                        result = ref.getParticleOverLifeModule();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setStartParticleSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setStartParticleSize(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getStartParticleW_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getStartParticleW();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getstartParticleH_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getstartParticleH();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::zIndex_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.zIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::setVisible_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions result;
-                    try {
-                        result = ref.setVisible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlayOptions::isVisibile_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlayOptions ref = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isVisibile();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setVisible_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setVisible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::destroy_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.destroy();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setStartParticleSize_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setStartParticleSize(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setMaxParticles_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setMaxParticles(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setDuration_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setDuration(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleLifeTime_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setParticleLifeTime(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.VelocityGenerate var1 = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setParticleStartSpeed(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setLoop_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setLoop(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleShapeModule var1 = (com.amap.api.maps.model.particle.ParticleShapeModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setParticleShapeModule(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleEmission_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleEmissionModule var1 = (com.amap.api.maps.model.particle.ParticleEmissionModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setParticleEmission(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::getCurrentParticleNum_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getCurrentParticleNum();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleOverLifeModule_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ParticleOverLifeModule var1 = (com.amap.api.maps.model.particle.ParticleOverLifeModule) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setParticleOverLifeModule(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setStartColor_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.particle.ColorGenerate var1 = (com.amap.api.maps.model.particle.ColorGenerate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setStartColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::position_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.position(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::text_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.text(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::visible_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.visible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::zIndex_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.zIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::rotate_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.rotate(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::align_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.align(var1, var2);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::backgroundColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.backgroundColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::setObject_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Object var1 = (Object) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.setObject(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::fontColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.fontColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::fontSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.TextOptions result;
-                    try {
-                        result = ref.fontSize(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getPosition_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    com.amap.api.maps.model.LatLng result;
-                    try {
-                        result = ref.getPosition();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getText_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getText();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getRotate_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getRotate();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getAlignX_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getAlignX();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getAlignY_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getAlignY();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getBackgroundColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getBackgroundColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getFontColor_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getFontColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getObject_batch", (argsBatch, methodResult) -> {
-                List<Object> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    Object result;
-                    try {
-                        result = ref.getObject();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Object jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getFontSize_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int result;
-                    try {
-                        result = ref.getFontSize();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TextOptions::isVisible_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TextOptions ref = (com.amap.api.maps.model.TextOptions) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isVisible();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::remove_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.remove();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::clearTileCache_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.clearTileCache();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::getId_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getId();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::setZIndex_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setZIndex(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::getZIndex_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = ref.getZIndex();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::setVisible_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setVisible(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.TileOverlay::isVisible_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.TileOverlay ref = (com.amap.api.maps.model.TileOverlay) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isVisible();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Polyline::remove_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.remove();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Polyline::getId_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
-            
-                    // invoke native method
-                    String result;
-                    try {
-                        result = ref.getId();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Polyline::setPoints_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
                     // list arg
-                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
-                    for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var2");
+                    List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
+                    for (int refId : var2RefIdList) {
+                        var2.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                     }
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1, new ArrayList(var2));
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // invoke native method
-                    try {
-                        ref.setPoints(new ArrayList(var1));
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);
             });
-            // method
-            put("com.amap.api.maps.model.Polyline::getPoints_batch", (argsBatch, methodResult) -> {
-                List<List<Integer>> resultList = new ArrayList<>();
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
-            
-                    // invoke native method
-                    List<com.amap.api.maps.model.LatLng> result;
-                    try {
-                        result = ref.getPoints();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    List<Integer> jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = new ArrayList<>();
-                        for (com.amap.api.maps.model.LatLng item : result) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            jsonableResult.add(System.identityHashCode(item));
-                        }
-                    }
-            
-                    resultList.add(jsonableResult);
+                int length = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (argsBatch instanceof Map) {
+                    length = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                }
+                // or directly put the arg batch
+                else if (argsBatch instanceof List) {
+                    length = ((List<Map<String, Object>>) argsBatch).size();
                 }
             
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Polyline::setGeodesic_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setGeodesic(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                for (int __i__ = 0; __i__ < length; __i__++) {
+                    Map<String, Object> args = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (argsBatch instanceof List) {
+                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
                     }
             
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.model.Polyline::isGeodesic_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
                     // args
+                    // ref arg
+                    com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
+                    // create target object
+                    com.amap.api.trace.TraceOverlay obj = new com.amap.api.trace.TraceOverlay(var1);
+                    getHEAP().put(System.identityHashCode(obj), obj);
             
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.model.Polyline ref = (com.amap.api.maps.model.Polyline) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isGeodesic();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
             
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
+                    resultList.add(System.identityHashCode(obj));
                 }
             
                 methodResult.success(resultList);

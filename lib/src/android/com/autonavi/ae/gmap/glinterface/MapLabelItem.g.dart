@@ -58,6 +58,18 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
     return __result__;
   }
   
+  Future<int> get_x() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_x", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<int> get_y() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_y", {'refId': refId});
+  
+    return __result__;
+  }
+  
   Future<int> get_angle() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_angle", {'refId': refId});
   
@@ -171,6 +183,18 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends java_lang_Object  {
   
   Future<void> set_poiid(String poiid) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid', {'refId': refId, "poiid": poiid});
+  
+  
+  }
+  
+  Future<void> set_x(int x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_x', {'refId': refId, "x": x});
+  
+  
+  }
+  
+  Future<void> set_y(int y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_y', {'refId': refId, "y": y});
   
   
   }
@@ -296,6 +320,20 @@ extension com_autonavi_ae_gmap_glinterface_MapLabelItem_Batch on List<com_autona
   Future<List<String>> get_poiid_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_poiid_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_x_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_y_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -430,6 +468,18 @@ extension com_autonavi_ae_gmap_glinterface_MapLabelItem_Batch on List<com_autona
   
   Future<void> set_poiid_batch(List<String> poiid) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "poiid": poiid[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_x_batch(List<int> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_y_batch(List<int> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glinterface.MapLabelItem::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
   
   
   }
