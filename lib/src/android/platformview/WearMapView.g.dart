@@ -65,7 +65,7 @@ class _com_amap_api_maps_WearMapView_AndroidState extends State<com_amap_api_map
   @override
   void dispose() {
     if (widget.onDispose != null) {
-      widget.onDispose().then((_) => _controller.release());
+      widget.onDispose().then((_) => _controller.release__());
     }
     super.dispose();
   }

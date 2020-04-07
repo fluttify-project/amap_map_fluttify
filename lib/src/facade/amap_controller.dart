@@ -330,10 +330,10 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         switch (language) {
           case Language.Chinese:
-            await iosController.performSelectorWithObject('setMapLanguage:', 0);
+            await iosController.performSelectorWithObject__('setMapLanguage:', 0);
             break;
           case Language.English:
-            await iosController.performSelectorWithObject('setMapLanguage:', 1);
+            await iosController.performSelectorWithObject__('setMapLanguage:', 1);
             break;
         }
       },
@@ -804,7 +804,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty(1, icon);
+          await annotation.addProperty__(1, icon);
 
           pool..add(icon);
         }
@@ -815,38 +815,38 @@ class AmapController with WidgetsBindingObserver, _Private {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty(1, icon);
+          await annotation.addProperty__(1, icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null) {
-          await annotation.addJsonableProperty(2, option.draggable);
+          await annotation.addJsonableProperty__(2, option.draggable);
         }
         // 旋转角度
         if (option.rotateAngle != null) {
-          await annotation.addJsonableProperty(3, option.rotateAngle);
+          await annotation.addJsonableProperty__(3, option.rotateAngle);
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          annotation.addJsonableProperty(4, option.infoWindowEnabled);
+          annotation.addJsonableProperty__(4, option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
-          await annotation.addJsonableProperty(5, option.anchorU);
-          await annotation.addJsonableProperty(6, option.anchorV);
+          await annotation.addJsonableProperty__(5, option.anchorU);
+          await annotation.addJsonableProperty__(6, option.anchorV);
         }
         // 自定义数据
         if (option.object != null) {
-          await annotation.addJsonableProperty(7, option.object);
+          await annotation.addJsonableProperty__(7, option.object);
         }
         // 宽高
         if (option.width != null && option.height != null) {
-          await annotation.addJsonableProperty(8, option.width);
-          await annotation.addJsonableProperty(9, option.height);
+          await annotation.addJsonableProperty__(8, option.width);
+          await annotation.addJsonableProperty__(9, option.height);
         }
         // 是否可见
-        await annotation.addJsonableProperty(10, option.visible);
+        await annotation.addJsonableProperty__(10, option.visible);
 
         // 添加marker
         await iosController.addAnnotation(annotation);
@@ -999,7 +999,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-            await annotation.addProperty(1, icon);
+            await annotation.addProperty__(1, icon);
 
             pool..add(icon);
           }
@@ -1010,38 +1010,38 @@ class AmapController with WidgetsBindingObserver, _Private {
             final icon = await UIImage.create(iconData);
 
             // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-            await annotation.addProperty(1, icon);
+            await annotation.addProperty__(1, icon);
 
             pool..add(icon);
           }
           // 是否可拖拽
           if (option.draggable != null) {
-            await annotation.addJsonableProperty(2, option.draggable);
+            await annotation.addJsonableProperty__(2, option.draggable);
           }
           // 旋转角度
           if (option.rotateAngle != null) {
-            await annotation.addJsonableProperty(3, option.rotateAngle);
+            await annotation.addJsonableProperty__(3, option.rotateAngle);
           }
           // 是否允许弹窗
           if (option.infoWindowEnabled != null) {
-            annotation.addJsonableProperty(4, option.infoWindowEnabled);
+            annotation.addJsonableProperty__(4, option.infoWindowEnabled);
           }
           // 锚点
           if (option.anchorU != null || option.anchorV != null) {
-            await annotation.addJsonableProperty(5, option.anchorU);
-            await annotation.addJsonableProperty(6, option.anchorV);
+            await annotation.addJsonableProperty__(5, option.anchorU);
+            await annotation.addJsonableProperty__(6, option.anchorV);
           }
           // 自定义数据
           if (option.object != null) {
-            await annotation.addJsonableProperty(7, option.object);
+            await annotation.addJsonableProperty__(7, option.object);
           }
           // 宽高
           if (option.width != null && option.height != null) {
-            await annotation.addJsonableProperty(8, option.width);
-            await annotation.addJsonableProperty(9, option.height);
+            await annotation.addJsonableProperty__(8, option.width);
+            await annotation.addJsonableProperty__(9, option.height);
           }
           // 是否可见
-          await annotation.addJsonableProperty(10, option.visible);
+          await annotation.addJsonableProperty__(10, option.visible);
 
           iosOptions.add(annotation);
 
@@ -1132,7 +1132,7 @@ class AmapController with WidgetsBindingObserver, _Private {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty(1, icon);
+          await annotation.addProperty__(1, icon);
 
           pool..add(icon);
         }

@@ -31,121 +31,23 @@ public class SubHandler8 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarker::setPositionByPixels", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::setPositionByPixels(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setPositionByPixels(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarker::setBelowMaskLayer", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::setBelowMaskLayer(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setBelowMaskLayer(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarker::setAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::setAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarker::startAnimation", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isMyLocationButtonEnabled", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::startAnimation(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isMyLocationButtonEnabled(" + "" + ")");
                 }
             
                 // invoke native method
                 boolean result;
                 try {
-                    result = ref.startAnimation();
+                    result = ref.isMyLocationButtonEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -161,71 +63,23 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isScrollGesturesEnabled", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarker ref = (com.autonavi.amap.mapcore.interfaces.IMarker) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarker@" + refId + "::setAnimationListener(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isScrollGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
+                boolean result;
                 try {
-                    ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onAnimationStart() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onAnimationEnd() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
+                    result = ref.isScrollGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -236,30 +90,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                boolean jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isZoomGesturesEnabled", (args, methodResult) -> {
                 // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterDrawFrame(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isZoomGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
+                boolean result;
                 try {
-                    ref.afterDrawFrame(var1, var2);
+                    result = ref.isZoomGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -270,30 +122,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                boolean jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isTiltGesturesEnabled", (args, methodResult) -> {
                 // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterDrawLabel(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isTiltGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
+                boolean result;
                 try {
-                    ref.afterDrawLabel(var1, var2);
+                    result = ref.isTiltGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -304,30 +154,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                boolean jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isRotateGesturesEnabled", (args, methodResult) -> {
                 // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::beforeDrawLabel(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isRotateGesturesEnabled(" + "" + ")");
                 }
             
                 // invoke native method
+                boolean result;
                 try {
-                    ref.beforeDrawLabel(var1, var2);
+                    result = ref.isRotateGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -338,30 +186,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                boolean jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::getLogoPosition", (args, methodResult) -> {
                 // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var2 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterRendererOver(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::getLogoPosition(" + "" + ")");
                 }
             
                 // invoke native method
+                int result;
                 try {
-                    ref.afterRendererOver(var1, var2);
+                    result = ref.getLogoPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -372,27 +218,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                int jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::isIndoorSwitchEnabled", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMapListener ref = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMapListener@" + refId + "::afterAnimation(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isIndoorSwitchEnabled(" + "" + ")");
                 }
             
                 // invoke native method
+                boolean result;
                 try {
-                    ref.afterAnimation();
+                    result = ref.isIndoorSwitchEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -403,173 +250,28 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
+                boolean jsonableResult = result;
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onAnimationStart() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onAnimationEnd() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAppearAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowAppearAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowAppearAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowBackColor", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowBackColor(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowBackColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowBackEnable", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::setIndoorSwitchEnabled", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowBackEnable(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setIndoorSwitchEnabled(" + var1 + ")");
                 }
             
                 // invoke native method
                 try {
-                    ref.setInfoWindowBackEnable(var1);
+                    ref.setIndoorSwitchEnabled(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -585,25 +287,25 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowBackScale", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::setLogoMarginRate", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
                 Double var2 = (Double) ((Map<String, Object>) args).get("var2");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowBackScale(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoMarginRate(" + var1 + var2 + ")");
                 }
             
                 // invoke native method
                 try {
-                    ref.setInfoWindowBackScale(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    ref.setLogoMarginRate(var1, new Double(var2).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -619,276 +321,24 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowDisappearAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowDisappearAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowDisappearAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowMovingAnimation", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::setInfoWindowMovingAnimation(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowMovingAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::startAnimation", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IInfoWindowManager ref = (com.autonavi.amap.mapcore.interfaces.IInfoWindowManager) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IInfoWindowManager@" + refId + "::startAnimation(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.startAnimation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::remove", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::remove(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.remove();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::destroy", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::getLogoMarginRate", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::destroy(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.destroy(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::clearTileCache", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::clearTileCache(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clearTileCache();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::getId", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::getId(" + "" + ")");
-                }
-            
-                // invoke native method
-                String result;
-                try {
-                    result = ref.getId();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::setZIndex", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::setZIndex(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setZIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::getZIndex", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::getZIndex(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::getLogoMarginRate(" + var1 + ")");
                 }
             
                 // invoke native method
                 float result;
                 try {
-                    result = ref.getZIndex();
+                    result = ref.getLogoMarginRate(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -904,18 +354,2650 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::setVisible", (args, methodResult) -> {
+            put("com.amap.api.maps.UiSettings::setLogoLeftMargin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoLeftMargin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setLogoLeftMargin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.UiSettings::setLogoBottomMargin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setLogoBottomMargin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setLogoBottomMargin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.UiSettings::setZoomInByScreenCenter", (args, methodResult) -> {
                 // args
                 // jsonable arg
                 boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::setVisible(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setZoomInByScreenCenter(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setZoomInByScreenCenter(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.UiSettings::setGestureScaleByMapCenter", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::setGestureScaleByMapCenter(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setGestureScaleByMapCenter(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.UiSettings::isGestureScaleByMapCenter", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.UiSettings@" + refId + "::isGestureScaleByMapCenter(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.isGestureScaleByMapCenter();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::setInfoWindowUpdateTime", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindowUpdateTime(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setInfoWindowUpdateTime(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::getInfoWindowUpdateTime", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindowUpdateTime(" + "" + ")");
+                }
+            
+                // invoke native method
+                long result;
+                try {
+                    result = ref.getInfoWindowUpdateTime();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::setInfoWindowType", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindowType(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setInfoWindowType(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::getInfoWindowType", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindowType(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getInfoWindowType();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::getInfoWindow", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoWindow(" + "" + ")");
+                }
+            
+                // invoke native method
+                android.view.View result;
+                try {
+                    result = ref.getInfoWindow();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::setInfoContent", (args, methodResult) -> {
+                // args
+                // ref arg
+                android.view.View var1 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoContent(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setInfoContent(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::setInfoWindow", (args, methodResult) -> {
+                // args
+                // ref arg
+                android.view.View var1 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::setInfoWindow(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setInfoWindow(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.InfoWindowParams::getInfoContents", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.InfoWindowParams ref = (com.amap.api.maps.InfoWindowParams) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.InfoWindowParams@" + refId + "::getInfoContents(" + "" + ")");
+                }
+            
+                // invoke native method
+                android.view.View result;
+                try {
+                    result = ref.getInfoContents();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::zoomIn", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomIn(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.zoomIn();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::zoomOut", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomOut(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.zoomOut();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::scrollBy", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::scrollBy(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.scrollBy(new Double(var0).floatValue(), new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::zoomTo", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomTo(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.zoomTo(new Double(var0).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomBy(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                // ref arg
+                android.graphics.Point var1 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::zoomBy(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.zoomBy(new Double(var0).floatValue(), var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newCameraPosition", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.CameraPosition var0 = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newCameraPosition(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newCameraPosition(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newLatLng", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLng(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newLatLng(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newLatLngZoom", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newLatLngBounds(var0, var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::changeLatLng", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::changeLatLng(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.changeLatLng(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::changeBearing", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::changeBearing(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.changeBearing(new Double(var0).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                // ref arg
+                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.changeBearingGeoCenter(new Double(var0).floatValue(), var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::changeTilt", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::changeTilt(" + var0 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.changeTilt(new Double(var0).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds(" + var0 + var1 + var2 + var3 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newLatLngBounds(var0, var1, var2, var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLngBounds var0 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) args).get("var4");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect(" + var0 + var1 + var2 + var3 + var4 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CameraUpdate result;
+                try {
+                    result = com.amap.api.maps.CameraUpdateFactory.newLatLngBoundsRect(var0, var1, var2, var3, var4);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapException::getErrorMessage", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapException ref = (com.amap.api.maps.AMapException) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapException@" + refId + "::getErrorMessage(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getErrorMessage();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::logoPosition", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::logoPosition(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.logoPosition(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::zOrderOnTop", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zOrderOnTop(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.zOrderOnTop(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::mapType", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::mapType(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.mapType(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::camera", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.CameraPosition var1 = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::camera(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.camera(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::scaleControlsEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::scaleControlsEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.scaleControlsEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::zoomControlsEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zoomControlsEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.zoomControlsEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::compassEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::compassEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.compassEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::scrollGesturesEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::scrollGesturesEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.scrollGesturesEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::zoomGesturesEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::zoomGesturesEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.zoomGesturesEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::tiltGesturesEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::tiltGesturesEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.tiltGesturesEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::rotateGesturesEnabled", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::rotateGesturesEnabled(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.AMapOptions result;
+                try {
+                    result = ref.rotateGesturesEnabled(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getLogoPosition", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getLogoPosition(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getLogoPosition();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getZOrderOnTop", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZOrderOnTop(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getZOrderOnTop();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getMapType", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getMapType(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getMapType();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getCamera", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getCamera(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.CameraPosition result;
+                try {
+                    result = ref.getCamera();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getScaleControlsEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getScaleControlsEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getScaleControlsEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getZoomControlsEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZoomControlsEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getZoomControlsEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getCompassEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getCompassEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getCompassEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getScrollGesturesEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getScrollGesturesEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getScrollGesturesEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getZoomGesturesEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getZoomGesturesEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getZoomGesturesEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getTiltGesturesEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getTiltGesturesEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getTiltGesturesEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMapOptions::getRotateGesturesEnabled", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMapOptions ref = (com.amap.api.maps.AMapOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMapOptions@" + refId + "::getRotateGesturesEnabled(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = ref.getRotateGesturesEnabled();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CoordinateConverter::from", (args, methodResult) -> {
+                // args
+                // enum arg
+                com.amap.api.maps.CoordinateConverter.CoordType var1 = com.amap.api.maps.CoordinateConverter.CoordType.values()[(int) ((Map<String, Object>) args).get("var1")];
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::from(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CoordinateConverter result;
+                try {
+                    result = ref.from(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CoordinateConverter::coord", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::coord(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.CoordinateConverter result;
+                try {
+                    result = ref.coord(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CoordinateConverter::convert", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.CoordinateConverter ref = (com.amap.api.maps.CoordinateConverter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter@" + refId + "::convert(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.LatLng result;
+                try {
+                    result = ref.convert();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.CoordinateConverter::isAMapDataAvailable", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                double var0 = (double) ((Map<String, Object>) args).get("var0");
+                // jsonable arg
+                double var2 = (double) ((Map<String, Object>) args).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.CoordinateConverter::isAMapDataAvailable(" + var0 + var2 + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = com.amap.api.maps.CoordinateConverter.isAMapDataAvailable(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMap.InfoWindowAdapter::getInfoWindow", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMap.InfoWindowAdapter ref = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + refId + "::getInfoWindow(" + var1 + ")");
+                }
+            
+                // invoke native method
+                android.view.View result;
+                try {
+                    result = ref.getInfoWindow(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMap.InfoWindowAdapter::getInfoContents", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMap.InfoWindowAdapter ref = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.InfoWindowAdapter@" + refId + "::getInfoContents(" + var1 + ")");
+                }
+            
+                // invoke native method
+                android.view.View result;
+                try {
+                    result = ref.getInfoContents(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMap.ImageInfoWindowAdapter::getInfoWindowUpdateTime", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.AMap.ImageInfoWindowAdapter ref = (com.amap.api.maps.AMap.ImageInfoWindowAdapter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.ImageInfoWindowAdapter@" + refId + "::getInfoWindowUpdateTime(" + "" + ")");
+                }
+            
+                // invoke native method
+                long result;
+                try {
+                    result = ref.getInfoWindowUpdateTime();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
+                List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
+                for (int refId : var0RefIdList) {
+                    var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                }
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                // jsonable arg
+                double var3 = (double) ((Map<String, Object>) args).get("var3");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + var2 + var3 + ")");
+                }
+            
+                // invoke native method
+                android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
+                try {
+                    result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue(), var3);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
+                List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
+                for (int refId : var0RefIdList) {
+                    var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                }
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
+                try {
+                    result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
+                List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
+                for (int refId : var0RefIdList) {
+                    var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
+                }
+                // ref arg
+                com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + ")");
+                }
+            
+                // invoke native method
+                android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
+                try {
+                    result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
+                List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
+                for (int refId : var0RefIdList) {
+                    var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
+                }
+                // ref arg
+                com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint(" + var0 + var1 + var2 + ")");
+                }
+            
+                // invoke native method
+                android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
+                try {
+                    result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                }
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setPoints(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPoints(new ArrayList(var1));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::resetIndex", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::resetIndex(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.resetIndex();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setTotalDuration", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setTotalDuration(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setTotalDuration(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::startSmoothMove", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::startSmoothMove(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.startSmoothMove();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::stopMove", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::stopMove(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.stopMove();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getObject(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.BasePointOverlay result;
+                try {
+                    result = ref.getObject();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getPosition(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.LatLng result;
+                try {
+                    result = ref.getPosition();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::getIndex", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::getIndex(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getIndex();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::destroy", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::destroy(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.destroy();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::removeMarker", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::removeMarker(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.removeMarker();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setPosition", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setPosition(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPosition(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setRotate(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setRotate(new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setVisible", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setVisible(" + var1 + ")");
                 }
             
                 // invoke native method
@@ -936,95 +3018,40 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::isVisible", (args, methodResult) -> {
+            put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.MovingPointOverlay ref = (com.amap.api.maps.utils.overlay.MovingPointOverlay) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::isVisible(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.MovingPointOverlay@" + refId + "::setMoveListener(" + "" + ")");
                 }
             
                 // invoke native method
-                boolean result;
                 try {
-                    result = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::equalsRemote(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.equalsRemote(new com.autonavi.amap.mapcore.interfaces.ITileOverlay() {
+                    ref.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
                     // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote::Callback");
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback");
             
                     // call dart method
                     @Override
-                    public void remove() {
+                    public void move(double var1) {
                         // print log
                         if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: remove(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::remove",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void destroy(boolean var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: destroy(" + var1 + ")");
+                            Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
                         }
             
                         // convert to jsonable data
                         // jsonable arg
-                        boolean argvar1 = var1;
+                        double argvar1 = var1;
             
                         // call dart method
                         callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::destroy",
+                                "Callback::com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::move",
                                 new HashMap<String, Object>() {{
                                     put("var1", argvar1);
                                 }}
@@ -1032,191 +3059,6 @@ public class SubHandler8 {
             
                         // method result
             
-                    }
-            
-                    @Override
-                    public void clearTileCache() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: clearTileCache(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::clearTileCache",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public String getId() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: getId(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::getId",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-                        return null;
-                    }
-            
-                    @Override
-                    public void setZIndex(float var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: setZIndex(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::setZIndex",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public float getZIndex() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: getZIndex(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::getZIndex",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-                        return 0f;
-                    }
-            
-                    @Override
-                    public void setVisible(boolean var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: setVisible(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        boolean argvar1 = var1;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::setVisible",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public boolean isVisible() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: isVisible(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::isVisible",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-                        return true;
-                    }
-            
-                    @Override
-                    public boolean equalsRemote(com.autonavi.amap.mapcore.interfaces.ITileOverlay var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: equalsRemote(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-                        return true;
-                    }
-            
-                    @Override
-                    public int hashCodeRemote() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: hashCodeRemote(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.ITileOverlay::hashCodeRemote",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-                        return 0;
                     }
             
                 });
@@ -1230,28 +3072,230 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                String jsonableResult = "success";
             
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.ITileOverlay::hashCodeRemote", (args, methodResult) -> {
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPoints", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                }
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setPoints(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPoints(new ArrayList(var1));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setTotalDuration", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setTotalDuration(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setTotalDuration(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::startSmoothMove", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ITileOverlay ref = (com.autonavi.amap.mapcore.interfaces.ITileOverlay) getHEAP().get(refId);
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ITileOverlay@" + refId + "::hashCodeRemote(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::startSmoothMove(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.startSmoothMove();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::stopMove", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::stopMove(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.stopMove();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::getMarker", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::getMarker(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.Marker result;
+                try {
+                    result = ref.getMarker();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::getPosition", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::getPosition(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.LatLng result;
+                try {
+                    result = ref.getPosition();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::getIndex", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::getIndex(" + "" + ")");
                 }
             
                 // invoke native method
                 int result;
                 try {
-                    result = ref.hashCodeRemote();
+                    result = ref.getIndex();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1267,18 +3311,3082 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::fromScreenLocation", (args, methodResult) -> {
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::resetIndex", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::resetIndex(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.resetIndex();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::destroy", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::destroy(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.destroy();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::removeMarker", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::removeMarker(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.removeMarker();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPosition", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setPosition(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPosition(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setDescriptor", (args, methodResult) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setDescriptor(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setDescriptor(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setRotate", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setRotate(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setRotate(new Double(var1).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setVisible", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setVisible(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setVisible(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.utils.overlay.SmoothMoveMarker ref = (com.amap.api.maps.utils.overlay.SmoothMoveMarker) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.utils.overlay.SmoothMoveMarker@" + refId + "::setMoveListener(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setMoveListener(new com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener() {
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback");
+            
+                    // call dart method
+                    @Override
+                    public void move(double var1) {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: move(" + var1 + ")");
+                        }
+            
+                        // convert to jsonable data
+                        // jsonable arg
+                        double argvar1 = var1;
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::move",
+                                new HashMap<String, Object>() {{
+                                    put("var1", argvar1);
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                });
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.SwipeDismissView::setCallback", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.SwipeDismissView ref = (com.amap.api.maps.SwipeDismissView) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.SwipeDismissView@" + refId + "::setCallback(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCallback(new com.amap.api.maps.WearMapView.OnDismissCallback() {
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.SwipeDismissView::setCallback::Callback");
+            
+                    // call dart method
+                    @Override
+                    public void onDismiss() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                        }
+            
+                        // convert to jsonable data
+            
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
+                                new HashMap<String, Object>() {{
+                
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                    @Override
+                    public void onNotifySwipe() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                        }
+            
+                        // convert to jsonable data
+            
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
+                                new HashMap<String, Object>() {{
+                
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                });
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::initialize", (args, methodResult) -> {
+                // args
+                // ref arg
+                android.content.Context var0 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var0"));
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::initialize(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.initialize(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setNetWorkEnable", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var0 = (boolean) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setNetWorkEnable(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setNetWorkEnable(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::getNetWorkEnable", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::getNetWorkEnable(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.getNetWorkEnable();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setApiKey", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var0 = (String) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setApiKey(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setApiKey(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::getVersion", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::getVersion(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.getVersion();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::loadWorldGridMap", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var0 = (boolean) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::loadWorldGridMap(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.loadWorldGridMap(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::isLoadWorldGridMap", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::isLoadWorldGridMap(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.isLoadWorldGridMap();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setBuildingHeight", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setBuildingHeight(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setBuildingHeight(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var0 = (boolean) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setDownloadCoordinateConvertLibrary(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.isDownloadCoordinateConvertLibrary();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setHost", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var0 = (String) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setHost(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setHost(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::setProtocol", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var0 = (int) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::setProtocol(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.setProtocol(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::getProtocol", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::getProtocol(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.getProtocol();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::closeTileOverlay", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                boolean var0 = (boolean) ((Map<String, Object>) args).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::closeTileOverlay(" + var0 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.amap.api.maps.MapsInitializer.closeTileOverlay(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.MapsInitializer::isTileOverlayClosed", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.MapsInitializer::isTileOverlayClosed(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean result;
+                try {
+                    result = com.amap.api.maps.MapsInitializer.isTileOverlayClosed();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getUrl", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getUrl(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getUrl();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setUrl", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setUrl(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setUrl(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getState", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getState(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getState();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setState", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setState(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setState(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getSize", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getSize(" + "" + ")");
+                }
+            
+                // invoke native method
+                long result;
+                try {
+                    result = ref.getSize();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setSize", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setSize(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setSize(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getVersion", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getVersion(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getVersion();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setVersion", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setVersion(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setVersion(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getcompleteCode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getcompleteCode(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getcompleteCode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setCompleteCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setCompleteCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCompleteCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getCityList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getCityList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                try {
+                    result = ref.getCityList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapCity item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::getDownloadedCityList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::getDownloadedCityList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                try {
+                    result = ref.getDownloadedCityList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapCity item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapProvince::setCityList", (args, methodResult) -> {
+                // args
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    var1.add((com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId));
+                }
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapProvince@" + refId + "::setCityList(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCityList(new ArrayList(var1));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.DownloadProgressView ref = (com.amap.api.maps.offlinemap.DownloadProgressView) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.DownloadProgressView@" + refId + "::setProgress(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setProgress(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::getProvinceName", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::getProvinceName(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getProvinceName();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::getJianpin", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::getJianpin(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getJianpin();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::getPinyin", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::getPinyin(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getPinyin();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::setProvinceName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::setProvinceName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setProvinceName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::setJianpin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::setJianpin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setJianpin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::setPinyin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::setPinyin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPinyin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::setProvinceCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::setProvinceCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setProvinceCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.Province::getProvinceCode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.Province ref = (com.amap.api.maps.offlinemap.Province) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.Province@" + refId + "::getProvinceCode(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getProvinceCode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::downloadByCityCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.downloadByCityCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::downloadByCityName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::downloadByCityName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.downloadByCityName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::downloadByProvinceName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::downloadByProvinceName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.downloadByProvinceName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::remove", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::remove(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.remove(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapProvinceList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getOfflineMapProvinceList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                try {
+                    result = ref.getOfflineMapProvinceList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapProvince item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getItemByCityCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.offlinemap.OfflineMapCity result;
+                try {
+                    result = ref.getItemByCityCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getItemByCityName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getItemByCityName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.offlinemap.OfflineMapCity result;
+                try {
+                    result = ref.getItemByCityName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getItemByProvinceName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getItemByProvinceName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.offlinemap.OfflineMapProvince result;
+                try {
+                    result = ref.getItemByProvinceName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = System.identityHashCode(result);
+                    getHEAP().put(jsonableResult, result);
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getOfflineMapCityList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getOfflineMapCityList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                try {
+                    result = ref.getOfflineMapCityList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapCity item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingCityList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getDownloadingCityList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                try {
+                    result = ref.getDownloadingCityList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapCity item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadingProvinceList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getDownloadingProvinceList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                try {
+                    result = ref.getDownloadingProvinceList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapProvince item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapCityList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getDownloadOfflineMapCityList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                try {
+                    result = ref.getDownloadOfflineMapCityList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapCity item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::getDownloadOfflineMapProvinceList", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::getDownloadOfflineMapProvinceList(" + "" + ")");
+                }
+            
+                // invoke native method
+                List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                try {
+                    result = ref.getDownloadOfflineMapProvinceList();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (result != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.offlinemap.OfflineMapProvince item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::updateOfflineCityByCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.updateOfflineCityByCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineCityByName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::updateOfflineCityByName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.updateOfflineCityByName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::updateOfflineMapProvinceByName", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::updateOfflineMapProvinceByName(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.updateOfflineMapProvinceByName(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::restart", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::restart(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.restart();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::stop", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::stop(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.stop();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::pause", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::pause(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.pause();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::destroy", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::destroy(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.destroy();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapManager@" + refId + "::setOnOfflineLoadedListener(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setOnOfflineLoadedListener(new com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener() {
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback");
+            
+                    // call dart method
+                    @Override
+                    public void onVerifyComplete() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onVerifyComplete(" + "" + ")");
+                        }
+            
+                        // convert to jsonable data
+            
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete",
+                                new HashMap<String, Object>() {{
+                
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                });
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::getUrl", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::getUrl(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getUrl();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::setUrl", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::setUrl(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setUrl(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::getSize", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::getSize(" + "" + ")");
+                }
+            
+                // invoke native method
+                long result;
+                try {
+                    result = ref.getSize();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::setSize", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::setSize(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setSize(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::getState", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::getState(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getState();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::setState", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::setState(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setState(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::getVersion", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::getVersion(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getVersion();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::setVersion", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::setVersion(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setVersion(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::getcompleteCode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::getcompleteCode(" + "" + ")");
+                }
+            
+                // invoke native method
+                int result;
+                try {
+                    result = ref.getcompleteCode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                int jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapCity::setCompleteCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapCity ref = (com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapCity@" + refId + "::setCompleteCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCompleteCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapActivity::showScr", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::showScr(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.showScr();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::closeScr(" + "" + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.closeScr();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle", (args, methodResult) -> {
+                // args
+                // ref arg
+                android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::closeScr(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.closeScr(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.OfflineMapActivity::onClick", (args, methodResult) -> {
+                // args
+                // ref arg
+                android.view.View var1 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.OfflineMapActivity ref = (com.amap.api.maps.offlinemap.OfflineMapActivity) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.OfflineMapActivity@" + refId + "::onClick(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.onClick(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::setCity", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::setCity(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCity(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::getCity", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::getCity(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getCity();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::setCode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::setCode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::getCode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::getCode(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getCode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::getJianpin", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::getJianpin(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getJianpin();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::setJianpin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::setJianpin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setJianpin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::getPinyin", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::getPinyin(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getPinyin();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::setPinyin", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::setPinyin(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setPinyin(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::getAdcode", (args, methodResult) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::getAdcode(" + "" + ")");
+                }
+            
+                // invoke native method
+                String result;
+                try {
+                    result = ref.getAdcode();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.offlinemap.City::setAdcode", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.offlinemap.City ref = (com.amap.api.maps.offlinemap.City) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.offlinemap.City@" + refId + "::setAdcode(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setAdcode(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.Projection::fromScreenLocation", (args, methodResult) -> {
                 // args
                 // ref arg
                 android.graphics.Point var1 = (android.graphics.Point) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::fromScreenLocation(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::fromScreenLocation(" + var1 + ")");
                 }
             
                 // invoke native method
@@ -1304,18 +6412,18 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::toScreenLocation", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::toScreenLocation", (args, methodResult) -> {
                 // args
                 // ref arg
                 com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::toScreenLocation(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::toScreenLocation(" + var1 + ")");
                 }
             
                 // invoke native method
@@ -1341,24 +6449,24 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::toMapLocation", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::toOpenGLLocation", (args, methodResult) -> {
                 // args
                 // ref arg
                 com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::toMapLocation(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::toOpenGLLocation(" + var1 + ")");
                 }
             
                 // invoke native method
                 android.graphics.PointF result;
                 try {
-                    result = ref.toMapLocation(var1);
+                    result = ref.toOpenGLLocation(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -1378,17 +6486,50 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::getVisibleRegion", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::toOpenGLWidth", (args, methodResult) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) args).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::toOpenGLWidth(" + var1 + ")");
+                }
+            
+                // invoke native method
+                float result;
+                try {
+                    result = ref.toOpenGLWidth(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    methodResult.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                float jsonableResult = result;
+            
+                methodResult.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.Projection::getVisibleRegion", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::getVisibleRegion(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::getVisibleRegion(" + "" + ")");
                 }
             
                 // invoke native method
@@ -1414,40 +6555,7 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::toMapLenWithWin", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::toMapLenWithWin(" + var1 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.toMapLenWithWin(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::fromBoundsToTile", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::fromBoundsToTile", (args, methodResult) -> {
                 // args
                 // ref arg
                 com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
@@ -1458,11 +6566,11 @@ public class SubHandler8 {
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::fromBoundsToTile(" + var1 + var2 + var3 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::fromBoundsToTile(" + var1 + var2 + var3 + ")");
                 }
             
                 // invoke native method
@@ -1488,7 +6596,7 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::getMapBounds", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::getMapBounds", (args, methodResult) -> {
                 // args
                 // ref arg
                 com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
@@ -1497,11 +6605,11 @@ public class SubHandler8 {
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::getMapBounds(" + var1 + var2 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::getMapBounds(" + var1 + var2 + ")");
                 }
             
                 // invoke native method
@@ -1527,17 +6635,17 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IProjection::getCameraInfo", (args, methodResult) -> {
+            put("com.amap.api.maps.Projection::getCameraInfo", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IProjection ref = (com.autonavi.amap.mapcore.interfaces.IProjection) getHEAP().get(refId);
+                com.amap.api.maps.Projection ref = (com.amap.api.maps.Projection) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IProjection@" + refId + "::getCameraInfo(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.Projection@" + refId + "::getCameraInfo(" + "" + ")");
                 }
             
                 // invoke native method
@@ -1563,4450 +6671,24 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setCenter", (args, methodResult) -> {
+            put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getInfoWindowClick", (args, methodResult) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
+                com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter ref = (com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setCenter(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCenter(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getCenter", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getCenter(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.LatLng result;
-                try {
-                    result = ref.getCenter();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setRadius", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setRadius(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRadius(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getRadius", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getRadius(" + "" + ")");
-                }
-            
-                // invoke native method
-                double result;
-                try {
-                    result = ref.getRadius();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                double jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setStrokeWidth", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setStrokeWidth(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setStrokeWidth(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getStrokeWidth", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getStrokeWidth(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getStrokeWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setStrokeColor", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setStrokeColor(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setStrokeColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getStrokeColor", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getStrokeColor(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getStrokeColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setFillColor", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setFillColor(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setFillColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getFillColor", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getFillColor(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getFillColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::contains", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::contains(" + var1 + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.contains(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setHoleOptions", (args, methodResult) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
-                }
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setHoleOptions(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setHoleOptions(new ArrayList(var1));
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getHoleOptions", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getHoleOptions(" + "" + ")");
-                }
-            
-                // invoke native method
-                List<com.amap.api.maps.model.BaseHoleOptions> result;
-                try {
-                    result = ref.getHoleOptions();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.BaseHoleOptions item : result) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::getDottedLineType", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::getDottedLineType(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getDottedLineType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.ICircle::setDottedLineType", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.ICircle ref = (com.autonavi.amap.mapcore.interfaces.ICircle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.ICircle@" + refId + "::setDottedLineType(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDottedLineType(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getCameraPosition", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getCameraPosition(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.CameraPosition result;
-                try {
-                    result = ref.getCameraPosition();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMaxZoomLevel", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMaxZoomLevel(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getMaxZoomLevel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMinZoomLevel", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMinZoomLevel(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getMinZoomLevel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::moveCamera", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::moveCamera(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.moveCamera(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::animateCamera", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::animateCamera(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.animateCamera(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::animateCameraWithCallback(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.animateCameraWithCallback(var1, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.CameraUpdate var1 = (com.amap.api.maps.CameraUpdate) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::animateCameraWithDurationAndCallback(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.animateCameraWithDurationAndCallback(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::stopAnimation", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::stopAnimation(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.stopAnimation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addNavigateArrow", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.NavigateArrowOptions var1 = (com.amap.api.maps.model.NavigateArrowOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addNavigateArrow(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.NavigateArrow result;
-                try {
-                    result = ref.addNavigateArrow(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addPolyline", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.PolylineOptions var1 = (com.amap.api.maps.model.PolylineOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addPolyline(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Polyline result;
-                try {
-                    result = ref.addPolyline(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addCircle", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.CircleOptions var1 = (com.amap.api.maps.model.CircleOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addCircle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Circle result;
-                try {
-                    result = ref.addCircle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addArc", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.ArcOptions var1 = (com.amap.api.maps.model.ArcOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addArc(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Arc result;
-                try {
-                    result = ref.addArc(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addPolygon", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.PolygonOptions var1 = (com.amap.api.maps.model.PolygonOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addPolygon(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Polygon result;
-                try {
-                    result = ref.addPolygon(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addGroundOverlay", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.GroundOverlayOptions var1 = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addGroundOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlay result;
-                try {
-                    result = ref.addGroundOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addMultiPointOverlay", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.MultiPointOverlayOptions var1 = (com.amap.api.maps.model.MultiPointOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addMultiPointOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.MultiPointOverlay result;
-                try {
-                    result = ref.addMultiPointOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addMarker", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.MarkerOptions var1 = (com.amap.api.maps.model.MarkerOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addMarker(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Marker result;
-                try {
-                    result = ref.addMarker(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addMarkers", (args, methodResult) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.MarkerOptions> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId));
-                }
-                // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addMarkers(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                List<com.amap.api.maps.model.Marker> result;
-                try {
-                    result = ref.addMarkers(new ArrayList(var1), var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.Marker item : result) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addText", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.TextOptions var1 = (com.amap.api.maps.model.TextOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addText(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Text result;
-                try {
-                    result = ref.addText(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addTileOverlay", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.TileOverlayOptions var1 = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addTileOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.TileOverlay result;
-                try {
-                    result = ref.addTileOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::clear", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::clear(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clear();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::clear__bool", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::clear(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.clear(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapType", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapType(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getMapType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapType", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapType(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapType(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::isTrafficEnabled", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::isTrafficEnabled(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isTrafficEnabled();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setTrafficEnabled", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setTrafficEnabled(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setTrafficEnabled(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::isIndoorEnabled", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::isIndoorEnabled(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isIndoorEnabled();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorEnabled", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setIndoorEnabled(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setIndoorEnabled(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::set3DBuildingEnabled", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::set3DBuildingEnabled(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.set3DBuildingEnabled(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::isMyLocationEnabled", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::isMyLocationEnabled(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isMyLocationEnabled();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationEnabled", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMyLocationEnabled(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMyLocationEnabled(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setLoadOfflineData", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setLoadOfflineData(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setLoadOfflineData(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationStyle", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.MyLocationStyle var1 = (com.amap.api.maps.model.MyLocationStyle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMyLocationStyle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMyLocationStyle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationType", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMyLocationType(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMyLocationType(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenMarkers", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapScreenMarkers(" + "" + ")");
-                }
-            
-                // invoke native method
-                List<com.amap.api.maps.model.Marker> result;
-                try {
-                    result = ref.getMapScreenMarkers();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.Marker item : result) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapTextEnable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapTextEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setRoadArrowEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setRoadArrowEnable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRoadArrowEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMyTrafficStyle", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.MyTrafficStyle var1 = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMyTrafficStyle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMyTrafficStyle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocation", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMyLocation(" + "" + ")");
-                }
-            
-                // invoke native method
-                android.location.Location result;
-                try {
-                    result = ref.getMyLocation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setLocationSource", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setLocationSource(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setLocationSource(new com.amap.api.maps.LocationSource() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setLocationSource::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void activate(com.amap.api.maps.LocationSource.OnLocationChangedListener var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.LocationSource::activate",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void deactivate() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.LocationSource::deactivate",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMyLocationRotateAngle", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMyLocationRotateAngle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMyLocationRotateAngle(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getAMapUiSettings", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getAMapUiSettings(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.UiSettings result;
-                try {
-                    result = ref.getAMapUiSettings();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getAMapProjection", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getAMapProjection(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.Projection result;
-                try {
-                    result = ref.getAMapProjection();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnCameraChangeListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onCameraChange(com.amap.api.maps.model.CameraPosition var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onCameraChangeFinish(com.amap.api.maps.model.CameraPosition var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMapClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapClick(com.amap.api.maps.model.LatLng var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMapTouchListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onTouch(android.view.MotionEvent var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMapLongClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapLongClick(com.amap.api.maps.model.LatLng var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMarkerClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public boolean onMarkerClick(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-                        return true;
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnPolylineClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onPolylineClick(com.amap.api.maps.model.Polyline var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMarkerDragListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMarkerDragStart(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onMarkerDrag(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onMarkerDragEnd(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMaploadedListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMaploadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapLoaded() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnInfoWindowClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onInfoWindowClick(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMyLocationChangeListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMyLocationChangeListener(new com.amap.api.maps.AMap.OnMyLocationChangeListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMyLocationChange(android.location.Location var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnPOIClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onPOIClick(com.amap.api.maps.model.Poi var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.AMap.InfoWindowAdapter var1 = (com.amap.api.maps.AMap.InfoWindowAdapter) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setInfoWindowAdapter(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowAdapter(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setInfoWindowAdapter(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter::Callback");
-            
-                    // call dart method
-                    @Override
-                    public com.amap.api.maps.InfoWindowParams getInfoWindowParams(com.amap.api.maps.model.BasePointOverlay var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-                        return null;
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnIndoorBuildingActiveListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void OnIndoorBuilding(com.amap.api.maps.model.IndoorBuildingInfo var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapPrintScreen(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getMapPrintScreen(new com.amap.api.maps.AMap.onMapPrintScreenListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapPrint(android.graphics.drawable.Drawable var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapScreenShot(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.getMapScreenShot(new com.amap.api.maps.AMap.OnMapScreenShotListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapScreenShot(android.graphics.Bitmap var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onMapScreenShot(android.graphics.Bitmap var1, int var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-                        // jsonable arg
-                        int argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getScalePerPixel", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getScalePerPixel(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getScalePerPixel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setRunLowFrame", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setRunLowFrame(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRunLowFrame(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::removecache", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::removecache(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.removecache();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::removecache(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onRemoveCacheFinish(boolean var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onRemoveCacheFinish(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        boolean argvar1 = var1;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setCenterToPixel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCenterToPixel(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCenterToPixel(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapTextZIndex", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapTextZIndex(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapTextZIndex(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapTextZIndex", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapTextZIndex(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getMapTextZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::reloadMap", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::reloadMap(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.reloadMap();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setRenderFps", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setRenderFps(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRenderFps(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setIndoorBuildingInfo", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.IndoorBuildingInfo var1 = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setIndoorBuildingInfo(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setIndoorBuildingInfo(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setAMapGestureListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAMapGestureListener(new com.amap.api.maps.model.AMapGestureListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onDoubleTap(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onSingleTap(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onFling(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onFling",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onScroll(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onScroll",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onLongPress(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onDown(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onDown",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onUp(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onUp",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void onMapStable() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getZoomToSpanLevel", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                // ref arg
-                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getZoomToSpanLevel(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getZoomToSpanLevel(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::calculateZoomToSpanLevel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // ref arg
-                com.amap.api.maps.model.LatLng var5 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var5"));
-                // ref arg
-                com.amap.api.maps.model.LatLng var6 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var6"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::calculateZoomToSpanLevel(" + var1 + var2 + var3 + var4 + var5 + var6 + ")");
-                }
-            
-                // invoke native method
-                android.util.Pair<Float,com.amap.api.maps.model.LatLng> result;
-                try {
-                    result = ref.calculateZoomToSpanLevel(var1, var2, var3, var4, var5, var6);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getInfoWindowAnimationManager", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getInfoWindowAnimationManager(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.InfoWindowAnimationManager result;
-                try {
-                    result = ref.getInfoWindowAnimationManager();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMaskLayerParams", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
-                // jsonable arg
-                long var6 = (long) (int) ((Map<String, Object>) args).get("var6");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMaskLayerParams(" + var1 + var2 + var3 + var4 + var5 + var6 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMaskLayerParams(var1, var2, var3, var4, var5, var6);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMaxZoomLevel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMaxZoomLevel(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMaxZoomLevel(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMinZoomLevel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMinZoomLevel(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMinZoomLevel(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::resetMinMaxZoomPreference", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::resetMinMaxZoomPreference(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.resetMinMaxZoomPreference();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapStatusLimits", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapStatusLimits(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapStatusLimits(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStylePath", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCustomMapStylePath(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomMapStylePath(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapCustomEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapCustomEnable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMapCustomEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onChangeFinish", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onChangeFinish(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onChangeFinish();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setZoomScaleParam", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setZoomScaleParam(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setZoomScaleParam(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onFling", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onFling(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onFling();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapWidth", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapWidth(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getMapWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapHeight", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapHeight(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getMapHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getCameraAngle", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getCameraAngle(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getCameraAngle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getSkyHeight", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getSkyHeight(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getSkyHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::isMaploaded", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::isMaploaded(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isMaploaded();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapConfig", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapConfig(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.autonavi.amap.mapcore.MapConfig result;
-                try {
-                    result = ref.getMapConfig();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getView", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getView(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@" + refId + "::getInfoWindowClick(" + var1 + ")");
                 }
             
                 // invoke native method
                 android.view.View result;
                 try {
-                    result = ref.getView();
+                    result = ref.getInfoWindowClick(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6026,246 +6708,24 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setZOrderOnTop", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setZOrderOnTop(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setZOrderOnTop(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::destroy", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::destroy(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.destroy();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setVisibilityEx", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setVisibilityEx(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setVisibilityEx(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onActivityPause", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onActivityPause(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onActivityPause();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onActivityResume", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onActivityResume(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onActivityResume();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::createGLOverlay", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::createGLOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.createGLOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getGlOverlayMgrPtr", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getGlOverlayMgrPtr(" + "" + ")");
-                }
-            
-                // invoke native method
-                long result;
-                try {
-                    result = ref.getGlOverlayMgrPtr();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                long jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addCrossVector", (args, methodResult) -> {
+            put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindow", (args, methodResult) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.CrossOverlayOptions var1 = (com.amap.api.maps.model.CrossOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter ref = (com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addCrossVector(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@" + refId + "::getOverturnInfoWindow(" + var1 + ")");
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.CrossOverlay result;
+                android.view.View result;
                 try {
-                    result = ref.addCrossVector(var1);
+                    result = ref.getOverturnInfoWindow(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6285,254 +6745,24 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addNaviRouteOverlay", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addNaviRouteOverlay(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.RouteOverlay result;
-                try {
-                    result = ref.addNaviRouteOverlay();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getViewMatrix", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getViewMatrix(" + "" + ")");
-                }
-            
-                // invoke native method
-                float[] result;
-                try {
-                    result = ref.getViewMatrix();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float[] jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getProjectionMatrix", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getProjectionMatrix(" + "" + ")");
-                }
-            
-                // invoke native method
-                float[] result;
-                try {
-                    result = ref.getProjectionMatrix();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float[] jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addOverlayTexture", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // ref arg
-                com.autonavi.ae.gmap.gloverlay.GLTextureProperty var2 = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addOverlayTexture(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.addOverlayTexture(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onTouchEvent", (args, methodResult) -> {
+            put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindowClick", (args, methodResult) -> {
                 // args
                 // ref arg
-                android.view.MotionEvent var1 = (android.view.MotionEvent) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter ref = (com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onTouchEvent(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@" + refId + "::getOverturnInfoWindowClick(" + var1 + ")");
                 }
             
                 // invoke native method
-                boolean result;
+                android.view.View result;
                 try {
-                    result = ref.onTouchEvent(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::canStopMapRender", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::canStopMapRender(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.canStopMapRender();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setCustomTextureResourcePath", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCustomTextureResourcePath(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomTextureResourcePath(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMyLocationStyle", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMyLocationStyle(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.MyLocationStyle result;
-                try {
-                    result = ref.getMyLocationStyle();
+                    result = ref.getOverturnInfoWindowClick(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6552,55 +6782,22 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getRenderMode", (args, methodResult) -> {
+            put("com.amap.api.maps.model.Polygon::remove", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getRenderMode(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getRenderMode();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::destroySurface", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::destroySurface(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Polygon@" + refId + "::remove(" + "" + ")");
                 }
             
                 // invoke native method
                 try {
-                    ref.destroySurface(var1);
+                    ref.remove();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6616,284 +6813,23 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::requestRender", (args, methodResult) -> {
+            put("com.amap.api.maps.model.Polygon::getId", (args, methodResult) -> {
                 // args
             
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::requestRender(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.requestRender();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::resetRenderTime", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::resetRenderTime(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.resetRenderTime();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::onIndoorBuildingActivity", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::onIndoorBuildingActivity(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onIndoorBuildingActivity(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getCamerInfo", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getCamerInfo(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.AMapCameraInfo result;
-                try {
-                    result = ref.getCamerInfo();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::checkMapState", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::checkMapState(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.checkMapState(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setRenderMode", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setRenderMode(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRenderMode(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setOnMultiPointClickListener(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOnMultiPointClickListener(new com.amap.api.maps.AMap.OnMultiPointClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public boolean onPointClick(com.amap.api.maps.model.MultiPointItem var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-                        return true;
-                    }
-            
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getMapContentApprovalNumber", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getMapContentApprovalNumber(" + "" + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Polygon@" + refId + "::getId(" + "" + ")");
                 }
             
                 // invoke native method
                 String result;
                 try {
-                    result = ref.getMapContentApprovalNumber();
+                    result = ref.getId();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6909,55 +6845,27 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::getSatelliteImageApprovalNumber", (args, methodResult) -> {
+            put("com.amap.api.maps.model.Polygon::setPoints", (args, methodResult) -> {
                 // args
-            
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                }
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::getSatelliteImageApprovalNumber(" + "" + ")");
-                }
-            
-                // invoke native method
-                String result;
-                try {
-                    result = ref.getSatelliteImageApprovalNumber();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setMapLanguage", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setMapLanguage(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Polygon@" + refId + "::setPoints(" + var1 + ")");
                 }
             
                 // invoke native method
                 try {
-                    ref.setMapLanguage(var1);
+                    ref.setPoints(new ArrayList(var1));
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6973,23 +6881,23 @@ public class SubHandler8 {
                 methodResult.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyleID", (args, methodResult) -> {
+            put("com.amap.api.maps.model.Polygon::getPoints", (args, methodResult) -> {
                 // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
+                com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCustomMapStyleID(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Polygon@" + refId + "::getPoints(" + "" + ")");
                 }
             
                 // invoke native method
+                List<com.amap.api.maps.model.LatLng> result;
                 try {
-                    ref.setCustomMapStyleID(var1);
+                    result = ref.getPoints();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -7000,1016 +6908,14 @@ public class SubHandler8 {
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addBuildingOverlay", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addBuildingOverlay(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.BuildingOverlay result;
-                try {
-                    result = ref.addBuildingOverlay();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
+                List<Integer> jsonableResult = null;
                 if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addGLModel", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.GL3DModelOptions var1 = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addGLModel(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.GL3DModel result;
-                try {
-                    result = ref.addGLModel(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.model.LatLng item : result) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::addParticleOverlay", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.particle.ParticleOverlayOptions var1 = (com.amap.api.maps.model.particle.ParticleOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::addParticleOverlay(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.particle.ParticleOverlay result;
-                try {
-                    result = ref.addParticleOverlay(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IAMap::setCustomMapStyle", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.CustomMapStyleOptions var1 = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IAMap ref = (com.autonavi.amap.mapcore.interfaces.IAMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IAMap@" + refId + "::setCustomMapStyle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomMapStyle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onInflate", (args, methodResult) -> {
-                // args
-                // ref arg
-                android.app.Activity var1 = (android.app.Activity) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                // ref arg
-                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-                // ref arg
-                android.os.Bundle var3 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onInflate(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onInflate(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::setContext", (args, methodResult) -> {
-                // args
-                // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::setContext(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setContext(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::setOptions", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.AMapOptions var1 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::setOptions(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOptions(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onCreate", (args, methodResult) -> {
-                // args
-                // ref arg
-                android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onCreate(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onCreate(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onResume", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onResume(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onResume();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onPause", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onPause(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onPause();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onDestroyView", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onDestroyView(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onDestroyView();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onDestroy", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onDestroy(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onDestroy();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onLowMemory", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onLowMemory(" + "" + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onLowMemory();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::onSaveInstanceState", (args, methodResult) -> {
-                // args
-                // ref arg
-                android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::onSaveInstanceState(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.onSaveInstanceState(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::isReady", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::isReady(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isReady();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate::setVisibility", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate ref = (com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@" + refId + "::setVisibility(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setVisibility(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::getAlpha", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::getAlpha(" + "" + ")");
-                }
-            
-                // invoke native method
-                float result;
-                try {
-                    result = ref.getAlpha();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAlpha", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setAlpha(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAlpha(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::getDisplayLevel", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::getDisplayLevel(" + "" + ")");
-                }
-            
-                // invoke native method
-                int result;
-                try {
-                    result = ref.getDisplayLevel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::getOptions", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::getOptions(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions result;
-                try {
-                    result = ref.getOptions();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::isClickable", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::isClickable(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isClickable();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowAutoOverturn", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::isInfoWindowAutoOverturn(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isInfoWindowAutoOverturn();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowEnable", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::isInfoWindowEnable(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isInfoWindowEnable();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setInfoWindowEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setInfoWindowEnable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setInfoWindowEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setMarkerOptions", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.MarkerOptions var1 = (com.amap.api.maps.model.MarkerOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setMarkerOptions(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setMarkerOptions(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAutoOverturnInfoWindow", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setAutoOverturnInfoWindow(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAutoOverturnInfoWindow(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setClickable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setClickable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setClickable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setDisplayLevel", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setDisplayLevel(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDisplayLevel(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setFixingPointEnable", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setFixingPointEnable(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setFixingPointEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setPositionNotUpdate", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setPositionNotUpdate(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setPositionNotUpdate(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IMarkerAction::setRotateAngleNotUpdate", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IMarkerAction ref = (com.autonavi.amap.mapcore.interfaces.IMarkerAction) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IMarkerAction@" + refId + "::setRotateAngleNotUpdate(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setRotateAngleNotUpdate(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
                 methodResult.success(jsonableResult);
             });

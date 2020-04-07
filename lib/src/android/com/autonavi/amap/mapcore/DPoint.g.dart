@@ -61,10 +61,32 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
   //endregion
 
   //region getters
+  Future<double> get_x() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.DPoint::get_x", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<double> get_y() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.DPoint::get_y", {'refId': refId});
+  
+    return __result__;
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_x(double x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::set_x', {'refId': refId, "x": x});
+  
+  
+  }
+  
+  Future<void> set_y(double y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::set_y', {'refId': refId, "y": y});
+  
+  
+  }
   
   //endregion
 
@@ -118,10 +140,34 @@ class com_autonavi_amap_mapcore_DPoint extends java_lang_Object  {
 
 extension com_autonavi_amap_mapcore_DPoint_Batch on List<com_autonavi_amap_mapcore_DPoint> {
   //region getters
+  Future<List<double>> get_x_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.DPoint::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_y_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.DPoint::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_x_batch(List<double> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_y_batch(List<double> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.DPoint::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
+  
+  
+  }
   
   //endregion
 

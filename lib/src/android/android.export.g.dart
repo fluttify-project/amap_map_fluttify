@@ -4,6 +4,7 @@ export 'platformview/DownloadProgressView.g.dart';
 export 'platformview/WearMapView.g.dart';
 export 'platformview/MapView.g.dart';
 export 'com/autonavi/ae/gmap/maploader/ProcessingTile.g.dart';
+export 'com/autonavi/ae/gmap/maploader/Pools/Pool.g.dart';
 export 'com/autonavi/ae/gmap/maploader/Pools.g.dart';
 export 'com/autonavi/ae/gmap/AbstractMapMessage.g.dart';
 export 'com/autonavi/ae/gmap/listener/AMapWidgetListener.g.dart';

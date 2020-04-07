@@ -79,6 +79,30 @@ public class SubHandler0 {
                 methodResult.success(result);
             });
             // getter
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_x", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                int result = ref.x;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_y", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
+            
+                int result = ref.y;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
             put("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_angle", (args, methodResult) -> {
                 // ref object
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -445,6 +469,30 @@ public class SubHandler0 {
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 int result = ref.engineId;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_x", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                int result = ref.x;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_y", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
+            
+                int result = ref.y;
             
             
             
@@ -1435,6 +1483,30 @@ public class SubHandler0 {
                 methodResult.success(result);
             });
             // getter
+            put("com.autonavi.amap.mapcore.DPoint::get_x", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId);
+            
+                double result = ref.x;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.DPoint::get_y", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId);
+            
+                double result = ref.y;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mFromXDelta", (args, methodResult) -> {
                 // ref object
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -1537,6 +1609,30 @@ public class SubHandler0 {
                 com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
             
                 float result = ref.mCurAlpha;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::get_x", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                double result = ref.x;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::get_y", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
+            
+                double result = ref.y;
             
             
             
@@ -2333,102 +2429,6 @@ public class SubHandler0 {
                 getHEAP().put(result.hashCode(), result);
             
                 methodResult.success(result.hashCode());
-            });
-            // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_southwest", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
-            
-                com.amap.api.maps.model.LatLng result = ref.southwest;
-            
-                getHEAP().put(result.hashCode(), result);
-            
-                methodResult.success(result.hashCode());
-            });
-            // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_northeast", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
-            
-                com.amap.api.maps.model.LatLng result = ref.northeast;
-            
-                getHEAP().put(result.hashCode(), result);
-            
-                methodResult.success(result.hashCode());
-            });
-            // getter
-            put("com.amap.api.maps.model.LatLng::get_latitude", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
-            
-                double result = ref.latitude;
-            
-            
-            
-                methodResult.success(result);
-            });
-            // getter
-            put("com.amap.api.maps.model.LatLng::get_longitude", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
-            
-                double result = ref.longitude;
-            
-            
-            
-                methodResult.success(result);
-            });
-            // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetX", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
-            
-                int result = ref.offsetX;
-            
-            
-            
-                methodResult.success(result);
-            });
-            // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetY", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
-            
-                int result = ref.offsetY;
-            
-            
-            
-                methodResult.success(result);
-            });
-            // getter
-            put("com.amap.api.maps.model.TileProjection::get_minX", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
-            
-                int result = ref.minX;
-            
-            
-            
-                methodResult.success(result);
-            });
-            // getter
-            put("com.amap.api.maps.model.TileProjection::get_maxX", (args, methodResult) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
-            
-                int result = ref.maxX;
-            
-            
-            
-                methodResult.success(result);
             });
         }};
     }

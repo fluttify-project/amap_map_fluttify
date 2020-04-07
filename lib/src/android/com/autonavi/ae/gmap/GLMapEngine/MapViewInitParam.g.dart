@@ -48,6 +48,18 @@ class com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam extends java_lang_Object
     return __result__;
   }
   
+  Future<int> get_x() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_x", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<int> get_y() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_y", {'refId': refId});
+  
+    return __result__;
+  }
+  
   Future<int> get_width() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_width", {'refId': refId});
   
@@ -95,6 +107,18 @@ class com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam extends java_lang_Object
   //region setters
   Future<void> set_engineId(int engineId) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId', {'refId': refId, "engineId": engineId});
+  
+  
+  }
+  
+  Future<void> set_x(int x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_x', {'refId': refId, "x": x});
+  
+  
+  }
+  
+  Future<void> set_y(int y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_y', {'refId': refId, "y": y});
   
   
   }
@@ -157,6 +181,20 @@ extension com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam_Batch on List<com_au
     return typedResult;
   }
   
+  Future<List<int>> get_x_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_x_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_y_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_y_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
   Future<List<int>> get_width_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_width_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
@@ -211,6 +249,18 @@ extension com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam_Batch on List<com_au
   //region setters
   Future<void> set_engineId_batch(List<int> engineId) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "engineId": engineId[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_x_batch(List<int> x) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_x_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "x": x[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_y_batch(List<int> y) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_y_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "y": y[__i__]}]);
   
   
   }

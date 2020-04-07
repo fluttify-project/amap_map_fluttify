@@ -31,6 +31,102 @@ public class SubHandler1 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // getter
+            put("com.amap.api.maps.model.LatLngBounds::get_southwest", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+            
+                com.amap.api.maps.model.LatLng result = ref.southwest;
+            
+                getHEAP().put(result.hashCode(), result);
+            
+                methodResult.success(result.hashCode());
+            });
+            // getter
+            put("com.amap.api.maps.model.LatLngBounds::get_northeast", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+            
+                com.amap.api.maps.model.LatLng result = ref.northeast;
+            
+                getHEAP().put(result.hashCode(), result);
+            
+                methodResult.success(result.hashCode());
+            });
+            // getter
+            put("com.amap.api.maps.model.LatLng::get_latitude", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+            
+                double result = ref.latitude;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.amap.api.maps.model.LatLng::get_longitude", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+            
+                double result = ref.longitude;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.amap.api.maps.model.TileProjection::get_offsetX", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            
+                int result = ref.offsetX;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.amap.api.maps.model.TileProjection::get_offsetY", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            
+                int result = ref.offsetY;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.amap.api.maps.model.TileProjection::get_minX", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            
+                int result = ref.minX;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
+            put("com.amap.api.maps.model.TileProjection::get_maxX", (args, methodResult) -> {
+                // ref object
+                int refId = (int) ((Map<String, Object>) args).get("refId");
+                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            
+                int result = ref.maxX;
+            
+            
+            
+                methodResult.success(result);
+            });
+            // getter
             put("com.amap.api.maps.model.TileProjection::get_minY", (args, methodResult) -> {
                 // ref object
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -220,6 +316,44 @@ public class SubHandler1 {
                     String result = ref.poiid;
             
                     String jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_x_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
+            
+                    int result = ref.x;
+            
+                    int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_y_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get((int) args.get("refId"));
+            
+                    int result = ref.y;
+            
+                    int jsonableResult = result;
             
                     resultList.add(jsonableResult);
                 }
@@ -807,6 +941,44 @@ public class SubHandler1 {
                     com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
             
                     int result = ref.engineId;
+            
+                    int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_x_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
+            
+                    int result = ref.x;
+            
+                    int jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::get_y_batch", (argsBatch, methodResult) -> {
+                List<Integer> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get((int) args.get("refId"));
+            
+                    int result = ref.y;
             
                     int jsonableResult = result;
             
@@ -2382,6 +2554,44 @@ public class SubHandler1 {
                 methodResult.success(resultList);
             });
             // getter
+            put("com.autonavi.amap.mapcore.DPoint::get_x_batch", (argsBatch, methodResult) -> {
+                List<Double> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) args.get("refId"));
+            
+                    double result = ref.x;
+            
+                    double jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.DPoint::get_y_batch", (argsBatch, methodResult) -> {
+                List<Double> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) args.get("refId"));
+            
+                    double result = ref.y;
+            
+                    double jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
             put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::get_mFromXDelta_batch", (argsBatch, methodResult) -> {
                 List<Double> resultList = new ArrayList<>();
             
@@ -2546,6 +2756,44 @@ public class SubHandler1 {
                     float result = ref.mCurAlpha;
             
                     float jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::get_x_batch", (argsBatch, methodResult) -> {
+                List<Double> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
+            
+                    double result = ref.x;
+            
+                    double jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // getter
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::get_y_batch", (argsBatch, methodResult) -> {
+                List<Double> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // ref object
+                    com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get((int) args.get("refId"));
+            
+                    double result = ref.y;
+            
+                    double jsonableResult = result;
             
                     resultList.add(jsonableResult);
                 }
@@ -3494,334 +3742,6 @@ public class SubHandler1 {
                     int result = ref.paddingTop;
             
                     int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingBottom_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
-            
-                    int result = ref.paddingBottom;
-            
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mDuration_batch", (argsBatch, methodResult) -> {
-                List<Long> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
-            
-                    long result = ref.mDuration;
-            
-                    long jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_width_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
-            
-                    int result = ref.width;
-            
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_height_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
-            
-                    int result = ref.height;
-            
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLng result = ref.nearLeft;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearRight_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLng result = ref.nearRight;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farLeft_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLng result = ref.farLeft;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farRight_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLng result = ref.farRight;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLngBounds result = ref.latLngBounds;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.Tile::get_width_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
-            
-                    int result = ref.width;
-            
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.Tile::get_height_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
-            
-                    int result = ref.height;
-            
-                    int jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.Tile::get_data_batch", (argsBatch, methodResult) -> {
-                List<byte[]> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
-            
-                    byte[] result = ref.data;
-            
-                    byte[] jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.CameraPosition::get_target_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
-            
-                    com.amap.api.maps.model.LatLng result = ref.target;
-            
-                    Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
-            }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.CameraPosition::get_zoom_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
-            
-                    float result = ref.zoom;
-            
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.CameraPosition::get_tilt_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
-            
-                    float result = ref.tilt;
-            
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // getter
-            put("com.amap.api.maps.model.CameraPosition::get_bearing_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
-            
-                    float result = ref.bearing;
-            
-                    float jsonableResult = result;
             
                     resultList.add(jsonableResult);
                 }
