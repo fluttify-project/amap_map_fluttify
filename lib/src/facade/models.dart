@@ -461,7 +461,7 @@ class Marker {
       },
       ios: (_) {
         return _iosModel
-            .getJsonableProperty(7)
+            .getJsonableProperty__(7)
             .then((object) => object as String);
       },
     );

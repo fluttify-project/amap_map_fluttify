@@ -159,7 +159,7 @@ class _AmapViewState extends State<AmapView> {
                     if (widget.onMapCreated != null) {
                       await widget.onMapCreated(_controller);
                     }
-                    await bundle.release();
+                    await bundle.release__();
                   },
                 );
               } else {
