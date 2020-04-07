@@ -1,5 +1,6 @@
 ## 0.19.2
 - fix: ios端多实例delegate的处理
+- roll engine #37387b7e
 
 ## 0.19.1
 - fix: tag -> tag__
