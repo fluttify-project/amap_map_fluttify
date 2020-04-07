@@ -142,7 +142,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom_Batch on List<co
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -161,7 +161,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom_Batch on List<co
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -180,7 +180,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom_Batch on List<co
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

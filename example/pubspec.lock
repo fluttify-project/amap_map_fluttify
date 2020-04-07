@@ -14,7 +14,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.19.2-dev.1"
+    version: "0.19.2-dev.2"
   archive:
     dependency: transitive
     description:
@@ -99,6 +99,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.12.0+1"
+  demo_widgets:
+    dependency: "direct main"
+    description:
+      name: demo_widgets
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.0.3"
   dio:
     dependency: transitive
     description:
@@ -153,7 +160,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.5.0"
+    version: "0.5.1"
   http:
     dependency: transitive
     description:
@@ -181,7 +188,7 @@ packages:
       name: intl
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.16.1"
+    version: "0.16.0"
   kiwi:
     dependency: transitive
     description:
@@ -258,7 +265,7 @@ packages:
       name: pedantic
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "1.9.0"
+    version: "1.8.0+1"
   permission_handler:
     dependency: "direct main"
     description:
@@ -361,7 +368,7 @@ packages:
       name: test_api
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.2.15"
+    version: "0.2.11"
   typed_data:
     dependency: transitive
     description:

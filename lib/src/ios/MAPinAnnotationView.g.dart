@@ -80,14 +80,14 @@ extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
   //region getters
   Future<List<MAPinAnnotationColor>> get_pinColor_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_pinColor_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => MAPinAnnotationColor.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPinAnnotationColor.values[__result__]).toList();
   
     return typedResult;
   }
   
   Future<List<bool>> get_animatesDrop_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAPinAnnotationView::get_animatesDrop_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
   
     return typedResult;
   }

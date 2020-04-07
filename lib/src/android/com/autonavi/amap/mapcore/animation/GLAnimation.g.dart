@@ -1037,7 +1037,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1056,7 +1056,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1075,7 +1075,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1094,7 +1094,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1113,7 +1113,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1132,7 +1132,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1151,7 +1151,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1170,7 +1170,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1189,7 +1189,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1208,7 +1208,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1227,7 +1227,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1246,7 +1246,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1265,7 +1265,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1284,7 +1284,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1303,7 +1303,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1322,7 +1322,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1341,7 +1341,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1360,7 +1360,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1379,7 +1379,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1398,7 +1398,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1417,7 +1417,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1436,7 +1436,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1455,7 +1455,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1474,7 +1474,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1493,7 +1493,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1512,7 +1512,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1531,7 +1531,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1550,7 +1550,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1569,7 +1569,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1588,7 +1588,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1607,7 +1607,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1626,7 +1626,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1645,7 +1645,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1664,7 +1664,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1683,7 +1683,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1702,7 +1702,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1721,7 +1721,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1740,7 +1740,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1759,7 +1759,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1778,7 +1778,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -1797,7 +1797,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

@@ -102,7 +102,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -121,7 +121,7 @@ extension com_amap_api_maps_model_particle_ParticleShapeModule_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => (__result__ as List).cast<double>()).toList();
     
       return typedResult;
     }

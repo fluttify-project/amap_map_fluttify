@@ -83,7 +83,7 @@ extension com_autonavi_ae_gmap_AbstractMapMessage_Batch on List<com_autonavi_ae_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

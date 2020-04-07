@@ -199,7 +199,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   //region getters
   Future<List<bool>> get_isFinish_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader::get_isFinish_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
   
     return typedResult;
   }
@@ -229,7 +229,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -248,7 +248,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -267,7 +267,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -286,7 +286,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -305,7 +305,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -324,7 +324,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

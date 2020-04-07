@@ -143,7 +143,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }
@@ -162,7 +162,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
+      final typedResult = (resultBatch as List).cast<Uint8List>().map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }
@@ -181,7 +181,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => __result__ as Uint8List).toList();
+      final typedResult = (resultBatch as List).cast<Uint8List>().map((__result__) => __result__ as Uint8List).toList();
     
       return typedResult;
     }

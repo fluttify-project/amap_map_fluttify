@@ -80,7 +80,7 @@ extension com_amap_api_maps_model_particle_ColorGenerate_Batch on List<com_amap_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).map((__result__) => (__result__ as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => (__result__ as List).cast<double>()).toList();
     
       return typedResult;
     }
