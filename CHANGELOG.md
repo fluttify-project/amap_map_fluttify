@@ -1,6 +1,8 @@
 ## 0.20.0
 - enhance: 提升底层依赖
 - roll engine #cced4adc
+- docs: README增加通用技术服务
+- enhance: [breaking change] 优化clearMarkers方法, 增加List<Marker>参数, 统一android和ios两端的行为
 
 ## 0.19.2
 - fix: ios端多实例delegate的处理
