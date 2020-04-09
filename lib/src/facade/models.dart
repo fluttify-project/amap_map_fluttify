@@ -414,41 +414,41 @@ class MapLocation {
 
 /// 地图标记
 class Marker {
-  Marker.android(this._androidModel);
+  Marker.android(this.androidModel);
 
-  Marker.ios(this._iosModel /*, this._annotationView*/, this._iosController);
+  Marker.ios(this.iosModel /*, this._annotationView*/, this.iosController);
 
-  com_amap_api_maps_model_Marker _androidModel;
+  com_amap_api_maps_model_Marker androidModel;
 
-  MAPointAnnotation _iosModel;
+  MAPointAnnotation iosModel;
 //  MAAnnotationView _annotationView;
-  MAMapView _iosController;
+  MAMapView iosController;
 
   Future<String> get title {
     return platform(
-      android: (_) => _androidModel.getTitle(),
-      ios: (_) => _iosModel.get_title(),
+      android: (_) => androidModel.getTitle(),
+      ios: (_) => iosModel.get_title(),
     );
   }
 
   Future<String> get snippet {
     return platform(
-      android: (_) => _androidModel.getSnippet(),
-      ios: (_) => _iosModel.get_subtitle(),
+      android: (_) => androidModel.getSnippet(),
+      ios: (_) => iosModel.get_subtitle(),
     );
   }
 
   Future<LatLng> get location {
     return platform(
       android: (_) async {
-        final _location = await _androidModel.getPosition();
+        final _location = await androidModel.getPosition();
         return LatLng(
           await _location.get_latitude(),
           await _location.get_longitude(),
         );
       },
       ios: (_) async {
-        final location = await _iosModel.get_coordinate();
+        final location = await iosModel.get_coordinate();
         return LatLng(await location.latitude, await location.longitude);
       },
     );
@@ -457,10 +457,10 @@ class Marker {
   Future<String> get object {
     return platform(
       android: (_) {
-        return _androidModel.getObject().then((object) => object as String);
+        return androidModel.getObject().then((object) => object as String);
       },
       ios: (_) {
-        return _iosModel
+        return iosModel
             .getJsonableProperty__(7)
             .then((object) => object as String);
       },
@@ -469,15 +469,15 @@ class Marker {
 
   Future<void> remove() async {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController.removeAnnotation(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController.removeAnnotation(iosModel),
     );
   }
 
   Future<void> setCoordinate(LatLng coord) async {
     assert(coord != null);
     return platform(
-      android: (_) async => _androidModel.setPosition(
+      android: (_) async => androidModel.setPosition(
         await com_amap_api_maps_model_LatLng.create__double__double(
           coord.latitude,
           coord.longitude,
@@ -502,7 +502,7 @@ class Marker {
   Future<void> setVisible(bool visible) async {
     assert(visible != null);
     return platform(
-      android: (_) => _androidModel.setVisible(visible),
+      android: (_) => androidModel.setVisible(visible),
       ios: (_) async {
         debugPrint('ios端目前无法设置可见性!');
 //        if (_annotationView != null) {
@@ -516,15 +516,15 @@ class Marker {
 
   Future<void> showInfoWindow() async {
     return platform(
-      android: (_) => _androidModel.showInfoWindow(),
-      ios: (_) => _iosController?.selectAnnotation_animated(_iosModel, true),
+      android: (_) => androidModel.showInfoWindow(),
+      ios: (_) => iosController?.selectAnnotation_animated(iosModel, true),
     );
   }
 
   Future<void> hideInfoWindow() async {
     return platform(
-      android: (_) => _androidModel.hideInfoWindow(),
-      ios: (_) => _iosController?.deselectAnnotation_animated(_iosModel, true),
+      android: (_) => androidModel.hideInfoWindow(),
+      ios: (_) => iosController?.deselectAnnotation_animated(iosModel, true),
     );
   }
 }

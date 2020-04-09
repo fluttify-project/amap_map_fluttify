@@ -4,13 +4,16 @@
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
-[![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译器生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 同款[百度地图插件](https://github.com/fluttify-project/bmap_map_fluttify), 有其他插件需求的也都可以走技术支持流程请求支持 :) .
 
 ## 技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
+- 目前提供的标准服务:
+  - 跳转导航组件需求, 如果你需要使用应用内导航, 本方案提供集成高德导航SDK版本的地图插件. 目前支持跳转驾车导航组件.
+  - 配置高德appkey, 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
+  - 其他个性化技术支持, 请前往[technical-support-plan](https://github.com/fluttify-project/technical-support-plan)新开工单.
 
 ## Fluttify网站
 - Fluttify编译器自助服务[fluttify.com](http://fluttify.com/#/)网站已上线, 欢迎各位来试用, 目前网站仍然处于早期阶段, 如果有什么建议可以在[技术支持](https://github.com/fluttify-project/technical-support-plan/issues/new?assignees=yohom&labels=&template=------.md&title=)中提issue.
@@ -48,7 +51,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 
 /// 初始化(0.17.0开始可以不用配置AndroidManifest.xml):
-await AmapService.init(iosKey: '7a04506d15fdb7585707f7091d715ef4', androidKey: '7c9daac55e90a439f7b4304b465297fa');
+await AmapService.init(iosKey: '7a***********************f4', androidKey: '7c***********************fa');
 /// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
 await enableFluttifyLog(false); // 关闭log
 
@@ -87,7 +90,7 @@ class AmapWidget extends StatelessWidget {
       // 地图创建完成回调 (可选)
       onMapCreated: (controller) async {
         // requestPermission是权限请求方法, 需要你自己实现 
-        // 如果不知道怎么处理, 可以参考example工程的实现, example过程依赖了`permission_handler`插件.
+        // 如果不知道怎么处理, 可以参考example工程的实现, example工程依赖了`permission_handler`插件.
         if (await requestPermission()) {
           await controller.showMyLocation(true);
         }
@@ -129,13 +132,6 @@ iOS `Info.plist`配置:
 	<string>iosamap</string>
 </array>
 ```
-
-## 版本规划
-### 版本的语义化
-    - +版本号迭代表示引擎更新，完善引擎能力以及修复引擎bug;
-    - 小版本号迭代表示无破坏性更新, 包括功能增加和bug修复;
-    - 次版本号迭代表示有破坏性更新, 包括但不限于接口改动, 类名改动等;
-    - 主版本号迭代表示底层高德SDK更换;
 
 | 微信支持 | 支付宝支持 |
 | :----------: | :----------: |

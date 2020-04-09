@@ -330,10 +330,12 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         switch (language) {
           case Language.Chinese:
-            await iosController.performSelectorWithObject__('setMapLanguage:', 0);
+            await iosController.performSelectorWithObject__(
+                'setMapLanguage:', 0);
             break;
           case Language.English:
-            await iosController.performSelectorWithObject__('setMapLanguage:', 1);
+            await iosController.performSelectorWithObject__(
+                'setMapLanguage:', 1);
             break;
         }
       },
@@ -1158,24 +1160,16 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
-  /// 清除所有marker
-  Future<void> clearMarkers() async {
+  /// 把marker列表从地图上移除
+  Future<void> clearMarkers(List<Marker> markers) async {
     await platform(
       android: (pool) async {
-        final map = await androidController.getMap();
-        final markers = await map.getMapScreenMarkers();
-
-        await markers.remove_batch();
-
-        pool
-          ..add(map)
-          ..addAll(markers);
+        final markerBatch = markers.map((it) => it.androidModel).toList();
+        await markerBatch.remove_batch();
       },
       ios: (pool) async {
-        final markers = await iosController.get_annotations();
-        await iosController.removeAnnotations(markers);
-
-        pool..addAll(markers as List<Ref>);
+        final markerBatch = markers.map((it) => it.iosModel).toList();
+        await iosController.removeAnnotations(markerBatch);
       },
     );
   }

@@ -137,7 +137,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ContinuousSetting(
                   head: '添加旋转角度的Marker',
                   onChanged: (value) async {
-                    await _controller?.clearMarkers();
+                    await _controller?.clearMarkers(_markers);
                     final marker = await _controller?.addMarker(
                       MarkerOption(
                         latLng: LatLng(39.90960, 116.397228),
@@ -187,7 +187,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ListTile(
                   title: Center(child: Text('清除所有Marker')),
                   onTap: () async {
-                    await _controller.clearMarkers();
+                    await _controller.clearMarkers(_markers);
                   },
                 ),
                 ListTile(
