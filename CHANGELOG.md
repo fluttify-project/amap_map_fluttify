@@ -1,5 +1,6 @@
 ## 0.20.0
 - enhance: 提升底层依赖
+- roll engine #cced4adc
 
 ## 0.19.2
 - fix: ios端多实例delegate的处理
