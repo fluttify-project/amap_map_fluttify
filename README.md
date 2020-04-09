@@ -4,13 +4,16 @@
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
-[![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译器生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 同款[百度地图插件](https://github.com/fluttify-project/bmap_map_fluttify), 有其他插件需求的也都可以走技术支持流程请求支持 :) .
 
 ## 技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
+- 目前提供的标准服务:
+  - 跳转导航组件需求, 如果你需要使用应用内导航, 本方案提供集成高德导航SDK版本的地图插件. 目前支持跳转驾车导航组件.
+  - 配置高德appkey, 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
+  - 其他个性化技术支持, 请前往[technical-support-plan](https://github.com/fluttify-project/technical-support-plan)新开工单.
 
 ## Fluttify网站
 - Fluttify编译器自助服务[fluttify.com](http://fluttify.com/#/)网站已上线, 欢迎各位来试用, 目前网站仍然处于早期阶段, 如果有什么建议可以在[技术支持](https://github.com/fluttify-project/technical-support-plan/issues/new?assignees=yohom&labels=&template=------.md&title=)中提issue.
