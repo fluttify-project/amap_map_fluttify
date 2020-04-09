@@ -14,6 +14,86 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler4)
 - (NSDictionary<NSString*, Handler>*) getSubHandler4 {
     return @{
+        @"MAMapView::get_isZoomEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.zoomEnabled;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAMapView::get_isScrollEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.scrollEnabled;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAMapView::get_isRotateEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.rotateEnabled;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAMapView::get_isRotateCameraEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.rotateCameraEnabled;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
         @"MAMapView::get_isSkyModelEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -1189,9 +1269,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
-            NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
+            NSMutableArray<NSArray<MAHeatMapNode*>*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
             for (int __i__ = 0; __i__ < dataRefArray.count; __i__++) {
-                MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:__i__]];
+                NSArray<MAHeatMapNode*>* item = (NSArray<MAHeatMapNode*>*) HEAP[[dataRefArray objectAtIndex:__i__]];
                 [data addObject:item];
             }
         
@@ -1423,9 +1503,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-            NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+            NSMutableArray<NSArray<MAOverlay>*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
             for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
+                NSArray<MAOverlay>* item = (NSArray<MAOverlay>*) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
                 [hollowShapes addObject:item];
             }
         
@@ -1583,9 +1663,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-            NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+            NSMutableArray<NSArray<MAOverlay>*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
             for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
+                NSArray<MAOverlay>* item = (NSArray<MAOverlay>*) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
                 [hollowShapes addObject:item];
             }
         
@@ -1605,9 +1685,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
-            NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+            NSMutableArray<NSArray<UIColor*>*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
             for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
-                UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
+                NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
                 [strokeColors addObject:item];
             }
         
@@ -3658,76 +3738,6 @@ extern BOOL enableLog;
             MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
             ref.showTraffic = showTraffic;
-            methodResult(@"success");
-        },
-        
-        @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapView::set_trafficRatio");
-            }
-        
-            // args
-            // jsonable arg
-            CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.trafficRatio = trafficRatio;
-            methodResult(@"success");
-        },
-        
-        @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapView::set_touchPOIEnabled");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.touchPOIEnabled = touchPOIEnabled;
-            methodResult(@"success");
-        },
-        
-        @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapView::set_showsCompass");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL showsCompass = [args[@"showsCompass"] boolValue];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.showsCompass = showsCompass;
-            methodResult(@"success");
-        },
-        
-        @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapView::set_compassOrigin");
-            }
-        
-            // args
-            // struct arg
-            NSValue* compassOriginValue = (NSValue*) HEAP[@([args[@"compassOrigin"] integerValue])];
-            CGPoint compassOrigin;
-            [compassOriginValue getValue:&compassOrigin];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.compassOrigin = compassOrigin;
             methodResult(@"success");
         },
         

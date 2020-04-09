@@ -31,111 +31,6 @@ public class SubHandler15 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.amap.mapcore.MapConfig::isTiltChanged_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isTiltChanged();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.MapConfig::isBearingChanged_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isBearingChanged();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.MapConfig::isIndoorEnable_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean result;
-                    try {
-                        result = ref.isIndoorEnable();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.autonavi.amap.mapcore.MapConfig::setIndoorEnable_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
@@ -7188,6 +7083,114 @@ public class SubHandler15 {
                     // invoke native method
                     try {
                         com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleLifeTime(var0, var2);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    try {
+                        com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleStartSpeed(var0, var2);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    try {
+                        com.autonavi.amap.mapcore.AMapNativeParticleSystem.setLoop(var0, var2);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                    // jsonable arg
+                    long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+            
+                    // ref
+            
+            
+                    // invoke native method
+                    try {
+                        com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleShapeModule(var0, var2);
                     } catch (Throwable throwable) {
                         throwable.printStackTrace();
                         if (getEnableLog()) {

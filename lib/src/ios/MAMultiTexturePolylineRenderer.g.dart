@@ -115,7 +115,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
   
   Future<List<List<num>>> get_strokeTextureIDs_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_strokeTextureIDs_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<num>().map((__result__) => (__result__ as List).cast<num>()).toList();
+    final typedResult = (resultBatch as List).cast<List<num>>().map((__result__) => (__result__ as List).cast<num>()).toList();
   
     return typedResult;
   }

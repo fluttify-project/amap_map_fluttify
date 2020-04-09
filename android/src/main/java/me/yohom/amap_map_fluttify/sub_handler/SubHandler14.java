@@ -31,112 +31,6 @@ public class SubHandler14 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    try {
-                        com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = com.autonavi.ae.gmap.GLMapState.nativeGetCameraDegree(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    float result;
-                    try {
-                        result = com.autonavi.ae.gmap.GLMapState.nativeGetMapAngle(var0);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = result;
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
@@ -5428,7 +5322,7 @@ public class SubHandler14 {
                     com.autonavi.amap.mapcore.animation.GLAnimationSet ref = (com.autonavi.amap.mapcore.animation.GLAnimationSet) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.autonavi.amap.mapcore.animation.GLAnimation> result;
+                    java.util.List<com.autonavi.amap.mapcore.animation.GLAnimation> result;
                     try {
                         result = ref.getAnimations();
                     } catch (Throwable throwable) {
@@ -7270,6 +7164,111 @@ public class SubHandler14 {
                     boolean result;
                     try {
                         result = ref.isZoomChanged();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    boolean jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.MapConfig::isTiltChanged_batch", (argsBatch, methodResult) -> {
+                List<Boolean> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                    // invoke native method
+                    boolean result;
+                    try {
+                        result = ref.isTiltChanged();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    boolean jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.MapConfig::isBearingChanged_batch", (argsBatch, methodResult) -> {
+                List<Boolean> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                    // invoke native method
+                    boolean result;
+                    try {
+                        result = ref.isBearingChanged();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    boolean jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.MapConfig::isIndoorEnable_batch", (argsBatch, methodResult) -> {
+                List<Boolean> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                    // invoke native method
+                    boolean result;
+                    try {
+                        result = ref.isIndoorEnable();
                     } catch (Throwable throwable) {
                         throwable.printStackTrace();
                         if (getEnableLog()) {

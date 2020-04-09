@@ -57,7 +57,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   Future<Float64List> get_mLocation() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mLocation", {'refId': refId});
   
-    return __result__;
+    return __result__ as Float64List;
   }
   
   Future<double> get_mScale() async {
@@ -81,7 +81,7 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo extends java_lang_Ob
   Future<Float64List> get_mVelocityPoint() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVelocityPoint", {'refId': refId});
   
-    return __result__;
+    return __result__ as Float64List;
   }
   
   //endregion
@@ -154,7 +154,7 @@ extension com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo_Batch on List<co
   
   Future<List<Float64List>> get_mLocation_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mLocation_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
   
     return typedResult;
   }
@@ -182,7 +182,7 @@ extension com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo_Batch on List<co
   
   Future<List<Float64List>> get_mVelocityPoint_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVelocityPoint_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
   
     return typedResult;
   }

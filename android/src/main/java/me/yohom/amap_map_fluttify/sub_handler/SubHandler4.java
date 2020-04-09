@@ -292,7 +292,7 @@ public class SubHandler4 {
                     Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
             
                     // jsonable arg
-                    List<String> floor_names = (List<String>) ((Map<String, Object>) args).get("floor_names");
+                    ArrayList<String> floor_names = (ArrayList<String>) ((Map<String, Object>) args).get("floor_names");
             
                     int refId = (int) ((Map<String, Object>) args).get("refId");
                     com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);

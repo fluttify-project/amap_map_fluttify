@@ -14,6 +14,76 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler5)
 - (NSDictionary<NSString*, Handler>*) getSubHandler5 {
     return @{
+        @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_trafficRatio");
+            }
+        
+            // args
+            // jsonable arg
+            CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.trafficRatio = trafficRatio;
+            methodResult(@"success");
+        },
+        
+        @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_touchPOIEnabled");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.touchPOIEnabled = touchPOIEnabled;
+            methodResult(@"success");
+        },
+        
+        @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_showsCompass");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL showsCompass = [args[@"showsCompass"] boolValue];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showsCompass = showsCompass;
+            methodResult(@"success");
+        },
+        
+        @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_compassOrigin");
+            }
+        
+            // args
+            // struct arg
+            NSValue* compassOriginValue = (NSValue*) HEAP[@([args[@"compassOrigin"] integerValue])];
+            CGPoint compassOrigin;
+            [compassOriginValue getValue:&compassOrigin];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.compassOrigin = compassOrigin;
+            methodResult(@"success");
+        },
+        
         @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -634,9 +704,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
-                NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
+                NSMutableArray<NSArray<MAHeatMapNode*>*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
                 for (int __i__ = 0; __i__ < dataRefArray.count; __i__++) {
-                    MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:__i__]];
+                    NSArray<MAHeatMapNode*>* item = (NSArray<MAHeatMapNode*>*) HEAP[[dataRefArray objectAtIndex:__i__]];
                     [data addObject:item];
                 }
         
@@ -881,9 +951,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-                NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+                NSMutableArray<NSArray<MAOverlay>*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
                 for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                    id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
+                    NSArray<MAOverlay>* item = (NSArray<MAOverlay>*) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
                     [hollowShapes addObject:item];
                 }
         
@@ -1050,9 +1120,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-                NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+                NSMutableArray<NSArray<MAOverlay>*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
                 for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                    id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
+                    NSArray<MAOverlay>* item = (NSArray<MAOverlay>*) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
                     [hollowShapes addObject:item];
                 }
         
@@ -1073,9 +1143,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
-                NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+                NSMutableArray<NSArray<UIColor*>*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
                 for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
-                    UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
+                    NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
                     [strokeColors addObject:item];
                 }
         
@@ -3653,78 +3723,6 @@ extern BOOL enableLog;
                 MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
                 ref.showsIndoorMapControl = showsIndoorMapControl;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAMapView::set_customMapStyleEnabled_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // jsonable arg
-                BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
-        
-                // ref
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.customMapStyleEnabled = customMapStyleEnabled;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayPathRenderer::set_fillColor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // ref arg
-                UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
-        
-                // ref
-                MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.fillColor = fillColor;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayPathRenderer::set_strokeColor_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // ref arg
-                UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
-        
-                // ref
-                MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.strokeColor = strokeColor;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayPathRenderer::set_lineWidth_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // jsonable arg
-                CGFloat lineWidth = [args[@"lineWidth"] floatValue];
-        
-                // ref
-                MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.lineWidth = lineWidth;
                 methodResult(@"success");
             }
         

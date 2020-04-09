@@ -14,6 +14,62 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler7)
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
     return @{
+        @"ObjectFactory::createMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAOverlayRenderer");
+            }
+        
+            MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
+            HEAP[@(ref.hash)] = ref;
+        
+            methodResult(@(ref.hash));
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAUserLocation");
+            }
+        
+            MAUserLocation* ref = [[MAUserLocation alloc] init];
+            HEAP[@(ref.hash)] = ref;
+        
+            methodResult(@(ref.hash));
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAMultiPointItem");
+            }
+        
+            MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
+            HEAP[@(ref.hash)] = ref;
+        
+            methodResult(@(ref.hash));
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAMultiPointOverlay");
+            }
+        
+            MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
+            HEAP[@(ref.hash)] = ref;
+        
+            methodResult(@(ref.hash));
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
         @"ObjectFactory::createMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {

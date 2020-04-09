@@ -50,6 +50,27 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //endregion
 
   //region methods
+  static Future<List<MAParticleOverlayOptions>> particleOverlayOptionsWithType(MAParticleOverlayType particleType) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType', {"particleType": particleType.index});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    }
+  }
   
   //endregion
 }
@@ -64,6 +85,24 @@ extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptions
   //endregion
 
   //region methods
+  Future<List<List<MAParticleOverlayOptions>>> particleOverlayOptionsWithType_batch(List<MAParticleOverlayType> particleType) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"particleType": particleType[__i__].index, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
+      return typedResult;
+    }
+  }
   
   //endregion
 }

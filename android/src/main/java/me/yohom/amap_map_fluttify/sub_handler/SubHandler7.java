@@ -3072,9 +3072,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
                 // ref
@@ -3088,7 +3088,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setPoints(new ArrayList(var1));
+                    ref.setPoints((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3118,7 +3118,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.LatLng> result;
+                java.util.List<com.amap.api.maps.model.LatLng> result;
                 try {
                     result = ref.getPoints();
                 } catch (Throwable throwable) {
@@ -3829,9 +3829,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
                 // ref
@@ -3845,7 +3845,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setPoints(new ArrayList(var1));
+                    ref.setPoints((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3875,7 +3875,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.LatLng> result;
+                java.util.List<com.amap.api.maps.model.LatLng> result;
                 try {
                     result = ref.getPoints();
                 } catch (Throwable throwable) {
@@ -4200,7 +4200,7 @@ public class SubHandler7 {
             put("com.autonavi.amap.mapcore.interfaces.IPolyline::setCustemTextureIndex", (args, methodResult) -> {
                 // args
                 // jsonable arg
-                List<Integer> var1 = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                java.util.List<Integer> var1 = (java.util.List<Integer>) ((Map<String, Object>) args).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) args).get("refId");
@@ -4213,7 +4213,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setCustemTextureIndex(new ArrayList(var1));
+                    ref.setCustemTextureIndex((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4331,9 +4331,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.BitmapDescriptor>) var1).add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
                 }
             
                 // ref
@@ -4347,7 +4347,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setCustomTextureList(new ArrayList(var1));
+                    ref.setCustomTextureList((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4431,9 +4431,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
+                java.util.ArrayList<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.BitmapDescriptor>) var1).add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
                 }
             
                 // ref
@@ -4447,7 +4447,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setIcons(new ArrayList(var1));
+                    ref.setIcons((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -4477,7 +4477,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.BitmapDescriptor> result;
+                java.util.ArrayList<com.amap.api.maps.model.BitmapDescriptor> result;
                 try {
                     result = ref.getIcons();
                 } catch (Throwable throwable) {
@@ -5650,9 +5650,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.BaseHoleOptions>) var1).add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
                 }
             
                 // ref
@@ -5666,7 +5666,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setHoleOptions(new ArrayList(var1));
+                    ref.setHoleOptions((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5696,7 +5696,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.BaseHoleOptions> result;
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> result;
                 try {
                     result = ref.getHoleOptions();
                 } catch (Throwable throwable) {
@@ -5949,9 +5949,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
                 // ref
@@ -5965,7 +5965,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setPoints(new ArrayList(var1));
+                    ref.setPoints((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -5995,7 +5995,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.LatLng> result;
+                java.util.List<com.amap.api.maps.model.LatLng> result;
                 try {
                     result = ref.getPoints();
                 } catch (Throwable throwable) {
@@ -6089,9 +6089,9 @@ public class SubHandler7 {
                 // args
                 // list arg
                 List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
-                    var1.add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
+                    ((ArrayList<com.amap.api.maps.model.BaseHoleOptions>) var1).add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
                 }
             
                 // ref
@@ -6105,7 +6105,7 @@ public class SubHandler7 {
             
                 // invoke native method
                 try {
-                    ref.setHoleOptions(new ArrayList(var1));
+                    ref.setHoleOptions((ArrayList) var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -6135,7 +6135,7 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                List<com.amap.api.maps.model.BaseHoleOptions> result;
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> result;
                 try {
                     result = ref.getHoleOptions();
                 } catch (Throwable throwable) {
@@ -6165,7 +6165,7 @@ public class SubHandler7 {
                 // jsonable arg
                 int var1 = (int) ((Map<String, Object>) args).get("var1");
                 // jsonable arg
-                List<String> var2 = (List<String>) ((Map<String, Object>) args).get("var2");
+                ArrayList<String> var2 = (ArrayList<String>) ((Map<String, Object>) args).get("var2");
                 // jsonable arg
                 int[] var3 = (int[]) ((Map<String, Object>) args).get("var3");
             

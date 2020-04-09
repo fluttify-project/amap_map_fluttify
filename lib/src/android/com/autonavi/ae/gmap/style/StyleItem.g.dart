@@ -51,7 +51,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   Future<Int32List> get_subKey() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
   
-    return __result__;
+    return __result__ as Int32List;
   }
   
   //endregion
@@ -152,7 +152,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   
   Future<List<Int32List>> get_subKey_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<Int32List>().map((__result__) => __result__).toList();
+    final typedResult = (resultBatch as List).cast<Int32List>().map((__result__) => __result__ as Int32List).toList();
   
     return typedResult;
   }

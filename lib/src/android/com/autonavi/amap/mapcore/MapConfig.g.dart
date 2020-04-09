@@ -1818,7 +1818,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return (__result__ as List).cast<double>();
+      return __result__ as Float64List;
     }
   }
   
@@ -1840,7 +1840,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return (__result__ as List).cast<double>();
+      return __result__ as Float64List;
     }
   }
   
@@ -1862,7 +1862,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return (__result__ as List).cast<double>();
+      return __result__ as Float64List;
     }
   }
   
@@ -1906,7 +1906,7 @@ class com_autonavi_amap_mapcore_MapConfig extends java_lang_Object  {
       return null;
     } else {
     
-      return (__result__ as List).cast<int>();
+      return __result__ as Int32List;
     }
   }
   
@@ -3442,7 +3442,7 @@ extension com_autonavi_amap_mapcore_MapConfig_Batch on List<com_autonavi_amap_ma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => (__result__ as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
     
       return typedResult;
     }
@@ -3461,7 +3461,7 @@ extension com_autonavi_amap_mapcore_MapConfig_Batch on List<com_autonavi_amap_ma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => (__result__ as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
     
       return typedResult;
     }
@@ -3480,7 +3480,7 @@ extension com_autonavi_amap_mapcore_MapConfig_Batch on List<com_autonavi_amap_ma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => (__result__ as List).cast<double>()).toList();
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
     
       return typedResult;
     }
@@ -3518,7 +3518,7 @@ extension com_autonavi_amap_mapcore_MapConfig_Batch on List<com_autonavi_amap_ma
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<Int32List>().map((__result__) => (__result__ as List).cast<int>()).toList();
+      final typedResult = (resultBatch as List).cast<Int32List>().map((__result__) => __result__ as Int32List).toList();
     
       return typedResult;
     }

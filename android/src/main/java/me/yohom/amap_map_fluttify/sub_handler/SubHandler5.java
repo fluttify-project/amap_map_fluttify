@@ -4731,7 +4731,7 @@ public class SubHandler5 {
                 }
             
                 // invoke native method
-                List<com.autonavi.amap.mapcore.animation.GLAnimation> result;
+                java.util.List<com.autonavi.amap.mapcore.animation.GLAnimation> result;
                 try {
                     result = ref.getAnimations();
                 } catch (Throwable throwable) {

@@ -14,6 +14,88 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler3)
 - (NSDictionary<NSString*, Handler>*) getSubHandler3 {
     return @{
+        @"MAOfflineCity::get_cityName_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSString* result = ref.cityName;
+        
+                // 返回值: jsonable
+                id jsonableResult = result;
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAOfflineCity::get_urlString_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSString* result = ref.urlString;
+        
+                // 返回值: jsonable
+                id jsonableResult = result;
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAOfflineCity::get_status_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOfflineCity* ref = (MAOfflineCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAOfflineCityStatus result = ref.status;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAMultiPoint::get_points_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAMultiPoint* ref = (MAMultiPoint*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAMapPoint* result = ref.points;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint*)];
+                HEAP[@(resultValue.hash)] = resultValue;
+                NSNumber* jsonableResult = @(resultValue.hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
         @"MAMultiPoint::get_pointCount_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -568,7 +650,7 @@ extern BOOL enableLog;
                 // ref object
                 MACircle* ref = (MACircle*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
-                NSArray<id<MAOverlay>>* result = ref.hollowShapes;
+                NSArray<MAOverlay>* result = ref.hollowShapes;
         
                 // 返回值: 列表
                 NSMutableArray* jsonableResult = [NSMutableArray array];
@@ -844,7 +926,7 @@ extern BOOL enableLog;
                 // ref object
                 MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
-                NSArray<id<MAOverlay>>* result = ref.hollowShapes;
+                NSArray<MAOverlay>* result = ref.hollowShapes;
         
                 // 返回值: 列表
                 NSMutableArray* jsonableResult = [NSMutableArray array];
@@ -4145,86 +4227,6 @@ extern BOOL enableLog;
                 MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
                 BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"MAMapView::get_isZoomEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                BOOL result = ref.zoomEnabled;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"MAMapView::get_isScrollEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                BOOL result = ref.scrollEnabled;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"MAMapView::get_isRotateEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                BOOL result = ref.rotateEnabled;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"MAMapView::get_isRotateCameraEnabled_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                BOOL result = ref.rotateCameraEnabled;
         
                 // 返回值: Value
                 id jsonableResult = @(result);

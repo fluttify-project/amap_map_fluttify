@@ -151,6 +151,28 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   }
   
+  Future<List<MAAnnotationMoveAnimation>> allMoveAnimations() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAAnimatedAnnotation@$refId::allMoveAnimations([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::allMoveAnimations', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    }
+  }
+  
   Future<void> setNeedsStart() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -197,6 +219,25 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   //endregion
 
   //region methods
+  Future<List<List<MAAnnotationMoveAnimation>>> allMoveAnimations_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::allMoveAnimations_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
+      return typedResult;
+    }
+  }
+  
   Future<void> setNeedsStart_batch() async {
     if (false) {
       return Future.error('all args must have same length!');

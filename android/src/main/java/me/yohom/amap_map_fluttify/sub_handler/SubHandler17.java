@@ -31,111 +31,6 @@ public class SubHandler17 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.amap.api.maps.UiSettings::setAllGesturesEnabled_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setAllGesturesEnabled(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.UiSettings::setLogoPosition_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setLogoPosition(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.UiSettings::setZoomPosition_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) args).get("refId");
-                    com.amap.api.maps.UiSettings ref = (com.amap.api.maps.UiSettings) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setZoomPosition(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.amap.api.maps.UiSettings::getZoomPosition_batch", (argsBatch, methodResult) -> {
                 List<Integer> resultList = new ArrayList<>();
             
@@ -2873,192 +2768,6 @@ public class SubHandler17 {
                 methodResult.success(resultList);
             });
             // method
-            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__double__double_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
-                    List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
-                    for (int refId : var0RefIdList) {
-                        var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
-                    }
-                    // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    double var3 = (double) ((Map<String, Object>) args).get("var3");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
-                    try {
-                        result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue(), var3);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
-                    List<com.amap.api.maps.model.LatLng> var0 = new ArrayList<>();
-                    for (int refId : var0RefIdList) {
-                        var0.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
-                    }
-                    // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    android.util.Pair<Integer,com.amap.api.maps.model.LatLng> result;
-                    try {
-                        result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
-                    List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
-                    for (int refId : var0RefIdList) {
-                        var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
-                    }
-                    // ref arg
-                    com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
-                    try {
-                        result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
-            put("com.amap.api.maps.utils.SpatialRelationUtil::calShortestDistancePoint__com_autonavi_amap_mapcore_DPoint__com_autonavi_amap_mapcore_DPoint__double_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-            
-                    // args
-                    // list arg
-                    List<Integer> var0RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var0");
-                    List<com.autonavi.amap.mapcore.DPoint> var0 = new ArrayList<>();
-                    for (int refId : var0RefIdList) {
-                        var0.add((com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId));
-                    }
-                    // ref arg
-                    com.autonavi.amap.mapcore.DPoint var1 = (com.autonavi.amap.mapcore.DPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // ref
-            
-            
-                    // invoke native method
-                    android.util.Pair<Integer,com.autonavi.amap.mapcore.DPoint> result;
-                    try {
-                        result = com.amap.api.maps.utils.SpatialRelationUtil.calShortestDistancePoint(new ArrayList(var0), var1, new Double(var2).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        methodResult.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    Integer jsonableResult = null;
-                    if (result != null) {
-                        jsonableResult = System.identityHashCode(result);
-                        getHEAP().put(jsonableResult, result);
-                    }
-            
-                    resultList.add(jsonableResult);
-                }
-            
-                methodResult.success(resultList);
-            });
-            // method
             put("com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints_batch", (argsBatch, methodResult) -> {
                 List<String> resultList = new ArrayList<>();
             
@@ -3068,9 +2777,9 @@ public class SubHandler17 {
                     // args
                     // list arg
                     List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                    java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                     for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                        ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                     }
             
                     // ref
@@ -3079,7 +2788,7 @@ public class SubHandler17 {
             
                     // invoke native method
                     try {
-                        ref.setPoints(new ArrayList(var1));
+                        ref.setPoints((ArrayList) var1);
                     } catch (Throwable throwable) {
                         throwable.printStackTrace();
                         if (getEnableLog()) {
@@ -3530,9 +3239,9 @@ public class SubHandler17 {
                     // args
                     // list arg
                     List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                    java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                     for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                        ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                     }
             
                     // ref
@@ -3541,7 +3250,7 @@ public class SubHandler17 {
             
                     // invoke native method
                     try {
-                        ref.setPoints(new ArrayList(var1));
+                        ref.setPoints((ArrayList) var1);
                     } catch (Throwable throwable) {
                         throwable.printStackTrace();
                         if (getEnableLog()) {
@@ -4892,7 +4601,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> result;
                     try {
                         result = ref.getCityList();
                     } catch (Throwable throwable) {
@@ -4934,7 +4643,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapProvince ref = (com.amap.api.maps.offlinemap.OfflineMapProvince) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> result;
                     try {
                         result = ref.getDownloadedCityList();
                     } catch (Throwable throwable) {
@@ -4971,9 +4680,9 @@ public class SubHandler17 {
                     // args
                     // list arg
                     List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> var1 = new ArrayList<>();
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> var1 = new ArrayList<>();
                     for (int refId : var1RefIdList) {
-                        var1.add((com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId));
+                        ((ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity>) var1).add((com.amap.api.maps.offlinemap.OfflineMapCity) getHEAP().get(refId));
                     }
             
                     // ref
@@ -4982,7 +4691,7 @@ public class SubHandler17 {
             
                     // invoke native method
                     try {
-                        ref.setCityList(new ArrayList(var1));
+                        ref.setCityList((ArrayList) var1);
                     } catch (Throwable throwable) {
                         throwable.printStackTrace();
                         if (getEnableLog()) {
@@ -5470,7 +5179,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
                     try {
                         result = ref.getOfflineMapProvinceList();
                     } catch (Throwable throwable) {
@@ -5632,7 +5341,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> result;
                     try {
                         result = ref.getOfflineMapCityList();
                     } catch (Throwable throwable) {
@@ -5674,7 +5383,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> result;
                     try {
                         result = ref.getDownloadingCityList();
                     } catch (Throwable throwable) {
@@ -5716,7 +5425,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
                     try {
                         result = ref.getDownloadingProvinceList();
                     } catch (Throwable throwable) {
@@ -5758,7 +5467,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapCity> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapCity> result;
                     try {
                         result = ref.getDownloadOfflineMapCityList();
                     } catch (Throwable throwable) {
@@ -5800,7 +5509,7 @@ public class SubHandler17 {
                     com.amap.api.maps.offlinemap.OfflineMapManager ref = (com.amap.api.maps.offlinemap.OfflineMapManager) getHEAP().get(refId);
             
                     // invoke native method
-                    List<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
+                    java.util.ArrayList<com.amap.api.maps.offlinemap.OfflineMapProvince> result;
                     try {
                         result = ref.getDownloadOfflineMapProvinceList();
                     } catch (Throwable throwable) {
@@ -7374,6 +7083,273 @@ public class SubHandler17 {
             
                     // convert result to jsonable result
                     String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::getId_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    String result;
+                    try {
+                        result = ref.getId();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = result;
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::setPoints_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // list arg
+                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                    java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
+                    for (int refId : var1RefIdList) {
+                        ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    }
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.setPoints((ArrayList) var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::getPoints_batch", (argsBatch, methodResult) -> {
+                List<List<Integer>> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    java.util.List<com.amap.api.maps.model.LatLng> result;
+                    try {
+                        result = ref.getPoints();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    List<Integer> jsonableResult = null;
+                    if (result != null) {
+                        jsonableResult = new ArrayList<>();
+                        for (com.amap.api.maps.model.LatLng item : result) {
+                            getHEAP().put(System.identityHashCode(item), item);
+                            jsonableResult.add(System.identityHashCode(item));
+                        }
+                    }
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::setHoleOptions_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // list arg
+                    List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                    java.util.List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
+                    for (int refId : var1RefIdList) {
+                        ((ArrayList<com.amap.api.maps.model.BaseHoleOptions>) var1).add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
+                    }
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.setHoleOptions((ArrayList) var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::getHoleOptions_batch", (argsBatch, methodResult) -> {
+                List<List<Integer>> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    java.util.List<com.amap.api.maps.model.BaseHoleOptions> result;
+                    try {
+                        result = ref.getHoleOptions();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    List<Integer> jsonableResult = null;
+                    if (result != null) {
+                        jsonableResult = new ArrayList<>();
+                        for (com.amap.api.maps.model.BaseHoleOptions item : result) {
+                            getHEAP().put(System.identityHashCode(item), item);
+                            jsonableResult.add(System.identityHashCode(item));
+                        }
+                    }
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::setStrokeWidth_batch", (argsBatch, methodResult) -> {
+                List<String> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.setStrokeWidth(new Double(var1).floatValue());
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    resultList.add(jsonableResult);
+                }
+            
+                methodResult.success(resultList);
+            });
+            // method
+            put("com.amap.api.maps.model.Polygon::getStrokeWidth_batch", (argsBatch, methodResult) -> {
+                List<Float> resultList = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
+                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) args).get("refId");
+                    com.amap.api.maps.model.Polygon ref = (com.amap.api.maps.model.Polygon) getHEAP().get(refId);
+            
+                    // invoke native method
+                    float result;
+                    try {
+                        result = ref.getStrokeWidth();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        methodResult.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    float jsonableResult = result;
             
                     resultList.add(jsonableResult);
                 }
