@@ -51,7 +51,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 
 /// 初始化(0.17.0开始可以不用配置AndroidManifest.xml):
-await AmapService.init(iosKey: '7a04506d15fdb7585707f7091d715ef4', androidKey: '7c9daac55e90a439f7b4304b465297fa');
+await AmapService.init(iosKey: '7a***********************f4', androidKey: '7c***********************fa');
 /// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
 await enableFluttifyLog(false); // 关闭log
 
@@ -90,7 +90,7 @@ class AmapWidget extends StatelessWidget {
       // 地图创建完成回调 (可选)
       onMapCreated: (controller) async {
         // requestPermission是权限请求方法, 需要你自己实现 
-        // 如果不知道怎么处理, 可以参考example工程的实现, example过程依赖了`permission_handler`插件.
+        // 如果不知道怎么处理, 可以参考example工程的实现, example工程依赖了`permission_handler`插件.
         if (await requestPermission()) {
           await controller.showMyLocation(true);
         }
@@ -132,13 +132,6 @@ iOS `Info.plist`配置:
 	<string>iosamap</string>
 </array>
 ```
-
-## 版本规划
-### 版本的语义化
-    - +版本号迭代表示引擎更新，完善引擎能力以及修复引擎bug;
-    - 小版本号迭代表示无破坏性更新, 包括功能增加和bug修复;
-    - 次版本号迭代表示有破坏性更新, 包括但不限于接口改动, 类名改动等;
-    - 主版本号迭代表示底层高德SDK更换;
 
 | 微信支持 | 支付宝支持 |
 | :----------: | :----------: |
