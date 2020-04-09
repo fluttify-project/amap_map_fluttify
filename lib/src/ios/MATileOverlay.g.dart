@@ -166,7 +166,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error':
+            case 'Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error':
               // print log
               if (fluttifyLogEnabled) {
         

@@ -78,7 +78,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
+            case 'Callback::void|BOOL#isFinished::void|BOOL#isFinished':
               // print log
               if (fluttifyLogEnabled) {
         
@@ -119,7 +119,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'Callback::void|BOOL isFinished::void|BOOL isFinished':
+            case 'Callback::void|BOOL#isFinished::void|BOOL#isFinished':
               // print log
               if (fluttifyLogEnabled) {
         
@@ -128,7 +128,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               // handle the native call
               completeCallback(args['isFinished']);
               break;
-            case 'Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni':
+            case 'Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni':
               // print log
               if (fluttifyLogEnabled) {
         

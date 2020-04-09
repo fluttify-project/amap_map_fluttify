@@ -270,13 +270,13 @@ class MAMapView extends UIView  {
     return __result__;
   }
   
-  Future<List> get_annotations({bool viewChannel = true}) async {
+  Future<List<NSObject>> get_annotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
     kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
     return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
-  Future<List> get_selectedAnnotations({bool viewChannel = true}) async {
+  Future<List<NSObject>> get_selectedAnnotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
     kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
     return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
@@ -360,7 +360,7 @@ class MAMapView extends UIView  {
     return __result__;
   }
   
-  Future<List> get_overlays({bool viewChannel = true}) async {
+  Future<List<NSObject>> get_overlays({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays", {'refId': refId});
     kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
     return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
@@ -931,7 +931,7 @@ class MAMapView extends UIView  {
   
   }
   
-  Future<void> set_selectedAnnotations(List selectedAnnotations, {bool viewChannel = true}) async {
+  Future<void> set_selectedAnnotations(List<NSObject> selectedAnnotations, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations.map((it) => it.refId).toList()});
   
   
@@ -1360,7 +1360,7 @@ class MAMapView extends UIView  {
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state':
+            case 'Callback::void|UIImage*#resultImage,NSInteger#state::void|UIImage*#resultImage,NSInteger#state':
               // print log
               if (fluttifyLogEnabled) {
         
@@ -1889,7 +1889,7 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<List> overlaysInLevel(MAOverlayLevel level, {bool viewChannel = true}) async {
+  Future<List<NSObject>> overlaysInLevel(MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
@@ -2622,14 +2622,14 @@ extension MAMapView_Batch on List<MAMapView> {
     return typedResult;
   }
   
-  Future<List<List>> get_annotations_batch({bool viewChannel = true}) async {
+  Future<List<List<NSObject>>> get_annotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
-  Future<List<List>> get_selectedAnnotations_batch({bool viewChannel = true}) async {
+  Future<List<List<NSObject>>> get_selectedAnnotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
@@ -2727,7 +2727,7 @@ extension MAMapView_Batch on List<MAMapView> {
     return typedResult;
   }
   
-  Future<List<List>> get_overlays_batch({bool viewChannel = true}) async {
+  Future<List<List<NSObject>>> get_overlays_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
@@ -2963,7 +2963,7 @@ extension MAMapView_Batch on List<MAMapView> {
   
   }
   
-  Future<void> set_selectedAnnotations_batch(List<List> selectedAnnotations, {bool viewChannel = true}) async {
+  Future<void> set_selectedAnnotations_batch(List<List<NSObject>> selectedAnnotations, {bool viewChannel = true}) async {
     await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::set_selectedAnnotations_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "selectedAnnotations": selectedAnnotations[__i__].map((it) => it.refId).toList()}]);
   
   
@@ -3766,7 +3766,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<List<List>> overlaysInLevel_batch(List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  Future<List<List<NSObject>>> overlaysInLevel_batch(List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

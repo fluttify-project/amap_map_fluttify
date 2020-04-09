@@ -42,12 +42,6 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region getters
-  Future<List<MAOverlay>> get_hollowShapes() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_hollowShapes", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
-  }
-  
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_coordinate", {'refId': refId});
     kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
@@ -69,12 +63,6 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region setters
-  Future<void> set_hollowShapes(List<MAOverlay> hollowShapes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes', {'refId': refId, "hollowShapes": hollowShapes.map((it) => it.refId).toList()});
-  
-  
-  }
-  
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
   
@@ -161,13 +149,6 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
 
 extension MACircle_Batch on List<MACircle> {
   //region getters
-  Future<List<List<MAOverlay>>> get_hollowShapes_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_hollowShapes_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAGroundOverlay()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
-    kNativeObjectPool.addAll(typedResult.expand((e) => e));
-    return typedResult;
-  }
-  
   Future<List<CLLocationCoordinate2D>> get_coordinate_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MACircle::get_coordinate_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
@@ -192,12 +173,6 @@ extension MACircle_Batch on List<MACircle> {
   //endregion
 
   //region setters
-  Future<void> set_hollowShapes_batch(List<List<MAOverlay>> hollowShapes) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_hollowShapes_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "hollowShapes": hollowShapes[__i__].map((it) => it.refId).toList()}]);
-  
-  
-  }
-  
   Future<void> set_coordinate_batch(List<CLLocationCoordinate2D> coordinate) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::set_coordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "coordinate": coordinate[__i__].refId}]);
   

@@ -475,7 +475,7 @@ extern BOOL enableLog;
               // primitive callback arg
               NSNumber* argstate = @(state);
       
-              [channel invokeMethod:@"Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
+              [channel invokeMethod:@"Callback::void|UIImage*#resultImage,NSInteger#state::void|UIImage*#resultImage,NSInteger#state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
       
           }];
       

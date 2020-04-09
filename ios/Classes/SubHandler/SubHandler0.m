@@ -850,7 +850,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argisFinished = @(isFinished);
         
-                [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
+                [channel invokeMethod:@"Callback::void|BOOL#isFinished::void|BOOL#isFinished" arguments:@{@"isFinished": argisFinished}];
         
             }];
         
@@ -905,7 +905,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argisFinished = @(isFinished);
         
-                [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
+                [channel invokeMethod:@"Callback::void|BOOL#isFinished::void|BOOL#isFinished" arguments:@{@"isFinished": argisFinished}];
         
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
@@ -922,7 +922,7 @@ extern BOOL enableLog;
                 NSNumber* argcurrentAni = @(currentAni.hash);
                 HEAP[argcurrentAni] = currentAni;
         
-                [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni" arguments:@{@"currentAni": argcurrentAni}];
+                [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni" arguments:@{@"currentAni": argcurrentAni}];
         
             }];
         
@@ -1580,7 +1580,7 @@ extern BOOL enableLog;
                 NSNumber* argerror = @(error.hash);
                 HEAP[argerror] = error;
         
-                [channel invokeMethod:@"Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error" arguments:@{@"tileData": argtileData, @"error": argerror}];
+                [channel invokeMethod:@"Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error" arguments:@{@"tileData": argtileData, @"error": argerror}];
         
             }];
         
@@ -1686,7 +1686,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argsetupSuccess = @(setupSuccess);
         
-                [channel invokeMethod:@"Callback::void|BOOL setupSuccess::void|BOOL setupSuccess" arguments:@{@"setupSuccess": argsetupSuccess}];
+                [channel invokeMethod:@"Callback::void|BOOL#setupSuccess::void|BOOL#setupSuccess" arguments:@{@"setupSuccess": argsetupSuccess}];
         
             }];
         
@@ -3570,7 +3570,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argstate = @(state);
         
-                [channel invokeMethod:@"Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
+                [channel invokeMethod:@"Callback::void|UIImage*#resultImage,NSInteger#state::void|UIImage*#resultImage,NSInteger#state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
         
             }];
         

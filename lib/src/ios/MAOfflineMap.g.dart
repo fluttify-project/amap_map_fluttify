@@ -72,7 +72,7 @@ class MAOfflineMap extends NSObject  {
     return __result__;
   }
   
-  Future<List> get_offlineCities() async {
+  Future<List<NSObject>> get_offlineCities() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_offlineCities", {'refId': refId});
     kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
     return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
@@ -125,7 +125,7 @@ class MAOfflineMap extends NSObject  {
           // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'Callback::void|BOOL setupSuccess::void|BOOL setupSuccess':
+            case 'Callback::void|BOOL#setupSuccess::void|BOOL#setupSuccess':
               // print log
               if (fluttifyLogEnabled) {
         
@@ -380,7 +380,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     return typedResult;
   }
   
-  Future<List<List>> get_offlineCities_batch() async {
+  Future<List<List<NSObject>>> get_offlineCities_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineMap::get_offlineCities_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));

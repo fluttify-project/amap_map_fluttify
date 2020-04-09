@@ -240,7 +240,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   }
   
-  Future<CGPoint> glPointsForMapPoints_count(List<MAMapPoint> mapPoints, int count) async {
+  Future<List<CGPoint>> glPointsForMapPoints_count(List<MAMapPoint> mapPoints, int count) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOverlayRenderer@$refId::glPointsForMapPoints([\'count\':$count])');
@@ -257,8 +257,8 @@ class MAOverlayRenderer extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
     }
   }
   
@@ -651,7 +651,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     }
   }
   
-  Future<List<CGPoint>> glPointsForMapPoints_count_batch(List<List<MAMapPoint>> mapPoints, List<int> count) async {
+  Future<List<List<CGPoint>>> glPointsForMapPoints_count_batch(List<List<MAMapPoint>> mapPoints, List<int> count) async {
     if (mapPoints.length != count.length) {
       return Future.error('all args must have same length!');
     }
@@ -664,8 +664,8 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => CGPoint()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      kNativeObjectPool.addAll(typedResult.expand((e) => e));
       return typedResult;
     }
   }

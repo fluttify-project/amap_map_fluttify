@@ -23,7 +23,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_(com_amap_api_maps_AMap var1, List<com_amap_api_maps_model_LatLng> var2) async {
+  static Future<com_amap_api_trace_TraceOverlay> create__com_amap_api_maps_AMap__List_java_util_List_com_amap_api_maps_model_LatLng__(com_amap_api_maps_AMap var1, List<com_amap_api_maps_model_LatLng> var2) async {
     final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_', {"var1": var1.refId, "var2": var2.map((it) => it.refId).toList()});
     final object = com_amap_api_trace_TraceOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
   
@@ -39,7 +39,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     return object;
   }
   
-  static Future<List<com_amap_api_trace_TraceOverlay>> create_batch__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_(List<com_amap_api_maps_AMap> var1, List<List<com_amap_api_maps_model_LatLng>> var2) async {
+  static Future<List<com_amap_api_trace_TraceOverlay>> create_batch__com_amap_api_maps_AMap__List_java_util_List_com_amap_api_maps_model_LatLng__(List<com_amap_api_maps_AMap> var1, List<List<com_amap_api_maps_model_LatLng>> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }

@@ -78,7 +78,7 @@ class MAIndoorInfo extends NSObject  {
     return __result__;
   }
   
-  Future<List> get_floorInfo() async {
+  Future<List<NSObject>> get_floorInfo() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorInfo::get_floorInfo", {'refId': refId});
     kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
     return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
@@ -151,7 +151,7 @@ extension MAIndoorInfo_Batch on List<MAIndoorInfo> {
     return typedResult;
   }
   
-  Future<List<List>> get_floorInfo_batch() async {
+  Future<List<List<NSObject>>> get_floorInfo_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAIndoorInfo::get_floorInfo_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
