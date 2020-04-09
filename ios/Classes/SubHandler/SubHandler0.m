@@ -151,9 +151,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
-            NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
+            NSMutableArray<NSArray<UIColor*>*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
             for (int __i__ = 0; __i__ < colorsRefArray.count; __i__++) {
-                UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:__i__]];
+                NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[colorsRefArray objectAtIndex:__i__]];
                 [colors addObject:item];
             }
             // jsonable arg
@@ -850,7 +850,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argisFinished = @(isFinished);
         
-                [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
+                [channel invokeMethod:@"Callback::void|BOOL#isFinished::void|BOOL#isFinished" arguments:@{@"isFinished": argisFinished}];
         
             }];
         
@@ -905,7 +905,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argisFinished = @(isFinished);
         
-                [channel invokeMethod:@"Callback::void|BOOL isFinished::void|BOOL isFinished" arguments:@{@"isFinished": argisFinished}];
+                [channel invokeMethod:@"Callback::void|BOOL#isFinished::void|BOOL#isFinished" arguments:@{@"isFinished": argisFinished}];
         
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
@@ -922,7 +922,7 @@ extern BOOL enableLog;
                 NSNumber* argcurrentAni = @(currentAni.hash);
                 HEAP[argcurrentAni] = currentAni;
         
-                [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation currentAni::void|MAAnnotationMoveAnimation currentAni" arguments:@{@"currentAni": argcurrentAni}];
+                [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni" arguments:@{@"currentAni": argcurrentAni}];
         
             }];
         
@@ -930,6 +930,32 @@ extern BOOL enableLog;
             // return a ref
             HEAP[@((result).hash)] = result;
             NSNumber* jsonableResult = @((result).hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"MAAnimatedAnnotation::allMoveAnimations": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+            MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAAnimatedAnnotation@%@::allMoveAnimations()", args[@"refId"]);
+            }
+        
+            // invoke native method
+            NSArray<MAAnnotationMoveAnimation*>* result = [ref allMoveAnimations];
+        
+            // result
+            // 返回值: 列表
+            NSMutableArray* jsonableResult = [NSMutableArray array];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
+                [jsonableResult addObject: @(object.hash)];
+                HEAP[@([object hash])] = object;
+            }
         
             methodResult(jsonableResult);
         },
@@ -1047,9 +1073,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* locationsRefArray = (NSArray<NSNumber*> *) args[@"locations"];
-            NSMutableArray<MATraceLocation*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
+            NSMutableArray<NSArray<MATraceLocation*>*>* locations = [NSMutableArray arrayWithCapacity:locationsRefArray.count];
             for (int __i__ = 0; __i__ < locationsRefArray.count; __i__++) {
-                MATraceLocation* item = (MATraceLocation*) HEAP[[locationsRefArray objectAtIndex:__i__]];
+                NSArray<MATraceLocation*>* item = (NSArray<MATraceLocation*>*) HEAP[[locationsRefArray objectAtIndex:__i__]];
                 [locations addObject:item];
             }
             // enum arg
@@ -1554,7 +1580,7 @@ extern BOOL enableLog;
                 NSNumber* argerror = @(error.hash);
                 HEAP[argerror] = error;
         
-                [channel invokeMethod:@"Callback::void|NSData tileData, NSError error::void|NSData tileData, NSError error" arguments:@{@"tileData": argtileData, @"error": argerror}];
+                [channel invokeMethod:@"Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error" arguments:@{@"tileData": argtileData, @"error": argerror}];
         
             }];
         
@@ -1660,7 +1686,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argsetupSuccess = @(setupSuccess);
         
-                [channel invokeMethod:@"Callback::void|BOOL setupSuccess::void|BOOL setupSuccess" arguments:@{@"setupSuccess": argsetupSuccess}];
+                [channel invokeMethod:@"Callback::void|BOOL#setupSuccess::void|BOOL#setupSuccess" arguments:@{@"setupSuccess": argsetupSuccess}];
         
             }];
         
@@ -2418,6 +2444,33 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // enum arg
+            MAParticleOverlayType particleType = (MAParticleOverlayType) [args[@"particleType"] integerValue];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType(%@)", args[@"particleType"]);
+            }
+        
+            // invoke native method
+            NSArray<MAParticleOverlayOptions*>* result = [MAParticleOverlayOptionsFactory particleOverlayOptionsWithType: particleType];
+        
+            // result
+            // 返回值: 列表
+            NSMutableArray* jsonableResult = [NSMutableArray array];
+            for (int __i__ = 0; __i__ < result.count; __i__++) {
+                NSObject* object = [result objectAtIndex:__i__];
+                [jsonableResult addObject: @(object.hash)];
+                HEAP[@([object hash])] = object;
+            }
+        
+            methodResult(jsonableResult);
+        },
         @"MAOverlayRenderer::initWithOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // ref arg
@@ -2929,9 +2982,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* itemsRefArray = (NSArray<NSNumber*> *) args[@"items"];
-            NSMutableArray<MAMultiPointItem*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
+            NSMutableArray<NSArray<MAMultiPointItem*>*>* items = [NSMutableArray arrayWithCapacity:itemsRefArray.count];
             for (int __i__ = 0; __i__ < itemsRefArray.count; __i__++) {
-                MAMultiPointItem* item = (MAMultiPointItem*) HEAP[[itemsRefArray objectAtIndex:__i__]];
+                NSArray<MAMultiPointItem*>* item = (NSArray<MAMultiPointItem*>*) HEAP[[itemsRefArray objectAtIndex:__i__]];
                 [items addObject:item];
             }
         
@@ -3517,7 +3570,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argstate = @(state);
         
-                [channel invokeMethod:@"Callback::void|UIImage resultImage, NSInteger state::void|UIImage resultImage, NSInteger state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
+                [channel invokeMethod:@"Callback::void|UIImage*#resultImage,NSInteger#state::void|UIImage*#resultImage,NSInteger#state" arguments:@{@"resultImage": argresultImage, @"state": argstate}];
         
             }];
         
@@ -4814,9 +4867,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* colorsRefArray = (NSArray<NSNumber*> *) args[@"colors"];
-                NSMutableArray<UIColor*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
+                NSMutableArray<NSArray<UIColor*>*>* colors = [NSMutableArray arrayWithCapacity:colorsRefArray.count];
                 for (int __i__ = 0; __i__ < colorsRefArray.count; __i__++) {
-                    UIColor* item = (UIColor*) HEAP[[colorsRefArray objectAtIndex:__i__]];
+                    NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[colorsRefArray objectAtIndex:__i__]];
                     [colors addObject:item];
                 }
                 // jsonable arg
@@ -5399,77 +5452,6 @@ extern BOOL enableLog;
                 // return a ref
                 HEAP[@((result).hash)] = result;
                 NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAPolyline::polylineWithCoordinates_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // list arg struct
-                NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
-                CLLocationCoordinate2D coords[coordsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < coordsRefIdArray.count; __i__++) {
-                    NSValue* coordsValue = (NSValue*) HEAP[[coordsRefIdArray objectAtIndex:__i__]];
-                    CLLocationCoordinate2D coordsItem;
-                    [coordsValue getValue:&coordsItem];
-                    coords[__i__] = coordsItem;
-                }
-                // jsonable arg
-                NSUInteger count = [args[@"count"] unsignedIntegerValue];
-        
-                // ref
-        
-        
-                // invoke native method
-                MAPolyline* result = [MAPolyline polylineWithCoordinates: coords count: count];
-        
-                // result
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        @"MAPolyline::setPolylineWithPoints_count_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // list arg struct
-                NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
-                MAMapPoint points[pointsRefIdArray.count];
-        
-                for (int __i__ = 0; __i__ < pointsRefIdArray.count; __i__++) {
-                    NSValue* pointsValue = (NSValue*) HEAP[[pointsRefIdArray objectAtIndex:__i__]];
-                    MAMapPoint pointsItem;
-                    [pointsValue getValue:&pointsItem];
-                    points[__i__] = pointsItem;
-                }
-                // jsonable arg
-                NSInteger count = [args[@"count"] longValue];
-        
-                // ref
-                MAPolyline* ref = (MAPolyline*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                // invoke native method
-                BOOL result = [ref setPolylineWithPoints: points count: count];
-        
-                // result
-                // 返回值: Value
-                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }

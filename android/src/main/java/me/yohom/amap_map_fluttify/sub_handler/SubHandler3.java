@@ -319,7 +319,7 @@ public class SubHandler3 {
             // setter
             put("com.amap.api.maps.model.IndoorBuildingInfo::set_floor_names", (args, methodResult) -> {
                 // jsonable arg
-                List<String> floor_names = (List<String>) ((Map<String, Object>) args).get("floor_names");
+                ArrayList<String> floor_names = (ArrayList<String>) ((Map<String, Object>) args).get("floor_names");
             
                 int refId = (int) ((Map<String, Object>) args).get("refId");
                 com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);

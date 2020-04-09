@@ -1189,9 +1189,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
-            NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
+            NSMutableArray<NSArray<MAHeatMapNode*>*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
             for (int __i__ = 0; __i__ < dataRefArray.count; __i__++) {
-                MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:__i__]];
+                NSArray<MAHeatMapNode*>* item = (NSArray<MAHeatMapNode*>*) HEAP[[dataRefArray objectAtIndex:__i__]];
                 [data addObject:item];
             }
         
@@ -1414,28 +1414,6 @@ extern BOOL enableLog;
             methodResult(@"success");
         },
         
-        @"MACircle::set_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACircle::set_hollowShapes");
-            }
-        
-            // args
-            // list arg
-            NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-            NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-            for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
-                [hollowShapes addObject:item];
-            }
-        
-            // ref
-            MACircle* ref = (MACircle*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.hollowShapes = hollowShapes;
-            methodResult(@"success");
-        },
-        
         @"MACircle::set_coordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -1574,28 +1552,6 @@ extern BOOL enableLog;
             methodResult(@"success");
         },
         
-        @"MAPolygon::set_hollowShapes": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAPolygon::set_hollowShapes");
-            }
-        
-            // args
-            // list arg
-            NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-            NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
-            for (int __i__ = 0; __i__ < hollowShapesRefArray.count; __i__++) {
-                id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:__i__]];
-                [hollowShapes addObject:item];
-            }
-        
-            // ref
-            MAPolygon* ref = (MAPolygon*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.hollowShapes = hollowShapes;
-            methodResult(@"success");
-        },
-        
         @"MAMultiColoredPolylineRenderer::set_strokeColors": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -1605,9 +1561,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
-            NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+            NSMutableArray<NSArray<UIColor*>*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
             for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
-                UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
+                NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
                 [strokeColors addObject:item];
             }
         
@@ -3728,6 +3684,42 @@ extern BOOL enableLog;
             MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
             ref.compassOrigin = compassOrigin;
+            methodResult(@"success");
+        },
+        
+        @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_showsScale");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL showsScale = [args[@"showsScale"] boolValue];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showsScale = showsScale;
+            methodResult(@"success");
+        },
+        
+        @"MAMapView::set_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapView::set_scaleOrigin");
+            }
+        
+            // args
+            // struct arg
+            NSValue* scaleOriginValue = (NSValue*) HEAP[@([args[@"scaleOrigin"] integerValue])];
+            CGPoint scaleOrigin;
+            [scaleOriginValue getValue:&scaleOrigin];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.scaleOrigin = scaleOrigin;
             methodResult(@"success");
         },
         
