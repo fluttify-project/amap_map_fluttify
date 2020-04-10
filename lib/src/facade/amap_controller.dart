@@ -868,102 +868,77 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 批量添加marker
   ///
   /// 根据[options]批量创建Marker
-  Future<List<Marker>> addMarkers(List<MarkerOption> options) {
+  Future<List<Marker>> addMarkers(List<MarkerOption> options) async {
     assert(options != null);
 
     if (options.isEmpty) return Future.value([]);
+
+    final latBatch = options.map((it) => it.latLng.latitude).toList();
+    final lngBatch = options.map((it) => it.latLng.longitude).toList();
+    final titleBatch = options.map((it) => it.title).toList();
+    final snippetBatch = options.map((it) => it.snippet).toList();
+    final draggableBatch = options.map((it) => it.draggable).toList();
+    final rotateAngleBatch = options.map((it) => it.rotateAngle).toList();
+    final anchorUBatch = options.map((it) => it.anchorU).toList();
+    final anchorVBatch = options.map((it) => it.anchorV).toList();
+    final visibleBatch = options.map((it) => it.visible).toList();
+    final infoWindowEnabledBatch =
+        options.map((it) => it.infoWindowEnabled).toList();
+    final objectBatch = options.map((it) => it.object).toList();
+    final iconDataBatch = <Uint8List>[
+      for (final option in options)
+        if (option.iconUri != null && option.imageConfig != null)
+          await _uri2ImageData(option.imageConfig, option.iconUri)
+        else if (option.widget != null)
+          await _state.widgetToImageData(option.widget)
+    ];
+
     return platform(
       android: (pool) async {
         // 获取地图
         final map = await androidController.getMap();
+        final latLngBatch = await com_amap_api_maps_model_LatLng
+            .create_batch__double__double(latBatch, lngBatch);
+        // marker配置
+        final markerOptionBatch = await com_amap_api_maps_model_MarkerOptions
+            .create_batch__(options.length);
+        // 添加经纬度
+        await markerOptionBatch.position_batch(latLngBatch);
+        // 添加标题
+        await markerOptionBatch.title_batch(titleBatch);
+        // 添加副标题
+        await markerOptionBatch.snippet_batch(snippetBatch);
+        // 是否可拖动
+        await markerOptionBatch.draggable_batch(draggableBatch);
+        // 旋转角度
+        await markerOptionBatch.rotateAngle_batch(rotateAngleBatch);
+        // 锚点
+        await markerOptionBatch.anchor_batch(anchorUBatch, anchorVBatch);
+        // 是否可见
+        await markerOptionBatch.visible_batch(visibleBatch);
+        // 图片
+        final bitmapBatch =
+            await android_graphics_Bitmap.create_batch(iconDataBatch);
+        final iconBatch =
+            await com_amap_api_maps_model_BitmapDescriptorFactory_Batch
+                .fromBitmap_batch(bitmapBatch);
+        await markerOptionBatch.icon_batch(iconBatch);
 
-        final androidOptions = <com_amap_api_maps_model_MarkerOptions>[];
-        for (final option in options) {
-          final lat = option.latLng.latitude;
-          final lng = option.latLng.longitude;
+        // 添加marker
+        final markers = await map.addMarkers(markerOptionBatch, false);
 
-          // marker经纬度
-          final latLng = await com_amap_api_maps_model_LatLng
-              .create__double__double(lat, lng);
-
-          // marker配置
-          final markerOption =
-              await com_amap_api_maps_model_MarkerOptions.create__();
-
-          // 设置marker经纬度
-          await markerOption.position(latLng);
-          // 设置marker标题
-          if (option.title != null) {
-            await markerOption.title(option.title);
-          }
-          // 设置marker副标题
-          if (option.snippet != null) {
-            await markerOption.snippet(option.snippet);
-          }
-          // 设置marker图标
-          // 普通图片
-          if (option.iconUri != null && option.imageConfig != null) {
-            Uint8List iconData =
-                await _uri2ImageData(option.imageConfig, option.iconUri);
-
-            final bitmap = await android_graphics_Bitmap.create(iconData);
-            final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
-                .fromBitmap(bitmap);
-            await markerOption.icon(icon);
-
-            pool..add(bitmap)..add(icon);
-          }
-          // widget as marker
-          else if (option.widget != null) {
-            Uint8List iconData = await _state.widgetToImageData(option.widget);
-
-            final bitmap = await android_graphics_Bitmap.create(iconData);
-            final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
-                .fromBitmap(bitmap);
-            await markerOption.icon(icon);
-
-            pool..add(bitmap)..add(icon);
-          }
-
-          // 是否可拖拽
-          if (option.draggable != null) {
-            await markerOption.draggable(option.draggable);
-          }
-          // 旋转角度
-          if (option.rotateAngle != null) {
-            await markerOption.rotateAngle(option.rotateAngle);
-          }
-          // 锚点 默认在中间底部是最合理的
-          await markerOption.anchor(option.anchorU ?? 0.5, option.anchorV ?? 0);
-          // 是否可见
-          await markerOption.visible(option.visible);
-
-          androidOptions.add(markerOption);
-
-          pool.add(latLng);
-        }
-
-        final markers = await map.addMarkers(androidOptions, false);
-
-        for (int i = 0; i < options.length; i++) {
-          final option = options[i];
-          final marker = markers[i];
-
-          // 是否允许弹窗
-          if (option.infoWindowEnabled != null) {
-            await marker.setInfoWindowEnable(option.infoWindowEnabled);
-          }
-
-          // 自定义数据
-          if (option.object != null) {
-            await marker.setObject(option.object);
-          }
-        }
+        // 弹窗使能
+        await markers.setInfoWindowEnable_batch(infoWindowEnabledBatch);
+        // 自定义数据
+        await markers.setObject_batch(objectBatch);
 
         // marker不释放, 还有用
         pool
           ..add(map)
-          ..addAll(androidOptions);
+          ..addAll(latLngBatch)
+          ..addAll(bitmapBatch)
+          ..addAll(iconBatch)
+          ..addAll(markerOptionBatch);
         return markers.map((it) => Marker.android(it)).toList();
       },
       ios: (pool) async {
