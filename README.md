@@ -82,17 +82,19 @@ class AmapWidget extends StatelessWidget {
       // 标记 (可选)
       markers: <MarkerOption>[], 
       // 标识点击回调 (可选)
-      onMarkerClick: (Marker marker) {},
+      onMarkerClicked: (Marker marker) {},
       // 地图点击回调 (可选)
-      onMapClick: (LatLng coord) {},
-      // 地图拖动回调 (可选)
-      onMapDrag: (MapDrag drag) {},
+      onMapClicked: (LatLng coord) {},
+      // 地图拖动开始 (可选)
+      onMapMoveStart: (MapMove move) {},
+      // 地图拖动结束 (可选)
+      onMapMoveEnd: (MapMove move) {},
       // 地图创建完成回调 (可选)
       onMapCreated: (controller) async {
         // requestPermission是权限请求方法, 需要你自己实现 
         // 如果不知道怎么处理, 可以参考example工程的实现, example工程依赖了`permission_handler`插件.
         if (await requestPermission()) {
-          await controller.showMyLocation(true);
+          await controller.showMyLocation(MyLocationOption(show: true));
         }
       },
     );
