@@ -32,6 +32,10 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
 | :----------: | :----------: |
 | 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> <img src="assets/amap_map_fluttify_apk.png" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="300"> |
 
+申请高德appkey:
+- android: https://lbs.amap.com/api/android-sdk/guide/create-project/get-key
+- ios: https://lbs.amap.com/api/ios-sdk/guide/create-project/get-key
+
 安装: 
 ```yaml
 dependencies:
