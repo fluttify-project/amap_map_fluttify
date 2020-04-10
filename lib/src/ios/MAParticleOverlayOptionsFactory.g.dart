@@ -85,13 +85,13 @@ extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptions
   //endregion
 
   //region methods
-  Future<List<List<MAParticleOverlayOptions>>> particleOverlayOptionsWithType_batch(List<MAParticleOverlayType> particleType) async {
+  static Future<List<List<MAParticleOverlayOptions>>> particleOverlayOptionsWithType_batch(List<MAParticleOverlayType> particleType) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"particleType": particleType[__i__].index, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType_batch', [for (int __i__ = 0; __i__ < particleType.length; __i__++) {"particleType": particleType[__i__].index}]);
   
   
     // convert native result to dart side object

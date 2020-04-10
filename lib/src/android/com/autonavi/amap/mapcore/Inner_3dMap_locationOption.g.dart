@@ -767,13 +767,13 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   //endregion
 
   //region methods
-  Future<List<String>> getAPIKEY_batch() async {
+  static Future<List<String>> getAPIKEY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY_batch', );
   
   
     // convert native result to dart side object
@@ -1071,13 +1071,13 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setLocationProtocol_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> var0) async {
+  static Future<void> setLocationProtocol_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].index, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].index}]);
   
   
     // convert native result to dart side object

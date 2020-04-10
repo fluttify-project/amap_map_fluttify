@@ -789,13 +789,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   //endregion
 
   //region methods
-  Future<List<int>> nativeCreate_batch() async {
+  static Future<List<int>> nativeCreate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate_batch', );
   
   
     // convert native result to dart side object
@@ -808,13 +808,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
+  static Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -827,13 +827,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeDestroy_batch(List<int> var0) async {
+  static Future<List<int>> nativeDestroy_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -846,13 +846,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeRender_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8) async {
+  static Future<void> nativeRender_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__], "var6": var6[__i__], "var7": var7[__i__], "var8": var8[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__], "var6": var6[__i__], "var7": var7[__i__], "var8": var8[__i__]}]);
   
   
     // convert native result to dart side object
@@ -865,13 +865,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setStartParticleSize_batch(List<int> var0, List<double> var2, List<double> var3) async {
+  static Future<void> setStartParticleSize_batch(List<int> var0, List<double> var2, List<double> var3) async {
     if (var0.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__]}]);
   
   
     // convert native result to dart side object
@@ -884,13 +884,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setMaxParticles_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setMaxParticles_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -903,13 +903,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setDuration_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setDuration_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -922,13 +922,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setParticleLifeTime_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setParticleLifeTime_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -941,13 +941,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setParticleStartSpeed_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setParticleStartSpeed_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -960,13 +960,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setLoop_batch(List<int> var0, List<bool> var2) async {
+  static Future<void> setLoop_batch(List<int> var0, List<bool> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -979,13 +979,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setParticleShapeModule_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setParticleShapeModule_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -998,13 +998,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setParticleEmission_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setParticleEmission_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1017,13 +1017,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> getCurrentParticleNum_batch(List<int> var0) async {
+  static Future<List<int>> getCurrentParticleNum_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1036,13 +1036,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setParticleOverLifeModule_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setParticleOverLifeModule_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1055,13 +1055,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setPreWram_batch(List<int> var0, List<bool> var2) async {
+  static Future<void> setPreWram_batch(List<int> var0, List<bool> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1074,13 +1074,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> setStartColor_batch(List<int> var0, List<int> var2) async {
+  static Future<void> setStartColor_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1093,13 +1093,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeSetTextureId_batch(List<int> var0, List<int> var2) async {
+  static Future<void> nativeSetTextureId_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1112,13 +1112,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateParticleEmissionModule_batch(List<int> var0, List<int> var1) async {
+  static Future<List<int>> nativeCreateParticleEmissionModule_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1131,13 +1131,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateSinglePointParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<bool> var3) async {
+  static Future<List<int>> nativeCreateSinglePointParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<bool> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1150,13 +1150,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateRectParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<bool> var4) async {
+  static Future<List<int>> nativeCreateRectParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<bool> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1169,13 +1169,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateRandomColorBetWeenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7) async {
+  static Future<List<int>> nativeCreateRandomColorBetWeenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__], "var6": var6[__i__], "var7": var7[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__], "var6": var6[__i__], "var7": var7[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1188,13 +1188,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateParticleOverLifeModule_batch() async {
+  static Future<List<int>> nativeCreateParticleOverLifeModule_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule_batch', );
   
   
     // convert native result to dart side object
@@ -1207,13 +1207,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateConstantRotationOverLife_batch(List<double> var0) async {
+  static Future<List<int>> nativeCreateConstantRotationOverLife_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1226,13 +1226,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateRandomVelocityBetweenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5) async {
+  static Future<List<int>> nativeCreateRandomVelocityBetweenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1245,13 +1245,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<List<int>> nativeCreateCurveSizeOverLife_batch(List<double> var0, List<double> var1, List<double> var2) async {
+  static Future<List<int>> nativeCreateCurveSizeOverLife_batch(List<double> var0, List<double> var1, List<double> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1264,13 +1264,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeSetOverLifeItem_batch(List<int> var0, List<int> var2, List<int> var4) async {
+  static Future<void> nativeSetOverLifeItem_batch(List<int> var0, List<int> var2, List<int> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var4": var4[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var4": var4[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1283,13 +1283,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseVelocityOverLife_batch(List<int> var0) async {
+  static Future<void> nativeReleaseVelocityOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1302,13 +1302,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseColorGenerate_batch(List<int> var0) async {
+  static Future<void> nativeReleaseColorGenerate_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1321,13 +1321,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseParticleEmissonModule_batch(List<int> var0) async {
+  static Future<void> nativeReleaseParticleEmissonModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1340,13 +1340,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseParticleOverLifeModule_batch(List<int> var0) async {
+  static Future<void> nativeReleaseParticleOverLifeModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1359,13 +1359,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseParticleShapeModule_batch(List<int> var0) async {
+  static Future<void> nativeReleaseParticleShapeModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1378,13 +1378,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseRotationOverLife_batch(List<int> var0) async {
+  static Future<void> nativeReleaseRotationOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1397,13 +1397,13 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  Future<void> nativeReleaseSizeOverLife_batch(List<int> var0) async {
+  static Future<void> nativeReleaseSizeOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object

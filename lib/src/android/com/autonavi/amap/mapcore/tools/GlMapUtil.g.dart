@@ -215,13 +215,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   //endregion
 
   //region methods
-  Future<List<Uint8List>> decodeAssetResData_batch(List<android_content_Context> var0, List<String> var1) async {
+  static Future<List<Uint8List>> decodeAssetResData_batch(List<android_content_Context> var0, List<String> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -234,13 +234,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
-  Future<List<int>> dipToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
+  static Future<List<int>> dipToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -253,13 +253,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
-  Future<List<int>> spToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
+  static Future<List<int>> spToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -272,13 +272,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
-  Future<List<String>> getString_batch(List<android_content_Context> var0, List<int> var1) async {
+  static Future<List<String>> getString_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getString_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getString_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -291,13 +291,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
-  Future<List<bool>> isAssic_batch(List<String> var0) async {
+  static Future<List<bool>> isAssic_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -310,13 +310,13 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
-  Future<List<String>> getAppVersionName_batch(List<android_content_Context> var0) async {
+  static Future<List<String>> getAppVersionName_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object

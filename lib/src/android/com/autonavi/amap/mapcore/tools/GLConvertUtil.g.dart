@@ -327,13 +327,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
   //endregion
 
   //region methods
-  Future<List<int>> getInt_batch(List<Uint8List> var0, List<int> var1) async {
+  static Future<List<int>> getInt_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -346,13 +346,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<int>> getLong_batch(List<Uint8List> var0, List<int> var1) async {
+  static Future<List<int>> getLong_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getLong_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -365,13 +365,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<int>> getInt2_batch(List<Uint8List> var0, List<int> var1) async {
+  static Future<List<int>> getInt2_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getInt2_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -384,13 +384,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<int>> getUShort_batch(List<Uint8List> var0, List<int> var1) async {
+  static Future<List<int>> getUShort_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getUShort_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -403,13 +403,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<Uint8List>> convertInt_batch(List<int> var0) async {
+  static Future<List<Uint8List>> convertInt_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertInt_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -422,13 +422,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<Uint8List>> convertShort_batch(List<int> var0) async {
+  static Future<List<Uint8List>> convertShort_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertShort_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -441,13 +441,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<double>> convertDouble_batch(List<Uint8List> var0, List<int> var1) async {
+  static Future<List<double>> convertDouble_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::convertDouble_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -460,13 +460,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<void> writeInt_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
+  static Future<void> writeInt_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::writeInt_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -479,13 +479,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<void> moveArray_batch(List<Uint8List> var0, List<int> var1, List<Uint8List> var2, List<int> var3, List<int> var4) async {
+  static Future<void> moveArray_batch(List<Uint8List> var0, List<int> var1, List<Uint8List> var2, List<int> var3, List<int> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::moveArray_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__]}]);
   
   
     // convert native result to dart side object
@@ -498,13 +498,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<Uint8List>> get1BString_batch(List<String> var0) async {
+  static Future<List<Uint8List>> get1BString_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::get1BString_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -517,13 +517,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<String>> getString_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
+  static Future<List<String>> getString_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getString_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -536,13 +536,13 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  Future<List<Uint8List>> getSubBytes_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
+  static Future<List<Uint8List>> getSubBytes_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLConvertUtil::getSubBytes_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object

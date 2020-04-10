@@ -197,13 +197,13 @@ extension com_amap_api_maps_model_LatLngBounds_Batch on List<com_amap_api_maps_m
   //endregion
 
   //region methods
-  Future<List<com_amap_api_maps_model_LatLngBounds_Builder>> builder_batch() async {
+  static Future<List<com_amap_api_maps_model_LatLngBounds_Builder>> builder_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::builder_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::builder_batch', );
   
   
     // convert native result to dart side object

@@ -208,13 +208,13 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<List<bool>> isAMapDataAvailable_batch(List<double> var0, List<double> var2) async {
+  static Future<List<bool>> isAMapDataAvailable_batch(List<double> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::isAMapDataAvailable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::isAMapDataAvailable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object

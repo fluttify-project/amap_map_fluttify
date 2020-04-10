@@ -984,13 +984,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   //endregion
 
   //region methods
-  Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
+  static Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var4": var4[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var4": var4[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1003,13 +1003,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
+  static Future<void> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1402,13 +1402,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> calMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<int> var2) async {
+  static Future<List<double>> calMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::calMapZoomScalefactor_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1421,13 +1421,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<int>> nativeNewInstance_batch(List<int> var0, List<int> var1) async {
+  static Future<List<int>> nativeNewInstance_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeNewInstance_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1440,13 +1440,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeScreenToP20Point_batch(List<int> var0, List<double> var2, List<double> var3, List<android_graphics_Point> var4) async {
+  static Future<void> nativeScreenToP20Point_batch(List<int> var0, List<double> var2, List<double> var3, List<android_graphics_Point> var4) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1459,13 +1459,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeP20ToScreenPoint_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<android_graphics_PointF> var5) async {
+  static Future<void> nativeP20ToScreenPoint_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<android_graphics_PointF> var5) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "var5": var5[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1478,13 +1478,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeSetMapCenter_batch(List<int> var0, List<int> var2, List<int> var3) async {
+  static Future<void> nativeSetMapCenter_batch(List<int> var0, List<int> var2, List<int> var3) async {
     if (var0.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "var3": var3[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1497,13 +1497,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeGetMapCenter_batch(List<int> var0, List<android_graphics_Point> var2) async {
+  static Future<void> nativeGetMapCenter_batch(List<int> var0, List<android_graphics_Point> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1516,13 +1516,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeGetMapZoomer_batch(List<int> var0) async {
+  static Future<List<double>> nativeGetMapZoomer_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapZoomer_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1535,13 +1535,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeSetMapZoomer_batch(List<int> var0, List<double> var2) async {
+  static Future<void> nativeSetMapZoomer_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1554,13 +1554,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeSetMapAngle_batch(List<int> var0, List<double> var2) async {
+  static Future<void> nativeSetMapAngle_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1573,13 +1573,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeGetCameraDegree_batch(List<int> var0) async {
+  static Future<List<double>> nativeGetCameraDegree_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetCameraDegree_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1592,13 +1592,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeGetMapAngle_batch(List<int> var0) async {
+  static Future<List<double>> nativeGetMapAngle_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapAngle_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1611,13 +1611,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeSetCameraDegree_batch(List<int> var0, List<double> var2) async {
+  static Future<void> nativeSetCameraDegree_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1630,13 +1630,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeRecalculate_batch(List<int> var0) async {
+  static Future<void> nativeRecalculate_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeRecalculate_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1649,13 +1649,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeStateDestroy_batch(List<int> var0) async {
+  static Future<void> nativeStateDestroy_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1668,13 +1668,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeGetViewMatrix_batch(List<int> var0, List<Float64List> var2) async {
+  static Future<void> nativeGetViewMatrix_batch(List<int> var0, List<Float64List> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1687,13 +1687,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> nativeGetProjectionMatrix_batch(List<int> var0, List<Float64List> var2) async {
+  static Future<void> nativeGetProjectionMatrix_batch(List<int> var0, List<Float64List> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1706,13 +1706,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeGetSkyHeight_batch(List<int> var0) async {
+  static Future<List<double>> nativeGetSkyHeight_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1725,13 +1725,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeGetGLUnitWithWin_batch(List<int> var0, List<int> var2) async {
+  static Future<List<double>> nativeGetGLUnitWithWin_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -1744,13 +1744,13 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<List<double>> nativeCalMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<double> var2) async {
+  static Future<List<double>> nativeCalMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<double> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object

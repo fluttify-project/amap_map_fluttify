@@ -85,13 +85,13 @@ extension com_autonavi_amap_mapcore_CoordUtil_Batch on List<com_autonavi_amap_ma
   //endregion
 
   //region methods
-  Future<List<int>> convertToGcj_batch(List<Float64List> var0, List<Float64List> var1) async {
+  static Future<List<int>> convertToGcj_batch(List<Float64List> var0, List<Float64List> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.CoordUtil::convertToGcj_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.CoordUtil::convertToGcj_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
