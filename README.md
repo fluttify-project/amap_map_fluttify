@@ -1,6 +1,6 @@
 ![Logo](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Logo-Landscape.png?raw=true)
 
-# 🗺 高德 `地图`组件
+# 🗺&nbsp;高德 `地图`组件
 
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
@@ -8,14 +8,14 @@
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译器生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
 同款[百度地图插件](https://github.com/fluttify-project/bmap_map_fluttify), 有其他插件需求的也都可以走技术支持流程请求支持 :) .
 
-## 💰  技术支持
+## 💰&nbsp;技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
 - 目前提供的标准服务:
-  - 跳转导航组件需求, 如果你需要使用应用内导航, 本方案提供集成高德导航SDK版本的地图插件. 目前支持跳转驾车导航组件.
+  - 跳转导航组件需求, 如果你需要使用应用内导航, 本方案提供**集成高德导航SDK版本**的地图插件. 目前支持**跳转驾车导航组件**.
   - 配置高德appkey, 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
   - 其他个性化技术支持, 请前往[technical-support-plan](https://github.com/fluttify-project/technical-support-plan)新开工单.
 
-## 💻  Fluttify网站
+## 💻&nbsp;Fluttify网站
 - Fluttify编译器自助服务[fluttify.com](http://fluttify.com/#/)网站已上线, 欢迎各位来试用, 目前网站仍然处于早期阶段, 如果有什么建议可以在[技术支持](https://github.com/fluttify-project/technical-support-plan/issues/new?assignees=yohom&labels=&template=------.md&title=)中提issue.
 - 如何使用网站?
   1. 使用github账号登录网站, 我需要知道是谁在使用我的网站;
@@ -23,16 +23,16 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
   3. 提交请求, 目前默认获取目标SDK的最新版本来生成插件;
   4. 请求完成后会往github账号关联的邮箱地址发一份邮件, 产物插件便在邮件的附件中; 
 
-## 🔧  接外包
+## 🔧&nbsp;接外包
 **本人承接外包项目(地图类app优先), 有意者请联系qq 382146139.**
 
-## 👨🏻‍💻  DEMO 与 社区
+## 👨🏻‍💻&nbsp;DEMO 与 社区
 
 | Demo | QQ群 |
 | :----------: | :----------: |
 | 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> <img src="assets/amap_map_fluttify_apk.png" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="300"> |
 
-## 📱  如何使用
+## 📱&nbsp;如何使用
 
 1. 申请高德appkey:
 - android: https://lbs.amap.com/api/android-sdk/guide/create-project/get-key
