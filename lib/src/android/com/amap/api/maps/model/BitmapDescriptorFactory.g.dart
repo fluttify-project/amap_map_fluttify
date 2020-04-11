@@ -261,13 +261,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   //endregion
 
   //region methods
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromResource_batch(List<int> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromResource_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromResource_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromResource_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -280,13 +280,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromView_batch(List<android_view_View> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromView_batch(List<android_view_View> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -299,13 +299,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromPath_batch(List<String> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromPath_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromPath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -318,13 +318,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromAsset_batch(List<String> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromAsset_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -337,13 +337,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromFile_batch(List<String> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromFile_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromFile_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromFile_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -356,13 +356,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker_batch() async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker_batch', );
   
   
     // convert native result to dart side object
@@ -375,13 +375,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker__double_batch(List<double> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker__double_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker__double_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -394,13 +394,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromBitmap_batch(List<android_graphics_Bitmap> var0) async {
+  static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromBitmap_batch(List<android_graphics_Bitmap> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -413,13 +413,13 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
-  Future<List<android_content_Context>> getContext_batch() async {
+  static Future<List<android_content_Context>> getContext_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::getContext_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::getContext_batch', );
   
   
     // convert native result to dart side object

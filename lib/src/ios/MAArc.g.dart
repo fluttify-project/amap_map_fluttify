@@ -169,13 +169,13 @@ extension MAArc_Batch on List<MAArc> {
   //endregion
 
   //region methods
-  Future<List<MAArc>> arcWithStartCoordinate_passedCoordinate_endCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate, List<CLLocationCoordinate2D> passedCoordinate, List<CLLocationCoordinate2D> endCoordinate) async {
+  static Future<List<MAArc>> arcWithStartCoordinate_passedCoordinate_endCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate, List<CLLocationCoordinate2D> passedCoordinate, List<CLLocationCoordinate2D> endCoordinate) async {
     if (startCoordinate.length != passedCoordinate.length || passedCoordinate.length != endCoordinate.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"startCoordinate": startCoordinate[__i__].refId, "passedCoordinate": passedCoordinate[__i__].refId, "endCoordinate": endCoordinate[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate_batch', [for (int __i__ = 0; __i__ < startCoordinate.length; __i__++) {"startCoordinate": startCoordinate[__i__].refId, "passedCoordinate": passedCoordinate[__i__].refId, "endCoordinate": endCoordinate[__i__].refId}]);
   
   
     // convert native result to dart side object

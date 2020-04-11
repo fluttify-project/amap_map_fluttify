@@ -440,13 +440,13 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<List<bool>> checkLevel_batch(List<double> var0) async {
+  static Future<List<bool>> checkLevel_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object

@@ -107,13 +107,13 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
   //endregion
 
   //region methods
-  Future<List<int>> nativeCreateGLShaderManager_batch() async {
+  static Future<List<int>> nativeCreateGLShaderManager_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeCreateGLShaderManager_batch', );
   
   
     // convert native result to dart side object
@@ -126,13 +126,13 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
     }
   }
   
-  Future<void> nativeDestroyGLShaderManager_batch(List<int> var0) async {
+  static Future<void> nativeDestroyGLShaderManager_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object

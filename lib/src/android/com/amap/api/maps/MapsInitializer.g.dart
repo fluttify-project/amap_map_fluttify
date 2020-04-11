@@ -394,13 +394,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   //endregion
 
   //region methods
-  Future<void> initialize_batch(List<android_content_Context> var0) async {
+  static Future<void> initialize_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -413,13 +413,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setNetWorkEnable_batch(List<bool> var0) async {
+  static Future<void> setNetWorkEnable_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setNetWorkEnable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -432,13 +432,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<bool>> getNetWorkEnable_batch() async {
+  static Future<List<bool>> getNetWorkEnable_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getNetWorkEnable_batch', );
   
   
     // convert native result to dart side object
@@ -451,13 +451,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setApiKey_batch(List<String> var0) async {
+  static Future<void> setApiKey_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setApiKey_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -470,13 +470,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<String>> getVersion_batch() async {
+  static Future<List<String>> getVersion_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getVersion_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getVersion_batch', );
   
   
     // convert native result to dart side object
@@ -489,13 +489,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> loadWorldGridMap_batch(List<bool> var0) async {
+  static Future<void> loadWorldGridMap_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldGridMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -508,13 +508,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<bool>> isLoadWorldGridMap_batch() async {
+  static Future<List<bool>> isLoadWorldGridMap_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldGridMap_batch', );
   
   
     // convert native result to dart side object
@@ -527,13 +527,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setBuildingHeight_batch(List<int> var0) async {
+  static Future<void> setBuildingHeight_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setBuildingHeight_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -546,13 +546,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setDownloadCoordinateConvertLibrary_batch(List<bool> var0) async {
+  static Future<void> setDownloadCoordinateConvertLibrary_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -565,13 +565,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<bool>> isDownloadCoordinateConvertLibrary_batch() async {
+  static Future<List<bool>> isDownloadCoordinateConvertLibrary_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary_batch', );
   
   
     // convert native result to dart side object
@@ -584,13 +584,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setHost_batch(List<String> var0) async {
+  static Future<void> setHost_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setHost_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setHost_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -603,13 +603,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> setProtocol_batch(List<int> var0) async {
+  static Future<void> setProtocol_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setProtocol_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -622,13 +622,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<int>> getProtocol_batch() async {
+  static Future<List<int>> getProtocol_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getProtocol_batch', );
   
   
     // convert native result to dart side object
@@ -641,13 +641,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<void> closeTileOverlay_batch(List<bool> var0) async {
+  static Future<void> closeTileOverlay_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -660,13 +660,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  Future<List<bool>> isTileOverlayClosed_batch() async {
+  static Future<List<bool>> isTileOverlayClosed_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed_batch', );
   
   
     // convert native result to dart side object

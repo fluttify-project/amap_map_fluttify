@@ -261,13 +261,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
   //endregion
 
   //region methods
-  Future<List<String>> getMapBaseStorage_batch(List<android_content_Context> var0) async {
+  static Future<List<String>> getMapBaseStorage_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -280,13 +280,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<List<String>> getExternalStroragePath_batch(List<android_content_Context> var0) async {
+  static Future<List<String>> getExternalStroragePath_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -299,13 +299,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
+  static Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::writeDatasToFile_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::writeDatasToFile_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -318,13 +318,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<List<Uint8List>> readFileContents_batch(List<String> var0) async {
+  static Future<List<Uint8List>> readFileContents_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContents_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContents_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -337,13 +337,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> createNoMediaFileIfNotExist_batch(List<String> var0) async {
+  static Future<void> createNoMediaFileIfNotExist_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -356,13 +356,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> saveFile_batch(List<String> var0, List<String> var1, List<bool> var2) async {
+  static Future<void> saveFile_batch(List<String> var0, List<String> var1, List<bool> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::saveFile_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::saveFile_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__], "var2": var2[__i__]}]);
   
   
     // convert native result to dart side object
@@ -375,13 +375,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<List<Uint8List>> readFileContentsFromAssets_batch(List<android_content_Context> var0, List<String> var1) async {
+  static Future<List<Uint8List>> readFileContentsFromAssets_batch(List<android_content_Context> var0, List<String> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__]}]);
   
   
     // convert native result to dart side object
@@ -394,13 +394,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<List<String>> getName_batch(List<String> var0) async {
+  static Future<List<String>> getName_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getName_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::getName_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -413,13 +413,13 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<List<int>> indexOfLastSeparator_batch(List<String> var0) async {
+  static Future<List<int>> indexOfLastSeparator_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var0": var0[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object

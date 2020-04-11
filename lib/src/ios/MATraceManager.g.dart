@@ -221,13 +221,13 @@ extension MATraceManager_Batch on List<MATraceManager> {
   //endregion
 
   //region methods
-  Future<List<MATraceManager>> sharedInstance_batch() async {
+  static Future<List<MATraceManager>> sharedInstance_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::sharedInstance_batch', );
   
   
     // convert native result to dart side object
