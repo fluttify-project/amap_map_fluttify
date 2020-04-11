@@ -4083,6 +4083,7 @@ extern BOOL enableLog;
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+    // TODO 使用addProperty代替
   NSNumber* width = (NSNumber*) STACK[@"width"];
   NSNumber* strokeColor = (NSNumber*) STACK[@"strokeColor"];
   NSNumber* fillColor = (NSNumber*) STACK[@"fillColor"];
@@ -4096,8 +4097,7 @@ extern BOOL enableLog;
   {
       MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
 
-      // 宽度 比android端的粗一倍 这里除以2
-      polylineRenderer.lineWidth    = [width doubleValue] / 2;
+      polylineRenderer.lineWidth = [width doubleValue];
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
@@ -4121,8 +4121,7 @@ extern BOOL enableLog;
   {
       MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
 
-      // 宽度 比android端的粗一倍 这里除以2
-      if (width != nil) polygonRenderer.lineWidth    = [width doubleValue] / 2;
+      if (width != nil) polygonRenderer.lineWidth = [width doubleValue];
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];
       float components[4];
@@ -4151,7 +4150,7 @@ extern BOOL enableLog;
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
 
       // 宽度
-      if (width != nil) circleRenderer.lineWidth = [width doubleValue] / 2;
+      if (width != nil) circleRenderer.lineWidth = [width doubleValue];
 
       // 描边颜色
       NSUInteger rgba = [strokeColor unsignedIntegerValue];

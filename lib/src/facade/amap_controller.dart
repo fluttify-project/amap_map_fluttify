@@ -1287,7 +1287,8 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
-          await pushStackJsonable('width', option.width);
+          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          await pushStackJsonable('width', option.width / pixelRatio);
         }
         // 颜色
         if (option.strokeColor != null) {
@@ -1399,12 +1400,16 @@ class AmapController with WidgetsBindingObserver, _Private {
             latLngList, latLngList.length);
 
         // 宽度和颜色需要设置到STACK里去
-        if (option.width != null)
-          await pushStackJsonable('width', option.width);
-        if (option.strokeColor != null)
+        if (option.width != null) {
+          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          await pushStackJsonable('width', option.width / pixelRatio);
+        }
+        if (option.strokeColor != null) {
           await pushStackJsonable('strokeColor', option.strokeColor.value);
-        if (option.fillColor != null)
+        }
+        if (option.fillColor != null) {
           await pushStackJsonable('fillColor', option.fillColor.value);
+        }
 
         // 设置参数
         await iosController.addOverlay(polygon);
