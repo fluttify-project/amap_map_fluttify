@@ -4,6 +4,7 @@
 - docs: 优化README
 - enhance: [breaking change] 优化clearMarkers方法, 增加List<Marker>参数, 统一android和ios两端的行为
 - enhance: 批量添加marker使用批处理提升速度
+- enhance: 优化ios端MyLocationType.Locate的逻辑
 
 ## 0.19.2
 - fix: ios端多实例delegate的处理

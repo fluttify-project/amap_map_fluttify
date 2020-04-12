@@ -173,10 +173,19 @@ class AmapController with WidgetsBindingObserver, _Private {
                 true,
               );
               break;
+            // ios端没有只定位一次的选项, 所以这里要模拟一下这个效果
+            // 1. 先设置不跟踪位置, 防止定位marker来回跳
+            // 2. 获取当前用户位置
+            // 3. 把当前地图中心点设置为用户位置
             case MyLocationType.Locate:
               await iosController.setUserTrackingMode_animated(
-                MAUserTrackingMode.MAUserTrackingModeFollow,
+                MAUserTrackingMode.MAUserTrackingModeNone,
                 true,
+              );
+              final myLocation = await iosController.get_userLocation();
+              await iosController.setCenterCoordinate_animated(
+                await myLocation.get_coordinate(),
+                false,
               );
               break;
             case MyLocationType.Follow:
