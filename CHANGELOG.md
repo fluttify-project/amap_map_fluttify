@@ -1,3 +1,6 @@
+## 0.20.1
+- enhance: _uri2ImageData增加package参数
+
 ## 0.20.0
 - enhance: 提升底层依赖
 - roll engine #cced4adc
