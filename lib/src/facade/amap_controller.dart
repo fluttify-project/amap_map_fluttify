@@ -124,6 +124,7 @@ class AmapController with WidgetsBindingObserver, _Private {
             final imageData = await _uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
+              package: option.package,
             );
             final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
@@ -206,8 +207,11 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           // 定位图标
           if (option.iconUri != null) {
-            final imageData =
-                await _uri2ImageData(option.imageConfiguration, option.iconUri);
+            final imageData = await _uri2ImageData(
+              option.imageConfiguration,
+              option.iconUri,
+              package: option.package,
+            );
             final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
@@ -2382,8 +2386,9 @@ mixin _Private {
 
   Future<Uint8List> _uri2ImageData(
     ImageConfiguration config,
-    Uri iconUri,
-  ) async {
+    Uri iconUri, {
+    String package,
+  }) async {
     final imageData = Completer<Uint8List>();
     if (_cache.containsKey(iconUri.toString())) {
       debugPrint('命中缓存');
@@ -2411,7 +2416,9 @@ mixin _Private {
           break;
         // asset图片
         default:
-          AssetImage(iconUri.path)
+          (package == null
+                  ? AssetImage(iconUri.path)
+                  : AssetImage(iconUri.path, package: package))
               .resolve(config)
               .addListener(ImageStreamListener((imageInfo, sync) async {
             final byteData =
