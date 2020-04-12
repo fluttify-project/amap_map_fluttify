@@ -9,6 +9,21 @@ import 'enums.dart';
 /// 我的位置选项
 @immutable
 class MyLocationOption {
+  MyLocationOption({
+    this.show = true,
+    this.myLocationType = MyLocationType.Locate,
+    this.interval = Duration.zero,
+    this.iconUri,
+    this.package,
+    this.imageConfiguration,
+    this.strokeColor,
+    this.strokeWidth,
+    this.fillColor,
+  }) : assert(
+          (iconUri != null && imageConfiguration != null) || iconUri == null,
+          'iconUri与imageConfiguration同时设置!',
+        );
+
   /// 是否显示
   final bool show;
 
@@ -20,6 +35,9 @@ class MyLocationOption {
 
   /// 我的位置图标
   final Uri iconUri;
+
+  /// 图片所在package, 通AssetImage构造器里的package参数
+  final String package;
 
   /// 图标配置
   final ImageConfiguration imageConfiguration;
@@ -33,23 +51,9 @@ class MyLocationOption {
   /// 填充颜色
   final Color fillColor;
 
-  MyLocationOption({
-    this.show = true,
-    this.myLocationType = MyLocationType.Locate,
-    this.interval = Duration.zero,
-    this.iconUri,
-    this.imageConfiguration,
-    this.strokeColor,
-    this.strokeWidth,
-    this.fillColor,
-  }) : assert(
-          (iconUri != null && imageConfiguration != null) || iconUri == null,
-          'iconUri与imageConfiguration同时设置!',
-        );
-
   @override
   String toString() {
-    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, iconUri: $iconUri, imageConfiguration: $imageConfiguration, strokeColor: $strokeColor, fillColor: $fillColor, strokeWidth: $strokeWidth}';
+    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, iconUri: $iconUri, package: $package, imageConfiguration: $imageConfiguration, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor}';
   }
 }
 
