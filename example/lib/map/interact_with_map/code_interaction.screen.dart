@@ -67,20 +67,18 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                     switch (value) {
                       case '广州':
                         _controller?.setCenterCoordinate(
-                          23.16,
-                          113.23,
+                          LatLng(23.16, 113.23),
                           animated: false,
                         );
                         break;
                       case '北京':
                         _controller?.setCenterCoordinate(
-                          39.90960,
-                          116.397228,
+                          LatLng(39.90960, 116.397228),
                           animated: true,
                         );
                         break;
                       case '上海':
-                        _controller?.setCenterCoordinate(31.22, 121.48);
+                        _controller?.setCenterCoordinate(LatLng(31.22, 121.48));
                         break;
                     }
                   },

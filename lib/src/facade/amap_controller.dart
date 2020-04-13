@@ -622,8 +622,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   ///
   /// [lat]纬度, [lng]经度, [zoomLevel]缩放等级, [bearing]地图选择角度, [tilt]倾斜角
   Future<void> setCenterCoordinate(
-    double lat,
-    double lng, {
+    LatLng coordinate, {
     double zoomLevel,
     double bearing,
     double tilt,
@@ -633,6 +632,8 @@ class AmapController with WidgetsBindingObserver, _Private {
       zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
       '缩放范围为3-19',
     );
+    final lat = coordinate.latitude;
+    final lng = coordinate.longitude;
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
