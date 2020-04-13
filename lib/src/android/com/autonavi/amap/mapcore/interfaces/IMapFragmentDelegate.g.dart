@@ -20,6 +20,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   
 
   @mustCallSuper
+  Future<com_autonavi_amap_mapcore_interfaces_IAMap> getMap() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getMap::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<void> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) {
     kNativeObjectPool.add(var1);
     kNativeObjectPool.add(var2);

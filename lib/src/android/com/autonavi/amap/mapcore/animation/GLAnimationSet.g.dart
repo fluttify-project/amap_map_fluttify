@@ -89,8 +89,8 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
     }
   }
   
@@ -161,7 +161,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
       kNativeObjectPool.addAll(typedResult.expand((e) => e));
       return typedResult;
     }

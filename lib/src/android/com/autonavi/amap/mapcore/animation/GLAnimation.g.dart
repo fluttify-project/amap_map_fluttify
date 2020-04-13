@@ -76,8 +76,8 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -1037,7 +1037,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimation_Batch on List<com_auto
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

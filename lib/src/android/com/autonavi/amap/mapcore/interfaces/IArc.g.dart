@@ -19,39 +19,91 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
 
   
 
-  @mustCallSuper
-  Future<void> setStrokeWidth(double var1) {
-  
-  
+  Future<void> setStrokeWidth(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeWidth([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IArc::setStrokeWidth', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getStrokeWidth() {
-  
-  
+  Future<double> getStrokeWidth() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeWidth([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IArc::getStrokeWidth', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setStrokeColor(int var1) {
-  
-  
+  Future<void> setStrokeColor(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeColor([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IArc::setStrokeColor', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> getStrokeColor() {
-  
-  
+  Future<int> getStrokeColor() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IArc::getStrokeColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

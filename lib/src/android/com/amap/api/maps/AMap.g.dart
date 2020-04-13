@@ -909,8 +909,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -1285,7 +1285,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMyLocationChange(android_location_Location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMyLocationChange(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -3322,7 +3322,7 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

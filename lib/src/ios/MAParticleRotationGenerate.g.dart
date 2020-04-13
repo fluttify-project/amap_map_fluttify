@@ -19,12 +19,25 @@ mixin MAParticleRotationGenerate on NSObject {
 
   
 
-  @mustCallSuper
-  Future<double> getRotate() {
-  
-  
+  Future<double> getRotate() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getRotate::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleRotationGenerate@$refId::getRotate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRotationGenerate::getRotate', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

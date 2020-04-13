@@ -19,30 +19,69 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
 
   
 
-  @mustCallSuper
-  Future<bool> canDismiss(Object var1) {
-  
-  
+  Future<bool> canDismiss(Object var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('canDismiss::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::canDismiss([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::canDismiss', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> onDismiss(android_view_View var1, Object var2) {
-  
-  
+  Future<void> onDismiss(android_view_View var1, Object var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onDismiss::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onDismiss([\'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::onDismiss', {"var1": var1.refId, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> onNotifySwipe() {
-  
-  
+  Future<void> onNotifySwipe() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onNotifySwipe::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onNotifySwipe([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks::onNotifySwipe', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

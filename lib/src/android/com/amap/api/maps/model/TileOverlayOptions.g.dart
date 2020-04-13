@@ -226,6 +226,28 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     }
   }
   
+  Future<com_amap_api_maps_model_TileProvider> getTileProvider() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getTileProvider([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify';
+    }
+  }
+  
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -540,6 +562,25 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_TileOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_TileProvider>> getTileProvider_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

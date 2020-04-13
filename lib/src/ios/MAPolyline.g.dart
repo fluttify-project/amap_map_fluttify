@@ -67,8 +67,8 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -89,8 +89,8 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -164,7 +164,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -183,7 +183,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

@@ -30,8 +30,8 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   //region getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
-    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   //endregion
@@ -257,7 +257,7 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   //region getters
   Future<List<com_autonavi_amap_mapcore_animation_GLAnimation>> get_glAnimation_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -19,102 +19,245 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<Uint8List> requireMapResource(int var1, String var2) {
-  
-  
+  Future<Uint8List> requireMapResource(int var1, String var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireMapResource::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireMapResource', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__ as Uint8List;
     }
   }
   
-  @mustCallSuper
-  Future<void> reloadMapResource(int var1, String var2, int var3) {
-  
-  
+  Future<void> reloadMapResource(int var1, String var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('reloadMapResource::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::reloadMapResource([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::reloadMapResource', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> requireMapData(int var1, Uint8List var2) {
-  
-  
+  Future<void> requireMapData(int var1, Uint8List var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireMapData::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireMapData', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) {
-  
-  
+  Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireCharBitmap::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireCharBitmap', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__ as Uint8List;
     }
   }
   
-  @mustCallSuper
-  Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) {
-  
-  
+  Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireCharsWidths::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireCharsWidths', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__ as Uint8List;
     }
   }
   
-  @mustCallSuper
-  Future<void> requireMapRender(int var1, int var2, int var3) {
-  
-  
+  Future<void> requireMapRender(int var1, int var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireMapRender::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapRender([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireMapRender', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> onMapRender(int var1, int var2) {
-  
-  
+  Future<void> onMapRender(int var1, int var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onMapRender::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::onMapRender([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::onMapRender', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> cancelRequireMapData(Object var1) {
-  
-  
+  Future<void> cancelRequireMapData(Object var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('cancelRequireMapData::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::cancelRequireMapData([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::cancelRequireMapData', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) {
-  
-  
+  Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('OnIndoorBuildingActivity::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::OnIndoorBuildingActivity', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> generateRequestId() {
-  
-  
+  Future<int> generateRequestId() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('generateRequestId::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::generateRequestId([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::generateRequestId', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> requireMapDataAsyn(int var1, Uint8List var2) {
-  
-  
+  Future<int> requireMapDataAsyn(int var1, Uint8List var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('requireMapDataAsyn::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.IAMapEngineCallback::requireMapDataAsyn', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

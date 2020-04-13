@@ -19,12 +19,25 @@ mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on 
 
   
 
-  @mustCallSuper
-  Future<void> networkStateChanged(android_content_Context var1) {
-  
-  
+  Future<void> networkStateChanged(android_content_Context var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('networkStateChanged::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener@$refId::networkStateChanged([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

@@ -19,21 +19,47 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<android_view_View> getInfoWindow(com_amap_api_maps_model_Marker var1) {
-  
-  
+  Future<android_view_View> getInfoWindow(com_amap_api_maps_model_Marker var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getInfoWindow::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoWindow([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap.InfoWindowAdapter::getInfoWindow', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<android_view_View> getInfoContents(com_amap_api_maps_model_Marker var1) {
-  
-  
+  Future<android_view_View> getInfoContents(com_amap_api_maps_model_Marker var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getInfoContents::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoContents([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap.InfoWindowAdapter::getInfoContents', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   

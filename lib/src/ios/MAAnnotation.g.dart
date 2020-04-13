@@ -47,12 +47,25 @@ mixin MAAnnotation on NSObject {
   }
   
 
-  @mustCallSuper
-  Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) {
-  
-  
+  Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setCoordinate::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAAnnotation@$refId::setCoordinate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::setCoordinate', {"newCoordinate": newCoordinate.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

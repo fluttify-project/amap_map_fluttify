@@ -19,30 +19,69 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
 
   
 
-  @mustCallSuper
-  Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) {
-  
-  
+  Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getInfoWindowClick([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getInfoWindowClick', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) {
-  
-  
+  Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindow([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindow', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) {
-  
-  
+  Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getOverturnInfoWindowClick::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindowClick([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindowClick', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
