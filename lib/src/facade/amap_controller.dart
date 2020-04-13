@@ -1127,11 +1127,13 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 清除地图上所有覆盖物
-  Future<void> clear() async {
+  ///
+  /// 根据[keepMyLocation]区分是否保留我的位置的marker
+  Future<void> clear({bool keepMyLocation = true}) async {
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
-        await map.clear();
+        await map.clear__bool(keepMyLocation);
 
         pool.add(map);
       },
