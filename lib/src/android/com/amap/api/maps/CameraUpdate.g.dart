@@ -32,27 +32,6 @@ class com_amap_api_maps_CameraUpdate extends java_lang_Object  {
   //endregion
 
   //region methods
-  Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> getCameraUpdateFactoryDelegate() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdate@$refId::getCameraUpdateFactoryDelegate([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdate::getCameraUpdateFactoryDelegate', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
-    }
-  }
   
   //endregion
 }
@@ -67,24 +46,6 @@ extension com_amap_api_maps_CameraUpdate_Batch on List<com_amap_api_maps_CameraU
   //endregion
 
   //region methods
-  Future<List<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage>> getCameraUpdateFactoryDelegate_batch() async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdate::getCameraUpdateFactoryDelegate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
-      return typedResult;
-    }
-  }
   
   //endregion
 }

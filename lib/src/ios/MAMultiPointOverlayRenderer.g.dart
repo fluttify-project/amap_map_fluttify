@@ -79,7 +79,15 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
         // if (refId != this.refId) return;
   
         switch (methodCall.method) {
+          case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped':
+            // print log
+            if (fluttifyLogEnabled) {
+              print('fluttify-dart-callback: multiPointOverlayRenderer_didItemTapped([])');
+            }
         
+            // handle the native call
+            delegate?.multiPointOverlayRenderer_didItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer'])..tag__ = 'amap_map_fluttify', MAMultiPointItem()..refId = (args['item'])..tag__ = 'amap_map_fluttify');
+            break;
           default:
             break;
         }

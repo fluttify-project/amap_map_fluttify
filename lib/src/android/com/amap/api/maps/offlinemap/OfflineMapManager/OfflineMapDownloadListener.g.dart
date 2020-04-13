@@ -19,30 +19,69 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
 
   
 
-  @mustCallSuper
-  Future<void> onDownload(int var1, int var2, String var3) {
-  
-  
+  Future<void> onDownload(int var1, int var2, String var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onDownload::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onDownload([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener::onDownload', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> onCheckUpdate(bool var1, String var2) {
-  
-  
+  Future<void> onCheckUpdate(bool var1, String var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onCheckUpdate::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onCheckUpdate([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener::onCheckUpdate', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> onRemove(bool var1, String var2, String var3) {
-  
-  
+  Future<void> onRemove(bool var1, String var2, String var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onRemove::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onRemove([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener::onRemove', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

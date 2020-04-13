@@ -503,28 +503,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     }
   }
   
-  Future<com_autonavi_amap_mapcore_interfaces_IMarkerAction> getIMarkerAction() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getIMarkerAction([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarker::getIMarkerAction', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_interfaces_IMarkerAction()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_interfaces_IMarkerAction()..refId = __result__..tag__ = 'amap_map_fluttify';
-    }
-  }
-  
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {

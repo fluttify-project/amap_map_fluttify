@@ -19,58 +19,191 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) {
-    kNativeObjectPool.addAll(var2);
-    kNativeObjectPool.add(var4);
-  
+  Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('queryProcessedTrace::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::queryProcessedTrace', {"var1": var1, "var2": var2.map((__it__) => __it__.refId).toList(), "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.trace.LBSTraceBase::queryProcessedTrace::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.trace.TraceListener::onRequestFailed':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onRequestFailed([\'var1\':$args[var1], \'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var4?.onRequestFailed(args['var1'], args['var2']);
+              break;
+            case 'Callback::com.amap.api.trace.TraceListener::onTraceProcessing':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onTraceProcessing([\'var1\':$args[var1], \'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var4?.onTraceProcessing(args['var1'], args['var2'], (args['var3'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList());
+              break;
+            case 'Callback::com.amap.api.trace.TraceListener::onFinished':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onFinished([\'var1\':$args[var1], \'var3\':$args[var3], \'var4\':$args[var4]])');
+              }
+        
+              // handle the native call
+              var4?.onFinished(args['var1'], (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['var3'], args['var4']);
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setLocationInterval(int var1) {
-  
-  
+  Future<void> setLocationInterval(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setLocationInterval::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setLocationInterval([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::setLocationInterval', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setTraceStatusInterval(int var1) {
-  
-  
+  Future<void> setTraceStatusInterval(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setTraceStatusInterval::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setTraceStatusInterval([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::setTraceStatusInterval', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('startTrace::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::startTrace([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::startTrace', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.trace.LBSTraceBase::startTrace::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onTraceStatus([\'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((it) => com_amap_api_trace_TraceLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['var3']);
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> stopTrace() {
-  
-  
+  Future<void> stopTrace() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('stopTrace::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::stopTrace([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::stopTrace', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> destroy() {
-  
-  
+  Future<void> destroy() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceBase::destroy', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

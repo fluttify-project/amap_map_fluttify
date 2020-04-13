@@ -19,12 +19,25 @@ mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Ob
 
   
 
-  @mustCallSuper
-  Future<void> onLocationChanged(android_location_Location var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> onLocationChanged(android_location_Location var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.LocationSource.OnLocationChangedListener@$refId::onLocationChanged([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource.OnLocationChangedListener::onLocationChanged', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

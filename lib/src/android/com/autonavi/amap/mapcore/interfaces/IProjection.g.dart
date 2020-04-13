@@ -19,75 +19,179 @@ mixin com_autonavi_amap_mapcore_interfaces_IProjection on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fromScreenLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromScreenLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toScreenLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toScreenLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<android_graphics_PointF> toMapLocation(com_amap_api_maps_model_LatLng var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<android_graphics_PointF> toMapLocation(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toMapLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() {
-  
-  
+  Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getVisibleRegion::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getVisibleRegion([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getVisibleRegion', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_VisibleRegion()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_VisibleRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<double> toMapLenWithWin(int var1) {
-  
-  
+  Future<double> toMapLenWithWin(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toMapLenWithWin::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLenWithWin([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLenWithWin', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) {
-    kNativeObjectPool.add(var1);
-  
+  Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fromBoundsToTile::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromBoundsToTile', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) {
-    kNativeObjectPool.add(var1);
-  
+  Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getMapBounds::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getMapBounds([\'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getMapBounds', {"var1": var1.refId, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() {
-  
-  
+  Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getCameraInfo::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getCameraInfo([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getCameraInfo', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
