@@ -909,8 +909,8 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -921,30 +921,11 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setLocationSource::Callback')
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
   
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.LocationSource::deactivate':
-              // print log
-              if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: deactivate([])');
-              }
-        
-              // handle the native call
-              var1?.deactivate();
-              break;
-            default:
-              break;
-          }
-        });
   
     // convert native result to dart side object
     if (__result__ == null) {
@@ -1285,7 +1266,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMyLocationChange(android_location_Location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMyLocationChange(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
               break;
             default:
               break;
@@ -3322,8 +3303,27 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  Future<void> setLocationSource_batch(List<com_amap_api_maps_LocationSource> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
       return typedResult;
     }
   }

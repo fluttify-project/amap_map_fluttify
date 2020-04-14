@@ -19,12 +19,25 @@ mixin MAParticleColorGenerate on NSObject {
 
   
 
-  @mustCallSuper
-  Future<NSValue/* float* */> getColor() {
-  
-  
+  Future<NSValue/* float* */> getColor() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleColorGenerate@$refId::getColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleColorGenerate::getColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   

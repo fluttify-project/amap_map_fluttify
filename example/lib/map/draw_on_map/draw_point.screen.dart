@@ -33,6 +33,13 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
             flex: 1,
             child: AmapView(
               zoomLevel: 6,
+              markers: [
+                MarkerOption(
+                  latLng: getNextLatLng(),
+//                  iconUri: _assetsIcon1,
+//                  imageConfig: createLocalImageConfiguration(context),
+                ),
+              ],
               onMapCreated: (controller) async {
                 _controller = controller;
                 if (await requestPermission()) {

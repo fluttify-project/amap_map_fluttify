@@ -315,8 +315,7 @@ class _AmapViewState extends State<AmapView> {
     }
     if (widget.centerCoordinate != null) {
       await _controller?.setCenterCoordinate(
-        widget.centerCoordinate.latitude,
-        widget.centerCoordinate.longitude,
+        widget.centerCoordinate,
         animated: false,
       );
     }

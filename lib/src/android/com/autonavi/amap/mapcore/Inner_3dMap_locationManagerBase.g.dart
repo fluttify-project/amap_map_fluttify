@@ -19,66 +19,157 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
 
   
 
-  @mustCallSuper
-  Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setLocationOption::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationOption([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationOption', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setLocationListener::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationListener', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> startLocation() {
-  
-  
+  Future<void> startLocation() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('startLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::startLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::startLocation', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> stopLocation() {
-  
-  
+  Future<void> stopLocation() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('stopLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::stopLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::stopLocation', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('unRegisterLocationListener::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::unRegisterLocationListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::unRegisterLocationListener', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() {
-  
-  
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getLastKnownLocation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::getLastKnownLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::getLastKnownLocation', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<void> destroy() {
-  
-  
+  Future<void> destroy() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::destroy', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

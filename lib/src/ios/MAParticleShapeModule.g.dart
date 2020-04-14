@@ -19,21 +19,47 @@ mixin MAParticleShapeModule on NSObject {
 
   
 
-  @mustCallSuper
-  Future<NSValue/* float* */> getPoint() {
-  
-  
+  Future<NSValue/* float* */> getPoint() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getPoint::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleShapeModule@$refId::getPoint([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleShapeModule::getPoint', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<bool> isRatioEnable() {
-  
-  
+  Future<bool> isRatioEnable() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isRatioEnable::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleShapeModule@$refId::isRatioEnable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleShapeModule::isRatioEnable', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

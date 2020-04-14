@@ -272,14 +272,14 @@ class MAMapView extends UIView  {
   
   Future<List<NSObject>> get_annotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<List<NSObject>> get_selectedAnnotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<CGRect> get_annotationVisibleRect({bool viewChannel = true}) async {
@@ -362,8 +362,8 @@ class MAMapView extends UIView  {
   
   Future<List<NSObject>> get_overlays({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<bool> get_showsIndoorMap({bool viewChannel = true}) async {
@@ -500,7 +500,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_viewForAnnotation(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_viewForAnnotation(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAShape()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
@@ -518,7 +518,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
@@ -527,7 +527,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -581,7 +581,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -608,7 +608,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_calloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
@@ -617,7 +617,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
@@ -626,7 +626,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
@@ -1730,8 +1730,8 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -1752,8 +1752,8 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -1906,8 +1906,8 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
     }
   }
   
@@ -2214,8 +2214,8 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -2624,14 +2624,14 @@ extension MAMapView_Batch on List<MAMapView> {
   
   Future<List<List<NSObject>>> get_annotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
   Future<List<List<NSObject>>> get_selectedAnnotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
@@ -2729,7 +2729,7 @@ extension MAMapView_Batch on List<MAMapView> {
   
   Future<List<List<NSObject>>> get_overlays_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
@@ -3627,7 +3627,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -3646,7 +3646,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -3779,7 +3779,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
       kNativeObjectPool.addAll(typedResult.expand((e) => e));
       return typedResult;
     }
@@ -4045,7 +4045,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

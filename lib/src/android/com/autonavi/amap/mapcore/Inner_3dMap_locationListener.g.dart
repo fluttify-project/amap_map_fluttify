@@ -19,12 +19,25 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationListener on java_lang_Object
 
   
 
-  @mustCallSuper
-  Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationListener@$refId::onLocationChanged([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationListener::onLocationChanged', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

@@ -19,30 +19,97 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> startAnimation() {
-  
-  
+  Future<bool> startAnimation() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::startAnimation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IAnimation::startAnimation', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {
-    kNativeObjectPool.add(var1);
-  
+  Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setAnimationListener::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimationListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onAnimationStart([])');
+              }
+        
+              // handle the native call
+              var1?.onAnimationStart();
+              break;
+            case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onAnimationEnd([])');
+              }
+        
+              // handle the native call
+              var1?.onAnimationEnd();
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

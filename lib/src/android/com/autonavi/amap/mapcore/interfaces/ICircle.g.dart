@@ -19,138 +19,333 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
 
   
 
-  @mustCallSuper
-  Future<void> setCenter(com_amap_api_maps_model_LatLng var1) {
-  
-  
+  Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setCenter::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setCenter([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setCenter', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_LatLng> getCenter() {
-  
-  
+  Future<com_amap_api_maps_model_LatLng> getCenter() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getCenter::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getCenter([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getCenter', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<void> setRadius(double var1) {
-  
-  
+  Future<void> setRadius(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setRadius::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setRadius([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setRadius', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getRadius() {
-  
-  
+  Future<double> getRadius() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getRadius::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getRadius([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getRadius', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setStrokeWidth(double var1) {
-  
-  
+  Future<void> setStrokeWidth(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeWidth([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setStrokeWidth', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getStrokeWidth() {
-  
-  
+  Future<double> getStrokeWidth() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getStrokeWidth::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeWidth([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getStrokeWidth', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setStrokeColor(int var1) {
-  
-  
+  Future<void> setStrokeColor(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeColor([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setStrokeColor', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> getStrokeColor() {
-  
-  
+  Future<int> getStrokeColor() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getStrokeColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getStrokeColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setFillColor(int var1) {
-  
-  
+  Future<void> setFillColor(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setFillColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setFillColor([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setFillColor', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> getFillColor() {
-  
-  
+  Future<int> getFillColor() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getFillColor::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getFillColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getFillColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> contains(com_amap_api_maps_model_LatLng var1) {
-  
-  
+  Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('contains::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::contains([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::contains', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {
-  
-  
+  Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setHoleOptions::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setHoleOptions([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setHoleOptions', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() {
-  
-  
+  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getHoleOptions::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getHoleOptions([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getHoleOptions', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
     }
   }
   
-  @mustCallSuper
-  Future<int> getDottedLineType() {
-  
-  
+  Future<int> getDottedLineType() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getDottedLineType::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getDottedLineType([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::getDottedLineType', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setDottedLineType(int var1) {
-  
-  
+  Future<void> setDottedLineType(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setDottedLineType::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setDottedLineType([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ICircle::setDottedLineType', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

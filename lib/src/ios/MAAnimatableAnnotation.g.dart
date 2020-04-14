@@ -19,39 +19,91 @@ mixin MAAnimatableAnnotation on NSObject {
 
   
 
-  @mustCallSuper
-  Future<void> step(double timeDelta) {
-  
-  
+  Future<void> step(double timeDelta) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('step::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAAnimatableAnnotation@$refId::step([\'timeDelta\':$timeDelta])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::step', {"timeDelta": timeDelta, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> isAnimationFinished() {
-  
-  
+  Future<bool> isAnimationFinished() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isAnimationFinished::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAAnimatableAnnotation@$refId::isAnimationFinished([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::isAnimationFinished', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> shouldAnimationStart() {
-  
-  
+  Future<bool> shouldAnimationStart() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('shouldAnimationStart::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAAnimatableAnnotation@$refId::shouldAnimationStart([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::shouldAnimationStart', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> rotateDegree() {
-  
-  
+  Future<double> rotateDegree() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('rotateDegree::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAAnimatableAnnotation@$refId::rotateDegree([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatableAnnotation::rotateDegree', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

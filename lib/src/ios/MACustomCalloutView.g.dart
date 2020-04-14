@@ -44,8 +44,8 @@ class MACustomCalloutView extends UIView  {
   //region getters
   Future<UIView> get_customView({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_customView", {'refId': refId});
-    kNativeObjectPool.add(UIView()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return UIView()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<NSObject> get_userData({bool viewChannel = true}) async {
@@ -95,7 +95,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
   //region getters
   Future<List<UIView>> get_customView_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod("MACustomCalloutView::get_customView_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => UIView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -19,30 +19,69 @@ mixin MAParticleVelocityGenerate on NSObject {
 
   
 
-  @mustCallSuper
-  Future<double> getX() {
-  
-  
+  Future<double> getX() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getX::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getX([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleVelocityGenerate::getX', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getY() {
-  
-  
+  Future<double> getY() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getY::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getY([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleVelocityGenerate::getY', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getZ() {
-  
-  
+  Future<double> getZ() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getZ::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getZ([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleVelocityGenerate::getZ', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

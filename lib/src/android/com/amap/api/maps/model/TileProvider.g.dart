@@ -19,30 +19,69 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
 
   
 
-  @mustCallSuper
-  Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) {
-  
-  
+  Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getTile::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileProvider::getTile', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      kNativeObjectPool.add(com_amap_api_maps_model_Tile()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return com_amap_api_maps_model_Tile()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
-  @mustCallSuper
-  Future<int> getTileWidth() {
-  
-  
+  Future<int> getTileWidth() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getTileWidth::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileWidth([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileProvider::getTileWidth', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<int> getTileHeight() {
-  
-  
+  Future<int> getTileHeight() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getTileHeight::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileHeight([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TileProvider::getTileHeight', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

@@ -622,8 +622,7 @@ class AmapController with WidgetsBindingObserver, _Private {
   ///
   /// [lat]纬度, [lng]经度, [zoomLevel]缩放等级, [bearing]地图选择角度, [tilt]倾斜角
   Future<void> setCenterCoordinate(
-    double lat,
-    double lng, {
+    LatLng coordinate, {
     double zoomLevel,
     double bearing,
     double tilt,
@@ -633,6 +632,8 @@ class AmapController with WidgetsBindingObserver, _Private {
       zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
       '缩放范围为3-19',
     );
+    final lat = coordinate.latitude;
+    final lng = coordinate.longitude;
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -932,12 +933,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 是否可见
         await markerOptionBatch.visible_batch(visibleBatch);
         // 图片
-        final bitmapBatch =
-            await android_graphics_Bitmap.create_batch(iconDataBatch);
-        final iconBatch =
-            await com_amap_api_maps_model_BitmapDescriptorFactory_Batch
-                .fromBitmap_batch(bitmapBatch);
-        await markerOptionBatch.icon_batch(iconBatch);
+        if (iconDataBatch.isNotEmpty) {
+          final bitmapBatch =
+              await android_graphics_Bitmap.create_batch(iconDataBatch);
+          final iconBatch =
+              await com_amap_api_maps_model_BitmapDescriptorFactory_Batch
+                  .fromBitmap_batch(bitmapBatch);
+          await markerOptionBatch.icon_batch(iconBatch);
+          pool..addAll(bitmapBatch)..addAll(iconBatch);
+        }
 
         // 添加marker
         final markers = await map.addMarkers(markerOptionBatch, false);
@@ -951,8 +955,6 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool
           ..add(map)
           ..addAll(latLngBatch)
-          ..addAll(bitmapBatch)
-          ..addAll(iconBatch)
           ..addAll(markerOptionBatch);
         return markers.map((it) => Marker.android(it)).toList();
       },
@@ -974,8 +976,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置副标题
         await annotationBatch.set_subtitle_batch(snippetBatch);
         // 设置图片
-        final iconBatch = await UIImage.create_batch(iconDataBatch);
-        await annotationBatch.addProperty_batch(1, iconBatch);
+        if (iconDataBatch.isNotEmpty) {
+          final iconBatch = await UIImage.create_batch(iconDataBatch);
+          await annotationBatch.addProperty_batch(1, iconBatch);
+          pool.addAll(iconBatch);
+        }
         // 是否可拖拽
         await annotationBatch.addJsonableProperty_batch(2, draggableBatch);
         // 旋转角度
@@ -1005,10 +1010,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 //            await _iosMapDelegate._annotationViewStream.stream.first;
 //        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
-        pool
-          ..addAll(annotationBatch)
-          ..addAll(iconBatch)
-          ..addAll(coordinateBatch);
+        pool..addAll(annotationBatch)..addAll(coordinateBatch);
         return [
           for (int i = 0; i < options.length; i++)
             Marker.ios(
@@ -1126,11 +1128,13 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 
   /// 清除地图上所有覆盖物
-  Future<void> clear() async {
+  ///
+  /// 根据[keepMyLocation]区分是否保留我的位置的marker
+  Future<void> clear({bool keepMyLocation = true}) async {
     await platform(
       android: (pool) async {
         final map = await androidController.getMap();
-        await map.clear();
+        await map.clear__bool(keepMyLocation);
 
         pool.add(map);
       },
@@ -1301,6 +1305,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          debugPrint('当前设备密度: $pixelRatio');
           await pushStackJsonable('width', option.width / pixelRatio);
         }
         // 颜色
@@ -1494,12 +1499,16 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 宽度和颜色需要设置到STACK里去
-        if (option.width != null)
-          await pushStackJsonable('width', option.width);
-        if (option.strokeColor != null)
+        if (option.width != null) {
+          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          await pushStackJsonable('width', option.width / pixelRatio);
+        }
+        if (option.strokeColor != null) {
           await pushStackJsonable('strokeColor', option.strokeColor.value);
-        if (option.fillColor != null)
+        }
+        if (option.fillColor != null) {
           await pushStackJsonable('fillColor', option.fillColor.value);
+        }
 
         // 设置参数
         await iosController.addOverlay(circle);

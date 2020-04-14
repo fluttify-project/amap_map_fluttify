@@ -19,30 +19,69 @@ mixin MAParticleSizeGenerate on NSObject {
 
   
 
-  @mustCallSuper
-  Future<double> getSizeX(double timeFrame) {
-  
-  
+  Future<double> getSizeX(double timeFrame) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getSizeX::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeX([\'timeFrame\':$timeFrame])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeX', {"timeFrame": timeFrame, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getSizeY(double timeFrame) {
-  
-  
+  Future<double> getSizeY(double timeFrame) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getSizeY::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeY([\'timeFrame\':$timeFrame])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeY', {"timeFrame": timeFrame, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getSizeZ(double timeFrame) {
-  
-  
+  Future<double> getSizeZ(double timeFrame) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getSizeZ::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeZ([\'timeFrame\':$timeFrame])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleSizeGenerate::getSizeZ', {"timeFrame": timeFrame, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   

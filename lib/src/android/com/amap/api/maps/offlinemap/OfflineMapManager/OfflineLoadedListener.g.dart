@@ -19,12 +19,25 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on ja
 
   
 
-  @mustCallSuper
-  Future<void> onVerifyComplete() {
-  
-  
+  Future<void> onVerifyComplete() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onVerifyComplete::kNativeObjectPool: $kNativeObjectPool');
+      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener@$refId::onVerifyComplete([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+    
+      return __result__;
     }
   }
   
