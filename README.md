@@ -11,9 +11,9 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
 ## 💰&nbsp;技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
 - 目前提供的标准服务:
-  - 跳转导航组件需求, 如果你需要使用应用内导航, 本方案提供**集成高德导航SDK版本**的地图插件. 目前支持**跳转驾车导航组件**.
-  - 配置高德appkey, 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
-  - 位置选择器 <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Apr-14-2020%2011-24-55.gif" height="300"> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Apr-14-2020%2011-26-36.gif" height="300"> 
+  - 跳转导航组件: 如果你需要使用应用内导航, 本方案提供**集成高德导航SDK版本**的地图插件. 目前支持**跳转驾车导航组件**.
+  - 配置高德appkey: 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
+  - 位置选择器: <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Apr-14-2020%2011-24-55.gif" height="300"> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Apr-14-2020%2011-26-36.gif" height="300"> 
   - 其他个性化技术支持, 请前往 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 新开工单.
 
 ## 💻&nbsp;Fluttify网站
