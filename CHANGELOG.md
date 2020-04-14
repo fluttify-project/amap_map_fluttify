@@ -1,5 +1,9 @@
 ## 0.20.1
 - enhance: _uri2ImageData增加package参数
+- enhance: [breaking change] setCenterCoordinate经纬度参数合并为LatLng类型
+- enhance: clear方法增加一个可选参数 keepMyLocation 用来区分是否需要保留自己的位置的
+- fix: 没有配置默认图片时, addMarkers错误处理
+- enhance: 调整线 框 圆的默认宽度
 
 ## 0.20.0
 - enhance: 提升底层依赖
