@@ -1305,6 +1305,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          debugPrint('当前设备密度: $pixelRatio');
           await pushStackJsonable('width', option.width / pixelRatio);
         }
         // 颜色
@@ -1498,12 +1499,16 @@ class AmapController with WidgetsBindingObserver, _Private {
         );
 
         // 宽度和颜色需要设置到STACK里去
-        if (option.width != null)
-          await pushStackJsonable('width', option.width);
-        if (option.strokeColor != null)
+        if (option.width != null) {
+          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          await pushStackJsonable('width', option.width / pixelRatio);
+        }
+        if (option.strokeColor != null) {
           await pushStackJsonable('strokeColor', option.strokeColor.value);
-        if (option.fillColor != null)
+        }
+        if (option.fillColor != null) {
           await pushStackJsonable('fillColor', option.fillColor.value);
+        }
 
         // 设置参数
         await iosController.addOverlay(circle);
