@@ -933,12 +933,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 是否可见
         await markerOptionBatch.visible_batch(visibleBatch);
         // 图片
-        final bitmapBatch =
-            await android_graphics_Bitmap.create_batch(iconDataBatch);
-        final iconBatch =
-            await com_amap_api_maps_model_BitmapDescriptorFactory_Batch
-                .fromBitmap_batch(bitmapBatch);
-        await markerOptionBatch.icon_batch(iconBatch);
+        if (iconDataBatch.isNotEmpty) {
+          final bitmapBatch =
+              await android_graphics_Bitmap.create_batch(iconDataBatch);
+          final iconBatch =
+              await com_amap_api_maps_model_BitmapDescriptorFactory_Batch
+                  .fromBitmap_batch(bitmapBatch);
+          await markerOptionBatch.icon_batch(iconBatch);
+          pool..addAll(bitmapBatch)..addAll(iconBatch);
+        }
 
         // 添加marker
         final markers = await map.addMarkers(markerOptionBatch, false);
@@ -952,8 +955,6 @@ class AmapController with WidgetsBindingObserver, _Private {
         pool
           ..add(map)
           ..addAll(latLngBatch)
-          ..addAll(bitmapBatch)
-          ..addAll(iconBatch)
           ..addAll(markerOptionBatch);
         return markers.map((it) => Marker.android(it)).toList();
       },
@@ -975,8 +976,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置副标题
         await annotationBatch.set_subtitle_batch(snippetBatch);
         // 设置图片
-        final iconBatch = await UIImage.create_batch(iconDataBatch);
-        await annotationBatch.addProperty_batch(1, iconBatch);
+        if (iconDataBatch.isNotEmpty) {
+          final iconBatch = await UIImage.create_batch(iconDataBatch);
+          await annotationBatch.addProperty_batch(1, iconBatch);
+          pool.addAll(iconBatch);
+        }
         // 是否可拖拽
         await annotationBatch.addJsonableProperty_batch(2, draggableBatch);
         // 旋转角度
@@ -1006,10 +1010,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 //            await _iosMapDelegate._annotationViewStream.stream.first;
 //        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
-        pool
-          ..addAll(annotationBatch)
-          ..addAll(iconBatch)
-          ..addAll(coordinateBatch);
+        pool..addAll(annotationBatch)..addAll(coordinateBatch);
         return [
           for (int i = 0; i < options.length; i++)
             Marker.ios(

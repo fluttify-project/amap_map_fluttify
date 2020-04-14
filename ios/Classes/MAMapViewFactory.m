@@ -3848,7 +3848,7 @@ extern BOOL enableLog;
               annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"customAnnotationReuseIndentifier"];
           }
       }
-      if (icon != nil) annotationView.image = icon;
+      if (icon != nil && (NSNull*) icon != [NSNull null]) annotationView.image = icon;
       if (draggable != nil) annotationView.draggable = [draggable boolValue];
       if (infoWindowEnabled != nil) annotationView.canShowCallout = [infoWindowEnabled boolValue];
       // 旋转角度
@@ -3856,15 +3856,18 @@ extern BOOL enableLog;
           annotationView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -[rotateAngle doubleValue] / 180.0 * M_PI);
       }
       // 设置图片大小
-      if (annotationView.image != nil && width != nil && height != nil) {
+      if (annotationView.image != nil
+          && width != nil && height != nil
+          && (NSNull*) width != [NSNull null] && (NSNull*) height != [NSNull null]) {
           annotationView.frame = CGRectMake(annotationView.frame.origin.x, annotationView.frame.origin.x, [width doubleValue], [height doubleValue]);
       }
       // 锚点
-      if (anchorU != nil && anchorV != nil) {
+      if (anchorU != nil && anchorV != nil
+          && (NSNull*) anchorU != [NSNull null] && (NSNull*) anchorV != [NSNull null]) {
           annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
       }
       // 是否可见
-      if (visible != nil) {
+      if (visible != nil && (NSNull*) visible != [NSNull null]) {
           annotationView.hidden = ![visible boolValue];
       }
       return annotationView;
