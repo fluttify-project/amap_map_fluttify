@@ -16,8 +16,8 @@ mixin NextLatLng {
     return [
       for (int i = 0; i < count; i++)
         LatLng(
-          39.90960 + random.nextDouble(),
-          116.397228 + random.nextDouble(),
+          39.90960 + random.nextDouble() * 4,
+          116.397228 + random.nextDouble() * 4,
         )
     ];
   }

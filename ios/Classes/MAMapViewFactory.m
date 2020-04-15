@@ -4183,6 +4183,23 @@ extern BOOL enableLog;
       MATileOverlayRenderer *tileOverlayRenderer = [[MATileOverlayRenderer alloc] initWithTileOverlay:overlay];
       return tileOverlayRenderer;
   }
+
+  // 海量点
+  if ([overlay isKindOfClass:[MAMultiPointOverlay class]])
+  {
+      UIImage* icon = (UIImage *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* height = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+
+      MAMultiPointOverlayRenderer *multiPointOverlayRenderer = [[MAMultiPointOverlayRenderer alloc] initWithMultiPointOverlay: overlay];
+      if (icon != nil) {
+          multiPointOverlayRenderer.icon = icon;
+      }
+      if (width != nil && height != nil) {
+          multiPointOverlayRenderer.pointSize = CGSizeMake([width doubleValue], [height doubleValue]);
+      }
+      return multiPointOverlayRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

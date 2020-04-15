@@ -8,6 +8,12 @@ typedef Future<void> OnLocationChange(MapLocation move);
 typedef Future<void> OnMarkerDrag(Marker marker);
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
 typedef Future<void> OnScreenShot(Uint8List imageData);
+typedef Future<void> OnMultiPointClicked(
+  String id,
+  String title,
+  String snippet,
+  String obejct,
+);
 
 /// 地图控制类
 class AmapController with WidgetsBindingObserver, _Private {
@@ -1518,6 +1524,93 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 添加海量点
+  Future<void> addMultiPointOverlay(MultiPointOption option) async {
+    assert(option != null && option.pointList.isNotEmpty);
+
+    final latitudeBatch =
+        option.pointList.map((it) => it.latLng.latitude).toList();
+    final longitudeBatch =
+        option.pointList.map((it) => it.latLng.longitude).toList();
+    final idBatch = option.pointList.map((it) => it.id).toList();
+    final titleBatch = option.pointList.map((it) => it.title).toList();
+    final snippetBatch = option.pointList.map((it) => it.snippet).toList();
+    final objectBatch = option.pointList.map((it) => it.object).toList();
+    Uint8List iconData;
+    if (option.iconUri != null && option.imageConfiguration != null) {
+      iconData =
+          await _uri2ImageData(option.imageConfiguration, option.iconUri);
+    }
+
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final overlayOptions =
+            await com_amap_api_maps_model_MultiPointOverlayOptions.create__();
+
+        final latLngBatch = await com_amap_api_maps_model_LatLng
+            .create_batch__double__double(latitudeBatch, longitudeBatch);
+
+        // 设置marker图标
+        // 普通图片
+        if (iconData != null) {
+          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await overlayOptions.icon(icon);
+
+          pool..add(bitmap)..add(icon);
+        }
+
+        final multiPointOverlay =
+            await map.addMultiPointOverlay(overlayOptions);
+
+        final multiPointList = await com_amap_api_maps_model_MultiPointItem
+            .create_batch__com_amap_api_maps_model_LatLng(latLngBatch);
+        await multiPointList.setCustomerId_batch(idBatch);
+        await multiPointList.setTitle_batch(titleBatch);
+        await multiPointList.setSnippet_batch(snippetBatch);
+        await multiPointList.setObject_batch(objectBatch);
+
+        await multiPointOverlay.setItems(multiPointList);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(_iosMapDelegate);
+
+        final overlay = await MAMultiPointOverlay.create__();
+
+        final length = option.pointList.length;
+        final pointItemList = await MAMultiPointItem.create_batch__(length);
+
+        final latLngBatch = await CLLocationCoordinate2D.create_batch(
+            latitudeBatch, longitudeBatch);
+
+        // 设置marker图标
+        // 普通图片
+        if (iconData != null) {
+          final bitmap = await UIImage.create(iconData);
+          await overlay.addProperty__(1, bitmap);
+          pool.add(bitmap);
+        }
+        // 设置图片大小
+        if (option.size != null) {
+          await overlay.addJsonableProperty__(2, option.size.width);
+          await overlay.addJsonableProperty__(3, option.size.height);
+        }
+        await pointItemList.set_coordinate_batch(latLngBatch);
+        await pointItemList.set_customID_batch(idBatch);
+        await pointItemList.set_title_batch(titleBatch);
+        await pointItemList.set_subtitle_batch(snippetBatch);
+        await pointItemList.addJsonableProperty_batch(1, objectBatch);
+
+        await overlay.initWithMultiPointItems(pointItemList);
+
+        iosController.addOverlay(overlay);
+      },
+    );
+  }
+
   /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(
@@ -1532,6 +1625,27 @@ class AmapController with WidgetsBindingObserver, _Private {
       ios: (pool) async {
         await iosController
             .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
+      },
+    );
+  }
+
+  /// 设置海量点点击监听事件
+  Future<void> setMultiPointClickedListener(
+    OnMultiPointClicked onMultiPointClicked,
+  ) async {
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        await map.setOnMultiPointClickListener(
+            _androidMapDelegate.._onMultiPointClicked = onMultiPointClicked);
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(
+          _iosMapDelegate.._onMultiPointClicked = onMultiPointClicked,
+        );
       },
     );
   }
@@ -2013,7 +2127,8 @@ class AmapController with WidgetsBindingObserver, _Private {
   }
 }
 
-class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
+class _IOSMapDelegate extends NSObject
+    with MAMapViewDelegate, MAMultiPointOverlayRendererDelegate {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -2024,6 +2139,7 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   OnLocationChange _onLocationChange;
   OnMarkerClicked _onInfoWindowClicked;
+  OnMultiPointClicked _onMultiPointClicked;
 
   MAMapView _iosController;
   final _annotationViewStream =
@@ -2240,6 +2356,35 @@ class _IOSMapDelegate extends NSObject with MAMapViewDelegate {
       );
     }
   }
+
+  @override
+  Future<void> mapView_didAddOverlayRenderers(
+    MAMapView mapView,
+    List<NSObject> overlayRenderers,
+  ) async {
+    super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
+    if (overlayRenderers.length == 1 &&
+        await overlayRenderers[0].isMAMultiPointOverlayRenderer()) {
+      final multiPointRenderer =
+          await overlayRenderers[0].asMAMultiPointOverlayRenderer();
+      multiPointRenderer.set_delegate(this);
+    }
+  }
+
+  @override
+  Future<void> multiPointOverlayRenderer_didItemTapped(
+    MAMultiPointOverlayRenderer renderer,
+    MAMultiPointItem item,
+  ) async {
+    super.multiPointOverlayRenderer_didItemTapped(renderer, item);
+    if (_onMultiPointClicked != null) {
+      final id = await item.get_customID();
+      final title = await item.get_title();
+      final snippet = await item.get_subtitle();
+      final object = await item.getJsonableProperty__(1);
+      _onMultiPointClicked(id, title, snippet, object);
+    }
+  }
 }
 
 class _AndroidMapDelegate extends java_lang_Object
@@ -2251,7 +2396,8 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMapScreenShotListener,
         com_amap_api_maps_AMap_OnMyLocationChangeListener,
         com_amap_api_maps_AMap_OnInfoWindowClickListener,
-        com_amap_api_maps_AMap_OnMapLoadedListener {
+        com_amap_api_maps_AMap_OnMapLoadedListener,
+        com_amap_api_maps_AMap_OnMultiPointClickListener {
   OnMarkerClicked _onMarkerClicked;
   OnMarkerDrag _onMarkerDragStart;
   OnMarkerDrag _onMarkerDragging;
@@ -2263,6 +2409,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnLocationChange _onLocationChange;
   OnMarkerClicked _onInfoWindowClicked;
   VoidCallback _onMapLoaded;
+  OnMultiPointClicked _onMultiPointClicked;
 
   // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
@@ -2387,6 +2534,19 @@ class _AndroidMapDelegate extends java_lang_Object
     if (_onMapLoaded != null) {
       _onMapLoaded();
     }
+  }
+
+  @override
+  Future<bool> onPointClick(com_amap_api_maps_model_MultiPointItem var1) async {
+    super.onPointClick(var1);
+    if (_onMultiPointClicked != null) {
+      final id = await var1.getCustomerId();
+      final title = await var1.getTitle();
+      final snippet = await var1.getSnippet();
+      final object = await var1.getObject();
+      _onMultiPointClicked(id, title, snippet, object);
+    }
+    return true;
   }
 }
 

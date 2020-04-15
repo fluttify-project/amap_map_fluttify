@@ -308,6 +308,66 @@ class HeatmapTileOption {
   }
 }
 
+/// 海量点创建参数
+@immutable
+class MultiPointOption {
+  /// 点列表
+  final List<PointOption> pointList;
+
+  /// 图片uri
+  final Uri iconUri;
+
+  /// 图片配置
+  final ImageConfiguration imageConfiguration;
+
+  /// 图片大小 仅限ios
+  final Size size;
+
+  MultiPointOption({
+    @required this.pointList,
+    this.iconUri,
+    this.imageConfiguration,
+    this.size,
+  });
+
+  @override
+  String toString() {
+    return 'MultiPointOption{pointList: $pointList, iconUri: $iconUri, imageConfiguration: $imageConfiguration, size: $size}';
+  }
+}
+
+/// 海量点中单个点的创建参数
+@immutable
+class PointOption {
+  /// 经纬度
+  final LatLng latLng;
+
+  /// 点的id列表, 用来区分点
+  final String id;
+
+  /// 标题列表
+  final String title;
+
+  /// 副标题列表
+  final String snippet;
+
+  /// 自定义数据
+  final String object;
+
+  PointOption({
+    @required this.latLng,
+    this.id,
+    this.title,
+    this.snippet,
+    this.object,
+  });
+
+  @override
+  String toString() {
+    return 'PointOption{latLng: $latLng, id: $id, title: $title, snippet: $snippet, object: $object}';
+  }
+}
+
 /// 地图移动
 @immutable
 class MapMove {
