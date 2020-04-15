@@ -1016,7 +1016,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 //            await _iosMapDelegate._annotationViewStream.stream.first;
 //        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
-        pool..addAll(annotationBatch)..addAll(coordinateBatch);
+        pool.addAll(coordinateBatch);
         return [
           for (int i = 0; i < options.length; i++)
             Marker.ios(
@@ -1866,12 +1866,9 @@ class AmapController with WidgetsBindingObserver, _Private {
   /// 将指定的经纬度列表(包括但不限于marker, polyline, polygon等)调整至同一屏幕中显示
   ///
   /// [bounds]边界点形成的边界, [padding]地图内边距
-  /// !目前发现[padding]在android端和ios端的有不同的行为, 相同的值边距明显不一致, 但是为了
-  /// 不引进多余的参数只能先忽略这个问题, 建议插件使用者在调用方法时自行区分平台并传入在对应平台
-  /// 上合适的值.
   Future<void> zoomToSpan(
     List<LatLng> bounds, {
-    int padding = 50,
+    EdgeInsets padding = const EdgeInsets.all(50),
     bool animated = true,
   }) async {
     final double minLat = await Stream.fromIterable(bounds)
@@ -1886,6 +1883,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     final double maxLng = await Stream.fromIterable(bounds)
         .reduce((pre, cur) => pre.longitude > cur.longitude ? pre : cur)
         .then((right) => right.longitude);
+    final devicePixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
 
     await platform(
       android: (pool) async {
@@ -1903,10 +1901,15 @@ class AmapController with WidgetsBindingObserver, _Private {
             .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
                 southWest, northEast);
 
-        // 更新对象
-        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
-            .newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int(
-                rect, padding);
+        // 更新对象 android端由于单位是像素, 所以这里要乘以当前设备的像素密度
+        final cameraUpdate =
+            await com_amap_api_maps_CameraUpdateFactory.newLatLngBoundsRect(
+          rect,
+          (padding.left * devicePixelRatio).toInt(),
+          (padding.right.toInt() * devicePixelRatio).toInt(),
+          (padding.top.toInt() * devicePixelRatio).toInt(),
+          (padding.bottom.toInt() * devicePixelRatio).toInt(),
+        );
 
         if (animated) {
           await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
@@ -1947,10 +1950,14 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 矩形
         final rect = await MAMapRectMake(x, y, width, height);
 
-        final dPadding = padding.toDouble();
-        iosController.setVisibleMapRect_edgePadding_animated(
+        await iosController.setVisibleMapRect_edgePadding_animated(
           rect,
-          await UIEdgeInsets.create(dPadding, dPadding, dPadding, dPadding),
+          await UIEdgeInsets.create(
+            padding.top,
+            padding.left,
+            padding.bottom,
+            padding.right,
+          ),
           animated,
         );
 

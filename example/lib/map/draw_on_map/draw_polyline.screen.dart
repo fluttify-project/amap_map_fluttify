@@ -21,6 +21,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
     with NextLatLng {
   AmapController _controller;
   Polyline _currentPolyline;
+  List<LatLng> _pointList = [];
 
   @override
   Widget build(BuildContext context) {
@@ -30,11 +31,19 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
         children: <Widget>[
           Flexible(
             flex: 1,
-            child: AmapView(
-              zoomLevel: 7,
-              onMapCreated: (controller) async {
-                _controller = controller;
-              },
+            child: Stack(
+              children: <Widget>[
+                AmapView(
+                  zoomLevel: 7,
+                  onMapCreated: (controller) async {
+                    _controller = controller;
+                  },
+                ),
+                Container(
+                  height: 100,
+                  color: Colors.black26,
+                ),
+              ],
             ),
           ),
           Flexible(
@@ -45,17 +54,27 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                 ListTile(
                   title: Center(child: Text('添加线')),
                   onTap: () async {
+                    _pointList = [
+                      getNextLatLng(),
+                      getNextLatLng(),
+                      getNextLatLng(),
+                      getNextLatLng(),
+                    ];
                     _currentPolyline =
                         await _controller?.addPolyline(PolylineOption(
-                      latLngList: [
-                        getNextLatLng(),
-                        getNextLatLng(),
-                        getNextLatLng(),
-                        getNextLatLng(),
-                      ],
+                      latLngList: _pointList,
                       width: 10,
                       strokeColor: Colors.green,
                     ));
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('将地图缩放至可以显示所有Marker')),
+                  onTap: () async {
+                    _controller?.zoomToSpan(
+                      _pointList,
+                      padding: EdgeInsets.only(top: 100),
+                    );
                   },
                 ),
                 ListTile(
