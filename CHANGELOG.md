@@ -5,6 +5,7 @@
 - fix: 没有配置默认图片时, addMarkers错误处理
 - enhance: 调整线 框 圆的默认宽度
 - feat: 添加海量点
+- enhance: [breaking change] zoomToSpan方法的padding参数改为EdgeInsets类型
 
 ## 0.20.0
 - enhance: 提升底层依赖
