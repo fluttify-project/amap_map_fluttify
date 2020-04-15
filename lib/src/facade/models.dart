@@ -308,6 +308,34 @@ class HeatmapTileOption {
   }
 }
 
+/// TileOverlay创建参数
+@immutable
+class MultiPointOption {
+  /// 中心点经纬度
+  final List<LatLng> latLngList;
+
+  /// 图片uri
+  final Uri iconUri;
+
+  /// 图片配置
+  final ImageConfiguration imageConfiguration;
+
+  /// 图片大小 仅限ios
+  final Size size;
+
+  MultiPointOption({
+    @required this.latLngList,
+    this.iconUri,
+    this.imageConfiguration,
+    this.size,
+  });
+
+  @override
+  String toString() {
+    return 'MultiPointOption{latLngList: $latLngList, iconUri: $iconUri, imageConfiguration: $imageConfiguration, size: $size}';
+  }
+}
+
 /// 地图移动
 @immutable
 class MapMove {

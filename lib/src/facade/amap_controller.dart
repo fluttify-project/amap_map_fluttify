@@ -1518,6 +1518,78 @@ class AmapController with WidgetsBindingObserver, _Private {
     );
   }
 
+  /// 添加海量点
+  Future<void> addMultiPointOverlay(MultiPointOption option) async {
+    assert(option != null && option.latLngList.isNotEmpty);
+
+    final latitudeBatch = option.latLngList.map((it) => it.latitude).toList();
+    final longitudeBatch = option.latLngList.map((it) => it.longitude).toList();
+    Uint8List iconData;
+    if (option.iconUri != null && option.imageConfiguration != null) {
+      iconData =
+          await _uri2ImageData(option.imageConfiguration, option.iconUri);
+    }
+
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final overlayOptions =
+            await com_amap_api_maps_model_MultiPointOverlayOptions.create__();
+
+        final latLngBatch = await com_amap_api_maps_model_LatLng
+            .create_batch__double__double(latitudeBatch, longitudeBatch);
+
+        // 设置marker图标
+        // 普通图片
+        if (iconData != null) {
+          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await overlayOptions.icon(icon);
+
+          pool..add(bitmap)..add(icon);
+        }
+
+        final multiPointOverlay =
+            await map.addMultiPointOverlay(overlayOptions);
+
+        final multiPointList = await com_amap_api_maps_model_MultiPointItem
+            .create_batch__com_amap_api_maps_model_LatLng(latLngBatch);
+        await multiPointOverlay.setItems(multiPointList);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(_iosMapDelegate);
+
+        final overlay = await MAMultiPointOverlay.create__();
+
+        final length = option.latLngList.length;
+        final pointItemList = await MAMultiPointItem.create_batch__(length);
+
+        final latLngBatch = await CLLocationCoordinate2D.create_batch(
+            latitudeBatch, longitudeBatch);
+
+        // 设置marker图标
+        // 普通图片
+        if (iconData != null) {
+          final bitmap = await UIImage.create(iconData);
+          await overlay.addProperty__(1, bitmap);
+          pool.add(bitmap);
+        }
+        // 设置图片大小
+        if (option.size != null) {
+          await overlay.addJsonableProperty__(2, option.size.width);
+          await overlay.addJsonableProperty__(3, option.size.height);
+        }
+        await pointItemList.set_coordinate_batch(latLngBatch);
+
+        await overlay.initWithMultiPointItems(pointItemList);
+
+        iosController.addOverlay(overlay);
+      },
+    );
+  }
+
   /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(

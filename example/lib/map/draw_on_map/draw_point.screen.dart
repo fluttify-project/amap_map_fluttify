@@ -272,6 +272,20 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     );
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('添加海量点')),
+                  onTap: () async {
+                    await _controller?.addMultiPointOverlay(
+                      MultiPointOption(
+                        latLngList: getNextBatchLatLng(10000),
+                        iconUri: _assetsIcon1,
+                        imageConfiguration:
+                            createLocalImageConfiguration(context),
+                        size: Size(48, 48),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
