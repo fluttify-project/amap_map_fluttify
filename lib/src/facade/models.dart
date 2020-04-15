@@ -308,11 +308,11 @@ class HeatmapTileOption {
   }
 }
 
-/// TileOverlay创建参数
+/// 海量点创建参数
 @immutable
 class MultiPointOption {
-  /// 中心点经纬度
-  final List<LatLng> latLngList;
+  /// 点列表
+  final List<PointOption> pointList;
 
   /// 图片uri
   final Uri iconUri;
@@ -324,7 +324,7 @@ class MultiPointOption {
   final Size size;
 
   MultiPointOption({
-    @required this.latLngList,
+    @required this.pointList,
     this.iconUri,
     this.imageConfiguration,
     this.size,
@@ -332,7 +332,39 @@ class MultiPointOption {
 
   @override
   String toString() {
-    return 'MultiPointOption{latLngList: $latLngList, iconUri: $iconUri, imageConfiguration: $imageConfiguration, size: $size}';
+    return 'MultiPointOption{pointList: $pointList, iconUri: $iconUri, imageConfiguration: $imageConfiguration, size: $size}';
+  }
+}
+
+/// 海量点中单个点的创建参数
+@immutable
+class PointOption {
+  /// 经纬度
+  final LatLng latLng;
+
+  /// 点的id列表, 用来区分点
+  final String id;
+
+  /// 标题列表
+  final String title;
+
+  /// 副标题列表
+  final String snippet;
+
+  /// 自定义数据
+  final String object;
+
+  PointOption({
+    @required this.latLng,
+    this.id,
+    this.title,
+    this.snippet,
+    this.object,
+  });
+
+  @override
+  String toString() {
+    return 'PointOption{latLng: $latLng, id: $id, title: $title, snippet: $snippet, object: $object}';
   }
 }
 

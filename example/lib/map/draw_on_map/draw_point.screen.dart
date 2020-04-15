@@ -277,12 +277,28 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   onTap: () async {
                     await _controller?.addMultiPointOverlay(
                       MultiPointOption(
-                        latLngList: getNextBatchLatLng(10000),
+                        pointList: [
+                          for (int i = 0; i < 10000; i++)
+                            PointOption(
+                              latLng: getNextLatLng(),
+                              id: i.toString(),
+                              title: 'Point$i',
+                              snippet: 'Snippet$i',
+                              object: 'Object$i',
+                            )
+                        ],
                         iconUri: _assetsIcon1,
                         imageConfiguration:
                             createLocalImageConfiguration(context),
                         size: Size(48, 48),
                       ),
+                    );
+                    await _controller?.setMultiPointClickedListener(
+                      (id, title, snippet, object) async {
+                        toast(
+                          'id: $id, title: $title, snippet: $snippet, object: $object',
+                        );
+                      },
                     );
                   },
                 ),
