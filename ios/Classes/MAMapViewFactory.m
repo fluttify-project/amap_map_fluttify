@@ -4086,18 +4086,16 @@ extern BOOL enableLog;
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-    // TODO 使用addProperty代替
-  NSNumber* width = (NSNumber*) STACK[@"width"];
-  NSNumber* strokeColor = (NSNumber*) STACK[@"strokeColor"];
-  NSNumber* fillColor = (NSNumber*) STACK[@"fillColor"];
-  UIImage* texture = (UIImage*) STACK[@"texture"];
-  NSNumber* lineCapType = (NSNumber*) STACK[@"lineCapType"];
-  NSNumber* lineJoinType = (NSNumber*) STACK[@"lineJoinType"];
-  NSNumber* dashType = (NSNumber*) STACK[@"dashType"];
-
   // 线
   if ([overlay isKindOfClass:[MAPolyline class]])
   {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      UIImage* texture = (UIImage *) objc_getAssociatedObject(overlay, (const void *) 3);
+      NSNumber* lineCapType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 4);
+      NSNumber* lineJoinType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 5);
+      NSNumber* dashType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 6);
+      
       MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
 
       polylineRenderer.lineWidth = [width doubleValue];
@@ -4122,6 +4120,10 @@ extern BOOL enableLog;
   // 多边形
   if ([overlay isKindOfClass:[MAPolygon class]])
   {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* fillColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+      
       MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
 
       if (width != nil) polygonRenderer.lineWidth = [width doubleValue];
@@ -4150,6 +4152,10 @@ extern BOOL enableLog;
   // 圆
   if ([overlay isKindOfClass:[MACircle class]])
   {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* fillColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+      
       MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
 
       // 宽度
