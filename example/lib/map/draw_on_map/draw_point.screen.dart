@@ -211,6 +211,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     _controller?.setMarkerClickedListener((marker) async {
                       toast(
                           '${await marker.title}, ${await marker.snippet}, ${await marker.location}, ${await marker.object}');
+                      return false;
                     });
                   },
                 ),
@@ -248,9 +249,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   onTap: () async {
                     await _controller
                         ?.setInfoWindowClickListener((marker) async {
-                      toast(
-                        '${await marker.title}, ${await marker.location}',
-                      );
+                      toast('${await marker.title}, ${await marker.location}');
+                      return false;
                     });
                   },
                 ),

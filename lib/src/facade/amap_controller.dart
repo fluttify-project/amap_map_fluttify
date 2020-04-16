@@ -1,13 +1,28 @@
 // ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
-typedef Future<void> OnMarkerClicked(Marker marker);
+/// marker点击事件回调签名 输入[Marker]对象, 返回`是否已消耗事件`, 如果true则不再弹窗, 如果false则继续弹窗
+typedef Future<bool> OnMarkerClicked(Marker marker);
+
+/// 地图点击事件回调签名
 typedef Future<void> OnMapClicked(LatLng latLng);
+
+/// 地图移动事件回调签名
 typedef Future<void> OnMapMove(MapMove move);
+
+/// 位置移动事件回调签名
 typedef Future<void> OnLocationChange(MapLocation move);
+
+/// Marker拖动回调签名
 typedef Future<void> OnMarkerDrag(Marker marker);
+
+/// ios请求权限回调签名
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
+
+/// 地图截屏回调签名
 typedef Future<void> OnScreenShot(Uint8List imageData);
+
+/// 海量点点击回调签名
 typedef Future<void> OnMultiPointClicked(
   String id,
   String title,
@@ -2414,8 +2429,9 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
-      await var1.showInfoWindow();
-      await _onMarkerClicked(Marker.android(var1));
+      if (await _onMarkerClicked(Marker.android(var1))) {
+        await var1.showInfoWindow();
+      }
     }
     return true;
   }
