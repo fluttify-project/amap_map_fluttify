@@ -8,6 +8,7 @@ buildscript {
         maven { url 'http://download.flutter.io' }
         maven { url "https://oss.sonatype.org/content/groups/public" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
     }
 
     dependencies {
@@ -22,6 +23,7 @@ rootProject.allprojects {
         maven { url 'http://download.flutter.io' }
         maven { url "https://oss.sonatype.org/content/groups/public" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
     }
 }
 

@@ -1667,8 +1667,19 @@ extern BOOL enableLog;
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
         
                 // args
-                // ref arg
-                id userData = (id) HEAP[@([args[@"userData"] integerValue])];
+                // id arg
+                id userData;
+                // jsonable
+                if ([args[@"userData"] isKindOfClass:[NSNumber class]]
+                        || [args[@"userData"] isKindOfClass:[NSString class]]
+                        || [args[@"userData"] isKindOfClass:[NSArray class]]
+                        || [args[@"userData"] isKindOfClass:[NSDictionary class]]) {
+                    userData = args[@"userData"];
+                }
+                // non jsonable
+                else {
+                    userData = HEAP[@([args[@"userData"] integerValue])];
+                }
         
                 // ref
                 MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];

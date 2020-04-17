@@ -45,6 +45,7 @@ export 'MAMapRect.g.dart';
 export 'MAUserLocation.g.dart';
 export 'MAAnimatableAnnotation.g.dart';
 export 'MAPolygon.g.dart';
+export 'constants.g.dart';
 export 'MAPinAnnotationColor.g.dart';
 export 'MAOfflineMap.g.dart';
 export 'MACustomCalloutView.g.dart';

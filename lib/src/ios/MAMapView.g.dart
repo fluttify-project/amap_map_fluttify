@@ -410,61 +410,61 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRegionChanged(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewRegionChanged((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_regionWillChangeAnimated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_regionWillChangeAnimated([\'animated\':${args['animated']}])');
             }
         
             // handle the native call
-            delegate?.mapView_regionWillChangeAnimated(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['animated']);
+            delegate?.mapView_regionWillChangeAnimated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_regionDidChangeAnimated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_regionDidChangeAnimated([\'animated\':${args['animated']}])');
             }
         
             // handle the native call
-            delegate?.mapView_regionDidChangeAnimated(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['animated']);
+            delegate?.mapView_regionDidChangeAnimated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillMoveByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_mapWillMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapWillMoveByUser([\'wasUserAction\':${args['wasUserAction']}])');
             }
         
             // handle the native call
-            delegate?.mapView_mapWillMoveByUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapWillMoveByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidMoveByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_mapDidMoveByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapDidMoveByUser([\'wasUserAction\':${args['wasUserAction']}])');
             }
         
             // handle the native call
-            delegate?.mapView_mapDidMoveByUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapDidMoveByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillZoomByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_mapWillZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapWillZoomByUser([\'wasUserAction\':${args['wasUserAction']}])');
             }
         
             // handle the native call
-            delegate?.mapView_mapWillZoomByUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapWillZoomByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidZoomByUser':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_mapDidZoomByUser([\'wasUserAction\':$args[wasUserAction]])');
+              print('fluttify-dart-callback: mapView_mapDidZoomByUser([\'wasUserAction\':${args['wasUserAction']}])');
             }
         
             // handle the native call
-            delegate?.mapView_mapDidZoomByUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['wasUserAction']);
+            delegate?.mapView_mapDidZoomByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
@@ -473,7 +473,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLoadingMap(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewWillStartLoadingMap((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // print log
@@ -482,7 +482,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFinishLoadingMap(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewDidFinishLoadingMap((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError':
             // print log
@@ -491,7 +491,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFailLoadingMap_withError(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewDidFailLoadingMap_withError((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_viewForAnnotation':
             // print log
@@ -500,7 +500,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_viewForAnnotation(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAShape()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_viewForAnnotation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAShape()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
@@ -509,7 +509,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddAnnotationViews(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddAnnotationViews((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSelectAnnotationView':
             // print log
@@ -518,7 +518,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSelectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didSelectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
@@ -527,7 +527,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didDeselectAnnotationView(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didDeselectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -536,7 +536,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLocatingUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewWillStartLocatingUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // print log
@@ -545,16 +545,16 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidStopLocatingUser(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewDidStopLocatingUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_didUpdateUserLocation_updatingLocation([\'updatingLocation\':$args[updatingLocation]])');
+              print('fluttify-dart-callback: mapView_didUpdateUserLocation_updatingLocation([\'updatingLocation\':${args['updatingLocation']}])');
             }
         
             // handle the native call
-            delegate?.mapView_didUpdateUserLocation_updatingLocation(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAUserLocation()..refId = (args['userLocation'])..tag__ = 'amap_map_fluttify', args['updatingLocation']);
+            delegate?.mapView_didUpdateUserLocation_updatingLocation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAUserLocation()..refId = (args['userLocation'])..tag__ = 'amap_map_fluttify'), args['updatingLocation']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
@@ -563,7 +563,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewRequireLocationAuth((CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError':
             // print log
@@ -572,7 +572,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didFailToLocateUserWithError(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didFailToLocateUserWithError((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState':
             // print log
@@ -581,7 +581,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -590,7 +590,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_rendererForOverlay(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAGroundOverlay()..refId = (args['overlay'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_rendererForOverlay((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAGroundOverlay()..refId = (args['overlay'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers':
             // print log
@@ -599,7 +599,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddOverlayRenderers(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddOverlayRenderers((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped':
             // print log
@@ -608,7 +608,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_calloutAccessoryControlTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify', UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), (UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
@@ -617,7 +617,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewCalloutTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
@@ -626,25 +626,25 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewTapped(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didAnnotationViewTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_didChangeUserTrackingMode_animated([\'animated\':$args[animated]])');
+              print('fluttify-dart-callback: mapView_didChangeUserTrackingMode_animated([\'animated\':${args['animated']}])');
             }
         
             // handle the native call
-            delegate?.mapView_didChangeUserTrackingMode_animated(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAUserTrackingMode.values[(args['mode'])], args['animated']);
+            delegate?.mapView_didChangeUserTrackingMode_animated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapView_didChangeOpenGLESDisabled([\'openGLESDisabled\':$args[openGLESDisabled]])');
+              print('fluttify-dart-callback: mapView_didChangeOpenGLESDisabled([\'openGLESDisabled\':${args['openGLESDisabled']}])');
             }
         
             // handle the native call
-            delegate?.mapView_didChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', args['openGLESDisabled']);
+            delegate?.mapView_didChangeOpenGLESDisabled((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['openGLESDisabled']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didTouchPois':
             // print log
@@ -653,7 +653,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didTouchPois(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didTouchPois((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSingleTappedAtCoordinate':
             // print log
@@ -662,7 +662,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didSingleTappedAtCoordinate((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didLongPressedAtCoordinate':
             // print log
@@ -671,7 +671,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didLongPressedAtCoordinate(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didLongPressedAtCoordinate((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
@@ -680,7 +680,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapInitComplete(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapInitComplete((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapShowed':
             // print log
@@ -689,7 +689,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapShowed(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapShowed((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged':
             // print log
@@ -698,7 +698,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapFloorIndexChanged((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapHidden':
             // print log
@@ -707,7 +707,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapHidden(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify', MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapView_didIndoorMapHidden((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
@@ -716,7 +716,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataWillReload(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.offlineDataWillReload((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // print log
@@ -725,7 +725,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataDidReload(MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify');
+            delegate?.offlineDataDidReload((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
             break;
           default:
             break;
@@ -1367,7 +1367,7 @@ class MAMapView extends UIView  {
               }
         
               // handle the native call
-              block(UIImage()..refId = (args['resultImage'])..tag__ = 'amap_map_fluttify', args['state']);
+              block((UIImage()..refId = (args['resultImage'])..tag__ = 'amap_map_fluttify'), args['state']);
               break;
             default:
               break;

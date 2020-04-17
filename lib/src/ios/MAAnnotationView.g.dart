@@ -244,7 +244,7 @@ class MAAnnotationView extends UIView  {
     }
   }
   
-  Future<NSObject> initWithAnnotation_reuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
+  Future<dynamic> initWithAnnotation_reuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAAnnotationView@$refId::initWithAnnotation([\'reuseIdentifier\':$reuseIdentifier])');
@@ -261,8 +261,8 @@ class MAAnnotationView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSObject()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return NSObject()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -529,7 +529,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     }
   }
   
-  Future<List<NSObject>> initWithAnnotation_reuseIdentifier_batch(List<MAAnnotation> annotation, List<String> reuseIdentifier, {bool viewChannel = true}) async {
+  Future<List<dynamic>> initWithAnnotation_reuseIdentifier_batch(List<MAAnnotation> annotation, List<String> reuseIdentifier, {bool viewChannel = true}) async {
     if (annotation.length != reuseIdentifier.length) {
       return Future.error('all args must have same length!');
     }
@@ -542,7 +542,7 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSObject()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

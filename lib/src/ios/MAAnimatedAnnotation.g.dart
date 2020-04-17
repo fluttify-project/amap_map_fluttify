@@ -135,7 +135,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback(MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag__ = 'amap_map_fluttify');
+              stepCallback((MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;

@@ -148,7 +148,7 @@ class MAOfflineMap extends NSObject  {
     }
   }
   
-  Future<void> downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, NSObject info)) async {
+  Future<void> downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
@@ -173,7 +173,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock(MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify', MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], NSObject()..refId = (args['info'])..tag__ = 'amap_map_fluttify');
+              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;

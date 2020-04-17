@@ -1,4 +1,5 @@
 export 'type_op.g.dart';
+export 'constants.g.dart';
 export 'platformview/TextureMapView.g.dart';
 export 'platformview/DownloadProgressView.g.dart';
 export 'platformview/WearMapView.g.dart';

@@ -130,7 +130,7 @@ class MAMapStatus extends NSObject  {
     }
   }
   
-  Future<NSObject> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
+  Future<dynamic> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MAMapStatus@$refId::initWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
@@ -147,8 +147,8 @@ class MAMapStatus extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSObject()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return NSObject()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -247,7 +247,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
     }
   }
   
-  Future<List<NSObject>> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
+  Future<List<dynamic>> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {
       return Future.error('all args must have same length!');
     }
@@ -260,7 +260,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSObject()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

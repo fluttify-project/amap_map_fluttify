@@ -1,13 +1,28 @@
 // ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
-typedef Future<void> OnMarkerClicked(Marker marker);
+/// marker点击事件回调签名 输入[Marker]对象, 返回`是否已消耗事件`, 如果true则不再弹窗, 如果false则继续弹窗
+typedef Future<bool> OnMarkerClicked(Marker marker);
+
+/// 地图点击事件回调签名
 typedef Future<void> OnMapClicked(LatLng latLng);
+
+/// 地图移动事件回调签名
 typedef Future<void> OnMapMove(MapMove move);
+
+/// 位置移动事件回调签名
 typedef Future<void> OnLocationChange(MapLocation move);
+
+/// Marker拖动回调签名
 typedef Future<void> OnMarkerDrag(Marker marker);
+
+/// ios请求权限回调签名
 typedef Future<void> _OnRequireAlwaysAuth(CLLocationManager manager);
+
+/// 地图截屏回调签名
 typedef Future<void> OnScreenShot(Uint8List imageData);
+
+/// 海量点点击回调签名
 typedef Future<void> OnMultiPointClicked(
   String id,
   String title,
@@ -1311,12 +1326,11 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
-          debugPrint('当前设备密度: $pixelRatio');
-          await pushStackJsonable('width', option.width / pixelRatio);
+          polyline.addJsonableProperty__(1, option.width / pixelRatio);
         }
         // 颜色
         if (option.strokeColor != null) {
-          await pushStackJsonable('strokeColor', option.strokeColor.value);
+          polyline.addJsonableProperty__(2, option.strokeColor.value);
         }
         // 设置图片
         if (option.customTexture != null && option.imageConfig != null) {
@@ -1325,29 +1339,21 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           final texture = await UIImage.create(textureData);
 
-          await pushStack('texture', texture);
+          polyline.addProperty__(3, texture);
 
           pool..add(texture);
         }
         // 线段始末端样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineCapType != null) {
-          await pushStackJsonable(
-            'lineCapType',
-            option.lineCapType.index,
-          );
+          polyline.addJsonableProperty__(4, option.lineCapType.index);
         }
         // 线段连接处样式, 由于两端的枚举顺序是一样的, 所以这里直接从索引获取枚举
         if (option.lineJoinType != null) {
-          await pushStackJsonable(
-            'lineJoinType',
-            option.lineJoinType.index,
-          );
+          polyline.addJsonableProperty__(5, option.lineJoinType.index);
         }
         // 是否虚线
         if (option.dashType != null) {
-          // android端没有None类型, 而ios端还有None类型, 并且索引为0, 这里+1统一一下两端
-          // 的值, ios端用起来方便一点, 直接强转成枚举即可.
-          await pushStackJsonable('dashType', option.dashType.index + 1);
+          polyline.addJsonableProperty__(6, option.dashType.index + 1);
         }
 
         // 设置参数
@@ -1423,16 +1429,15 @@ class AmapController with WidgetsBindingObserver, _Private {
         final polygon = await MAPolygon.polygonWithCoordinates_count(
             latLngList, latLngList.length);
 
-        // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
-          await pushStackJsonable('width', option.width / pixelRatio);
+          polygon.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
-          await pushStackJsonable('strokeColor', option.strokeColor.value);
+          polygon.addJsonableProperty__(2, option.strokeColor.value);
         }
         if (option.fillColor != null) {
-          await pushStackJsonable('fillColor', option.fillColor.value);
+          polygon.addJsonableProperty__(3, option.fillColor.value);
         }
 
         // 设置参数
@@ -1504,16 +1509,15 @@ class AmapController with WidgetsBindingObserver, _Private {
           option.radius,
         );
 
-        // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
-          await pushStackJsonable('width', option.width / pixelRatio);
+          circle.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
-          await pushStackJsonable('strokeColor', option.strokeColor.value);
+          circle.addJsonableProperty__(2, option.strokeColor.value);
         }
         if (option.fillColor != null) {
-          await pushStackJsonable('fillColor', option.fillColor.value);
+          circle.addJsonableProperty__(3, option.fillColor.value);
         }
 
         // 设置参数
@@ -2425,8 +2429,9 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
-      await var1.showInfoWindow();
-      await _onMarkerClicked(Marker.android(var1));
+      if (!await _onMarkerClicked(Marker.android(var1))) {
+        await var1.showInfoWindow();
+      }
     }
     return true;
   }

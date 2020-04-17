@@ -126,7 +126,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //endregion
 
   //region methods
-  Future<NSObject> initWithURLTemplate(String URLTemplate) async {
+  Future<dynamic> initWithURLTemplate(String URLTemplate) async {
     // print log
     if (fluttifyLogEnabled) {
       print('fluttify-dart: MATileOverlay@$refId::initWithURLTemplate([\'URLTemplate\':$URLTemplate])');
@@ -143,8 +143,8 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSObject()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return NSObject()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
+      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
     }
   }
   
@@ -173,7 +173,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result(NSData()..refId = (args['tileData'])..tag__ = 'amap_map_fluttify', NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify');
+              result((NSData()..refId = (args['tileData'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -307,7 +307,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
   //endregion
 
   //region methods
-  Future<List<NSObject>> initWithURLTemplate_batch(List<String> URLTemplate) async {
+  Future<List<dynamic>> initWithURLTemplate_batch(List<String> URLTemplate) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -320,7 +320,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => NSObject()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => Ref()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
