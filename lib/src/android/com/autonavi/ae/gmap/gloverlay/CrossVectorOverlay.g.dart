@@ -229,11 +229,11 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
             case 'Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onGenerateComplete([\'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onGenerateComplete([\'var2\':${args['var2']}])');
               }
         
               // handle the native call
-              var1?.onGenerateComplete(android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify', args['var2']);
+              var1?.onGenerateComplete((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'), args['var2']);
               break;
             default:
               break;

@@ -40,7 +40,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onRequestFailed':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onRequestFailed([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onRequestFailed([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -49,7 +49,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onTraceProcessing':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onTraceProcessing([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onTraceProcessing([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -58,7 +58,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onFinished':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFinished([\'var1\':$args[var1], \'var3\':$args[var3], \'var4\':$args[var4]])');
+                print('fluttify-dart-callback: onFinished([\'var1\':${args['var1']}, \'var3\':${args['var3']}, \'var4\':${args['var4']}])');
               }
         
               // handle the native call
@@ -143,7 +143,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onTraceStatus([\'var3\':$args[var3]])');
+                print('fluttify-dart-callback: onTraceStatus([\'var3\':${args['var3']}])');
               }
         
               // handle the native call

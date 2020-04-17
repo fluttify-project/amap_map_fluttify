@@ -1024,7 +1024,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChange(com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onCameraChange((com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
@@ -1033,7 +1033,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChangeFinish(com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onCameraChangeFinish((com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1074,7 +1074,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapClick(com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMapClick((com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1115,7 +1115,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onTouch(android_view_MotionEvent()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onTouch((android_view_MotionEvent()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1156,7 +1156,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapLongClick(com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMapLongClick((com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1197,7 +1197,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerClick(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMarkerClick((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1238,7 +1238,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPolylineClick(com_amap_api_maps_model_Polyline()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onPolylineClick((com_amap_api_maps_model_Polyline()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1279,7 +1279,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragStart(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMarkerDragStart((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
@@ -1288,7 +1288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDrag(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMarkerDrag((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
@@ -1297,7 +1297,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragEnd(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMarkerDragEnd((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1379,7 +1379,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onInfoWindowClick(com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onInfoWindowClick((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1420,7 +1420,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMyLocationChange(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMyLocationChange((com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1461,7 +1461,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPOIClick(com_amap_api_maps_model_Poi()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onPOIClick((com_amap_api_maps_model_Poi()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1524,7 +1524,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.getInfoWindowParams(com_amap_api_maps_model_GL3DModel()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.getInfoWindowParams((com_amap_api_maps_model_GL3DModel()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1565,7 +1565,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.OnIndoorBuilding((com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1606,7 +1606,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapPrint(android_graphics_drawable_Drawable()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMapPrint((android_graphics_drawable_Drawable()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -1647,16 +1647,16 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap(android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onMapScreenShot__android_graphics_Bitmap((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var2\':${args['var2']}])');
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap__int(android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify', args['var2']);
+              var1?.onMapScreenShot__android_graphics_Bitmap__int((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'), args['var2']);
               break;
             default:
               break;
@@ -1759,7 +1759,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onRemoveCacheFinish([\'var1\':$args[var1]])');
+                print('fluttify-dart-callback: onRemoveCacheFinish([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1932,7 +1932,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDoubleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onDoubleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1941,7 +1941,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onSingleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onSingleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1950,7 +1950,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onFling':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFling([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onFling([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1959,7 +1959,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onScroll':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onScroll([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onScroll([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1968,7 +1968,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onLongPress([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onLongPress([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1977,7 +1977,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDown':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDown([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onDown([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1986,7 +1986,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onUp':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onUp([\'var1\':$args[var1], \'var2\':$args[var2]])');
+                print('fluttify-dart-callback: onUp([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2986,7 +2986,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPointClick(com_amap_api_maps_model_MultiPointItem()..refId = (args['var1'])..tag__ = 'amap_map_fluttify');
+              var1?.onPointClick((com_amap_api_maps_model_MultiPointItem()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;

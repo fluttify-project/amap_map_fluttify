@@ -59,11 +59,11 @@ class MATraceManager extends NSObject  {
           case 'Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':$args[distance]])');
+              print('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':${args['distance']}])');
             }
         
             // handle the native call
-            delegate?.traceManager_didTrace_correct_distance_withError(MATraceManager()..refId = (args['manager'])..tag__ = 'amap_map_fluttify', (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify');
+            delegate?.traceManager_didTrace_correct_distance_withError((MATraceManager()..refId = (args['manager'])..tag__ = 'amap_map_fluttify'), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -72,7 +72,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify');
+            delegate?.mapViewRequireLocationAuth((CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify'));
             break;
           default:
             break;

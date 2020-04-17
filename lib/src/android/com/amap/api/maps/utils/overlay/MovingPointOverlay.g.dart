@@ -357,7 +357,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
             case 'Callback::com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::move':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: move([\'var1\':$args[var1]])');
+                print('fluttify-dart-callback: move([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
