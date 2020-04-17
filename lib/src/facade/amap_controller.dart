@@ -2429,7 +2429,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
-      if (await _onMarkerClicked(Marker.android(var1))) {
+      if (!await _onMarkerClicked(Marker.android(var1))) {
         await var1.showInfoWindow();
       }
     }
