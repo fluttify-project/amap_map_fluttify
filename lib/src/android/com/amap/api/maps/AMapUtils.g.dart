@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   //region constants
@@ -64,6 +65,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<double> calculateLineDistance(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -81,10 +83,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -103,10 +107,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> calculateArea__List_com_amap_api_maps_model_LatLng_(List<com_amap_api_maps_model_LatLng> var0) async {
     // print log
@@ -125,10 +131,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> getLatestAMapApp(android_content_Context var0) async {
     // print log
@@ -147,10 +155,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> openAMapNavi(com_amap_api_maps_model_NaviPara var0, android_content_Context var1) async {
     // print log
@@ -169,10 +179,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> openAMapPoiNearbySearch(com_amap_api_maps_model_PoiPara var0, android_content_Context var1) async {
     // print log
@@ -191,10 +203,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> openAMapDrivingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
@@ -213,10 +227,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> openAMapTransitRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
@@ -235,10 +251,12 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> openAMapWalkingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
@@ -257,8 +275,9 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -275,6 +294,7 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
   //endregion
 
   //region methods
+  
   static Future<List<double>> calculateLineDistance_batch(List<com_amap_api_maps_model_LatLng> var0, List<com_amap_api_maps_model_LatLng> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -293,6 +313,7 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng_batch(List<com_amap_api_maps_model_LatLng> var0, List<com_amap_api_maps_model_LatLng> var1) async {
     if (var0.length != var1.length) {
@@ -313,6 +334,7 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
+  
   static Future<List<double>> calculateArea__List_com_amap_api_maps_model_LatLng__batch(List<List<com_amap_api_maps_model_LatLng>> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -332,7 +354,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> getLatestAMapApp_batch(List<android_content_Context> var0) async {
+  
+  static Future<List<void>> getLatestAMapApp_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -351,7 +374,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> openAMapNavi_batch(List<com_amap_api_maps_model_NaviPara> var0, List<android_content_Context> var1) async {
+  
+  static Future<List<void>> openAMapNavi_batch(List<com_amap_api_maps_model_NaviPara> var0, List<android_content_Context> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -370,7 +394,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> openAMapPoiNearbySearch_batch(List<com_amap_api_maps_model_PoiPara> var0, List<android_content_Context> var1) async {
+  
+  static Future<List<void>> openAMapPoiNearbySearch_batch(List<com_amap_api_maps_model_PoiPara> var0, List<android_content_Context> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -389,7 +414,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> openAMapDrivingRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
+  
+  static Future<List<void>> openAMapDrivingRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -408,7 +434,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> openAMapTransitRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
+  
+  static Future<List<void>> openAMapTransitRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -427,7 +454,8 @@ extension com_amap_api_maps_AMapUtils_Batch on List<com_amap_api_maps_AMapUtils>
     }
   }
   
-  static Future<void> openAMapWalkingRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
+  
+  static Future<List<void>> openAMapWalkingRoute_batch(List<com_amap_api_maps_model_RoutePara> var0, List<android_content_Context> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }

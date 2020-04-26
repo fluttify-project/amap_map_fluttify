@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   //region constants
@@ -72,6 +73,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -89,10 +91,12 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_style_StyleElement()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
     // print log
@@ -111,10 +115,12 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isValid() async {
     // print log
@@ -133,8 +139,9 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -175,6 +182,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
   //endregion
 
   //region methods
+  
   Future<List<com_autonavi_ae_gmap_style_StyleElement>> get_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -194,7 +202,8 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
     }
   }
   
-  Future<void> put_batch(List<int> var1, List<com_autonavi_ae_gmap_style_StyleElement> var2) async {
+  
+  Future<List<void>> put_batch(List<int> var1, List<com_autonavi_ae_gmap_style_StyleElement> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -212,6 +221,7 @@ extension com_autonavi_ae_gmap_style_StyleItem_Batch on List<com_autonavi_ae_gma
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isValid_batch() async {
     if (false) {

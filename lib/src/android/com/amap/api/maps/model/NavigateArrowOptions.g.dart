@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_NavigateArrowOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> width(double var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> topColor(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> sideColor(int var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> zIndex(double var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> visible(bool var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrowOptions> set3DModel(bool var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrowOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getWidth() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTopColor() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSideColor() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> is3DModel() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -397,8 +429,9 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -415,6 +448,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> add__com_amap_api_maps_model_LatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -433,6 +467,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> addAll_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
@@ -453,6 +488,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> width_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -471,6 +507,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> topColor_batch(List<int> var1) async {
     if (false) {
@@ -491,6 +528,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> sideColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -509,6 +547,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -529,6 +568,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> visible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -547,6 +587,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_NavigateArrowOptions>> set3DModel_batch(List<bool> var1) async {
     if (false) {
@@ -567,6 +608,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_model_LatLng>>> getPoints_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -585,6 +627,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getWidth_batch() async {
     if (false) {
@@ -605,6 +648,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<int>> getTopColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -623,6 +667,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getSideColor_batch() async {
     if (false) {
@@ -643,6 +688,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -661,6 +707,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -681,6 +728,7 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<bool>> is3DModel_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -700,7 +748,8 @@ extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

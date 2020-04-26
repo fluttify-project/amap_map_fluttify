@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_model_BaseOptions  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
   //endregion
 
   //region methods
+  
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZIndex(double var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeightScale(int var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getBuildingHeightScale() async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingTopColor(int var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingSideColor(int var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getBuildingSideColor() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getBuildingTopColor() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeight(int var1) async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getBuildingHeight() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getBuildingLatlngs() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Int32List> getPoints() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Int32List;
     
-      return __result__ as Int32List;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingLatlngs(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -375,8 +405,9 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends com_amap_api_maps_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -393,6 +424,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
   //endregion
 
   //region methods
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -412,7 +444,8 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
-  Future<void> setZIndex_batch(List<double> var1) async {
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -431,7 +464,8 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -449,6 +483,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -469,6 +504,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> setBuildingHeightScale_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -487,6 +523,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getBuildingHeightScale_batch() async {
     if (false) {
@@ -507,6 +544,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> setBuildingTopColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -525,6 +563,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> setBuildingSideColor_batch(List<int> var1) async {
     if (false) {
@@ -545,6 +584,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<int>> getBuildingSideColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -563,6 +603,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getBuildingTopColor_batch() async {
     if (false) {
@@ -583,6 +624,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> setBuildingHeight_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -601,6 +643,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getBuildingHeight_batch() async {
     if (false) {
@@ -621,6 +664,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_model_LatLng>>> getBuildingLatlngs_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -640,6 +684,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<Int32List>> getPoints_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -658,6 +703,7 @@ extension com_amap_api_maps_model_BuildingOverlayOptions_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> setBuildingLatlngs_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {

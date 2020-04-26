@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation, MAAnnotation {
   //region constants
@@ -60,6 +61,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   //endregion
 
   //region methods
+  
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -96,10 +98,12 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished), void stepCallback(MAAnnotationMoveAnimation currentAni)) async {
     // print log
@@ -146,10 +150,12 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<MAAnnotationMoveAnimation>> allMoveAnimations() async {
     // print log
@@ -168,10 +174,12 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => MAAnnotationMoveAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setNeedsStart() async {
     // print log
@@ -190,8 +198,9 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -219,6 +228,7 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
   //endregion
 
   //region methods
+  
   Future<List<List<MAAnnotationMoveAnimation>>> allMoveAnimations_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -238,7 +248,8 @@ extension MAAnimatedAnnotation_Batch on List<MAAnimatedAnnotation> {
     }
   }
   
-  Future<void> setNeedsStart_batch() async {
+  
+  Future<List<void>> setNeedsStart_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

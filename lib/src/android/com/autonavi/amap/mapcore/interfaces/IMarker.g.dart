@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_interfaces_IOverlayImage {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
 
   
 
+  
   Future<void> setPeriod(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getPeriod() async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> set2Top() async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFlat(bool var1) async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isFlat() async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPerspective(bool var1) async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isPerspective() async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTitle(String var1) async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getTitle() async {
     // print log
@@ -256,10 +278,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
@@ -278,10 +302,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSnippet(String var1) async {
     // print log
@@ -300,10 +326,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getSnippet() async {
     // print log
@@ -322,10 +350,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDraggable(bool var1) async {
     // print log
@@ -344,10 +374,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isDraggable() async {
     // print log
@@ -366,10 +398,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isRemoved() async {
     // print log
@@ -388,10 +422,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> showInfoWindow() async {
     // print log
@@ -410,10 +446,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> hideInfoWindow() async {
     // print log
@@ -432,10 +470,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowShown() async {
     // print log
@@ -454,10 +494,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -476,10 +518,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // print log
@@ -498,10 +542,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
@@ -520,10 +566,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBelowMaskLayer(bool var1) async {
     // print log
@@ -542,10 +590,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -564,10 +614,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> startAnimation() async {
     // print log
@@ -586,10 +638,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
@@ -636,8 +690,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

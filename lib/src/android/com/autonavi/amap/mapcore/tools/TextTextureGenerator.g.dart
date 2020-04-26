@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Object  {
   //region constants
@@ -51,6 +52,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   //endregion
 
   //region methods
+  
   static Future<int> getNearstSize2N(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -68,10 +70,12 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getTextPixelBuffer(int var1, int var2) async {
     // print log
@@ -90,10 +94,12 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getCharsWidths(Int32List var1) async {
     // print log
@@ -112,8 +118,9 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
   
@@ -130,6 +137,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
   //endregion
 
   //region methods
+  
   static Future<List<int>> getNearstSize2N_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -149,6 +157,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
     }
   }
   
+  
   Future<List<Uint8List>> getTextPixelBuffer_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -167,6 +176,7 @@ extension com_autonavi_amap_mapcore_tools_TextTextureGenerator_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<Uint8List>> getCharsWidths_batch(List<Int32List> var1) async {
     if (false) {

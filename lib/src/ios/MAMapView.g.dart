@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAMapView extends UIView  {
   //region constants
@@ -1012,6 +1013,7 @@ class MAMapView extends UIView  {
   //endregion
 
   //region methods
+  
   Future<void> setRegion_animated(MACoordinateRegion region, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -1029,10 +1031,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region, {bool viewChannel = true}) async {
     // print log
@@ -1051,10 +1055,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibleMapRect_animated(MAMapRect mapRect, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1073,10 +1079,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<MAMapRect> mapRectThatFits(MAMapRect mapRect, {bool viewChannel = true}) async {
     // print log
@@ -1095,10 +1103,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<MAMapRect> mapRectThatFits_edgePadding(MAMapRect mapRect, UIEdgeInsets insets, {bool viewChannel = true}) async {
     // print log
@@ -1117,10 +1127,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibleMapRect_edgePadding_animated(MAMapRect mapRect, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1139,10 +1151,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCenterCoordinate_animated(CLLocationCoordinate2D coordinate, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1161,10 +1175,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomLevel_animated(double zoomLevel, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1183,10 +1199,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomLevel_atPivot_animated(double zoomLevel, CGPoint pivot, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1205,10 +1223,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotationDegree_animated_duration(double rotationDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
@@ -1227,10 +1247,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCameraDegree_animated_duration(double cameraDegree, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
@@ -1249,10 +1271,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<MAMapStatus> getMapStatus({bool viewChannel = true}) async {
     // print log
@@ -1271,10 +1295,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setMapStatus_animated(MAMapStatus status, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1293,10 +1319,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapStatus_animated_duration(MAMapStatus status, bool animated, double duration, {bool viewChannel = true}) async {
     // print log
@@ -1315,10 +1343,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCompassImage(UIImage image, {bool viewChannel = true}) async {
     // print log
@@ -1337,10 +1367,36 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
+  @deprecated
+  Future<UIImage> takeSnapshotInRect(CGRect rect, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::takeSnapshotInRect([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect', {"rect": rect.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = UIImage()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
   
   Future<void> takeSnapshotInRect_withCompletionBlock(CGRect rect, void block(UIImage resultImage, int state), {bool viewChannel = true}) async {
     // print log
@@ -1378,10 +1434,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> metersPerPointForZoomLevel(double zoomLevel, {bool viewChannel = true}) async {
     // print log
@@ -1400,10 +1458,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<CGPoint> convertCoordinate_toPointToView(CLLocationCoordinate2D coordinate, UIView view, {bool viewChannel = true}) async {
     // print log
@@ -1422,10 +1482,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<CLLocationCoordinate2D> convertPoint_toCoordinateFromView(CGPoint point, UIView view, {bool viewChannel = true}) async {
     // print log
@@ -1444,10 +1506,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<CGRect> convertRegion_toRectToView(MACoordinateRegion region, UIView view, {bool viewChannel = true}) async {
     // print log
@@ -1466,10 +1530,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(CGRect()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<MACoordinateRegion> convertRect_toRegionFromView(CGRect rect, UIView view, {bool viewChannel = true}) async {
     // print log
@@ -1488,10 +1554,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> reloadMap({bool viewChannel = true}) async {
     // print log
@@ -1510,10 +1578,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearDisk({bool viewChannel = true}) async {
     // print log
@@ -1532,10 +1602,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> reloadInternalTexture({bool viewChannel = true}) async {
     // print log
@@ -1554,10 +1626,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> mapContentApprovalNumber({bool viewChannel = true}) async {
     // print log
@@ -1576,10 +1650,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> satelliteImageApprovalNumber({bool viewChannel = true}) async {
     // print log
@@ -1598,10 +1674,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> forceRefresh({bool viewChannel = true}) async {
     // print log
@@ -1620,10 +1698,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
@@ -1642,10 +1722,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
     // print log
@@ -1664,10 +1746,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
@@ -1686,10 +1770,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeAnnotations(List<NSObject> annotations, {bool viewChannel = true}) async {
     // print log
@@ -1708,10 +1794,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation, {bool viewChannel = true}) async {
     // print log
@@ -1730,10 +1818,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier, {bool viewChannel = true}) async {
     // print log
@@ -1752,10 +1842,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> selectAnnotation_animated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1774,10 +1866,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> deselectAnnotation_animated(MAAnnotation annotation, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1796,10 +1890,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> showAnnotations_animated(List<NSObject> annotations, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1818,10 +1914,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> showAnnotations_edgePadding_animated(List<NSObject> annotations, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1840,10 +1938,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setUserTrackingMode_animated(MAUserTrackingMode mode, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -1862,10 +1962,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> updateUserLocationRepresentation(MAUserLocationRepresentation representation, {bool viewChannel = true}) async {
     // print log
@@ -1884,10 +1986,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<NSObject>> overlaysInLevel(MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
@@ -1906,10 +2010,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => MAHeatMapNode()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
@@ -1928,10 +2034,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
     // print log
@@ -1950,10 +2058,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlay_level(MAOverlay overlay, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
@@ -1972,10 +2082,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlays_level(List<NSObject> overlays, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
@@ -1994,10 +2106,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
@@ -2016,10 +2130,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeOverlays(List<NSObject> overlays, {bool viewChannel = true}) async {
     // print log
@@ -2038,10 +2154,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> insertOverlay_atIndex_level(MAOverlay overlay, int index, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
@@ -2060,10 +2178,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> insertOverlay_aboveOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
@@ -2082,10 +2202,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> insertOverlay_belowOverlay(MAOverlay overlay, MAOverlay sibling, {bool viewChannel = true}) async {
     // print log
@@ -2104,10 +2226,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> insertOverlay_atIndex(MAOverlay overlay, int index, {bool viewChannel = true}) async {
     // print log
@@ -2126,10 +2250,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> exchangeOverlayAtIndex_withOverlayAtIndex(int index1, int index2, {bool viewChannel = true}) async {
     // print log
@@ -2148,10 +2274,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_atLevel(int index1, int index2, MAOverlayLevel level, {bool viewChannel = true}) async {
     // print log
@@ -2170,10 +2298,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> exchangeOverlay_withOverlay(MAOverlay overlay1, MAOverlay overlay2, {bool viewChannel = true}) async {
     // print log
@@ -2192,10 +2322,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay, {bool viewChannel = true}) async {
     // print log
@@ -2214,10 +2346,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> showOverlays_animated(List<NSObject> overlays, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -2236,10 +2370,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> showOverlays_edgePadding_animated(List<NSObject> overlays, UIEdgeInsets insets, bool animated, {bool viewChannel = true}) async {
     // print log
@@ -2258,10 +2394,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorMapControlOrigin(CGPoint origin, {bool viewChannel = true}) async {
     // print log
@@ -2280,10 +2418,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCurrentIndoorMapFloorIndex(int floorIndex, {bool viewChannel = true}) async {
     // print log
@@ -2302,10 +2442,12 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearIndoorMapCache({bool viewChannel = true}) async {
     // print log
@@ -2324,10 +2466,108 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
+  @deprecated
+  Future<void> setCustomMapStyle(NSData customJson, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::setCustomMapStyle([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyle', {"customJson": customJson.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> setCustomMapStyleWithWebData(NSData data, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::setCustomMapStyleWithWebData([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleWithWebData', {"data": data.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> setCustomTextureResourcePath(String customTextureResourcePath, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::setCustomTextureResourcePath([\'customTextureResourcePath\':$customTextureResourcePath])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomTextureResourcePath', {"customTextureResourcePath": customTextureResourcePath, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> setCustomMapStyleID(String customMapStyleID, {bool viewChannel = true}) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMapView@$refId::setCustomMapStyleID([\'customMapStyleID\':$customMapStyleID])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleID', {"customMapStyleID": customMapStyleID, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   
   Future<void> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions, {bool viewChannel = true}) async {
     // print log
@@ -2346,8 +2586,9 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -3044,7 +3285,8 @@ extension MAMapView_Batch on List<MAMapView> {
   //endregion
 
   //region methods
-  Future<void> setRegion_animated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setRegion_animated_batch(List<MACoordinateRegion> region, List<bool> animated, {bool viewChannel = true}) async {
     if (region.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3062,6 +3304,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MACoordinateRegion>> regionThatFits_batch(List<MACoordinateRegion> region, {bool viewChannel = true}) async {
     if (false) {
@@ -3082,7 +3325,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setVisibleMapRect_animated_batch(List<MAMapRect> mapRect, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setVisibleMapRect_animated_batch(List<MAMapRect> mapRect, List<bool> animated, {bool viewChannel = true}) async {
     if (mapRect.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3100,6 +3344,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MAMapRect>> mapRectThatFits_batch(List<MAMapRect> mapRect, {bool viewChannel = true}) async {
     if (false) {
@@ -3120,6 +3365,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
+  
   Future<List<MAMapRect>> mapRectThatFits_edgePadding_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, {bool viewChannel = true}) async {
     if (mapRect.length != insets.length) {
       return Future.error('all args must have same length!');
@@ -3139,7 +3385,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setVisibleMapRect_edgePadding_animated_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setVisibleMapRect_edgePadding_animated_batch(List<MAMapRect> mapRect, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (mapRect.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3158,7 +3405,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCenterCoordinate_animated_batch(List<CLLocationCoordinate2D> coordinate, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setCenterCoordinate_animated_batch(List<CLLocationCoordinate2D> coordinate, List<bool> animated, {bool viewChannel = true}) async {
     if (coordinate.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3177,7 +3425,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setZoomLevel_animated_batch(List<double> zoomLevel, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setZoomLevel_animated_batch(List<double> zoomLevel, List<bool> animated, {bool viewChannel = true}) async {
     if (zoomLevel.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3196,7 +3445,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setZoomLevel_atPivot_animated_batch(List<double> zoomLevel, List<CGPoint> pivot, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setZoomLevel_atPivot_animated_batch(List<double> zoomLevel, List<CGPoint> pivot, List<bool> animated, {bool viewChannel = true}) async {
     if (zoomLevel.length != pivot.length || pivot.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3215,7 +3465,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setRotationDegree_animated_duration_batch(List<double> rotationDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setRotationDegree_animated_duration_batch(List<double> rotationDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (rotationDegree.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
@@ -3234,7 +3485,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCameraDegree_animated_duration_batch(List<double> cameraDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setCameraDegree_animated_duration_batch(List<double> cameraDegree, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (cameraDegree.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
@@ -3252,6 +3504,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MAMapStatus>> getMapStatus_batch({bool viewChannel = true}) async {
     if (false) {
@@ -3272,7 +3525,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setMapStatus_animated_batch(List<MAMapStatus> status, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setMapStatus_animated_batch(List<MAMapStatus> status, List<bool> animated, {bool viewChannel = true}) async {
     if (status.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3291,7 +3545,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setMapStatus_animated_duration_batch(List<MAMapStatus> status, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setMapStatus_animated_duration_batch(List<MAMapStatus> status, List<bool> animated, List<double> duration, {bool viewChannel = true}) async {
     if (status.length != animated.length || animated.length != duration.length) {
       return Future.error('all args must have same length!');
     }
@@ -3310,7 +3565,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCompassImage_batch(List<UIImage> image, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setCompassImage_batch(List<UIImage> image, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3328,6 +3584,27 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
+  @deprecated
+  Future<List<UIImage>> takeSnapshotInRect_batch(List<CGRect> rect, {bool viewChannel = true}) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"rect": rect[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => UIImage()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
   
   Future<List<double>> metersPerPointForZoomLevel_batch(List<double> zoomLevel, {bool viewChannel = true}) async {
     if (false) {
@@ -3348,6 +3625,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
+  
   Future<List<CGPoint>> convertCoordinate_toPointToView_batch(List<CLLocationCoordinate2D> coordinate, List<UIView> view, {bool viewChannel = true}) async {
     if (coordinate.length != view.length) {
       return Future.error('all args must have same length!');
@@ -3366,6 +3644,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<CLLocationCoordinate2D>> convertPoint_toCoordinateFromView_batch(List<CGPoint> point, List<UIView> view, {bool viewChannel = true}) async {
     if (point.length != view.length) {
@@ -3386,6 +3665,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
+  
   Future<List<CGRect>> convertRegion_toRectToView_batch(List<MACoordinateRegion> region, List<UIView> view, {bool viewChannel = true}) async {
     if (region.length != view.length) {
       return Future.error('all args must have same length!');
@@ -3404,6 +3684,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MACoordinateRegion>> convertRect_toRegionFromView_batch(List<CGRect> rect, List<UIView> view, {bool viewChannel = true}) async {
     if (rect.length != view.length) {
@@ -3424,7 +3705,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> reloadMap_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> reloadMap_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3443,7 +3725,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> clearDisk_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> clearDisk_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3462,7 +3745,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> reloadInternalTexture_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> reloadInternalTexture_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3480,6 +3764,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<String>> mapContentApprovalNumber_batch({bool viewChannel = true}) async {
     if (false) {
@@ -3500,6 +3785,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
+  
   Future<List<String>> satelliteImageApprovalNumber_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -3519,7 +3805,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> forceRefresh_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> forceRefresh_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3538,7 +3825,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3557,7 +3845,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3576,7 +3865,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> removeAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
+  
+  Future<List<void>> removeAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3595,7 +3885,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> removeAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
+  
+  Future<List<void>> removeAnnotations_batch(List<List<NSObject>> annotations, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3613,6 +3904,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MAAnnotationView>> viewForAnnotation_batch(List<MAAnnotation> annotation, {bool viewChannel = true}) async {
     if (false) {
@@ -3633,6 +3925,7 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
+  
   Future<List<MAAnnotationView>> dequeueReusableAnnotationViewWithIdentifier_batch(List<String> identifier, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -3652,7 +3945,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> selectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> selectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
     if (annotation.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3671,7 +3965,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> deselectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> deselectAnnotation_animated_batch(List<MAAnnotation> annotation, List<bool> animated, {bool viewChannel = true}) async {
     if (annotation.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3690,7 +3985,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showAnnotations_animated_batch(List<List<NSObject>> annotations, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> showAnnotations_animated_batch(List<List<NSObject>> annotations, List<bool> animated, {bool viewChannel = true}) async {
     if (annotations.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3709,7 +4005,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showAnnotations_edgePadding_animated_batch(List<List<NSObject>> annotations, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> showAnnotations_edgePadding_animated_batch(List<List<NSObject>> annotations, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (annotations.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3728,7 +4025,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setUserTrackingMode_animated_batch(List<MAUserTrackingMode> mode, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setUserTrackingMode_animated_batch(List<MAUserTrackingMode> mode, List<bool> animated, {bool viewChannel = true}) async {
     if (mode.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -3747,7 +4045,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> updateUserLocationRepresentation_batch(List<MAUserLocationRepresentation> representation, {bool viewChannel = true}) async {
+  
+  Future<List<void>> updateUserLocationRepresentation_batch(List<MAUserLocationRepresentation> representation, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3765,6 +4064,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<List<NSObject>>> overlaysInLevel_batch(List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (false) {
@@ -3785,7 +4085,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3804,7 +4105,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3823,7 +4125,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlay_level_batch(List<MAOverlay> overlay, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addOverlay_level_batch(List<MAOverlay> overlay, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlay.length != level.length) {
       return Future.error('all args must have same length!');
     }
@@ -3842,7 +4145,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> addOverlays_level_batch(List<List<NSObject>> overlays, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  
+  Future<List<void>> addOverlays_level_batch(List<List<NSObject>> overlays, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlays.length != level.length) {
       return Future.error('all args must have same length!');
     }
@@ -3861,7 +4165,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> removeOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
+  
+  Future<List<void>> removeOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3880,7 +4185,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> removeOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
+  
+  Future<List<void>> removeOverlays_batch(List<List<NSObject>> overlays, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3899,7 +4205,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlay_atIndex_level_batch(List<MAOverlay> overlay, List<int> index, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  
+  Future<List<void>> insertOverlay_atIndex_level_batch(List<MAOverlay> overlay, List<int> index, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (overlay.length != index.length || index.length != level.length) {
       return Future.error('all args must have same length!');
     }
@@ -3918,7 +4225,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlay_aboveOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
+  
+  Future<List<void>> insertOverlay_aboveOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
     if (overlay.length != sibling.length) {
       return Future.error('all args must have same length!');
     }
@@ -3937,7 +4245,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlay_belowOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
+  
+  Future<List<void>> insertOverlay_belowOverlay_batch(List<MAOverlay> overlay, List<MAOverlay> sibling, {bool viewChannel = true}) async {
     if (overlay.length != sibling.length) {
       return Future.error('all args must have same length!');
     }
@@ -3956,7 +4265,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> insertOverlay_atIndex_batch(List<MAOverlay> overlay, List<int> index, {bool viewChannel = true}) async {
+  
+  Future<List<void>> insertOverlay_atIndex_batch(List<MAOverlay> overlay, List<int> index, {bool viewChannel = true}) async {
     if (overlay.length != index.length) {
       return Future.error('all args must have same length!');
     }
@@ -3975,7 +4285,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_batch(List<int> index1, List<int> index2, {bool viewChannel = true}) async {
+  
+  Future<List<void>> exchangeOverlayAtIndex_withOverlayAtIndex_batch(List<int> index1, List<int> index2, {bool viewChannel = true}) async {
     if (index1.length != index2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3994,7 +4305,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlayAtIndex_withOverlayAtIndex_atLevel_batch(List<int> index1, List<int> index2, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
+  
+  Future<List<void>> exchangeOverlayAtIndex_withOverlayAtIndex_atLevel_batch(List<int> index1, List<int> index2, List<MAOverlayLevel> level, {bool viewChannel = true}) async {
     if (index1.length != index2.length || index2.length != level.length) {
       return Future.error('all args must have same length!');
     }
@@ -4013,7 +4325,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> exchangeOverlay_withOverlay_batch(List<MAOverlay> overlay1, List<MAOverlay> overlay2, {bool viewChannel = true}) async {
+  
+  Future<List<void>> exchangeOverlay_withOverlay_batch(List<MAOverlay> overlay1, List<MAOverlay> overlay2, {bool viewChannel = true}) async {
     if (overlay1.length != overlay2.length) {
       return Future.error('all args must have same length!');
     }
@@ -4031,6 +4344,7 @@ extension MAMapView_Batch on List<MAMapView> {
       return typedResult;
     }
   }
+  
   
   Future<List<MAOverlayRenderer>> rendererForOverlay_batch(List<MAOverlay> overlay, {bool viewChannel = true}) async {
     if (false) {
@@ -4051,7 +4365,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showOverlays_animated_batch(List<List<NSObject>> overlays, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> showOverlays_animated_batch(List<List<NSObject>> overlays, List<bool> animated, {bool viewChannel = true}) async {
     if (overlays.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -4070,7 +4385,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> showOverlays_edgePadding_animated_batch(List<List<NSObject>> overlays, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
+  
+  Future<List<void>> showOverlays_edgePadding_animated_batch(List<List<NSObject>> overlays, List<UIEdgeInsets> insets, List<bool> animated, {bool viewChannel = true}) async {
     if (overlays.length != insets.length || insets.length != animated.length) {
       return Future.error('all args must have same length!');
     }
@@ -4089,7 +4405,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setIndoorMapControlOrigin_batch(List<CGPoint> origin, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setIndoorMapControlOrigin_batch(List<CGPoint> origin, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -4108,7 +4425,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCurrentIndoorMapFloorIndex_batch(List<int> floorIndex, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setCurrentIndoorMapFloorIndex_batch(List<int> floorIndex, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -4127,7 +4445,8 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> clearIndoorMapCache_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> clearIndoorMapCache_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -4146,7 +4465,88 @@ extension MAMapView_Batch on List<MAMapView> {
     }
   }
   
-  Future<void> setCustomMapStyleOptions_batch(List<MAMapCustomStyleOptions> styleOptions, {bool viewChannel = true}) async {
+  @deprecated
+  Future<List<void>> setCustomMapStyle_batch(List<NSData> customJson, {bool viewChannel = true}) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customJson": customJson[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<void>> setCustomMapStyleWithWebData_batch(List<NSData> data, {bool viewChannel = true}) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleWithWebData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"data": data[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<void>> setCustomTextureResourcePath_batch(List<String> customTextureResourcePath, {bool viewChannel = true}) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomTextureResourcePath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customTextureResourcePath": customTextureResourcePath[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<void>> setCustomMapStyleID_batch(List<String> customMapStyleID, {bool viewChannel = true}) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleID_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"customMapStyleID": customMapStyleID[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setCustomMapStyleOptions_batch(List<MAMapCustomStyleOptions> styleOptions, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

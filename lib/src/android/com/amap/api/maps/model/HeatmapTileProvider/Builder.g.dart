@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> data(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> weightedData(List<com_amap_api_maps_model_WeightedLatLng> var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> radius(int var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> gradient(com_amap_api_maps_model_Gradient var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> transparency(double var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_HeatmapTileProvider> build() async {
     // print log
@@ -177,8 +189,9 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -195,6 +208,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> data_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -213,6 +227,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> weightedData_batch(List<List<com_amap_api_maps_model_WeightedLatLng>> var1) async {
     if (false) {
@@ -233,6 +248,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> radius_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -251,6 +267,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> gradient_batch(List<com_amap_api_maps_model_Gradient> var1) async {
     if (false) {
@@ -271,6 +288,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_HeatmapTileProvider_Builder>> transparency_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -289,6 +307,7 @@ extension com_amap_api_maps_model_HeatmapTileProvider_Builder_Batch on List<com_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_HeatmapTileProvider>> build_batch() async {
     if (false) {

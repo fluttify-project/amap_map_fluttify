@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAArc extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -90,6 +91,7 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MAArc> arcWithStartCoordinate_passedCoordinate_endCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -107,8 +109,9 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAArc()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAArc()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAArc()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -169,6 +172,7 @@ extension MAArc_Batch on List<MAArc> {
   //endregion
 
   //region methods
+  
   static Future<List<MAArc>> arcWithStartCoordinate_passedCoordinate_endCoordinate_batch(List<CLLocationCoordinate2D> startCoordinate, List<CLLocationCoordinate2D> passedCoordinate, List<CLLocationCoordinate2D> endCoordinate) async {
     if (startCoordinate.length != passedCoordinate.length || passedCoordinate.length != endCoordinate.length) {
       return Future.error('all args must have same length!');

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint  {
   //region constants
@@ -79,6 +80,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   //endregion
 
   //region methods
+  
   Future<void> setColorIndex(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -96,8 +98,9 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -125,7 +128,8 @@ extension com_autonavi_amap_mapcore_FPoint3_Batch on List<com_autonavi_amap_mapc
   //endregion
 
   //region methods
-  Future<void> setColorIndex_batch(List<int> var1) async {
+  
+  Future<List<void>> setColorIndex_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

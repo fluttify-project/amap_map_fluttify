@@ -4,3 +4,30 @@
 //////////////////////////////////////////////////////////
 import 'package:flutter/services.dart';
 
+Future<String> get MAOfflineMapErrorDomain async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getMAOfflineMapErrorDomain');
+}
+
+Future<String> get MAOfflineMapDownloadReceivedSizeKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getMAOfflineMapDownloadReceivedSizeKey');
+}
+
+Future<String> get MAOfflineMapDownloadExpectedSizeKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getMAOfflineMapDownloadExpectedSizeKey');
+}
+
+Future<String> get kMAMapLayerCenterMapPointKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getkMAMapLayerCenterMapPointKey');
+}
+
+Future<String> get kMAMapLayerZoomLevelKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getkMAMapLayerZoomLevelKey');
+}
+
+Future<String> get kMAMapLayerRotationDegreeKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getkMAMapLayerRotationDegreeKey');
+}
+
+Future<String> get kMAMapLayerCameraDegreeKey async {
+  return MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('getkMAMapLayerCameraDegreeKey');
+}

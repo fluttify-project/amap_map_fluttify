@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_UiSettings extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> setScaleControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomControlsEnabled(bool var1) async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCompassEnabled(bool var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationButtonEnabled(bool var1) async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setScrollGesturesEnabled(bool var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomGesturesEnabled(bool var1) async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTiltGesturesEnabled(bool var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotateGesturesEnabled(bool var1) async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAllGesturesEnabled(bool var1) async {
     // print log
@@ -225,10 +243,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoPosition(int var1) async {
     // print log
@@ -247,10 +267,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomPosition(int var1) async {
     // print log
@@ -269,10 +291,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getZoomPosition() async {
     // print log
@@ -291,10 +315,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isScaleControlsEnabled() async {
     // print log
@@ -313,10 +339,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isZoomControlsEnabled() async {
     // print log
@@ -335,10 +363,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isCompassEnabled() async {
     // print log
@@ -357,10 +387,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMyLocationButtonEnabled() async {
     // print log
@@ -379,10 +411,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isScrollGesturesEnabled() async {
     // print log
@@ -401,10 +435,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isZoomGesturesEnabled() async {
     // print log
@@ -423,10 +459,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isTiltGesturesEnabled() async {
     // print log
@@ -445,10 +483,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isRotateGesturesEnabled() async {
     // print log
@@ -467,10 +507,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getLogoPosition() async {
     // print log
@@ -489,10 +531,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isIndoorSwitchEnabled() async {
     // print log
@@ -511,10 +555,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorSwitchEnabled(bool var1) async {
     // print log
@@ -533,10 +579,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoMarginRate(int var1, double var2) async {
     // print log
@@ -555,10 +603,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getLogoMarginRate(int var1) async {
     // print log
@@ -577,10 +627,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoLeftMargin(int var1) async {
     // print log
@@ -599,10 +651,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoBottomMargin(int var1) async {
     // print log
@@ -621,10 +675,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomInByScreenCenter(bool var1) async {
     // print log
@@ -643,10 +699,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setGestureScaleByMapCenter(bool var1) async {
     // print log
@@ -665,10 +723,12 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isGestureScaleByMapCenter() async {
     // print log
@@ -687,8 +747,9 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -705,7 +766,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
   //endregion
 
   //region methods
-  Future<void> setScaleControlsEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setScaleControlsEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -724,7 +786,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setZoomControlsEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setZoomControlsEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -743,7 +806,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setCompassEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setCompassEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -762,7 +826,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setMyLocationButtonEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setMyLocationButtonEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -781,7 +846,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setScrollGesturesEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setScrollGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -800,7 +866,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setZoomGesturesEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setZoomGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -819,7 +886,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setTiltGesturesEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setTiltGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -838,7 +906,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setRotateGesturesEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setRotateGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -857,7 +926,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setAllGesturesEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setAllGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -876,7 +946,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setLogoPosition_batch(List<int> var1) async {
+  
+  Future<List<void>> setLogoPosition_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -895,7 +966,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setZoomPosition_batch(List<int> var1) async {
+  
+  Future<List<void>> setZoomPosition_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -913,6 +985,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getZoomPosition_batch() async {
     if (false) {
@@ -933,6 +1006,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
+  
   Future<List<bool>> isScaleControlsEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -951,6 +1025,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isZoomControlsEnabled_batch() async {
     if (false) {
@@ -971,6 +1046,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
+  
   Future<List<bool>> isCompassEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -989,6 +1065,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isMyLocationButtonEnabled_batch() async {
     if (false) {
@@ -1009,6 +1086,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
+  
   Future<List<bool>> isScrollGesturesEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1027,6 +1105,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isZoomGesturesEnabled_batch() async {
     if (false) {
@@ -1047,6 +1126,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
+  
   Future<List<bool>> isTiltGesturesEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1065,6 +1145,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isRotateGesturesEnabled_batch() async {
     if (false) {
@@ -1085,6 +1166,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
+  
   Future<List<int>> getLogoPosition_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1103,6 +1185,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isIndoorSwitchEnabled_batch() async {
     if (false) {
@@ -1123,7 +1206,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setIndoorSwitchEnabled_batch(List<bool> var1) async {
+  
+  Future<List<void>> setIndoorSwitchEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1142,7 +1226,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setLogoMarginRate_batch(List<int> var1, List<double> var2) async {
+  
+  Future<List<void>> setLogoMarginRate_batch(List<int> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1160,6 +1245,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getLogoMarginRate_batch(List<int> var1) async {
     if (false) {
@@ -1180,7 +1266,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setLogoLeftMargin_batch(List<int> var1) async {
+  
+  Future<List<void>> setLogoLeftMargin_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1199,7 +1286,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setLogoBottomMargin_batch(List<int> var1) async {
+  
+  Future<List<void>> setLogoBottomMargin_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1218,7 +1306,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setZoomInByScreenCenter_batch(List<bool> var1) async {
+  
+  Future<List<void>> setZoomInByScreenCenter_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1237,7 +1326,8 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
     }
   }
   
-  Future<void> setGestureScaleByMapCenter_batch(List<bool> var1) async {
+  
+  Future<List<void>> setGestureScaleByMapCenter_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1255,6 +1345,7 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isGestureScaleByMapCenter_batch() async {
     if (false) {

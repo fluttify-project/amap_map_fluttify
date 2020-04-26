@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getCustomerId() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomerId(String var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getSnippet() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSnippet(String var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getTitle() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTitle(String var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Object> getObject() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setObject(Object var1) async {
     // print log
@@ -309,8 +333,9 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -327,6 +352,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_LatLng>> getLatLng_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -346,7 +372,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setLatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setLatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -364,6 +391,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getCustomerId_batch() async {
     if (false) {
@@ -384,7 +412,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setCustomerId_batch(List<String> var1) async {
+  
+  Future<List<void>> setCustomerId_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -402,6 +431,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getSnippet_batch() async {
     if (false) {
@@ -422,7 +452,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setSnippet_batch(List<String> var1) async {
+  
+  Future<List<void>> setSnippet_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -440,6 +471,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getTitle_batch() async {
     if (false) {
@@ -460,7 +492,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setTitle_batch(List<String> var1) async {
+  
+  Future<List<void>> setTitle_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -478,6 +511,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_IPoint>> getIPoint_batch() async {
     if (false) {
@@ -498,7 +532,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setIPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
+  
+  Future<List<void>> setIPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -516,6 +551,7 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<Object>> getObject_batch() async {
     if (false) {
@@ -536,7 +572,8 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setObject_batch(List<Object> var1) async {
+  
+  Future<List<void>> setObject_batch(List<Object> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

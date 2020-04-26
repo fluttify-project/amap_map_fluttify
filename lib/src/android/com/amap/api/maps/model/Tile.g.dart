@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -67,6 +68,7 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
   //endregion
 
   //region methods
+  
   static Future<com_amap_api_maps_model_Tile> obtain(int var0, int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -84,8 +86,9 @@ class com_amap_api_maps_model_Tile extends java_lang_Object with android_os_Parc
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Tile()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Tile()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Tile()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -122,6 +125,7 @@ extension com_amap_api_maps_model_Tile_Batch on List<com_amap_api_maps_model_Til
   //endregion
 
   //region methods
+  
   static Future<List<com_amap_api_maps_model_Tile>> obtain_batch(List<int> var0, List<int> var1, List<Uint8List> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -55,6 +56,7 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MAParticleOverlay> particleOverlayWithOption(MAParticleOverlayOptions option) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,10 +74,12 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {
     // print log
@@ -94,8 +98,9 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -118,6 +123,7 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
   //endregion
 
   //region methods
+  
   static Future<List<MAParticleOverlay>> particleOverlayWithOption_batch(List<MAParticleOverlayOptions> option) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -137,7 +143,8 @@ extension MAParticleOverlay_Batch on List<MAParticleOverlay> {
     }
   }
   
-  Future<void> updateOverlayOption_batch(List<MAParticleOverlayOptions> overlayOption) async {
+  
+  Future<List<void>> updateOverlayOption_batch(List<MAParticleOverlayOptions> overlayOption) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

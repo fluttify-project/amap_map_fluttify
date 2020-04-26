@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener, com_autonavi_amap_mapcore_IAMapEngineCallback {
   //region constants
@@ -32,6 +33,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
   //endregion
 
   //region methods
+  
   Future<void> receiveNetData(int var1, int var2, Uint8List var4, int var5) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getMapDataTaskIsCancel(int var1, int var2) async {
     // print log
@@ -71,10 +75,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> finishDownLoad(int var1, int var2) async {
     // print log
@@ -93,10 +99,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> netError(int var1, int var2, int var4) async {
     // print log
@@ -115,10 +123,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapLoaderToTask(int var1, int var2, com_autonavi_amap_mapcore_maploader_AMapLoader var4) async {
     // print log
@@ -137,10 +147,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<android_content_Context> getContext() async {
     // print log
@@ -159,10 +171,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getUserAgent() async {
     // print log
@@ -181,10 +195,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParamater(int var1, int var2, int var3, int var4, int var5, int var6) async {
     // print log
@@ -203,10 +219,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onClearCache(int var1) async {
     // print log
@@ -225,10 +243,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInMapAction(int var1) async {
     // print log
@@ -247,10 +267,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getNativeInstance() async {
     // print log
@@ -269,10 +291,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> canStopMapRender(int var1) async {
     // print log
@@ -291,10 +315,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getEngineIDWithType(int var1) async {
     // print log
@@ -313,10 +339,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isEngineCreated(int var1) async {
     // print log
@@ -335,10 +363,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapStateInstance(int var1) async {
     // print log
@@ -357,10 +387,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getEngineIDWithGestureInfo(com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo var1) async {
     // print log
@@ -379,10 +411,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setServiceViewRect(int var1, int var2, int var3, int var4, int var5, int var6, int var7) async {
     // print log
@@ -401,10 +435,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSrvViewStateBoolValue(int var1, int var2, bool var3) async {
     // print log
@@ -423,10 +459,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getSrvViewStateBoolValue(int var1, int var2) async {
     // print log
@@ -445,10 +483,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getIsProcessBuildingMark(int var1) async {
     // print log
@@ -467,10 +507,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorBuildingToBeActive(int var1, String var2, int var3, String var4) async {
     // print log
@@ -489,10 +531,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapListener(com_autonavi_amap_mapcore_interfaces_IAMapListener var1) async {
     // print log
@@ -511,10 +555,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInternaltexture(int var1, Uint8List var2, int var3) async {
     // print log
@@ -533,10 +579,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_ae_gmap_GLMapState> getMapState(int var1) async {
     // print log
@@ -555,10 +603,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_ae_gmap_GLMapState> getNewMapState(int var1) async {
     // print log
@@ -577,10 +627,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_ae_gmap_GLMapState> getCloneMapState() async {
     // print log
@@ -599,10 +651,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
@@ -621,10 +675,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState__bool(int var1, com_autonavi_ae_gmap_GLMapState var2, bool var3) async {
     // print log
@@ -643,10 +699,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addGestureMessage(int var1, com_autonavi_amap_mapcore_message_AbstractGestureMapMessage var2, bool var3, int var4, int var5) async {
     // print log
@@ -665,10 +723,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> interruptAnimation() async {
     // print log
@@ -687,10 +747,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addGroupAnimation(int var1, int var2, double var3, int var4, int var5, int var6, int var7, com_amap_api_maps_AMap_CancelableCallback var8) async {
     // print log
@@ -737,10 +799,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInMapAnimation(int var1) async {
     // print log
@@ -759,10 +823,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getAnimateionsCount() async {
     // print log
@@ -781,10 +847,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearAllMessages(int var1) async {
     // print log
@@ -803,10 +871,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearAnimations__int__bool(int var1, bool var2) async {
     // print log
@@ -825,10 +895,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearAnimations__int__bool__int(int var1, bool var2, int var3) async {
     // print log
@@ -847,10 +919,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startMapSlidAnim(int var1, android_graphics_Point var2, double var3, double var4) async {
     // print log
@@ -869,10 +943,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startPivotZoomRotateAnim(int var1, android_graphics_Point var2, double var3, int var4, int var5) async {
     // print log
@@ -891,10 +967,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStateMessageCount() async {
     // print log
@@ -913,10 +991,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addMessage(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1, bool var2) async {
     // print log
@@ -935,10 +1015,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapOpenLayer(String var1) async {
     // print log
@@ -957,10 +1039,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> pushRendererState() async {
     // print log
@@ -979,10 +1063,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> popRendererState() async {
     // print log
@@ -1001,10 +1087,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Int32List> getMapModeState(int var1, bool var2) async {
     // print log
@@ -1023,10 +1111,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Int32List;
     
-      return __result__ as Int32List;
+      return __return__;
     }
   }
+  
   
   Future<void> putResourceData(int var1, Uint8List var2) async {
     // print log
@@ -1045,10 +1135,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getLabelBuffer(int var1, int var2, int var3, int var4) async {
     // print log
@@ -1067,10 +1159,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<int> createOverlay(int var1, int var2) async {
     // print log
@@ -1089,10 +1183,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> addNativeOverlay(int var1, int var2, int var3) async {
     // print log
@@ -1111,10 +1207,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getGlOverlayMgrPtr(int var1) async {
     // print log
@@ -1133,10 +1231,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) async {
     // print log
@@ -1155,10 +1255,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> destroyOverlay(int var0, int var1) async {
     // print log
@@ -1177,10 +1279,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSimple3DEnable(int var1, bool var2) async {
     // print log
@@ -1199,10 +1303,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRoadArrowEnable(int var1, bool var2) async {
     // print log
@@ -1221,10 +1327,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSkyTexture(int var1, Uint8List var2) async {
     // print log
@@ -1243,10 +1351,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBackgroundTexture(int var1, Uint8List var2) async {
     // print log
@@ -1265,10 +1375,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomStyleTexture(int var1, Uint8List var2) async {
     // print log
@@ -1287,10 +1399,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomStyleData(int var1, Uint8List var2, Uint8List var3) async {
     // print log
@@ -1309,10 +1423,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTrafficEnable(int var1, bool var2) async {
     // print log
@@ -1331,10 +1447,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBuildingEnable(int var1, bool var2) async {
     // print log
@@ -1353,10 +1471,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLabelEnable(int var1, bool var2) async {
     // print log
@@ -1375,10 +1495,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAllContentEnable(int var1, bool var2) async {
     // print log
@@ -1397,10 +1519,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setProjectionCenter(int var1, int var2, int var3) async {
     // print log
@@ -1419,10 +1543,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTrafficStyle__int__int__int__int__int__bool(int var1, int var2, int var3, int var4, int var5, bool var6) async {
     // print log
@@ -1441,10 +1567,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTrafficStyle__int__int__int__int__int(int var1, int var2, int var3, int var4, int var5) async {
     // print log
@@ -1463,10 +1591,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startCheckEngineRenderComplete() async {
     // print log
@@ -1485,10 +1615,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getCurTileIDs(int var1, Int32List var2) async {
     // print log
@@ -1507,10 +1639,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorEnable(int var1, bool var2) async {
     // print log
@@ -1529,10 +1663,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOfflineDataEnable(int var1, bool var2) async {
     // print log
@@ -1551,10 +1687,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setHighlightSubwayEnable(int var1, bool var2) async {
     // print log
@@ -1573,10 +1711,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBuildingTextureEnable(int var1, bool var2) async {
     // print log
@@ -1595,10 +1735,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> initNativeTexture(int var1) async {
     // print log
@@ -1617,10 +1759,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> AddOverlayTexture(int var1, android_graphics_Bitmap var2, int var3, int var4) async {
     // print log
@@ -1639,10 +1783,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> updateNativeArrowOverlay(int var1, String var2, Int32List var3, Int32List var4, int var5, int var6, int var7, double var8, int var9, int var10, int var11, bool var12) async {
     // print log
@@ -1661,10 +1807,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeNativeOverlay(int var1, String var2) async {
     // print log
@@ -1683,10 +1831,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeNativeAllOverlay(int var1) async {
     // print log
@@ -1705,10 +1855,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> createAMapInstance(com_autonavi_ae_gmap_GLMapEngine_InitParam var1) async {
     // print log
@@ -1727,10 +1879,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> createAMapEngineWithFrame(com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam var1) async {
     // print log
@@ -1749,10 +1903,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> changeSurface(int var1, int var2) async {
     // print log
@@ -1771,10 +1927,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> renderAMap() async {
     // print log
@@ -1793,10 +1951,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> releaseNetworkState() async {
     // print log
@@ -1815,10 +1975,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> cancelAllAMapDownload() async {
     // print log
@@ -1837,10 +1999,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroyAMapEngine() async {
     // print log
@@ -1859,10 +2023,12 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<String> nativeGetMapEngineVersion(int var0) async {
     // print log
@@ -1881,8 +2047,9 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -1899,7 +2066,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
   //endregion
 
   //region methods
-  Future<void> receiveNetData_batch(List<int> var1, List<int> var2, List<Uint8List> var4, List<int> var5) async {
+  
+  Future<List<void>> receiveNetData_batch(List<int> var1, List<int> var2, List<Uint8List> var4, List<int> var5) async {
     if (var1.length != var2.length || var2.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
@@ -1917,6 +2085,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getMapDataTaskIsCancel_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
@@ -1937,7 +2106,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> finishDownLoad_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> finishDownLoad_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1956,7 +2126,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> netError_batch(List<int> var1, List<int> var2, List<int> var4) async {
+  
+  Future<List<void>> netError_batch(List<int> var1, List<int> var2, List<int> var4) async {
     if (var1.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -1975,7 +2146,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setMapLoaderToTask_batch(List<int> var1, List<int> var2, List<com_autonavi_amap_mapcore_maploader_AMapLoader> var4) async {
+  
+  Future<List<void>> setMapLoaderToTask_batch(List<int> var1, List<int> var2, List<com_autonavi_amap_mapcore_maploader_AMapLoader> var4) async {
     if (var1.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -1993,6 +2165,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<android_content_Context>> getContext_batch() async {
     if (false) {
@@ -2013,6 +2186,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<String>> getUserAgent_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2032,7 +2206,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setParamater_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6) async {
+  
+  Future<List<void>> setParamater_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
       return Future.error('all args must have same length!');
     }
@@ -2051,7 +2226,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> onClearCache_batch(List<int> var1) async {
+  
+  Future<List<void>> onClearCache_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2069,6 +2245,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isInMapAction_batch(List<int> var1) async {
     if (false) {
@@ -2089,6 +2266,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> getNativeInstance_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2107,6 +2285,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> canStopMapRender_batch(List<int> var1) async {
     if (false) {
@@ -2127,6 +2306,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> getEngineIDWithType_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2145,6 +2325,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isEngineCreated_batch(List<int> var1) async {
     if (false) {
@@ -2165,6 +2346,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> getMapStateInstance_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2183,6 +2365,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getEngineIDWithGestureInfo_batch(List<com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo> var1) async {
     if (false) {
@@ -2203,7 +2386,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setServiceViewRect_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7) async {
+  
+  Future<List<void>> setServiceViewRect_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<int> var6, List<int> var7) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
       return Future.error('all args must have same length!');
     }
@@ -2222,7 +2406,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setSrvViewStateBoolValue_batch(List<int> var1, List<int> var2, List<bool> var3) async {
+  
+  Future<List<void>> setSrvViewStateBoolValue_batch(List<int> var1, List<int> var2, List<bool> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2240,6 +2425,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getSrvViewStateBoolValue_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
@@ -2260,6 +2446,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<bool>> getIsProcessBuildingMark_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2279,7 +2466,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setIndoorBuildingToBeActive_batch(List<int> var1, List<String> var2, List<int> var3, List<String> var4) async {
+  
+  Future<List<void>> setIndoorBuildingToBeActive_batch(List<int> var1, List<String> var2, List<int> var3, List<String> var4) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -2298,7 +2486,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setMapListener_batch(List<com_autonavi_amap_mapcore_interfaces_IAMapListener> var1) async {
+  
+  Future<List<void>> setMapListener_batch(List<com_autonavi_amap_mapcore_interfaces_IAMapListener> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2317,7 +2506,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setInternaltexture_batch(List<int> var1, List<Uint8List> var2, List<int> var3) async {
+  
+  Future<List<void>> setInternaltexture_batch(List<int> var1, List<Uint8List> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2335,6 +2525,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_ae_gmap_GLMapState>> getMapState_batch(List<int> var1) async {
     if (false) {
@@ -2355,6 +2546,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<com_autonavi_ae_gmap_GLMapState>> getNewMapState_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2373,6 +2565,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_ae_gmap_GLMapState>> getCloneMapState_batch() async {
     if (false) {
@@ -2393,7 +2586,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState_batch(List<int> var1, List<com_autonavi_ae_gmap_GLMapState> var2) async {
+  
+  Future<List<void>> setMapState__int__com_autonavi_ae_gmap_GLMapState_batch(List<int> var1, List<com_autonavi_ae_gmap_GLMapState> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2412,7 +2606,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setMapState__int__com_autonavi_ae_gmap_GLMapState__bool_batch(List<int> var1, List<com_autonavi_ae_gmap_GLMapState> var2, List<bool> var3) async {
+  
+  Future<List<void>> setMapState__int__com_autonavi_ae_gmap_GLMapState__bool_batch(List<int> var1, List<com_autonavi_ae_gmap_GLMapState> var2, List<bool> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2431,7 +2626,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> addGestureMessage_batch(List<int> var1, List<com_autonavi_amap_mapcore_message_AbstractGestureMapMessage> var2, List<bool> var3, List<int> var4, List<int> var5) async {
+  
+  Future<List<void>> addGestureMessage_batch(List<int> var1, List<com_autonavi_amap_mapcore_message_AbstractGestureMapMessage> var2, List<bool> var3, List<int> var4, List<int> var5) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
@@ -2450,7 +2646,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> interruptAnimation_batch() async {
+  
+  Future<List<void>> interruptAnimation_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2468,6 +2665,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isInMapAnimation_batch(List<int> var1) async {
     if (false) {
@@ -2488,6 +2686,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> getAnimateionsCount_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2507,7 +2706,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> clearAllMessages_batch(List<int> var1) async {
+  
+  Future<List<void>> clearAllMessages_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2526,7 +2726,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> clearAnimations__int__bool_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> clearAnimations__int__bool_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2545,7 +2746,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> clearAnimations__int__bool__int_batch(List<int> var1, List<bool> var2, List<int> var3) async {
+  
+  Future<List<void>> clearAnimations__int__bool__int_batch(List<int> var1, List<bool> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2564,7 +2766,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> startMapSlidAnim_batch(List<int> var1, List<android_graphics_Point> var2, List<double> var3, List<double> var4) async {
+  
+  Future<List<void>> startMapSlidAnim_batch(List<int> var1, List<android_graphics_Point> var2, List<double> var3, List<double> var4) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -2583,7 +2786,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> startPivotZoomRotateAnim_batch(List<int> var1, List<android_graphics_Point> var2, List<double> var3, List<int> var4, List<int> var5) async {
+  
+  Future<List<void>> startPivotZoomRotateAnim_batch(List<int> var1, List<android_graphics_Point> var2, List<double> var3, List<int> var4, List<int> var5) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
@@ -2601,6 +2805,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getStateMessageCount_batch() async {
     if (false) {
@@ -2621,7 +2826,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> addMessage_batch(List<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> var1, List<bool> var2) async {
+  
+  Future<List<void>> addMessage_batch(List<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2640,7 +2846,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setMapOpenLayer_batch(List<String> var1) async {
+  
+  Future<List<void>> setMapOpenLayer_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2659,7 +2866,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> pushRendererState_batch() async {
+  
+  Future<List<void>> pushRendererState_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2678,7 +2886,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> popRendererState_batch() async {
+  
+  Future<List<void>> popRendererState_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -2696,6 +2905,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<Int32List>> getMapModeState_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
@@ -2716,7 +2926,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> putResourceData_batch(List<int> var1, List<Uint8List> var2) async {
+  
+  Future<List<void>> putResourceData_batch(List<int> var1, List<Uint8List> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2734,6 +2945,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<Uint8List>> getLabelBuffer_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
@@ -2754,6 +2966,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> createOverlay_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -2772,6 +2985,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   Future<List<String>> addNativeOverlay_batch(List<int> var1, List<int> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
@@ -2792,6 +3006,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
+  
   Future<List<int>> getGlOverlayMgrPtr_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -2811,7 +3026,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> addOverlayTexture_batch(List<int> var1, List<com_autonavi_ae_gmap_gloverlay_GLTextureProperty> var2) async {
+  
+  Future<List<void>> addOverlayTexture_batch(List<int> var1, List<com_autonavi_ae_gmap_gloverlay_GLTextureProperty> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2830,7 +3046,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  static Future<void> destroyOverlay_batch(List<int> var0, List<int> var1) async {
+  
+  static Future<List<void>> destroyOverlay_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -2849,7 +3066,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setSimple3DEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setSimple3DEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2868,7 +3086,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setRoadArrowEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setRoadArrowEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2887,7 +3106,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setSkyTexture_batch(List<int> var1, List<Uint8List> var2) async {
+  
+  Future<List<void>> setSkyTexture_batch(List<int> var1, List<Uint8List> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2906,7 +3126,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setBackgroundTexture_batch(List<int> var1, List<Uint8List> var2) async {
+  
+  Future<List<void>> setBackgroundTexture_batch(List<int> var1, List<Uint8List> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2925,7 +3146,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setCustomStyleTexture_batch(List<int> var1, List<Uint8List> var2) async {
+  
+  Future<List<void>> setCustomStyleTexture_batch(List<int> var1, List<Uint8List> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2944,7 +3166,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setCustomStyleData_batch(List<int> var1, List<Uint8List> var2, List<Uint8List> var3) async {
+  
+  Future<List<void>> setCustomStyleData_batch(List<int> var1, List<Uint8List> var2, List<Uint8List> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -2963,7 +3186,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setTrafficEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setTrafficEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -2982,7 +3206,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setBuildingEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setBuildingEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3001,7 +3226,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setLabelEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setLabelEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3020,7 +3246,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setAllContentEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setAllContentEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3039,7 +3266,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setProjectionCenter_batch(List<int> var1, List<int> var2, List<int> var3) async {
+  
+  Future<List<void>> setProjectionCenter_batch(List<int> var1, List<int> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -3058,7 +3286,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setTrafficStyle__int__int__int__int__int__bool_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<bool> var6) async {
+  
+  Future<List<void>> setTrafficStyle__int__int__int__int__int__bool_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5, List<bool> var6) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length) {
       return Future.error('all args must have same length!');
     }
@@ -3077,7 +3306,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setTrafficStyle__int__int__int__int__int_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5) async {
+  
+  Future<List<void>> setTrafficStyle__int__int__int__int__int_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4, List<int> var5) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
@@ -3096,7 +3326,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> startCheckEngineRenderComplete_batch() async {
+  
+  Future<List<void>> startCheckEngineRenderComplete_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3115,7 +3346,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> getCurTileIDs_batch(List<int> var1, List<Int32List> var2) async {
+  
+  Future<List<void>> getCurTileIDs_batch(List<int> var1, List<Int32List> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3134,7 +3366,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setIndoorEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setIndoorEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3153,7 +3386,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setOfflineDataEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setOfflineDataEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3172,7 +3406,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setHighlightSubwayEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setHighlightSubwayEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3191,7 +3426,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> setBuildingTextureEnable_batch(List<int> var1, List<bool> var2) async {
+  
+  Future<List<void>> setBuildingTextureEnable_batch(List<int> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3210,7 +3446,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> initNativeTexture_batch(List<int> var1) async {
+  
+  Future<List<void>> initNativeTexture_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3229,7 +3466,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> AddOverlayTexture_batch(List<int> var1, List<android_graphics_Bitmap> var2, List<int> var3, List<int> var4) async {
+  
+  Future<List<void>> AddOverlayTexture_batch(List<int> var1, List<android_graphics_Bitmap> var2, List<int> var3, List<int> var4) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -3248,7 +3486,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> updateNativeArrowOverlay_batch(List<int> var1, List<String> var2, List<Int32List> var3, List<Int32List> var4, List<int> var5, List<int> var6, List<int> var7, List<double> var8, List<int> var9, List<int> var10, List<int> var11, List<bool> var12) async {
+  
+  Future<List<void>> updateNativeArrowOverlay_batch(List<int> var1, List<String> var2, List<Int32List> var3, List<Int32List> var4, List<int> var5, List<int> var6, List<int> var7, List<double> var8, List<int> var9, List<int> var10, List<int> var11, List<bool> var12) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length || var11.length != var12.length) {
       return Future.error('all args must have same length!');
     }
@@ -3267,7 +3506,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> removeNativeOverlay_batch(List<int> var1, List<String> var2) async {
+  
+  Future<List<void>> removeNativeOverlay_batch(List<int> var1, List<String> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3286,7 +3526,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> removeNativeAllOverlay_batch(List<int> var1) async {
+  
+  Future<List<void>> removeNativeAllOverlay_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3305,7 +3546,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> createAMapInstance_batch(List<com_autonavi_ae_gmap_GLMapEngine_InitParam> var1) async {
+  
+  Future<List<void>> createAMapInstance_batch(List<com_autonavi_ae_gmap_GLMapEngine_InitParam> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3324,7 +3566,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> createAMapEngineWithFrame_batch(List<com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam> var1) async {
+  
+  Future<List<void>> createAMapEngineWithFrame_batch(List<com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3343,7 +3586,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> changeSurface_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> changeSurface_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -3362,7 +3606,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> renderAMap_batch() async {
+  
+  Future<List<void>> renderAMap_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3381,7 +3626,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> releaseNetworkState_batch() async {
+  
+  Future<List<void>> releaseNetworkState_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3400,7 +3646,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> cancelAllAMapDownload_batch() async {
+  
+  Future<List<void>> cancelAllAMapDownload_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3419,7 +3666,8 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     }
   }
   
-  Future<void> destroyAMapEngine_batch() async {
+  
+  Future<List<void>> destroyAMapEngine_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -3437,6 +3685,7 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
       return typedResult;
     }
   }
+  
   
   static Future<List<String>> nativeGetMapEngineVersion_batch(List<int> var0) async {
     if (false) {

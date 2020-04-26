@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<double> getFov() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAspectRatio() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRotate() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getX() async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getY() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZ() async {
     // print log
@@ -177,8 +189,9 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -195,6 +208,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
   //endregion
 
   //region methods
+  
   Future<List<double>> getFov_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -213,6 +227,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAspectRatio_batch() async {
     if (false) {
@@ -233,6 +248,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<double>> getRotate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -251,6 +267,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getX_batch() async {
     if (false) {
@@ -271,6 +288,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<double>> getY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -289,6 +307,7 @@ extension com_amap_api_maps_model_AMapCameraInfo_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZ_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   //endregion
 
   //region methods
+  
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnimationValue(double var1, double var2, int var3) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getCurValue() async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getStartValue() async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getEndValue() async {
     // print log
@@ -155,8 +165,9 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -173,7 +184,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
   //endregion
 
   //region methods
-  Future<void> reset_batch() async {
+  
+  Future<List<void>> reset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -192,7 +204,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
     }
   }
   
-  Future<void> setAnimationValue_batch(List<double> var1, List<double> var2, List<int> var3) async {
+  
+  Future<List<void>> setAnimationValue_batch(List<double> var1, List<double> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -210,6 +223,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getCurValue_batch() async {
     if (false) {
@@ -230,6 +244,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
     }
   }
   
+  
   Future<List<double>> getStartValue_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -248,6 +263,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglAnimation1V_Batch on List<com_aut
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getEndValue_batch() async {
     if (false) {

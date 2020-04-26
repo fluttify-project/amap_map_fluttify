@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_Text extends java_lang_Object  {
   //region constants
@@ -37,6 +38,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -54,10 +56,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -76,10 +80,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getId() async {
     // print log
@@ -98,10 +104,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -120,10 +128,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -142,10 +152,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setText(String var1) async {
     // print log
@@ -164,10 +176,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getText() async {
     // print log
@@ -186,10 +200,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBackgroundColor(int var1) async {
     // print log
@@ -208,10 +224,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getBackgroundColor() async {
     // print log
@@ -230,10 +248,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFontColor(int var1) async {
     // print log
@@ -252,10 +272,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFontColor() async {
     // print log
@@ -274,10 +296,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFontSize(int var1) async {
     // print log
@@ -296,10 +320,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFontSize() async {
     // print log
@@ -318,10 +344,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAlign(int var1, int var2) async {
     // print log
@@ -340,10 +368,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getAlignX() async {
     // print log
@@ -362,10 +392,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getAlignY() async {
     // print log
@@ -384,10 +416,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -406,10 +440,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -428,10 +464,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setObject(Object var1) async {
     // print log
@@ -450,10 +488,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Object> getObject() async {
     // print log
@@ -472,10 +512,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotate(double var1) async {
     // print log
@@ -494,10 +536,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRotate() async {
     // print log
@@ -516,10 +560,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZIndex(double var1) async {
     // print log
@@ -538,10 +584,12 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -560,8 +608,9 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -578,7 +627,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
   //endregion
 
   //region methods
-  Future<void> remove_batch() async {
+  
+  Future<List<void>> remove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -597,7 +647,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -615,6 +666,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getId_batch() async {
     if (false) {
@@ -635,7 +687,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setPosition_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setPosition_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -653,6 +706,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
     if (false) {
@@ -673,7 +727,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setText_batch(List<String> var1) async {
+  
+  Future<List<void>> setText_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -691,6 +746,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getText_batch() async {
     if (false) {
@@ -711,7 +767,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setBackgroundColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setBackgroundColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -729,6 +786,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getBackgroundColor_batch() async {
     if (false) {
@@ -749,7 +807,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setFontColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setFontColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -767,6 +826,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFontColor_batch() async {
     if (false) {
@@ -787,7 +847,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setFontSize_batch(List<int> var1) async {
+  
+  Future<List<void>> setFontSize_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -805,6 +866,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFontSize_batch() async {
     if (false) {
@@ -825,7 +887,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setAlign_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> setAlign_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -843,6 +906,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getAlignX_batch() async {
     if (false) {
@@ -863,6 +927,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
+  
   Future<List<int>> getAlignY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -882,7 +947,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -900,6 +966,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -920,7 +987,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setObject_batch(List<Object> var1) async {
+  
+  Future<List<void>> setObject_batch(List<Object> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -938,6 +1006,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<Object>> getObject_batch() async {
     if (false) {
@@ -958,7 +1027,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setRotate_batch(List<double> var1) async {
+  
+  Future<List<void>> setRotate_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -976,6 +1046,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getRotate_batch() async {
     if (false) {
@@ -996,7 +1067,8 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
     }
   }
   
-  Future<void> setZIndex_batch(List<double> var1) async {
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1014,6 +1086,7 @@ extension com_amap_api_maps_model_Text_Batch on List<com_amap_api_maps_model_Tex
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {

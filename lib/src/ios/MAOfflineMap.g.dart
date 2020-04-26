@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAOfflineMap extends NSObject  {
   //region constants
@@ -85,6 +86,7 @@ class MAOfflineMap extends NSObject  {
   //endregion
 
   //region methods
+  
   static Future<MAOfflineMap> sharedOfflineMap() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -102,10 +104,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // print log
@@ -143,10 +147,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
     // print log
@@ -184,10 +190,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
     // print log
@@ -206,10 +214,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> pauseItem(MAOfflineItem item) async {
     // print log
@@ -228,10 +238,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> deleteItem(MAOfflineItem item) async {
     // print log
@@ -250,10 +262,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> cancelAll() async {
     // print log
@@ -272,10 +286,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearDisk() async {
     // print log
@@ -294,10 +310,12 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> checkNewestVersion(void newestVersionBlock(bool hasNewestVersion)) async {
     // print log
@@ -335,8 +353,143 @@ class MAOfflineMap extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> downloadCity_downloadBlock(MAOfflineCity city, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOfflineMap@$refId::downloadCity([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_downloadBlock', {"city": city.refId, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MAOfflineMap::downloadCity_downloadBlock::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineCity city, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOfflineMap@$refId::downloadCity([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock', {"city": city.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MAOfflineMap::downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<bool> isDownloadingForCity(MAOfflineCity city) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForCity', {"city": city.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> pause(MAOfflineCity city) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAOfflineMap@$refId::pause([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pause', {"city": city.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
@@ -394,6 +547,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
   //endregion
 
   //region methods
+  
   static Future<List<MAOfflineMap>> sharedOfflineMap_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -412,6 +566,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isDownloadingForItem_batch(List<MAOfflineItem> item) async {
     if (false) {
@@ -432,6 +587,7 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   }
   
+  
   Future<List<bool>> pauseItem_batch(List<MAOfflineItem> item) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -451,7 +607,8 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   }
   
-  Future<void> deleteItem_batch(List<MAOfflineItem> item) async {
+  
+  Future<List<void>> deleteItem_batch(List<MAOfflineItem> item) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -470,7 +627,8 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   }
   
-  Future<void> cancelAll_batch() async {
+  
+  Future<List<void>> cancelAll_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -489,13 +647,54 @@ extension MAOfflineMap_Batch on List<MAOfflineMap> {
     }
   }
   
-  Future<void> clearDisk_batch() async {
+  
+  Future<List<void>> clearDisk_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::clearDisk_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<bool>> isDownloadingForCity_batch(List<MAOfflineCity> city) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForCity_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"city": city[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<void>> pause_batch(List<MAOfflineCity> city) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pause_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"city": city[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

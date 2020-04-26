@@ -26,28 +26,30 @@ extern BOOL enableLog;
 }
 
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
-  return [[MAMapViewPlatformView alloc] initWithViewId:viewId registrar:_registrar];
+  return [[MAMapViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar];
 }
 
 @end
 
 @implementation MAMapViewPlatformView {
-  NSInteger _viewId;
+  int64_t _viewId;
+  CGRect _frame;
   NSDictionary<NSString *, Handler> *_handlerMap;
 }
 
-- (instancetype)initWithViewId:(NSInteger)viewId registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
+- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   self = [super init];
   if (self) {
     _viewId = viewId;
     _registrar = registrar;
+    _frame = frame;
   }
 
   return self;
 }
 
 - (UIView *)view {
-  MAMapView *view = [[MAMapView alloc] init];
+  MAMapView *view = [[MAMapView alloc] initWithFrame:_frame];
   // 这里用一个magic number调整一下id
   HEAP[@(2147483647 - _viewId)] = view;
 
@@ -438,6 +440,31 @@ extern BOOL enableLog;
           // result
           // 无返回值
           NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAMapView::takeSnapshotInRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+          CGRect rect;
+          [rectValue getValue:&rect];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::takeSnapshotInRect(%@)", args[@"refId"], args[@"rect"]);
+          }
+      
+          // invoke native method
+          UIImage* result = [ref takeSnapshotInRect: rect];
+      
+          // result
+          // return a ref
+          HEAP[@((result).hash)] = result;
+          NSNumber* jsonableResult = @((result).hash);
       
           methodResult(jsonableResult);
       },
@@ -1540,6 +1567,94 @@ extern BOOL enableLog;
       
           // invoke native method
           [ref clearIndoorMapCache ];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAMapView::setCustomMapStyle": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          NSData* customJson = (NSData*) HEAP[@([args[@"customJson"] integerValue])];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyle(%@)", args[@"refId"], args[@"customJson"]);
+          }
+      
+          // invoke native method
+          [ref setCustomMapStyle : customJson];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAMapView::setCustomMapStyleWithWebData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          NSData* data = (NSData*) HEAP[@([args[@"data"] integerValue])];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleWithWebData(%@)", args[@"refId"], args[@"data"]);
+          }
+      
+          // invoke native method
+          [ref setCustomMapStyleWithWebData : data];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAMapView::setCustomTextureResourcePath": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          NSString* customTextureResourcePath = (NSString*) args[@"customTextureResourcePath"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomTextureResourcePath(%@)", args[@"refId"], args[@"customTextureResourcePath"]);
+          }
+      
+          // invoke native method
+          [ref setCustomTextureResourcePath : customTextureResourcePath];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAMapView::setCustomMapStyleID": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          NSString* customMapStyleID = (NSString*) args[@"customMapStyleID"];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleID(%@)", args[@"refId"], args[@"customMapStyleID"]);
+          }
+      
+          // invoke native method
+          [ref setCustomMapStyleID : customMapStyleID];
       
           // result
           // 无返回值

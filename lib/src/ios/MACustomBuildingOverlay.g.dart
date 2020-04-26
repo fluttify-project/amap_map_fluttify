@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -61,6 +62,7 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -78,10 +80,12 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
@@ -100,8 +104,9 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -131,7 +136,8 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
   //endregion
 
   //region methods
-  Future<void> addCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
+  
+  Future<List<void>> addCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -150,7 +156,8 @@ extension MACustomBuildingOverlay_Batch on List<MACustomBuildingOverlay> {
     }
   }
   
-  Future<void> removeCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
+  
+  Future<List<void>> removeCustomOption_batch(List<MACustomBuildingOverlayOption> option) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

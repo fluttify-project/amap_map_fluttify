@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MATileOverlayRenderer extends MAOverlayRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region methods
+  
   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,10 +74,12 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> reloadData() async {
     // print log
@@ -94,8 +98,9 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -118,6 +123,7 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MATileOverlayRenderer>> initWithTileOverlay_batch(List<MATileOverlay> tileOverlay) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -137,7 +143,8 @@ extension MATileOverlayRenderer_Batch on List<MATileOverlayRenderer> {
     }
   }
   
-  Future<void> reloadData_batch() async {
+  
+  Future<List<void>> reloadData_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

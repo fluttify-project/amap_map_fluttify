@@ -26,28 +26,30 @@ extern BOOL enableLog;
 }
 
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
-  return [[MAPinAnnotationViewPlatformView alloc] initWithViewId:viewId registrar:_registrar];
+  return [[MAPinAnnotationViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar];
 }
 
 @end
 
 @implementation MAPinAnnotationViewPlatformView {
-  NSInteger _viewId;
+  int64_t _viewId;
+  CGRect _frame;
   NSDictionary<NSString *, Handler> *_handlerMap;
 }
 
-- (instancetype)initWithViewId:(NSInteger)viewId registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
+- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   self = [super init];
   if (self) {
     _viewId = viewId;
     _registrar = registrar;
+    _frame = frame;
   }
 
   return self;
 }
 
 - (UIView *)view {
-  MAPinAnnotationView *view = [[MAPinAnnotationView alloc] init];
+  MAPinAnnotationView *view = [[MAPinAnnotationView alloc] initWithFrame:_frame];
   // 这里用一个magic number调整一下id
   HEAP[@(2147483647 - _viewId)] = view;
 

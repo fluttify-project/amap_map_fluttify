@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   //region constants
@@ -72,6 +73,7 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> obtain(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -89,8 +91,9 @@ class com_autonavi_ae_gmap_maploader_ProcessingTile extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -131,6 +134,7 @@ extension com_autonavi_ae_gmap_maploader_ProcessingTile_Batch on List<com_autona
   //endregion
 
   //region methods
+  
   static Future<List<com_autonavi_ae_gmap_maploader_ProcessingTile>> obtain_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');

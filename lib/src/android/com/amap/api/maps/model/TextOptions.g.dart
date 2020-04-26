@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_TextOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> text(String var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> visible(bool var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> zIndex(double var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> rotate(double var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> align(int var1, int var2) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> backgroundColor(int var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> setObject(Object var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> fontColor(int var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TextOptions> fontSize(int var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TextOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getText() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRotate() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getAlignX() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getAlignY() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getBackgroundColor() async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFontColor() async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Object> getObject() async {
     // print log
@@ -441,10 +477,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFontSize() async {
     // print log
@@ -463,10 +501,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -485,10 +525,12 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -507,8 +549,9 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -525,6 +568,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_TextOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -543,6 +587,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_TextOptions>> text_batch(List<String> var1) async {
     if (false) {
@@ -563,6 +608,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_TextOptions>> visible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -581,6 +627,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_TextOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -601,6 +648,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_TextOptions>> rotate_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -619,6 +667,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_TextOptions>> align_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
@@ -639,6 +688,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_TextOptions>> backgroundColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -657,6 +707,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_TextOptions>> setObject_batch(List<Object> var1) async {
     if (false) {
@@ -677,6 +728,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_TextOptions>> fontColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -695,6 +747,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_TextOptions>> fontSize_batch(List<int> var1) async {
     if (false) {
@@ -715,6 +768,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -733,6 +787,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getText_batch() async {
     if (false) {
@@ -753,6 +808,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<double>> getRotate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -771,6 +827,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getAlignX_batch() async {
     if (false) {
@@ -791,6 +848,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<int>> getAlignY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -809,6 +867,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getBackgroundColor_batch() async {
     if (false) {
@@ -829,6 +888,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<int>> getFontColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -847,6 +907,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<Object>> getObject_batch() async {
     if (false) {
@@ -867,6 +928,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<int>> getFontSize_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -886,6 +948,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -904,6 +967,7 @@ extension com_amap_api_maps_model_TextOptions_Batch on List<com_amap_api_maps_mo
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {

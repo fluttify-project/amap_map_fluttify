@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //region constants
@@ -51,6 +52,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<void> initialize(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -68,10 +70,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setNetWorkEnable(bool var0) async {
     // print log
@@ -90,10 +94,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> getNetWorkEnable() async {
     // print log
@@ -112,10 +118,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setApiKey(String var0) async {
     // print log
@@ -134,10 +142,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<String> getVersion() async {
     // print log
@@ -156,10 +166,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> loadWorldGridMap(bool var0) async {
     // print log
@@ -178,10 +190,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> isLoadWorldGridMap() async {
     // print log
@@ -200,10 +214,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setBuildingHeight(int var0) async {
     // print log
@@ -222,10 +238,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setDownloadCoordinateConvertLibrary(bool var0) async {
     // print log
@@ -244,10 +262,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> isDownloadCoordinateConvertLibrary() async {
     // print log
@@ -266,10 +286,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setHost(String var0) async {
     // print log
@@ -288,10 +310,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setProtocol(int var0) async {
     // print log
@@ -310,10 +334,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> getProtocol() async {
     // print log
@@ -332,10 +358,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> closeTileOverlay(bool var0) async {
     // print log
@@ -354,10 +382,12 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> isTileOverlayClosed() async {
     // print log
@@ -376,8 +406,9 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -394,7 +425,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   //endregion
 
   //region methods
-  static Future<void> initialize_batch(List<android_content_Context> var0) async {
+  
+  static Future<List<void>> initialize_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -413,7 +445,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setNetWorkEnable_batch(List<bool> var0) async {
+  
+  static Future<List<void>> setNetWorkEnable_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -431,6 +464,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> getNetWorkEnable_batch() async {
     if (false) {
@@ -451,7 +485,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setApiKey_batch(List<String> var0) async {
+  
+  static Future<List<void>> setApiKey_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -469,6 +504,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<String>> getVersion_batch() async {
     if (false) {
@@ -489,7 +525,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> loadWorldGridMap_batch(List<bool> var0) async {
+  
+  static Future<List<void>> loadWorldGridMap_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -507,6 +544,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> isLoadWorldGridMap_batch() async {
     if (false) {
@@ -527,7 +565,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setBuildingHeight_batch(List<int> var0) async {
+  
+  static Future<List<void>> setBuildingHeight_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -546,7 +585,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setDownloadCoordinateConvertLibrary_batch(List<bool> var0) async {
+  
+  static Future<List<void>> setDownloadCoordinateConvertLibrary_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -564,6 +604,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> isDownloadCoordinateConvertLibrary_batch() async {
     if (false) {
@@ -584,7 +625,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setHost_batch(List<String> var0) async {
+  
+  static Future<List<void>> setHost_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -603,7 +645,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> setProtocol_batch(List<int> var0) async {
+  
+  static Future<List<void>> setProtocol_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -621,6 +664,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> getProtocol_batch() async {
     if (false) {
@@ -641,7 +685,8 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
     }
   }
   
-  static Future<void> closeTileOverlay_batch(List<bool> var0) async {
+  
+  static Future<List<void>> closeTileOverlay_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -659,6 +704,7 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> isTileOverlayClosed_batch() async {
     if (false) {

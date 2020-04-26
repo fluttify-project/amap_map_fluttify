@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -55,6 +56,7 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   Future<MAMultiPointOverlay> initWithMultiPointItems(List<MAMultiPointItem> items) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MAMultiPointOverlay_Batch on List<MAMultiPointOverlay> {
   //endregion
 
   //region methods
+  
   Future<List<MAMultiPointOverlay>> initWithMultiPointItems_batch(List<List<MAMultiPointItem>> items) async {
     if (false) {
       return Future.error('all args must have same length!');

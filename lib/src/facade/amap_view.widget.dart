@@ -6,6 +6,7 @@ import 'dart:ui';
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class AmapView extends StatefulWidget {
     this.scrollGesturesEnabled,
     this.rotateGestureEnabled,
     this.tiltGestureEnabled,
-    this.zoomLevel, // todo 初始化没用
+    this.zoomLevel,
     this.centerCoordinate,
     this.markers,
     this.onMarkerClicked,

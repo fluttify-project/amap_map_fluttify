@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //region constants
@@ -72,6 +73,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -89,10 +91,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> remove() async {
     // print log
@@ -111,10 +115,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -133,10 +139,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> zoopToSpan() async {
     // print log
@@ -155,10 +163,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTraceStatus() async {
     // print log
@@ -177,10 +187,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTraceStatus(int var1) async {
     // print log
@@ -199,10 +211,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getDistance() async {
     // print log
@@ -221,10 +235,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDistance(int var1) async {
     // print log
@@ -243,10 +259,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getWaitTime() async {
     // print log
@@ -265,10 +283,12 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setWaitTime(int var1) async {
     // print log
@@ -287,8 +307,9 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -305,7 +326,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
   //endregion
 
   //region methods
-  Future<void> add_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> add_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -324,7 +346,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> remove_batch() async {
+  
+  Future<List<void>> remove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -343,7 +366,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> setProperCamera_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> setProperCamera_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -362,7 +386,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> zoopToSpan_batch() async {
+  
+  Future<List<void>> zoopToSpan_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -380,6 +405,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getTraceStatus_batch() async {
     if (false) {
@@ -400,7 +426,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> setTraceStatus_batch(List<int> var1) async {
+  
+  Future<List<void>> setTraceStatus_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -418,6 +445,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getDistance_batch() async {
     if (false) {
@@ -438,7 +466,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> setDistance_batch(List<int> var1) async {
+  
+  Future<List<void>> setDistance_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -456,6 +485,7 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getWaitTime_batch() async {
     if (false) {
@@ -476,7 +506,8 @@ extension com_amap_api_trace_TraceOverlay_Batch on List<com_amap_api_trace_Trace
     }
   }
   
-  Future<void> setWaitTime_batch(List<int> var1) async {
+  
+  Future<List<void>> setWaitTime_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

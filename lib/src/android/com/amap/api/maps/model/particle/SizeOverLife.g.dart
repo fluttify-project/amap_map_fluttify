@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   //region constants
@@ -37,6 +38,7 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
   //endregion
 
   //region methods
+  
   Future<double> getSizeX(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -54,10 +56,12 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSizeY(double var1) async {
     // print log
@@ -76,10 +80,12 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSizeZ(double var1) async {
     // print log
@@ -98,8 +104,9 @@ class com_amap_api_maps_model_particle_SizeOverLife extends com_autonavi_amap_ma
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -122,6 +129,7 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
   //endregion
 
   //region methods
+  
   Future<List<double>> getSizeX_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -141,6 +149,7 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<double>> getSizeY_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -159,6 +168,7 @@ extension com_amap_api_maps_model_particle_SizeOverLife_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getSizeZ_batch(List<double> var1) async {
     if (false) {

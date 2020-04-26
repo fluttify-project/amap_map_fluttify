@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   //region constants
@@ -72,6 +73,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAMultiTexturePolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -89,8 +91,33 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<bool> loadStrokeTextureImages(List<NSObject> textureImages) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::loadStrokeTextureImages([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::loadStrokeTextureImages', {"textureImages": textureImages.map((__it__) => __it__.refId).toList(), "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
@@ -132,6 +159,7 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
   //endregion
 
   //region methods
+  
   Future<List<MAMultiTexturePolylineRenderer>> initWithMultiPolyline_batch(List<MAMultiPolyline> multiPolyline) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -147,6 +175,26 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAMultiTexturePolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  @deprecated
+  Future<List<bool>> loadStrokeTextureImages_batch(List<List<NSObject>> textureImages) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::loadStrokeTextureImages_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"textureImages": textureImages[__i__].map((it) => it.refId).toList(), "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
       return typedResult;
     }
   }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
   //endregion
 
   //region methods
+  
   static Future<int> nativeCreate() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setCurTileIDs(int var0, Int32List var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeClearBuildingOptions(int var0) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> addBuildingOptions(int var0, com_amap_api_maps_model_BuildingOverlayOptions var2) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> render(int var0, Float64List var2, Float64List var3, int var4, int var5, double var6, Int32List var7) async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeDestory(int var0) async {
     // print log
@@ -177,10 +189,12 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // print log
@@ -199,8 +213,9 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -217,6 +232,7 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
   //endregion
 
   //region methods
+  
   static Future<List<int>> nativeCreate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -236,7 +252,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> setCurTileIDs_batch(List<int> var0, List<Int32List> var2) async {
+  
+  static Future<List<void>> setCurTileIDs_batch(List<int> var0, List<Int32List> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -255,7 +272,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> nativeClearBuildingOptions_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeClearBuildingOptions_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -274,7 +292,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> addBuildingOptions_batch(List<int> var0, List<com_amap_api_maps_model_BuildingOverlayOptions> var2) async {
+  
+  static Future<List<void>> addBuildingOptions_batch(List<int> var0, List<com_amap_api_maps_model_BuildingOverlayOptions> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -293,7 +312,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> render_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<Int32List> var7) async {
+  
+  static Future<List<void>> render_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<Int32List> var7) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
       return Future.error('all args must have same length!');
     }
@@ -312,7 +332,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> nativeDestory_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeDestory_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -331,7 +352,8 @@ extension com_autonavi_amap_mapcore_AMapNativeBuildingRenderer_Batch on List<com
     }
   }
   
-  static Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }

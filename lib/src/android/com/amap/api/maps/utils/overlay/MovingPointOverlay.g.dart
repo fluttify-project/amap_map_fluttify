@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
   //endregion
 
   //region methods
+  
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> resetIndex() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTotalDuration(int var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startSmoothMove() async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> stopMove() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BasePointOverlay> getObject() async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getIndex() async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeMarker() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotate(double var1) async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
     // print log
@@ -372,8 +400,9 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -390,7 +419,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
   //endregion
 
   //region methods
-  Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -409,7 +439,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> resetIndex_batch() async {
+  
+  Future<List<void>> resetIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -428,7 +459,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> setTotalDuration_batch(List<int> var1) async {
+  
+  Future<List<void>> setTotalDuration_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -447,7 +479,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> startSmoothMove_batch() async {
+  
+  Future<List<void>> startSmoothMove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -466,7 +499,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> stopMove_batch() async {
+  
+  Future<List<void>> stopMove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -484,6 +518,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BasePointOverlay>> getObject_batch() async {
     if (false) {
@@ -504,6 +539,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -522,6 +558,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getIndex_batch() async {
     if (false) {
@@ -542,7 +579,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -561,7 +599,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> removeMarker_batch() async {
+  
+  Future<List<void>> removeMarker_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -580,7 +619,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> setPosition_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setPosition_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -599,7 +639,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> setRotate_batch(List<double> var1) async {
+  
+  Future<List<void>> setRotate_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -618,7 +659,8 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

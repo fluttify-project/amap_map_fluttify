@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   //endregion
 
   //region methods
+  
   Future<void> setCity(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getCity() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCode(String var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getCode() async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getJianpin() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setJianpin(String var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getPinyin() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPinyin(String var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getAdcode() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAdcode(String var1) async {
     // print log
@@ -265,8 +285,9 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -283,7 +304,8 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
   //endregion
 
   //region methods
-  Future<void> setCity_batch(List<String> var1) async {
+  
+  Future<List<void>> setCity_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -301,6 +323,7 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getCity_batch() async {
     if (false) {
@@ -321,7 +344,8 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
     }
   }
   
-  Future<void> setCode_batch(List<String> var1) async {
+  
+  Future<List<void>> setCode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -339,6 +363,7 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getCode_batch() async {
     if (false) {
@@ -359,6 +384,7 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
     }
   }
   
+  
   Future<List<String>> getJianpin_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -378,7 +404,8 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
     }
   }
   
-  Future<void> setJianpin_batch(List<String> var1) async {
+  
+  Future<List<void>> setJianpin_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -396,6 +423,7 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getPinyin_batch() async {
     if (false) {
@@ -416,7 +444,8 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
     }
   }
   
-  Future<void> setPinyin_batch(List<String> var1) async {
+  
+  Future<List<void>> setPinyin_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -434,6 +463,7 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getAdcode_batch() async {
     if (false) {
@@ -454,7 +484,8 @@ extension com_amap_api_maps_offlinemap_City_Batch on List<com_amap_api_maps_offl
     }
   }
   
-  Future<void> setAdcode_batch(List<String> var1) async {
+  
+  Future<List<void>> setAdcode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

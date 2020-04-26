@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region methods
+  
   Future<MACustomBuildingOverlayRenderer> initWithCustomBuildingOverlay(MACustomBuildingOverlay customBuildingOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACustomBuildingOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MACustomBuildingOverlayRenderer_Batch on List<MACustomBuildingOverlayR
   //endregion
 
   //region methods
+  
   Future<List<MACustomBuildingOverlayRenderer>> initWithCustomBuildingOverlay_batch(List<MACustomBuildingOverlay> customBuildingOverlay) async {
     if (false) {
       return Future.error('all args must have same length!');

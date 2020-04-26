@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   //region constants
@@ -78,6 +79,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -95,8 +97,9 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -144,6 +147,7 @@ extension MAMultiColoredPolylineRenderer_Batch on List<MAMultiColoredPolylineRen
   //endregion
 
   //region methods
+  
   Future<List<MAMultiColoredPolylineRenderer>> initWithMultiPolyline_batch(List<MAMultiPolyline> multiPolyline) async {
     if (false) {
       return Future.error('all args must have same length!');

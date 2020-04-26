@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   //endregion
 
   //region methods
+  
   Future<MAParticleSinglePointShapeModule> initWithShapeX_Y_Z_useRatio(double x, double y, double z, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleSinglePointShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleSinglePointShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleSinglePointShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleSinglePointShapeModule_Batch on List<MAParticleSinglePointSh
   //endregion
 
   //region methods
+  
   Future<List<MAParticleSinglePointShapeModule>> initWithShapeX_Y_Z_useRatio_batch(List<double> x, List<double> y, List<double> z, List<bool> isUseRatio) async {
     if (x.length != y.length || y.length != z.length || z.length != isUseRatio.length) {
       return Future.error('all args must have same length!');

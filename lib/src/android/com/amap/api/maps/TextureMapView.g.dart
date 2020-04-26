@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   //region constants
@@ -69,6 +70,7 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,10 +88,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
@@ -108,10 +112,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
@@ -130,10 +136,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
@@ -152,10 +160,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
@@ -174,10 +184,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
@@ -196,10 +208,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
@@ -218,10 +232,12 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
@@ -240,8 +256,9 @@ class com_amap_api_maps_TextureMapView extends android_widget_FrameLayout  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -258,6 +275,7 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_AMap>> getMap_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -277,7 +295,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onCreate_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> onCreate_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -296,7 +315,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onResume_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onResume_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -315,7 +335,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onPause_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onPause_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -334,7 +355,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onDestroy_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onDestroy_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -353,7 +375,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onLowMemory_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onLowMemory_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -372,7 +395,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> onSaveInstanceState_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> onSaveInstanceState_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -391,7 +415,8 @@ extension com_amap_api_maps_TextureMapView_Batch on List<com_amap_api_maps_Textu
     }
   }
   
-  Future<void> setVisibility_batch(List<int> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setVisibility_batch(List<int> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

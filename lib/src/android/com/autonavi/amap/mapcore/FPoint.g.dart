@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   //region constants
@@ -69,6 +70,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   //endregion
 
   //region methods
+  
   static Future<com_autonavi_amap_mapcore_FPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,10 +88,12 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_autonavi_amap_mapcore_FPoint> obtain__double__double(double var0, double var1) async {
     // print log
@@ -108,8 +112,9 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -126,6 +131,7 @@ extension com_autonavi_amap_mapcore_FPoint_Batch on List<com_autonavi_amap_mapco
   //endregion
 
   //region methods
+  
   static Future<List<com_autonavi_amap_mapcore_FPoint>> obtain_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -144,6 +150,7 @@ extension com_autonavi_amap_mapcore_FPoint_Batch on List<com_autonavi_amap_mapco
       return typedResult;
     }
   }
+  
   
   static Future<List<com_autonavi_amap_mapcore_FPoint>> obtain__double__double_batch(List<double> var0, List<double> var1) async {
     if (var0.length != var1.length) {

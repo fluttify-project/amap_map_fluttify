@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePointOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
   //endregion
 
   //region methods
+  
   Future<void> setAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAngle() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setModelFixedLength(int var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomLimit(double var1) async {
     // print log
@@ -115,8 +123,9 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -133,7 +142,8 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
   //endregion
 
   //region methods
-  Future<void> setAngle_batch(List<double> var1) async {
+  
+  Future<List<void>> setAngle_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -151,6 +161,7 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAngle_batch() async {
     if (false) {
@@ -171,7 +182,8 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setModelFixedLength_batch(List<int> var1) async {
+  
+  Future<List<void>> setModelFixedLength_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -190,7 +202,8 @@ extension com_amap_api_maps_model_GL3DModel_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setZoomLimit_batch(List<double> var1) async {
+  
+  Future<List<void>> setZoomLimit_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

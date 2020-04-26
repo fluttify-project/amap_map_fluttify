@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<String> getStyleDataPath() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataPath(String var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getStyleTexturePath() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTexturePath(String var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getStyleData() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(Uint8List var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getStyleTextureData() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(Uint8List var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getStyleId() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleId(String var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isEnable() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setEnable(bool var1) async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getStyleExtraData() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(Uint8List var1) async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getStyleExtraPath() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraPath(String var1) async {
     // print log
@@ -397,8 +429,9 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -415,6 +448,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
   //endregion
 
   //region methods
+  
   Future<List<String>> getStyleDataPath_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -433,6 +467,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleDataPath_batch(List<String> var1) async {
     if (false) {
@@ -453,6 +488,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<String>> getStyleTexturePath_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -471,6 +507,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleTexturePath_batch(List<String> var1) async {
     if (false) {
@@ -491,6 +528,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<Uint8List>> getStyleData_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -509,6 +547,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleData_batch(List<Uint8List> var1) async {
     if (false) {
@@ -529,6 +568,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<Uint8List>> getStyleTextureData_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -547,6 +587,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleTextureData_batch(List<Uint8List> var1) async {
     if (false) {
@@ -567,6 +608,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<String>> getStyleId_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -585,6 +627,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleId_batch(List<String> var1) async {
     if (false) {
@@ -605,6 +648,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<bool>> isEnable_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -623,6 +667,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setEnable_batch(List<bool> var1) async {
     if (false) {
@@ -643,6 +688,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<Uint8List>> getStyleExtraData_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -661,6 +707,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleExtraData_batch(List<Uint8List> var1) async {
     if (false) {
@@ -681,6 +728,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
     }
   }
   
+  
   Future<List<String>> getStyleExtraPath_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -699,6 +747,7 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleExtraPath_batch(List<String> var1) async {
     if (false) {

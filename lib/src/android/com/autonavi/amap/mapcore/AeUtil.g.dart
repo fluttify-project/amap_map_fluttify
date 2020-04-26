@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   //region constants
@@ -56,6 +57,7 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<void> loadLib(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -73,10 +75,12 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> initResource(android_content_Context var0) async {
     // print log
@@ -95,10 +99,12 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<void> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
     // print log
@@ -117,8 +123,9 @@ class com_autonavi_amap_mapcore_AeUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -135,7 +142,8 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
   //endregion
 
   //region methods
-  static Future<void> loadLib_batch(List<android_content_Context> var0) async {
+  
+  static Future<List<void>> loadLib_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -153,6 +161,7 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
       return typedResult;
     }
   }
+  
   
   static Future<List<com_autonavi_ae_gmap_GLMapEngine_InitParam>> initResource_batch(List<android_content_Context> var0) async {
     if (false) {
@@ -173,7 +182,8 @@ extension com_autonavi_amap_mapcore_AeUtil_Batch on List<com_autonavi_amap_mapco
     }
   }
   
-  static Future<void> readAssetsFileAndSave_batch(List<String> var0, List<String> var1, List<android_content_Context> var2) async {
+  
+  static Future<List<void>> readAssetsFileAndSave_batch(List<String> var0, List<String> var1, List<android_content_Context> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }

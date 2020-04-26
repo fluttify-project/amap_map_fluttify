@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> anchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorU() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorV() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MultiPointOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
@@ -155,8 +165,9 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -173,6 +184,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_MultiPointOverlayOptions>> anchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -191,6 +203,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorU_batch() async {
     if (false) {
@@ -211,6 +224,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     }
   }
   
+  
   Future<List<double>> getAnchorV_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -230,6 +244,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MultiPointOverlayOptions>> icon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -248,6 +263,7 @@ extension com_amap_api_maps_model_MultiPointOverlayOptions_Batch on List<com_ama
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcon_batch() async {
     if (false) {

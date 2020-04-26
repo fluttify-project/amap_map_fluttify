@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
 
   
 
+  
   Future<bool> canDismiss(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDismiss(android_view_View var1, Object var2) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onNotifySwipe() async {
     // print log
@@ -80,8 +86,9 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

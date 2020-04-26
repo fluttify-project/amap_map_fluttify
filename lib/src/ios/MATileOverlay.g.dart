@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //region constants
@@ -126,6 +127,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   //endregion
 
   //region methods
+  
   Future<dynamic> initWithURLTemplate(String URLTemplate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -143,10 +145,12 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> loadTileAtPath_result(MATileOverlayPath path, void result(NSData tileData, NSError error)) async {
     // print log
@@ -184,10 +188,12 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
@@ -206,8 +212,9 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -307,6 +314,7 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
   //endregion
 
   //region methods
+  
   Future<List<dynamic>> initWithURLTemplate_batch(List<String> URLTemplate) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -326,7 +334,8 @@ extension MATileOverlay_Batch on List<MATileOverlay> {
     }
   }
   
-  Future<void> cancelLoadOfTileAtPath_batch(List<MATileOverlayPath> path) async {
+  
+  Future<List<void>> cancelLoadOfTileAtPath_batch(List<MATileOverlayPath> path) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACircleRenderer extends MAOverlayPathRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region methods
+  
   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircleRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACircleRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircleRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MACircleRenderer_Batch on List<MACircleRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MACircleRenderer>> initWithCircle_batch(List<MACircle> circle) async {
     if (false) {
       return Future.error('all args must have same length!');

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   //region constants
@@ -55,6 +56,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<com_amap_api_trace_LBSTraceClient> getInstance(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,10 +74,12 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_trace_LBSTraceClient()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_trace_LBSTraceClient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_trace_LBSTraceClient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
     // print log
@@ -131,10 +135,12 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
     // print log
@@ -172,10 +178,12 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> stopTrace() async {
     // print log
@@ -194,10 +202,12 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -216,8 +226,9 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -234,6 +245,7 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
   //endregion
 
   //region methods
+  
   static Future<List<com_amap_api_trace_LBSTraceClient>> getInstance_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -253,7 +265,8 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     }
   }
   
-  Future<void> stopTrace_batch() async {
+  
+  Future<List<void>> stopTrace_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -272,7 +285,8 @@ extension com_amap_api_trace_LBSTraceClient_Batch on List<com_amap_api_trace_LBS
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

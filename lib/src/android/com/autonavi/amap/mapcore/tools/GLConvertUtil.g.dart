@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<int> getInt(Uint8List var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> getLong(Uint8List var0, int var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> getInt2(Uint8List var0, int var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> getUShort(Uint8List var0, int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> convertInt(int var0) async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> convertShort(int var0) async {
     // print log
@@ -177,10 +189,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<double> convertDouble(Uint8List var0, int var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> writeInt(Uint8List var0, int var1, int var2) async {
     // print log
@@ -221,10 +237,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> moveArray(Uint8List var0, int var1, Uint8List var2, int var3, int var4) async {
     // print log
@@ -243,10 +261,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> get1BString(String var0) async {
     // print log
@@ -265,10 +285,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<String> getString(Uint8List var0, int var1, int var2) async {
     // print log
@@ -287,10 +309,12 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> getSubBytes(Uint8List var0, int var1, int var2) async {
     // print log
@@ -309,8 +333,9 @@ class com_autonavi_amap_mapcore_tools_GLConvertUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
   
@@ -327,6 +352,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
   //endregion
 
   //region methods
+  
   static Future<List<int>> getInt_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -345,6 +371,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> getLong_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -365,6 +392,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
+  
   static Future<List<int>> getInt2_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -383,6 +411,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> getUShort_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -403,6 +432,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
+  
   static Future<List<Uint8List>> convertInt_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -421,6 +451,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> convertShort_batch(List<int> var0) async {
     if (false) {
@@ -441,6 +472,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
+  
   static Future<List<double>> convertDouble_batch(List<Uint8List> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -460,7 +492,8 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  static Future<void> writeInt_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
+  
+  static Future<List<void>> writeInt_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -479,7 +512,8 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
-  static Future<void> moveArray_batch(List<Uint8List> var0, List<int> var1, List<Uint8List> var2, List<int> var3, List<int> var4) async {
+  
+  static Future<List<void>> moveArray_batch(List<Uint8List> var0, List<int> var1, List<Uint8List> var2, List<int> var3, List<int> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -497,6 +531,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> get1BString_batch(List<String> var0) async {
     if (false) {
@@ -517,6 +552,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
     }
   }
   
+  
   static Future<List<String>> getString_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -535,6 +571,7 @@ extension com_autonavi_amap_mapcore_tools_GLConvertUtil_Batch on List<com_autona
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> getSubBytes_batch(List<Uint8List> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {

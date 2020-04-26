@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   //region constants
@@ -35,6 +36,7 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getType() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -52,8 +54,9 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -70,6 +73,7 @@ extension com_autonavi_ae_gmap_AbstractMapMessage_Batch on List<com_autonavi_ae_
   //endregion
 
   //region methods
+  
   Future<List<int>> getType_batch() async {
     if (false) {
       return Future.error('all args must have same length!');

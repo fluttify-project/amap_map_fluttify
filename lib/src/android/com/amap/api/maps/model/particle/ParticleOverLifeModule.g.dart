@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autonavi_amap_mapcore_AbstractNativeInstance with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   //endregion
 
   //region methods
+  
   Future<void> setVelocityOverLife(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotateOverLife(com_amap_api_maps_model_particle_RotationOverLife var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSizeOverLife(com_amap_api_maps_model_particle_SizeOverLife var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setColorGenerate(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // print log
@@ -133,8 +141,9 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,7 +160,8 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
   //endregion
 
   //region methods
-  Future<void> setVelocityOverLife_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
+  
+  Future<List<void>> setVelocityOverLife_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -170,7 +180,8 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
     }
   }
   
-  Future<void> setRotateOverLife_batch(List<com_amap_api_maps_model_particle_RotationOverLife> var1) async {
+  
+  Future<List<void>> setRotateOverLife_batch(List<com_amap_api_maps_model_particle_RotationOverLife> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -189,7 +200,8 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
     }
   }
   
-  Future<void> setSizeOverLife_batch(List<com_amap_api_maps_model_particle_SizeOverLife> var1) async {
+  
+  Future<List<void>> setSizeOverLife_batch(List<com_amap_api_maps_model_particle_SizeOverLife> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -208,7 +220,8 @@ extension com_amap_api_maps_model_particle_ParticleOverLifeModule_Batch on List<
     }
   }
   
-  Future<void> setColorGenerate_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
+  
+  Future<List<void>> setColorGenerate_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

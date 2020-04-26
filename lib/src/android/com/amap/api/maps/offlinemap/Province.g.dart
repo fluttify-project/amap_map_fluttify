@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_Province extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
   //endregion
 
   //region methods
+  
   Future<String> getProvinceName() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getJianpin() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getPinyin() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setProvinceName(String var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setJianpin(String var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPinyin(String var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setProvinceCode(String var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getProvinceCode() async {
     // print log
@@ -221,8 +237,9 @@ class com_amap_api_maps_offlinemap_Province extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -239,6 +256,7 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
   //endregion
 
   //region methods
+  
   Future<List<String>> getProvinceName_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -257,6 +275,7 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getJianpin_batch() async {
     if (false) {
@@ -277,6 +296,7 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<String>> getPinyin_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -296,7 +316,8 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setProvinceName_batch(List<String> var1) async {
+  
+  Future<List<void>> setProvinceName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -315,7 +336,8 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setJianpin_batch(List<String> var1) async {
+  
+  Future<List<void>> setJianpin_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -334,7 +356,8 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setPinyin_batch(List<String> var1) async {
+  
+  Future<List<void>> setPinyin_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -353,7 +376,8 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setProvinceCode_batch(List<String> var1) async {
+  
+  Future<List<void>> setProvinceCode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -371,6 +395,7 @@ extension com_amap_api_maps_offlinemap_Province_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getProvinceCode_batch() async {
     if (false) {

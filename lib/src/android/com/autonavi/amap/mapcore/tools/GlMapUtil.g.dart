@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   //region constants
@@ -70,6 +71,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<Uint8List> decodeAssetResData(android_content_Context var0, String var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -87,10 +89,12 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<int> dipToPixel(android_content_Context var0, int var1) async {
     // print log
@@ -109,10 +113,12 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> spToPixel(android_content_Context var0, int var1) async {
     // print log
@@ -131,10 +137,12 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<String> getString(android_content_Context var0, int var1) async {
     // print log
@@ -153,10 +161,12 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> isAssic(String var0) async {
     // print log
@@ -175,10 +185,12 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<String> getAppVersionName(android_content_Context var0) async {
     // print log
@@ -197,8 +209,9 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -215,6 +228,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
   //endregion
 
   //region methods
+  
   static Future<List<Uint8List>> decodeAssetResData_batch(List<android_content_Context> var0, List<String> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -233,6 +247,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> dipToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -253,6 +268,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
+  
   static Future<List<int>> spToPixel_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -271,6 +287,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
       return typedResult;
     }
   }
+  
   
   static Future<List<String>> getString_batch(List<android_content_Context> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -291,6 +308,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
     }
   }
   
+  
   static Future<List<bool>> isAssic_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -309,6 +327,7 @@ extension com_autonavi_amap_mapcore_tools_GlMapUtil_Batch on List<com_autonavi_a
       return typedResult;
     }
   }
+  
   
   static Future<List<String>> getAppVersionName_batch(List<android_content_Context> var0) async {
     if (false) {

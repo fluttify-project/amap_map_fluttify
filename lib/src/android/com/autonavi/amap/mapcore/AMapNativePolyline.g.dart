@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<int> nativeCreate() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeDrawLineByTextureID(int var0, Float64List var2, int var3, double var4, int var5, double var6, double var7, double var8, double var9, double var10, bool var11, bool var12, bool var13, Float64List var14, int var15, int var16) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeDestroy(int var0) async {
     // print log
@@ -133,8 +141,9 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,6 +160,7 @@ extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonav
   //endregion
 
   //region methods
+  
   static Future<List<int>> nativeCreate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -170,7 +180,8 @@ extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonav
     }
   }
   
-  static Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -189,7 +200,8 @@ extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonav
     }
   }
   
-  static Future<void> nativeDrawLineByTextureID_batch(List<int> var0, List<Float64List> var2, List<int> var3, List<double> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8, List<double> var9, List<double> var10, List<bool> var11, List<bool> var12, List<bool> var13, List<Float64List> var14, List<int> var15, List<int> var16) async {
+  
+  static Future<List<void>> nativeDrawLineByTextureID_batch(List<int> var0, List<Float64List> var2, List<int> var3, List<double> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8, List<double> var9, List<double> var10, List<bool> var11, List<bool> var12, List<bool> var13, List<Float64List> var14, List<int> var15, List<int> var16) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length || var8.length != var9.length || var9.length != var10.length || var10.length != var11.length || var11.length != var12.length || var12.length != var13.length || var13.length != var14.length || var14.length != var15.length || var15.length != var16.length) {
       return Future.error('all args must have same length!');
     }
@@ -207,6 +219,7 @@ extension com_autonavi_amap_mapcore_AMapNativePolyline_Batch on List<com_autonav
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeDestroy_batch(List<int> var0) async {
     if (false) {

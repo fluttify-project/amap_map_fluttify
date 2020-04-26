@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleEmissionModule extends NSObject  {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleEmissionModule extends NSObject  {
   //endregion
 
   //region methods
+  
   Future<MAParticleEmissionModule> initWithEmissionRate_rateTime(int rate, int rateTime) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleEmissionModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleEmissionModule_Batch on List<MAParticleEmissionModule> {
   //endregion
 
   //region methods
+  
   Future<List<MAParticleEmissionModule>> initWithEmissionRate_rateTime_batch(List<int> rate, List<int> rateTime) async {
     if (rate.length != rateTime.length) {
       return Future.error('all args must have same length!');

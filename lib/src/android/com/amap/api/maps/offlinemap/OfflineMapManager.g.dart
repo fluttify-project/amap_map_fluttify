@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> downloadByCityCode(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> downloadByCityName(String var1) async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> downloadByProvinceName(String var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> remove(String var1) async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapProvince>> getOfflineMapProvinceList() async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_offlinemap_OfflineMapCity> getItemByCityCode(String var1) async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_offlinemap_OfflineMapCity> getItemByCityName(String var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_offlinemap_OfflineMapProvince> getItemByProvinceName(String var1) async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getOfflineMapCityList() async {
     // print log
@@ -225,10 +243,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getDownloadingCityList() async {
     // print log
@@ -247,10 +267,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapProvince>> getDownloadingProvinceList() async {
     // print log
@@ -269,10 +291,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getDownloadOfflineMapCityList() async {
     // print log
@@ -291,10 +315,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapProvince>> getDownloadOfflineMapProvinceList() async {
     // print log
@@ -313,10 +339,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> updateOfflineCityByCode(String var1) async {
     // print log
@@ -335,10 +363,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> updateOfflineCityByName(String var1) async {
     // print log
@@ -357,10 +387,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> updateOfflineMapProvinceByName(String var1) async {
     // print log
@@ -379,10 +411,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> restart() async {
     // print log
@@ -401,10 +435,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> stop() async {
     // print log
@@ -423,10 +459,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> pause() async {
     // print log
@@ -445,10 +483,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -467,10 +507,12 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnOfflineLoadedListener(com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener var1) async {
     // print log
@@ -489,8 +531,9 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -507,7 +550,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
   //endregion
 
   //region methods
-  Future<void> downloadByCityCode_batch(List<String> var1) async {
+  
+  Future<List<void>> downloadByCityCode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -526,7 +570,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> downloadByCityName_batch(List<String> var1) async {
+  
+  Future<List<void>> downloadByCityName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -545,7 +590,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> downloadByProvinceName_batch(List<String> var1) async {
+  
+  Future<List<void>> downloadByProvinceName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -564,7 +610,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> remove_batch(List<String> var1) async {
+  
+  Future<List<void>> remove_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -582,6 +629,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapProvince>>> getOfflineMapProvinceList_batch() async {
     if (false) {
@@ -602,6 +650,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getItemByCityCode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -620,6 +669,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getItemByCityName_batch(List<String> var1) async {
     if (false) {
@@ -640,6 +690,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<com_amap_api_maps_offlinemap_OfflineMapProvince>> getItemByProvinceName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -658,6 +709,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapCity>>> getOfflineMapCityList_batch() async {
     if (false) {
@@ -678,6 +730,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapCity>>> getDownloadingCityList_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -696,6 +749,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapProvince>>> getDownloadingProvinceList_batch() async {
     if (false) {
@@ -716,6 +770,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapCity>>> getDownloadOfflineMapCityList_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -734,6 +789,7 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_offlinemap_OfflineMapProvince>>> getDownloadOfflineMapProvinceList_batch() async {
     if (false) {
@@ -754,7 +810,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> updateOfflineCityByCode_batch(List<String> var1) async {
+  
+  Future<List<void>> updateOfflineCityByCode_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -773,7 +830,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> updateOfflineCityByName_batch(List<String> var1) async {
+  
+  Future<List<void>> updateOfflineCityByName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -792,7 +850,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> updateOfflineMapProvinceByName_batch(List<String> var1) async {
+  
+  Future<List<void>> updateOfflineMapProvinceByName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -811,7 +870,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> restart_batch() async {
+  
+  Future<List<void>> restart_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -830,7 +890,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> stop_batch() async {
+  
+  Future<List<void>> stop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -849,7 +910,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> pause_batch() async {
+  
+  Future<List<void>> pause_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -868,7 +930,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -887,7 +950,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapManager_Batch on List<com_amap_
     }
   }
   
-  Future<void> setOnOfflineLoadedListener_batch(List<com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener> var1) async {
+  
+  Future<List<void>> setOnOfflineLoadedListener_batch(List<com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

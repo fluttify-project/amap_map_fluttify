@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   //region constants
@@ -51,6 +52,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> setInfoWindowUpdateTime(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -68,10 +70,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInfoWindowUpdateTime() async {
     // print log
@@ -90,10 +94,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowType(int var1) async {
     // print log
@@ -112,10 +118,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInfoWindowType() async {
     // print log
@@ -134,10 +142,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<android_view_View> getInfoWindow() async {
     // print log
@@ -156,10 +166,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoContent(android_view_View var1) async {
     // print log
@@ -178,10 +190,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindow(android_view_View var1) async {
     // print log
@@ -200,10 +214,12 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<android_view_View> getInfoContents() async {
     // print log
@@ -222,8 +238,9 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -240,7 +257,8 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
   //endregion
 
   //region methods
-  Future<void> setInfoWindowUpdateTime_batch(List<int> var1) async {
+  
+  Future<List<void>> setInfoWindowUpdateTime_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -258,6 +276,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getInfoWindowUpdateTime_batch() async {
     if (false) {
@@ -278,7 +297,8 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     }
   }
   
-  Future<void> setInfoWindowType_batch(List<int> var1) async {
+  
+  Future<List<void>> setInfoWindowType_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -296,6 +316,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getInfoWindowType_batch() async {
     if (false) {
@@ -316,6 +337,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     }
   }
   
+  
   Future<List<android_view_View>> getInfoWindow_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -335,7 +357,8 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     }
   }
   
-  Future<void> setInfoContent_batch(List<android_view_View> var1) async {
+  
+  Future<List<void>> setInfoContent_batch(List<android_view_View> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -354,7 +377,8 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     }
   }
   
-  Future<void> setInfoWindow_batch(List<android_view_View> var1) async {
+  
+  Future<List<void>> setInfoWindow_batch(List<android_view_View> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -372,6 +396,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
       return typedResult;
     }
   }
+  
   
   Future<List<android_view_View>> getInfoContents_batch() async {
     if (false) {

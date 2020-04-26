@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getDrivingRouteStyle() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDrivingRouteStyle(int var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTransitRouteStyle() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTransitRouteStyle(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getStartPoint() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getEndPoint() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getEndName() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setEndName(String var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getStartName() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setStartName(String var1) async {
     // print log
@@ -309,8 +333,9 @@ class com_amap_api_maps_model_RoutePara extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -327,6 +352,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
   //endregion
 
   //region methods
+  
   Future<List<int>> getDrivingRouteStyle_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -346,7 +372,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setDrivingRouteStyle_batch(List<int> var1) async {
+  
+  Future<List<void>> setDrivingRouteStyle_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -364,6 +391,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getTransitRouteStyle_batch() async {
     if (false) {
@@ -384,7 +412,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setTransitRouteStyle_batch(List<int> var1) async {
+  
+  Future<List<void>> setTransitRouteStyle_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -402,6 +431,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getStartPoint_batch() async {
     if (false) {
@@ -422,7 +452,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setStartPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setStartPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -440,6 +471,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getEndPoint_batch() async {
     if (false) {
@@ -460,7 +492,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setEndPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setEndPoint_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -478,6 +511,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getEndName_batch() async {
     if (false) {
@@ -498,7 +532,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setEndName_batch(List<String> var1) async {
+  
+  Future<List<void>> setEndName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -516,6 +551,7 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getStartName_batch() async {
     if (false) {
@@ -536,7 +572,8 @@ extension com_amap_api_maps_model_RoutePara_Batch on List<com_amap_api_maps_mode
     }
   }
   
-  Future<void> setStartName_batch(List<String> var1) async {
+  
+  Future<List<void>> setStartName_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleOverlayOptionsFactory extends NSObject  {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   //endregion
 
   //region methods
+  
   static Future<List<MAParticleOverlayOptions>> particleOverlayOptionsWithType(MAParticleOverlayType particleType) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => MAParticleOverlayOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleOverlayOptionsFactory_Batch on List<MAParticleOverlayOptions
   //endregion
 
   //region methods
+  
   static Future<List<List<MAParticleOverlayOptions>>> particleOverlayOptionsWithType_batch(List<MAParticleOverlayType> particleType) async {
     if (false) {
       return Future.error('all args must have same length!');

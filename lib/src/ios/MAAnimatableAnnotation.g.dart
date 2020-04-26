@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin MAAnimatableAnnotation on NSObject {
   
@@ -19,6 +20,7 @@ mixin MAAnimatableAnnotation on NSObject {
 
   
 
+  
   Future<void> step(double timeDelta) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin MAAnimatableAnnotation on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isAnimationFinished() async {
     // print log
@@ -58,10 +62,12 @@ mixin MAAnimatableAnnotation on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> shouldAnimationStart() async {
     // print log
@@ -80,10 +86,12 @@ mixin MAAnimatableAnnotation on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> rotateDegree() async {
     // print log
@@ -102,8 +110,9 @@ mixin MAAnimatableAnnotation on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

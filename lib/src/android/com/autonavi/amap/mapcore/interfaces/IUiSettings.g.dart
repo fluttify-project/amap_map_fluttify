@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
 
   
 
+  
   Future<bool> isIndoorSwitchEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorSwitchEnabled(bool var1) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setScaleControlsEnabled(bool var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomControlsEnabled(bool var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCompassEnabled(bool var1) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationButtonEnabled(bool var1) async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setScrollGesturesEnabled(bool var1) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomGesturesEnabled(bool var1) async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTiltGesturesEnabled(bool var1) async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotateGesturesEnabled(bool var1) async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAllGesturesEnabled(bool var1) async {
     // print log
@@ -256,10 +278,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoPosition(int var1) async {
     // print log
@@ -278,10 +302,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomPosition(int var1) async {
     // print log
@@ -300,10 +326,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isScaleControlsEnabled() async {
     // print log
@@ -322,10 +350,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isZoomControlsEnabled() async {
     // print log
@@ -344,10 +374,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isCompassEnabled() async {
     // print log
@@ -366,10 +398,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMyLocationButtonEnabled() async {
     // print log
@@ -388,10 +422,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isScrollGesturesEnabled() async {
     // print log
@@ -410,10 +446,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isZoomGesturesEnabled() async {
     // print log
@@ -432,10 +470,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isTiltGesturesEnabled() async {
     // print log
@@ -454,10 +494,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isRotateGesturesEnabled() async {
     // print log
@@ -476,10 +518,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getLogoPosition() async {
     // print log
@@ -498,10 +542,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getZoomPosition() async {
     // print log
@@ -520,10 +566,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomInByScreenCenter(bool var1) async {
     // print log
@@ -542,10 +590,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isZoomInByScreenCenter() async {
     // print log
@@ -564,10 +614,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoBottomMargin(int var1) async {
     // print log
@@ -586,10 +638,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoLeftMargin(int var1) async {
     // print log
@@ -608,10 +662,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getLogoMarginRate(int var1) async {
     // print log
@@ -630,10 +686,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoMarginRate(int var1, double var2) async {
     // print log
@@ -652,10 +710,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setGestureScaleByMapCenter(bool var1) async {
     // print log
@@ -674,10 +734,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isGestureScaleByMapCenter() async {
     // print log
@@ -696,10 +758,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLogoEnable(bool var1) async {
     // print log
@@ -718,10 +782,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> requestRefreshLogo() async {
     // print log
@@ -740,10 +806,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isLogoEnable() async {
     // print log
@@ -762,8 +830,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

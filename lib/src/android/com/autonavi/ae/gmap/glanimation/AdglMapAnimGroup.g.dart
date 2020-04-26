@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation  {
   //region constants
@@ -63,6 +64,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
   //endregion
 
   //region methods
+  
   Future<void> setDuration(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -80,10 +82,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> reset() async {
     // print log
@@ -102,10 +106,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToMapAngle(double var1, int var2) async {
     // print log
@@ -124,10 +130,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToMapCenterGeo(int var1, int var2, int var3) async {
     // print log
@@ -146,10 +154,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToMapLevel__double__int(double var1, int var2) async {
     // print log
@@ -168,10 +178,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToMapLevel__double__double__int(double var1, double var2, int var3) async {
     // print log
@@ -190,10 +202,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToCameraDegree(double var1, int var2) async {
     // print log
@@ -212,10 +226,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> checkLevel(double var0) async {
     // print log
@@ -234,10 +250,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> commitAnimation(Object var1) async {
     // print log
@@ -256,10 +274,12 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> typeEqueal(com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup var1) async {
     // print log
@@ -278,8 +298,9 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends com_autonavi_ae_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -307,7 +328,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
   //endregion
 
   //region methods
-  Future<void> setDuration_batch(List<int> var1) async {
+  
+  Future<List<void>> setDuration_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -326,7 +348,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> reset_batch() async {
+  
+  Future<List<void>> reset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -345,7 +368,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> setToMapAngle_batch(List<double> var1, List<int> var2) async {
+  
+  Future<List<void>> setToMapAngle_batch(List<double> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -364,7 +388,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> setToMapCenterGeo_batch(List<int> var1, List<int> var2, List<int> var3) async {
+  
+  Future<List<void>> setToMapCenterGeo_batch(List<int> var1, List<int> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -383,7 +408,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> setToMapLevel__double__int_batch(List<double> var1, List<int> var2) async {
+  
+  Future<List<void>> setToMapLevel__double__int_batch(List<double> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -402,7 +428,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> setToMapLevel__double__double__int_batch(List<double> var1, List<double> var2, List<int> var3) async {
+  
+  Future<List<void>> setToMapLevel__double__double__int_batch(List<double> var1, List<double> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -421,7 +448,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> setToCameraDegree_batch(List<double> var1, List<int> var2) async {
+  
+  Future<List<void>> setToCameraDegree_batch(List<double> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -439,6 +467,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> checkLevel_batch(List<double> var0) async {
     if (false) {
@@ -459,7 +488,8 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
     }
   }
   
-  Future<void> commitAnimation_batch(List<Object> var1) async {
+  
+  Future<List<void>> commitAnimation_batch(List<Object> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -477,6 +507,7 @@ extension com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup_Batch on List<com_au
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> typeEqueal_batch(List<com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup> var1) async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<void> writeDatasToFile(String var0, Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> readFileContents(String var0) async {
     // print log
@@ -89,8 +93,9 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
   
@@ -107,7 +112,8 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
   //endregion
 
   //region methods
-  static Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
+  
+  static Future<List<void>> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -125,6 +131,7 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> readFileContents_batch(List<String> var0) async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAPolygonRenderer> initWithPolygon(MAPolygon polygon) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MAPolygonRenderer_Batch on List<MAPolygonRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MAPolygonRenderer>> initWithPolygon_batch(List<MAPolygon> polygon) async {
     if (false) {
       return Future.error('all args must have same length!');

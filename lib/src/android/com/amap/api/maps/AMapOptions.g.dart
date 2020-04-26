@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -57,6 +58,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_AMapOptions> logoPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -74,10 +76,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> zOrderOnTop(bool var1) async {
     // print log
@@ -96,10 +100,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> mapType(int var1) async {
     // print log
@@ -118,10 +124,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> camera(com_amap_api_maps_model_CameraPosition var1) async {
     // print log
@@ -140,10 +148,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> scaleControlsEnabled(bool var1) async {
     // print log
@@ -162,10 +172,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> zoomControlsEnabled(bool var1) async {
     // print log
@@ -184,10 +196,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> compassEnabled(bool var1) async {
     // print log
@@ -206,10 +220,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> scrollGesturesEnabled(bool var1) async {
     // print log
@@ -228,10 +244,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> zoomGesturesEnabled(bool var1) async {
     // print log
@@ -250,10 +268,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> tiltGesturesEnabled(bool var1) async {
     // print log
@@ -272,10 +292,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_AMapOptions> rotateGesturesEnabled(bool var1) async {
     // print log
@@ -294,10 +316,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMapOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getLogoPosition() async {
     // print log
@@ -316,10 +340,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getZOrderOnTop() async {
     // print log
@@ -338,10 +364,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapType() async {
     // print log
@@ -360,10 +388,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CameraPosition> getCamera() async {
     // print log
@@ -382,10 +412,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> getScaleControlsEnabled() async {
     // print log
@@ -404,10 +436,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getZoomControlsEnabled() async {
     // print log
@@ -426,10 +460,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getCompassEnabled() async {
     // print log
@@ -448,10 +484,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getScrollGesturesEnabled() async {
     // print log
@@ -470,10 +508,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getZoomGesturesEnabled() async {
     // print log
@@ -492,10 +532,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getTiltGesturesEnabled() async {
     // print log
@@ -514,10 +556,12 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getRotateGesturesEnabled() async {
     // print log
@@ -536,8 +580,9 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -554,6 +599,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_AMapOptions>> logoPosition_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -572,6 +618,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_AMapOptions>> zOrderOnTop_batch(List<bool> var1) async {
     if (false) {
@@ -592,6 +639,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_AMapOptions>> mapType_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -610,6 +658,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_AMapOptions>> camera_batch(List<com_amap_api_maps_model_CameraPosition> var1) async {
     if (false) {
@@ -630,6 +679,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_AMapOptions>> scaleControlsEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -648,6 +698,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_AMapOptions>> zoomControlsEnabled_batch(List<bool> var1) async {
     if (false) {
@@ -668,6 +719,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_AMapOptions>> compassEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -686,6 +738,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_AMapOptions>> scrollGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
@@ -706,6 +759,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_AMapOptions>> zoomGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -724,6 +778,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_AMapOptions>> tiltGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
@@ -744,6 +799,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_AMapOptions>> rotateGesturesEnabled_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -762,6 +818,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getLogoPosition_batch() async {
     if (false) {
@@ -782,6 +839,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<bool>> getZOrderOnTop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -800,6 +858,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getMapType_batch() async {
     if (false) {
@@ -820,6 +879,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CameraPosition>> getCamera_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -838,6 +898,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getScaleControlsEnabled_batch() async {
     if (false) {
@@ -858,6 +919,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<bool>> getZoomControlsEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -876,6 +938,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getCompassEnabled_batch() async {
     if (false) {
@@ -896,6 +959,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<bool>> getScrollGesturesEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -914,6 +978,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getZoomGesturesEnabled_batch() async {
     if (false) {
@@ -934,6 +999,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
     }
   }
   
+  
   Future<List<bool>> getTiltGesturesEnabled_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -952,6 +1018,7 @@ extension com_amap_api_maps_AMapOptions_Batch on List<com_amap_api_maps_AMapOpti
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getRotateGesturesEnabled_batch() async {
     if (false) {

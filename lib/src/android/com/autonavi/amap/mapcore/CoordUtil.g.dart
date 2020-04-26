@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<int> convertToGcj(Float64List var0, Float64List var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension com_autonavi_amap_mapcore_CoordUtil_Batch on List<com_autonavi_amap_ma
   //endregion
 
   //region methods
+  
   static Future<List<int>> convertToGcj_batch(List<Float64List> var0, List<Float64List> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');

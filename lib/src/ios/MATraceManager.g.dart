@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MATraceManager extends NSObject  {
   //region constants
@@ -83,6 +84,7 @@ class MATraceManager extends NSObject  {
   //endregion
 
   //region methods
+  
   static Future<MATraceManager> sharedInstance() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -100,10 +102,12 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<NSOperation> queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback(List<MATraceLocation> locations, AMapCoordinateType type, void processingCallback(int index, List<MATracePoint> points), void finishCallback(List<MATracePoint> points, double distance), void failedCallback(int errorCode, String errorDesc)) async {
     // print log
@@ -159,10 +163,79 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
+  @deprecated
+  Future<void> startTraceWith(void locCallback(List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error)) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MATraceManager@$refId::startTraceWith([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::startTraceWith', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('MATraceManager::startTraceWith::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'Callback::MATraceLocationCallback::MATraceLocationCallback':
+              // print log
+              if (fluttifyLogEnabled) {
+        
+              }
+        
+              // handle the native call
+              locCallback((args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  @deprecated
+  Future<void> stopTrace() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: MATraceManager@$refId::stopTrace([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stopTrace', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   
   Future<void> start() async {
     // print log
@@ -181,10 +254,12 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> stop() async {
     // print log
@@ -203,8 +278,9 @@ class MATraceManager extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -221,6 +297,7 @@ extension MATraceManager_Batch on List<MATraceManager> {
   //endregion
 
   //region methods
+  
   static Future<List<MATraceManager>> sharedInstance_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -240,7 +317,28 @@ extension MATraceManager_Batch on List<MATraceManager> {
     }
   }
   
-  Future<void> start_batch() async {
+  @deprecated
+  Future<List<void>> stopTrace_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATraceManager::stopTrace_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> start_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -259,7 +357,8 @@ extension MATraceManager_Batch on List<MATraceManager> {
     }
   }
   
-  Future<void> stop_batch() async {
+  
+  Future<List<void>> stop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

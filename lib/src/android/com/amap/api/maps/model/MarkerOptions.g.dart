@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_MarkerOptions> icons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> rotatingIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1, double var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getAngleOffset() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isRotatingMode() async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> period(int var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getPeriod() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isPerspective() async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> perspective(bool var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> setFlat(bool var1) async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> anchor(double var1, double var2) async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> setInfoWindowOffset(int var1, int var2) async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> title(String var1) async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> snippet(String var1) async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> draggable(bool var1) async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> visible(bool var1) async {
     // print log
@@ -441,10 +477,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> setGps(bool var1) async {
     // print log
@@ -463,10 +501,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -485,10 +525,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getTitle() async {
     // print log
@@ -507,10 +549,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getSnippet() async {
     // print log
@@ -529,10 +573,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
@@ -551,10 +597,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorU() async {
     // print log
@@ -573,10 +621,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInfoWindowOffsetX() async {
     // print log
@@ -595,10 +645,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInfoWindowOffsetY() async {
     // print log
@@ -617,10 +669,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorV() async {
     // print log
@@ -639,10 +693,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isDraggable() async {
     // print log
@@ -661,10 +717,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -683,10 +741,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isGps() async {
     // print log
@@ -705,10 +765,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isFlat() async {
     // print log
@@ -727,10 +789,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> zIndex(double var1) async {
     // print log
@@ -749,10 +813,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -771,10 +837,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> alpha(double var1) async {
     // print log
@@ -793,10 +861,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getAlpha() async {
     // print log
@@ -815,10 +885,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> autoOverturnInfoWindow(bool var1) async {
     // print log
@@ -837,10 +909,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
@@ -859,10 +933,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> displayLevel(int var1) async {
     // print log
@@ -881,10 +957,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getDisplayLevel() async {
     // print log
@@ -903,10 +981,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> rotateAngle(double var1) async {
     // print log
@@ -925,10 +1005,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getRotateAngle() async {
     // print log
@@ -947,10 +1029,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> infoWindowEnable(bool var1) async {
     // print log
@@ -969,10 +1053,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowEnable() async {
     // print log
@@ -991,10 +1077,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> belowMaskLayer(bool var1) async {
     // print log
@@ -1013,10 +1101,12 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isBelowMaskLayer() async {
     // print log
@@ -1035,8 +1125,9 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -1053,6 +1144,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> icons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1071,6 +1163,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> rotatingIcons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1, List<double> var2) async {
     if (var1.length != var2.length) {
@@ -1091,6 +1184,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getAngleOffset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1109,6 +1203,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isRotatingMode_batch() async {
     if (false) {
@@ -1129,6 +1224,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_model_BitmapDescriptor>>> getIcons_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1147,6 +1243,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> period_batch(List<int> var1) async {
     if (false) {
@@ -1167,6 +1264,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<int>> getPeriod_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1185,6 +1283,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isPerspective_batch() async {
     if (false) {
@@ -1205,6 +1304,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> perspective_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1223,6 +1323,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> position_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
@@ -1243,6 +1344,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> setFlat_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1261,6 +1363,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> icon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
@@ -1281,6 +1384,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> anchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -1299,6 +1403,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> setInfoWindowOffset_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
@@ -1319,6 +1424,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> title_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1337,6 +1443,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> snippet_batch(List<String> var1) async {
     if (false) {
@@ -1357,6 +1464,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> draggable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1375,6 +1483,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> visible_batch(List<bool> var1) async {
     if (false) {
@@ -1395,6 +1504,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> setGps_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1413,6 +1523,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPosition_batch() async {
     if (false) {
@@ -1433,6 +1544,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<String>> getTitle_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1451,6 +1563,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getSnippet_batch() async {
     if (false) {
@@ -1471,6 +1584,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcon_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1489,6 +1603,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorU_batch() async {
     if (false) {
@@ -1509,6 +1624,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<int>> getInfoWindowOffsetX_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1527,6 +1643,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getInfoWindowOffsetY_batch() async {
     if (false) {
@@ -1547,6 +1664,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getAnchorV_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1565,6 +1683,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isDraggable_batch() async {
     if (false) {
@@ -1585,6 +1704,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<bool>> isVisible_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1603,6 +1723,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isGps_batch() async {
     if (false) {
@@ -1623,6 +1744,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<bool>> isFlat_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1641,6 +1763,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -1661,6 +1784,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1679,6 +1803,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> alpha_batch(List<double> var1) async {
     if (false) {
@@ -1699,6 +1824,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getAlpha_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1717,6 +1843,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> autoOverturnInfoWindow_batch(List<bool> var1) async {
     if (false) {
@@ -1737,6 +1864,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<bool>> isInfoWindowAutoOverturn_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1755,6 +1883,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> displayLevel_batch(List<int> var1) async {
     if (false) {
@@ -1775,6 +1904,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<int>> getDisplayLevel_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1793,6 +1923,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> rotateAngle_batch(List<double> var1) async {
     if (false) {
@@ -1813,6 +1944,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getRotateAngle_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1831,6 +1963,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MarkerOptions>> infoWindowEnable_batch(List<bool> var1) async {
     if (false) {
@@ -1851,6 +1984,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<bool>> isInfoWindowEnable_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1870,6 +2004,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> belowMaskLayer_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1888,6 +2023,7 @@ extension com_amap_api_maps_model_MarkerOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isBelowMaskLayer_batch() async {
     if (false) {

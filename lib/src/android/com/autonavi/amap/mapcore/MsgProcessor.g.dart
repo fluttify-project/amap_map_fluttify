@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> nativeInitMsg() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> nativeInit(int var1, String var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> nativeMsgProcessor(String var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> nativeCall() async {
     // print log
@@ -133,8 +141,9 @@ class com_autonavi_amap_mapcore_MsgProcessor extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,7 +160,8 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
   //endregion
 
   //region methods
-  Future<void> nativeInitMsg_batch() async {
+  
+  Future<List<void>> nativeInitMsg_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -170,7 +180,8 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     }
   }
   
-  Future<void> nativeInit_batch(List<int> var1, List<String> var2) async {
+  
+  Future<List<void>> nativeInit_batch(List<int> var1, List<String> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -189,7 +200,8 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     }
   }
   
-  Future<void> nativeMsgProcessor_batch(List<String> var1) async {
+  
+  Future<List<void>> nativeMsgProcessor_batch(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -208,7 +220,8 @@ extension com_autonavi_amap_mapcore_MsgProcessor_Batch on List<com_autonavi_amap
     }
   }
   
-  Future<void> nativeCall_batch() async {
+  
+  Future<List<void>> nativeCall_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
