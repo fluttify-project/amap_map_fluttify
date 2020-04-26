@@ -32,7 +32,7 @@ class AmapView extends StatefulWidget {
     this.scrollGesturesEnabled,
     this.rotateGestureEnabled,
     this.tiltGestureEnabled,
-    this.zoomLevel, // todo 初始化没用
+    this.zoomLevel,
     this.centerCoordinate,
     this.markers,
     this.onMarkerClicked,
