@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   //endregion
 
   //region methods
+  
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> needToCaculate() async {
     // print log
@@ -71,10 +75,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getCurMult() async {
     // print log
@@ -93,10 +99,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setNormalizedTime(double var1) async {
     // print log
@@ -115,10 +123,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInterpolatorType(int var1, double var2) async {
     // print log
@@ -137,10 +147,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInterpolatorType() async {
     // print log
@@ -159,10 +171,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> checkParam() async {
     // print log
@@ -181,8 +195,9 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -199,7 +214,8 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
   //endregion
 
   //region methods
-  Future<void> reset_batch() async {
+  
+  Future<List<void>> reset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -217,6 +233,7 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> needToCaculate_batch() async {
     if (false) {
@@ -237,6 +254,7 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
     }
   }
   
+  
   Future<List<double>> getCurMult_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -256,7 +274,8 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
     }
   }
   
-  Future<void> setNormalizedTime_batch(List<double> var1) async {
+  
+  Future<List<void>> setNormalizedTime_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -275,7 +294,8 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
     }
   }
   
-  Future<void> setInterpolatorType_batch(List<int> var1, List<double> var2) async {
+  
+  Future<List<void>> setInterpolatorType_batch(List<int> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -293,6 +313,7 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getInterpolatorType_batch() async {
     if (false) {
@@ -313,7 +334,8 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam_Batch on L
     }
   }
   
-  Future<void> checkParam_batch() async {
+  
+  Future<List<void>> checkParam_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   //endregion
 
   //region methods
+  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromResource(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromView(android_view_View var0) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromPath(String var0) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromAsset(String var0) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromFile(String var0) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker() async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker__double(double var0) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromBitmap(android_graphics_Bitmap var0) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<android_content_Context> getContext() async {
     // print log
@@ -243,8 +261,9 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -261,6 +280,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
   //endregion
 
   //region methods
+  
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromResource_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -279,6 +299,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromView_batch(List<android_view_View> var0) async {
     if (false) {
@@ -299,6 +320,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
+  
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromPath_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -317,6 +339,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromAsset_batch(List<String> var0) async {
     if (false) {
@@ -337,6 +360,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
+  
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromFile_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -355,6 +379,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker_batch() async {
     if (false) {
@@ -375,6 +400,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
+  
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> defaultMarker__double_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -394,6 +420,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
     }
   }
   
+  
   static Future<List<com_amap_api_maps_model_BitmapDescriptor>> fromBitmap_batch(List<android_graphics_Bitmap> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -412,6 +439,7 @@ extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap
       return typedResult;
     }
   }
+  
   
   static Future<List<android_content_Context>> getContext_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offlineservice_AMapPermissionActivity with android_view_View_OnClickListener {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   //endregion
 
   //region methods
+  
   Future<void> showScr() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> closeScr() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> closeScr__android_os_Bundle(android_os_Bundle var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onClick(android_view_View var1) async {
     // print log
@@ -133,8 +141,9 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,7 +160,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
   //endregion
 
   //region methods
-  Future<void> showScr_batch() async {
+  
+  Future<List<void>> showScr_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -170,7 +180,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     }
   }
   
-  Future<void> closeScr_batch() async {
+  
+  Future<List<void>> closeScr_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -189,7 +200,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     }
   }
   
-  Future<void> closeScr__android_os_Bundle_batch(List<android_os_Bundle> var1) async {
+  
+  Future<List<void>> closeScr__android_os_Bundle_batch(List<android_os_Bundle> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -208,7 +220,8 @@ extension com_amap_api_maps_offlinemap_OfflineMapActivity_Batch on List<com_amap
     }
   }
   
-  Future<void> onClick_batch(List<android_view_View> var1) async {
+  
+  Future<List<void>> onClick_batch(List<android_view_View> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

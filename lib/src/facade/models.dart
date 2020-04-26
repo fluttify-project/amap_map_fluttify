@@ -1,4 +1,5 @@
 import 'package:amap_core_fluttify/amap_core_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

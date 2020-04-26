@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   //region constants
@@ -108,6 +109,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MACustomBuildingOverlayOption> optionWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -125,10 +127,12 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACustomBuildingOverlayOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> setOptionWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
@@ -147,8 +151,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -228,6 +233,7 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
   //endregion
 
   //region methods
+  
   static Future<List<MACustomBuildingOverlayOption>> optionWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {
       return Future.error('all args must have same length!');
@@ -246,6 +252,7 @@ extension MACustomBuildingOverlayOption_Batch on List<MACustomBuildingOverlayOpt
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> setOptionWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {

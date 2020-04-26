@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_PolygonOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> addHoles__List_com_amap_api_maps_model_BaseHoleOptions_(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getStrokeWidth() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeColor() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFillColor() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
@@ -441,8 +477,9 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
   
@@ -459,6 +496,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_PolygonOptions>> add__com_amap_api_maps_model_LatLng_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -477,6 +515,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_PolygonOptions>> addAll_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
@@ -497,7 +536,8 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -516,7 +556,8 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setHoleOptions_batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
+  
+  Future<List<void>> setHoleOptions_batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -534,6 +575,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_PolygonOptions>> addHoles__com_amap_api_maps_model_BaseHoleOptions_batch(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     if (false) {
@@ -554,6 +596,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_PolygonOptions>> addHoles__List_com_amap_api_maps_model_BaseHoleOptions__batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -572,6 +615,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_PolygonOptions>> strokeWidth_batch(List<double> var1) async {
     if (false) {
@@ -592,6 +636,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_PolygonOptions>> strokeColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -610,6 +655,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_PolygonOptions>> fillColor_batch(List<int> var1) async {
     if (false) {
@@ -630,6 +676,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_PolygonOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -648,6 +695,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_PolygonOptions>> visible_batch(List<bool> var1) async {
     if (false) {
@@ -668,6 +716,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_model_LatLng>>> getPoints_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -686,6 +735,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getStrokeWidth_batch() async {
     if (false) {
@@ -706,6 +756,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<int>> getStrokeColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -724,6 +775,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFillColor_batch() async {
     if (false) {
@@ -744,6 +796,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -763,6 +816,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
     }
   }
   
+  
   Future<List<bool>> isVisible_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -781,6 +835,7 @@ extension com_amap_api_maps_model_PolygonOptions_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_model_BaseHoleOptions>>> getHoleOptions_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getSmoothColor() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSmoothColor(int var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSlowColor() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSlowColor(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getCongestedColor() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCongestedColor(int var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSeriousCongestedColor() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSeriousCongestedColor(int var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRatio() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRatio(double var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTrafficRoadBackgroundColor() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTrafficRoadBackgroundColor(int var1) async {
     // print log
@@ -309,8 +333,9 @@ class com_amap_api_maps_model_MyTrafficStyle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -327,6 +352,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
   //endregion
 
   //region methods
+  
   Future<List<int>> getSmoothColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -346,7 +372,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setSmoothColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setSmoothColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -364,6 +391,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getSlowColor_batch() async {
     if (false) {
@@ -384,7 +412,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setSlowColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setSlowColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -402,6 +431,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getCongestedColor_batch() async {
     if (false) {
@@ -422,7 +452,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setCongestedColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setCongestedColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -440,6 +471,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getSeriousCongestedColor_batch() async {
     if (false) {
@@ -460,7 +492,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setSeriousCongestedColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setSeriousCongestedColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -478,6 +511,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getRatio_batch() async {
     if (false) {
@@ -498,7 +532,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setRatio_batch(List<double> var1) async {
+  
+  Future<List<void>> setRatio_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -516,6 +551,7 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getTrafficRoadBackgroundColor_batch() async {
     if (false) {
@@ -536,7 +572,8 @@ extension com_amap_api_maps_model_MyTrafficStyle_Batch on List<com_amap_api_maps
     }
   }
   
-  Future<void> setTrafficRoadBackgroundColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setTrafficRoadBackgroundColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

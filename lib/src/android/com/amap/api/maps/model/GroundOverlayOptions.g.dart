@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_GroundOverlayOptions> image(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> anchor(double var1, double var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> position__com_amap_api_maps_model_LatLng__double(com_amap_api_maps_model_LatLng var1, double var2) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> position__com_amap_api_maps_model_LatLng__double__double(com_amap_api_maps_model_LatLng var1, double var2, double var3) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> positionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> bearing(double var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> zIndex(double var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> visible(bool var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlayOptions> transparency(double var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getImage() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getLocation() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getWidth() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getHeight() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getBearing() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getTransparency() async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorU() async {
     // print log
@@ -441,10 +477,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorV() async {
     // print log
@@ -463,10 +501,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -485,8 +525,9 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -503,6 +544,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> image_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -521,6 +563,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> anchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
@@ -541,6 +584,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> position__com_amap_api_maps_model_LatLng__double_batch(List<com_amap_api_maps_model_LatLng> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -559,6 +603,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> position__com_amap_api_maps_model_LatLng__double__double_batch(List<com_amap_api_maps_model_LatLng> var1, List<double> var2, List<double> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
@@ -579,6 +624,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> positionFromBounds_batch(List<com_amap_api_maps_model_LatLngBounds> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -597,6 +643,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> bearing_batch(List<double> var1) async {
     if (false) {
@@ -617,6 +664,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -635,6 +683,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> visible_batch(List<bool> var1) async {
     if (false) {
@@ -655,6 +704,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_GroundOverlayOptions>> transparency_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -673,6 +723,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getImage_batch() async {
     if (false) {
@@ -693,6 +744,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_LatLng>> getLocation_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -711,6 +763,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getWidth_batch() async {
     if (false) {
@@ -731,6 +784,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<double>> getHeight_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -749,6 +803,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLngBounds>> getBounds_batch() async {
     if (false) {
@@ -769,6 +824,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<double>> getBearing_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -787,6 +843,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {
@@ -807,6 +864,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<double>> getTransparency_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -825,6 +883,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorU_batch() async {
     if (false) {
@@ -845,6 +904,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
     }
   }
   
+  
   Future<List<double>> getAnchorV_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -863,6 +923,7 @@ extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_ap
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {

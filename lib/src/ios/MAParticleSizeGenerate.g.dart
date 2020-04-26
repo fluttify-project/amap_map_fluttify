@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin MAParticleSizeGenerate on NSObject {
   
@@ -19,6 +20,7 @@ mixin MAParticleSizeGenerate on NSObject {
 
   
 
+  
   Future<double> getSizeX(double timeFrame) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin MAParticleSizeGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSizeY(double timeFrame) async {
     // print log
@@ -58,10 +62,12 @@ mixin MAParticleSizeGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSizeZ(double timeFrame) async {
     // print log
@@ -80,8 +86,9 @@ mixin MAParticleSizeGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

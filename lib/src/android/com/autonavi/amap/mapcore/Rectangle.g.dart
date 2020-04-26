@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   //region constants
@@ -115,6 +116,7 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getBeyond180Mode() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -132,10 +134,12 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> contains__int__int(int var1, int var2) async {
     // print log
@@ -154,10 +158,12 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> contains__com_autonavi_amap_mapcore_IPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -176,10 +182,12 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isOverlap__int__int__int__int(int var1, int var2, int var3, int var4) async {
     // print log
@@ -198,8 +206,9 @@ class com_autonavi_amap_mapcore_Rectangle extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -266,6 +275,7 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
   //endregion
 
   //region methods
+  
   Future<List<int>> getBeyond180Mode_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -284,6 +294,7 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> contains__int__int_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
@@ -304,6 +315,7 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
     }
   }
   
+  
   Future<List<bool>> contains__com_autonavi_amap_mapcore_IPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -322,6 +334,7 @@ extension com_autonavi_amap_mapcore_Rectangle_Batch on List<com_autonavi_amap_ma
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isOverlap__int__int__int__int_batch(List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
     if (var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {

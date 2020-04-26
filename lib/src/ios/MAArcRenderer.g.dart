@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAArcRenderer extends MAOverlayPathRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAArcRenderer> initWithArc(MAArc arc) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAArcRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MAArcRenderer_Batch on List<MAArcRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MAArcRenderer>> initWithArc_batch(List<MAArc> arc) async {
     if (false) {
       return Future.error('all args must have same length!');

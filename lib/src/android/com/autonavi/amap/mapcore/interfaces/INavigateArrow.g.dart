@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_mapcore_interfaces_IOverlay {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
 
   
 
+  
   Future<void> setTopColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSideColor(int var1) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTopColor() async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSideColor() async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setWidth(double var1) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getWidth() async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> set3DModel(bool var1) async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> is3DModel() async {
     // print log
@@ -234,8 +254,9 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

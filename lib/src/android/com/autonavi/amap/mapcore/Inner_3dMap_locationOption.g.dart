@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
   //endregion
 
   //region methods
+  
   static Future<String> getAPIKEY() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMockEnable() async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMockEnable(bool var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInterval() async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(int var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isOnceLocation() async {
     // print log
@@ -177,10 +189,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(bool var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isNeedAddress() async {
     // print log
@@ -221,10 +237,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(bool var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isWifiActiveScan() async {
     // print log
@@ -265,10 +285,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setWifiActiveScan(bool var1) async {
     // print log
@@ -287,10 +309,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isWifiScan() async {
     // print log
@@ -309,10 +333,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setWifiScan(bool var1) async {
     // print log
@@ -331,10 +357,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
     // print log
@@ -353,10 +381,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__];
     
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[__result__];
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
     // print log
@@ -375,10 +405,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__];
     
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[__result__];
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
     // print log
@@ -397,10 +429,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<void> setLocationProtocol(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol var0) async {
     // print log
@@ -419,10 +453,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isKillProcess() async {
     // print log
@@ -441,10 +477,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(bool var1) async {
     // print log
@@ -463,10 +501,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isGpsFirst() async {
     // print log
@@ -485,10 +525,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(bool var1) async {
     // print log
@@ -507,10 +549,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
     // print log
@@ -529,10 +573,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getHttpTimeOut() async {
     // print log
@@ -551,10 +597,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setHttpTimeOut(int var1) async {
     // print log
@@ -573,10 +621,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isOffset() async {
     // print log
@@ -595,10 +645,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(bool var1) async {
     // print log
@@ -617,10 +669,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isLocationCacheEnable() async {
     // print log
@@ -639,10 +693,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLocationCacheEnable(bool var1) async {
     // print log
@@ -661,10 +717,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isOnceLocationLatest() async {
     // print log
@@ -683,10 +741,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnceLocationLatest(bool var1) async {
     // print log
@@ -705,10 +765,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isSensorEnable() async {
     // print log
@@ -727,10 +789,12 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSensorEnable(bool var1) async {
     // print log
@@ -749,8 +813,9 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -767,6 +832,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
   //endregion
 
   //region methods
+  
   static Future<List<String>> getAPIKEY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -785,6 +851,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isMockEnable_batch() async {
     if (false) {
@@ -805,7 +872,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setMockEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setMockEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -823,6 +891,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getInterval_batch() async {
     if (false) {
@@ -843,6 +912,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setInterval_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -861,6 +931,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isOnceLocation_batch() async {
     if (false) {
@@ -881,6 +952,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setOnceLocation_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -899,6 +971,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isNeedAddress_batch() async {
     if (false) {
@@ -919,6 +992,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setNeedAddress_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -937,6 +1011,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isWifiActiveScan_batch() async {
     if (false) {
@@ -957,7 +1032,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setWifiActiveScan_batch(List<bool> var1) async {
+  
+  Future<List<void>> setWifiActiveScan_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -975,6 +1051,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isWifiScan_batch() async {
     if (false) {
@@ -995,7 +1072,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setWifiScan_batch(List<bool> var1) async {
+  
+  Future<List<void>> setWifiScan_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1013,6 +1091,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode>> getLocationMode_batch() async {
     if (false) {
@@ -1033,6 +1112,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol>> getLocationProtocol_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1051,6 +1131,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setLocationMode_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> var1) async {
     if (false) {
@@ -1071,7 +1152,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  static Future<void> setLocationProtocol_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> var0) async {
+  
+  static Future<List<void>> setLocationProtocol_batch(List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1089,6 +1171,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isKillProcess_batch() async {
     if (false) {
@@ -1109,6 +1192,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setKillProcess_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1127,6 +1211,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isGpsFirst_batch() async {
     if (false) {
@@ -1147,6 +1232,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setGpsFirst_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1165,6 +1251,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> clone_batch() async {
     if (false) {
@@ -1185,6 +1272,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<int>> getHttpTimeOut_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1204,7 +1292,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setHttpTimeOut_batch(List<int> var1) async {
+  
+  Future<List<void>> setHttpTimeOut_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1222,6 +1311,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isOffset_batch() async {
     if (false) {
@@ -1242,6 +1332,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
+  
   Future<List<com_autonavi_amap_mapcore_Inner_3dMap_locationOption>> setOffset_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1260,6 +1351,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isLocationCacheEnable_batch() async {
     if (false) {
@@ -1280,7 +1372,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setLocationCacheEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setLocationCacheEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1298,6 +1391,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isOnceLocationLatest_batch() async {
     if (false) {
@@ -1318,7 +1412,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setOnceLocationLatest_batch(List<bool> var1) async {
+  
+  Future<List<void>> setOnceLocationLatest_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1336,6 +1431,7 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isSensorEnable_batch() async {
     if (false) {
@@ -1356,7 +1452,8 @@ extension com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Batch on List<com
     }
   }
   
-  Future<void> setSensorEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setSensorEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

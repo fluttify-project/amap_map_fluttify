@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   //region constants
@@ -50,6 +51,7 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MAPolyline> polylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<MAPolyline> polylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
@@ -89,10 +93,12 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> setPolylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
@@ -111,10 +117,12 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> setPolylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
@@ -133,8 +141,9 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,6 +160,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
   //endregion
 
   //region methods
+  
   static Future<List<MAPolyline>> polylineWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
       return Future.error('all args must have same length!');
@@ -169,6 +179,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
       return typedResult;
     }
   }
+  
   
   static Future<List<MAPolyline>> polylineWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {
@@ -189,6 +200,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
     }
   }
   
+  
   Future<List<bool>> setPolylineWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
       return Future.error('all args must have same length!');
@@ -207,6 +219,7 @@ extension MAPolyline_Batch on List<MAPolyline> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> setPolylineWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {

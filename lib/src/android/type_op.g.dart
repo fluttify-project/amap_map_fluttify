@@ -11,6 +11,7 @@ import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 extension TypeOpAmapMapFluttifyAndroid on Ref {
@@ -426,6 +427,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   
   Future<bool> iscom_amap_api_maps_UiSettings() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_UiSettings', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_amap_api_maps_SwipeDismissTouchListener() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener', {'refId': refId});
     return result;
   }
   
@@ -1508,6 +1514,11 @@ extension TypeOpAmapMapFluttifyAndroid on Ref {
   Future<com_amap_api_maps_UiSettings> ascom_amap_api_maps_UiSettings() async {
     final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_UiSettings', {'refId': refId});
     return com_amap_api_maps_UiSettings()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_SwipeDismissTouchListener> ascom_amap_api_maps_SwipeDismissTouchListener() async {
+    final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::ascom_amap_api_maps_SwipeDismissTouchListener', {'refId': refId});
+    return com_amap_api_maps_SwipeDismissTouchListener()..refId = result;
   }
   
   Future<com_amap_api_maps_InfoWindowParams> ascom_amap_api_maps_InfoWindowParams() async {

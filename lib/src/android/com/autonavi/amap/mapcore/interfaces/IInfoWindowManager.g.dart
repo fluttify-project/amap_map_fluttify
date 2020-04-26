@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
 
   
 
+  
   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,10 +66,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -86,10 +90,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackColor(int var1) async {
     // print log
@@ -108,10 +114,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackEnable(bool var1) async {
     // print log
@@ -130,10 +138,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackScale(double var1, double var2) async {
     // print log
@@ -152,10 +162,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -174,10 +186,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -196,10 +210,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startAnimation() async {
     // print log
@@ -218,8 +234,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IInfoWindowManager on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

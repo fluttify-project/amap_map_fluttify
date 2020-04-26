@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_Object  {
   //region constants
@@ -40,6 +41,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   //endregion
 
   //region methods
+  
   Future<bool> isOver() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -57,10 +59,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isValid() async {
     // print log
@@ -79,10 +83,12 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> doAnimation(Object var1) async {
     // print log
@@ -101,8 +107,9 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -119,6 +126,7 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation_Batch on List<c
   //endregion
 
   //region methods
+  
   Future<List<bool>> isOver_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -137,6 +145,7 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation_Batch on List<c
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isValid_batch() async {
     if (false) {
@@ -157,7 +166,8 @@ extension com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation_Batch on List<c
     }
   }
   
-  Future<void> doAnimation_batch(List<Object> var1) async {
+  
+  Future<List<void>> doAnimation_batch(List<Object> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

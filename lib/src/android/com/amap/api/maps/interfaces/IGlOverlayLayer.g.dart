@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
 
   
 
+  
   Future<void> updateOption(String var1, Object var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> removeOverlay(String var1) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> prepareIcon(Object var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getCurrentParticleNum(String var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
@@ -146,10 +158,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
@@ -190,10 +206,12 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) async {
     // print log
@@ -212,8 +230,9 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

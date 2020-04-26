@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerate {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
   //endregion
 
   //region methods
+  
   Future<MAParticleRandomColorGenerate> initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2(double r1, double g1, double b1, double a1, double r2, double g2, double b2, double a2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleRandomColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleRandomColorGenerate_Batch on List<MAParticleRandomColorGener
   //endregion
 
   //region methods
+  
   Future<List<MAParticleRandomColorGenerate>> initWithBoundaryColorR1_G1_B1_A1_R2_G2_B2_A2_batch(List<double> r1, List<double> g1, List<double> b1, List<double> a1, List<double> r2, List<double> g2, List<double> b2, List<double> a2) async {
     if (r1.length != g1.length || g1.length != b1.length || b1.length != a1.length || a1.length != r2.length || r2.length != g2.length || g2.length != b2.length || b2.length != a2.length) {
       return Future.error('all args must have same length!');

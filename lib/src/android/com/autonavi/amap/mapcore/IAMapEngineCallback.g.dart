@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
 
   
 
+  
   Future<Uint8List> requireMapResource(int var1, String var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<void> reloadMapResource(int var1, String var2, int var3) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> requireMapData(int var1, Uint8List var2) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   Future<void> requireMapRender(int var1, int var2, int var3) async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onMapRender(int var1, int var2) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> cancelRequireMapData(Object var1) async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> generateRequestId() async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> requireMapDataAsyn(int var1, Uint8List var2) async {
     // print log
@@ -256,8 +278,9 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

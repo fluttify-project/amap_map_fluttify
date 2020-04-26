@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAMapStatus extends NSObject  {
   //region constants
@@ -108,6 +109,7 @@ class MAMapStatus extends NSObject  {
   //endregion
 
   //region methods
+  
   static Future<MAMapStatus> statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -125,10 +127,12 @@ class MAMapStatus extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<dynamic> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // print log
@@ -147,8 +151,9 @@ class MAMapStatus extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -228,6 +233,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
   //endregion
 
   //region methods
+  
   static Future<List<MAMapStatus>> statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {
       return Future.error('all args must have same length!');
@@ -246,6 +252,7 @@ extension MAMapStatus_Batch on List<MAMapStatus> {
       return typedResult;
     }
   }
+  
   
   Future<List<dynamic>> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<double> rotationDegree, List<double> cameraDegree, List<CGPoint> screenAnchor) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != rotationDegree.length || rotationDegree.length != cameraDegree.length || cameraDegree.length != screenAnchor.length) {

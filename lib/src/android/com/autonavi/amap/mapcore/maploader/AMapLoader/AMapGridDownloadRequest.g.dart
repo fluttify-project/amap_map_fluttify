@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
   //endregion
 
   //region methods
+  
   Future<Map<String,String>> getRequestHead() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Map<String,String>> getParams() async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getURL() async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPostEntityBytes(Uint8List var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Uint8List> getEntityBytes() async {
     // print log
@@ -155,8 +165,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest ext
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
   
@@ -173,6 +184,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
   //endregion
 
   //region methods
+  
   Future<List<Map<String,String>>> getRequestHead_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -191,6 +203,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
       return typedResult;
     }
   }
+  
   
   Future<List<Map<String,String>>> getParams_batch() async {
     if (false) {
@@ -211,6 +224,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
     }
   }
   
+  
   Future<List<String>> getURL_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -230,7 +244,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
     }
   }
   
-  Future<void> setPostEntityBytes_batch(List<Uint8List> var1) async {
+  
+  Future<List<void>> setPostEntityBytes_batch(List<Uint8List> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -248,6 +263,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest
       return typedResult;
     }
   }
+  
   
   Future<List<Uint8List>> getEntityBytes_batch() async {
     if (false) {

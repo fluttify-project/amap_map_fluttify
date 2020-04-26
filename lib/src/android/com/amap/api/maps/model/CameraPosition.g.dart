@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_CameraPosition extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -79,6 +80,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   //endregion
 
   //region methods
+  
   static Future<com_amap_api_maps_model_CameraPosition> fromLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -96,10 +98,12 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_CameraPosition_Builder> builder() async {
     // print log
@@ -118,10 +122,12 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_model_CameraPosition_Builder> builder__com_amap_api_maps_model_CameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
     // print log
@@ -140,8 +146,9 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -192,6 +199,7 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
   //endregion
 
   //region methods
+  
   static Future<List<com_amap_api_maps_model_CameraPosition>> fromLatLngZoom_batch(List<com_amap_api_maps_model_LatLng> var0, List<double> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -211,6 +219,7 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
     }
   }
   
+  
   static Future<List<com_amap_api_maps_model_CameraPosition_Builder>> builder_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -229,6 +238,7 @@ extension com_amap_api_maps_model_CameraPosition_Batch on List<com_amap_api_maps
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_model_CameraPosition_Builder>> builder__com_amap_api_maps_model_CameraPosition_batch(List<com_amap_api_maps_model_CameraPosition> var0) async {
     if (false) {

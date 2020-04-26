@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   //endregion
 
   //region methods
+  
   Future<void> setCallback(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -95,8 +97,9 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

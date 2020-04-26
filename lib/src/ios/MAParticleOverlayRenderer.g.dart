@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAParticleOverlayRenderer> initWithParticleOverlay(MAParticleOverlay particleOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MAParticleOverlayRenderer extends MAOverlayRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MAParticleOverlayRenderer_Batch on List<MAParticleOverlayRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MAParticleOverlayRenderer>> initWithParticleOverlay_batch(List<MAParticleOverlay> particleOverlay) async {
     if (false) {
       return Future.error('all args must have same length!');

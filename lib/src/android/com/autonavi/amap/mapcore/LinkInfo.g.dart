@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getState() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setState(int var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTime() async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTime(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getLength() async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLength(int var1) async {
     // print log
@@ -177,8 +189,9 @@ class com_autonavi_amap_mapcore_LinkInfo extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -195,6 +208,7 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
   //endregion
 
   //region methods
+  
   Future<List<int>> getState_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -214,7 +228,8 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> setState_batch(List<int> var1) async {
+  
+  Future<List<void>> setState_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -232,6 +247,7 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getTime_batch() async {
     if (false) {
@@ -252,7 +268,8 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> setTime_batch(List<int> var1) async {
+  
+  Future<List<void>> setTime_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -270,6 +287,7 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getLength_batch() async {
     if (false) {
@@ -290,7 +308,8 @@ extension com_autonavi_amap_mapcore_LinkInfo_Batch on List<com_autonavi_amap_map
     }
   }
   
-  Future<void> setLength_batch(List<int> var1) async {
+  
+  Future<List<void>> setLength_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

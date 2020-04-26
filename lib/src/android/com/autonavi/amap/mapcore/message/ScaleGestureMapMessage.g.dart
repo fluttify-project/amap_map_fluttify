@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_autonavi_amap_mapcore_message_AbstractGestureMapMessage  {
   //region constants
@@ -84,6 +85,7 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
   //endregion
 
   //region methods
+  
   static Future<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage> obtain(int var0, double var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -101,10 +103,12 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<void> destory() async {
     // print log
@@ -123,8 +127,9 @@ class com_autonavi_amap_mapcore_message_ScaleGestureMapMessage extends com_auton
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -178,6 +183,7 @@ extension com_autonavi_amap_mapcore_message_ScaleGestureMapMessage_Batch on List
   //endregion
 
   //region methods
+  
   static Future<List<com_autonavi_amap_mapcore_message_ScaleGestureMapMessage>> obtain_batch(List<int> var0, List<double> var1, List<int> var2, List<int> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -197,7 +203,8 @@ extension com_autonavi_amap_mapcore_message_ScaleGestureMapMessage_Batch on List
     }
   }
   
-  static Future<void> destory_batch() async {
+  
+  static Future<List<void>> destory_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

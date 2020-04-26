@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<int> getNativeInstatnce() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getCode() async {
     // print log
@@ -71,10 +75,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getType() async {
     // print log
@@ -93,10 +99,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSubType() async {
     // print log
@@ -115,10 +123,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeItem(int var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removeAll() async {
     // print log
@@ -159,10 +171,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getSize() async {
     // print log
@@ -181,10 +195,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -203,10 +219,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -225,10 +243,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setClickable(bool var1) async {
     // print log
@@ -247,10 +267,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isClickable() async {
     // print log
@@ -269,10 +291,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clearFocus() async {
     // print log
@@ -291,10 +315,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> getIsInBundle() async {
     // print log
@@ -313,10 +339,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMaxCountShown(int var1) async {
     // print log
@@ -335,10 +363,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOverlayOnTop(bool var1) async {
     // print log
@@ -357,10 +387,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMinDisplayLevel(double var1) async {
     // print log
@@ -379,10 +411,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMaxDisplayLevel(double var1) async {
     // print log
@@ -401,10 +435,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOverlayPriority(int var1) async {
     // print log
@@ -423,10 +459,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getOverlayPriority() async {
     // print log
@@ -445,10 +483,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOverlayItemPriority(int var1) async {
     // print log
@@ -467,10 +507,12 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> useNightStyle(bool var1) async {
     // print log
@@ -489,8 +531,9 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -507,6 +550,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
   //endregion
 
   //region methods
+  
   Future<List<int>> getNativeInstatnce_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -525,6 +569,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getCode_batch() async {
     if (false) {
@@ -545,6 +590,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
+  
   Future<List<int>> getType_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -563,6 +609,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getSubType_batch() async {
     if (false) {
@@ -583,7 +630,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> removeItem_batch(List<int> var1) async {
+  
+  Future<List<void>> removeItem_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -602,7 +650,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> removeAll_batch() async {
+  
+  Future<List<void>> removeAll_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -620,6 +669,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getSize_batch() async {
     if (false) {
@@ -640,7 +690,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -658,6 +709,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -678,7 +730,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setClickable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setClickable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -696,6 +749,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isClickable_batch() async {
     if (false) {
@@ -716,7 +770,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> clearFocus_batch() async {
+  
+  Future<List<void>> clearFocus_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -734,6 +789,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> getIsInBundle_batch() async {
     if (false) {
@@ -754,7 +810,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setMaxCountShown_batch(List<int> var1) async {
+  
+  Future<List<void>> setMaxCountShown_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -773,7 +830,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setOverlayOnTop_batch(List<bool> var1) async {
+  
+  Future<List<void>> setOverlayOnTop_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -792,7 +850,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setMinDisplayLevel_batch(List<double> var1) async {
+  
+  Future<List<void>> setMinDisplayLevel_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -811,7 +870,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setMaxDisplayLevel_batch(List<double> var1) async {
+  
+  Future<List<void>> setMaxDisplayLevel_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -830,7 +890,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setOverlayPriority_batch(List<int> var1) async {
+  
+  Future<List<void>> setOverlayPriority_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -848,6 +909,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getOverlayPriority_batch() async {
     if (false) {
@@ -868,7 +930,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> setOverlayItemPriority_batch(List<int> var1) async {
+  
+  Future<List<void>> setOverlayItemPriority_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -887,7 +950,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLOverlay_Batch on List<com_autonavi_ae
     }
   }
   
-  Future<void> useNightStyle_batch(List<bool> var1) async {
+  
+  Future<List<void>> useNightStyle_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

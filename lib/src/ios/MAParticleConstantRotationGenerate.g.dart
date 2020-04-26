@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotationGenerate {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   //endregion
 
   //region methods
+  
   Future<MAParticleConstantRotationGenerate> initWithRotate(double rotate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleConstantRotationGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleConstantRotationGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleConstantRotationGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleConstantRotationGenerate_Batch on List<MAParticleConstantRot
   //endregion
 
   //region methods
+  
   Future<List<MAParticleConstantRotationGenerate>> initWithRotate_batch(List<double> rotate) async {
     if (false) {
       return Future.error('all args must have same length!');

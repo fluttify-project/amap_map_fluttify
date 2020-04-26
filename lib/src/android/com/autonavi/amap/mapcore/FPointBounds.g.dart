@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   //region constants
@@ -61,6 +62,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<com_autonavi_amap_mapcore_FPointBounds_Builder> builder() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -78,10 +80,12 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> contains__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1) async {
     // print log
@@ -100,10 +104,12 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> contains__com_autonavi_amap_mapcore_FPointBounds(com_autonavi_amap_mapcore_FPointBounds var1) async {
     // print log
@@ -122,10 +128,12 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> intersects(com_autonavi_amap_mapcore_FPointBounds var1) async {
     // print log
@@ -144,8 +152,9 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -175,6 +184,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
   //endregion
 
   //region methods
+  
   static Future<List<com_autonavi_amap_mapcore_FPointBounds_Builder>> builder_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -193,6 +203,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> contains__com_autonavi_amap_mapcore_FPoint_batch(List<com_autonavi_amap_mapcore_FPoint> var1) async {
     if (false) {
@@ -213,6 +224,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
     }
   }
   
+  
   Future<List<bool>> contains__com_autonavi_amap_mapcore_FPointBounds_batch(List<com_autonavi_amap_mapcore_FPointBounds> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -231,6 +243,7 @@ extension com_autonavi_amap_mapcore_FPointBounds_Batch on List<com_autonavi_amap
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> intersects_batch(List<com_autonavi_amap_mapcore_FPointBounds> var1) async {
     if (false) {

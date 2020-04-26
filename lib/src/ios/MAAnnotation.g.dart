@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin MAAnnotation on NSObject {
   
@@ -47,6 +48,7 @@ mixin MAAnnotation on NSObject {
   }
   
 
+  
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -64,8 +66,9 @@ mixin MAAnnotation on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

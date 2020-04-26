@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_amap_mapcore_animation_GLAnimation  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
   //endregion
 
   //region methods
+  
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_animation_GLAnimation>> getAnimations() async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> cleanAnimation() async {
     // print log
@@ -111,8 +117,9 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -129,7 +136,8 @@ extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_a
   //endregion
 
   //region methods
-  Future<void> addAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
+  
+  Future<List<void>> addAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -147,6 +155,7 @@ extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_autonavi_amap_mapcore_animation_GLAnimation>>> getAnimations_batch() async {
     if (false) {
@@ -167,7 +176,8 @@ extension com_autonavi_amap_mapcore_animation_GLAnimationSet_Batch on List<com_a
     }
   }
   
-  Future<void> cleanAnimation_batch() async {
+  
+  Future<List<void>> cleanAnimation_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

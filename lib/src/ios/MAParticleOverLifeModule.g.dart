@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleOverLifeModule extends NSObject  {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleOverLifeModule extends NSObject  {
   //endregion
 
   //region methods
+  
   Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class MAParticleOverLifeModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
     // print log
@@ -89,10 +93,12 @@ class MAParticleOverLifeModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
     // print log
@@ -111,10 +117,12 @@ class MAParticleOverLifeModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setColorOverLife(MAParticleColorGenerate color) async {
     // print log
@@ -133,8 +141,9 @@ class MAParticleOverLifeModule extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,7 +160,8 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
   //endregion
 
   //region methods
-  Future<void> setVelocityOverLife_batch(List<MAParticleVelocityGenerate> velocity) async {
+  
+  Future<List<void>> setVelocityOverLife_batch(List<MAParticleVelocityGenerate> velocity) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -170,7 +180,8 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   }
   
-  Future<void> setRotationOverLife_batch(List<MAParticleRotationGenerate> rotation) async {
+  
+  Future<List<void>> setRotationOverLife_batch(List<MAParticleRotationGenerate> rotation) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -189,7 +200,8 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   }
   
-  Future<void> setSizeOverLife_batch(List<MAParticleSizeGenerate> size) async {
+  
+  Future<List<void>> setSizeOverLife_batch(List<MAParticleSizeGenerate> size) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -208,7 +220,8 @@ extension MAParticleOverLifeModule_Batch on List<MAParticleOverLifeModule> {
     }
   }
   
-  Future<void> setColorOverLife_batch(List<MAParticleColorGenerate> color) async {
+  
+  Future<List<void>> setColorOverLife_batch(List<MAParticleColorGenerate> color) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

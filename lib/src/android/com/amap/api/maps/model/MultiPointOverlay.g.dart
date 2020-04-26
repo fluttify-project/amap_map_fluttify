@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> setItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setEnable(bool var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> remove() async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -137,8 +147,9 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -155,7 +166,8 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
   //endregion
 
   //region methods
-  Future<void> setItems_batch(List<List<com_amap_api_maps_model_MultiPointItem>> var1) async {
+  
+  Future<List<void>> setItems_batch(List<List<com_amap_api_maps_model_MultiPointItem>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -174,7 +186,8 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
     }
   }
   
-  Future<void> setAnchor_batch(List<double> var1, List<double> var2) async {
+  
+  Future<List<void>> setAnchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -193,7 +206,8 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
     }
   }
   
-  Future<void> setEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -212,7 +226,8 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
     }
   }
   
-  Future<void> remove_batch() async {
+  
+  Future<List<void>> remove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -231,7 +246,8 @@ extension com_amap_api_maps_model_MultiPointOverlay_Batch on List<com_amap_api_m
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

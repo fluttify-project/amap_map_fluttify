@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getMaxParticles() async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setMaxParticles(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isLoop() async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setLoop(bool var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getDuration() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setDuration(int var1) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getParticleLifeTime() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleLifeTime(int var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleEmissionModule> getParticleEmissionModule() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleEmissionModule(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleShapeModule> getParticleShapeModule() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_VelocityGenerate> getParticleStartSpeed() async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ColorGenerate> getParticleStartColor() async {
     // print log
@@ -441,10 +477,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
     // print log
@@ -463,10 +501,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverLifeModule> getParticleOverLifeModule() async {
     // print log
@@ -485,10 +525,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setStartParticleSize(int var1, int var2) async {
     // print log
@@ -507,10 +549,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getStartParticleW() async {
     // print log
@@ -529,10 +573,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getstartParticleH() async {
     // print log
@@ -551,10 +597,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> zIndex(double var1) async {
     // print log
@@ -573,10 +621,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -595,10 +645,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setVisible(bool var1) async {
     // print log
@@ -617,10 +669,12 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisibile() async {
     // print log
@@ -639,8 +693,9 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -657,6 +712,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> icon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -675,6 +731,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcon_batch() async {
     if (false) {
@@ -695,6 +752,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<int>> getMaxParticles_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -713,6 +771,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setMaxParticles_batch(List<int> var1) async {
     if (false) {
@@ -733,6 +792,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<bool>> isLoop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -751,6 +811,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setLoop_batch(List<bool> var1) async {
     if (false) {
@@ -771,6 +832,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<int>> getDuration_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -789,6 +851,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setDuration_batch(List<int> var1) async {
     if (false) {
@@ -809,6 +872,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<int>> getParticleLifeTime_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -827,6 +891,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleLifeTime_batch(List<int> var1) async {
     if (false) {
@@ -847,6 +912,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleEmissionModule>> getParticleEmissionModule_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -865,6 +931,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleEmissionModule_batch(List<com_amap_api_maps_model_particle_ParticleEmissionModule> var1) async {
     if (false) {
@@ -885,6 +952,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleShapeModule>> getParticleShapeModule_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -903,6 +971,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleShapeModule_batch(List<com_amap_api_maps_model_particle_ParticleShapeModule> var1) async {
     if (false) {
@@ -923,6 +992,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_VelocityGenerate>> getParticleStartSpeed_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -941,6 +1011,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleStartSpeed_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
     if (false) {
@@ -961,6 +1032,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleStartColor_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -979,6 +1051,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ColorGenerate>> getParticleStartColor_batch() async {
     if (false) {
@@ -999,6 +1072,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setParticleOverLifeModule_batch(List<com_amap_api_maps_model_particle_ParticleOverLifeModule> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1017,6 +1091,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverLifeModule>> getParticleOverLifeModule_batch() async {
     if (false) {
@@ -1037,6 +1112,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setStartParticleSize_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -1055,6 +1131,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getStartParticleW_batch() async {
     if (false) {
@@ -1075,6 +1152,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<int>> getstartParticleH_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1093,6 +1171,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -1113,6 +1192,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1132,6 +1212,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_particle_ParticleOverlayOptions>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1150,6 +1231,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisibile_batch() async {
     if (false) {

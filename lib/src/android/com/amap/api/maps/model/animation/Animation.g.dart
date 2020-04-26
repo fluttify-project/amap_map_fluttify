@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   //region constants
@@ -46,6 +47,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -91,10 +93,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDuration(int var1) async {
     // print log
@@ -113,10 +117,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFillMode(int var1) async {
     // print log
@@ -135,10 +141,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFillMode() async {
     // print log
@@ -157,10 +165,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRepeatCount(int var1) async {
     // print log
@@ -179,10 +189,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRepeatMode(int var1) async {
     // print log
@@ -201,10 +213,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getRepeatMode() async {
     // print log
@@ -223,10 +237,12 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getRepeatCount() async {
     // print log
@@ -245,8 +261,9 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -274,7 +291,8 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
   //endregion
 
   //region methods
-  Future<void> setDuration_batch(List<int> var1) async {
+  
+  Future<List<void>> setDuration_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -293,7 +311,8 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
     }
   }
   
-  Future<void> setFillMode_batch(List<int> var1) async {
+  
+  Future<List<void>> setFillMode_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -311,6 +330,7 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFillMode_batch() async {
     if (false) {
@@ -331,7 +351,8 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
     }
   }
   
-  Future<void> setRepeatCount_batch(List<int> var1) async {
+  
+  Future<List<void>> setRepeatCount_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -350,7 +371,8 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
     }
   }
   
-  Future<void> setRepeatMode_batch(List<int> var1) async {
+  
+  Future<List<void>> setRepeatMode_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -368,6 +390,7 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getRepeatMode_batch() async {
     if (false) {
@@ -387,6 +410,7 @@ extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getRepeatCount_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -60,6 +61,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -77,10 +79,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> anchor(double var1, double var2) async {
     // print log
@@ -99,10 +103,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> radiusFillColor(int var1) async {
     // print log
@@ -121,10 +127,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeColor(int var1) async {
     // print log
@@ -143,10 +151,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> strokeWidth(double var1) async {
     // print log
@@ -165,10 +175,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> myLocationType(int var1) async {
     // print log
@@ -187,10 +199,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> interval(int var1) async {
     // print log
@@ -209,10 +223,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> showMyLocation(bool var1) async {
     // print log
@@ -231,10 +247,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BitmapDescriptor> getMyLocationIcon() async {
     // print log
@@ -253,10 +271,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorU() async {
     // print log
@@ -275,10 +295,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorV() async {
     // print log
@@ -297,10 +319,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getRadiusFillColor() async {
     // print log
@@ -319,10 +343,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeColor() async {
     // print log
@@ -341,10 +367,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getStrokeWidth() async {
     // print log
@@ -363,10 +391,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMyLocationType() async {
     // print log
@@ -385,10 +415,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getInterval() async {
     // print log
@@ -407,10 +439,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMyLocationShowing() async {
     // print log
@@ -429,8 +463,9 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -447,6 +482,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_MyLocationStyle>> myLocationIcon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -465,6 +501,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MyLocationStyle>> anchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
@@ -485,6 +522,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MyLocationStyle>> radiusFillColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -503,6 +541,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MyLocationStyle>> strokeColor_batch(List<int> var1) async {
     if (false) {
@@ -523,6 +562,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MyLocationStyle>> strokeWidth_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -541,6 +581,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MyLocationStyle>> myLocationType_batch(List<int> var1) async {
     if (false) {
@@ -561,6 +602,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MyLocationStyle>> interval_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -579,6 +621,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_MyLocationStyle>> showMyLocation_batch(List<bool> var1) async {
     if (false) {
@@ -599,6 +642,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getMyLocationIcon_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -617,6 +661,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorU_batch() async {
     if (false) {
@@ -637,6 +682,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<double>> getAnchorV_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -655,6 +701,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getRadiusFillColor_batch() async {
     if (false) {
@@ -675,6 +722,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<int>> getStrokeColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -693,6 +741,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getStrokeWidth_batch() async {
     if (false) {
@@ -713,6 +762,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<int>> getMyLocationType_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -732,6 +782,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
     }
   }
   
+  
   Future<List<int>> getInterval_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -750,6 +801,7 @@ extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_map
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isMyLocationShowing_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityGenerate {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
   //endregion
 
   //region methods
+  
   Future<MAParticleRandomVelocityGenerate> initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2(double x1, double y1, double z1, double x2, double y2, double z2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleRandomVelocityGenerate extends NSObject with MAParticleVelocityG
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleRandomVelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleRandomVelocityGenerate_Batch on List<MAParticleRandomVelocit
   //endregion
 
   //region methods
+  
   Future<List<MAParticleRandomVelocityGenerate>> initWithBoundaryValueX1_Y1_Z1_X2_Y2_Z2_batch(List<double> x1, List<double> y1, List<double> z1, List<double> x2, List<double> y2, List<double> z2) async {
     if (x1.length != y1.length || y1.length != z1.length || z1.length != x2.length || x2.length != y2.length || y2.length != z2.length) {
       return Future.error('all args must have same length!');

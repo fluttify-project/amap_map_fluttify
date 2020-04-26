@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_gloverlay_GLOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
   //endregion
 
   //region methods
+  
   Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, Uint8List var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addVectorRemainDis(int var1) async {
     // print log
@@ -71,10 +75,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addVectorCar(int var1, int var2, int var3) async {
     // print log
@@ -93,10 +99,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRoadResId(bool var1, int var2) async {
     // print log
@@ -115,10 +123,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setArrowResId(bool var1, int var2) async {
     // print log
@@ -137,10 +147,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCarResId(int var1) async {
     // print log
@@ -159,10 +171,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBackgroundResId(int var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSkyResId(bool var1, int var2) async {
     // print log
@@ -203,10 +219,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFBOTextureId() async {
     // print log
@@ -225,10 +243,12 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> initFBOTexture(int var1, int var2) async {
     // print log
@@ -247,8 +267,9 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends com_autonavi_ae_gmap_
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -265,6 +286,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
   //endregion
 
   //region methods
+  
   Future<List<int>> addVectorItem_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1, List<Uint8List> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -284,7 +306,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> addVectorRemainDis_batch(List<int> var1) async {
+  
+  Future<List<void>> addVectorRemainDis_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -303,7 +326,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> addVectorCar_batch(List<int> var1, List<int> var2, List<int> var3) async {
+  
+  Future<List<void>> addVectorCar_batch(List<int> var1, List<int> var2, List<int> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -322,7 +346,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> setRoadResId_batch(List<bool> var1, List<int> var2) async {
+  
+  Future<List<void>> setRoadResId_batch(List<bool> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -341,7 +366,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> setArrowResId_batch(List<bool> var1, List<int> var2) async {
+  
+  Future<List<void>> setArrowResId_batch(List<bool> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -360,7 +386,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> setCarResId_batch(List<int> var1) async {
+  
+  Future<List<void>> setCarResId_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -379,7 +406,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> setBackgroundResId_batch(List<int> var1) async {
+  
+  Future<List<void>> setBackgroundResId_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -398,7 +426,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> setSkyResId_batch(List<bool> var1, List<int> var2) async {
+  
+  Future<List<void>> setSkyResId_batch(List<bool> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -416,6 +445,7 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFBOTextureId_batch() async {
     if (false) {
@@ -436,7 +466,8 @@ extension com_autonavi_ae_gmap_gloverlay_GLCrossVector_Batch on List<com_autonav
     }
   }
   
-  Future<void> initFBOTexture_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> initFBOTexture_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }

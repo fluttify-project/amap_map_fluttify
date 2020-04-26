@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   //region constants
@@ -60,6 +61,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> onDownload(Uint8List var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -77,10 +79,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onStop() async {
     // print log
@@ -99,10 +103,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onFinish() async {
     // print log
@@ -121,10 +127,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> doRequest() async {
     // print log
@@ -143,10 +151,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> doCancel() async {
     // print log
@@ -165,10 +175,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getDeviceId(android_content_Context var1) async {
     // print log
@@ -187,8 +199,9 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -216,7 +229,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
   //endregion
 
   //region methods
-  Future<void> onDownload_batch(List<Uint8List> var1, List<int> var2) async {
+  
+  Future<List<void>> onDownload_batch(List<Uint8List> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -235,7 +249,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     }
   }
   
-  Future<void> onStop_batch() async {
+  
+  Future<List<void>> onStop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -254,7 +269,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     }
   }
   
-  Future<void> onFinish_batch() async {
+  
+  Future<List<void>> onFinish_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -273,7 +289,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     }
   }
   
-  Future<void> doRequest_batch() async {
+  
+  Future<List<void>> doRequest_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -292,7 +309,8 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
     }
   }
   
-  Future<void> doCancel_batch() async {
+  
+  Future<List<void>> doCancel_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -310,6 +328,7 @@ extension com_autonavi_amap_mapcore_maploader_AMapLoader_Batch on List<com_auton
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getDeviceId_batch(List<android_content_Context> var1) async {
     if (false) {

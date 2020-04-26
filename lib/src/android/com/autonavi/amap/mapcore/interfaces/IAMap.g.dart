@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
 
   
 
+  
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getMaxZoomLevel() async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getMinZoomLevel() async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> moveCamera(com_amap_api_maps_CameraUpdate var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> animateCamera(com_amap_api_maps_CameraUpdate var1) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> animateCameraWithCallback(com_amap_api_maps_CameraUpdate var1, com_amap_api_maps_AMap_CancelableCallback var2) async {
     // print log
@@ -174,10 +186,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> animateCameraWithDurationAndCallback(com_amap_api_maps_CameraUpdate var1, int var2, com_amap_api_maps_AMap_CancelableCallback var4) async {
     // print log
@@ -224,10 +238,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> stopAnimation() async {
     // print log
@@ -246,10 +262,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_NavigateArrow> addNavigateArrow(com_amap_api_maps_model_NavigateArrowOptions var1) async {
     // print log
@@ -268,10 +286,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrow()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_NavigateArrow()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_NavigateArrow()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Polyline> addPolyline(com_amap_api_maps_model_PolylineOptions var1) async {
     // print log
@@ -290,10 +310,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Polyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Polyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Polyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Circle> addCircle(com_amap_api_maps_model_CircleOptions var1) async {
     // print log
@@ -312,10 +334,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Circle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Circle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Circle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Arc> addArc(com_amap_api_maps_model_ArcOptions var1) async {
     // print log
@@ -334,10 +358,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Arc()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Arc()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Arc()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Polygon> addPolygon(com_amap_api_maps_model_PolygonOptions var1) async {
     // print log
@@ -356,10 +382,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Polygon()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Polygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Polygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GroundOverlay> addGroundOverlay(com_amap_api_maps_model_GroundOverlayOptions var1) async {
     // print log
@@ -378,10 +406,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MultiPointOverlay> addMultiPointOverlay(com_amap_api_maps_model_MultiPointOverlayOptions var1) async {
     // print log
@@ -400,10 +430,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Marker> addMarker(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
@@ -422,10 +454,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_Marker>> addMarkers(List<com_amap_api_maps_model_MarkerOptions> var1, bool var2) async {
     // print log
@@ -444,10 +478,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_Text> addText(com_amap_api_maps_model_TextOptions var1) async {
     // print log
@@ -466,10 +502,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_Text()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_Text()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_Text()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) async {
     // print log
@@ -488,10 +526,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_TileOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_TileOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> clear() async {
     // print log
@@ -510,10 +550,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> clear__bool(bool var1) async {
     // print log
@@ -532,10 +574,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapType() async {
     // print log
@@ -554,10 +598,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapType(int var1) async {
     // print log
@@ -576,10 +622,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isTrafficEnabled() async {
     // print log
@@ -598,10 +646,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTrafficEnabled(bool var1) async {
     // print log
@@ -620,10 +670,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isIndoorEnabled() async {
     // print log
@@ -642,10 +694,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorEnabled(bool var1) async {
     // print log
@@ -664,10 +718,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> set3DBuildingEnabled(bool var1) async {
     // print log
@@ -686,10 +742,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMyLocationEnabled() async {
     // print log
@@ -708,10 +766,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationEnabled(bool var1) async {
     // print log
@@ -730,10 +790,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLoadOfflineData(bool var1) async {
     // print log
@@ -752,10 +814,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) async {
     // print log
@@ -774,10 +838,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationType(int var1) async {
     // print log
@@ -796,10 +862,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_Marker>> getMapScreenMarkers() async {
     // print log
@@ -818,10 +886,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_Marker()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setMapTextEnable(bool var1) async {
     // print log
@@ -840,10 +910,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRoadArrowEnable(bool var1) async {
     // print log
@@ -862,10 +934,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) async {
     // print log
@@ -884,10 +958,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<android_location_Location> getMyLocation() async {
     // print log
@@ -906,10 +982,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setLocationSource(com_amap_api_maps_LocationSource var1) async {
     // print log
@@ -928,10 +1006,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMyLocationRotateAngle(double var1) async {
     // print log
@@ -950,10 +1030,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_UiSettings> getAMapUiSettings() async {
     // print log
@@ -972,10 +1054,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_UiSettings()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_UiSettings()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_UiSettings()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_Projection> getAMapProjection() async {
     // print log
@@ -994,10 +1078,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_Projection()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_Projection()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_Projection()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
     // print log
@@ -1044,10 +1130,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
     // print log
@@ -1085,10 +1173,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
     // print log
@@ -1126,10 +1216,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
     // print log
@@ -1167,10 +1259,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
     // print log
@@ -1208,10 +1302,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
     // print log
@@ -1249,10 +1345,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
     // print log
@@ -1308,10 +1406,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMaploadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
     // print log
@@ -1349,10 +1449,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
     // print log
@@ -1390,10 +1492,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
     // print log
@@ -1431,10 +1535,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
     // print log
@@ -1472,10 +1578,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) async {
     // print log
@@ -1494,10 +1602,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) async {
     // print log
@@ -1535,10 +1645,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
     // print log
@@ -1576,10 +1688,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) async {
     // print log
@@ -1617,10 +1731,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) async {
     // print log
@@ -1667,10 +1783,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getScalePerPixel() async {
     // print log
@@ -1689,10 +1807,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRunLowFrame(bool var1) async {
     // print log
@@ -1711,10 +1831,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removecache() async {
     // print log
@@ -1733,10 +1855,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> removecache__com_amap_api_maps_AMap_OnCacheRemoveListener(com_amap_api_maps_AMap_OnCacheRemoveListener var1) async {
     // print log
@@ -1774,10 +1898,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCenterToPixel(int var1, int var2) async {
     // print log
@@ -1796,10 +1922,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapTextZIndex(int var1) async {
     // print log
@@ -1818,10 +1946,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapTextZIndex() async {
     // print log
@@ -1840,10 +1970,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> reloadMap() async {
     // print log
@@ -1862,10 +1994,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRenderFps(int var1) async {
     // print log
@@ -1884,10 +2018,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) async {
     // print log
@@ -1906,10 +2042,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) async {
     // print log
@@ -2010,10 +2148,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZoomToSpanLevel(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
@@ -2032,10 +2172,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() async {
     // print log
@@ -2054,10 +2196,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_InfoWindowAnimationManager()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_InfoWindowAnimationManager()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_InfoWindowAnimationManager()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) async {
     // print log
@@ -2076,10 +2220,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMaxZoomLevel(double var1) async {
     // print log
@@ -2098,10 +2244,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMinZoomLevel(double var1) async {
     // print log
@@ -2120,10 +2268,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> resetMinMaxZoomPreference() async {
     // print log
@@ -2142,10 +2292,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
@@ -2164,10 +2316,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomMapStylePath(String var1) async {
     // print log
@@ -2186,10 +2340,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapCustomEnable(bool var1) async {
     // print log
@@ -2208,10 +2364,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onChangeFinish() async {
     // print log
@@ -2230,10 +2388,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomScaleParam(double var1) async {
     // print log
@@ -2252,10 +2412,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onFling() async {
     // print log
@@ -2274,10 +2436,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapWidth() async {
     // print log
@@ -2296,10 +2460,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapHeight() async {
     // print log
@@ -2318,10 +2484,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getCameraAngle() async {
     // print log
@@ -2340,10 +2508,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSkyHeight() async {
     // print log
@@ -2362,10 +2532,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isMaploaded() async {
     // print log
@@ -2384,10 +2556,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_MapConfig> getMapConfig() async {
     // print log
@@ -2406,10 +2580,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_MapConfig()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_MapConfig()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_MapConfig()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<android_view_View> getView() async {
     // print log
@@ -2428,10 +2604,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setZOrderOnTop(bool var1) async {
     // print log
@@ -2450,10 +2628,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -2472,10 +2652,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibilityEx(int var1) async {
     // print log
@@ -2494,10 +2676,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onActivityPause() async {
     // print log
@@ -2516,10 +2700,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onActivityResume() async {
     // print log
@@ -2538,10 +2724,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> createGLOverlay(int var1) async {
     // print log
@@ -2560,10 +2748,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getGlOverlayMgrPtr() async {
     // print log
@@ -2582,10 +2772,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CrossOverlay> addCrossVector(com_amap_api_maps_model_CrossOverlayOptions var1) async {
     // print log
@@ -2604,10 +2796,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CrossOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CrossOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() async {
     // print log
@@ -2626,10 +2820,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Float64List> getViewMatrix() async {
     // print log
@@ -2648,10 +2844,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Float64List;
     
-      return __result__ as Float64List;
+      return __return__;
     }
   }
+  
   
   Future<Float64List> getProjectionMatrix() async {
     // print log
@@ -2670,10 +2868,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Float64List;
     
-      return __result__ as Float64List;
+      return __return__;
     }
   }
+  
   
   Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) async {
     // print log
@@ -2692,10 +2892,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> onTouchEvent(android_view_MotionEvent var1) async {
     // print log
@@ -2714,10 +2916,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> canStopMapRender() async {
     // print log
@@ -2736,10 +2940,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomTextureResourcePath(String var1) async {
     // print log
@@ -2758,10 +2964,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MyLocationStyle> getMyLocationStyle() async {
     // print log
@@ -2780,10 +2988,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getRenderMode() async {
     // print log
@@ -2802,10 +3012,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroySurface(int var1) async {
     // print log
@@ -2824,10 +3036,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> requestRender() async {
     // print log
@@ -2846,10 +3060,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> resetRenderTime() async {
     // print log
@@ -2868,10 +3084,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onIndoorBuildingActivity(int var1, Uint8List var2) async {
     // print log
@@ -2890,10 +3108,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() async {
     // print log
@@ -2912,10 +3132,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> checkMapState(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
@@ -2934,10 +3156,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRenderMode(int var1) async {
     // print log
@@ -2956,10 +3180,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) async {
     // print log
@@ -2997,10 +3223,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getMapContentApprovalNumber() async {
     // print log
@@ -3019,10 +3247,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getSatelliteImageApprovalNumber() async {
     // print log
@@ -3041,10 +3271,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapLanguage(String var1) async {
     // print log
@@ -3063,10 +3295,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomMapStyleID(String var1) async {
     // print log
@@ -3085,10 +3319,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_BuildingOverlay> addBuildingOverlay() async {
     // print log
@@ -3107,10 +3343,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_BuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_BuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_GL3DModel> addGLModel(com_amap_api_maps_model_GL3DModelOptions var1) async {
     // print log
@@ -3129,10 +3367,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_particle_ParticleOverlay> addParticleOverlay(com_amap_api_maps_model_particle_ParticleOverlayOptions var1) async {
     // print log
@@ -3151,10 +3391,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_particle_ParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_particle_ParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) async {
     // print log
@@ -3173,8 +3415,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

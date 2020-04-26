@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
   //endregion
 
   //region methods
+  
   static Future<int> nativeCreateGLShaderManager() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeDestroyGLShaderManager(int var0) async {
     // print log
@@ -89,8 +93,9 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends java_lang
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -107,6 +112,7 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
   //endregion
 
   //region methods
+  
   static Future<List<int>> nativeCreateGLShaderManager_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -126,7 +132,8 @@ extension com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager_Batch on List
     }
   }
   
-  static Future<void> nativeDestroyGLShaderManager_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeDestroyGLShaderManager_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

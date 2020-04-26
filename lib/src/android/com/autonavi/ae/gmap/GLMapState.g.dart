@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   //region constants
@@ -69,6 +70,7 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<void> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,10 +88,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
     // print log
@@ -108,10 +112,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
     // print log
@@ -130,10 +136,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
     // print log
@@ -152,10 +160,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getMapGeoCenter__com_autonavi_amap_mapcore_IPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -174,10 +184,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<android_graphics_Point> getMapGeoCenter() async {
     // print log
@@ -196,10 +208,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setMapGeoCenter(int var1, int var2) async {
     // print log
@@ -218,10 +232,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCameraDegree(double var1) async {
     // print log
@@ -240,10 +256,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapAngle(double var1) async {
     // print log
@@ -262,10 +280,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMapZoomer(double var1) async {
     // print log
@@ -284,10 +304,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getMapZoomer() async {
     // print log
@@ -306,10 +328,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getCameraDegree() async {
     // print log
@@ -328,10 +352,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getMapAngle() async {
     // print log
@@ -350,10 +376,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> recalculate() async {
     // print log
@@ -372,10 +400,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> reset() async {
     // print log
@@ -394,10 +424,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getMapLenWithWin(int var1) async {
     // print log
@@ -416,10 +448,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getGLUnitWithWin(int var1) async {
     // print log
@@ -438,10 +472,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getNativeInstance() async {
     // print log
@@ -460,10 +496,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getViewMatrix(Float64List var1) async {
     // print log
@@ -482,10 +520,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> getProjectionMatrix(Float64List var1) async {
     // print log
@@ -504,10 +544,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getSkyHeight() async {
     // print log
@@ -526,10 +568,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setNativeMapengineState(int var1, int var2) async {
     // print log
@@ -548,10 +592,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> calMapZoomScalefactor(int var0, int var1, int var2) async {
     // print log
@@ -570,10 +616,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeNewInstance(int var0, int var1) async {
     // print log
@@ -592,10 +640,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
     // print log
@@ -614,10 +664,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
     // print log
@@ -636,10 +688,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetMapCenter(int var0, int var2, int var3) async {
     // print log
@@ -658,10 +712,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
     // print log
@@ -680,10 +736,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeGetMapZoomer(int var0) async {
     // print log
@@ -702,10 +760,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetMapZoomer(int var0, double var2) async {
     // print log
@@ -724,10 +784,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetMapAngle(int var0, double var2) async {
     // print log
@@ -746,10 +808,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeGetCameraDegree(int var0) async {
     // print log
@@ -768,10 +832,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeGetMapAngle(int var0) async {
     // print log
@@ -790,10 +856,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetCameraDegree(int var0, double var2) async {
     // print log
@@ -812,10 +880,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeRecalculate(int var0) async {
     // print log
@@ -834,10 +904,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeStateDestroy(int var0) async {
     // print log
@@ -856,10 +928,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeGetViewMatrix(int var0, Float64List var2) async {
     // print log
@@ -878,10 +952,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeGetProjectionMatrix(int var0, Float64List var2) async {
     // print log
@@ -900,10 +976,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeGetSkyHeight(int var0) async {
     // print log
@@ -922,10 +1000,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeGetGLUnitWithWin(int var0, int var2) async {
     // print log
@@ -944,10 +1024,12 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<double> nativeCalMapZoomScalefactor(int var0, int var1, double var2) async {
     // print log
@@ -966,8 +1048,9 @@ class com_autonavi_ae_gmap_GLMapState extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -984,7 +1067,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
   //endregion
 
   //region methods
-  static Future<void> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
+  
+  static Future<List<void>> lonlat2Geo_batch(List<double> var0, List<double> var2, List<com_autonavi_amap_mapcore_IPoint> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -1003,7 +1087,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
+  
+  static Future<List<void>> geo2LonLat_batch(List<int> var0, List<int> var1, List<com_autonavi_amap_mapcore_DPoint> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1022,7 +1107,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> screenToP20Point_batch(List<int> var1, List<int> var2, List<android_graphics_Point> var3) async {
+  
+  Future<List<void>> screenToP20Point_batch(List<int> var1, List<int> var2, List<android_graphics_Point> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -1041,7 +1127,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> p20ToScreenPoint_batch(List<int> var1, List<int> var2, List<com_autonavi_amap_mapcore_FPoint> var3) async {
+  
+  Future<List<void>> p20ToScreenPoint_batch(List<int> var1, List<int> var2, List<com_autonavi_amap_mapcore_FPoint> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -1060,7 +1147,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
+  
+  Future<List<void>> getMapGeoCenter__com_autonavi_amap_mapcore_IPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1078,6 +1166,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<android_graphics_Point>> getMapGeoCenter_batch() async {
     if (false) {
@@ -1098,7 +1187,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> setMapGeoCenter_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> setMapGeoCenter_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1117,7 +1207,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> setCameraDegree_batch(List<double> var1) async {
+  
+  Future<List<void>> setCameraDegree_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1136,7 +1227,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> setMapAngle_batch(List<double> var1) async {
+  
+  Future<List<void>> setMapAngle_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1155,7 +1247,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> setMapZoomer_batch(List<double> var1) async {
+  
+  Future<List<void>> setMapZoomer_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1173,6 +1266,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getMapZoomer_batch() async {
     if (false) {
@@ -1193,6 +1287,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
+  
   Future<List<double>> getCameraDegree_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1211,6 +1306,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getMapAngle_batch() async {
     if (false) {
@@ -1231,7 +1327,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> recalculate_batch() async {
+  
+  Future<List<void>> recalculate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1250,7 +1347,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> reset_batch() async {
+  
+  Future<List<void>> reset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1268,6 +1366,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getMapLenWithWin_batch(List<int> var1) async {
     if (false) {
@@ -1288,6 +1387,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
+  
   Future<List<double>> getGLUnitWithWin_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1306,6 +1406,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getNativeInstance_batch() async {
     if (false) {
@@ -1326,7 +1427,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> getViewMatrix_batch(List<Float64List> var1) async {
+  
+  Future<List<void>> getViewMatrix_batch(List<Float64List> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1345,7 +1447,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> getProjectionMatrix_batch(List<Float64List> var1) async {
+  
+  Future<List<void>> getProjectionMatrix_batch(List<Float64List> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1363,6 +1466,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getSkyHeight_batch() async {
     if (false) {
@@ -1383,7 +1487,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  Future<void> setNativeMapengineState_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> setNativeMapengineState_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1401,6 +1506,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> calMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
@@ -1421,6 +1527,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
+  
   static Future<List<int>> nativeNewInstance_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -1440,7 +1547,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeScreenToP20Point_batch(List<int> var0, List<double> var2, List<double> var3, List<android_graphics_Point> var4) async {
+  
+  static Future<List<void>> nativeScreenToP20Point_batch(List<int> var0, List<double> var2, List<double> var3, List<android_graphics_Point> var4) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -1459,7 +1567,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeP20ToScreenPoint_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<android_graphics_PointF> var5) async {
+  
+  static Future<List<void>> nativeP20ToScreenPoint_batch(List<int> var0, List<int> var2, List<int> var3, List<int> var4, List<android_graphics_PointF> var5) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
       return Future.error('all args must have same length!');
     }
@@ -1478,7 +1587,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeSetMapCenter_batch(List<int> var0, List<int> var2, List<int> var3) async {
+  
+  static Future<List<void>> nativeSetMapCenter_batch(List<int> var0, List<int> var2, List<int> var3) async {
     if (var0.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -1497,7 +1607,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeGetMapCenter_batch(List<int> var0, List<android_graphics_Point> var2) async {
+  
+  static Future<List<void>> nativeGetMapCenter_batch(List<int> var0, List<android_graphics_Point> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1515,6 +1626,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> nativeGetMapZoomer_batch(List<int> var0) async {
     if (false) {
@@ -1535,7 +1647,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeSetMapZoomer_batch(List<int> var0, List<double> var2) async {
+  
+  static Future<List<void>> nativeSetMapZoomer_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1554,7 +1667,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeSetMapAngle_batch(List<int> var0, List<double> var2) async {
+  
+  static Future<List<void>> nativeSetMapAngle_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1572,6 +1686,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> nativeGetCameraDegree_batch(List<int> var0) async {
     if (false) {
@@ -1592,6 +1707,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
+  
   static Future<List<double>> nativeGetMapAngle_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1611,7 +1727,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeSetCameraDegree_batch(List<int> var0, List<double> var2) async {
+  
+  static Future<List<void>> nativeSetCameraDegree_batch(List<int> var0, List<double> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1630,7 +1747,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeRecalculate_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeRecalculate_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1649,7 +1767,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeStateDestroy_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeStateDestroy_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1668,7 +1787,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeGetViewMatrix_batch(List<int> var0, List<Float64List> var2) async {
+  
+  static Future<List<void>> nativeGetViewMatrix_batch(List<int> var0, List<Float64List> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1687,7 +1807,8 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
-  static Future<void> nativeGetProjectionMatrix_batch(List<int> var0, List<Float64List> var2) async {
+  
+  static Future<List<void>> nativeGetProjectionMatrix_batch(List<int> var0, List<Float64List> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1705,6 +1826,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> nativeGetSkyHeight_batch(List<int> var0) async {
     if (false) {
@@ -1725,6 +1847,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
     }
   }
   
+  
   static Future<List<double>> nativeGetGLUnitWithWin_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -1743,6 +1866,7 @@ extension com_autonavi_ae_gmap_GLMapState_Batch on List<com_autonavi_ae_gmap_GLM
       return typedResult;
     }
   }
+  
   
   static Future<List<double>> nativeCalMapZoomScalefactor_batch(List<int> var0, List<int> var1, List<double> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {

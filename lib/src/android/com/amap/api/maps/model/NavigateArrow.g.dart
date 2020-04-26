@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_BaseOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
   //endregion
 
   //region methods
+  
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getId() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_LatLng()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setWidth(double var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getWidth() async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTopColor(int var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getTopColor() async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSideColor(int var1) async {
     // print log
@@ -225,10 +243,36 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
+  @deprecated
+  Future<int> getSideColor() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::getSideColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getSideColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   
   Future<void> setZIndex(double var1) async {
     // print log
@@ -247,10 +291,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -269,10 +315,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -291,10 +339,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -313,10 +363,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> set3DModel(bool var1) async {
     // print log
@@ -335,10 +387,12 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> is3DModel() async {
     // print log
@@ -357,8 +411,9 @@ class com_amap_api_maps_model_NavigateArrow extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -375,7 +430,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
   //endregion
 
   //region methods
-  Future<void> remove_batch() async {
+  
+  Future<List<void>> remove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -393,6 +449,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getId_batch() async {
     if (false) {
@@ -413,7 +470,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
+  
+  Future<List<void>> setPoints_batch(List<List<com_amap_api_maps_model_LatLng>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -431,6 +489,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_model_LatLng>>> getPoints_batch() async {
     if (false) {
@@ -451,7 +510,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setWidth_batch(List<double> var1) async {
+  
+  Future<List<void>> setWidth_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -469,6 +529,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getWidth_batch() async {
     if (false) {
@@ -489,7 +550,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setTopColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setTopColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -507,6 +569,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getTopColor_batch() async {
     if (false) {
@@ -527,7 +590,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setSideColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setSideColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -546,7 +610,28 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setZIndex_batch(List<double> var1) async {
+  @deprecated
+  Future<List<int>> getSideColor_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.NavigateArrow::getSideColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -564,6 +649,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {
@@ -584,7 +670,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -602,6 +689,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -622,7 +710,8 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
     }
   }
   
-  Future<void> set3DModel_batch(List<bool> var1) async {
+  
+  Future<List<void>> set3DModel_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -640,6 +729,7 @@ extension com_amap_api_maps_model_NavigateArrow_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> is3DModel_batch() async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
   //endregion
 
   //region methods
+  
   static Future<int> nativeCreate() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeDestroy(int var0) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeRender(int var0, Float64List var2, Float64List var3, int var4, int var5, double var6, double var7, double var8) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setStartParticleSize(int var0, double var2, double var3) async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setMaxParticles(int var0, int var2) async {
     // print log
@@ -177,10 +189,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setDuration(int var0, int var2) async {
     // print log
@@ -199,10 +213,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setParticleLifeTime(int var0, int var2) async {
     // print log
@@ -221,10 +237,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setParticleStartSpeed(int var0, int var2) async {
     // print log
@@ -243,10 +261,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setLoop(int var0, bool var2) async {
     // print log
@@ -265,10 +285,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setParticleShapeModule(int var0, int var2) async {
     // print log
@@ -287,10 +309,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setParticleEmission(int var0, int var2) async {
     // print log
@@ -309,10 +333,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> getCurrentParticleNum(int var0) async {
     // print log
@@ -331,10 +357,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setParticleOverLifeModule(int var0, int var2) async {
     // print log
@@ -353,10 +381,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setPreWram(int var0, bool var2) async {
     // print log
@@ -375,10 +405,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> setStartColor(int var0, int var2) async {
     // print log
@@ -397,10 +429,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetTextureId(int var0, int var2) async {
     // print log
@@ -419,10 +453,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateParticleEmissionModule(int var0, int var1) async {
     // print log
@@ -441,10 +477,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateSinglePointParticleShape(double var0, double var1, double var2, bool var3) async {
     // print log
@@ -463,10 +501,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateRectParticleShape(double var0, double var1, double var2, double var3, bool var4) async {
     // print log
@@ -485,10 +525,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateRandomColorBetWeenTwoConstants(double var0, double var1, double var2, double var3, double var4, double var5, double var6, double var7) async {
     // print log
@@ -507,10 +549,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateParticleOverLifeModule() async {
     // print log
@@ -529,10 +573,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateConstantRotationOverLife(double var0) async {
     // print log
@@ -551,10 +597,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateRandomVelocityBetweenTwoConstants(double var0, double var1, double var2, double var3, double var4, double var5) async {
     // print log
@@ -573,10 +621,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> nativeCreateCurveSizeOverLife(double var0, double var1, double var2) async {
     // print log
@@ -595,10 +645,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeSetOverLifeItem(int var0, int var2, int var4) async {
     // print log
@@ -617,10 +669,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseVelocityOverLife(int var0) async {
     // print log
@@ -639,10 +693,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseColorGenerate(int var0) async {
     // print log
@@ -661,10 +717,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseParticleEmissonModule(int var0) async {
     // print log
@@ -683,10 +741,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseParticleOverLifeModule(int var0) async {
     // print log
@@ -705,10 +765,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseParticleShapeModule(int var0) async {
     // print log
@@ -727,10 +789,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseRotationOverLife(int var0) async {
     // print log
@@ -749,10 +813,12 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> nativeReleaseSizeOverLife(int var0) async {
     // print log
@@ -771,8 +837,9 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -789,6 +856,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
   //endregion
 
   //region methods
+  
   static Future<List<int>> nativeCreate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -808,7 +876,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> nativeSetGLShaderManager_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -826,6 +895,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeDestroy_batch(List<int> var0) async {
     if (false) {
@@ -846,7 +916,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeRender_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8) async {
+  
+  static Future<List<void>> nativeRender_batch(List<int> var0, List<Float64List> var2, List<Float64List> var3, List<int> var4, List<int> var5, List<double> var6, List<double> var7, List<double> var8) async {
     if (var0.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length || var7.length != var8.length) {
       return Future.error('all args must have same length!');
     }
@@ -865,7 +936,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setStartParticleSize_batch(List<int> var0, List<double> var2, List<double> var3) async {
+  
+  static Future<List<void>> setStartParticleSize_batch(List<int> var0, List<double> var2, List<double> var3) async {
     if (var0.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
@@ -884,7 +956,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setMaxParticles_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setMaxParticles_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -903,7 +976,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setDuration_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setDuration_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -922,7 +996,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setParticleLifeTime_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setParticleLifeTime_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -941,7 +1016,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setParticleStartSpeed_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setParticleStartSpeed_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -960,7 +1036,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setLoop_batch(List<int> var0, List<bool> var2) async {
+  
+  static Future<List<void>> setLoop_batch(List<int> var0, List<bool> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -979,7 +1056,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setParticleShapeModule_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setParticleShapeModule_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -998,7 +1076,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setParticleEmission_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setParticleEmission_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1016,6 +1095,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> getCurrentParticleNum_batch(List<int> var0) async {
     if (false) {
@@ -1036,7 +1116,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setParticleOverLifeModule_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setParticleOverLifeModule_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1055,7 +1136,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setPreWram_batch(List<int> var0, List<bool> var2) async {
+  
+  static Future<List<void>> setPreWram_batch(List<int> var0, List<bool> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1074,7 +1156,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> setStartColor_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> setStartColor_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1093,7 +1176,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeSetTextureId_batch(List<int> var0, List<int> var2) async {
+  
+  static Future<List<void>> nativeSetTextureId_batch(List<int> var0, List<int> var2) async {
     if (var0.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1111,6 +1195,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeCreateParticleEmissionModule_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -1131,6 +1216,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
+  
   static Future<List<int>> nativeCreateSinglePointParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<bool> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -1149,6 +1235,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeCreateRectParticleShape_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<bool> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {
@@ -1169,6 +1256,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
+  
   static Future<List<int>> nativeCreateRandomColorBetWeenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5, List<double> var6, List<double> var7) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length || var5.length != var6.length || var6.length != var7.length) {
       return Future.error('all args must have same length!');
@@ -1187,6 +1275,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeCreateParticleOverLifeModule_batch() async {
     if (false) {
@@ -1207,6 +1296,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
+  
   static Future<List<int>> nativeCreateConstantRotationOverLife_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1225,6 +1315,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> nativeCreateRandomVelocityBetweenTwoConstants_batch(List<double> var0, List<double> var1, List<double> var2, List<double> var3, List<double> var4, List<double> var5) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length || var4.length != var5.length) {
@@ -1245,6 +1336,7 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
+  
   static Future<List<int>> nativeCreateCurveSizeOverLife_batch(List<double> var0, List<double> var1, List<double> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
@@ -1264,7 +1356,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeSetOverLifeItem_batch(List<int> var0, List<int> var2, List<int> var4) async {
+  
+  static Future<List<void>> nativeSetOverLifeItem_batch(List<int> var0, List<int> var2, List<int> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
     }
@@ -1283,7 +1376,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseVelocityOverLife_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseVelocityOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1302,7 +1396,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseColorGenerate_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseColorGenerate_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1321,7 +1416,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseParticleEmissonModule_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseParticleEmissonModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1340,7 +1436,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseParticleOverLifeModule_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseParticleOverLifeModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1359,7 +1456,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseParticleShapeModule_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseParticleShapeModule_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1378,7 +1476,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseRotationOverLife_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseRotationOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1397,7 +1496,8 @@ extension com_autonavi_amap_mapcore_AMapNativeParticleSystem_Batch on List<com_a
     }
   }
   
-  static Future<void> nativeReleaseSizeOverLife_batch(List<int> var0) async {
+  
+  static Future<List<void>> nativeReleaseSizeOverLife_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

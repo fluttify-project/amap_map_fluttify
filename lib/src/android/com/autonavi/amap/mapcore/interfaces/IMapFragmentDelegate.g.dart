@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
 
   
 
+  
   Future<void> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setContext(android_content_Context var1) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOptions(com_amap_api_maps_AMapOptions var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onCreate(android_os_Bundle var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onResume() async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onPause() async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDestroyView() async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDestroy() async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onLowMemory() async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onSaveInstanceState(android_os_Bundle var1) async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isReady() async {
     // print log
@@ -256,10 +278,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibility(int var1) async {
     // print log
@@ -278,8 +302,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

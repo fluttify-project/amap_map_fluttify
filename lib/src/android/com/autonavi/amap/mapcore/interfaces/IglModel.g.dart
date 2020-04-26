@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
 
   
 
+  
   Future<String> getTitle() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getSnippet() async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getId() async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotateAngle(double var1) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRotateAngle() async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> startAnimation() async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> remove() async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -256,10 +278,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -278,10 +302,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setObject(Object var1) async {
     // print log
@@ -300,10 +326,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<Object> getObject() async {
     // print log
@@ -322,10 +350,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZoomLimit(double var1) async {
     // print log
@@ -344,10 +374,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -366,10 +398,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -388,10 +422,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> showInfoWindow() async {
     // print log
@@ -410,10 +446,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTitle(String var1) async {
     // print log
@@ -432,10 +470,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setSnippet(String var1) async {
     // print log
@@ -454,10 +494,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setModelFixedLength(int var1) async {
     // print log
@@ -476,8 +518,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

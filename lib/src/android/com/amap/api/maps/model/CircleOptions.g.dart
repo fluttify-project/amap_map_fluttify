@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_CircleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> radius(double var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> strokeWidth(double var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> strokeColor(int var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> fillColor(int var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> zIndex(double var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> visible(bool var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getRadius() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getStrokeWidth() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeColor() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFillColor() async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> addHoles__List_com_amap_api_maps_model_BaseHoleOptions_(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
@@ -397,10 +429,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
@@ -419,10 +453,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
     // print log
@@ -441,10 +477,12 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeDottedLineType() async {
     // print log
@@ -463,8 +501,9 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -481,6 +520,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> center_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -499,6 +539,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CircleOptions>> radius_batch(List<double> var1) async {
     if (false) {
@@ -519,6 +560,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> strokeWidth_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -537,6 +579,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CircleOptions>> strokeColor_batch(List<int> var1) async {
     if (false) {
@@ -557,6 +600,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> fillColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -575,6 +619,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CircleOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -595,6 +640,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> visible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -613,6 +659,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getCenter_batch() async {
     if (false) {
@@ -633,6 +680,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getRadius_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -651,6 +699,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getStrokeWidth_batch() async {
     if (false) {
@@ -671,6 +720,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<int>> getStrokeColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -689,6 +739,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFillColor_batch() async {
     if (false) {
@@ -709,6 +760,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<double>> getZIndex_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -727,6 +779,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -747,6 +800,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> addHoles__com_amap_api_maps_model_BaseHoleOptions_batch(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -765,6 +819,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CircleOptions>> addHoles__List_com_amap_api_maps_model_BaseHoleOptions__batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
     if (false) {
@@ -785,6 +840,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<List<com_amap_api_maps_model_BaseHoleOptions>>> getHoleOptions_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -804,6 +860,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CircleOptions>> setStrokeDottedLineType_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -822,6 +879,7 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getStrokeDottedLineType_batch() async {
     if (false) {

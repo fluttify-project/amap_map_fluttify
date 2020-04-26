@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
   //region constants
@@ -50,6 +51,7 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MAPolygon> polygonWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<MAPolygon> polygonWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
@@ -89,10 +93,12 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPolygon()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> setPolygonWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
@@ -111,10 +117,12 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> setPolygonWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
@@ -133,8 +141,9 @@ class MAPolygon extends MAMultiPoint with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -151,6 +160,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
   //endregion
 
   //region methods
+  
   static Future<List<MAPolygon>> polygonWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {
       return Future.error('all args must have same length!');
@@ -169,6 +179,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
       return typedResult;
     }
   }
+  
   
   static Future<List<MAPolygon>> polygonWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
@@ -189,6 +200,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
     }
   }
   
+  
   Future<List<bool>> setPolygonWithPoints_count_batch(List<List<MAMapPoint>> points, List<int> count) async {
     if (points.length != count.length) {
       return Future.error('all args must have same length!');
@@ -207,6 +219,7 @@ extension MAPolygon_Batch on List<MAPolygon> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> setPolygonWithCoordinates_count_batch(List<List<CLLocationCoordinate2D>> coords, List<int> count) async {
     if (coords.length != count.length) {

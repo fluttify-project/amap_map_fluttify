@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
   //endregion
 
   //region methods
+  
   Future<void> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> registerNetChangeReceiver(android_content_Context var1, bool var2) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<bool> isNetworkConnected(android_content_Context var0) async {
     // print log
@@ -111,8 +117,9 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -129,7 +136,8 @@ extension com_autonavi_amap_mapcore_maploader_NetworkState_Batch on List<com_aut
   //endregion
 
   //region methods
-  Future<void> setNetworkListener_batch(List<com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener> var1) async {
+  
+  Future<List<void>> setNetworkListener_batch(List<com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -148,7 +156,8 @@ extension com_autonavi_amap_mapcore_maploader_NetworkState_Batch on List<com_aut
     }
   }
   
-  Future<void> registerNetChangeReceiver_batch(List<android_content_Context> var1, List<bool> var2) async {
+  
+  Future<List<void>> registerNetChangeReceiver_batch(List<android_content_Context> var1, List<bool> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -166,6 +175,7 @@ extension com_autonavi_amap_mapcore_maploader_NetworkState_Batch on List<com_aut
       return typedResult;
     }
   }
+  
   
   static Future<List<bool>> isNetworkConnected_batch(List<android_content_Context> var0) async {
     if (false) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACustomCalloutView extends UIView  {
   //region constants
@@ -66,6 +67,7 @@ class MACustomCalloutView extends UIView  {
   //endregion
 
   //region methods
+  
   Future<dynamic> initWithCustomView(UIView customView, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -83,8 +85,9 @@ class MACustomCalloutView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(Ref()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -119,6 +122,7 @@ extension MACustomCalloutView_Batch on List<MACustomCalloutView> {
   //endregion
 
   //region methods
+  
   Future<List<dynamic>> initWithCustomView_batch(List<UIView> customView, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');

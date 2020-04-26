@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   //endregion
 
   //region methods
+  
   Future<String> getName() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getCoordinate() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<String> getPoiId() async {
     // print log
@@ -111,8 +117,9 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -129,6 +136,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
   //endregion
 
   //region methods
+  
   Future<List<String>> getName_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -148,6 +156,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_LatLng>> getCoordinate_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -166,6 +175,7 @@ extension com_amap_api_maps_model_Poi_Batch on List<com_amap_api_maps_model_Poi>
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getPoiId_batch() async {
     if (false) {

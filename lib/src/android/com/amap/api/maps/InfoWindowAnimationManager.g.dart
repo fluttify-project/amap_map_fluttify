@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -77,10 +79,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -99,10 +103,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackColor(int var1) async {
     // print log
@@ -121,10 +127,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackEnable(bool var1) async {
     // print log
@@ -143,10 +151,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowBackScale(double var1, double var2) async {
     // print log
@@ -165,10 +175,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -187,10 +199,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
@@ -209,10 +223,12 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> startAnimation() async {
     // print log
@@ -231,8 +247,9 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -249,7 +266,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
   //endregion
 
   //region methods
-  Future<void> setInfoWindowAppearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
+  
+  Future<List<void>> setInfoWindowAppearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -268,7 +286,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setInfoWindowBackColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setInfoWindowBackColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -287,7 +306,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setInfoWindowBackEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setInfoWindowBackEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -306,7 +326,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setInfoWindowBackScale_batch(List<double> var1, List<double> var2) async {
+  
+  Future<List<void>> setInfoWindowBackScale_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -325,7 +346,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setInfoWindowDisappearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
+  
+  Future<List<void>> setInfoWindowDisappearAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -344,7 +366,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> setInfoWindowMovingAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
+  
+  Future<List<void>> setInfoWindowMovingAnimation_batch(List<com_amap_api_maps_model_animation_Animation> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -363,7 +386,8 @@ extension com_amap_api_maps_InfoWindowAnimationManager_Batch on List<com_amap_ap
     }
   }
   
-  Future<void> startAnimation_batch() async {
+  
+  Future<List<void>> startAnimation_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }

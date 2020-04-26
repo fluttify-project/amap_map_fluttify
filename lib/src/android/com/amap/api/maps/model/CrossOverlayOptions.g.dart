@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> getAttribute() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_CrossOverlayOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<android_graphics_Bitmap> getRes() async {
     // print log
@@ -133,8 +141,9 @@ class com_amap_api_maps_model_CrossOverlayOptions extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(android_graphics_Bitmap()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return android_graphics_Bitmap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_graphics_Bitmap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -151,6 +160,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
   //endregion
 
   //region methods
+  
   Future<List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr>> getAttribute_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -169,6 +179,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_CrossOverlayOptions>> setAttribute_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1) async {
     if (false) {
@@ -189,6 +200,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_CrossOverlayOptions>> setRes_batch(List<android_graphics_Bitmap> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -207,6 +219,7 @@ extension com_amap_api_maps_model_CrossOverlayOptions_Batch on List<com_amap_api
       return typedResult;
     }
   }
+  
   
   Future<List<android_graphics_Bitmap>> getRes_batch() async {
     if (false) {

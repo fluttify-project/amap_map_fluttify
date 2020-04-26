@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin MAParticleVelocityGenerate on NSObject {
   
@@ -19,6 +20,7 @@ mixin MAParticleVelocityGenerate on NSObject {
 
   
 
+  
   Future<double> getX() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin MAParticleVelocityGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getY() async {
     // print log
@@ -58,10 +62,12 @@ mixin MAParticleVelocityGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZ() async {
     // print log
@@ -80,8 +86,9 @@ mixin MAParticleVelocityGenerate on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

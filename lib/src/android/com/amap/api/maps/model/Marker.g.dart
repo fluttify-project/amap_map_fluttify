@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   //endregion
 
   //region methods
+  
   Future<void> setPeriod(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getPeriod() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setPerspective(bool var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isPerspective() async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDraggable(bool var1) async {
     // print log
@@ -225,10 +243,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isDraggable() async {
     // print log
@@ -247,10 +267,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> hideInfoWindow() async {
     // print log
@@ -269,10 +291,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowShown() async {
     // print log
@@ -291,10 +315,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setToTop() async {
     // print log
@@ -313,10 +339,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // print log
@@ -335,10 +363,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setFlat(bool var1) async {
     // print log
@@ -357,10 +387,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isFlat() async {
     // print log
@@ -379,10 +411,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
@@ -401,10 +435,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZIndex(double var1) async {
     // print log
@@ -423,10 +459,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -445,10 +483,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
@@ -495,10 +535,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAlpha() async {
     // print log
@@ -517,10 +559,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAlpha(double var1) async {
     // print log
@@ -539,10 +583,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getDisplayLevel() async {
     // print log
@@ -561,10 +607,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MarkerOptions> getOptions() async {
     // print log
@@ -583,10 +631,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isClickable() async {
     // print log
@@ -605,10 +655,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
@@ -627,10 +679,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isInfoWindowEnable() async {
     // print log
@@ -649,10 +703,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setInfoWindowEnable(bool var1) async {
     // print log
@@ -671,10 +727,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
@@ -693,10 +751,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setAutoOverturnInfoWindow(bool var1) async {
     // print log
@@ -715,10 +775,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setClickable(bool var1) async {
     // print log
@@ -737,10 +799,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDisplayLevel(int var1) async {
     // print log
@@ -759,10 +823,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFixingPointEnable(bool var1) async {
     // print log
@@ -781,10 +847,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isRemoved() async {
     // print log
@@ -803,10 +871,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -825,10 +895,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setRotateAngleNotUpdate(double var1) async {
     // print log
@@ -847,10 +919,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setBelowMaskLayer(bool var1) async {
     // print log
@@ -869,10 +943,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorU() async {
     // print log
@@ -891,10 +967,12 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getAnchorV() async {
     // print log
@@ -913,8 +991,9 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -931,7 +1010,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
   //endregion
 
   //region methods
-  Future<void> setPeriod_batch(List<int> var1) async {
+  
+  Future<List<void>> setPeriod_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -949,6 +1029,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getPeriod_batch() async {
     if (false) {
@@ -969,7 +1050,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setIcons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
+  
+  Future<List<void>> setIcons_batch(List<List<com_amap_api_maps_model_BitmapDescriptor>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -987,6 +1069,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_model_BitmapDescriptor>>> getIcons_batch() async {
     if (false) {
@@ -1007,7 +1090,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setPerspective_batch(List<bool> var1) async {
+  
+  Future<List<void>> setPerspective_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1025,6 +1109,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isPerspective_batch() async {
     if (false) {
@@ -1045,7 +1130,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setIcon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
+  
+  Future<List<void>> setIcon_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1064,7 +1150,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setAnchor_batch(List<double> var1, List<double> var2) async {
+  
+  Future<List<void>> setAnchor_batch(List<double> var1, List<double> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1083,7 +1170,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setDraggable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setDraggable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1101,6 +1189,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isDraggable_batch() async {
     if (false) {
@@ -1121,7 +1210,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> hideInfoWindow_batch() async {
+  
+  Future<List<void>> hideInfoWindow_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1139,6 +1229,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isInfoWindowShown_batch() async {
     if (false) {
@@ -1159,7 +1250,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setToTop_batch() async {
+  
+  Future<List<void>> setToTop_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1177,6 +1269,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<com_autonavi_amap_mapcore_IPoint>> getGeoPoint_batch() async {
     if (false) {
@@ -1197,7 +1290,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setFlat_batch(List<bool> var1) async {
+  
+  Future<List<void>> setFlat_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1215,6 +1309,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isFlat_batch() async {
     if (false) {
@@ -1235,7 +1330,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setPositionByPixels_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> setPositionByPixels_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -1254,7 +1350,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setZIndex_batch(List<double> var1) async {
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1272,6 +1369,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {
@@ -1292,6 +1390,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
+  
   Future<List<double>> getAlpha_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1311,7 +1410,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setAlpha_batch(List<double> var1) async {
+  
+  Future<List<void>> setAlpha_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1329,6 +1429,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getDisplayLevel_batch() async {
     if (false) {
@@ -1349,6 +1450,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_MarkerOptions>> getOptions_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1367,6 +1469,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isClickable_batch() async {
     if (false) {
@@ -1387,6 +1490,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
+  
   Future<List<bool>> isInfoWindowAutoOverturn_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -1405,6 +1509,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isInfoWindowEnable_batch() async {
     if (false) {
@@ -1425,7 +1530,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setInfoWindowEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setInfoWindowEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1444,7 +1550,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setMarkerOptions_batch(List<com_amap_api_maps_model_MarkerOptions> var1) async {
+  
+  Future<List<void>> setMarkerOptions_batch(List<com_amap_api_maps_model_MarkerOptions> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1463,7 +1570,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setAutoOverturnInfoWindow_batch(List<bool> var1) async {
+  
+  Future<List<void>> setAutoOverturnInfoWindow_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1482,7 +1590,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setClickable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setClickable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1501,7 +1610,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setDisplayLevel_batch(List<int> var1) async {
+  
+  Future<List<void>> setDisplayLevel_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1520,7 +1630,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setFixingPointEnable_batch(List<bool> var1) async {
+  
+  Future<List<void>> setFixingPointEnable_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1538,6 +1649,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isRemoved_batch() async {
     if (false) {
@@ -1558,7 +1670,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setPositionNotUpdate_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setPositionNotUpdate_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1577,7 +1690,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setRotateAngleNotUpdate_batch(List<double> var1) async {
+  
+  Future<List<void>> setRotateAngleNotUpdate_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1596,7 +1710,8 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     }
   }
   
-  Future<void> setBelowMaskLayer_batch(List<bool> var1) async {
+  
+  Future<List<void>> setBelowMaskLayer_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -1614,6 +1729,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorU_batch() async {
     if (false) {
@@ -1633,6 +1749,7 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getAnchorV_batch() async {
     if (false) {

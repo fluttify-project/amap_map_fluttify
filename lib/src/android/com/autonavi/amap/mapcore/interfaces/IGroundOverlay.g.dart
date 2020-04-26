@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_mapcore_interfaces_IOverlay {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
 
   
 
+  
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setDimensions__double(double var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDimensions__double__double(double var1, double var2) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getWidth() async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getHeight() async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setBearing(double var1) async {
     // print log
@@ -212,10 +230,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getBearing() async {
     // print log
@@ -234,10 +254,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setTransparency(double var1) async {
     // print log
@@ -256,10 +278,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getTransparency() async {
     // print log
@@ -278,10 +302,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
@@ -300,8 +326,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

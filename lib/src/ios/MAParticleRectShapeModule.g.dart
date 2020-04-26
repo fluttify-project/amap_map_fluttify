@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   //endregion
 
   //region methods
+  
   Future<MAParticleRectShapeModule> initWithLeft_top_right_bottom_useRatio(double left, double top, double right, double bottom, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleRectShapeModule_Batch on List<MAParticleRectShapeModule> {
   //endregion
 
   //region methods
+  
   Future<List<MAParticleRectShapeModule>> initWithLeft_top_right_bottom_useRatio_batch(List<double> left, List<double> top, List<double> right, List<double> bottom, List<bool> isUseRatio) async {
     if (left.length != top.length || top.length != right.length || right.length != bottom.length || bottom.length != isUseRatio.length) {
       return Future.error('all args must have same length!');

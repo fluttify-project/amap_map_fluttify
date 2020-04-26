@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<com_amap_api_maps_CameraUpdate> zoomIn() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> zoomOut() async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> scrollBy(double var0, double var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> zoomTo(double var0) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> zoomBy__double(double var0) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> zoomBy__double__android_graphics_Point(double var0, android_graphics_Point var1) async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newCameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLng(com_amap_api_maps_model_LatLng var0) async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int(com_amap_api_maps_model_LatLngBounds var0, int var1) async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> changeLatLng(com_amap_api_maps_model_LatLng var0) async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> changeBearing(double var0) async {
     // print log
@@ -309,10 +333,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(double var0, com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -331,10 +357,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> changeTilt(double var0) async {
     // print log
@@ -353,10 +381,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int(com_amap_api_maps_model_LatLngBounds var0, int var1, int var2, int var3) async {
     // print log
@@ -375,10 +405,12 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBoundsRect(com_amap_api_maps_model_LatLngBounds var0, int var1, int var2, int var3, int var4) async {
     // print log
@@ -397,8 +429,9 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -415,6 +448,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   //endregion
 
   //region methods
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> zoomIn_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -433,6 +467,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> zoomOut_batch() async {
     if (false) {
@@ -453,6 +488,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> scrollBy_batch(List<double> var0, List<double> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -471,6 +507,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> zoomTo_batch(List<double> var0) async {
     if (false) {
@@ -491,6 +528,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> zoomBy__double_batch(List<double> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -509,6 +547,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> zoomBy__double__android_graphics_Point_batch(List<double> var0, List<android_graphics_Point> var1) async {
     if (var0.length != var1.length) {
@@ -529,6 +568,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> newCameraPosition_batch(List<com_amap_api_maps_model_CameraPosition> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -547,6 +587,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> newLatLng_batch(List<com_amap_api_maps_model_LatLng> var0) async {
     if (false) {
@@ -567,6 +608,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> newLatLngZoom_batch(List<com_amap_api_maps_model_LatLng> var0, List<double> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -585,6 +627,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1) async {
     if (var0.length != var1.length) {
@@ -605,6 +648,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> changeLatLng_batch(List<com_amap_api_maps_model_LatLng> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -623,6 +667,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> changeBearing_batch(List<double> var0) async {
     if (false) {
@@ -643,6 +688,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> changeBearingGeoCenter_batch(List<double> var0, List<com_autonavi_amap_mapcore_IPoint> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -661,6 +707,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> changeTilt_batch(List<double> var0) async {
     if (false) {
@@ -681,6 +728,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
     }
   }
   
+  
   static Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1, List<int> var2, List<int> var3) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -699,6 +747,7 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
       return typedResult;
     }
   }
+  
   
   static Future<List<com_amap_api_maps_CameraUpdate>> newLatLngBoundsRect_batch(List<com_amap_api_maps_model_LatLngBounds> var0, List<int> var1, List<int> var2, List<int> var3, List<int> var4) async {
     if (var0.length != var1.length || var1.length != var2.length || var2.length != var3.length || var3.length != var4.length) {

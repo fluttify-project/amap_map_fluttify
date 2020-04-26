@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //region constants
@@ -50,6 +51,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   //endregion
 
   //region methods
+  
   Future<MAParticleCurveSizeGenerate> initWithCurveX_Y_Z(double x, double y, double z) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAParticleCurveSizeGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -85,6 +88,7 @@ extension MAParticleCurveSizeGenerate_Batch on List<MAParticleCurveSizeGenerate>
   //endregion
 
   //region methods
+  
   Future<List<MAParticleCurveSizeGenerate>> initWithCurveX_Y_Z_batch(List<double> x, List<double> y, List<double> z) async {
     if (x.length != y.length || y.length != z.length) {
       return Future.error('all args must have same length!');

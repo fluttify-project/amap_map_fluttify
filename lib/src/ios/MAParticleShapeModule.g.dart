@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin MAParticleShapeModule on NSObject {
   
@@ -19,6 +20,7 @@ mixin MAParticleShapeModule on NSObject {
 
   
 
+  
   Future<NSValue/* float* */> getPoint() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin MAParticleShapeModule on NSObject {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> isRatioEnable() async {
     // print log
@@ -58,8 +62,9 @@ mixin MAParticleShapeModule on NSObject {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

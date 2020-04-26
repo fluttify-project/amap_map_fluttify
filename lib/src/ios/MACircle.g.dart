@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -78,6 +79,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MACircle> circleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -95,10 +97,12 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<MACircle> circleWithMapRect(MAMapRect mapRect) async {
     // print log
@@ -117,10 +121,12 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MACircle()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MACircle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> setCircleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
@@ -139,8 +145,9 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -188,6 +195,7 @@ extension MACircle_Batch on List<MACircle> {
   //endregion
 
   //region methods
+  
   static Future<List<MACircle>> circleWithCenterCoordinate_radius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
     if (coord.length != radius.length) {
       return Future.error('all args must have same length!');
@@ -207,6 +215,7 @@ extension MACircle_Batch on List<MACircle> {
     }
   }
   
+  
   static Future<List<MACircle>> circleWithMapRect_batch(List<MAMapRect> mapRect) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -225,6 +234,7 @@ extension MACircle_Batch on List<MACircle> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> setCircleWithCenterCoordinate_radius_batch(List<CLLocationCoordinate2D> coord, List<double> radius) async {
     if (coord.length != radius.length) {

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //region constants
@@ -78,6 +79,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
   //endregion
 
   //region methods
+  
   static Future<MAGroundOverlay> groundOverlayWithBounds_icon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -95,10 +97,12 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<MAGroundOverlay> groundOverlayWithCoordinate_zoomLevel_icon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
@@ -117,10 +121,12 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<bool> setGroundOverlayWithBounds_icon(MACoordinateBounds bounds, UIImage icon) async {
     // print log
@@ -139,10 +145,12 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> setGroundOverlayWithCoordinate_zoomLevel_icon(CLLocationCoordinate2D coordinate, double zoomLevel, UIImage icon) async {
     // print log
@@ -161,8 +169,9 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -211,6 +220,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
   //endregion
 
   //region methods
+  
   static Future<List<MAGroundOverlay>> groundOverlayWithBounds_icon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
     if (bounds.length != icon.length) {
       return Future.error('all args must have same length!');
@@ -229,6 +239,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
       return typedResult;
     }
   }
+  
   
   static Future<List<MAGroundOverlay>> groundOverlayWithCoordinate_zoomLevel_icon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {
@@ -249,6 +260,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
     }
   }
   
+  
   Future<List<bool>> setGroundOverlayWithBounds_icon_batch(List<MACoordinateBounds> bounds, List<UIImage> icon) async {
     if (bounds.length != icon.length) {
       return Future.error('all args must have same length!');
@@ -267,6 +279,7 @@ extension MAGroundOverlay_Batch on List<MAGroundOverlay> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> setGroundOverlayWithCoordinate_zoomLevel_icon_batch(List<CLLocationCoordinate2D> coordinate, List<double> zoomLevel, List<UIImage> icon) async {
     if (coordinate.length != zoomLevel.length || zoomLevel.length != icon.length) {

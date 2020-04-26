@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOptions with android_os_Parcelable {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
     // print log
@@ -89,10 +93,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
     // print log
@@ -133,10 +141,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
     // print log
@@ -155,10 +165,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_ArcOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<double> getStrokeWidth() async {
     // print log
@@ -177,10 +189,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeColor() async {
     // print log
@@ -199,10 +213,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -221,10 +237,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -243,10 +261,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getStart() async {
     // print log
@@ -265,10 +285,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getPassed() async {
     // print log
@@ -287,10 +309,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getEnd() async {
     // print log
@@ -309,8 +333,9 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -327,6 +352,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_model_ArcOptions>> point_batch(List<com_amap_api_maps_model_LatLng> var1, List<com_amap_api_maps_model_LatLng> var2, List<com_amap_api_maps_model_LatLng> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
@@ -345,6 +371,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_ArcOptions>> strokeWidth_batch(List<double> var1) async {
     if (false) {
@@ -365,6 +392,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_ArcOptions>> strokeColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -383,6 +411,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_ArcOptions>> zIndex_batch(List<double> var1) async {
     if (false) {
@@ -403,6 +432,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_ArcOptions>> visible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -421,6 +451,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getStrokeWidth_batch() async {
     if (false) {
@@ -441,6 +472,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     }
   }
   
+  
   Future<List<int>> getStrokeColor_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -459,6 +491,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {
@@ -479,6 +512,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     }
   }
   
+  
   Future<List<bool>> isVisible_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -497,6 +531,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getStart_batch() async {
     if (false) {
@@ -517,6 +552,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
     }
   }
   
+  
   Future<List<com_amap_api_maps_model_LatLng>> getPassed_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -535,6 +571,7 @@ extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_mod
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getEnd_batch() async {
     if (false) {

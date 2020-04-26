@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_View  {
   //region constants
@@ -50,6 +51,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
   //endregion
 
   //region methods
+  
   Future<void> setProgress(int var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,8 +69,9 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -85,7 +88,8 @@ extension com_amap_api_maps_offlinemap_DownloadProgressView_Batch on List<com_am
   //endregion
 
   //region methods
-  Future<void> setProgress_batch(List<int> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setProgress_batch(List<int> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

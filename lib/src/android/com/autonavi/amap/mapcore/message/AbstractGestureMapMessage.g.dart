@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_autonavi_ae_gmap_AbstractMapMessage  {
   //region constants
@@ -102,6 +103,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   //endregion
 
   //region methods
+  
   Future<void> setState(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -119,10 +121,12 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> reset() async {
     // print log
@@ -141,10 +145,12 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
@@ -163,10 +169,12 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getMapGestureState() async {
     // print log
@@ -185,8 +193,9 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -279,7 +288,8 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
   //endregion
 
   //region methods
-  Future<void> setState_batch(List<int> var1) async {
+  
+  Future<List<void>> setState_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -298,7 +308,8 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
     }
   }
   
-  Future<void> reset_batch() async {
+  
+  Future<List<void>> reset_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -317,7 +328,8 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
     }
   }
   
-  Future<void> runCameraUpdate_batch(List<com_autonavi_ae_gmap_GLMapState> var1) async {
+  
+  Future<List<void>> runCameraUpdate_batch(List<com_autonavi_ae_gmap_GLMapState> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -335,6 +347,7 @@ extension com_autonavi_amap_mapcore_message_AbstractGestureMapMessage_Batch on L
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getMapGestureState_batch() async {
     if (false) {

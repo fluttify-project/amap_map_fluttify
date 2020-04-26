@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   //endregion
 
   //region methods
+  
   Future<double> getX() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getY() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZ() async {
     // print log
@@ -93,8 +99,9 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -111,6 +118,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
   //endregion
 
   //region methods
+  
   Future<List<double>> getX_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -130,6 +138,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
     }
   }
   
+  
   Future<List<double>> getY_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -148,6 +157,7 @@ extension com_amap_api_maps_model_particle_VelocityGenerate_Batch on List<com_am
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZ_batch() async {
     if (false) {

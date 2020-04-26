@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   //region constants
@@ -69,6 +70,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   //endregion
 
   //region methods
+  
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,10 +88,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_AMap()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
@@ -108,10 +112,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
@@ -130,10 +136,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
@@ -152,10 +160,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
@@ -174,10 +184,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
@@ -196,10 +208,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
@@ -218,10 +232,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
@@ -240,10 +256,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1, {bool viewChannel = true}) async {
     // print log
@@ -290,10 +308,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onDismiss({bool viewChannel = true}) async {
     // print log
@@ -312,10 +332,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onEnterAmbient(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
@@ -334,10 +356,12 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> onExitAmbient({bool viewChannel = true}) async {
     // print log
@@ -356,8 +380,9 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -374,6 +399,7 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
   //endregion
 
   //region methods
+  
   Future<List<com_amap_api_maps_AMap>> getMap_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -393,7 +419,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onCreate_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> onCreate_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -412,7 +439,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onResume_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onResume_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -431,7 +459,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onPause_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onPause_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -450,7 +479,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onDestroy_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onDestroy_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -469,7 +499,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onLowMemory_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onLowMemory_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -488,7 +519,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onSaveInstanceState_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> onSaveInstanceState_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -507,7 +539,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> setVisibility_batch(List<int> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> setVisibility_batch(List<int> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -526,7 +559,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onDismiss_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onDismiss_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -545,7 +579,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onEnterAmbient_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
+  
+  Future<List<void>> onEnterAmbient_batch(List<android_os_Bundle> var1, {bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -564,7 +599,8 @@ extension com_amap_api_maps_WearMapView_Batch on List<com_amap_api_maps_WearMapV
     }
   }
   
-  Future<void> onExitAmbient_batch({bool viewChannel = true}) async {
+  
+  Future<List<void>> onExitAmbient_batch({bool viewChannel = true}) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_amap_api_maps_LocationSource on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
 
   
 
+  
   Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> deactivate() async {
     // print log
@@ -58,8 +62,9 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps_model_BaseOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   //endregion
 
   //region methods
+  
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setStartParticleSize(int var1, int var2) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setMaxParticles(int var1) async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setDuration(int var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParticleLifeTime(int var1) async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setLoop(bool var1) async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // print log
@@ -225,10 +243,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParticleEmission(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
     // print log
@@ -247,10 +267,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getCurrentParticleNum() async {
     // print log
@@ -269,10 +291,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
     // print log
@@ -291,10 +315,12 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // print log
@@ -313,8 +339,9 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -331,7 +358,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
   //endregion
 
   //region methods
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -350,7 +378,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> destroy_batch() async {
+  
+  Future<List<void>> destroy_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -369,7 +398,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setStartParticleSize_batch(List<int> var1, List<int> var2) async {
+  
+  Future<List<void>> setStartParticleSize_batch(List<int> var1, List<int> var2) async {
     if (var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -388,7 +418,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setMaxParticles_batch(List<int> var1) async {
+  
+  Future<List<void>> setMaxParticles_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -407,7 +438,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setDuration_batch(List<int> var1) async {
+  
+  Future<List<void>> setDuration_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -426,7 +458,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setParticleLifeTime_batch(List<int> var1) async {
+  
+  Future<List<void>> setParticleLifeTime_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -445,7 +478,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setParticleStartSpeed_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
+  
+  Future<List<void>> setParticleStartSpeed_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -464,7 +498,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setLoop_batch(List<bool> var1) async {
+  
+  Future<List<void>> setLoop_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -483,7 +518,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setParticleShapeModule_batch(List<com_amap_api_maps_model_particle_ParticleShapeModule> var1) async {
+  
+  Future<List<void>> setParticleShapeModule_batch(List<com_amap_api_maps_model_particle_ParticleShapeModule> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -502,7 +538,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setParticleEmission_batch(List<com_amap_api_maps_model_particle_ParticleEmissionModule> var1) async {
+  
+  Future<List<void>> setParticleEmission_batch(List<com_amap_api_maps_model_particle_ParticleEmissionModule> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -520,6 +557,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getCurrentParticleNum_batch() async {
     if (false) {
@@ -540,7 +578,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setParticleOverLifeModule_batch(List<com_amap_api_maps_model_particle_ParticleOverLifeModule> var1) async {
+  
+  Future<List<void>> setParticleOverLifeModule_batch(List<com_amap_api_maps_model_particle_ParticleOverLifeModule> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -559,7 +598,8 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
     }
   }
   
-  Future<void> setStartColor_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
+  
+  Future<List<void>> setStartColor_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }

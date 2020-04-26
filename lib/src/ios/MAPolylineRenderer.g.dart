@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAPolylineRenderer extends MAOverlayPathRenderer  {
   //region constants
@@ -78,6 +79,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -95,8 +97,9 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -144,6 +147,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MAPolylineRenderer>> initWithPolyline_batch(List<MAPolyline> polyline) async {
     if (false) {
       return Future.error('all args must have same length!');

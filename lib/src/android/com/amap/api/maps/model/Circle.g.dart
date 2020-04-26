@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay  {
   //region constants
@@ -32,6 +33,7 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
   //endregion
 
   //region methods
+  
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -49,10 +51,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getId() async {
     // print log
@@ -71,10 +75,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -93,10 +99,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
@@ -115,10 +123,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setRadius(double var1) async {
     // print log
@@ -137,10 +147,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getRadius() async {
     // print log
@@ -159,10 +171,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setStrokeWidth(double var1) async {
     // print log
@@ -181,10 +195,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getStrokeWidth() async {
     // print log
@@ -203,10 +219,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setStrokeColor(int var1) async {
     // print log
@@ -225,10 +243,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeColor() async {
     // print log
@@ -247,10 +267,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setFillColor(int var1) async {
     // print log
@@ -269,10 +291,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getFillColor() async {
     // print log
@@ -291,10 +315,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setZIndex(double var1) async {
     // print log
@@ -313,10 +339,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> getZIndex() async {
     // print log
@@ -335,10 +363,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -357,10 +387,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isVisible() async {
     // print log
@@ -379,10 +411,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
@@ -401,10 +435,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
@@ -423,10 +459,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
@@ -445,10 +483,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => com_amap_api_maps_model_PolygonHoleOptions()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setStrokeDottedLineType(int var1) async {
     // print log
@@ -467,10 +507,12 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> getStrokeDottedLineType() async {
     // print log
@@ -489,8 +531,9 @@ class com_amap_api_maps_model_Circle extends com_amap_api_maps_model_BaseOverlay
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -507,7 +550,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
   //endregion
 
   //region methods
-  Future<void> remove_batch() async {
+  
+  Future<List<void>> remove_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -525,6 +569,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<String>> getId_batch() async {
     if (false) {
@@ -545,7 +590,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setCenter_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+  
+  Future<List<void>> setCenter_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -563,6 +609,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<com_amap_api_maps_model_LatLng>> getCenter_batch() async {
     if (false) {
@@ -583,7 +630,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setRadius_batch(List<double> var1) async {
+  
+  Future<List<void>> setRadius_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -601,6 +649,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getRadius_batch() async {
     if (false) {
@@ -621,7 +670,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setStrokeWidth_batch(List<double> var1) async {
+  
+  Future<List<void>> setStrokeWidth_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -639,6 +689,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getStrokeWidth_batch() async {
     if (false) {
@@ -659,7 +710,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setStrokeColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setStrokeColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -677,6 +729,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getStrokeColor_batch() async {
     if (false) {
@@ -697,7 +750,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setFillColor_batch(List<int> var1) async {
+  
+  Future<List<void>> setFillColor_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -715,6 +769,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getFillColor_batch() async {
     if (false) {
@@ -735,7 +790,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setZIndex_batch(List<double> var1) async {
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -753,6 +809,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<double>> getZIndex_batch() async {
     if (false) {
@@ -773,7 +830,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setVisible_batch(List<bool> var1) async {
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -791,6 +849,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isVisible_batch() async {
     if (false) {
@@ -811,6 +870,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
+  
   Future<List<bool>> contains_batch(List<com_amap_api_maps_model_LatLng> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -830,7 +890,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setHoleOptions_batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
+  
+  Future<List<void>> setHoleOptions_batch(List<List<com_amap_api_maps_model_BaseHoleOptions>> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -848,6 +909,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<List<com_amap_api_maps_model_BaseHoleOptions>>> getHoleOptions_batch() async {
     if (false) {
@@ -868,7 +930,8 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
     }
   }
   
-  Future<void> setStrokeDottedLineType_batch(List<int> var1) async {
+  
+  Future<List<void>> setStrokeDottedLineType_batch(List<int> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -886,6 +949,7 @@ extension com_amap_api_maps_model_Circle_Batch on List<com_amap_api_maps_model_C
       return typedResult;
     }
   }
+  
   
   Future<List<int>> getStrokeDottedLineType_batch() async {
     if (false) {

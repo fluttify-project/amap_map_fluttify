@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   //region constants
@@ -50,6 +51,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   //endregion
 
   //region methods
+  
   static Future<String> getMapBaseStorage(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<String> getExternalStroragePath(android_content_Context var0) async {
     // print log
@@ -89,10 +93,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> writeDatasToFile(String var0, Uint8List var1) async {
     // print log
@@ -111,10 +117,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> readFileContents(String var0) async {
     // print log
@@ -133,10 +141,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<void> createNoMediaFileIfNotExist(String var0) async {
     // print log
@@ -155,10 +165,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<void> saveFile(String var0, String var1, bool var2) async {
     // print log
@@ -177,10 +189,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<Uint8List> readFileContentsFromAssets(android_content_Context var0, String var1) async {
     // print log
@@ -199,10 +213,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__ as Uint8List;
     
-      return __result__ as Uint8List;
+      return __return__;
     }
   }
+  
   
   static Future<String> getName(String var0) async {
     // print log
@@ -221,10 +237,12 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<int> indexOfLastSeparator(String var0) async {
     // print log
@@ -243,8 +261,9 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -261,6 +280,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
   //endregion
 
   //region methods
+  
   static Future<List<String>> getMapBaseStorage_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -279,6 +299,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   static Future<List<String>> getExternalStroragePath_batch(List<android_content_Context> var0) async {
     if (false) {
@@ -299,7 +320,8 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  static Future<void> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
+  
+  static Future<List<void>> writeDatasToFile_batch(List<String> var0, List<Uint8List> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
     }
@@ -317,6 +339,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> readFileContents_batch(List<String> var0) async {
     if (false) {
@@ -337,7 +360,8 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  static Future<void> createNoMediaFileIfNotExist_batch(List<String> var0) async {
+  
+  static Future<List<void>> createNoMediaFileIfNotExist_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -356,7 +380,8 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
-  static Future<void> saveFile_batch(List<String> var0, List<String> var1, List<bool> var2) async {
+  
+  static Future<List<void>> saveFile_batch(List<String> var0, List<String> var1, List<bool> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
       return Future.error('all args must have same length!');
     }
@@ -374,6 +399,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   static Future<List<Uint8List>> readFileContentsFromAssets_batch(List<android_content_Context> var0, List<String> var1) async {
     if (var0.length != var1.length) {
@@ -394,6 +420,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
     }
   }
   
+  
   static Future<List<String>> getName_batch(List<String> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -412,6 +439,7 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
       return typedResult;
     }
   }
+  
   
   static Future<List<int>> indexOfLastSeparator_batch(List<String> var0) async {
     if (false) {

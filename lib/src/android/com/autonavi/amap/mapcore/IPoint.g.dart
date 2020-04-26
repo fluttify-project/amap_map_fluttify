@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
   //region constants
@@ -69,6 +70,7 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
   //endregion
 
   //region methods
+  
   static Future<com_autonavi_amap_mapcore_IPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -86,10 +88,12 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_autonavi_amap_mapcore_IPoint> obtain__int__int(int var0, int var1) async {
     // print log
@@ -108,10 +112,12 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<Object> clone() async {
     // print log
@@ -130,8 +136,9 @@ class com_autonavi_amap_mapcore_IPoint extends android_graphics_Point  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -148,6 +155,7 @@ extension com_autonavi_amap_mapcore_IPoint_Batch on List<com_autonavi_amap_mapco
   //endregion
 
   //region methods
+  
   static Future<List<com_autonavi_amap_mapcore_IPoint>> obtain_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -167,6 +175,7 @@ extension com_autonavi_amap_mapcore_IPoint_Batch on List<com_autonavi_amap_mapco
     }
   }
   
+  
   static Future<List<com_autonavi_amap_mapcore_IPoint>> obtain__int__int_batch(List<int> var0, List<int> var1) async {
     if (var0.length != var1.length) {
       return Future.error('all args must have same length!');
@@ -185,6 +194,7 @@ extension com_autonavi_amap_mapcore_IPoint_Batch on List<com_autonavi_amap_mapco
       return typedResult;
     }
   }
+  
   
   Future<List<Object>> clone_batch() async {
     if (false) {

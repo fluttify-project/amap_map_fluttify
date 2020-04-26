@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //region constants
@@ -55,6 +56,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   //endregion
 
   //region methods
+  
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -72,8 +74,9 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAGroundOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -96,6 +99,7 @@ extension MAGroundOverlayRenderer_Batch on List<MAGroundOverlayRenderer> {
   //endregion
 
   //region methods
+  
   Future<List<MAGroundOverlayRenderer>> initWithGroundOverlay_batch(List<MAGroundOverlay> groundOverlay) async {
     if (false) {
       return Future.error('all args must have same length!');

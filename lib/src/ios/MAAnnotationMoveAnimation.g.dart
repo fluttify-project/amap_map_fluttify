@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAAnnotationMoveAnimation extends NSObject  {
   //region constants
@@ -50,6 +51,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   //endregion
 
   //region methods
+  
   Future<String> name() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -67,10 +69,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<List<CLLocationCoordinate2D>> coordinates() async {
     // print log
@@ -89,10 +93,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => CLLocationCoordinate2D()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-      return (__result__ as List).cast<int>().map((__it__) => CLLocationCoordinate2D()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => CLLocationCoordinate2D()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(__return__);
+      return __return__;
     }
   }
+  
   
   Future<int> count() async {
     // print log
@@ -111,10 +117,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> duration() async {
     // print log
@@ -133,10 +141,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<double> elapsedTime() async {
     // print log
@@ -155,10 +165,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> cancel() async {
     // print log
@@ -177,10 +189,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<bool> isCancelled() async {
     // print log
@@ -199,10 +213,12 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<int> passedPointCount() async {
     // print log
@@ -221,8 +237,9 @@ class MAAnnotationMoveAnimation extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   
@@ -239,6 +256,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
   //endregion
 
   //region methods
+  
   Future<List<String>> name_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -257,6 +275,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
       return typedResult;
     }
   }
+  
   
   Future<List<List<CLLocationCoordinate2D>>> coordinates_batch() async {
     if (false) {
@@ -277,6 +296,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     }
   }
   
+  
   Future<List<int>> count_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -295,6 +315,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
       return typedResult;
     }
   }
+  
   
   Future<List<double>> duration_batch() async {
     if (false) {
@@ -315,6 +336,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     }
   }
   
+  
   Future<List<double>> elapsedTime_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -334,7 +356,8 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
     }
   }
   
-  Future<void> cancel_batch() async {
+  
+  Future<List<void>> cancel_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
@@ -352,6 +375,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
       return typedResult;
     }
   }
+  
   
   Future<List<bool>> isCancelled_batch() async {
     if (false) {
@@ -371,6 +395,7 @@ extension MAAnnotationMoveAnimation_Batch on List<MAAnnotationMoveAnimation> {
       return typedResult;
     }
   }
+  
   
   Future<List<int>> passedPointCount_batch() async {
     if (false) {

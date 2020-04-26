@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Object {
   
@@ -19,6 +20,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
 
   
 
+  
   Future<void> addItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -36,10 +38,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> addItem(com_amap_api_maps_model_MultiPointItem var1) async {
     // print log
@@ -58,10 +62,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> destroy(bool var1) async {
     // print log
@@ -80,10 +86,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> setVisible(bool var1) async {
     // print log
@@ -102,10 +110,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, Float64List var2, Float64List var3) async {
     // print log
@@ -124,10 +134,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<com_amap_api_maps_model_MultiPointItem> onClick(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
@@ -146,10 +158,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_amap_api_maps_model_MultiPointItem()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_amap_api_maps_model_MultiPointItem()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_MultiPointItem()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   Future<void> setAnchor(double var1, double var2) async {
     // print log
@@ -168,10 +182,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<String> getId() async {
     // print log
@@ -190,10 +206,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   Future<void> remove(bool var1) async {
     // print log
@@ -212,8 +230,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
   

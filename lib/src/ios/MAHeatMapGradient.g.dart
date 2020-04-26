@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class MAHeatMapGradient extends NSObject with NSCopying {
   //region constants
@@ -61,6 +62,7 @@ class MAHeatMapGradient extends NSObject with NSCopying {
   //endregion
 
   //region methods
+  
   Future<MAHeatMapGradient> initWithColor_andWithStartPoints(List<UIColor> colors, List<num> startPoints) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -78,8 +80,9 @@ class MAHeatMapGradient extends NSObject with NSCopying {
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAHeatMapGradient()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -109,6 +112,7 @@ extension MAHeatMapGradient_Batch on List<MAHeatMapGradient> {
   //endregion
 
   //region methods
+  
   Future<List<MAHeatMapGradient>> initWithColor_andWithStartPoints_batch(List<List<UIColor>> colors, List<List<num>> startPoints) async {
     if (colors.length != startPoints.length) {
       return Future.error('all args must have same length!');

@@ -11,6 +11,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object  {
   //region constants
@@ -58,6 +59,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   //endregion
 
   //region methods
+  
   static Future<double> clip(double var0, double var2, double var4) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -75,10 +77,12 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
+      final __return__ = __result__;
     
-      return __result__;
+      return __return__;
     }
   }
+  
   
   static Future<android_graphics_Point> latLongToPixels__int__int__int(int var0, int var1, int var2) async {
     // print log
@@ -97,10 +101,12 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<android_graphics_Point> latLongToPixels__double__double__int(double var0, double var2, int var4) async {
     // print log
@@ -119,10 +125,12 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
+  
   
   static Future<com_autonavi_amap_mapcore_DPoint> pixelsToLatLong(int var0, int var2, int var4) async {
     // print log
@@ -141,8 +149,9 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
     if (__result__ == null) {
       return null;
     } else {
-      kNativeObjectPool.add(com_autonavi_amap_mapcore_DPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-      return com_autonavi_amap_mapcore_DPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_DPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
@@ -159,6 +168,7 @@ extension com_autonavi_amap_mapcore_VirtualEarthProjection_Batch on List<com_aut
   //endregion
 
   //region methods
+  
   static Future<List<double>> clip_batch(List<double> var0, List<double> var2, List<double> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
@@ -177,6 +187,7 @@ extension com_autonavi_amap_mapcore_VirtualEarthProjection_Batch on List<com_aut
       return typedResult;
     }
   }
+  
   
   static Future<List<android_graphics_Point>> latLongToPixels__int__int__int_batch(List<int> var0, List<int> var1, List<int> var2) async {
     if (var0.length != var1.length || var1.length != var2.length) {
@@ -197,6 +208,7 @@ extension com_autonavi_amap_mapcore_VirtualEarthProjection_Batch on List<com_aut
     }
   }
   
+  
   static Future<List<android_graphics_Point>> latLongToPixels__double__double__int_batch(List<double> var0, List<double> var2, List<int> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
       return Future.error('all args must have same length!');
@@ -215,6 +227,7 @@ extension com_autonavi_amap_mapcore_VirtualEarthProjection_Batch on List<com_aut
       return typedResult;
     }
   }
+  
   
   static Future<List<com_autonavi_amap_mapcore_DPoint>> pixelsToLatLong_batch(List<int> var0, List<int> var2, List<int> var4) async {
     if (var0.length != var2.length || var2.length != var4.length) {
