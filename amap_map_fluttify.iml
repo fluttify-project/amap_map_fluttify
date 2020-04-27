@@ -29,6 +29,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/core_location_fluttify/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/core_location_fluttify/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/core_location_fluttify/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/foundation_fluttify/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/foundation_fluttify/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/foundation_fluttify/build" />
@@ -61,6 +64,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/core_location_fluttify/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/core_location_fluttify/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/core_location_fluttify/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/foundation_fluttify/build" />
