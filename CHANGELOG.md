@@ -1,3 +1,6 @@
+## 0.22.0
+- enhance: 提升依赖
+
 ## 0.21.0
 - enhance: _uri2ImageData增加package参数
 - enhance: [breaking change] setCenterCoordinate经纬度参数合并为LatLng类型
