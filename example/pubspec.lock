@@ -84,7 +84,7 @@ packages:
       name: core_location_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.0-dev.0"
+    version: "0.1.0-dev.1"
   crypto:
     dependency: transitive
     description:
@@ -167,7 +167,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.7.0"
+    version: "0.7.1-dev.1"
   http:
     dependency: transitive
     description:
