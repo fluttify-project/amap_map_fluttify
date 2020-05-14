@@ -1,3 +1,6 @@
+## 0.22.1
+- roll engine #57fc8440 (适配Flutter 1.17)
+
 ## 0.22.0
 - enhance: 提升依赖
 
