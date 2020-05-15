@@ -35,13 +35,13 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
               children: <Widget>[
                 AmapView(
                   zoomLevel: 6,
-                  markers: [
-                    MarkerOption(
-                      latLng: getNextLatLng(),
-//                  iconUri: _assetsIcon1,
-//                  imageConfig: createLocalImageConfiguration(context),
-                    ),
-                  ],
+//                  markers: [
+//                    MarkerOption(
+//                      latLng: getNextLatLng(),
+////                  iconUri: _assetsIcon1,
+////                  imageConfig: createLocalImageConfiguration(context),
+//                    ),
+//                  ],
                   onMapCreated: (controller) async {
                     _controller = controller;
                     if (await requestPermission()) {
@@ -209,9 +209,9 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   title: Center(child: Text('Marker添加点击事件')),
                   onTap: () {
                     _controller?.setMarkerClickedListener((marker) async {
-                      toast(
-                          '${await marker.title}, ${await marker.snippet}, ${await marker.location}, ${await marker.object}');
-                      return false;
+                      marker.setIcon(
+                          _assetsIcon2, createLocalImageConfiguration(context));
+                      return true;
                     });
                   },
                 ),

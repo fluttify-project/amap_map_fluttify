@@ -31,7 +31,7 @@ typedef Future<void> OnMultiPointClicked(
 );
 
 /// 地图控制类
-class AmapController with WidgetsBindingObserver, _Private {
+class AmapController with WidgetsBindingObserver {
   /// Android构造器
   AmapController.android(this.androidController, this._state) {
     WidgetsBinding.instance.addObserver(this);
@@ -142,7 +142,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           // 定位图标
           if (option.iconUri != null) {
-            final imageData = await _uri2ImageData(
+            final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
@@ -228,7 +228,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
           // 定位图标
           if (option.iconUri != null) {
-            final imageData = await _uri2ImageData(
+            final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
@@ -761,7 +761,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 普通图片
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
-              await _uri2ImageData(option.imageConfig, option.iconUri);
+              await uri2ImageData(option.imageConfig, option.iconUri);
 
           final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -836,7 +836,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 普通图片
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
-              await _uri2ImageData(option.imageConfig, option.iconUri);
+              await uri2ImageData(option.imageConfig, option.iconUri);
 
           final icon = await UIImage.create(iconData);
 
@@ -888,14 +888,13 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotation(annotation);
 
-//        // 等待添加完成 获取对应的view
-//        final annotationViewList =
-//            await _iosMapDelegate._annotationViewStream.stream.first;
+        // 等待添加完成 获取对应的view
+        final annotationViewList =
+            await _iosMapDelegate._annotationViewStream.stream.first;
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
-        return Marker.ios(
-            annotation /*, annotationViewList[0]*/, iosController);
+        return Marker.ios(annotation, annotationViewList[0], iosController);
       },
     );
   }
@@ -923,7 +922,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     final iconDataBatch = <Uint8List>[
       for (final option in options)
         if (option.iconUri != null && option.imageConfig != null)
-          await _uri2ImageData(option.imageConfig, option.iconUri)
+          await uri2ImageData(option.imageConfig, option.iconUri)
         else if (option.widget != null)
           await _state.widgetToImageData(option.widget)
     ];
@@ -1024,18 +1023,19 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 添加marker
         await iosController.addAnnotations(annotationBatch);
 
-//        // 等待添加完成 获取对应的view
-//        // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
-//        final annotationViewList = List(options.length);
-//        final visibleMarkers =
-//            await _iosMapDelegate._annotationViewStream.stream.first;
-//        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
+        // 等待添加完成 获取对应的view
+        // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
+        final annotationViewList = List(options.length);
+        final visibleMarkers =
+            await _iosMapDelegate._annotationViewStream.stream.first;
+        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
 
         pool.addAll(coordinateBatch);
         return [
           for (int i = 0; i < options.length; i++)
             Marker.ios(
-              annotationBatch[i] /*, annotationViewList[i]*/,
+              annotationBatch[i],
+              annotationViewList[i],
               iosController,
             )
         ];
@@ -1061,7 +1061,7 @@ class AmapController with WidgetsBindingObserver, _Private {
 
         // 创建marker的图标
         final bitmap = await android_graphics_Bitmap
-            .create(await _uri2ImageData(option.imageConfig, option.iconUri));
+            .create(await uri2ImageData(option.imageConfig, option.iconUri));
         final bitmapDescriptor =
             await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
@@ -1103,7 +1103,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 普通图片
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
-              await _uri2ImageData(option.imageConfig, option.iconUri);
+              await uri2ImageData(option.imageConfig, option.iconUri);
 
           final icon = await UIImage.create(iconData);
 
@@ -1263,7 +1263,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 自定义贴图
         if (option.customTexture != null && option.imageConfig != null) {
           Uint8List iconData =
-              await _uri2ImageData(option.imageConfig, option.customTexture);
+              await uri2ImageData(option.imageConfig, option.customTexture);
           final bitmap = await android_graphics_Bitmap.create(iconData);
           final texture = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
@@ -1335,7 +1335,7 @@ class AmapController with WidgetsBindingObserver, _Private {
         // 设置图片
         if (option.customTexture != null && option.imageConfig != null) {
           Uint8List textureData =
-              await _uri2ImageData(option.imageConfig, option.customTexture);
+              await uri2ImageData(option.imageConfig, option.customTexture);
 
           final texture = await UIImage.create(textureData);
 
@@ -1542,8 +1542,7 @@ class AmapController with WidgetsBindingObserver, _Private {
     final objectBatch = option.pointList.map((it) => it.object).toList();
     Uint8List iconData;
     if (option.iconUri != null && option.imageConfiguration != null) {
-      iconData =
-          await _uri2ImageData(option.imageConfiguration, option.iconUri);
+      iconData = await uri2ImageData(option.imageConfiguration, option.iconUri);
     }
 
     await platform(
@@ -2186,7 +2185,7 @@ class _IOSMapDelegate extends NSObject
           // 解决办法很简单, 把refId取出来放到目标实体类里就行了
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-//          view,
+          view,
           _iosController,
         ),
       );
@@ -2212,7 +2211,7 @@ class _IOSMapDelegate extends NSObject
       await _onMarkerDragStart(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-//          view,
+          view,
           _iosController,
         ),
       );
@@ -2224,7 +2223,7 @@ class _IOSMapDelegate extends NSObject
       await _onMarkerDragging(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-//          view,
+          view,
           _iosController,
         ),
       );
@@ -2235,7 +2234,7 @@ class _IOSMapDelegate extends NSObject
       await _onMarkerDragEnd(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-//          view,
+          view,
           _iosController,
         ),
       );
@@ -2361,7 +2360,7 @@ class _IOSMapDelegate extends NSObject
         Marker.ios(
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-//          view,
+          view,
           _iosController,
         ),
       );
@@ -2559,59 +2558,5 @@ class _AndroidMapDelegate extends java_lang_Object
       _onMultiPointClicked(id, title, snippet, object);
     }
     return true;
-  }
-}
-
-mixin _Private {
-  Map<String, Uint8List> _cache = {};
-
-  Future<Uint8List> _uri2ImageData(
-    ImageConfiguration config,
-    Uri iconUri, {
-    String package,
-  }) async {
-    final imageData = Completer<Uint8List>();
-    if (_cache.containsKey(iconUri.toString())) {
-      debugPrint('命中缓存');
-      imageData.complete(_cache[iconUri.toString()]);
-    } else {
-      switch (iconUri.scheme) {
-        // 网络图片
-        case 'https':
-        case 'http':
-          HttpClient httpClient = HttpClient();
-          var request = await httpClient.getUrl(iconUri);
-          var response = await request.close();
-          final result = await consolidateHttpClientResponseBytes(response);
-
-          _cache[iconUri.toString()] = result;
-          imageData.complete(result);
-          break;
-        // 文件图片
-        case 'file':
-          final imageFile = File.fromUri(iconUri);
-          final result = imageFile.readAsBytesSync();
-
-          _cache[iconUri.toString()] = result;
-          imageData.complete(result);
-          break;
-        // asset图片
-        default:
-          (package == null
-                  ? AssetImage(iconUri.path)
-                  : AssetImage(iconUri.path, package: package))
-              .resolve(config)
-              .addListener(ImageStreamListener((imageInfo, sync) async {
-            final byteData =
-                await imageInfo.image.toByteData(format: ImageByteFormat.png);
-            final result = byteData.buffer.asUint8List();
-
-            _cache[iconUri.toString()] = result;
-            imageData.complete(result);
-          }));
-          break;
-      }
-    }
-    return imageData.future;
   }
 }

@@ -3936,7 +3936,60 @@ extern BOOL enableLog;
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
-  
+  UIImage* icon = (UIImage *) objc_getAssociatedObject(annotation, (const void *) 1);
+  NSNumber* draggable = objc_getAssociatedObject(annotation, (const void *) 2);
+  NSNumber* rotateAngle = objc_getAssociatedObject(annotation, (const void *) 3);
+  NSNumber* infoWindowEnabled = objc_getAssociatedObject(annotation, (const void *) 4);
+  NSNumber* anchorU = objc_getAssociatedObject(annotation, (const void *) 5);
+  NSNumber* anchorV = objc_getAssociatedObject(annotation, (const void *) 6);
+  // 7上绑的是自定义数据, 这里不需要
+  NSNumber* width = objc_getAssociatedObject(annotation, (const void *) 8);
+  NSNumber* height = objc_getAssociatedObject(annotation, (const void *) 9);
+  NSNumber* visible = objc_getAssociatedObject(annotation, (const void *) 10);
+
+  //用户当前位置大头针
+  if ([annotation isKindOfClass:[MAUserLocation class]]) {
+    return nil;
+  }
+    
+  if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
+      MAAnnotationView* annotationView;
+      // 如果没有指定icon就使用m自带的annotation
+      if (icon == nil) {
+          annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"pinAnnotationReuseIndentifier"];
+          if (annotationView == nil) {
+              annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pinAnnotationReuseIndentifier"];
+          }
+      } else {
+          annotationView = (MAAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"customAnnotationReuseIndentifier"];
+          if (annotationView == nil) {
+              annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"customAnnotationReuseIndentifier"];
+          }
+      }
+      if (icon != nil && (NSNull*) icon != [NSNull null]) annotationView.image = icon;
+      if (draggable != nil) annotationView.draggable = [draggable boolValue];
+      if (infoWindowEnabled != nil) annotationView.canShowCallout = [infoWindowEnabled boolValue];
+      // 旋转角度
+      if (rotateAngle != nil) {
+          annotationView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -[rotateAngle doubleValue] / 180.0 * M_PI);
+      }
+      // 设置图片大小
+      if (annotationView.image != nil
+          && width != nil && height != nil
+          && (NSNull*) width != [NSNull null] && (NSNull*) height != [NSNull null]) {
+          annotationView.frame = CGRectMake(annotationView.frame.origin.x, annotationView.frame.origin.x, [width doubleValue], [height doubleValue]);
+      }
+      // 锚点
+      if (anchorU != nil && anchorV != nil
+          && (NSNull*) anchorU != [NSNull null] && (NSNull*) anchorV != [NSNull null]) {
+          annotationView.layer.anchorPoint = CGPointMake([anchorU doubleValue], [anchorV doubleValue]);
+      }
+      // 是否可见
+      if (visible != nil && (NSNull*) visible != [NSNull null]) {
+          annotationView.hidden = ![visible boolValue];
+      }
+      return annotationView;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
@@ -4151,7 +4204,126 @@ extern BOOL enableLog;
   NSLog(@"暂不支持有返回值的回调方法");
   
   ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  // 线
+  if ([overlay isKindOfClass:[MAPolyline class]])
+  {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      UIImage* texture = (UIImage *) objc_getAssociatedObject(overlay, (const void *) 3);
+      NSNumber* lineCapType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 4);
+      NSNumber* lineJoinType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 5);
+      NSNumber* dashType = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 6);
   
+      MAPolylineRenderer *polylineRenderer = [[MAPolylineRenderer alloc] initWithPolyline:overlay];
+  
+      polylineRenderer.lineWidth = [width doubleValue];
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polylineRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+      if (texture != nil) polylineRenderer.strokeImage = texture;
+      if (lineCapType != nil) polylineRenderer.lineCapType = (MALineCapType) [lineCapType integerValue];
+      if (lineJoinType != nil) polylineRenderer.lineJoinType = (MALineJoinType) [lineJoinType integerValue];
+      if (dashType != nil) polylineRenderer.lineDashType = (MALineDashType) [dashType integerValue];
+  
+      // 这次调用完成后 清空栈
+      [STACK removeAllObjects];
+      return polylineRenderer;
+  }
+  
+  // 多边形
+  if ([overlay isKindOfClass:[MAPolygon class]])
+  {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* fillColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+  
+      MAPolygonRenderer *polygonRenderer = [[MAPolygonRenderer alloc] initWithPolygon:overlay];
+  
+      if (width != nil) polygonRenderer.lineWidth = [width doubleValue];
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+  
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      polygonRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+  
+      // 这次调用完成后 清空栈
+      [STACK removeAllObjects];
+      return polygonRenderer;
+  }
+  
+  // 圆
+  if ([overlay isKindOfClass:[MACircle class]])
+  {
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* strokeColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* fillColor = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+  
+      MACircleRenderer *circleRenderer = [[MACircleRenderer alloc] initWithCircle:overlay];
+  
+      // 宽度
+      if (width != nil) circleRenderer.lineWidth = [width doubleValue];
+  
+      // 描边颜色
+      NSUInteger rgba = [strokeColor unsignedIntegerValue];
+      float components[4];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.strokeColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+  
+      // 填充颜色
+      rgba = [fillColor unsignedIntegerValue];
+      for (int i = 3; i >= 0; i--) {
+          components[i] = (rgba & 0xff) / 255.0;
+          rgba >>= 8;
+      }
+      circleRenderer.fillColor  = [UIColor colorWithRed:components[1] green:components[2] blue:components[3] alpha:components[0]];
+  
+      // 这次调用完成后 清空栈
+      [STACK removeAllObjects];
+      return circleRenderer;
+  }
+  
+  // 瓦片图
+  if ([overlay isKindOfClass:[MATileOverlay class]])
+  {
+      MATileOverlayRenderer *tileOverlayRenderer = [[MATileOverlayRenderer alloc] initWithTileOverlay:overlay];
+      return tileOverlayRenderer;
+  }
+  
+  // 海量点
+  if ([overlay isKindOfClass:[MAMultiPointOverlay class]])
+  {
+      UIImage* icon = (UIImage *) objc_getAssociatedObject(overlay, (const void *) 1);
+      NSNumber* width = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 2);
+      NSNumber* height = (NSNumber *) objc_getAssociatedObject(overlay, (const void *) 3);
+  
+      MAMultiPointOverlayRenderer *multiPointOverlayRenderer = [[MAMultiPointOverlayRenderer alloc] initWithMultiPointOverlay: overlay];
+      if (icon != nil) {
+          multiPointOverlayRenderer.icon = icon;
+      }
+      if (width != nil && height != nil) {
+          multiPointOverlayRenderer.pointSize = CGSizeMake([width doubleValue], [height doubleValue]);
+      }
+      return multiPointOverlayRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;
