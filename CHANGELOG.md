@@ -1,3 +1,6 @@
+## 0.22.2
+- enhance: Marker添加修改icon的方法
+
 ## 0.22.1
 - roll engine #57fc8440 (适配Flutter 1.17)
 
