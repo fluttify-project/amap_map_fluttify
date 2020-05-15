@@ -1,4 +1,5 @@
 import 'package:amap_core_fluttify/amap_core_fluttify.dart';
+import 'package:amap_map_fluttify/src/facade/utils.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -481,12 +482,13 @@ class MapLocation {
 class Marker {
   Marker.android(this.androidModel);
 
-  Marker.ios(this.iosModel /*, this._annotationView*/, this.iosController);
+  Marker.ios(this.iosModel, this._annotationView, this.iosController);
 
   com_amap_api_maps_model_Marker androidModel;
 
   MAPointAnnotation iosModel;
-//  MAAnnotationView _annotationView;
+
+  MAAnnotationView _annotationView;
   MAMapView iosController;
 
   Future<String> get title {
@@ -549,17 +551,16 @@ class Marker {
         ),
       ),
       ios: (_) async {
-        debugPrint('ios端目前无法设置经纬度!');
-//        if (_annotationView != null) {
-//          final coordinate = await CLLocationCoordinate2D.create(
-//            coord.latitude,
-//            coord.longitude,
-//          );
-//          await _iosModel.set_coordinate(coordinate);
-//          await _annotationView.set_annotation(_iosModel, viewChannel: false);
-//        } else {
-//          debugPrint('当前_annotationView为null, 无法设置经纬度!');
-//        }
+        if (_annotationView != null) {
+          final coordinate = await CLLocationCoordinate2D.create(
+            coord.latitude,
+            coord.longitude,
+          );
+          await iosModel.set_coordinate(coordinate);
+          await _annotationView.set_annotation(iosModel, viewChannel: false);
+        } else {
+          debugPrint('当前_annotationView为null, 无法设置经纬度!');
+        }
       },
     );
   }
@@ -570,11 +571,11 @@ class Marker {
       android: (_) => androidModel.setVisible(visible),
       ios: (_) async {
         debugPrint('ios端目前无法设置可见性!');
-//        if (_annotationView != null) {
-//          await _annotationView.setHidden(!visible);
-//        } else {
-//          debugPrint('当前_annotationView为null, 无法设置可见性!');
-//        }
+        if (_annotationView != null) {
+          await _annotationView.setHidden(!visible);
+        } else {
+          debugPrint('当前_annotationView为null, 无法设置可见性!');
+        }
       },
     );
   }
@@ -590,6 +591,26 @@ class Marker {
     return platform(
       android: (_) => androidModel.hideInfoWindow(),
       ios: (_) => iosController?.deselectAnnotation_animated(iosModel, true),
+    );
+  }
+
+  Future<void> setIcon(Uri iconUri, ImageConfiguration configuration) async {
+    return platform(
+      android: (pool) async {
+        final iconData = await uri2ImageData(configuration, iconUri);
+
+        final bitmap = await android_graphics_Bitmap.create(iconData);
+        final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+            .fromBitmap(bitmap);
+        await androidModel.setIcon(icon);
+      },
+      ios: (pool) async {
+        final iconData = await uri2ImageData(configuration, iconUri);
+
+        final icon = await UIImage.create(iconData);
+
+        _annotationView.set_image(icon, viewChannel: false);
+      },
     );
   }
 }
