@@ -100,7 +100,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<int> getGpsAccuracyStatus() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getGpsAccuracyStatus([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getGpsAccuracyStatus([])');
     }
   
     // invoke native method
@@ -124,7 +124,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setGpsAccuracyStatus(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setGpsAccuracyStatus([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setGpsAccuracyStatus([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -148,7 +148,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<int> getLocationType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationType([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationType([])');
     }
   
     // invoke native method
@@ -172,7 +172,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setLocationType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -196,7 +196,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getLocationDetail() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationDetail([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLocationDetail([])');
     }
   
     // invoke native method
@@ -220,7 +220,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setLocationDetail(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationDetail([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationDetail([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -244,7 +244,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<int> getErrorCode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorCode([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorCode([])');
     }
   
     // invoke native method
@@ -268,7 +268,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setErrorCode(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorCode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorCode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -292,7 +292,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getErrorInfo() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorInfo([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getErrorInfo([])');
     }
   
     // invoke native method
@@ -316,7 +316,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setErrorInfo(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorInfo([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorInfo([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -340,7 +340,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getCountry() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCountry([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCountry([])');
     }
   
     // invoke native method
@@ -364,7 +364,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setCountry(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCountry([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCountry([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -388,7 +388,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getRoad() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getRoad([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getRoad([])');
     }
   
     // invoke native method
@@ -412,7 +412,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setRoad(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setRoad([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setRoad([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -436,7 +436,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getAddress() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAddress([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAddress([])');
     }
   
     // invoke native method
@@ -460,7 +460,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setAddress(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAddress([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAddress([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -484,7 +484,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getProvince() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvince([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvince([])');
     }
   
     // invoke native method
@@ -508,7 +508,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setProvince(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setProvince([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setProvince([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -532,7 +532,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getCity() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCity([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCity([])');
     }
   
     // invoke native method
@@ -556,7 +556,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setCity(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCity([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCity([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -580,7 +580,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getDistrict() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getDistrict([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getDistrict([])');
     }
   
     // invoke native method
@@ -604,7 +604,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setDistrict(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setDistrict([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setDistrict([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -628,7 +628,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getCityCode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCityCode([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getCityCode([])');
     }
   
     // invoke native method
@@ -652,7 +652,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setCityCode(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCityCode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCityCode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -676,7 +676,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getAdCode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAdCode([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAdCode([])');
     }
   
     // invoke native method
@@ -700,7 +700,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setAdCode(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAdCode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAdCode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -724,7 +724,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getPoiName() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getPoiName([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getPoiName([])');
     }
   
     // invoke native method
@@ -748,7 +748,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setPoiName(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setPoiName([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setPoiName([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -772,7 +772,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getLatitude() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLatitude([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLatitude([])');
     }
   
     // invoke native method
@@ -796,7 +796,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setLatitude(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLatitude([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLatitude([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -820,7 +820,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getLongitude() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLongitude([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getLongitude([])');
     }
   
     // invoke native method
@@ -844,7 +844,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setLongitude(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLongitude([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLongitude([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -868,7 +868,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<int> getSatellites() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSatellites([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSatellites([])');
     }
   
     // invoke native method
@@ -892,7 +892,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setSatellites(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setSatellites([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setSatellites([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -916,7 +916,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getStreet() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreet([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreet([])');
     }
   
     // invoke native method
@@ -940,7 +940,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setStreet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setStreet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setStreet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -964,7 +964,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getStreetNum() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreetNum([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getStreetNum([])');
     }
   
     // invoke native method
@@ -988,7 +988,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setNumber(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setNumber([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setNumber([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1012,7 +1012,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setOffset(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setOffset([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setOffset([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1036,7 +1036,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<bool> isOffset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::isOffset([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::isOffset([])');
     }
   
     // invoke native method
@@ -1060,7 +1060,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getAoiName() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAoiName([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAoiName([])');
     }
   
     // invoke native method
@@ -1084,7 +1084,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setAoiName(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAoiName([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAoiName([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1108,7 +1108,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getBuildingId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBuildingId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBuildingId([])');
     }
   
     // invoke native method
@@ -1132,7 +1132,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setBuildingId(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setBuildingId([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setBuildingId([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1156,7 +1156,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getFloor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getFloor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getFloor([])');
     }
   
     // invoke native method
@@ -1180,7 +1180,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<void> setFloor(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setFloor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setFloor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1204,7 +1204,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> toStr() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr([])');
     }
   
     // invoke native method
@@ -1228,7 +1228,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> toStr__int(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::toStr([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1252,7 +1252,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getAccuracy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAccuracy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAccuracy([])');
     }
   
     // invoke native method
@@ -1276,7 +1276,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getBearing() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBearing([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getBearing([])');
     }
   
     // invoke native method
@@ -1300,7 +1300,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getAltitude() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAltitude([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getAltitude([])');
     }
   
     // invoke native method
@@ -1324,7 +1324,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<double> getSpeed() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSpeed([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getSpeed([])');
     }
   
     // invoke native method
@@ -1348,7 +1348,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<String> getProvider() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvider([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::getProvider([])');
     }
   
     // invoke native method
@@ -1372,7 +1372,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
   Future<com_autonavi_amap_mapcore_Inner_3dMap_location> clone() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::clone([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::clone([])');
     }
   
     // invoke native method

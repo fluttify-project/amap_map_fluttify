@@ -24,7 +24,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getX([])');
+      debugPrint('fluttify-dart: MAParticleVelocityGenerate@$refId::getX([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getY([])');
+      debugPrint('fluttify-dart: MAParticleVelocityGenerate@$refId::getY([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin MAParticleVelocityGenerate on NSObject {
   Future<double> getZ() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleVelocityGenerate@$refId::getZ([])');
+      debugPrint('fluttify-dart: MAParticleVelocityGenerate@$refId::getZ([])');
     }
   
     // invoke native method

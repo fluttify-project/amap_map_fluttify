@@ -101,7 +101,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<void> setFromValue(double var1, double var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setFromValue([\'var1\':$var1, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setFromValue([\'var1\':$var1, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -125,7 +125,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<void> setToValue(double var1, double var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setToValue([\'var1\':$var1, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setToValue([\'var1\':$var1, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -149,7 +149,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getFromXValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromXValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromXValue([])');
     }
   
     // invoke native method
@@ -173,7 +173,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getFromYValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromYValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromYValue([])');
     }
   
     // invoke native method
@@ -197,7 +197,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getToXValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToXValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToXValue([])');
     }
   
     // invoke native method
@@ -221,7 +221,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getToYValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToYValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToYValue([])');
     }
   
     // invoke native method
@@ -245,7 +245,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getCurXValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurXValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurXValue([])');
     }
   
     // invoke native method
@@ -269,7 +269,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends com_
   Future<double> getCurYValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurYValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurYValue([])');
     }
   
     // invoke native method

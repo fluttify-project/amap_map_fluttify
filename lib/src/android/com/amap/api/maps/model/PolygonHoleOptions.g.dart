@@ -55,7 +55,7 @@ class com_amap_api_maps_model_PolygonHoleOptions extends com_amap_api_maps_model
   Future<com_amap_api_maps_model_PolygonHoleOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_PolygonHoleOptions extends com_amap_api_maps_model
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::getPoints([])');
     }
   
     // invoke native method

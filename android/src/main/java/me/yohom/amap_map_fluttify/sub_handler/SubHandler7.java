@@ -31,12 +31,287 @@ public class SubHandler7 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate", (__args__, __methodResult__) -> {
+                // args
+            
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreate(" + "" + ")");
+                }
+            
+                // invoke native method
+                long __result__;
+                try {
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreate();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = __result__;
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager(" + var0 + var2 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeSetGLShaderManager(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeDestroy(" + var0 + ")");
+                }
+            
+                // invoke native method
+                long __result__;
+                try {
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeDestroy(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                long jsonableResult = __result__;
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
+                // jsonable arg
+                float[] var3 = (float[]) ((Map<String, Object>) __args__).get("var3");
+                // jsonable arg
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
+                // jsonable arg
+                int var5 = (int) ((Map<String, Object>) __args__).get("var5");
+                // jsonable arg
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
+                // jsonable arg
+                Double var7 = (Double) ((Map<String, Object>) __args__).get("var7");
+                // jsonable arg
+                Double var8 = (Double) ((Map<String, Object>) __args__).get("var8");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender(" + var0 + var2 + var3 + var4 + var5 + var6 + var7 + var8 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeRender(var0, var2, var3, var4, var5, new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                // jsonable arg
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize(" + var0 + var2 + var3 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setStartParticleSize(var0, new Double(var2).floatValue(), new Double(var3).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles(" + var0 + var2 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setMaxParticles(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration(" + var0 + var2 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setDuration(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime(" + var0 + var2 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleLifeTime(var0, var2);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+                // jsonable arg
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -54,22 +329,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
+                boolean var2 = (boolean) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -87,22 +362,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -120,22 +395,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -153,20 +428,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::getCurrentParticleNum", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -177,30 +452,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.getCurrentParticleNum(var0);
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.getCurrentParticleNum(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -218,22 +493,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                boolean var2 = (boolean) ((Map<String, Object>) args).get("var2");
+                boolean var2 = (boolean) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -251,22 +526,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -284,22 +559,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -317,22 +592,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleEmissionModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -343,34 +618,34 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateParticleEmissionModule(var0, var1);
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateParticleEmissionModule(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                boolean var3 = (boolean) ((Map<String, Object>) args).get("var3");
+                boolean var3 = (boolean) ((Map<String, Object>) __args__).get("var3");
             
                 // ref
             
@@ -381,36 +656,36 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                boolean var4 = (boolean) ((Map<String, Object>) args).get("var4");
+                boolean var4 = (boolean) ((Map<String, Object>) __args__).get("var4");
             
                 // ref
             
@@ -421,42 +696,42 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
                 // jsonable arg
-                Double var7 = (Double) ((Map<String, Object>) args).get("var7");
+                Double var7 = (Double) ((Map<String, Object>) __args__).get("var7");
             
                 // ref
             
@@ -467,25 +742,25 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue());
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateParticleOverLifeModule", (__args__, __methodResult__) -> {
                 // args
             
             
@@ -498,28 +773,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateParticleOverLifeModule();
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateParticleOverLifeModule();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -530,38 +805,38 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(new Double(var0).floatValue());
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(new Double(var0).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
             
                 // ref
             
@@ -572,32 +847,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var0 = (Double) ((Map<String, Object>) args).get("var0");
+                Double var0 = (Double) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -608,32 +883,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue());
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(new Double(var0).floatValue(), new Double(var1).floatValue(), new Double(var2).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                 // ref
             
@@ -651,20 +926,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -682,20 +957,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -713,20 +988,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -744,20 +1019,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -775,20 +1050,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -806,20 +1081,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -837,20 +1112,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -868,23 +1143,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::runCameraUpdate", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.ae.gmap.GLMapState var1 = (com.autonavi.ae.gmap.GLMapState) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 // print log
@@ -900,23 +1175,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::mergeCameraUpdateDelegate", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage var1 = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage var1 = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 // print log
@@ -932,23 +1207,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::generateMapAnimation", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.ae.gmap.GLMapEngine var1 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.ae.gmap.GLMapEngine var1 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 // print log
@@ -964,17 +1239,17 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeCreate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeCreate", (__args__, __methodResult__) -> {
                 // args
             
             
@@ -987,30 +1262,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                long result;
+                long __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.nativeCreate();
+                    __result__ = com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.nativeCreate();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                long jsonableResult = result;
+                long jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int[] var2 = (int[]) ((Map<String, Object>) args).get("var2");
+                int[] var2 = (int[]) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1028,20 +1303,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1059,22 +1334,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // ref arg
-                com.amap.api.maps.model.BuildingOverlayOptions var2 = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.model.BuildingOverlayOptions var2 = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // ref
             
@@ -1092,32 +1367,32 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
+                float[] var3 = (float[]) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                int var5 = (int) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
                 // jsonable arg
-                int[] var7 = (int[]) ((Map<String, Object>) args).get("var7");
+                int[] var7 = (int[]) ((Map<String, Object>) __args__).get("var7");
             
                 // ref
             
@@ -1135,20 +1410,20 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1166,22 +1441,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) args).get("var0");
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1199,22 +1474,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getInt", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getInt", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -1225,30 +1500,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getInt(var0, var1);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getInt(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getUShort", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getUShort", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -1259,30 +1534,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getUShort(var0, var1);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getUShort(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getBit", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getBit", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte var0 = (byte) ((Map<String, Object>) args).get("var0");
+                byte var0 = (byte) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -1293,32 +1568,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getBit(var0, var1);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getBit(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::copyString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::copyString", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1329,28 +1604,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.copyString(var0, var1, var2);
+                    __result__ = com.autonavi.amap.mapcore.Convert.copyString(var0, var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::covertBytes", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::covertBytes", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte var0 = (byte) ((Map<String, Object>) args).get("var0");
+                byte var0 = (byte) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1361,28 +1636,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.covertBytes(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.covertBytes(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::convertInt", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::convertInt", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1393,32 +1668,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.convertInt(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.convertInt(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getNum__int__int__int", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getNum__int__int__int", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte var0 = (byte) ((Map<String, Object>) args).get("var0");
+                byte var0 = (byte) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1429,28 +1704,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getNum(var0, var1, var2);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getNum(var0, var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::convertShort", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::convertShort", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var0 = (int) ((Map<String, Object>) args).get("var0");
+                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1461,32 +1736,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.convertShort(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.convertShort(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::writeInt", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::writeInt", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1504,28 +1779,28 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::moveArray", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::moveArray", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) args).get("var2");
+                byte[] var2 = (byte[]) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                 // ref
             
@@ -1543,24 +1818,24 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getString", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1571,32 +1846,32 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getString(var0, var1, var2);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getString(var0, var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getSubBytes", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getSubBytes", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
             
@@ -1607,28 +1882,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getSubBytes(var0, var1, var2);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getSubBytes(var0, var1, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::get1BString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::get1BString", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                String var0 = (String) ((Map<String, Object>) args).get("var0");
+                String var0 = (String) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1639,28 +1914,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.get1BString(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.get1BString(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::get2BString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::get2BString", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                String var0 = (String) ((Map<String, Object>) args).get("var0");
+                String var0 = (String) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1671,30 +1946,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.get2BString(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.get2BString(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::convertDouble", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::convertDouble", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
             
@@ -1705,28 +1980,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                double result;
+                double __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.convertDouble(var0, var1);
+                    __result__ = com.autonavi.amap.mapcore.Convert.convertDouble(var0, var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                double jsonableResult = result;
+                double jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::getDouble", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::getDouble", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                double var0 = (double) ((Map<String, Object>) args).get("var0");
+                double var0 = (double) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1737,28 +2012,28 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                byte[] result;
+                byte[] __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.getDouble(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.getDouble(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                byte[] jsonableResult = result;
+                byte[] jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.Convert::bytesToHexString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Convert::bytesToHexString", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                byte[] var0 = (byte[]) ((Map<String, Object>) args).get("var0");
+                byte[] var0 = (byte[]) ((Map<String, Object>) __args__).get("var0");
             
                 // ref
             
@@ -1769,35 +2044,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = com.autonavi.amap.mapcore.Convert.bytesToHexString(var0);
+                    __result__ = com.autonavi.amap.mapcore.Convert.bytesToHexString(var0);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::addItems", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::addItems", (__args__, __methodResult__) -> {
                 // args
                 // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
                 java.util.List<com.amap.api.maps.model.MultiPointItem> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
                     ((ArrayList<com.amap.api.maps.model.MultiPointItem>) var1).add((com.amap.api.maps.model.MultiPointItem) getHEAP().get(refId));
                 }
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1813,23 +2088,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::addItem", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::addItem", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.MultiPointItem var1 = (com.amap.api.maps.model.MultiPointItem) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.MultiPointItem var1 = (com.amap.api.maps.model.MultiPointItem) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1845,23 +2120,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::destroy", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::destroy", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1877,23 +2152,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::setVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::setVisible", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1909,27 +2184,27 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::draw", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::draw", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.MapConfig var1 = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.MapConfig var1 = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                float[] var3 = (float[]) ((Map<String, Object>) args).get("var3");
+                float[] var3 = (float[]) ((Map<String, Object>) __args__).get("var3");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1945,23 +2220,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::onClick", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::onClick", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -1970,37 +2245,37 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.MultiPointItem result;
+                com.amap.api.maps.model.MultiPointItem __result__;
                 try {
-                    result = ref.onClick(var1);
+                    __result__ = ref.onClick(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::setAnchor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::setAnchor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2016,22 +2291,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::getId", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::getId", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2040,31 +2315,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getId();
+                    __result__ = ref.getId();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::remove", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::remove", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay ref = (com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2080,22 +2355,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::remove", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::remove", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2111,22 +2386,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::getId", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::getId", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2135,31 +2410,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getId();
+                    __result__ = ref.getId();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setZIndex", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setZIndex", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2175,22 +2450,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::getZIndex", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::getZIndex", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2199,31 +2474,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getZIndex();
+                    __result__ = ref.getZIndex();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setVisible", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2239,22 +2514,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::isVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::isVisible", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2263,31 +2538,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isVisible();
+                    __result__ = ref.isVisible();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::equalsRemote", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::equalsRemote", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.interfaces.IOverlay var1 = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.interfaces.IOverlay var1 = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2296,30 +2571,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.equalsRemote(var1);
+                    __result__ = ref.equalsRemote(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::hashCodeRemote", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::hashCodeRemote", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2328,30 +2603,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.hashCodeRemote();
+                    __result__ = ref.hashCodeRemote();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::destroy", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::destroy", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2367,22 +2642,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::isAboveMaskLayer", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::isAboveMaskLayer", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2391,31 +2666,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isAboveMaskLayer();
+                    __result__ = ref.isAboveMaskLayer();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setAboveMaskLayer", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlay::setAboveMaskLayer", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlay ref = (com.autonavi.amap.mapcore.interfaces.IOverlay) getHEAP().get(refId);
             
                 // print log
@@ -2431,23 +2706,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::setText", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::setText", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2463,22 +2738,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getText", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getText", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2487,31 +2762,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getText();
+                    __result__ = ref.getText();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::setBackgroundColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::setBackgroundColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2527,22 +2802,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getBackgroundColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getBackgroundColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2551,31 +2826,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getBackgroundColor();
+                    __result__ = ref.getBackgroundColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::setFontColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::setFontColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2591,22 +2866,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getFontColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getFontColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2615,31 +2890,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getFontColor();
+                    __result__ = ref.getFontColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::setFontSize", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::setFontSize", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2655,22 +2930,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getFontSize", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getFontSize", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2679,33 +2954,33 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getFontSize();
+                    __result__ = ref.getFontSize();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::setAlign", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::setAlign", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2721,22 +2996,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getAlignX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getAlignX", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2745,30 +3020,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getAlignX();
+                    __result__ = ref.getAlignX();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IText::getAlignY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IText::getAlignY", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IText ref = (com.autonavi.amap.mapcore.interfaces.IText) getHEAP().get(refId);
             
                 // print log
@@ -2777,31 +3052,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getAlignY();
+                    __result__ = ref.getAlignY();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimation", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimation", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.animation.GLAnimation var1 = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.animation.GLAnimation var1 = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IAnimation ref = (com.autonavi.amap.mapcore.interfaces.IAnimation) getHEAP().get(refId);
             
                 // print log
@@ -2817,22 +3092,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAnimation::startAnimation", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IAnimation::startAnimation", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IAnimation ref = (com.autonavi.amap.mapcore.interfaces.IAnimation) getHEAP().get(refId);
             
                 // print log
@@ -2841,30 +3116,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.startAnimation();
+                    __result__ = ref.startAnimation();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IAnimation ref = (com.autonavi.amap.mapcore.interfaces.IAnimation) getHEAP().get(refId);
             
                 // print log
@@ -2929,22 +3204,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getTitle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getTitle", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -2953,30 +3228,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getTitle();
+                    __result__ = ref.getTitle();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getSnippet", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getSnippet", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -2985,30 +3260,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getSnippet();
+                    __result__ = ref.getSnippet();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getId", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getId", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3017,31 +3292,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getId();
+                    __result__ = ref.getId();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setPosition", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3057,23 +3332,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setRotateAngle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setRotateAngle", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3089,22 +3364,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getRotateAngle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getRotateAngle", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3113,30 +3388,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getRotateAngle();
+                    __result__ = ref.getRotateAngle();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getPosition", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3145,35 +3420,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLng result;
+                com.amap.api.maps.model.LatLng __result__;
                 try {
-                    result = ref.getPosition();
+                    __result__ = ref.getPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setAnimation", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setAnimation", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3189,22 +3464,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::startAnimation", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::startAnimation", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3213,30 +3488,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.startAnimation();
+                    __result__ = ref.startAnimation();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::remove", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::remove", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3245,31 +3520,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.remove();
+                    __result__ = ref.remove();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setVisible", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3285,22 +3560,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::isVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::isVisible", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3309,31 +3584,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isVisible();
+                    __result__ = ref.isVisible();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setObject", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setObject", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
+                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3349,22 +3624,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::getObject", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::getObject", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3373,31 +3648,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                Object result;
+                Object __result__;
                 try {
-                    result = ref.getObject();
+                    __result__ = ref.getObject();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                Object jsonableResult = result;
+                Object jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setZoomLimit", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setZoomLimit", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3413,22 +3688,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::destroy", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::destroy", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3444,23 +3719,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setGeoPoint", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setGeoPoint", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.IPoint var1 = (com.autonavi.amap.mapcore.IPoint) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3476,22 +3751,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::showInfoWindow", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::showInfoWindow", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3507,23 +3782,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setTitle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setTitle", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3539,23 +3814,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setSnippet", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setSnippet", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3571,23 +3846,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IglModel::setModelFixedLength", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IglModel::setModelFixedLength", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IglModel ref = (com.autonavi.amap.mapcore.interfaces.IglModel) getHEAP().get(refId);
             
                 // print log
@@ -3603,23 +3878,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IArc::setStrokeWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IArc::setStrokeWidth", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IArc ref = (com.autonavi.amap.mapcore.interfaces.IArc) getHEAP().get(refId);
             
                 // print log
@@ -3635,22 +3910,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IArc::getStrokeWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IArc::getStrokeWidth", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IArc ref = (com.autonavi.amap.mapcore.interfaces.IArc) getHEAP().get(refId);
             
                 // print log
@@ -3659,31 +3934,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getStrokeWidth();
+                    __result__ = ref.getStrokeWidth();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IArc::setStrokeColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IArc::setStrokeColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IArc ref = (com.autonavi.amap.mapcore.interfaces.IArc) getHEAP().get(refId);
             
                 // print log
@@ -3699,22 +3974,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IArc::getStrokeColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IArc::getStrokeColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IArc ref = (com.autonavi.amap.mapcore.interfaces.IArc) getHEAP().get(refId);
             
                 // print log
@@ -3723,30 +3998,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getStrokeColor();
+                    __result__ = ref.getStrokeColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isIndoorSwitchEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isIndoorSwitchEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3755,31 +4030,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isIndoorSwitchEnabled();
+                    __result__ = ref.isIndoorSwitchEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setIndoorSwitchEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setIndoorSwitchEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3795,23 +4070,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setScaleControlsEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setScaleControlsEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3827,23 +4102,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomControlsEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomControlsEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3859,23 +4134,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setCompassEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setCompassEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3891,23 +4166,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setMyLocationButtonEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setMyLocationButtonEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3923,23 +4198,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setScrollGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setScrollGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3955,23 +4230,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -3987,23 +4262,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setTiltGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setTiltGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4019,23 +4294,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setRotateGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setRotateGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4051,23 +4326,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setAllGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setAllGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4083,23 +4358,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoPosition", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4115,23 +4390,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomPosition", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4147,22 +4422,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isScaleControlsEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isScaleControlsEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4171,30 +4446,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isScaleControlsEnabled();
+                    __result__ = ref.isScaleControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomControlsEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomControlsEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4203,30 +4478,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isZoomControlsEnabled();
+                    __result__ = ref.isZoomControlsEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isCompassEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isCompassEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4235,30 +4510,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isCompassEnabled();
+                    __result__ = ref.isCompassEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isMyLocationButtonEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isMyLocationButtonEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4267,30 +4542,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isMyLocationButtonEnabled();
+                    __result__ = ref.isMyLocationButtonEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isScrollGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isScrollGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4299,30 +4574,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isScrollGesturesEnabled();
+                    __result__ = ref.isScrollGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4331,30 +4606,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isZoomGesturesEnabled();
+                    __result__ = ref.isZoomGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isTiltGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isTiltGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4363,30 +4638,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isTiltGesturesEnabled();
+                    __result__ = ref.isTiltGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isRotateGesturesEnabled", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isRotateGesturesEnabled", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4395,30 +4670,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isRotateGesturesEnabled();
+                    __result__ = ref.isRotateGesturesEnabled();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getLogoPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getLogoPosition", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4427,30 +4702,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getLogoPosition();
+                    __result__ = ref.getLogoPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getZoomPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getZoomPosition", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4459,31 +4734,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getZoomPosition();
+                    __result__ = ref.getZoomPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomInByScreenCenter", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setZoomInByScreenCenter", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4499,22 +4774,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomInByScreenCenter", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isZoomInByScreenCenter", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4523,31 +4798,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isZoomInByScreenCenter();
+                    __result__ = ref.isZoomInByScreenCenter();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoBottomMargin", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoBottomMargin", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4563,23 +4838,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoLeftMargin", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoLeftMargin", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4595,23 +4870,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getLogoMarginRate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::getLogoMarginRate", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4620,33 +4895,33 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getLogoMarginRate(var1);
+                    __result__ = ref.getLogoMarginRate(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoMarginRate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoMarginRate", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4662,23 +4937,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setGestureScaleByMapCenter", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setGestureScaleByMapCenter", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4694,22 +4969,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isGestureScaleByMapCenter", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isGestureScaleByMapCenter", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4718,31 +4993,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isGestureScaleByMapCenter();
+                    __result__ = ref.isGestureScaleByMapCenter();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoEnable", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::setLogoEnable", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4758,22 +5033,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::requestRefreshLogo", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::requestRefreshLogo", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4789,22 +5064,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isLogoEnable", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IUiSettings::isLogoEnable", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IUiSettings ref = (com.autonavi.amap.mapcore.interfaces.IUiSettings) getHEAP().get(refId);
             
                 // print log
@@ -4813,30 +5088,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isLogoEnable();
+                    __result__ = ref.isLogoEnable();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::remove", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::remove", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -4845,31 +5120,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.remove();
+                    __result__ = ref.remove();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::destroy", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::destroy", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -4885,23 +5160,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setRotateAngle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setRotateAngle", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -4917,22 +5192,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getRotateAngle", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getRotateAngle", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -4941,31 +5216,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getRotateAngle();
+                    __result__ = ref.getRotateAngle();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setZIndex", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setZIndex", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -4981,22 +5256,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getZIndex", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getZIndex", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5005,30 +5280,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getZIndex();
+                    __result__ = ref.getZIndex();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getId", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getId", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5037,30 +5312,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                String result;
+                String __result__;
                 try {
-                    result = ref.getId();
+                    __result__ = ref.getId();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                String jsonableResult = result;
+                String jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getPosition", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5069,35 +5344,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLng result;
+                com.amap.api.maps.model.LatLng __result__;
                 try {
-                    result = ref.getPosition();
+                    __result__ = ref.getPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setPosition", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5113,23 +5388,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setVisible", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5145,22 +5420,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::isVisible", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::isVisible", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5169,31 +5444,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.isVisible();
+                    __result__ = ref.isVisible();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::equalsRemote", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::equalsRemote", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.interfaces.IOverlayImage var1 = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.interfaces.IOverlayImage var1 = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5202,30 +5477,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.equalsRemote(var1);
+                    __result__ = ref.equalsRemote(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::hashCodeRemote", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::hashCodeRemote", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5234,31 +5509,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.hashCodeRemote();
+                    __result__ = ref.hashCodeRemote();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setObject", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setObject", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) args).get("var1");
+                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5274,22 +5549,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getObject", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getObject", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5298,33 +5573,33 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                Object result;
+                Object __result__;
                 try {
-                    result = ref.getObject();
+                    __result__ = ref.getObject();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                Object jsonableResult = result;
+                Object jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setAnchor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::setAnchor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5340,22 +5615,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getAnchorU", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getAnchorU", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5364,30 +5639,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getAnchorU();
+                    __result__ = ref.getAnchorU();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getAnchorV", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IOverlayImage::getAnchorV", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IOverlayImage ref = (com.autonavi.amap.mapcore.interfaces.IOverlayImage) getHEAP().get(refId);
             
                 // print log
@@ -5396,31 +5671,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getAnchorV();
+                    __result__ = ref.getAnchorV();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setTopColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setTopColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5436,23 +5711,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setSideColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setSideColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5468,22 +5743,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getTopColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getTopColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5492,30 +5767,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getTopColor();
+                    __result__ = ref.getTopColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getSideColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getSideColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5524,35 +5799,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getSideColor();
+                    __result__ = ref.getSideColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setPoints", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setPoints", (__args__, __methodResult__) -> {
                 // args
                 // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
                 java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
                     ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5568,22 +5843,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getPoints", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getPoints", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5592,38 +5867,38 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                java.util.List<com.amap.api.maps.model.LatLng> result;
+                java.util.List<com.amap.api.maps.model.LatLng> __result__;
                 try {
-                    result = ref.getPoints();
+                    __result__ = ref.getPoints();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 List<Integer> jsonableResult = null;
-                if (result != null) {
+                if (__result__ != null) {
                     jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.LatLng item : result) {
+                    for (com.amap.api.maps.model.LatLng item : __result__) {
                         getHEAP().put(System.identityHashCode(item), item);
                         jsonableResult.add(System.identityHashCode(item));
                     }
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::setWidth", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5639,22 +5914,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::getWidth", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5663,31 +5938,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getWidth();
+                    __result__ = ref.getWidth();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::set3DModel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::set3DModel", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5703,22 +5978,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::is3DModel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.INavigateArrow::is3DModel", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.INavigateArrow ref = (com.autonavi.amap.mapcore.interfaces.INavigateArrow) getHEAP().get(refId);
             
                 // print log
@@ -5727,31 +6002,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                boolean result;
+                boolean __result__;
                 try {
-                    result = ref.is3DModel();
+                    __result__ = ref.is3DModel();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                boolean jsonableResult = result;
+                boolean jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setPosition", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5767,22 +6042,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getPosition", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getPosition", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5791,35 +6066,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLng result;
+                com.amap.api.maps.model.LatLng __result__;
                 try {
-                    result = ref.getPosition();
+                    __result__ = ref.getPosition();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5835,25 +6110,25 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double__double", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setDimensions__double__double", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5869,22 +6144,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getWidth", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5893,30 +6168,30 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getWidth();
+                    __result__ = ref.getWidth();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getHeight", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getHeight", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5925,31 +6200,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getHeight();
+                    __result__ = ref.getHeight();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setPositionFromBounds", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setPositionFromBounds", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5965,22 +6240,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getBounds", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getBounds", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -5989,35 +6264,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                com.amap.api.maps.model.LatLngBounds result;
+                com.amap.api.maps.model.LatLngBounds __result__;
                 try {
-                    result = ref.getBounds();
+                    __result__ = ref.getBounds();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
                 }
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setBearing", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setBearing", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -6033,22 +6308,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getBearing", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getBearing", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -6057,31 +6332,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getBearing();
+                    __result__ = ref.getBearing();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setTransparency", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setTransparency", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -6097,22 +6372,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getTransparency", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::getTransparency", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -6121,31 +6396,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getTransparency();
+                    __result__ = ref.getTransparency();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setImage", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IGroundOverlay::setImage", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IGroundOverlay ref = (com.autonavi.amap.mapcore.interfaces.IGroundOverlay) getHEAP().get(refId);
             
                 // print log
@@ -6161,23 +6436,23 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setWidth", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6193,22 +6468,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getWidth", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getWidth", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6217,31 +6492,31 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                float result;
+                float __result__;
                 try {
-                    result = ref.getWidth();
+                    __result__ = ref.getWidth();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                float jsonableResult = result;
+                float jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setColor", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6257,22 +6532,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getColor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getColor", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6281,35 +6556,35 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                int result;
+                int __result__;
                 try {
-                    result = ref.getColor();
+                    __result__ = ref.getColor();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
-                int jsonableResult = result;
+                int jsonableResult = __result__;
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setPoints", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setPoints", (__args__, __methodResult__) -> {
                 // args
                 // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var1");
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
                 java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
                 for (int refId : var1RefIdList) {
                     ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6325,22 +6600,22 @@ public class SubHandler7 {
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
             
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
             // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getPoints", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getPoints", (__args__, __methodResult__) -> {
                 // args
             
             
                 // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
             
                 // print log
@@ -6349,290 +6624,29 @@ public class SubHandler7 {
                 }
             
                 // invoke native method
-                java.util.List<com.amap.api.maps.model.LatLng> result;
+                java.util.List<com.amap.api.maps.model.LatLng> __result__;
                 try {
-                    result = ref.getPoints();
+                    __result__ = ref.getPoints();
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
             
                 // convert result to jsonable result
                 List<Integer> jsonableResult = null;
-                if (result != null) {
+                if (__result__ != null) {
                     jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.LatLng item : result) {
+                    for (com.amap.api.maps.model.LatLng item : __result__) {
                         getHEAP().put(System.identityHashCode(item), item);
                         jsonableResult.add(System.identityHashCode(item));
                     }
                 }
             
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::isGeodesic", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::isGeodesic(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isGeodesic();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setGeodesic", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::setGeodesic(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setGeodesic(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setDottedLine", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::setDottedLine(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDottedLine(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::isDottedLine", (args, methodResult) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::isDottedLine(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean result;
-                try {
-                    result = ref.isDottedLine();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = result;
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::getNearestLatLng", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::getNearestLatLng(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.LatLng result;
-                try {
-                    result = ref.getNearestLatLng(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (result != null) {
-                    jsonableResult = System.identityHashCode(result);
-                    getHEAP().put(jsonableResult, result);
-                }
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setTransparency", (args, methodResult) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::setTransparency(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setTransparency(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setCustomTexture", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::setCustomTexture(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomTexture(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolyline::setOptions", (args, methodResult) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.PolylineOptions var1 = (com.amap.api.maps.model.PolylineOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) args).get("refId");
-                com.autonavi.amap.mapcore.interfaces.IPolyline ref = (com.autonavi.amap.mapcore.interfaces.IPolyline) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.interfaces.IPolyline@" + refId + "::setOptions(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setOptions(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    methodResult.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
         }};
     }

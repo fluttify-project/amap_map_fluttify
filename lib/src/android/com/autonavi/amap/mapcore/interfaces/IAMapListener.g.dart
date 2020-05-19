@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   Future<void> afterDrawFrame(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawFrame([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawFrame([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   Future<void> afterDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawLabel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterDrawLabel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   Future<void> beforeDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::beforeDrawLabel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::beforeDrawLabel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   Future<void> afterRendererOver(int var1, com_autonavi_ae_gmap_GLMapState var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterRendererOver([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterRendererOver([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMapListener on java_lang_Object {
   Future<void> afterAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMapListener@$refId::afterAnimation([])');
     }
   
     // invoke native method

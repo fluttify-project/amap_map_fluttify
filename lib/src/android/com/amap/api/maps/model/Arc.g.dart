@@ -37,7 +37,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::remove([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getId([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<void> setStrokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<void> setStrokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_Arc extends com_amap_api_maps_model_BaseOverlay  {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Arc@$refId::isVisible([])');
     }
   
     // invoke native method

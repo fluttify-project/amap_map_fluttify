@@ -37,7 +37,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::destroy([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setStartParticleSize(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartParticleSize([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartParticleSize([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setMaxParticles(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setMaxParticles([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setMaxParticles([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setDuration(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setDuration([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setDuration([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setParticleLifeTime(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleLifeTime([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleLifeTime([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleStartSpeed([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleStartSpeed([])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setLoop(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setLoop([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setLoop([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleShapeModule([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleShapeModule([])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setParticleEmission(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleEmission([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleEmission([])');
     }
   
     // invoke native method
@@ -277,7 +277,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<int> getCurrentParticleNum() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::getCurrentParticleNum([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::getCurrentParticleNum([])');
     }
   
     // invoke native method
@@ -301,7 +301,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleOverLifeModule([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleOverLifeModule([])');
     }
   
     // invoke native method
@@ -325,7 +325,7 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   Future<void> setStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartColor([])');
     }
   
     // invoke native method

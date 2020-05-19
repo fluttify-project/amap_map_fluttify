@@ -71,7 +71,7 @@ class MACustomCalloutView extends UIView  {
   Future<dynamic> initWithCustomView(UIView customView, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomCalloutView@$refId::initWithCustomView([])');
+      debugPrint('fluttify-dart: MACustomCalloutView@$refId::initWithCustomView([])');
     }
   
     // invoke native method

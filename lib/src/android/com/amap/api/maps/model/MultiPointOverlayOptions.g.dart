@@ -55,7 +55,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> anchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   Future<double> getAnchorU() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorU([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorU([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   Future<double> getAnchorV() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorV([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorV([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::icon([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::icon([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends java_lang_Object 
   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getIcon([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getIcon([])');
     }
   
     // invoke native method

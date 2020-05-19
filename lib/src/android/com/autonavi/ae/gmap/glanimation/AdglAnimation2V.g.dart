@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::reset([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   Future<double> getCurValue(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getCurValue([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getCurValue([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   Future<double> getStartValue(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getStartValue([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getStartValue([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends com_autonavi_ae_g
   Future<double> getEndValue(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getEndValue([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::getEndValue([\'var1\':$var1])');
     }
   
     // invoke native method

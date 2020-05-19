@@ -55,7 +55,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::position([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::position([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> text(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::text([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::text([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> rotate(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::rotate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::rotate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> align(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::align([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::align([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> backgroundColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::backgroundColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::backgroundColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> fontColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_TextOptions> fontSize(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontSize([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontSize([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<String> getText() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getText([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getText([])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<double> getRotate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getRotate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getRotate([])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<int> getAlignX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignX([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignX([])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<int> getAlignY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignY([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignY([])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<int> getBackgroundColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getBackgroundColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getBackgroundColor([])');
     }
   
     // invoke native method
@@ -439,7 +439,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<int> getFontColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontColor([])');
     }
   
     // invoke native method
@@ -463,7 +463,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getObject([])');
     }
   
     // invoke native method
@@ -487,7 +487,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<int> getFontSize() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontSize([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontSize([])');
     }
   
     // invoke native method
@@ -511,7 +511,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -535,7 +535,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::isVisible([])');
     }
   
     // invoke native method

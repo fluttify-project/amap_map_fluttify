@@ -66,7 +66,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   static Future<com_autonavi_amap_mapcore_FPointBounds_Builder> builder() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds::builder([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds::builder([])');
     }
   
     // invoke native method
@@ -90,7 +90,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   Future<bool> contains__com_autonavi_amap_mapcore_FPoint(com_autonavi_amap_mapcore_FPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
     }
   
     // invoke native method
@@ -114,7 +114,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   Future<bool> contains__com_autonavi_amap_mapcore_FPointBounds(com_autonavi_amap_mapcore_FPointBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
     }
   
     // invoke native method
@@ -138,7 +138,7 @@ class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   Future<bool> intersects(com_autonavi_amap_mapcore_FPointBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::intersects([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::intersects([])');
     }
   
     // invoke native method

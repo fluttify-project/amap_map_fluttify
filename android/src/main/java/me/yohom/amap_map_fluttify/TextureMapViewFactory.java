@@ -55,12 +55,12 @@ class TextureMapViewFactory extends PlatformViewFactory {
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
-        put("com.amap.api.maps.TextureMapView::getMap", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::getMap", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -69,35 +69,35 @@ class TextureMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            com.amap.api.maps.AMap result;
+            com.amap.api.maps.AMap __result__;
             try {
-                result = ref.getMap();
+                __result__ = ref.getMap();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onCreate", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onCreate", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -113,22 +113,22 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onResume", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onResume", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -144,22 +144,22 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onPause", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onPause", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -175,22 +175,22 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onDestroy", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onDestroy", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -206,22 +206,22 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onLowMemory", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onLowMemory", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -237,23 +237,23 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::onSaveInstanceState", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::onSaveInstanceState", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -269,23 +269,23 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.TextureMapView::setVisibility", (args, methodResult) -> {
+        put("com.amap.api.maps.TextureMapView::setVisibility", (__args__, __methodResult__) -> {
             // args
             // jsonable arg
-            int var1 = (int) ((Map<String, Object>) args).get("var1");
+            int var1 = (int) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
         
             // print log
@@ -301,22 +301,22 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
     }};
 
     @Override
     public PlatformView create(Context __, int id, Object params) {
-        Map<String, Object> args = (Map<String, Object>) params;
+        Map<String, Object> __args__ = (Map<String, Object>) params;
         // ref arg
-        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
 
         com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(activity, var2);
         getHEAP().put(Integer.MAX_VALUE - id, view);

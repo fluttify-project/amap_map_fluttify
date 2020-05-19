@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getTitle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getTitle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getTitle([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getSnippet() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getSnippet([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getSnippet([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getId([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setRotateAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setRotateAngle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setRotateAngle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<double> getRotateAngle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getRotateAngle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getRotateAngle([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setAnimation([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> startAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::startAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::startAnimation([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::remove([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::remove([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getObject([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setZoomLimit(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setZoomLimit([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setZoomLimit([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::destroy([])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setGeoPoint([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setGeoPoint([])');
     }
   
     // invoke native method
@@ -432,7 +432,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> showInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::showInfoWindow([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::showInfoWindow([])');
     }
   
     // invoke native method
@@ -456,7 +456,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setTitle(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setTitle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setTitle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -480,7 +480,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setSnippet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setSnippet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setSnippet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -504,7 +504,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<void> setModelFixedLength(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setModelFixedLength([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setModelFixedLength([\'var1\':$var1])');
     }
   
     // invoke native method

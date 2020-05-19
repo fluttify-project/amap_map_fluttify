@@ -55,7 +55,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<String> name() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<List<CLLocationCoordinate2D>> coordinates() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<int> count() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<double> duration() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<double> elapsedTime() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<void> cancel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<bool> isCancelled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   Future<int> passedPointCount() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
+      debugPrint('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
     }
   
     // invoke native method

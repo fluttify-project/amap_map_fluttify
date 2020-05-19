@@ -56,7 +56,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setUseTexture(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setUseTexture([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setUseTexture([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -80,7 +80,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTexture([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTexture([])');
     }
   
     // invoke native method
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_BitmapDescriptor> getCustomTexture() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTexture([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTexture([])');
     }
   
     // invoke native method
@@ -128,7 +128,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureList([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureList([])');
     }
   
     // invoke native method
@@ -152,7 +152,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getCustomTextureList() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureList([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureList([])');
     }
   
     // invoke native method
@@ -176,7 +176,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureIndex(List<int> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -200,7 +200,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<List<int>> getCustomTextureIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getCustomTextureIndex([])');
     }
   
     // invoke native method
@@ -224,7 +224,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> colorValues(List<int> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::colorValues([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::colorValues([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -248,7 +248,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<List<int>> getColorValues() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getColorValues([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getColorValues([])');
     }
   
     // invoke native method
@@ -272,7 +272,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> useGradient(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::useGradient([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::useGradient([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -296,7 +296,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isUseGradient() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isUseGradient([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isUseGradient([])');
     }
   
     // invoke native method
@@ -320,7 +320,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isUseTexture() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isUseTexture([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isUseTexture([])');
     }
   
     // invoke native method
@@ -344,7 +344,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isGeodesic() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isGeodesic([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isGeodesic([])');
     }
   
     // invoke native method
@@ -368,7 +368,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::add([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::add([])');
     }
   
     // invoke native method
@@ -392,7 +392,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::addAll([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::addAll([])');
     }
   
     // invoke native method
@@ -416,7 +416,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> width(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::width([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::width([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -440,7 +440,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> color(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::color([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::color([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -464,7 +464,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -488,7 +488,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -512,7 +512,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> geodesic(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::geodesic([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::geodesic([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -536,7 +536,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setDottedLine(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLine([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLine([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -560,7 +560,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isDottedLine() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isDottedLine([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isDottedLine([])');
     }
   
     // invoke native method
@@ -584,7 +584,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setDottedLineType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLineType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setDottedLineType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -608,7 +608,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> lineCapType(com_amap_api_maps_model_PolylineOptions_LineCapType var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineCapType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineCapType([])');
     }
   
     // invoke native method
@@ -632,7 +632,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> lineJoinType(com_amap_api_maps_model_PolylineOptions_LineJoinType var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineJoinType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineJoinType([])');
     }
   
     // invoke native method
@@ -656,7 +656,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions_LineCapType> getLineCapType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getLineCapType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getLineCapType([])');
     }
   
     // invoke native method
@@ -680,7 +680,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions_LineJoinType> getLineJoinType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getLineJoinType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getLineJoinType([])');
     }
   
     // invoke native method
@@ -704,7 +704,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<int> getDottedLineType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getDottedLineType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getDottedLineType([])');
     }
   
     // invoke native method
@@ -728,7 +728,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -752,7 +752,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -776,7 +776,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<int> getColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getColor([])');
     }
   
     // invoke native method
@@ -800,7 +800,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -824,7 +824,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -848,7 +848,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> transparency(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::transparency([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::transparency([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -872,7 +872,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getTransparency() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getTransparency([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getTransparency([])');
     }
   
     // invoke native method
@@ -896,7 +896,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> aboveMaskLayer(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::aboveMaskLayer([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::aboveMaskLayer([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -920,7 +920,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<bool> isAboveMaskLayer() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isAboveMaskLayer([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isAboveMaskLayer([])');
     }
   
     // invoke native method
@@ -944,7 +944,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setPoints([])');
     }
   
     // invoke native method
@@ -968,7 +968,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getShownRatio() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRatio([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRatio([])');
     }
   
     // invoke native method
@@ -992,7 +992,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setShownRatio(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setShownRatio([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setShownRatio([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1016,7 +1016,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_PolylineOptions> setShownRange(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setShownRange([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setShownRange([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -1040,7 +1040,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getShownRangeBegin() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeBegin([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeBegin([])');
     }
   
     // invoke native method
@@ -1064,7 +1064,7 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   Future<double> getShownRangeEnd() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeEnd([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getShownRangeEnd([])');
     }
   
     // invoke native method

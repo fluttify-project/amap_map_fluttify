@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<void> setStrokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<void> setStrokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::setStrokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_int
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IArc@$refId::getStrokeColor([])');
     }
   
     // invoke native method

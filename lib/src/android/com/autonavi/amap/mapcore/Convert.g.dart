@@ -55,7 +55,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<int> getInt(Uint8List var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getInt([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getInt([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<int> getUShort(Uint8List var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getUShort([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getUShort([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<bool> getBit(int var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getBit([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getBit([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> copyString(Uint8List var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::copyString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::copyString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> covertBytes(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::covertBytes([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::covertBytes([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> convertInt(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertInt([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertInt([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<int> getNum__int__int__int(int var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getNum([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getNum([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> convertShort(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertShort([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertShort([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<void> writeInt(Uint8List var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::writeInt([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::writeInt([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<void> moveArray(Uint8List var0, int var1, Uint8List var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::moveArray([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::moveArray([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<String> getString(Uint8List var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getString([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> getSubBytes(Uint8List var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getSubBytes([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getSubBytes([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> get1BString(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::get1BString([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::get1BString([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> get2BString(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::get2BString([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::get2BString([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<double> convertDouble(Uint8List var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertDouble([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::convertDouble([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<Uint8List> getDouble(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::getDouble([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::getDouble([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -439,7 +439,7 @@ class com_autonavi_amap_mapcore_Convert extends java_lang_Object  {
   static Future<String> bytesToHexString(Uint8List var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Convert::bytesToHexString([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Convert::bytesToHexString([\'var0\':$var0])');
     }
   
     // invoke native method

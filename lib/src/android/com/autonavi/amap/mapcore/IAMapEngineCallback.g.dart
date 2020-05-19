@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireMapResource(int var1, String var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> reloadMapResource(int var1, String var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::reloadMapResource([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::reloadMapResource([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> requireMapData(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireCharBitmap(int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<Uint8List> requireCharsWidths(int var1, Int32List var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> requireMapRender(int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapRender([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapRender([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> onMapRender(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::onMapRender([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::onMapRender([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> cancelRequireMapData(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::cancelRequireMapData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::cancelRequireMapData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<void> OnIndoorBuildingActivity(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<int> generateRequestId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::generateRequestId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::generateRequestId([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_IAMapEngineCallback on java_lang_Object {
   Future<int> requireMapDataAsyn(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.IAMapEngineCallback@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method

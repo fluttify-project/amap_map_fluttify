@@ -24,7 +24,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getInfoWindowClick([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getInfoWindowClick([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getOverturnInfoWindow(com_amap_api_maps_model_Marker var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindow([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindow([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter on com_amap_api_maps
   Future<android_view_View> getOverturnInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindowClick([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@$refId::getOverturnInfoWindowClick([])');
     }
   
     // invoke native method

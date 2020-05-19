@@ -55,7 +55,7 @@ class com_autonavi_amap_mapcore_CoordUtil extends java_lang_Object  {
   static Future<int> convertToGcj(Float64List var0, Float64List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.CoordUtil::convertToGcj([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.CoordUtil::convertToGcj([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method

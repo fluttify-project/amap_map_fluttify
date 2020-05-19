@@ -24,7 +24,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> updateOption(String var1, Object var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::updateOption([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::updateOption([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> removeOverlay(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::removeOverlay([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::removeOverlay([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> prepareIcon(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::prepareIcon([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::prepareIcon([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<int> getCurrentParticleNum(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getCurrentParticleNum([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getCurrentParticleNum([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getNearestLatLng([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getNearestLatLng([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsPolygonContainsPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsPolygonContainsPoint([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processPolygonHoleOption([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processPolygonHoleOption([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsCircleContainPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsCircleContainPoint([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processCircleHoleOption([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processCircleHoleOption([])');
     }
   
     // invoke native method

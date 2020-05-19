@@ -66,7 +66,7 @@ class MAHeatMapGradient extends NSObject with NSCopying {
   Future<MAHeatMapGradient> initWithColor_andWithStartPoints(List<UIColor> colors, List<num> startPoints) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAHeatMapGradient@$refId::initWithColor([\'startPoints\':$startPoints])');
+      debugPrint('fluttify-dart: MAHeatMapGradient@$refId::initWithColor([\'startPoints\':$startPoints])');
     }
   
     // invoke native method

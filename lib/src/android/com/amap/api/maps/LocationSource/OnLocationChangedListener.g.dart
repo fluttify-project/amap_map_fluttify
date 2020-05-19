@@ -24,7 +24,7 @@ mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Ob
   Future<void> onLocationChanged(android_location_Location var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.LocationSource.OnLocationChangedListener@$refId::onLocationChanged([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource.OnLocationChangedListener@$refId::onLocationChanged([])');
     }
   
     // invoke native method

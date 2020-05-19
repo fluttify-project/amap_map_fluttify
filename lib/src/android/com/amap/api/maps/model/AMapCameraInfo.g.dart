@@ -55,7 +55,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getFov() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getAspectRatio() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getRotate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends java_lang_Object  {
   Future<double> getZ() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
     }
   
     // invoke native method

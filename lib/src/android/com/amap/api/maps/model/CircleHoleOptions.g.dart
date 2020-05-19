@@ -55,7 +55,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends com_amap_api_maps_model_
   Future<com_amap_api_maps_model_CircleHoleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::center([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::center([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends com_amap_api_maps_model_
   Future<com_amap_api_maps_model_CircleHoleOptions> radius(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::radius([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::radius([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends com_amap_api_maps_model_
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getCenter([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_CircleHoleOptions extends com_amap_api_maps_model_
   Future<double> getRadius() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleHoleOptions@$refId::getRadius([])');
     }
   
     // invoke native method

@@ -37,7 +37,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setPeriod(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<int> getPeriod() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPeriod([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getPeriod([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getIcons([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getIcons([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setPerspective(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isPerspective() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isPerspective([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isPerspective([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setAnchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setDraggable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isDraggable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isDraggable([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isDraggable([])');
     }
   
     // invoke native method
@@ -277,7 +277,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> hideInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
     }
   
     // invoke native method
@@ -301,7 +301,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isInfoWindowShown() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowShown([])');
     }
   
     // invoke native method
@@ -325,7 +325,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setToTop() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
     }
   
     // invoke native method
@@ -349,7 +349,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
     }
   
     // invoke native method
@@ -373,7 +373,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setFlat(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -397,7 +397,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isFlat() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isFlat([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isFlat([])');
     }
   
     // invoke native method
@@ -421,7 +421,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -445,7 +445,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -469,7 +469,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -493,7 +493,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
     }
   
     // invoke native method
@@ -511,7 +511,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationStart([])');
+                debugPrint('fluttify-dart-callback: onAnimationStart([])');
               }
         
               // handle the native call
@@ -520,7 +520,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationEnd([])');
+                debugPrint('fluttify-dart-callback: onAnimationEnd([])');
               }
         
               // handle the native call
@@ -545,7 +545,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<double> getAlpha() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAlpha([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAlpha([])');
     }
   
     // invoke native method
@@ -569,7 +569,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setAlpha(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -593,7 +593,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<int> getDisplayLevel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getDisplayLevel([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getDisplayLevel([])');
     }
   
     // invoke native method
@@ -617,7 +617,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<com_amap_api_maps_model_MarkerOptions> getOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getOptions([])');
     }
   
     // invoke native method
@@ -641,7 +641,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isClickable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isClickable([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isClickable([])');
     }
   
     // invoke native method
@@ -665,7 +665,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowAutoOverturn([])');
     }
   
     // invoke native method
@@ -689,7 +689,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isInfoWindowEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isInfoWindowEnable([])');
     }
   
     // invoke native method
@@ -713,7 +713,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setInfoWindowEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -737,7 +737,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
     }
   
     // invoke native method
@@ -761,7 +761,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setAutoOverturnInfoWindow(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -785,7 +785,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setClickable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -809,7 +809,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setDisplayLevel(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -833,7 +833,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setFixingPointEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -857,7 +857,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<bool> isRemoved() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isRemoved([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::isRemoved([])');
     }
   
     // invoke native method
@@ -881,7 +881,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
     }
   
     // invoke native method
@@ -905,7 +905,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setRotateAngleNotUpdate(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -929,7 +929,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<void> setBelowMaskLayer(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -953,7 +953,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<double> getAnchorU() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorU([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorU([])');
     }
   
     // invoke native method
@@ -977,7 +977,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   Future<double> getAnchorV() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorV([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getAnchorV([])');
     }
   
     // invoke native method

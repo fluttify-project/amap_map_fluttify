@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<void> setStrokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<void> setFillColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setFillColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setFillColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<int> getFillColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getFillColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getFillColor([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<void> setStrokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setStrokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setPoints([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::contains([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::contains([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setHoleOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::setHoleOptions([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getHoleOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getHoleOptions([])');
     }
   
     // invoke native method

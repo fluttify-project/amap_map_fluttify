@@ -60,7 +60,7 @@ class MAOfflineMapViewController extends UIViewController  {
   static Future<MAOfflineMapViewController> sharedInstance() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMapViewController::sharedInstance([])');
+      debugPrint('fluttify-dart: MAOfflineMapViewController::sharedInstance([])');
     }
   
     // invoke native method

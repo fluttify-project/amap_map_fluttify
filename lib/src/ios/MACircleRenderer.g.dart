@@ -60,7 +60,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
+      debugPrint('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
     }
   
     // invoke native method

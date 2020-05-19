@@ -37,7 +37,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setTitle(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setTitle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setTitle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<String> getTitle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getTitle([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getTitle([])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<String> getSnippet() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getSnippet([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getSnippet([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setSnippet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setSnippet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setSnippet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -277,7 +277,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getObject([])');
     }
   
     // invoke native method
@@ -301,7 +301,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setRotateAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -325,7 +325,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<double> getRotateAngle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getRotateAngle([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::getRotateAngle([])');
     }
   
     // invoke native method
@@ -349,7 +349,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setAnimation([])');
     }
   
     // invoke native method
@@ -373,7 +373,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setGeoPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setGeoPoint([])');
     }
   
     // invoke native method
@@ -397,7 +397,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::destroy([])');
     }
   
     // invoke native method
@@ -421,7 +421,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -445,7 +445,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<bool> startAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::startAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::startAnimation([])');
     }
   
     // invoke native method
@@ -469,7 +469,7 @@ class com_amap_api_maps_model_BasePointOverlay extends java_lang_Object  {
   Future<void> showInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::showInfoWindow([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::showInfoWindow([])');
     }
   
     // invoke native method

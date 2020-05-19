@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isIndoorSwitchEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isIndoorSwitchEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isIndoorSwitchEnabled([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setIndoorSwitchEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setIndoorSwitchEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setIndoorSwitchEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setScaleControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScaleControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScaleControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setCompassEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setCompassEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setCompassEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setMyLocationButtonEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setMyLocationButtonEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setMyLocationButtonEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setScrollGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScrollGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setScrollGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setTiltGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setTiltGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setTiltGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setRotateGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setRotateGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setRotateGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setAllGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setAllGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setAllGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoPosition([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoPosition([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomPosition([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomPosition([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isScaleControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScaleControlsEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScaleControlsEnabled([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomControlsEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomControlsEnabled([])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isCompassEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isCompassEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isCompassEnabled([])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isMyLocationButtonEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isMyLocationButtonEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isMyLocationButtonEnabled([])');
     }
   
     // invoke native method
@@ -432,7 +432,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isScrollGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScrollGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isScrollGesturesEnabled([])');
     }
   
     // invoke native method
@@ -456,7 +456,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomGesturesEnabled([])');
     }
   
     // invoke native method
@@ -480,7 +480,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isTiltGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isTiltGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isTiltGesturesEnabled([])');
     }
   
     // invoke native method
@@ -504,7 +504,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isRotateGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isRotateGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isRotateGesturesEnabled([])');
     }
   
     // invoke native method
@@ -528,7 +528,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<int> getLogoPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoPosition([])');
     }
   
     // invoke native method
@@ -552,7 +552,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<int> getZoomPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getZoomPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getZoomPosition([])');
     }
   
     // invoke native method
@@ -576,7 +576,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setZoomInByScreenCenter(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomInByScreenCenter([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setZoomInByScreenCenter([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -600,7 +600,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isZoomInByScreenCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomInByScreenCenter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isZoomInByScreenCenter([])');
     }
   
     // invoke native method
@@ -624,7 +624,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoBottomMargin(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoBottomMargin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoBottomMargin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -648,7 +648,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoLeftMargin(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoLeftMargin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoLeftMargin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -672,7 +672,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<double> getLogoMarginRate(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoMarginRate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::getLogoMarginRate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -696,7 +696,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoMarginRate(int var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoMarginRate([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoMarginRate([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -720,7 +720,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setGestureScaleByMapCenter(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setGestureScaleByMapCenter([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setGestureScaleByMapCenter([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -744,7 +744,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isGestureScaleByMapCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isGestureScaleByMapCenter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isGestureScaleByMapCenter([])');
     }
   
     // invoke native method
@@ -768,7 +768,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> setLogoEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::setLogoEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -792,7 +792,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<void> requestRefreshLogo() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::requestRefreshLogo([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::requestRefreshLogo([])');
     }
   
     // invoke native method
@@ -816,7 +816,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IUiSettings on java_lang_Object {
   Future<bool> isLogoEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isLogoEnable([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IUiSettings@$refId::isLogoEnable([])');
     }
   
     // invoke native method

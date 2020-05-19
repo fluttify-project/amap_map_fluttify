@@ -55,7 +55,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromResource(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromResource([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromResource([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromView(android_view_View var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromView([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromView([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromPath(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromPath([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromPath([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromAsset(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromAsset([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromFile(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromFile([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromFile([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker__double(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::defaultMarker([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromBitmap(android_graphics_Bitmap var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap([])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   static Future<android_content_Context> getContext() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::getContext([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptorFactory::getContext([])');
     }
   
     // invoke native method

@@ -227,7 +227,7 @@ class MAAnnotationView extends UIView  {
   Future<void> setSelected_animated(bool selected, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
+      debugPrint('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
     }
   
     // invoke native method
@@ -251,7 +251,7 @@ class MAAnnotationView extends UIView  {
   Future<dynamic> initWithAnnotation_reuseIdentifier(MAAnnotation annotation, String reuseIdentifier, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationView@$refId::initWithAnnotation([\'reuseIdentifier\':$reuseIdentifier])');
+      debugPrint('fluttify-dart: MAAnnotationView@$refId::initWithAnnotation([\'reuseIdentifier\':$reuseIdentifier])');
     }
   
     // invoke native method
@@ -275,7 +275,7 @@ class MAAnnotationView extends UIView  {
   Future<void> prepareForReuse({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
+      debugPrint('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
     }
   
     // invoke native method
@@ -299,7 +299,7 @@ class MAAnnotationView extends UIView  {
   Future<void> setDragState_animated(MAAnnotationViewDragState newDragState, bool animated, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
+      debugPrint('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
     }
   
     // invoke native method

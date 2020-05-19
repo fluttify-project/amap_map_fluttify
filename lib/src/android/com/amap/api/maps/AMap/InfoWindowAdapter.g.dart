@@ -24,7 +24,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   Future<android_view_View> getInfoWindow(com_amap_api_maps_model_Marker var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoWindow([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoWindow([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   Future<android_view_View> getInfoContents(com_amap_api_maps_model_Marker var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoContents([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.InfoWindowAdapter@$refId::getInfoContents([])');
     }
   
     // invoke native method

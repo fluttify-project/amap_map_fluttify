@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<bool> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::remove([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::remove([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> destroy(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::destroy([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::destroy([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setRotateAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setRotateAngle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setRotateAngle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<double> getRotateAngle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getRotateAngle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getRotateAngle([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getId([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlayImage var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::equalsRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::equalsRemote([])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<int> hashCodeRemote() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::hashCodeRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::hashCodeRemote([])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getObject([])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<void> setAnchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<double> getAnchorU() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorU([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorU([])');
     }
   
     // invoke native method
@@ -432,7 +432,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<double> getAnchorV() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorV([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::getAnchorV([])');
     }
   
     // invoke native method

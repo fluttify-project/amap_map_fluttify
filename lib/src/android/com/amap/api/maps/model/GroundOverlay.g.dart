@@ -37,7 +37,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setDimensions__double(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setDimensions__double__double(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<double> getHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
     }
   
     // invoke native method
@@ -277,7 +277,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
     }
   
     // invoke native method
@@ -301,7 +301,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setBearing(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -325,7 +325,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<double> getBearing() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
     }
   
     // invoke native method
@@ -349,7 +349,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -373,7 +373,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -397,7 +397,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -421,7 +421,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -445,7 +445,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> setTransparency(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -469,7 +469,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<double> getTransparency() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
     }
   
     // invoke native method
@@ -493,7 +493,7 @@ class com_amap_api_maps_model_GroundOverlay extends com_amap_api_maps_model_Base
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
     }
   
     // invoke native method

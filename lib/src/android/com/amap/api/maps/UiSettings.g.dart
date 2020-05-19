@@ -37,7 +37,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setScaleControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScaleControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScaleControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setZoomControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setCompassEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setCompassEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setCompassEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setMyLocationButtonEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setMyLocationButtonEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setMyLocationButtonEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setScrollGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScrollGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScrollGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setZoomGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setTiltGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setTiltGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setTiltGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setRotateGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setRotateGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setRotateGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setAllGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setAllGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setAllGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setLogoPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoPosition([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoPosition([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -277,7 +277,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setZoomPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomPosition([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomPosition([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -301,7 +301,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<int> getZoomPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getZoomPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getZoomPosition([])');
     }
   
     // invoke native method
@@ -325,7 +325,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isScaleControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isScaleControlsEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isScaleControlsEnabled([])');
     }
   
     // invoke native method
@@ -349,7 +349,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isZoomControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isZoomControlsEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isZoomControlsEnabled([])');
     }
   
     // invoke native method
@@ -373,7 +373,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isCompassEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isCompassEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isCompassEnabled([])');
     }
   
     // invoke native method
@@ -397,7 +397,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isMyLocationButtonEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isMyLocationButtonEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isMyLocationButtonEnabled([])');
     }
   
     // invoke native method
@@ -421,7 +421,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isScrollGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isScrollGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isScrollGesturesEnabled([])');
     }
   
     // invoke native method
@@ -445,7 +445,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isZoomGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isZoomGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isZoomGesturesEnabled([])');
     }
   
     // invoke native method
@@ -469,7 +469,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isTiltGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isTiltGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isTiltGesturesEnabled([])');
     }
   
     // invoke native method
@@ -493,7 +493,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isRotateGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isRotateGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isRotateGesturesEnabled([])');
     }
   
     // invoke native method
@@ -517,7 +517,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<int> getLogoPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getLogoPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getLogoPosition([])');
     }
   
     // invoke native method
@@ -541,7 +541,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isIndoorSwitchEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isIndoorSwitchEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isIndoorSwitchEnabled([])');
     }
   
     // invoke native method
@@ -565,7 +565,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setIndoorSwitchEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setIndoorSwitchEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setIndoorSwitchEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -589,7 +589,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setLogoMarginRate(int var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoMarginRate([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoMarginRate([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -613,7 +613,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<double> getLogoMarginRate(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getLogoMarginRate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::getLogoMarginRate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -637,7 +637,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setLogoLeftMargin(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoLeftMargin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoLeftMargin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -661,7 +661,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setLogoBottomMargin(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoBottomMargin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoBottomMargin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -685,7 +685,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setZoomInByScreenCenter(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomInByScreenCenter([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomInByScreenCenter([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -709,7 +709,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<void> setGestureScaleByMapCenter(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setGestureScaleByMapCenter([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setGestureScaleByMapCenter([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -733,7 +733,7 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
   Future<bool> isGestureScaleByMapCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isGestureScaleByMapCenter([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::isGestureScaleByMapCenter([])');
     }
   
     // invoke native method

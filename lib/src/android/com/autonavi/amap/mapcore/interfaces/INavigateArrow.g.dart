@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setTopColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setTopColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setTopColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setSideColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setSideColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setSideColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<int> getTopColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getTopColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getTopColor([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<int> getSideColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getSideColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getSideColor([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setPoints([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> setWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::setWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<void> set3DModel(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::set3DModel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::set3DModel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   Future<bool> is3DModel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::is3DModel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.INavigateArrow@$refId::is3DModel([])');
     }
   
     // invoke native method

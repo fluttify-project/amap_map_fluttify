@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<int> getColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getColor([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setPoints([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<bool> isGeodesic() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isGeodesic([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isGeodesic([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setGeodesic(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setGeodesic([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setGeodesic([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setDottedLine(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setDottedLine([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setDottedLine([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<bool> isDottedLine() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isDottedLine([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::isDottedLine([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getNearestLatLng([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getNearestLatLng([])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setTransparency(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setTransparency([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setTransparency([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTexture([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTexture([])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setOptions(com_amap_api_maps_model_PolylineOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setOptions([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<com_amap_api_maps_model_PolylineOptions> getOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getOptions([])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setCustemTextureIndex(List<int> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustemTextureIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustemTextureIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setShownRatio(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShownRatio([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShownRatio([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -432,7 +432,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setShowRange(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShowRange([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setShowRange([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -456,7 +456,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<double> getShownRatio() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getShownRatio([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::getShownRatio([])');
     }
   
     // invoke native method
@@ -480,7 +480,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   Future<void> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTextureList([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IPolyline@$refId::setCustomTextureList([])');
     }
   
     // invoke native method

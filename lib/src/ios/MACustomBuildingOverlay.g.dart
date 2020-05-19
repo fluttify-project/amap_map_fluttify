@@ -66,7 +66,7 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+      debugPrint('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
     }
   
     // invoke native method
@@ -90,7 +90,7 @@ class MACustomBuildingOverlay extends MAShape with MAOverlay, MAAnnotation {
   Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+      debugPrint('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
     }
   
     // invoke native method

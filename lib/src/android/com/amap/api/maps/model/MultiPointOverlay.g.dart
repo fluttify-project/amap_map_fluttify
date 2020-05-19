@@ -37,7 +37,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   Future<void> setItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   Future<void> setAnchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   Future<void> setEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
     }
   
     // invoke native method

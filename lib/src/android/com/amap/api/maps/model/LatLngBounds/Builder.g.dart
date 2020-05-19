@@ -55,7 +55,7 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLngBounds_Builder> include(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::include([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::include([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_LatLngBounds_Builder extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLngBounds> build() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds.Builder@$refId::build([])');
     }
   
     // invoke native method

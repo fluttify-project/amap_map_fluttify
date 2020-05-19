@@ -55,7 +55,7 @@ class MAParticleOverLifeModule extends NSObject  {
   Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
+      debugPrint('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class MAParticleOverLifeModule extends NSObject  {
   Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
+      debugPrint('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class MAParticleOverLifeModule extends NSObject  {
   Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
+      debugPrint('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class MAParticleOverLifeModule extends NSObject  {
   Future<void> setColorOverLife(MAParticleColorGenerate color) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
+      debugPrint('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
     }
   
     // invoke native method

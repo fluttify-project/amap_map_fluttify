@@ -42,7 +42,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
     }
   
     // invoke native method
@@ -66,7 +66,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
     }
   
     // invoke native method
@@ -90,7 +90,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getId([])');
     }
   
     // invoke native method
@@ -114,7 +114,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -138,7 +138,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -162,7 +162,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setText(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -186,7 +186,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<String> getText() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getText([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getText([])');
     }
   
     // invoke native method
@@ -210,7 +210,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setBackgroundColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -234,7 +234,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<int> getBackgroundColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getBackgroundColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getBackgroundColor([])');
     }
   
     // invoke native method
@@ -258,7 +258,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setFontColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -282,7 +282,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<int> getFontColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontColor([])');
     }
   
     // invoke native method
@@ -306,7 +306,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setFontSize(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -330,7 +330,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<int> getFontSize() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontSize([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontSize([])');
     }
   
     // invoke native method
@@ -354,7 +354,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setAlign(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -378,7 +378,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<int> getAlignX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignX([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignX([])');
     }
   
     // invoke native method
@@ -402,7 +402,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<int> getAlignY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignY([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignY([])');
     }
   
     // invoke native method
@@ -426,7 +426,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -450,7 +450,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -474,7 +474,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -498,7 +498,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getObject([])');
     }
   
     // invoke native method
@@ -522,7 +522,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setRotate(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -546,7 +546,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<double> getRotate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getRotate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getRotate([])');
     }
   
     // invoke native method
@@ -570,7 +570,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -594,7 +594,7 @@ class com_amap_api_maps_model_Text extends java_lang_Object  {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Text@$refId::getZIndex([])');
     }
   
     // invoke native method

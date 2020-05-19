@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationOption([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationOption([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationListener([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> startLocation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::startLocation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::startLocation([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> stopLocation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::stopLocation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::stopLocation([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::unRegisterLocationListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::unRegisterLocationListener([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::getLastKnownLocation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::getLastKnownLocation([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::destroy([])');
     }
   
     // invoke native method

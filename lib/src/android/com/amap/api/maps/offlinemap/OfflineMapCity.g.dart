@@ -55,7 +55,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<String> getUrl() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getUrl([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getUrl([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<void> setUrl(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<int> getSize() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getSize([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getSize([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<void> setSize(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<int> getState() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getState([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getState([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<void> setState(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<String> getVersion() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getVersion([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getVersion([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<void> setVersion(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<int> getcompleteCode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getcompleteCode([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::getcompleteCode([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends com_amap_api_maps_offl
   Future<void> setCompleteCode(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode([\'var1\':$var1])');
     }
   
     // invoke native method

@@ -55,7 +55,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
   Future<MAParticleRectShapeModule> initWithLeft_top_right_bottom_useRatio(double left, double top, double right, double bottom, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleRectShapeModule@$refId::initWithLeft([\'left\':$left, \'top\':$top, \'right\':$right, \'bottom\':$bottom, \'isUseRatio\':$isUseRatio])');
+      debugPrint('fluttify-dart: MAParticleRectShapeModule@$refId::initWithLeft([\'left\':$left, \'top\':$top, \'right\':$right, \'bottom\':$bottom, \'isUseRatio\':$isUseRatio])');
     }
   
     // invoke native method

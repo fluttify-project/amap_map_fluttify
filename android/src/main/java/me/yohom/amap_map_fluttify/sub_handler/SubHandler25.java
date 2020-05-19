@@ -31,16 +31,365 @@ public class SubHandler25 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.IPoint __obj__ = new com.autonavi.amap.mapcore.IPoint();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_IPoint__int__int");
+                }
+            
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+            
+                // create target object
+                com.autonavi.amap.mapcore.IPoint __obj__ = new com.autonavi.amap.mapcore.IPoint(var1, var2);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager __obj__ = new com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.DPoint __obj__ = new com.autonavi.amap.mapcore.DPoint();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_DPoint__double__double");
+                }
+            
+                // args
+                // jsonable arg
+                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+            
+                // create target object
+                com.autonavi.amap.mapcore.DPoint __obj__ = new com.autonavi.amap.mapcore.DPoint(var1, var3);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeRenderer__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.AMapNativeRenderer __obj__ = new com.autonavi.amap.mapcore.AMapNativeRenderer();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FileUtil__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.FileUtil __obj__ = new com.autonavi.amap.mapcore.FileUtil();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng");
+                }
+            
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLTranslateAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float");
+                }
+            
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                // jsonable arg
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                // jsonable arg
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                // jsonable arg
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLRotateAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float");
+                }
+            
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLAlphaAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float");
+                }
+            
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                // jsonable arg
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                // jsonable arg
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLScaleAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLTransformation__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLTransformation __obj__ = new com.autonavi.amap.mapcore.animation.GLTransformation();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimationSet__boolean");
+                }
+            
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLAnimationSet __obj__ = new com.autonavi.amap.mapcore.animation.GLAnimationSet(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng");
+                }
+            
+                // args
+                // ref arg
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLEmergeAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_animation_GLAnimation__");
+                }
+            
+                // args
+            
+            
+                // create target object
+                com.autonavi.amap.mapcore.animation.GLAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLAnimation();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_MapConfig__boolean");
+                }
+            
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+            
+                // create target object
+                com.autonavi.amap.mapcore.MapConfig __obj__ = new com.autonavi.amap.mapcore.MapConfig(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.autonavi.amap.mapcore.message.HoverGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
@@ -51,21 +400,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.autonavi.amap.mapcore.message.MoveGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
@@ -76,23 +425,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.autonavi.amap.mapcore.message.ScaleGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
@@ -103,23 +452,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.autonavi.amap.mapcore.message.RotateGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
@@ -130,19 +479,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint");
                 }
             
                 // args
                 // ref arg
-                com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.autonavi.amap.mapcore.FPoint var2 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.autonavi.amap.mapcore.FPoint var2 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.autonavi.amap.mapcore.FPointBounds __obj__ = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
@@ -153,10 +502,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_CoordUtil__");
                 }
@@ -173,10 +522,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AeUtil__");
                 }
@@ -193,10 +542,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_VirtualEarthProjection__");
                 }
@@ -213,10 +562,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__");
                 }
@@ -233,23 +582,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Rectangle__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.autonavi.amap.mapcore.Rectangle __obj__ = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
@@ -260,17 +609,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__String");
                 }
             
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.autonavi.amap.mapcore.Inner_3dMap_location __obj__ = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
@@ -281,17 +630,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location");
                 }
             
                 // args
                 // ref arg
-                android.location.Location var1 = (android.location.Location) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.location.Location var1 = (android.location.Location) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.autonavi.amap.mapcore.Inner_3dMap_location __obj__ = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
@@ -302,10 +651,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEngineUtils__");
                 }
@@ -322,10 +671,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__");
                 }
@@ -342,21 +691,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint3__float__float__int");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint3 __obj__ = new com.autonavi.amap.mapcore.FPoint3(new Double(var1).floatValue(), new Double(var2).floatValue(), var3);
@@ -367,10 +716,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapEtaDecoder__");
                 }
@@ -387,10 +736,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPointBounds_Builder__");
                 }
@@ -407,10 +756,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Inner_3dMap_locationOption__");
                 }
@@ -427,10 +776,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__");
                 }
@@ -447,19 +796,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_FPoint__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.autonavi.amap.mapcore.FPoint __obj__ = new com.autonavi.amap.mapcore.FPoint(new Double(var1).floatValue(), new Double(var2).floatValue());
@@ -470,10 +819,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeParticleSystem__");
                 }
@@ -490,10 +839,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_AMapNativeBuildingRenderer__");
                 }
@@ -510,10 +859,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_autonavi_amap_mapcore_Convert__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_autonavi_amap_mapcore_Convert__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_autonavi_amap_mapcore_Convert__");
                 }
@@ -530,10 +879,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_offlineservice_AMapPermissionActivity__");
                 }
@@ -550,21 +899,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissTouchListener__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks");
                 }
             
                 // args
                 // ref arg
-                android.view.View var1 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.view.View var1 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // jsonable arg
-                Object var2 = (Object) ((Map<String, Object>) args).get("var2");
+                Object var2 = (Object) ((Map<String, Object>) __args__).get("var2");
                 // ref arg
-                com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
+                com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get((int) ((Map<String, Object>) __args__).get("var3"));
             
                 // create target object
                 com.amap.api.maps.SwipeDismissTouchListener __obj__ = new com.amap.api.maps.SwipeDismissTouchListener(var1, var2, var3);
@@ -575,10 +924,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_InfoWindowParams__");
                 }
@@ -595,10 +944,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CameraUpdateFactory__");
                 }
@@ -615,17 +964,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__String");
                 }
             
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException(var1);
@@ -636,10 +985,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapException__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_AMapException__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__");
                 }
@@ -656,10 +1005,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptions__");
                 }
@@ -676,10 +1025,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptionsCreator__");
                 }
@@ -696,17 +1045,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.CoordinateConverter __obj__ = new com.amap.api.maps.CoordinateConverter(var1);
@@ -717,10 +1066,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_SpatialRelationUtil__");
                 }
@@ -737,19 +1086,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.model.BasePointOverlay var2 = (com.amap.api.maps.model.BasePointOverlay) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.utils.overlay.MovingPointOverlay __obj__ = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
@@ -760,17 +1109,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.utils.overlay.SmoothMoveMarker __obj__ = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
@@ -781,17 +1130,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.SwipeDismissView var1 = (com.amap.api.maps.SwipeDismissView) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.SwipeDismissView var1 = (com.amap.api.maps.SwipeDismissView) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.SwipeDismissCallBack __obj__ = new com.amap.api.maps.SwipeDismissCallBack(var1);
@@ -802,19 +1151,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                android.view.View var2 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                android.view.View var2 = (android.view.View) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.SwipeDismissView __obj__ = new com.amap.api.maps.SwipeDismissView(var1, var2);
@@ -825,10 +1174,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapsInitializer__");
                 }
@@ -845,10 +1194,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapStatus__");
                 }
@@ -865,10 +1214,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapProvince__");
                 }
@@ -885,17 +1234,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.offlinemap.DownloadProgressView __obj__ = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
@@ -906,10 +1255,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_Province__");
                 }
@@ -926,10 +1275,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapCity__");
                 }
@@ -946,10 +1295,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapActivity__");
                 }
@@ -966,10 +1315,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_City__");
                 }
@@ -986,10 +1335,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonHoleOptions__");
                 }
@@ -1006,10 +1355,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptionsCreator__");
                 }
@@ -1026,21 +1375,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String");
                 }
             
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
                 // ref arg
-                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
                 // jsonable arg
-                String var3 = (String) ((Map<String, Object>) args).get("var3");
+                String var3 = (String) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.Poi __obj__ = new com.amap.api.maps.model.Poi(var1, var2, var3);
@@ -1051,10 +1400,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyle__");
                 }
@@ -1071,25 +1420,25 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
                 // ref arg
-                com.amap.api.maps.model.LatLng var3 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
+                com.amap.api.maps.model.LatLng var3 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var3"));
                 // ref arg
-                com.amap.api.maps.model.LatLng var4 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var4"));
+                com.amap.api.maps.model.LatLng var4 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var4"));
                 // ref arg
-                com.amap.api.maps.model.LatLngBounds var5 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) args).get("var5"));
+                com.amap.api.maps.model.LatLngBounds var5 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var5"));
             
                 // create target object
                 com.amap.api.maps.model.VisibleRegion __obj__ = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
@@ -1100,10 +1449,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngCreator__");
                 }
@@ -1120,10 +1469,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleHoleOptions__");
                 }
@@ -1140,10 +1489,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds_Builder__");
                 }
@@ -1160,10 +1509,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptions__");
                 }
@@ -1180,10 +1529,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorFactory__");
                 }
@@ -1200,10 +1549,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointOverlayOptions__");
                 }
@@ -1220,10 +1569,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiCreator__");
                 }
@@ -1240,10 +1589,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptions__");
                 }
@@ -1260,21 +1609,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__int__int__byteArray");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                byte[] var3 = (byte[]) ((Map<String, Object>) args).get("var3");
+                byte[] var3 = (byte[]) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1, var2, var3);
@@ -1285,19 +1634,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__intArray__floatArray");
                 }
             
                 // args
                 // jsonable arg
-                int[] var1 = (int[]) ((Map<String, Object>) args).get("var1");
+                int[] var1 = (int[]) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) args).get("var2");
+                float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.Gradient __obj__ = new com.amap.api.maps.model.Gradient(var1, var2);
@@ -1308,10 +1657,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NaviPara__");
                 }
@@ -1328,10 +1677,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptions__");
                 }
@@ -1348,10 +1697,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GL3DModelOptions__");
                 }
@@ -1368,10 +1717,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyTrafficStyle__");
                 }
@@ -1388,23 +1737,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
@@ -1415,10 +1764,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptionsCreator__");
                 }
@@ -1435,10 +1784,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiPara__");
                 }
@@ -1455,10 +1804,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptions__");
                 }
@@ -1475,17 +1824,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__boolean");
                 }
             
                 // args
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.animation.AnimationSet __obj__ = new com.amap.api.maps.model.animation.AnimationSet(var1);
@@ -1496,25 +1845,25 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
@@ -1525,19 +1874,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
@@ -1548,17 +1897,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.model.animation.TranslateAnimation __obj__ = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
@@ -1569,17 +1918,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.model.animation.EmergeAnimation __obj__ = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
@@ -1590,19 +1939,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
@@ -1613,23 +1962,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
@@ -1640,19 +1989,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.model.LatLng var2 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.model.LatLngBounds __obj__ = new com.amap.api.maps.model.LatLngBounds(var1, var2);
@@ -1663,10 +2012,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CustomMapStyleOptions__");
                 }
@@ -1683,10 +2032,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BuildingOverlayOptions__");
                 }
@@ -1703,10 +2052,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CrossOverlayOptions__");
                 }
@@ -1723,10 +2072,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegionCreator__");
                 }
@@ -1743,19 +2092,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double");
                 }
             
                 // args
                 // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
+                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                double var3 = (double) ((Map<String, Object>) args).get("var3");
+                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3);
@@ -1766,21 +2115,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double__boolean");
                 }
             
                 // args
                 // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
+                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                double var3 = (double) ((Map<String, Object>) args).get("var3");
+                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                boolean var5 = (boolean) ((Map<String, Object>) args).get("var5");
+                boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3, var5);
@@ -1791,27 +2140,27 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__int__int__int__int__int__int");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                int var3 = (int) ((Map<String, Object>) args).get("var3");
+                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                int var4 = (int) ((Map<String, Object>) args).get("var4");
+                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                int var5 = (int) ((Map<String, Object>) args).get("var5");
+                int var5 = (int) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                int var6 = (int) ((Map<String, Object>) args).get("var6");
+                int var6 = (int) ((Map<String, Object>) __args__).get("var6");
             
                 // create target object
                 com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
@@ -1822,10 +2171,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapPara__");
                 }
@@ -1842,10 +2191,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptionsCreator__");
                 }
@@ -1862,27 +2211,27 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
             
                 // create target object
                 com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
@@ -1893,10 +2242,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptions__");
                 }
@@ -1913,19 +2262,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // jsonable arg
-                double var2 = (double) ((Map<String, Object>) args).get("var2");
+                double var2 = (double) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
@@ -1936,17 +2285,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1);
@@ -1957,10 +2306,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyleCreator__");
                 }
@@ -1977,10 +2326,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptionsCreator__");
                 }
@@ -1997,17 +2346,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.model.MultiPointItem __obj__ = new com.amap.api.maps.model.MultiPointItem(var1);
@@ -2018,10 +2367,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBoundsCreator__");
                 }
@@ -2038,10 +2387,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptions__");
                 }
@@ -2058,10 +2407,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorCreator__");
                 }
@@ -2078,10 +2427,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptions__");
                 }
@@ -2098,10 +2447,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptionsCreator__");
                 }
@@ -2118,17 +2467,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__String");
                 }
             
                 // args
                 // jsonable arg
-                String var1 = (String) ((Map<String, Object>) args).get("var1");
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.RuntimeRemoteException __obj__ = new com.amap.api.maps.model.RuntimeRemoteException(var1);
@@ -2139,10 +2488,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_HeatmapTileProvider_Builder__");
                 }
@@ -2159,10 +2508,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOptions__");
                 }
@@ -2179,10 +2528,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptionsCreator__");
                 }
@@ -2199,10 +2548,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOverlay__");
                 }
@@ -2219,10 +2568,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptions__");
                 }
@@ -2239,10 +2588,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RoutePara__");
                 }
@@ -2259,10 +2608,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptionsCreator__");
                 }
@@ -2279,10 +2628,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPositionCreator__");
                 }
@@ -2299,10 +2648,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverLifeModule__");
                 }
@@ -2319,17 +2668,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ConstantRotationOverLife__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
                 // create target object
                 com.amap.api.maps.model.particle.ConstantRotationOverLife __obj__ = new com.amap.api.maps.model.particle.ConstantRotationOverLife(new Double(var1).floatValue());
@@ -2340,23 +2689,23 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                boolean var4 = (boolean) ((Map<String, Object>) args).get("var4");
+                boolean var4 = (boolean) ((Map<String, Object>) __args__).get("var4");
             
                 // create target object
                 com.amap.api.maps.model.particle.SinglePointParticleShape __obj__ = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), var4);
@@ -2367,21 +2716,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.particle.SinglePointParticleShape __obj__ = new com.amap.api.maps.model.particle.SinglePointParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
@@ -2392,27 +2741,27 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
             
                 // create target object
                 com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants __obj__ = new com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
@@ -2423,21 +2772,21 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
             
                 // create target object
                 com.amap.api.maps.model.particle.CurveSizeOverLife __obj__ = new com.amap.api.maps.model.particle.CurveSizeOverLife(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue());
@@ -2448,19 +2797,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleEmissionModule__int__int");
                 }
             
                 // args
                 // jsonable arg
-                int var1 = (int) ((Map<String, Object>) args).get("var1");
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                int var2 = (int) ((Map<String, Object>) args).get("var2");
+                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleEmissionModule __obj__ = new com.amap.api.maps.model.particle.ParticleEmissionModule(var1, var2);
@@ -2471,25 +2820,25 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                boolean var5 = (boolean) ((Map<String, Object>) args).get("var5");
+                boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
             
                 // create target object
                 com.amap.api.maps.model.particle.RectParticleShape __obj__ = new com.amap.api.maps.model.particle.RectParticleShape(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), var5);
@@ -2500,31 +2849,31 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float");
                 }
             
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                 // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
                 // jsonable arg
-                Double var7 = (Double) ((Map<String, Object>) args).get("var7");
+                Double var7 = (Double) ((Map<String, Object>) __args__).get("var7");
                 // jsonable arg
-                Double var8 = (Double) ((Map<String, Object>) args).get("var8");
+                Double var8 = (Double) ((Map<String, Object>) __args__).get("var8");
             
                 // create target object
                 com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants __obj__ = new com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue(), new Double(var7).floatValue(), new Double(var8).floatValue());
@@ -2535,10 +2884,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__");
                 }
@@ -2555,10 +2904,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptions__");
                 }
@@ -2575,10 +2924,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptions__");
                 }
@@ -2595,10 +2944,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptionsCreator__");
                 }
@@ -2615,10 +2964,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjectionCreator__");
                 }
@@ -2635,10 +2984,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptionsCreator__");
                 }
@@ -2655,10 +3004,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_IndoorBuildingInfo__");
                 }
@@ -2675,17 +3024,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1);
@@ -2696,19 +3045,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1, var2);
@@ -2719,10 +3068,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapUtils__");
                 }
@@ -2739,17 +3088,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1);
@@ -2760,19 +3109,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1, var2);
@@ -2783,17 +3132,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1);
@@ -2804,19 +3153,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // ref arg
-                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
             
                 // create target object
                 com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1, var2);
@@ -2827,25 +3176,25 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__double__double__float__float__long");
                 }
             
                 // args
                 // jsonable arg
-                double var1 = (double) ((Map<String, Object>) args).get("var1");
+                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                double var3 = (double) ((Map<String, Object>) args).get("var3");
+                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
                 // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
                 // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) args).get("var6");
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
                 // jsonable arg
-                long var7 = (long) (int) ((Map<String, Object>) args).get("var7");
+                long var7 = (long) (int) ((Map<String, Object>) __args__).get("var7");
             
                 // create target object
                 com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
@@ -2856,10 +3205,10 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__");
                 }
@@ -2876,17 +3225,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__android_content_Context");
                 }
             
                 // args
                 // ref arg
-                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.trace.LBSTraceClient __obj__ = new com.amap.api.trace.LBSTraceClient(var1);
@@ -2897,19 +3246,19 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                 // list arg
-                List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) args).get("var2");
+                List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var2");
                 java.util.List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
                 for (int refId : var2RefIdList) {
                     ((ArrayList<com.amap.api.maps.model.LatLng>) var2).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
@@ -2924,17 +3273,17 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (args, methodResult) -> {
+            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
                     Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap");
                 }
             
                 // args
                 // ref arg
-                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                com.amap.api.maps.AMap var1 = (com.amap.api.maps.AMap) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                 // create target object
                 com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1);
@@ -2945,33 +3294,33 @@ public class SubHandler25 {
                     Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                methodResult.success(System.identityHashCode(__obj__));
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_maploader_ProcessingTile__String", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_maploader_ProcessingTile__String", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
+                    String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.maploader.ProcessingTile __obj__ = new com.autonavi.ae.gmap.maploader.ProcessingTile(var1);
@@ -2985,28 +3334,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glinterface_MapLabelItem__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glinterface_MapLabelItem__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3024,28 +3373,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3063,33 +3412,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglAnimation2V __obj__ = new com.autonavi.ae.gmap.glanimation.AdglAnimation2V(var1);
@@ -3103,28 +3452,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3142,37 +3491,37 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    int var3 = (int) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimFling __obj__ = new com.autonavi.ae.gmap.glanimation.AdglMapAnimFling(var1, var2, var3);
@@ -3186,33 +3535,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglAnimation1V __obj__ = new com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1);
@@ -3226,33 +3575,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom __obj__ = new com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1);
@@ -3266,28 +3615,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3305,33 +3654,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup __obj__ = new com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1);
@@ -3345,28 +3694,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3384,33 +3733,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleItem__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleItem__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
             
                     // create target object
                     com.autonavi.ae.gmap.style.StyleItem __obj__ = new com.autonavi.ae.gmap.style.StyleItem(var1);
@@ -3424,28 +3773,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleElement__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_style_StyleElement__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3463,28 +3812,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3502,28 +3851,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3541,35 +3890,35 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__int__long", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__int__long", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    long var2 = (long) (int) ((Map<String, Object>) args).get("var2");
+                    long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapState __obj__ = new com.autonavi.ae.gmap.GLMapState(var1, var2);
@@ -3583,35 +3932,35 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__long__long", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapState__long__long", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    long var1 = (long) (int) ((Map<String, Object>) args).get("var1");
+                    long var1 = (long) (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    long var3 = (long) (int) ((Map<String, Object>) args).get("var3");
+                    long var3 = (long) (int) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.autonavi.ae.gmap.GLMapState __obj__ = new com.autonavi.ae.gmap.GLMapState(var1, var3);
@@ -3625,28 +3974,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3664,28 +4013,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3703,28 +4052,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3742,28 +4091,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3781,39 +4130,39 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
+                    int var3 = (int) ((Map<String, Object>) __args__).get("var3");
                     // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
+                    int var4 = (int) ((Map<String, Object>) __args__).get("var4");
             
                     // create target object
                     com.autonavi.ae.gmap.gloverlay.GLOverlayTexture __obj__ = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3, var4);
@@ -3827,43 +4176,43 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                     // jsonable arg
-                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                     // jsonable arg
-                    int var5 = (int) ((Map<String, Object>) args).get("var5");
+                    int var5 = (int) ((Map<String, Object>) __args__).get("var5");
                     // jsonable arg
-                    int var6 = (int) ((Map<String, Object>) args).get("var6");
+                    int var6 = (int) ((Map<String, Object>) __args__).get("var6");
             
                     // create target object
                     com.autonavi.ae.gmap.gloverlay.GLOverlayTexture __obj__ = new com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, new Double(var3).floatValue(), new Double(var4).floatValue(), var5, var6);
@@ -3877,28 +4226,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_InitParam__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_ae_gmap_GLMapEngine_InitParam__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3916,28 +4265,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3955,28 +4304,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_NetworkState__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_NetworkState__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -3994,37 +4343,37 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // ref arg
-                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    android.content.Context var1 = (android.content.Context) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
                     // jsonable arg
-                    String var2 = (String) ((Map<String, Object>) args).get("var2");
+                    String var2 = (String) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    String var3 = (String) ((Map<String, Object>) args).get("var3");
+                    String var3 = (String) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest __obj__ = new com.autonavi.amap.mapcore.maploader.AMapLoader.AMapGridDownloadRequest(var1, var2, var3);
@@ -4038,37 +4387,37 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_maploader_AMapLoader__int__com_autonavi_ae_gmap_GLMapEngine__com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // ref arg
-                    com.autonavi.ae.gmap.GLMapEngine var2 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
+                    com.autonavi.ae.gmap.GLMapEngine var2 = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get((int) ((Map<String, Object>) __args__).get("var2"));
                     // ref arg
-                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam var3 = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) ((Map<String, Object>) args).get("var3"));
+                    com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam var3 = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get((int) ((Map<String, Object>) __args__).get("var3"));
             
                     // create target object
                     com.autonavi.amap.mapcore.maploader.AMapLoader __obj__ = new com.autonavi.amap.mapcore.maploader.AMapLoader(var1, var2, var3);
@@ -4082,28 +4431,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapProjection__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapProjection__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4121,28 +4470,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_TextTextureGenerator__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_TextTextureGenerator__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4160,28 +4509,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLFileUtil__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLFileUtil__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4199,28 +4548,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GlMapUtil__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GlMapUtil__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4238,28 +4587,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLMapStaticValue__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLMapStaticValue__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4277,28 +4626,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLConvertUtil__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_tools_GLConvertUtil__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4316,28 +4665,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MsgProcessor__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MsgProcessor__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4355,28 +4704,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4394,28 +4743,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AbstractNativeInstance__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AbstractNativeInstance__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4433,28 +4782,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_LinkInfo__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_LinkInfo__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4472,28 +4821,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativePolyline__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativePolyline__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4511,28 +4860,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4550,35 +4899,35 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__int__int", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_IPoint__int__int", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    int var2 = (int) ((Map<String, Object>) args).get("var2");
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
                     com.autonavi.amap.mapcore.IPoint __obj__ = new com.autonavi.amap.mapcore.IPoint(var1, var2);
@@ -4592,28 +4941,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4631,28 +4980,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4670,35 +5019,35 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__double__double", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_DPoint__double__double", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    double var1 = (double) ((Map<String, Object>) args).get("var1");
+                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    double var3 = (double) ((Map<String, Object>) args).get("var3");
+                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
             
                     // create target object
                     com.autonavi.amap.mapcore.DPoint __obj__ = new com.autonavi.amap.mapcore.DPoint(var1, var3);
@@ -4712,28 +5061,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeRenderer__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AMapNativeRenderer__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4751,28 +5100,28 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FileUtil__", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FileUtil__", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
@@ -4790,33 +5139,33 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLTranslateAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1);
@@ -4830,41 +5179,41 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                     // jsonable arg
-                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
                     // jsonable arg
-                    Double var5 = (Double) ((Map<String, Object>) args).get("var5");
+                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLRotateAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLRotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
@@ -4878,35 +5227,35 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLAlphaAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLAlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
@@ -4920,39 +5269,39 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
             // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (argsBatch, methodResult) -> {
+            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float", (__argsBatch__, __methodResult__) -> {
                 List<Integer> __resultList__ = new ArrayList<>();
             
                 int __length__ = 0;
                 // when batch size is 0, dart side will put a map with key 'length' to indicate the length
                 // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
                 // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
                 for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
+                    Map<String, Object> __args__ = new HashMap<>();
                     // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
             
                     // args
                     // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
                     // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
                     // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
                     // jsonable arg
-                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
                     // create target object
                     com.autonavi.amap.mapcore.animation.GLScaleAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
@@ -4966,667 +5315,7 @@ public class SubHandler25 {
                     __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLTransformation__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.animation.GLTransformation __obj__ = new com.autonavi.amap.mapcore.animation.GLTransformation();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.animation.GLAnimationSet __obj__ = new com.autonavi.amap.mapcore.animation.GLAnimationSet(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // ref arg
-                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.animation.GLEmergeAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_animation_GLAnimation__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.animation.GLAnimation __obj__ = new com.autonavi.amap.mapcore.animation.GLAnimation();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_MapConfig__boolean", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    boolean var1 = (boolean) ((Map<String, Object>) args).get("var1");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.MapConfig __obj__ = new com.autonavi.amap.mapcore.MapConfig(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.message.HoverGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, new Double(var2).floatValue());
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.message.MoveGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.message.ScaleGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    int var3 = (int) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    int var4 = (int) ((Map<String, Object>) args).get("var4");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.message.RotateGestureMapMessage __obj__ = new com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, new Double(var2).floatValue(), var3, var4);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // ref arg
-                    com.autonavi.amap.mapcore.FPoint var1 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var1"));
-                    // ref arg
-                    com.autonavi.amap.mapcore.FPoint var2 = (com.autonavi.amap.mapcore.FPoint) getHEAP().get((int) ((Map<String, Object>) args).get("var2"));
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.FPointBounds __obj__ = new com.autonavi.amap.mapcore.FPointBounds(var1, var2);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_CoordUtil__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.CoordUtil __obj__ = new com.autonavi.amap.mapcore.CoordUtil();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_AeUtil__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.AeUtil __obj__ = new com.autonavi.amap.mapcore.AeUtil();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_VirtualEarthProjection__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.VirtualEarthProjection __obj__ = new com.autonavi.amap.mapcore.VirtualEarthProjection();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-            
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.Rectangle __obj__ = new com.autonavi.amap.mapcore.Rectangle();
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Rectangle__float__float__float__float", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) args).get("var1");
-                    // jsonable arg
-                    Double var2 = (Double) ((Map<String, Object>) args).get("var2");
-                    // jsonable arg
-                    Double var3 = (Double) ((Map<String, Object>) args).get("var3");
-                    // jsonable arg
-                    Double var4 = (Double) ((Map<String, Object>) args).get("var4");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.Rectangle __obj__ = new com.autonavi.amap.mapcore.Rectangle(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
-            });
-            // factory
-            put("ObjectFactory::create_batchcom_autonavi_amap_mapcore_Inner_3dMap_location__String", (argsBatch, methodResult) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                int __length__ = 0;
-                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
-                // of this batch
-                if (argsBatch instanceof Map) {
-                    __length__ = (Integer) ((Map<String, Object>) argsBatch).get("length");
-                }
-                // or directly put the arg batch
-                else if (argsBatch instanceof List) {
-                    __length__ = ((List<Map<String, Object>>) argsBatch).size();
-                }
-            
-                for (int __i__ = 0; __i__ < __length__; __i__++) {
-                    Map<String, Object> args = new HashMap<>();
-                    // only when arg batch is not empty, java side needs to parse args;
-                    if (argsBatch instanceof List) {
-                        args = ((List<Map<String, Object>>) argsBatch).get(__i__);
-                    }
-            
-                    // args
-                    // jsonable arg
-                    String var1 = (String) ((Map<String, Object>) args).get("var1");
-            
-                    // create target object
-                    com.autonavi.amap.mapcore.Inner_3dMap_location __obj__ = new com.autonavi.amap.mapcore.Inner_3dMap_location(var1);
-                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                    // print current HEAP
-                    if (getEnableLog()) {
-                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                    }
-            
-                    __resultList__.add(System.identityHashCode(__obj__));
-                }
-            
-                methodResult.success(__resultList__);
+                __methodResult__.success(__resultList__);
             });
         }};
     }

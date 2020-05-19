@@ -24,7 +24,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeX(double timeFrame) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeX([\'timeFrame\':$timeFrame])');
+      debugPrint('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeX([\'timeFrame\':$timeFrame])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeY(double timeFrame) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeY([\'timeFrame\':$timeFrame])');
+      debugPrint('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeY([\'timeFrame\':$timeFrame])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin MAParticleSizeGenerate on NSObject {
   Future<double> getSizeZ(double timeFrame) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeZ([\'timeFrame\':$timeFrame])');
+      debugPrint('fluttify-dart: MAParticleSizeGenerate@$refId::getSizeZ([\'timeFrame\':$timeFrame])');
     }
   
     // invoke native method

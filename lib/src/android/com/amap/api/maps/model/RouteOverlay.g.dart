@@ -37,7 +37,7 @@ class com_amap_api_maps_model_RouteOverlay extends java_lang_Object  {
   Future<void> removeRouteName() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::removeRouteName([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::removeRouteName([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_RouteOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::remove([])');
     }
   
     // invoke native method

@@ -37,7 +37,7 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
   Future<bool> isUseRatio() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::isUseRatio([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::isUseRatio([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_particle_ParticleShapeModule extends com_autonavi_
   Future<Float64List> getPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint([])');
     }
   
     // invoke native method

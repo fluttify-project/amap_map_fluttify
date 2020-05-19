@@ -69,7 +69,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<double> calculateLineDistance(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateLineDistance([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::calculateLineDistance([])');
     }
   
     // invoke native method
@@ -93,7 +93,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<double> calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var0, com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
     }
   
     // invoke native method
@@ -117,7 +117,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<double> calculateArea__List_com_amap_api_maps_model_LatLng_(List<com_amap_api_maps_model_LatLng> var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::calculateArea([])');
     }
   
     // invoke native method
@@ -141,7 +141,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> getLatestAMapApp(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::getLatestAMapApp([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::getLatestAMapApp([])');
     }
   
     // invoke native method
@@ -165,7 +165,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> openAMapNavi(com_amap_api_maps_model_NaviPara var0, android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapNavi([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapNavi([])');
     }
   
     // invoke native method
@@ -189,7 +189,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> openAMapPoiNearbySearch(com_amap_api_maps_model_PoiPara var0, android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch([])');
     }
   
     // invoke native method
@@ -213,7 +213,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> openAMapDrivingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapDrivingRoute([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapDrivingRoute([])');
     }
   
     // invoke native method
@@ -237,7 +237,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> openAMapTransitRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapTransitRoute([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapTransitRoute([])');
     }
   
     // invoke native method
@@ -261,7 +261,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
   static Future<void> openAMapWalkingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapWalkingRoute([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapWalkingRoute([])');
     }
   
     // invoke native method

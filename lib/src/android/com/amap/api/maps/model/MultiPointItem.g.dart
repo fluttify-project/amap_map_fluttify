@@ -55,7 +55,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<String> getCustomerId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setCustomerId(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<String> getSnippet() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setSnippet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<String> getTitle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getTitle([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getTitle([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setTitle(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<Object> getObject() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getObject([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getObject([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   Future<void> setObject(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setObject([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setObject([\'var1\':$var1])');
     }
   
     // invoke native method

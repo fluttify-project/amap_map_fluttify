@@ -16,7 +16,7 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
 Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateBoundsMake::MACoordinateBoundsMake([])');
+    debugPrint('fluttify-dart: MACoordinateBoundsMake::MACoordinateBoundsMake([])');
   }
 
   // invoke native method
@@ -38,7 +38,7 @@ Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEa
 Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longitudeDelta) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateSpanMake::MACoordinateSpanMake([\'latitudeDelta\':$latitudeDelta, \'longitudeDelta\':$longitudeDelta])');
+    debugPrint('fluttify-dart: MACoordinateSpanMake::MACoordinateSpanMake([\'latitudeDelta\':$latitudeDelta, \'longitudeDelta\':$longitudeDelta])');
   }
 
   // invoke native method
@@ -60,7 +60,7 @@ Future<MACoordinateSpan> MACoordinateSpanMake(double latitudeDelta, double longi
 Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerCoordinate, MACoordinateSpan span) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateRegionMake::MACoordinateRegionMake([])');
+    debugPrint('fluttify-dart: MACoordinateRegionMake::MACoordinateRegionMake([])');
   }
 
   // invoke native method
@@ -82,7 +82,7 @@ Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerC
 Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, double latitudinalMeters, double longitudinalMeters) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance([\'latitudinalMeters\':$latitudinalMeters, \'longitudinalMeters\':$longitudinalMeters])');
+    debugPrint('fluttify-dart: MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance([\'latitudinalMeters\':$latitudinalMeters, \'longitudinalMeters\':$longitudinalMeters])');
   }
 
   // invoke native method
@@ -104,7 +104,7 @@ Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordina
 Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapPointForCoordinate::MAMapPointForCoordinate([])');
+    debugPrint('fluttify-dart: MAMapPointForCoordinate::MAMapPointForCoordinate([])');
   }
 
   // invoke native method
@@ -126,7 +126,7 @@ Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) as
 Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateForMapPoint::MACoordinateForMapPoint([])');
+    debugPrint('fluttify-dart: MACoordinateForMapPoint::MACoordinateForMapPoint([])');
   }
 
   // invoke native method
@@ -148,7 +148,7 @@ Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) asyn
 Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect([])');
+    debugPrint('fluttify-dart: MACoordinateRegionForMapRect::MACoordinateRegionForMapRect([])');
   }
 
   // invoke native method
@@ -170,7 +170,7 @@ Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
 Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion([])');
+    debugPrint('fluttify-dart: MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion([])');
   }
 
   // invoke native method
@@ -192,7 +192,7 @@ Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async 
 Future<double> MAMetersPerMapPointAtLatitude(double latitude) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude([\'latitude\':$latitude])');
+    debugPrint('fluttify-dart: MAMetersPerMapPointAtLatitude::MAMetersPerMapPointAtLatitude([\'latitude\':$latitude])');
   }
 
   // invoke native method
@@ -214,7 +214,7 @@ Future<double> MAMetersPerMapPointAtLatitude(double latitude) async {
 Future<double> MAMapPointsPerMeterAtLatitude(double latitude) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude([\'latitude\':$latitude])');
+    debugPrint('fluttify-dart: MAMapPointsPerMeterAtLatitude::MAMapPointsPerMeterAtLatitude([\'latitude\':$latitude])');
   }
 
   // invoke native method
@@ -236,7 +236,7 @@ Future<double> MAMapPointsPerMeterAtLatitude(double latitude) async {
 Future<double> MAMetersBetweenMapPoints(MAMapPoint a, MAMapPoint b) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints([])');
+    debugPrint('fluttify-dart: MAMetersBetweenMapPoints::MAMetersBetweenMapPoints([])');
   }
 
   // invoke native method
@@ -258,7 +258,7 @@ Future<double> MAMetersBetweenMapPoints(MAMapPoint a, MAMapPoint b) async {
 Future<double> MAAreaBetweenCoordinates(CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates([])');
+    debugPrint('fluttify-dart: MAAreaBetweenCoordinates::MAAreaBetweenCoordinates([])');
   }
 
   // invoke native method
@@ -280,7 +280,7 @@ Future<double> MAAreaBetweenCoordinates(CLLocationCoordinate2D northEast, CLLoca
 Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectInset::MAMapRectInset([\'dx\':$dx, \'dy\':$dy])');
+    debugPrint('fluttify-dart: MAMapRectInset::MAMapRectInset([\'dx\':$dx, \'dy\':$dy])');
   }
 
   // invoke native method
@@ -302,7 +302,7 @@ Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
 Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectUnion::MAMapRectUnion([])');
+    debugPrint('fluttify-dart: MAMapRectUnion::MAMapRectUnion([])');
   }
 
   // invoke native method
@@ -324,7 +324,7 @@ Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
 Future<bool> MAMapSizeContainsSize(MAMapSize size1, MAMapSize size2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapSizeContainsSize::MAMapSizeContainsSize([])');
+    debugPrint('fluttify-dart: MAMapSizeContainsSize::MAMapSizeContainsSize([])');
   }
 
   // invoke native method
@@ -346,7 +346,7 @@ Future<bool> MAMapSizeContainsSize(MAMapSize size1, MAMapSize size2) async {
 Future<bool> MAMapRectContainsPoint(MAMapRect rect, MAMapPoint point) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectContainsPoint::MAMapRectContainsPoint([])');
+    debugPrint('fluttify-dart: MAMapRectContainsPoint::MAMapRectContainsPoint([])');
   }
 
   // invoke native method
@@ -368,7 +368,7 @@ Future<bool> MAMapRectContainsPoint(MAMapRect rect, MAMapPoint point) async {
 Future<bool> MAMapRectIntersectsRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectIntersectsRect::MAMapRectIntersectsRect([])');
+    debugPrint('fluttify-dart: MAMapRectIntersectsRect::MAMapRectIntersectsRect([])');
   }
 
   // invoke native method
@@ -390,7 +390,7 @@ Future<bool> MAMapRectIntersectsRect(MAMapRect rect1, MAMapRect rect2) async {
 Future<bool> MAMapRectContainsRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectContainsRect::MAMapRectContainsRect([])');
+    debugPrint('fluttify-dart: MAMapRectContainsRect::MAMapRectContainsRect([])');
   }
 
   // invoke native method
@@ -412,7 +412,7 @@ Future<bool> MAMapRectContainsRect(MAMapRect rect1, MAMapRect rect2) async {
 Future<bool> MACircleContainsPoint(MAMapPoint point, MAMapPoint center, double radius) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACircleContainsPoint::MACircleContainsPoint([\'radius\':$radius])');
+    debugPrint('fluttify-dart: MACircleContainsPoint::MACircleContainsPoint([\'radius\':$radius])');
   }
 
   // invoke native method
@@ -434,7 +434,7 @@ Future<bool> MACircleContainsPoint(MAMapPoint point, MAMapPoint center, double r
 Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocationCoordinate2D center, double radius) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MACircleContainsCoordinate::MACircleContainsCoordinate([\'radius\':$radius])');
+    debugPrint('fluttify-dart: MACircleContainsCoordinate::MACircleContainsCoordinate([\'radius\':$radius])');
   }
 
   // invoke native method
@@ -456,7 +456,7 @@ Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocation
 Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, int count) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAPolygonContainsPoint::MAPolygonContainsPoint([\'count\':$count])');
+    debugPrint('fluttify-dart: MAPolygonContainsPoint::MAPolygonContainsPoint([\'count\':$count])');
   }
 
   // invoke native method
@@ -478,7 +478,7 @@ Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, 
 Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLocationCoordinate2D> polygon, int count) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate([\'count\':$count])');
+    debugPrint('fluttify-dart: MAPolygonContainsCoordinate::MAPolygonContainsCoordinate([\'count\':$count])');
   }
 
   // invoke native method
@@ -500,7 +500,7 @@ Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLo
 Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint lineEnd, MAMapPoint point) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine([])');
+    debugPrint('fluttify-dart: MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine([])');
   }
 
   // invoke native method
@@ -522,7 +522,7 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
 Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelOfDetails, void tileProjection(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds([\'levelOfDetails\':$levelOfDetails])');
+    debugPrint('fluttify-dart: MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds([\'levelOfDetails\':$levelOfDetails])');
   }
 
   // invoke native method
@@ -563,7 +563,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
 Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int count) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAAreaForPolygon::MAAreaForPolygon([\'count\':$count])');
+    debugPrint('fluttify-dart: MAAreaForPolygon::MAAreaForPolygon([\'count\':$count])');
   }
 
   // invoke native method
@@ -585,7 +585,7 @@ Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int co
 Future<MAMapPoint> MAMapPointMake(double x, double y) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapPointMake::MAMapPointMake([\'x\':$x, \'y\':$y])');
+    debugPrint('fluttify-dart: MAMapPointMake::MAMapPointMake([\'x\':$x, \'y\':$y])');
   }
 
   // invoke native method
@@ -607,7 +607,7 @@ Future<MAMapPoint> MAMapPointMake(double x, double y) async {
 Future<MAMapSize> MAMapSizeMake(double width, double height) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapSizeMake::MAMapSizeMake([\'width\':$width, \'height\':$height])');
+    debugPrint('fluttify-dart: MAMapSizeMake::MAMapSizeMake([\'width\':$width, \'height\':$height])');
   }
 
   // invoke native method
@@ -629,7 +629,7 @@ Future<MAMapSize> MAMapSizeMake(double width, double height) async {
 Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectMake::MAMapRectMake([\'x\':$x, \'y\':$y, \'width\':$width, \'height\':$height])');
+    debugPrint('fluttify-dart: MAMapRectMake::MAMapRectMake([\'x\':$x, \'y\':$y, \'width\':$width, \'height\':$height])');
   }
 
   // invoke native method
@@ -651,7 +651,7 @@ Future<MAMapRect> MAMapRectMake(double x, double y, double width, double height)
 Future<double> MAMapRectGetMinX(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMinX::MAMapRectGetMinX([])');
+    debugPrint('fluttify-dart: MAMapRectGetMinX::MAMapRectGetMinX([])');
   }
 
   // invoke native method
@@ -673,7 +673,7 @@ Future<double> MAMapRectGetMinX(MAMapRect rect) async {
 Future<double> MAMapRectGetMinY(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMinY::MAMapRectGetMinY([])');
+    debugPrint('fluttify-dart: MAMapRectGetMinY::MAMapRectGetMinY([])');
   }
 
   // invoke native method
@@ -695,7 +695,7 @@ Future<double> MAMapRectGetMinY(MAMapRect rect) async {
 Future<double> MAMapRectGetMidX(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMidX::MAMapRectGetMidX([])');
+    debugPrint('fluttify-dart: MAMapRectGetMidX::MAMapRectGetMidX([])');
   }
 
   // invoke native method
@@ -717,7 +717,7 @@ Future<double> MAMapRectGetMidX(MAMapRect rect) async {
 Future<double> MAMapRectGetMidY(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMidY::MAMapRectGetMidY([])');
+    debugPrint('fluttify-dart: MAMapRectGetMidY::MAMapRectGetMidY([])');
   }
 
   // invoke native method
@@ -739,7 +739,7 @@ Future<double> MAMapRectGetMidY(MAMapRect rect) async {
 Future<double> MAMapRectGetMaxX(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMaxX::MAMapRectGetMaxX([])');
+    debugPrint('fluttify-dart: MAMapRectGetMaxX::MAMapRectGetMaxX([])');
   }
 
   // invoke native method
@@ -761,7 +761,7 @@ Future<double> MAMapRectGetMaxX(MAMapRect rect) async {
 Future<double> MAMapRectGetMaxY(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetMaxY::MAMapRectGetMaxY([])');
+    debugPrint('fluttify-dart: MAMapRectGetMaxY::MAMapRectGetMaxY([])');
   }
 
   // invoke native method
@@ -783,7 +783,7 @@ Future<double> MAMapRectGetMaxY(MAMapRect rect) async {
 Future<double> MAMapRectGetWidth(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetWidth::MAMapRectGetWidth([])');
+    debugPrint('fluttify-dart: MAMapRectGetWidth::MAMapRectGetWidth([])');
   }
 
   // invoke native method
@@ -805,7 +805,7 @@ Future<double> MAMapRectGetWidth(MAMapRect rect) async {
 Future<double> MAMapRectGetHeight(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectGetHeight::MAMapRectGetHeight([])');
+    debugPrint('fluttify-dart: MAMapRectGetHeight::MAMapRectGetHeight([])');
   }
 
   // invoke native method
@@ -827,7 +827,7 @@ Future<double> MAMapRectGetHeight(MAMapRect rect) async {
 Future<bool> MAMapPointEqualToPoint(MAMapPoint point1, MAMapPoint point2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapPointEqualToPoint::MAMapPointEqualToPoint([])');
+    debugPrint('fluttify-dart: MAMapPointEqualToPoint::MAMapPointEqualToPoint([])');
   }
 
   // invoke native method
@@ -849,7 +849,7 @@ Future<bool> MAMapPointEqualToPoint(MAMapPoint point1, MAMapPoint point2) async 
 Future<bool> MAMapSizeEqualToSize(MAMapSize size1, MAMapSize size2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapSizeEqualToSize::MAMapSizeEqualToSize([])');
+    debugPrint('fluttify-dart: MAMapSizeEqualToSize::MAMapSizeEqualToSize([])');
   }
 
   // invoke native method
@@ -871,7 +871,7 @@ Future<bool> MAMapSizeEqualToSize(MAMapSize size1, MAMapSize size2) async {
 Future<bool> MAMapRectEqualToRect(MAMapRect rect1, MAMapRect rect2) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectEqualToRect::MAMapRectEqualToRect([])');
+    debugPrint('fluttify-dart: MAMapRectEqualToRect::MAMapRectEqualToRect([])');
   }
 
   // invoke native method
@@ -893,7 +893,7 @@ Future<bool> MAMapRectEqualToRect(MAMapRect rect1, MAMapRect rect2) async {
 Future<bool> MAMapRectIsNull(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectIsNull::MAMapRectIsNull([])');
+    debugPrint('fluttify-dart: MAMapRectIsNull::MAMapRectIsNull([])');
   }
 
   // invoke native method
@@ -915,7 +915,7 @@ Future<bool> MAMapRectIsNull(MAMapRect rect) async {
 Future<bool> MAMapRectIsEmpty(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAMapRectIsEmpty::MAMapRectIsEmpty([])');
+    debugPrint('fluttify-dart: MAMapRectIsEmpty::MAMapRectIsEmpty([])');
   }
 
   // invoke native method
@@ -937,7 +937,7 @@ Future<bool> MAMapRectIsEmpty(MAMapRect rect) async {
 Future<String> MAStringFromMapPoint(MAMapPoint point) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAStringFromMapPoint::MAStringFromMapPoint([])');
+    debugPrint('fluttify-dart: MAStringFromMapPoint::MAStringFromMapPoint([])');
   }
 
   // invoke native method
@@ -959,7 +959,7 @@ Future<String> MAStringFromMapPoint(MAMapPoint point) async {
 Future<String> MAStringFromMapSize(MAMapSize size) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAStringFromMapSize::MAStringFromMapSize([])');
+    debugPrint('fluttify-dart: MAStringFromMapSize::MAStringFromMapSize([])');
   }
 
   // invoke native method
@@ -981,7 +981,7 @@ Future<String> MAStringFromMapSize(MAMapSize size) async {
 Future<String> MAStringFromMapRect(MAMapRect rect) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAStringFromMapRect::MAStringFromMapRect([])');
+    debugPrint('fluttify-dart: MAStringFromMapRect::MAStringFromMapRect([])');
   }
 
   // invoke native method
@@ -1003,7 +1003,7 @@ Future<String> MAStringFromMapRect(MAMapRect rect) async {
 Future<double> MAGetDirectionFromCoords(CLLocationCoordinate2D fromCoord, CLLocationCoordinate2D toCoord) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAGetDirectionFromCoords::MAGetDirectionFromCoords([])');
+    debugPrint('fluttify-dart: MAGetDirectionFromCoords::MAGetDirectionFromCoords([])');
   }
 
   // invoke native method
@@ -1025,7 +1025,7 @@ Future<double> MAGetDirectionFromCoords(CLLocationCoordinate2D fromCoord, CLLoca
 Future<double> MAGetDirectionFromPoints(MAMapPoint fromPoint, MAMapPoint toPoint) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAGetDirectionFromPoints::MAGetDirectionFromPoints([])');
+    debugPrint('fluttify-dart: MAGetDirectionFromPoints::MAGetDirectionFromPoints([])');
   }
 
   // invoke native method
@@ -1047,7 +1047,7 @@ Future<double> MAGetDirectionFromPoints(MAMapPoint fromPoint, MAMapPoint toPoint
 Future<double> MAGetDistanceFromPointToLine(MAMapPoint point, MAMapPoint lineBegin, MAMapPoint lineEnd) async {
   // print log
   if (fluttifyLogEnabled) {
-    print('fluttify-dart: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine([])');
+    debugPrint('fluttify-dart: MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine([])');
   }
 
   // invoke native method

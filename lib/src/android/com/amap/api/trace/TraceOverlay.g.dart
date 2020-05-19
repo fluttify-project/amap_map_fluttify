@@ -77,7 +77,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
     }
   
     // invoke native method
@@ -101,7 +101,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -125,7 +125,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
     }
   
     // invoke native method
@@ -149,7 +149,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> zoopToSpan() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
     }
   
     // invoke native method
@@ -173,7 +173,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<int> getTraceStatus() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
     }
   
     // invoke native method
@@ -197,7 +197,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> setTraceStatus(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -221,7 +221,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<int> getDistance() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
     }
   
     // invoke native method
@@ -245,7 +245,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> setDistance(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -269,7 +269,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<int> getWaitTime() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
     }
   
     // invoke native method
@@ -293,7 +293,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
   Future<void> setWaitTime(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
     }
   
     // invoke native method

@@ -37,7 +37,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   Future<double> getX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getX([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   Future<double> getY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getY([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_ama
   Future<double> getZ() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.VelocityGenerate@$refId::getZ([])');
     }
   
     // invoke native method

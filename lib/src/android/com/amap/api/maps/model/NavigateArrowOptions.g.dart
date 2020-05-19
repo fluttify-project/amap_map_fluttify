@@ -55,7 +55,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::add([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::add([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::addAll([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::addAll([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> width(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::width([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::width([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> topColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::topColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::topColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> sideColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::sideColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::sideColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<com_amap_api_maps_model_NavigateArrowOptions> set3DModel(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::set3DModel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::set3DModel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<int> getTopColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getTopColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getTopColor([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<int> getSideColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getSideColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getSideColor([])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<bool> is3DModel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::is3DModel([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::is3DModel([])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NavigateArrowOptions@$refId::setPoints([])');
     }
   
     // invoke native method

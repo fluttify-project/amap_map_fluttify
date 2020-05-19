@@ -55,7 +55,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
   Future<void> cleanAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
     }
   
     // invoke native method

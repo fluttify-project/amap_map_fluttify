@@ -24,7 +24,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on ja
   Future<void> onVerifyComplete() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener@$refId::onVerifyComplete([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener@$refId::onVerifyComplete([])');
     }
   
     // invoke native method

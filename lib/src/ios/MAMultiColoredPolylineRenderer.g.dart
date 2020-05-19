@@ -83,7 +83,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
+      debugPrint('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
     }
   
     // invoke native method

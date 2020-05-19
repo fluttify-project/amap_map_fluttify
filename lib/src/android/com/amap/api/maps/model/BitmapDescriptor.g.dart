@@ -37,7 +37,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   Future<com_amap_api_maps_model_BitmapDescriptor> clone() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   Future<android_graphics_Bitmap> getBitmap() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   Future<int> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   Future<int> getHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
     }
   
     // invoke native method

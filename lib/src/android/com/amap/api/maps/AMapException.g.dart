@@ -90,7 +90,7 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
   Future<String> getErrorMessage() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapException@$refId::getErrorMessage([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapException@$refId::getErrorMessage([])');
     }
   
     // invoke native method

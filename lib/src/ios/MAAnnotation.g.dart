@@ -52,7 +52,7 @@ mixin MAAnnotation on NSObject {
   Future<void> setCoordinate(CLLocationCoordinate2D newCoordinate) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnnotation@$refId::setCoordinate([])');
+      debugPrint('fluttify-dart: MAAnnotation@$refId::setCoordinate([])');
     }
   
     // invoke native method

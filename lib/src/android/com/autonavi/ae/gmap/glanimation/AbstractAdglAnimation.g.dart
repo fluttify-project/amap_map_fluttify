@@ -45,7 +45,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   Future<bool> isOver() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver([])');
     }
   
     // invoke native method
@@ -69,7 +69,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   Future<bool> isValid() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid([])');
     }
   
     // invoke native method
@@ -93,7 +93,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends java_lang_O
   Future<void> doAnimation(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::doAnimation([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::doAnimation([\'var1\':$var1])');
     }
   
     // invoke native method

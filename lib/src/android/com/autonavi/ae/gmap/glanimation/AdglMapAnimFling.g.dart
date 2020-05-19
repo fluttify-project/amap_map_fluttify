@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_
   Future<void> setPositionAndVelocity(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_
   Future<void> commitAnimationold(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::commitAnimationold([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::commitAnimationold([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends com_autonavi_ae_
   Future<void> commitAnimation(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::commitAnimation([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::commitAnimation([\'var1\':$var1])');
     }
   
     // invoke native method

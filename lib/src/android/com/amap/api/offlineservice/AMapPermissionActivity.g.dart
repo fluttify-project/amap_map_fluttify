@@ -55,7 +55,7 @@ class com_amap_api_offlineservice_AMapPermissionActivity extends android_app_Act
   Future<void> onRequestPermissionsResult(int var1, List<String> var2, Int32List var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.offlineservice.AMapPermissionActivity@$refId::onRequestPermissionsResult([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.offlineservice.AMapPermissionActivity@$refId::onRequestPermissionsResult([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method

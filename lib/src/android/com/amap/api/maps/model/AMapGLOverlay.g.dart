@@ -37,7 +37,7 @@ class com_amap_api_maps_model_AMapGLOverlay extends java_lang_Object  {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.AMapGLOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.AMapGLOverlay@$refId::destroy([])');
     }
   
     // invoke native method

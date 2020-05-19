@@ -24,7 +24,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onDownload(int var1, int var2, String var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onDownload([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onDownload([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onCheckUpdate(bool var1, String var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onCheckUpdate([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onCheckUpdate([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener 
   Future<void> onRemove(bool var1, String var2, String var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onRemove([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineMapDownloadListener@$refId::onRemove([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method

@@ -74,7 +74,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::getMap([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::getMap([])');
     }
   
     // invoke native method
@@ -98,7 +98,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
     }
   
     // invoke native method
@@ -122,7 +122,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
     }
   
     // invoke native method
@@ -146,7 +146,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
     }
   
     // invoke native method
@@ -170,7 +170,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
     }
   
     // invoke native method
@@ -194,7 +194,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
     }
   
     // invoke native method
@@ -218,7 +218,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
     }
   
     // invoke native method
@@ -242,7 +242,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
     }
   
     // invoke native method

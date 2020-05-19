@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<void> setText(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setText([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setText([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<String> getText() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getText([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getText([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<void> setBackgroundColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setBackgroundColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setBackgroundColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<int> getBackgroundColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getBackgroundColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getBackgroundColor([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<void> setFontColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<int> getFontColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontColor([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<void> setFontSize(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontSize([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setFontSize([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<int> getFontSize() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontSize([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getFontSize([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<void> setAlign(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<int> getAlignX() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignX([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignX([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IText on com_autonavi_amap_mapcore_in
   Future<int> getAlignY() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignY([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IText@$refId::getAlignY([])');
     }
   
     // invoke native method

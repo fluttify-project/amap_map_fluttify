@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on 
   Future<void> networkStateChanged(android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener@$refId::networkStateChanged([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener@$refId::networkStateChanged([])');
     }
   
     // invoke native method

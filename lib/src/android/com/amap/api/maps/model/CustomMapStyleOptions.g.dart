@@ -55,7 +55,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<String> getStyleDataPath() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataPath([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataPath(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataPath([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<String> getStyleTexturePath() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTexturePath([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTexturePath(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTexturePath([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<Uint8List> getStyleData() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleData([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<Uint8List> getStyleTextureData() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleTextureData([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleTextureData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleTextureData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<String> getStyleId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleId([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleId(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleId([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<bool> isEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::isEnable([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<Uint8List> getStyleExtraData() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraData([])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<String> getStyleExtraPath() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleExtraPath([])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
   Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleExtraPath(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleExtraPath([\'var1\':$var1])');
     }
   
     // invoke native method

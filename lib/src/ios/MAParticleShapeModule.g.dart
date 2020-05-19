@@ -24,7 +24,7 @@ mixin MAParticleShapeModule on NSObject {
   Future<NSValue/* float* */> getPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleShapeModule@$refId::getPoint([])');
+      debugPrint('fluttify-dart: MAParticleShapeModule@$refId::getPoint([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin MAParticleShapeModule on NSObject {
   Future<bool> isRatioEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleShapeModule@$refId::isRatioEnable([])');
+      debugPrint('fluttify-dart: MAParticleShapeModule@$refId::isRatioEnable([])');
     }
   
     // invoke native method

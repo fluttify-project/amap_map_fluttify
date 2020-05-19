@@ -37,7 +37,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   Future<void> addItem(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::addItem([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::addItem([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   Future<void> resumeMarker(android_graphics_Bitmap var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::resumeMarker([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::resumeMarker([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   Future<void> removeRouteName() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::removeRouteName([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::removeRouteName([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::remove([])');
     }
   
     // invoke native method

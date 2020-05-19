@@ -55,7 +55,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
   Future<void> setProgress(int var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\'var1\':$var1])');
     }
   
     // invoke native method

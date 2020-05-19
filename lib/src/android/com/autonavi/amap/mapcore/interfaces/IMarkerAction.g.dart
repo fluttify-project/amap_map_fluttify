@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<double> getAlpha() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getAlpha([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getAlpha([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setAlpha(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAlpha([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAlpha([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<int> getDisplayLevel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getDisplayLevel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getDisplayLevel([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<com_amap_api_maps_model_MarkerOptions> getOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getOptions([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<bool> isClickable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isClickable([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isClickable([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<bool> isInfoWindowAutoOverturn() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowAutoOverturn([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowAutoOverturn([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<bool> isInfoWindowEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowEnable([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowEnable([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setInfoWindowEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setInfoWindowEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setInfoWindowEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setMarkerOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setMarkerOptions([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setAutoOverturnInfoWindow(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setClickable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setClickable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setClickable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setDisplayLevel(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setDisplayLevel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setDisplayLevel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setFixingPointEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setFixingPointEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setFixingPointEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setPositionNotUpdate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setPositionNotUpdate([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setRotateAngleNotUpdate(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setSnippet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setSnippet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setSnippet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<void> setTitle(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setTitle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setTitle([\'var1\':$var1])');
     }
   
     // invoke native method

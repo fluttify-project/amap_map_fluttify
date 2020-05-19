@@ -55,7 +55,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> add__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> addHoles__List_com_amap_api_maps_model_BaseHoleOptions_(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<int> getFillColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -439,7 +439,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -463,7 +463,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])');
     }
   
     // invoke native method

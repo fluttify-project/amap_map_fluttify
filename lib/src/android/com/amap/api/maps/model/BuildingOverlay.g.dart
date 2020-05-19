@@ -37,7 +37,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<void> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<com_amap_api_maps_model_BuildingOverlayOptions> getDefaultOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getDefaultOptions([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<void> setCustomOptions(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<List<com_amap_api_maps_model_BuildingOverlayOptions>> getCustomOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getCustomOptions([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -253,7 +253,7 @@ class com_amap_api_maps_model_BuildingOverlay extends com_amap_api_maps_model_Ba
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::isVisible([])');
     }
   
     // invoke native method

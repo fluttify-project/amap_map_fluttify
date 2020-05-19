@@ -60,7 +60,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   Future<MAArcRenderer> initWithArc(MAArc arc) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
+      debugPrint('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
     }
   
     // invoke native method

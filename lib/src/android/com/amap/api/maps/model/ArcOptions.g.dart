@@ -55,7 +55,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_LatLng> getStart() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_LatLng> getPassed() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   Future<com_amap_api_maps_model_LatLng> getEnd() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
     }
   
     // invoke native method

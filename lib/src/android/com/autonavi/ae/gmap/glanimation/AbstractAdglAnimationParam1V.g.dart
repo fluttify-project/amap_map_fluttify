@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   Future<void> setFromValue(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   Future<void> setToValue(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   Future<double> getFromValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getFromValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getFromValue([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   Future<double> getToValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getToValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getToValue([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends com_
   Future<double> getCurValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getCurValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::getCurValue([])');
     }
   
     // invoke native method

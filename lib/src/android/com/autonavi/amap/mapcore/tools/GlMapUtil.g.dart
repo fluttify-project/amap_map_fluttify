@@ -75,7 +75,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<Uint8List> decodeAssetResData(android_content_Context var0, String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -99,7 +99,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<int> dipToPixel(android_content_Context var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -123,7 +123,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<int> spToPixel(android_content_Context var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::spToPixel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -147,7 +147,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<String> getString(android_content_Context var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::getString([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::getString([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -171,7 +171,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<bool> isAssic(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::isAssic([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -195,7 +195,7 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends java_lang_Object  {
   static Future<String> getAppVersionName(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::getAppVersionName([])');
     }
   
     // invoke native method

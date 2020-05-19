@@ -90,7 +90,7 @@ class MAOfflineMap extends NSObject  {
   static Future<MAOfflineMap> sharedOfflineMap() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
+      debugPrint('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
     }
   
     // invoke native method
@@ -114,7 +114,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineItem item, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::downloadItem([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
     }
   
     // invoke native method
@@ -200,7 +200,7 @@ class MAOfflineMap extends NSObject  {
   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
     }
   
     // invoke native method
@@ -224,7 +224,7 @@ class MAOfflineMap extends NSObject  {
   Future<bool> pauseItem(MAOfflineItem item) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
     }
   
     // invoke native method
@@ -248,7 +248,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> deleteItem(MAOfflineItem item) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
     }
   
     // invoke native method
@@ -272,7 +272,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> cancelAll() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
     }
   
     // invoke native method
@@ -296,7 +296,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> clearDisk() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
     }
   
     // invoke native method
@@ -320,7 +320,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> checkNewestVersion(void newestVersionBlock(bool hasNewestVersion)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::checkNewestVersion([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::checkNewestVersion([])');
     }
   
     // invoke native method
@@ -363,7 +363,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> downloadCity_downloadBlock(MAOfflineCity city, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::downloadCity([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::downloadCity([])');
     }
   
     // invoke native method
@@ -406,7 +406,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock(MAOfflineCity city, bool shouldContinueWhenAppEntersBackground, void downloadBlock(MAOfflineItem downloadItem, MAOfflineMapDownloadStatus downloadStatus, dynamic info)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::downloadCity([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::downloadCity([\'shouldContinueWhenAppEntersBackground\':$shouldContinueWhenAppEntersBackground])');
     }
   
     // invoke native method
@@ -449,7 +449,7 @@ class MAOfflineMap extends NSObject  {
   Future<bool> isDownloadingForCity(MAOfflineCity city) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
     }
   
     // invoke native method
@@ -473,7 +473,7 @@ class MAOfflineMap extends NSObject  {
   Future<void> pause(MAOfflineCity city) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAOfflineMap@$refId::pause([])');
+      debugPrint('fluttify-dart: MAOfflineMap@$refId::pause([])');
     }
   
     // invoke native method
