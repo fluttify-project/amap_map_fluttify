@@ -42,7 +42,7 @@ class AmapController with WidgetsBindingObserver {
     WidgetsBinding.instance.addObserver(this);
   }
 
-  com_amap_api_maps_MapView androidController;
+  com_amap_api_maps_TextureMapView androidController;
   MAMapView iosController;
 
   _AmapViewState _state;
