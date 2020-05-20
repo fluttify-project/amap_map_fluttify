@@ -37,7 +37,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
     }
   
     // invoke native method
@@ -55,7 +55,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationStart([])');
+                debugPrint('fluttify-dart-callback: onAnimationStart([])');
               }
         
               // handle the native call
@@ -64,7 +64,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationEnd([])');
+                debugPrint('fluttify-dart-callback: onAnimationEnd([])');
               }
         
               // handle the native call
@@ -89,7 +89,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAppearAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAppearAnimation([])');
     }
   
     // invoke native method
@@ -113,7 +113,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowBackColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -137,7 +137,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowBackEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -161,7 +161,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowBackScale(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -185,7 +185,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowDisappearAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowDisappearAnimation([])');
     }
   
     // invoke native method
@@ -209,7 +209,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowMovingAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowMovingAnimation([])');
     }
   
     // invoke native method
@@ -233,7 +233,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   Future<void> startAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::startAnimation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::startAnimation([])');
     }
   
     // invoke native method

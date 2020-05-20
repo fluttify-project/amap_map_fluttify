@@ -55,7 +55,7 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
   Future<com_autonavi_amap_mapcore_FPointBounds_Builder> include(com_autonavi_amap_mapcore_FPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::include([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::include([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_amap_mapcore_FPointBounds_Builder extends java_lang_Object  {
   Future<com_autonavi_amap_mapcore_FPointBounds> build() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds.Builder@$refId::build([])');
     }
   
     // invoke native method

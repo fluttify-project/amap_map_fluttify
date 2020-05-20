@@ -55,7 +55,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   Future<void> showScr() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   Future<void> closeScr() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   Future<void> closeScr__android_os_Bundle(android_os_Bundle var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   Future<void> onClick(android_view_View var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick([])');
     }
   
     // invoke native method

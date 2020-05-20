@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onInflate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onInflate([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setContext(android_content_Context var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setContext([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setContext([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setOptions(com_amap_api_maps_AMapOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setOptions([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onCreate(android_os_Bundle var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onCreate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onCreate([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onResume() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onResume([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onResume([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onPause() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onPause([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onPause([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onDestroyView() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroyView([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroyView([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onDestroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onDestroy([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onLowMemory() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onLowMemory([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onLowMemory([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> onSaveInstanceState(android_os_Bundle var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onSaveInstanceState([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::onSaveInstanceState([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<bool> isReady() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::isReady([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::isReady([])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Obj
   Future<void> setVisibility(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setVisibility([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMapFragmentDelegate@$refId::setVisibility([\'var1\':$var1])');
     }
   
     // invoke native method

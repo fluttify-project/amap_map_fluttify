@@ -55,7 +55,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<void> setCity(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<String> getCity() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCity([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCity([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<void> setCode(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<String> getCode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCode([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getCode([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<String> getJianpin() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getJianpin([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getJianpin([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<void> setJianpin(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<String> getPinyin() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getPinyin([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getPinyin([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<void> setPinyin(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<String> getAdcode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getAdcode([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::getAdcode([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_offlinemap_City extends java_lang_Object with android_os
   Future<void> setAdcode(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
     }
   
     // invoke native method

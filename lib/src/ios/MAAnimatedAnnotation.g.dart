@@ -65,7 +65,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+      debugPrint('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
     }
   
     // invoke native method
@@ -108,7 +108,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback(List<CLLocationCoordinate2D> coordinates, int count, double duration, String name, void completeCallback(bool isFinished), void stepCallback(MAAnnotationMoveAnimation currentAni)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+      debugPrint('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
     }
   
     // invoke native method
@@ -160,7 +160,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   Future<List<MAAnnotationMoveAnimation>> allMoveAnimations() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatedAnnotation@$refId::allMoveAnimations([])');
+      debugPrint('fluttify-dart: MAAnimatedAnnotation@$refId::allMoveAnimations([])');
     }
   
     // invoke native method
@@ -184,7 +184,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   Future<void> setNeedsStart() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
+      debugPrint('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
     }
   
     // invoke native method

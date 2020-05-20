@@ -52,10 +52,58 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
 
   //region methods
   
+  static Future<void> copy(android_content_Context var0, String var1, java_io_File var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::copy([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::copy', {"var0": var0.refId, "var1": var1, "var2": var2.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> deleteFile(java_io_File var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::deleteFile([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::deleteFile', {"var0": var0.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
   static Future<String> getMapBaseStorage(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getMapBaseStorage([])');
     }
   
     // invoke native method
@@ -76,10 +124,34 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   }
   
   
+  static Future<bool> checkCanWrite(java_io_File var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::checkCanWrite([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::checkCanWrite', {"var0": var0.refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
   static Future<String> getExternalStroragePath(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getExternalStroragePath([])');
     }
   
     // invoke native method
@@ -103,7 +175,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<void> writeDatasToFile(String var0, Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +199,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<Uint8List> readFileContents(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContents([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContents([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -151,7 +223,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<void> createNoMediaFileIfNotExist(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -175,7 +247,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<void> saveFile(String var0, String var1, bool var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::saveFile([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::saveFile([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -199,7 +271,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<Uint8List> readFileContentsFromAssets(android_content_Context var0, String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +295,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<String> getName(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getName([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::getName([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -247,7 +319,7 @@ class com_autonavi_amap_mapcore_FileUtil extends java_lang_Object  {
   static Future<int> indexOfLastSeparator(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::indexOfLastSeparator([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -281,6 +353,46 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
 
   //region methods
   
+  static Future<List<void>> copy_batch(List<android_content_Context> var0, List<String> var1, List<java_io_File> var2) async {
+    if (var0.length != var1.length || var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::copy_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId, "var1": var1[__i__], "var2": var2[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> deleteFile_batch(List<java_io_File> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::deleteFile_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
   static Future<List<String>> getMapBaseStorage_batch(List<android_content_Context> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -295,6 +407,26 @@ extension com_autonavi_amap_mapcore_FileUtil_Batch on List<com_autonavi_amap_map
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> checkCanWrite_batch(List<java_io_File> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.FileUtil::checkCanWrite_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

@@ -37,7 +37,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::reset([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<bool> needToCaculate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::needToCaculate([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::needToCaculate([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<double> getCurMult() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getCurMult([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getCurMult([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<void> setNormalizedTime(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<void> setInterpolatorType(int var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<int> getInterpolatorType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getInterpolatorType([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::getInterpolatorType([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_l
   Future<void> checkParam() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::checkParam([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::checkParam([])');
     }
   
     // invoke native method

@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> addItems(List<com_amap_api_maps_model_MultiPointItem> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItems([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItems([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> addItem(com_amap_api_maps_model_MultiPointItem var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItem([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::addItem([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> destroy(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::destroy([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::destroy([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> draw(com_autonavi_amap_mapcore_MapConfig var1, Float64List var2, Float64List var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::draw([\'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::draw([\'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<com_amap_api_maps_model_MultiPointItem> onClick(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::onClick([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::onClick([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> setAnchor(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Objec
   Future<void> remove(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::remove([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay@$refId::remove([\'var1\':$var1])');
     }
   
     // invoke native method

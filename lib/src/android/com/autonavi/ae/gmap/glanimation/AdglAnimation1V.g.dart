@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::reset([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   Future<void> setAnimationValue(double var1, double var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   Future<double> getCurValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getCurValue([])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   Future<double> getStartValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getStartValue([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation1V extends com_autonavi_ae_g
   Future<double> getEndValue() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::getEndValue([])');
     }
   
     // invoke native method

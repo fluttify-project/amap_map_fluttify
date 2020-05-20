@@ -107,7 +107,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   Future<void> setState(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::setState([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::setState([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -131,7 +131,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::reset([])');
     }
   
     // invoke native method
@@ -155,7 +155,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::runCameraUpdate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::runCameraUpdate([])');
     }
   
     // invoke native method
@@ -179,7 +179,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
   Future<int> getMapGestureState() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getMapGestureState([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::getMapGestureState([])');
     }
   
     // invoke native method

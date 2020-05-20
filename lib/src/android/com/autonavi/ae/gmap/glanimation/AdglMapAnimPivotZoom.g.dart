@@ -55,7 +55,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
   Future<void> reset() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::reset([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::reset([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
   Future<void> commitAnimation(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::commitAnimation([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::commitAnimation([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends com_autonavi
   Future<void> setToMapZoomAndPivot(double var1, int var2, android_graphics_Point var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::setToMapZoomAndPivot([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::setToMapZoomAndPivot([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method

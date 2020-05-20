@@ -63,7 +63,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   static Future<double> clip(double var0, double var2, double var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::clip([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::clip([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
     }
   
     // invoke native method
@@ -87,7 +87,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   static Future<android_graphics_Point> latLongToPixels__int__int__int(int var0, int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -111,7 +111,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   static Future<android_graphics_Point> latLongToPixels__double__double__int(double var0, double var2, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::latLongToPixels([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
     }
   
     // invoke native method
@@ -135,7 +135,7 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends java_lang_Object 
   static Future<com_autonavi_amap_mapcore_DPoint> pixelsToLatLong(int var0, int var2, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.VirtualEarthProjection::pixelsToLatLong([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
     }
   
     // invoke native method

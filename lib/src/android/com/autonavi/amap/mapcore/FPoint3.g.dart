@@ -84,7 +84,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends com_autonavi_amap_mapcore_FPoint
   Future<void> setColorIndex(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
     }
   
     // invoke native method

@@ -55,7 +55,7 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   static Future<MAPolyline> polylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
+      debugPrint('fluttify-dart: MAPolyline::polylineWithPoints([\'count\':$count])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   static Future<MAPolyline> polylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
+      debugPrint('fluttify-dart: MAPolyline::polylineWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   Future<bool> setPolylineWithPoints_count(List<MAMapPoint> points, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+      debugPrint('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class MAPolyline extends MAMultiPoint with MAOverlay, MAAnnotation {
   Future<bool> setPolylineWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+      debugPrint('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method

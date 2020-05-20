@@ -24,7 +24,7 @@ mixin MAParticleRotationGenerate on NSObject {
   Future<double> getRotate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleRotationGenerate@$refId::getRotate([])');
+      debugPrint('fluttify-dart: MAParticleRotationGenerate@$refId::getRotate([])');
     }
   
     // invoke native method

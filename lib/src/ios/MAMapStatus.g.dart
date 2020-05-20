@@ -113,7 +113,7 @@ class MAMapStatus extends NSObject  {
   static Future<MAMapStatus> statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMapStatus::statusWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
+      debugPrint('fluttify-dart: MAMapStatus::statusWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
     }
   
     // invoke native method
@@ -137,7 +137,7 @@ class MAMapStatus extends NSObject  {
   Future<dynamic> initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor(CLLocationCoordinate2D coordinate, double zoomLevel, double rotationDegree, double cameraDegree, CGPoint screenAnchor) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMapStatus@$refId::initWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
+      debugPrint('fluttify-dart: MAMapStatus@$refId::initWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
     }
   
     // invoke native method

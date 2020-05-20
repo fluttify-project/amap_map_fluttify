@@ -63,7 +63,7 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   Future<void> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
     }
   
     // invoke native method
@@ -87,7 +87,7 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   Future<void> setNaviStyle(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -111,7 +111,7 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLng> getTargetPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint([])');
     }
   
     // invoke native method
@@ -135,7 +135,7 @@ class com_amap_api_maps_model_NaviPara extends java_lang_Object  {
   Future<int> getNaviStyle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle([])');
     }
   
     // invoke native method

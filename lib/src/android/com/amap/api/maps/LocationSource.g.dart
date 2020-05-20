@@ -24,7 +24,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.LocationSource@$refId::activate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::activate([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
   Future<void> deactivate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.LocationSource@$refId::deactivate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::deactivate([])');
     }
   
     // invoke native method

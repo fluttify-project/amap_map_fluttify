@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setPeriod(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPeriod([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPeriod([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<int> getPeriod() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getPeriod([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getPeriod([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcons([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcons([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getIcons([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getIcons([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> set2Top() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::set2Top([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::set2Top([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setFlat(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setFlat([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setFlat([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> isFlat() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isFlat([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isFlat([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setPerspective(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPerspective([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPerspective([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> isPerspective() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isPerspective([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isPerspective([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setTitle(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setTitle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setTitle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<String> getTitle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getTitle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getTitle([])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcon([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setIcon([])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setSnippet(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setSnippet([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setSnippet([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<String> getSnippet() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getSnippet([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getSnippet([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setDraggable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setDraggable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setDraggable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -384,7 +384,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> isDraggable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isDraggable([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isDraggable([])');
     }
   
     // invoke native method
@@ -408,7 +408,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> isRemoved() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isRemoved([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isRemoved([])');
     }
   
     // invoke native method
@@ -432,7 +432,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> showInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::showInfoWindow([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::showInfoWindow([])');
     }
   
     // invoke native method
@@ -456,7 +456,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> hideInfoWindow() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::hideInfoWindow([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::hideInfoWindow([])');
     }
   
     // invoke native method
@@ -480,7 +480,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> isInfoWindowShown() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isInfoWindowShown([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::isInfoWindowShown([])');
     }
   
     // invoke native method
@@ -504,7 +504,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setGeoPoint([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setGeoPoint([])');
     }
   
     // invoke native method
@@ -528,7 +528,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getGeoPoint([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::getGeoPoint([])');
     }
   
     // invoke native method
@@ -552,7 +552,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setPositionByPixels(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -576,7 +576,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setBelowMaskLayer(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setBelowMaskLayer([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setBelowMaskLayer([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -600,7 +600,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimation([])');
     }
   
     // invoke native method
@@ -624,7 +624,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<bool> startAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::startAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::startAnimation([])');
     }
   
     // invoke native method
@@ -648,7 +648,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimationListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarker@$refId::setAnimationListener([])');
     }
   
     // invoke native method
@@ -666,7 +666,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationStart([])');
+                debugPrint('fluttify-dart-callback: onAnimationStart([])');
               }
         
               // handle the native call
@@ -675,7 +675,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationEnd([])');
+                debugPrint('fluttify-dart-callback: onAnimationEnd([])');
               }
         
               // handle the native call

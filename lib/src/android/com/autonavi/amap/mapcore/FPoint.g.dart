@@ -74,7 +74,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   static Future<com_autonavi_amap_mapcore_FPoint> obtain() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([])');
     }
   
     // invoke native method
@@ -98,7 +98,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
   static Future<com_autonavi_amap_mapcore_FPoint> obtain__double__double(double var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.FPoint::obtain([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method

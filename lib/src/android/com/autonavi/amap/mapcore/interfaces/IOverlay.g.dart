@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlay var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::equalsRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::equalsRemote([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<int> hashCodeRemote() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::hashCodeRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::hashCodeRemote([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::destroy([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<bool> isAboveMaskLayer() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isAboveMaskLayer([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::isAboveMaskLayer([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlay on java_lang_Object {
   Future<void> setAboveMaskLayer(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setAboveMaskLayer([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::setAboveMaskLayer([\'var1\':$var1])');
     }
   
     // invoke native method

@@ -77,7 +77,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::get([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::get([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -101,7 +101,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -125,7 +125,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends java_lang_Object  {
   Future<bool> isValid() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::isValid([])');
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::isValid([])');
     }
   
     // invoke native method

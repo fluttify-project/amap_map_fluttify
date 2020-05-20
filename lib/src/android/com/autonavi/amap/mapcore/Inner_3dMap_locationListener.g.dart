@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationListener on java_lang_Object
   Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationListener@$refId::onLocationChanged([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationListener@$refId::onLocationChanged([])');
     }
   
     // invoke native method

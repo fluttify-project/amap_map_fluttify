@@ -113,7 +113,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   static Future<MACustomBuildingOverlayOption> optionWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
+      debugPrint('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method
@@ -137,7 +137,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
   Future<bool> setOptionWithCoordinates_count(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
+      debugPrint('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
     }
   
     // invoke native method

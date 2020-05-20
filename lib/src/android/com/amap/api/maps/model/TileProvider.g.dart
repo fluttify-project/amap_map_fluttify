@@ -24,7 +24,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<com_amap_api_maps_model_Tile> getTile(int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTile([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<int> getTileWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileWidth([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   Future<int> getTileHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileHeight([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileProvider@$refId::getTileHeight([])');
     }
   
     // invoke native method

@@ -60,7 +60,7 @@ class MAMultiPointOverlay extends MAShape with MAOverlay, MAAnnotation {
   Future<MAMultiPointOverlay> initWithMultiPointItems(List<MAMultiPointItem> items) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMultiPointOverlay@$refId::initWithMultiPointItems([])');
+      debugPrint('fluttify-dart: MAMultiPointOverlay@$refId::initWithMultiPointItems([])');
     }
   
     // invoke native method

@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<void> setAnimation(com_autonavi_amap_mapcore_animation_GLAnimation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimation([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<bool> startAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::startAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::startAnimation([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimationListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAnimation@$refId::setAnimationListener([])');
     }
   
     // invoke native method
@@ -90,7 +90,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationStart([])');
+                debugPrint('fluttify-dart-callback: onAnimationStart([])');
               }
         
               // handle the native call
@@ -99,7 +99,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAnimation on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationEnd([])');
+                debugPrint('fluttify-dart-callback: onAnimationEnd([])');
               }
         
               // handle the native call

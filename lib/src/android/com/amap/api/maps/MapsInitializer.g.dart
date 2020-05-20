@@ -56,7 +56,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> initialize(android_content_Context var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::initialize([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::initialize([])');
     }
   
     // invoke native method
@@ -80,7 +80,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setNetWorkEnable(bool var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setNetWorkEnable([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setNetWorkEnable([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -104,7 +104,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<bool> getNetWorkEnable() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::getNetWorkEnable([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getNetWorkEnable([])');
     }
   
     // invoke native method
@@ -128,7 +128,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setApiKey(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setApiKey([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setApiKey([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -152,7 +152,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<String> getVersion() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::getVersion([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getVersion([])');
     }
   
     // invoke native method
@@ -176,7 +176,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> loadWorldGridMap(bool var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::loadWorldGridMap([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::loadWorldGridMap([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -200,7 +200,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<bool> isLoadWorldGridMap() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::isLoadWorldGridMap([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isLoadWorldGridMap([])');
     }
   
     // invoke native method
@@ -224,7 +224,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setBuildingHeight(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setBuildingHeight([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setBuildingHeight([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -248,7 +248,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setDownloadCoordinateConvertLibrary(bool var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -272,7 +272,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<bool> isDownloadCoordinateConvertLibrary() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isDownloadCoordinateConvertLibrary([])');
     }
   
     // invoke native method
@@ -296,7 +296,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setHost(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setHost([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setHost([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -320,7 +320,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> setProtocol(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::setProtocol([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setProtocol([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -344,7 +344,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<int> getProtocol() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::getProtocol([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getProtocol([])');
     }
   
     // invoke native method
@@ -368,7 +368,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<void> closeTileOverlay(bool var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::closeTileOverlay([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::closeTileOverlay([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -392,7 +392,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   static Future<bool> isTileOverlayClosed() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.MapsInitializer::isTileOverlayClosed([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isTileOverlayClosed([])');
     }
   
     // invoke native method

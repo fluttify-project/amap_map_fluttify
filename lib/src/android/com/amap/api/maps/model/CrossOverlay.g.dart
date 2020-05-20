@@ -37,7 +37,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<int> setData(Uint8List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<void> setImageMode(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setImageMode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setImageMode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   Future<void> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onGenerateComplete([\'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onGenerateComplete([\'var2\':${args['var2']}])');
               }
         
               // handle the native call

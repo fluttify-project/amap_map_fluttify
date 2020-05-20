@@ -55,13 +55,13 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
-        put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (args, methodResult) -> {
+        put("com.amap.api.maps.offlinemap.DownloadProgressView::setProgress", (__args__, __methodResult__) -> {
             // args
             // jsonable arg
-            int var1 = (int) ((Map<String, Object>) args).get("var1");
+            int var1 = (int) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) ((Map<String, Object>) args).get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.offlinemap.DownloadProgressView ref = (com.amap.api.maps.offlinemap.DownloadProgressView) getHEAP().get(refId);
         
             // print log
@@ -77,20 +77,20 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
             // convert result to jsonable result
             String jsonableResult = "success";
         
-            methodResult.success(jsonableResult);
+            __methodResult__.success(jsonableResult);
         });
     }};
 
     @Override
     public PlatformView create(Context __, int id, Object params) {
-        Map<String, Object> args = (Map<String, Object>) params;
+        Map<String, Object> __args__ = (Map<String, Object>) params;
         
 
         com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(activity);

@@ -37,7 +37,7 @@ class com_amap_api_maps_model_particle_ColorGenerate extends com_autonavi_amap_m
   Future<Float64List> getColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.particle.ColorGenerate@$refId::getColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ColorGenerate@$refId::getColor([])');
     }
   
     // invoke native method

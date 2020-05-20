@@ -131,7 +131,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   Future<dynamic> initWithURLTemplate(String URLTemplate) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATileOverlay@$refId::initWithURLTemplate([\'URLTemplate\':$URLTemplate])');
+      debugPrint('fluttify-dart: MATileOverlay@$refId::initWithURLTemplate([\'URLTemplate\':$URLTemplate])');
     }
   
     // invoke native method
@@ -155,7 +155,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   Future<void> loadTileAtPath_result(MATileOverlayPath path, void result(NSData tileData, NSError error)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATileOverlay@$refId::loadTileAtPath([])');
+      debugPrint('fluttify-dart: MATileOverlay@$refId::loadTileAtPath([])');
     }
   
     // invoke native method
@@ -198,7 +198,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   Future<void> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
+      debugPrint('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
     }
   
     // invoke native method

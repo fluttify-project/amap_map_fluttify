@@ -31,2532 +31,2532 @@ public class SubHandler2 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingBottom_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingBottom_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.paddingBottom;
+                    int __result__ = ref.paddingBottom;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mDuration_batch", (argsBatch, methodResult) -> {
-                List<Long> resultList = new ArrayList<>();
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mDuration_batch", (__argsBatch__, __methodResult__) -> {
+                List<Long> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) __args__.get("refId"));
             
-                    long result = ref.mDuration;
+                    long __result__ = ref.mDuration;
             
-                    long jsonableResult = result;
+                    long jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_width_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_width_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.width;
+                    int __result__ = ref.width;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_height_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_height_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) args.get("refId"));
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.height;
+                    int __result__ = ref.height;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.nearLeft;
+                    com.amap.api.maps.model.LatLng __result__ = ref.nearLeft;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearRight_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.VisibleRegion::get_nearRight_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.nearRight;
+                    com.amap.api.maps.model.LatLng __result__ = ref.nearRight;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farLeft_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.VisibleRegion::get_farLeft_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.farLeft;
+                    com.amap.api.maps.model.LatLng __result__ = ref.farLeft;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farRight_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.VisibleRegion::get_farRight_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.farRight;
+                    com.amap.api.maps.model.LatLng __result__ = ref.farRight;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLngBounds result = ref.latLngBounds;
+                    com.amap.api.maps.model.LatLngBounds __result__ = ref.latLngBounds;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_width_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.Tile::get_width_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.width;
+                    int __result__ = ref.width;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_height_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.Tile::get_height_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.height;
+                    int __result__ = ref.height;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_data_batch", (argsBatch, methodResult) -> {
-                List<byte[]> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.Tile::get_data_batch", (__argsBatch__, __methodResult__) -> {
+                List<byte[]> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
-                    byte[] result = ref.data;
+                    byte[] __result__ = ref.data;
             
-                    byte[] jsonableResult = result;
+                    byte[] jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_target_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.CameraPosition::get_target_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.target;
+                    com.amap.api.maps.model.LatLng __result__ = ref.target;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_zoom_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.CameraPosition::get_zoom_batch", (__argsBatch__, __methodResult__) -> {
+                List<Float> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                    float result = ref.zoom;
+                    float __result__ = ref.zoom;
             
-                    float jsonableResult = result;
+                    float jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_tilt_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.CameraPosition::get_tilt_batch", (__argsBatch__, __methodResult__) -> {
+                List<Float> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                    float result = ref.tilt;
+                    float __result__ = ref.tilt;
             
-                    float jsonableResult = result;
+                    float jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_bearing_batch", (argsBatch, methodResult) -> {
-                List<Float> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.CameraPosition::get_bearing_batch", (__argsBatch__, __methodResult__) -> {
+                List<Float> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                    float result = ref.bearing;
+                    float __result__ = ref.bearing;
             
-                    float jsonableResult = result;
+                    float jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_isAbroad_batch", (argsBatch, methodResult) -> {
-                List<Boolean> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.CameraPosition::get_isAbroad_batch", (__argsBatch__, __methodResult__) -> {
+                List<Boolean> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                    boolean result = ref.isAbroad;
+                    boolean __result__ = ref.isAbroad;
             
-                    boolean jsonableResult = result;
+                    boolean jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.animation.Animation::get_glAnimation_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.animation.Animation::get_glAnimation_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) __args__.get("refId"));
             
-                    com.autonavi.amap.mapcore.animation.GLAnimation result = ref.glAnimation;
+                    com.autonavi.amap.mapcore.animation.GLAnimation __result__ = ref.glAnimation;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_southwest_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.LatLngBounds::get_southwest_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.southwest;
+                    com.amap.api.maps.model.LatLng __result__ = ref.southwest;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_northeast_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.LatLngBounds::get_northeast_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.northeast;
+                    com.amap.api.maps.model.LatLng __result__ = ref.northeast;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.LatLng::get_latitude_batch", (argsBatch, methodResult) -> {
-                List<Double> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.LatLng::get_latitude_batch", (__argsBatch__, __methodResult__) -> {
+                List<Double> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
             
-                    double result = ref.latitude;
+                    double __result__ = ref.latitude;
             
-                    double jsonableResult = result;
+                    double jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.LatLng::get_longitude_batch", (argsBatch, methodResult) -> {
-                List<Double> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.LatLng::get_longitude_batch", (__argsBatch__, __methodResult__) -> {
+                List<Double> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
             
-                    double result = ref.longitude;
+                    double __result__ = ref.longitude;
             
-                    double jsonableResult = result;
+                    double jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetX_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_offsetX_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.offsetX;
+                    int __result__ = ref.offsetX;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetY_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_offsetY_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.offsetY;
+                    int __result__ = ref.offsetY;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_minX_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_minX_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.minX;
+                    int __result__ = ref.minX;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_maxX_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_maxX_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.maxX;
+                    int __result__ = ref.maxX;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_minY_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_minY_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.minY;
+                    int __result__ = ref.minY;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_maxY_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.TileProjection::get_maxY_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.maxY;
+                    int __result__ = ref.maxY;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.WeightedLatLng::get_intensity_batch", (argsBatch, methodResult) -> {
-                List<Double> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.WeightedLatLng::get_intensity_batch", (__argsBatch__, __methodResult__) -> {
+                List<Double> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
             
-                    double result = ref.intensity;
+                    double __result__ = ref.intensity;
             
-                    double jsonableResult = result;
+                    double jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.WeightedLatLng::get_latLng_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.WeightedLatLng::get_latLng_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
             
-                    com.amap.api.maps.model.LatLng result = ref.latLng;
+                    com.amap.api.maps.model.LatLng __result__ = ref.latLng;
             
                     Integer jsonableResult = null;
-            if (result != null) {
-                jsonableResult = System.identityHashCode(result);
-                getHEAP().put(jsonableResult, result);
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.particle.SizeOverLife ref = (com.amap.api.maps.model.particle.SizeOverLife) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.DEFAULT_SIZE;
+                    int __result__ = ref.DEFAULT_SIZE;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
-                    String result = ref.activeFloorName;
+                    String __result__ = ref.activeFloorName;
             
-                    String jsonableResult = result;
+                    String jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex_batch", (argsBatch, methodResult) -> {
-                List<Integer> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
-                    int result = ref.activeFloorIndex;
+                    int __result__ = ref.activeFloorIndex;
             
-                    int jsonableResult = result;
+                    int jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid_batch", (argsBatch, methodResult) -> {
-                List<String> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
-                    String result = ref.poiid;
+                    String __result__ = ref.poiid;
             
-                    String jsonableResult = result;
+                    String jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs_batch", (argsBatch, methodResult) -> {
-                List<int[]> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs_batch", (__argsBatch__, __methodResult__) -> {
+                List<int[]> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
-                    int[] result = ref.floor_indexs;
+                    int[] __result__ = ref.floor_indexs;
             
-                    int[] jsonableResult = result;
+                    int[] jsonableResult = __result__;
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names_batch", (argsBatch, methodResult) -> {
-                List<List<String>> resultList = new ArrayList<>();
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names_batch", (__argsBatch__, __methodResult__) -> {
+                List<List<String>> __resultList__ = new ArrayList<>();
             
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) argsBatch).size(); __i__++) {
-                    Map<String, Object> args = ((List<Map<String, Object>>) argsBatch).get(__i__);
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
             
                     // ref object
-                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) args.get("refId"));
+                    com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
-                    String[] result = ref.floor_names;
+                    String[] __result__ = ref.floor_names;
             
-                    List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(result));
+                    List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(__result__));
             
-                    resultList.add(jsonableResult);
+                    __resultList__.add(jsonableResult);
                 }
             
-                methodResult.success(resultList);
+                __methodResult__.success(__resultList__);
             });
             // setter
-            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mKeyName", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mKeyName = (String) ((Map<String, Object>) args).get("mKeyName");
+                String mKeyName = (String) ((Map<String, Object>) __args__).get("mKeyName");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
             
                 ref.mKeyName = mKeyName;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.maploader.ProcessingTile::set_mCreateTime", (__args__, __methodResult__) -> {
                 // jsonable arg
-                long mCreateTime = (long) (int) ((Map<String, Object>) args).get("mCreateTime");
+                long mCreateTime = (long) (int) ((Map<String, Object>) __args__).get("mCreateTime");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.maploader.ProcessingTile ref = (com.autonavi.ae.gmap.maploader.ProcessingTile) getHEAP().get(refId);
             
                 ref.mCreateTime = mCreateTime;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_name", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String name = (String) ((Map<String, Object>) args).get("name");
+                String name = (String) ((Map<String, Object>) __args__).get("name");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.name = name;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_poiid", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String poiid = (String) ((Map<String, Object>) args).get("poiid");
+                String poiid = (String) ((Map<String, Object>) __args__).get("poiid");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.poiid = poiid;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_x", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_x", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int x = (int) ((Map<String, Object>) args).get("x");
+                int x = (int) ((Map<String, Object>) __args__).get("x");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.x = x;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_y", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_y", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int y = (int) ((Map<String, Object>) args).get("y");
+                int y = (int) ((Map<String, Object>) __args__).get("y");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.y = y;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_angle", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_angle", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int angle = (int) ((Map<String, Object>) args).get("angle");
+                int angle = (int) ((Map<String, Object>) __args__).get("angle");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.angle = angle;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int strWidth = (int) ((Map<String, Object>) args).get("strWidth");
+                int strWidth = (int) ((Map<String, Object>) __args__).get("strWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.strWidth = strWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strHeight", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_strHeight", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int strHeight = (int) ((Map<String, Object>) args).get("strHeight");
+                int strHeight = (int) ((Map<String, Object>) __args__).get("strHeight");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.strHeight = strHeight;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_iconID", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_iconID", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int iconID = (int) ((Map<String, Object>) args).get("iconID");
+                int iconID = (int) ((Map<String, Object>) __args__).get("iconID");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.iconID = iconID;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labelx", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labelx", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int labelx = (int) ((Map<String, Object>) args).get("labelx");
+                int labelx = (int) ((Map<String, Object>) __args__).get("labelx");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.labelx = labelx;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labely", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_labely", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int labely = (int) ((Map<String, Object>) args).get("labely");
+                int labely = (int) ((Map<String, Object>) __args__).get("labely");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.labely = labely;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20X", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20X", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pixel20X = (int) ((Map<String, Object>) args).get("pixel20X");
+                int pixel20X = (int) ((Map<String, Object>) __args__).get("pixel20X");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.pixel20X = pixel20X;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Y", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Y", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pixel20Y = (int) ((Map<String, Object>) args).get("pixel20Y");
+                int pixel20Y = (int) ((Map<String, Object>) __args__).get("pixel20Y");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.pixel20Y = pixel20Y;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Z", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_pixel20Z", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pixel20Z = (int) ((Map<String, Object>) args).get("pixel20Z");
+                int pixel20Z = (int) ((Map<String, Object>) __args__).get("pixel20Z");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.pixel20Z = pixel20Z;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int fontColor = (int) ((Map<String, Object>) args).get("fontColor");
+                int fontColor = (int) ((Map<String, Object>) __args__).get("fontColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.fontColor = fontColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_borderColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_borderColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int borderColor = (int) ((Map<String, Object>) args).get("borderColor");
+                int borderColor = (int) ((Map<String, Object>) __args__).get("borderColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.borderColor = borderColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_type", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_type", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int type = (int) ((Map<String, Object>) args).get("type");
+                int type = (int) ((Map<String, Object>) __args__).get("type");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.type = type;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_anchor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_anchor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int anchor = (int) ((Map<String, Object>) args).get("anchor");
+                int anchor = (int) ((Map<String, Object>) __args__).get("anchor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.anchor = anchor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontSize", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_fontSize", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int fontSize = (int) ((Map<String, Object>) args).get("fontSize");
+                int fontSize = (int) ((Map<String, Object>) __args__).get("fontSize");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.fontSize = fontSize;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mSublayerId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mSublayerId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mSublayerId = (int) ((Map<String, Object>) args).get("mSublayerId");
+                int mSublayerId = (int) ((Map<String, Object>) __args__).get("mSublayerId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.mSublayerId = mSublayerId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mIsFouces", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_mIsFouces", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean mIsFouces = (boolean) ((Map<String, Object>) args).get("mIsFouces");
+                boolean mIsFouces = (boolean) ((Map<String, Object>) __args__).get("mIsFouces");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.mIsFouces = mIsFouces;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_timeStamp", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glinterface.MapLabelItem::set_timeStamp", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int timeStamp = (int) ((Map<String, Object>) args).get("timeStamp");
+                int timeStamp = (int) ((Map<String, Object>) __args__).get("timeStamp");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glinterface.MapLabelItem ref = (com.autonavi.ae.gmap.glinterface.MapLabelItem) getHEAP().get(refId);
             
                 ref.timeStamp = timeStamp;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::set_needMove", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean needMove = (boolean) ((Map<String, Object>) args).get("needMove");
+                boolean needMove = (boolean) ((Map<String, Object>) __args__).get("needMove");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup ref = (com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup) getHEAP().get(refId);
             
                 ref.needMove = needMove;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromXValue", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double fromXValue = (double) ((Map<String, Object>) args).get("fromXValue");
+                double fromXValue = (double) ((Map<String, Object>) __args__).get("fromXValue");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
             
                 ref.fromXValue = fromXValue;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toXValue", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double toXValue = (double) ((Map<String, Object>) args).get("toXValue");
+                double toXValue = (double) ((Map<String, Object>) __args__).get("toXValue");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
             
                 ref.toXValue = toXValue;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_fromYValue", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double fromYValue = (double) ((Map<String, Object>) args).get("fromYValue");
+                double fromYValue = (double) ((Map<String, Object>) __args__).get("fromYValue");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
             
                 ref.fromYValue = fromYValue;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V::set_toYValue", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double toYValue = (double) ((Map<String, Object>) args).get("toYValue");
+                double toYValue = (double) ((Map<String, Object>) __args__).get("toYValue");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V ref = (com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V) getHEAP().get(refId);
             
                 ref.toYValue = toYValue;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleItem::set_mainKey", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleItem::set_mainKey", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mainKey = (int) ((Map<String, Object>) args).get("mainKey");
+                int mainKey = (int) ((Map<String, Object>) __args__).get("mainKey");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
             
                 ref.mainKey = mainKey;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleItem::set_subKey", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleItem::set_subKey", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int[] subKey = (int[]) ((Map<String, Object>) args).get("subKey");
+                int[] subKey = (int[]) ((Map<String, Object>) __args__).get("subKey");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleItem ref = (com.autonavi.ae.gmap.style.StyleItem) getHEAP().get(refId);
             
                 ref.subKey = subKey;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_styleElementType", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_styleElementType", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int styleElementType = (int) ((Map<String, Object>) args).get("styleElementType");
+                int styleElementType = (int) ((Map<String, Object>) __args__).get("styleElementType");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.styleElementType = styleElementType;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_value", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_value", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int value = (int) ((Map<String, Object>) args).get("value");
+                int value = (int) ((Map<String, Object>) __args__).get("value");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.value = value;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_textureId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_textureId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int textureId = (int) ((Map<String, Object>) args).get("textureId");
+                int textureId = (int) ((Map<String, Object>) __args__).get("textureId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.textureId = textureId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_opacity", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_opacity", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double opacity = (Double) ((Map<String, Object>) args).get("opacity");
+                Double opacity = (Double) ((Map<String, Object>) __args__).get("opacity");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.opacity = new Double(opacity).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_lineWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_lineWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int lineWidth = (int) ((Map<String, Object>) args).get("lineWidth");
+                int lineWidth = (int) ((Map<String, Object>) __args__).get("lineWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.lineWidth = lineWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.style.StyleElement::set_visible", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.style.StyleElement::set_visible", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int visible = (int) ((Map<String, Object>) args).get("visible");
+                int visible = (int) ((Map<String, Object>) __args__).get("visible");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.style.StyleElement ref = (com.autonavi.ae.gmap.style.StyleElement) getHEAP().get(refId);
             
                 ref.visible = visible;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_engineId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int engineId = (int) ((Map<String, Object>) args).get("engineId");
+                int engineId = (int) ((Map<String, Object>) __args__).get("engineId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.engineId = engineId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_x", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_x", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int x = (int) ((Map<String, Object>) args).get("x");
+                int x = (int) ((Map<String, Object>) __args__).get("x");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.x = x;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_y", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_y", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int y = (int) ((Map<String, Object>) args).get("y");
+                int y = (int) ((Map<String, Object>) __args__).get("y");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.y = y;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_width", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_width", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int width = (int) ((Map<String, Object>) args).get("width");
+                int width = (int) ((Map<String, Object>) __args__).get("width");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.width = width;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_height", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_height", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int height = (int) ((Map<String, Object>) args).get("height");
+                int height = (int) ((Map<String, Object>) __args__).get("height");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.height = height;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int screenWidth = (int) ((Map<String, Object>) args).get("screenWidth");
+                int screenWidth = (int) ((Map<String, Object>) __args__).get("screenWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.screenWidth = screenWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenHeight", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenHeight", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int screenHeight = (int) ((Map<String, Object>) args).get("screenHeight");
+                int screenHeight = (int) ((Map<String, Object>) __args__).get("screenHeight");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.screenHeight = screenHeight;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double screenScale = (Double) ((Map<String, Object>) args).get("screenScale");
+                Double screenScale = (Double) ((Map<String, Object>) __args__).get("screenScale");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.screenScale = new Double(screenScale).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double textScale = (Double) ((Map<String, Object>) args).get("textScale");
+                Double textScale = (Double) ((Map<String, Object>) __args__).get("textScale");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.textScale = new Double(textScale).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mapZoomScale = (Double) ((Map<String, Object>) args).get("mapZoomScale");
+                Double mapZoomScale = (Double) ((Map<String, Object>) __args__).get("mapZoomScale");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam ref = (com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam) getHEAP().get(refId);
             
                 ref.mapZoomScale = new Double(mapZoomScale).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mGestureState = (int) ((Map<String, Object>) args).get("mGestureState");
+                int mGestureState = (int) ((Map<String, Object>) __args__).get("mGestureState");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mGestureState = mGestureState;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mGestureType = (int) ((Map<String, Object>) args).get("mGestureType");
+                int mGestureType = (int) ((Map<String, Object>) __args__).get("mGestureType");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mGestureType = mGestureType;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation", (__args__, __methodResult__) -> {
                 // jsonable arg
-                float[] mLocation = (float[]) ((Map<String, Object>) args).get("mLocation");
+                float[] mLocation = (float[]) ((Map<String, Object>) __args__).get("mLocation");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mLocation = mLocation;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mScale = (Double) ((Map<String, Object>) args).get("mScale");
+                Double mScale = (Double) ((Map<String, Object>) __args__).get("mScale");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mScale = new Double(mScale).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mRotation = (Double) ((Map<String, Object>) args).get("mRotation");
+                Double mRotation = (Double) ((Map<String, Object>) __args__).get("mRotation");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mRotation = new Double(mRotation).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mVeLocityFloat = (Double) ((Map<String, Object>) args).get("mVeLocityFloat");
+                Double mVeLocityFloat = (Double) ((Map<String, Object>) __args__).get("mVeLocityFloat");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mVeLocityFloat = new Double(mVeLocityFloat).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint", (__args__, __methodResult__) -> {
                 // jsonable arg
-                float[] mVelocityPoint = (float[]) ((Map<String, Object>) args).get("mVelocityPoint");
+                float[] mVelocityPoint = (float[]) ((Map<String, Object>) __args__).get("mVelocityPoint");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo ref = (com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo) getHEAP().get(refId);
             
                 ref.mVelocityPoint = mVelocityPoint;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mId = (int) ((Map<String, Object>) args).get("mId");
+                int mId = (int) ((Map<String, Object>) __args__).get("mId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mId = mId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap", (__args__, __methodResult__) -> {
                 // ref arg
-                android.graphics.Bitmap mBitmap = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) args).get("mBitmap"));
+                android.graphics.Bitmap mBitmap = (android.graphics.Bitmap) getHEAP().get((int) ((Map<String, Object>) __args__).get("mBitmap"));
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mBitmap = mBitmap;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer", (__args__, __methodResult__) -> {
                 // jsonable arg
-                byte[] mPngBuffer = (byte[]) ((Map<String, Object>) args).get("mPngBuffer");
+                byte[] mPngBuffer = (byte[]) ((Map<String, Object>) __args__).get("mPngBuffer");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mPngBuffer = mPngBuffer;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mAnchor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
+                int mAnchor = (int) ((Map<String, Object>) __args__).get("mAnchor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mAnchor = mAnchor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mXRatio = (Double) ((Map<String, Object>) args).get("mXRatio");
+                Double mXRatio = (Double) ((Map<String, Object>) __args__).get("mXRatio");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mXRatio = new Double(mXRatio).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mYRatio = (Double) ((Map<String, Object>) args).get("mYRatio");
+                Double mYRatio = (Double) ((Map<String, Object>) __args__).get("mYRatio");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.mYRatio = new Double(mYRatio).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isGenMimps = (boolean) ((Map<String, Object>) args).get("isGenMimps");
+                boolean isGenMimps = (boolean) ((Map<String, Object>) __args__).get("isGenMimps");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.isGenMimps = isGenMimps;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isRepeat", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isRepeat = (boolean) ((Map<String, Object>) args).get("isRepeat");
+                boolean isRepeat = (boolean) ((Map<String, Object>) __args__).get("isRepeat");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLTextureProperty ref = (com.autonavi.ae.gmap.gloverlay.GLTextureProperty) getHEAP().get(refId);
             
                 ref.isRepeat = isRepeat;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mOverlayHashCode", (__args__, __methodResult__) -> {
                 // jsonable arg
-                long mOverlayHashCode = (long) (int) ((Map<String, Object>) args).get("mOverlayHashCode");
+                long mOverlayHashCode = (long) (int) ((Map<String, Object>) __args__).get("mOverlayHashCode");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
             
                 ref.mOverlayHashCode = mOverlayHashCode;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedIndex", (__args__, __methodResult__) -> {
                 // jsonable arg
-                long mHitedIndex = (long) (int) ((Map<String, Object>) args).get("mHitedIndex");
+                long mHitedIndex = (long) (int) ((Map<String, Object>) __args__).get("mHitedIndex");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
             
                 ref.mHitedIndex = mHitedIndex;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits::set_mHitedTimes", (__args__, __methodResult__) -> {
                 // jsonable arg
-                long mHitedTimes = (long) (int) ((Map<String, Object>) args).get("mHitedTimes");
+                long mHitedTimes = (long) (int) ((Map<String, Object>) __args__).get("mHitedTimes");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits) getHEAP().get(refId);
             
                 ref.mHitedTimes = mHitedTimes;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stAreaColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int stAreaColor = (int) ((Map<String, Object>) args).get("stAreaColor");
+                int stAreaColor = (int) ((Map<String, Object>) __args__).get("stAreaColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.stAreaColor = stAreaColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowBorderColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int stArrowBorderColor = (int) ((Map<String, Object>) args).get("stArrowBorderColor");
+                int stArrowBorderColor = (int) ((Map<String, Object>) __args__).get("stArrowBorderColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.stArrowBorderColor = stArrowBorderColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowBorderWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int fArrowBorderWidth = (int) ((Map<String, Object>) args).get("fArrowBorderWidth");
+                int fArrowBorderWidth = (int) ((Map<String, Object>) __args__).get("fArrowBorderWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.fArrowBorderWidth = fArrowBorderWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_fArrowLineWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int fArrowLineWidth = (int) ((Map<String, Object>) args).get("fArrowLineWidth");
+                int fArrowLineWidth = (int) ((Map<String, Object>) __args__).get("fArrowLineWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.fArrowLineWidth = fArrowLineWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_stArrowLineColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int stArrowLineColor = (int) ((Map<String, Object>) args).get("stArrowLineColor");
+                int stArrowLineColor = (int) ((Map<String, Object>) __args__).get("stArrowLineColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.stArrowLineColor = stArrowLineColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr::set_dayMode", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean dayMode = (boolean) ((Map<String, Object>) args).get("dayMode");
+                boolean dayMode = (boolean) ((Map<String, Object>) __args__).get("dayMode");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr ref = (com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr) getHEAP().get(refId);
             
                 ref.dayMode = dayMode;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture", (__args__, __methodResult__) -> {
                 // enum arg
-                com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture euRouteTexture = com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture.values()[(int) ((Map<String, Object>) args).get("euRouteTexture")];
+                com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture euRouteTexture = com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture.values()[(int) ((Map<String, Object>) __args__).get("euRouteTexture")];
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.euRouteTexture = euRouteTexture;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mFilledResId = (int) ((Map<String, Object>) args).get("mFilledResId");
+                int mFilledResId = (int) ((Map<String, Object>) __args__).get("mFilledResId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mFilledResId = mFilledResId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DFillResId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DFillResId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mSimple3DFillResId = (int) ((Map<String, Object>) args).get("mSimple3DFillResId");
+                int mSimple3DFillResId = (int) ((Map<String, Object>) __args__).get("mSimple3DFillResId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DFillResId = mSimple3DFillResId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mFilledColor = (int) ((Map<String, Object>) args).get("mFilledColor");
+                int mFilledColor = (int) ((Map<String, Object>) __args__).get("mFilledColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mFilledColor = mFilledColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgResId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgResId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mBgResId = (int) ((Map<String, Object>) args).get("mBgResId");
+                int mBgResId = (int) ((Map<String, Object>) __args__).get("mBgResId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mBgResId = mBgResId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBgColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mBgColor = (int) ((Map<String, Object>) args).get("mBgColor");
+                int mBgColor = (int) ((Map<String, Object>) __args__).get("mBgColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mBgColor = mBgColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mLineWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mLineWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mLineWidth = (int) ((Map<String, Object>) args).get("mLineWidth");
+                int mLineWidth = (int) ((Map<String, Object>) __args__).get("mLineWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mLineWidth = mLineWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBorderLineWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mBorderLineWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mBorderLineWidth = (int) ((Map<String, Object>) args).get("mBorderLineWidth");
+                int mBorderLineWidth = (int) ((Map<String, Object>) __args__).get("mBorderLineWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mBorderLineWidth = mBorderLineWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mX1 = (Double) ((Map<String, Object>) args).get("mX1");
+                Double mX1 = (Double) ((Map<String, Object>) __args__).get("mX1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mX1 = new Double(mX1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mY1 = (Double) ((Map<String, Object>) args).get("mY1");
+                Double mY1 = (Double) ((Map<String, Object>) __args__).get("mY1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mY1 = new Double(mY1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mX2 = (Double) ((Map<String, Object>) args).get("mX2");
+                Double mX2 = (Double) ((Map<String, Object>) __args__).get("mX2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mX2 = new Double(mX2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mY2 = (Double) ((Map<String, Object>) args).get("mY2");
+                Double mY2 = (Double) ((Map<String, Object>) __args__).get("mY2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mY2 = new Double(mY2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mGLStart = (Double) ((Map<String, Object>) args).get("mGLStart");
+                Double mGLStart = (Double) ((Map<String, Object>) __args__).get("mGLStart");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mGLStart = new Double(mGLStart).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mTextureLen = (Double) ((Map<String, Object>) args).get("mTextureLen");
+                Double mTextureLen = (Double) ((Map<String, Object>) __args__).get("mTextureLen");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mTextureLen = new Double(mTextureLen).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DX1 = (Double) ((Map<String, Object>) args).get("mSimple3DX1");
+                Double mSimple3DX1 = (Double) ((Map<String, Object>) __args__).get("mSimple3DX1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DX1 = new Double(mSimple3DX1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DY1 = (Double) ((Map<String, Object>) args).get("mSimple3DY1");
+                Double mSimple3DY1 = (Double) ((Map<String, Object>) __args__).get("mSimple3DY1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DY1 = new Double(mSimple3DY1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DX2 = (Double) ((Map<String, Object>) args).get("mSimple3DX2");
+                Double mSimple3DX2 = (Double) ((Map<String, Object>) __args__).get("mSimple3DX2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DX2 = new Double(mSimple3DX2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DY2 = (Double) ((Map<String, Object>) args).get("mSimple3DY2");
+                Double mSimple3DY2 = (Double) ((Map<String, Object>) __args__).get("mSimple3DY2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DY2 = new Double(mSimple3DY2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DGLStart = (Double) ((Map<String, Object>) args).get("mSimple3DGLStart");
+                Double mSimple3DGLStart = (Double) ((Map<String, Object>) __args__).get("mSimple3DGLStart");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DGLStart = new Double(mSimple3DGLStart).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mSimple3DTextureLen = (Double) ((Map<String, Object>) args).get("mSimple3DTextureLen");
+                Double mSimple3DTextureLen = (Double) ((Map<String, Object>) __args__).get("mSimple3DTextureLen");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mSimple3DTextureLen = new Double(mSimple3DTextureLen).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mCapX1 = (Double) ((Map<String, Object>) args).get("mCapX1");
+                Double mCapX1 = (Double) ((Map<String, Object>) __args__).get("mCapX1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mCapX1 = new Double(mCapX1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mCapY1 = (Double) ((Map<String, Object>) args).get("mCapY1");
+                Double mCapY1 = (Double) ((Map<String, Object>) __args__).get("mCapY1");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mCapY1 = new Double(mCapY1).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mCapX2 = (Double) ((Map<String, Object>) args).get("mCapX2");
+                Double mCapX2 = (Double) ((Map<String, Object>) __args__).get("mCapX2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mCapX2 = new Double(mCapX2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mCapY2 = (Double) ((Map<String, Object>) args).get("mCapY2");
+                Double mCapY2 = (Double) ((Map<String, Object>) __args__).get("mCapY2");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mCapY2 = new Double(mCapY2).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isLineExtract = (boolean) ((Map<String, Object>) args).get("isLineExtract");
+                boolean isLineExtract = (boolean) ((Map<String, Object>) __args__).get("isLineExtract");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.isLineExtract = isLineExtract;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isCanCovered", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isCanCovered", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isCanCovered = (boolean) ((Map<String, Object>) args).get("isCanCovered");
+                boolean isCanCovered = (boolean) ((Map<String, Object>) __args__).get("isCanCovered");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.isCanCovered = isCanCovered;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseColor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseColor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isUseColor = (boolean) ((Map<String, Object>) args).get("isUseColor");
+                boolean isUseColor = (boolean) ((Map<String, Object>) __args__).get("isUseColor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.isUseColor = isUseColor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseCap", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isUseCap", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isUseCap = (boolean) ((Map<String, Object>) args).get("isUseCap");
+                boolean isUseCap = (boolean) ((Map<String, Object>) __args__).get("isUseCap");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.isUseCap = isUseCap;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mShowArrow", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mShowArrow", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean mShowArrow = (boolean) ((Map<String, Object>) args).get("mShowArrow");
+                boolean mShowArrow = (boolean) ((Map<String, Object>) __args__).get("mShowArrow");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mShowArrow = mShowArrow;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mbTexPreMulAlpha", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean mbTexPreMulAlpha = (boolean) ((Map<String, Object>) args).get("mbTexPreMulAlpha");
+                boolean mbTexPreMulAlpha = (boolean) ((Map<String, Object>) __args__).get("mbTexPreMulAlpha");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLRouteProperty ref = (com.autonavi.ae.gmap.gloverlay.GLRouteProperty) getHEAP().get(refId);
             
                 ref.mbTexPreMulAlpha = mbTexPreMulAlpha;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResId", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mResId = (int) ((Map<String, Object>) args).get("mResId");
+                int mResId = (int) ((Map<String, Object>) __args__).get("mResId");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mResId = mResId;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mWidth = (int) ((Map<String, Object>) args).get("mWidth");
+                int mWidth = (int) ((Map<String, Object>) __args__).get("mWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mWidth = mWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mHeight", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mHeight", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mHeight = (int) ((Map<String, Object>) args).get("mHeight");
+                int mHeight = (int) ((Map<String, Object>) __args__).get("mHeight");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mHeight = mHeight;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResWidth", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResWidth", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mResWidth = (int) ((Map<String, Object>) args).get("mResWidth");
+                int mResWidth = (int) ((Map<String, Object>) __args__).get("mResWidth");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mResWidth = mResWidth;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResHeight", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mResHeight", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mResHeight = (int) ((Map<String, Object>) args).get("mResHeight");
+                int mResHeight = (int) ((Map<String, Object>) __args__).get("mResHeight");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mResHeight = mResHeight;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mAnchorXRatio = (Double) ((Map<String, Object>) args).get("mAnchorXRatio");
+                Double mAnchorXRatio = (Double) ((Map<String, Object>) __args__).get("mAnchorXRatio");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mAnchorXRatio = new Double(mAnchorXRatio).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mAnchorYRatio = (Double) ((Map<String, Object>) args).get("mAnchorYRatio");
+                Double mAnchorYRatio = (Double) ((Map<String, Object>) __args__).get("mAnchorYRatio");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mAnchorYRatio = new Double(mAnchorYRatio).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int mAnchor = (int) ((Map<String, Object>) args).get("mAnchor");
+                int mAnchor = (int) ((Map<String, Object>) __args__).get("mAnchor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.gloverlay.GLOverlayTexture ref = (com.autonavi.ae.gmap.gloverlay.GLOverlayTexture) getHEAP().get(refId);
             
                 ref.mAnchor = mAnchor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mRootPath", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mRootPath", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mRootPath = (String) ((Map<String, Object>) args).get("mRootPath");
+                String mRootPath = (String) ((Map<String, Object>) __args__).get("mRootPath");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
             
                 ref.mRootPath = mRootPath;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigPath", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigPath", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mConfigPath = (String) ((Map<String, Object>) args).get("mConfigPath");
+                String mConfigPath = (String) ((Map<String, Object>) __args__).get("mConfigPath");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
             
                 ref.mConfigPath = mConfigPath;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigContent", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mConfigContent", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mConfigContent = (String) ((Map<String, Object>) args).get("mConfigContent");
+                String mConfigContent = (String) ((Map<String, Object>) __args__).get("mConfigContent");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
             
                 ref.mConfigContent = mConfigContent;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mOfflineDataPath", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mOfflineDataPath", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mOfflineDataPath = (String) ((Map<String, Object>) args).get("mOfflineDataPath");
+                String mOfflineDataPath = (String) ((Map<String, Object>) __args__).get("mOfflineDataPath");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
             
                 ref.mOfflineDataPath = mOfflineDataPath;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mP3dCrossPath", (args, methodResult) -> {
+            put("com.autonavi.ae.gmap.GLMapEngine.InitParam::set_mP3dCrossPath", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String mP3dCrossPath = (String) ((Map<String, Object>) args).get("mP3dCrossPath");
+                String mP3dCrossPath = (String) ((Map<String, Object>) __args__).get("mP3dCrossPath");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.ae.gmap.GLMapEngine.InitParam ref = (com.autonavi.ae.gmap.GLMapEngine.InitParam) getHEAP().get(refId);
             
                 ref.mP3dCrossPath = mP3dCrossPath;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestUrl", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String requestUrl = (String) ((Map<String, Object>) args).get("requestUrl");
+                String requestUrl = (String) ((Map<String, Object>) __args__).get("requestUrl");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.requestUrl = requestUrl;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_handler", (__args__, __methodResult__) -> {
                 // jsonable arg
-                long handler = (long) (int) ((Map<String, Object>) args).get("handler");
+                long handler = (long) (int) ((Map<String, Object>) __args__).get("handler");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.handler = handler;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int nRequestType = (int) ((Map<String, Object>) args).get("nRequestType");
+                int nRequestType = (int) ((Map<String, Object>) __args__).get("nRequestType");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.nRequestType = nRequestType;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString", (__args__, __methodResult__) -> {
                 // jsonable arg
-                byte[] enCodeString = (byte[]) ((Map<String, Object>) args).get("enCodeString");
+                byte[] enCodeString = (byte[]) ((Map<String, Object>) __args__).get("enCodeString");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.enCodeString = enCodeString;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nCompress", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nCompress", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int nCompress = (int) ((Map<String, Object>) args).get("nCompress");
+                int nCompress = (int) ((Map<String, Object>) __args__).get("nCompress");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.nCompress = nCompress;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_requestBaseUrl", (__args__, __methodResult__) -> {
                 // jsonable arg
-                String requestBaseUrl = (String) ((Map<String, Object>) args).get("requestBaseUrl");
+                String requestBaseUrl = (String) ((Map<String, Object>) __args__).get("requestBaseUrl");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam ref = (com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam) getHEAP().get(refId);
             
                 ref.requestBaseUrl = requestBaseUrl;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.maploader.AMapLoader::set_isFinish", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isFinish = (boolean) ((Map<String, Object>) args).get("isFinish");
+                boolean isFinish = (boolean) ((Map<String, Object>) __args__).get("isFinish");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.maploader.AMapLoader ref = (com.autonavi.amap.mapcore.maploader.AMapLoader) getHEAP().get(refId);
             
                 ref.isFinish = isFinish;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean mIsAborted = (boolean) ((Map<String, Object>) args).get("mIsAborted");
+                boolean mIsAborted = (boolean) ((Map<String, Object>) __args__).get("mIsAborted");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake ref = (com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake) getHEAP().get(refId);
             
                 ref.mIsAborted = mIsAborted;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.DPoint::set_x", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.DPoint::set_x", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double x = (double) ((Map<String, Object>) args).get("x");
+                double x = (double) ((Map<String, Object>) __args__).get("x");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId);
             
                 ref.x = x;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.DPoint::set_y", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.DPoint::set_y", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double y = (double) ((Map<String, Object>) args).get("y");
+                double y = (double) ((Map<String, Object>) __args__).get("y");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.DPoint ref = (com.autonavi.amap.mapcore.DPoint) getHEAP().get(refId);
             
                 ref.y = y;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromXDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mFromXDelta = (double) ((Map<String, Object>) args).get("mFromXDelta");
+                double mFromXDelta = (double) ((Map<String, Object>) __args__).get("mFromXDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mFromXDelta = mFromXDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mFromYDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mFromYDelta = (double) ((Map<String, Object>) args).get("mFromYDelta");
+                double mFromYDelta = (double) ((Map<String, Object>) __args__).get("mFromYDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mFromYDelta = mFromYDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToXDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mToXDelta = (double) ((Map<String, Object>) args).get("mToXDelta");
+                double mToXDelta = (double) ((Map<String, Object>) __args__).get("mToXDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mToXDelta = mToXDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mToYDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mToYDelta = (double) ((Map<String, Object>) args).get("mToYDelta");
+                double mToYDelta = (double) ((Map<String, Object>) __args__).get("mToYDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mToYDelta = mToYDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurXDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mCurXDelta = (double) ((Map<String, Object>) args).get("mCurXDelta");
+                double mCurXDelta = (double) ((Map<String, Object>) __args__).get("mCurXDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mCurXDelta = mCurXDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTranslateAnimation::set_mCurYDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double mCurYDelta = (double) ((Map<String, Object>) args).get("mCurYDelta");
+                double mCurYDelta = (double) ((Map<String, Object>) __args__).get("mCurYDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTranslateAnimation ref = (com.autonavi.amap.mapcore.animation.GLTranslateAnimation) getHEAP().get(refId);
             
                 ref.mCurYDelta = mCurYDelta;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mFromAlpha = (Double) ((Map<String, Object>) args).get("mFromAlpha");
+                Double mFromAlpha = (Double) ((Map<String, Object>) __args__).get("mFromAlpha");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
             
                 ref.mFromAlpha = new Double(mFromAlpha).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mToAlpha = (Double) ((Map<String, Object>) args).get("mToAlpha");
+                Double mToAlpha = (Double) ((Map<String, Object>) __args__).get("mToAlpha");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
             
                 ref.mToAlpha = new Double(mToAlpha).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double mCurAlpha = (Double) ((Map<String, Object>) args).get("mCurAlpha");
+                Double mCurAlpha = (Double) ((Map<String, Object>) __args__).get("mCurAlpha");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLAlphaAnimation ref = (com.autonavi.amap.mapcore.animation.GLAlphaAnimation) getHEAP().get(refId);
             
                 ref.mCurAlpha = new Double(mCurAlpha).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_x", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_x", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double x = (double) ((Map<String, Object>) args).get("x");
+                double x = (double) ((Map<String, Object>) __args__).get("x");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.x = x;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_y", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_y", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double y = (double) ((Map<String, Object>) args).get("y");
+                double y = (double) ((Map<String, Object>) __args__).get("y");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.y = y;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double alpha = (double) ((Map<String, Object>) args).get("alpha");
+                double alpha = (double) ((Map<String, Object>) __args__).get("alpha");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.alpha = alpha;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_rotate", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double rotate = (double) ((Map<String, Object>) args).get("rotate");
+                double rotate = (double) ((Map<String, Object>) __args__).get("rotate");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.rotate = rotate;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleX", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double scaleX = (double) ((Map<String, Object>) args).get("scaleX");
+                double scaleX = (double) ((Map<String, Object>) __args__).get("scaleX");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.scaleX = scaleX;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLTransformation::set_scaleY", (__args__, __methodResult__) -> {
                 // jsonable arg
-                double scaleY = (double) ((Map<String, Object>) args).get("scaleY");
+                double scaleY = (double) ((Map<String, Object>) __args__).get("scaleY");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLTransformation ref = (com.autonavi.amap.mapcore.animation.GLTransformation) getHEAP().get(refId);
             
                 ref.scaleY = scaleY;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.animation.GLEmergeAnimation::set_mStartPoint", (__args__, __methodResult__) -> {
                 // ref arg
-                com.amap.api.maps.model.LatLng mStartPoint = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) args).get("mStartPoint"));
+                com.amap.api.maps.model.LatLng mStartPoint = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("mStartPoint"));
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.animation.GLEmergeAnimation ref = (com.autonavi.amap.mapcore.animation.GLEmergeAnimation) getHEAP().get(refId);
             
                 ref.mStartPoint = mStartPoint;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double maxZoomLevel = (Double) ((Map<String, Object>) args).get("maxZoomLevel");
+                Double maxZoomLevel = (Double) ((Map<String, Object>) __args__).get("maxZoomLevel");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
             
                 ref.maxZoomLevel = new Double(maxZoomLevel).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double minZoomLevel = (Double) ((Map<String, Object>) args).get("minZoomLevel");
+                Double minZoomLevel = (Double) ((Map<String, Object>) __args__).get("minZoomLevel");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
             
                 ref.minZoomLevel = new Double(minZoomLevel).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
+                Double angleDelta = (Double) ((Map<String, Object>) __args__).get("angleDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.HoverGestureMapMessage ref = (com.autonavi.amap.mapcore.message.HoverGestureMapMessage) getHEAP().get(refId);
             
                 ref.angleDelta = new Double(angleDelta).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double touchDeltaX = (Double) ((Map<String, Object>) args).get("touchDeltaX");
+                Double touchDeltaX = (Double) ((Map<String, Object>) __args__).get("touchDeltaX");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
             
                 ref.touchDeltaX = new Double(touchDeltaX).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double touchDeltaY = (Double) ((Map<String, Object>) args).get("touchDeltaY");
+                Double touchDeltaY = (Double) ((Map<String, Object>) __args__).get("touchDeltaY");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.MoveGestureMapMessage ref = (com.autonavi.amap.mapcore.message.MoveGestureMapMessage) getHEAP().get(refId);
             
                 ref.touchDeltaY = new Double(touchDeltaY).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double scaleDelta = (Double) ((Map<String, Object>) args).get("scaleDelta");
+                Double scaleDelta = (Double) ((Map<String, Object>) __args__).get("scaleDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
             
                 ref.scaleDelta = new Double(scaleDelta).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
+                int pivotX = (int) ((Map<String, Object>) __args__).get("pivotX");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
             
                 ref.pivotX = pivotX;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotY", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
+                int pivotY = (int) ((Map<String, Object>) __args__).get("pivotY");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.ScaleGestureMapMessage ref = (com.autonavi.amap.mapcore.message.ScaleGestureMapMessage) getHEAP().get(refId);
             
                 ref.pivotY = pivotY;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_width", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int width = (int) ((Map<String, Object>) args).get("width");
+                int width = (int) ((Map<String, Object>) __args__).get("width");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.width = width;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_height", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int height = (int) ((Map<String, Object>) args).get("height");
+                int height = (int) ((Map<String, Object>) __args__).get("height");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.height = height;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isGestureScaleByMapCenter", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isGestureScaleByMapCenter = (boolean) ((Map<String, Object>) args).get("isGestureScaleByMapCenter");
+                boolean isGestureScaleByMapCenter = (boolean) ((Map<String, Object>) __args__).get("isGestureScaleByMapCenter");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.isGestureScaleByMapCenter = isGestureScaleByMapCenter;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_isUseAnchor", (__args__, __methodResult__) -> {
                 // jsonable arg
-                boolean isUseAnchor = (boolean) ((Map<String, Object>) args).get("isUseAnchor");
+                boolean isUseAnchor = (boolean) ((Map<String, Object>) __args__).get("isUseAnchor");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.isUseAnchor = isUseAnchor;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorX", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int anchorX = (int) ((Map<String, Object>) args).get("anchorX");
+                int anchorX = (int) ((Map<String, Object>) __args__).get("anchorX");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.anchorX = anchorX;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.AbstractGestureMapMessage::set_anchorY", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int anchorY = (int) ((Map<String, Object>) args).get("anchorY");
+                int anchorY = (int) ((Map<String, Object>) __args__).get("anchorY");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.AbstractGestureMapMessage ref = (com.autonavi.amap.mapcore.message.AbstractGestureMapMessage) getHEAP().get(refId);
             
                 ref.anchorY = anchorY;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotX", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pivotX = (int) ((Map<String, Object>) args).get("pivotX");
+                int pivotX = (int) ((Map<String, Object>) __args__).get("pivotX");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
             
                 ref.pivotX = pivotX;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_pivotY", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int pivotY = (int) ((Map<String, Object>) args).get("pivotY");
+                int pivotY = (int) ((Map<String, Object>) __args__).get("pivotY");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
             
                 ref.pivotY = pivotY;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double angleDelta = (Double) ((Map<String, Object>) args).get("angleDelta");
+                Double angleDelta = (Double) ((Map<String, Object>) __args__).get("angleDelta");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.message.RotateGestureMapMessage ref = (com.autonavi.amap.mapcore.message.RotateGestureMapMessage) getHEAP().get(refId);
             
                 ref.angleDelta = new Double(angleDelta).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.Rectangle::set_left", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Rectangle::set_left", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double left = (Double) ((Map<String, Object>) args).get("left");
+                Double left = (Double) ((Map<String, Object>) __args__).get("left");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
             
                 ref.left = new Double(left).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.Rectangle::set_right", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Rectangle::set_right", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double right = (Double) ((Map<String, Object>) args).get("right");
+                Double right = (Double) ((Map<String, Object>) __args__).get("right");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
             
                 ref.right = new Double(right).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.Rectangle::set_bottom", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Rectangle::set_bottom", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double bottom = (Double) ((Map<String, Object>) args).get("bottom");
+                Double bottom = (Double) ((Map<String, Object>) __args__).get("bottom");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
             
                 ref.bottom = new Double(bottom).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.Rectangle::set_top", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.Rectangle::set_top", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double top = (Double) ((Map<String, Object>) args).get("top");
+                Double top = (Double) ((Map<String, Object>) __args__).get("top");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.Rectangle ref = (com.autonavi.amap.mapcore.Rectangle) getHEAP().get(refId);
             
                 ref.top = new Double(top).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.FPoint3::set_colorIndex", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.FPoint3::set_colorIndex", (__args__, __methodResult__) -> {
                 // jsonable arg
-                int colorIndex = (int) ((Map<String, Object>) args).get("colorIndex");
+                int colorIndex = (int) ((Map<String, Object>) __args__).get("colorIndex");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.FPoint3 ref = (com.autonavi.amap.mapcore.FPoint3) getHEAP().get(refId);
             
                 ref.colorIndex = colorIndex;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType", (__args__, __methodResult__) -> {
                 // enum arg
-                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type nowType = com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type.values()[(int) ((Map<String, Object>) args).get("nowType")];
+                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type nowType = com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type.values()[(int) ((Map<String, Object>) __args__).get("nowType")];
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 ref.nowType = nowType;
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double xPixel = (Double) ((Map<String, Object>) args).get("xPixel");
+                Double xPixel = (Double) ((Map<String, Object>) __args__).get("xPixel");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 ref.xPixel = new Double(xPixel).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
             // setter
-            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel", (args, methodResult) -> {
+            put("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel", (__args__, __methodResult__) -> {
                 // jsonable arg
-                Double yPixel = (Double) ((Map<String, Object>) args).get("yPixel");
+                Double yPixel = (Double) ((Map<String, Object>) __args__).get("yPixel");
             
-                int refId = (int) ((Map<String, Object>) args).get("refId");
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
                 com.autonavi.amap.mapcore.AbstractCameraUpdateMessage ref = (com.autonavi.amap.mapcore.AbstractCameraUpdateMessage) getHEAP().get(refId);
             
                 ref.yPixel = new Double(yPixel).floatValue();
-                methodResult.success("success");
+                __methodResult__.success("success");
             });
         }};
     }

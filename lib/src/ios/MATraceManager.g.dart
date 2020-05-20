@@ -60,7 +60,7 @@ class MATraceManager extends NSObject  {
           case 'Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':${args['distance']}])');
+              debugPrint('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':${args['distance']}])');
             }
         
             // handle the native call
@@ -69,7 +69,7 @@ class MATraceManager extends NSObject  {
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
+              debugPrint('fluttify-dart-callback: mapViewRequireLocationAuth([])');
             }
         
             // handle the native call
@@ -88,7 +88,7 @@ class MATraceManager extends NSObject  {
   static Future<MATraceManager> sharedInstance() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager::sharedInstance([])');
+      debugPrint('fluttify-dart: MATraceManager::sharedInstance([])');
     }
   
     // invoke native method
@@ -112,7 +112,7 @@ class MATraceManager extends NSObject  {
   Future<NSOperation> queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback(List<MATraceLocation> locations, AMapCoordinateType type, void processingCallback(int index, List<MATracePoint> points), void finishCallback(List<MATracePoint> points, double distance), void failedCallback(int errorCode, String errorDesc)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager@$refId::queryProcessedTraceWith([])');
+      debugPrint('fluttify-dart: MATraceManager@$refId::queryProcessedTraceWith([])');
     }
   
     // invoke native method
@@ -173,7 +173,7 @@ class MATraceManager extends NSObject  {
   Future<void> startTraceWith(void locCallback(List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error)) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager@$refId::startTraceWith([])');
+      debugPrint('fluttify-dart: MATraceManager@$refId::startTraceWith([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ class MATraceManager extends NSObject  {
   Future<void> stopTrace() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager@$refId::stopTrace([])');
+      debugPrint('fluttify-dart: MATraceManager@$refId::stopTrace([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ class MATraceManager extends NSObject  {
   Future<void> start() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager@$refId::start([])');
+      debugPrint('fluttify-dart: MATraceManager@$refId::start([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ class MATraceManager extends NSObject  {
   Future<void> stop() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MATraceManager@$refId::stop([])');
+      debugPrint('fluttify-dart: MATraceManager@$refId::stop([])');
     }
   
     // invoke native method

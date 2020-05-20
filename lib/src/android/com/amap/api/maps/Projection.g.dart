@@ -37,7 +37,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<android_graphics_PointF> toMapLocation(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::toMapLocation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::toMapLocation([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<android_graphics_PointF> toOpenGLLocation(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<double> toOpenGLWidth(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::getVisibleRegion([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::getVisibleRegion([])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -205,7 +205,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::getMapBounds([\'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::getMapBounds([\'var2\':$var2])');
     }
   
     // invoke native method
@@ -229,7 +229,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
   Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.Projection@$refId::getCameraInfo([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::getCameraInfo([])');
     }
   
     // invoke native method

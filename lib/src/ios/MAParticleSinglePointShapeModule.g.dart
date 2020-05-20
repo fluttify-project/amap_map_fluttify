@@ -55,7 +55,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   Future<MAParticleSinglePointShapeModule> initWithShapeX_Y_Z_useRatio(double x, double y, double z, bool isUseRatio) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
+      debugPrint('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
     }
   
     // invoke native method

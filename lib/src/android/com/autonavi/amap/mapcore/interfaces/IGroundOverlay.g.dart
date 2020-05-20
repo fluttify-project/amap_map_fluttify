@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPosition([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getPosition([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setDimensions__double(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setDimensions([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setDimensions([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setDimensions__double__double(double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setDimensions([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setDimensions([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getWidth([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getHeight([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getHeight([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPositionFromBounds([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setPositionFromBounds([])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBounds([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBounds([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setBearing(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setBearing([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setBearing([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getBearing() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBearing([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getBearing([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setTransparency(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setTransparency([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setTransparency([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<double> getTransparency() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getTransparency([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::getTransparency([])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_m
   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setImage([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IGroundOverlay@$refId::setImage([])');
     }
   
     // invoke native method

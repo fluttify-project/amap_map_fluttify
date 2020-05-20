@@ -55,7 +55,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> data(List<com_amap_api_maps_model_LatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::data([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::data([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> weightedData(List<com_amap_api_maps_model_WeightedLatLng> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::weightedData([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::weightedData([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> radius(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::radius([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::radius([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> gradient(com_amap_api_maps_model_Gradient var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::gradient([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::gradient([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider_Builder> transparency(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::transparency([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::transparency([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_HeatmapTileProvider_Builder extends java_lang_Obje
   Future<com_amap_api_maps_model_HeatmapTileProvider> build() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.HeatmapTileProvider.Builder@$refId::build([])');
     }
   
     // invoke native method

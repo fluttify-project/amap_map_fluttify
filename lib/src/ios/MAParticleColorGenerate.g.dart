@@ -24,7 +24,7 @@ mixin MAParticleColorGenerate on NSObject {
   Future<NSValue/* float* */> getColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleColorGenerate@$refId::getColor([])');
+      debugPrint('fluttify-dart: MAParticleColorGenerate@$refId::getColor([])');
     }
   
     // invoke native method

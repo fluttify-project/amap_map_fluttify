@@ -1,3 +1,7 @@
+## 0.22.3
+- roll engine #ee5b257c
+- docs: 配置key的说明
+
 ## 0.22.2
 - enhance: Marker添加修改icon的方法
 

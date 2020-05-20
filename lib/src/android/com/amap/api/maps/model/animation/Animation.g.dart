@@ -51,7 +51,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
     }
   
     // invoke native method
@@ -69,7 +69,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationStart([])');
+                debugPrint('fluttify-dart-callback: onAnimationStart([])');
               }
         
               // handle the native call
@@ -78,7 +78,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onAnimationEnd([])');
+                debugPrint('fluttify-dart-callback: onAnimationEnd([])');
               }
         
               // handle the native call
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<void> setDuration(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<void> setFillMode(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<int> getFillMode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getFillMode([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getFillMode([])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<void> setRepeatCount(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<void> setRepeatMode(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<int> getRepeatMode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode([])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_animation_Animation extends java_lang_Object  {
   Future<int> getRepeatCount() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount([])');
     }
   
     // invoke native method

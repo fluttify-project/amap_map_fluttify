@@ -56,7 +56,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   static Future<int> getNearstSize2N(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -80,7 +80,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   Future<Uint8List> getTextPixelBuffer(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -104,7 +104,7 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends java_lang_Obj
   Future<Uint8List> getCharsWidths(Int32List var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
     }
   
     // invoke native method

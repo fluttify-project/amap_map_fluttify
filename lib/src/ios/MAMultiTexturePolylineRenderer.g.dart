@@ -77,7 +77,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   Future<MAMultiTexturePolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::initWithMultiPolyline([])');
+      debugPrint('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::initWithMultiPolyline([])');
     }
   
     // invoke native method
@@ -101,7 +101,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   Future<bool> loadStrokeTextureImages(List<NSObject> textureImages) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::loadStrokeTextureImages([])');
+      debugPrint('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::loadStrokeTextureImages([])');
     }
   
     // invoke native method

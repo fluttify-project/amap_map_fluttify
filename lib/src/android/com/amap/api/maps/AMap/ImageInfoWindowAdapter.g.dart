@@ -24,7 +24,7 @@ mixin com_amap_api_maps_AMap_ImageInfoWindowAdapter on com_amap_api_maps_AMap_In
   Future<int> getInfoWindowUpdateTime() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMap.ImageInfoWindowAdapter@$refId::getInfoWindowUpdateTime([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap.ImageInfoWindowAdapter@$refId::getInfoWindowUpdateTime([])');
     }
   
     // invoke native method

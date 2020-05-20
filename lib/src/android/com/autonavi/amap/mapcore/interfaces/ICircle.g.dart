@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setCenter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setCenter([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getCenter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getCenter([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setRadius(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setRadius([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setRadius([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<double> getRadius() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getRadius([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getRadius([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setStrokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setStrokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setStrokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setFillColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setFillColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setFillColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getFillColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getFillColor([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getFillColor([])');
     }
   
     // invoke native method
@@ -264,7 +264,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::contains([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::contains([])');
     }
   
     // invoke native method
@@ -288,7 +288,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setHoleOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setHoleOptions([])');
     }
   
     // invoke native method
@@ -312,7 +312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getHoleOptions([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getHoleOptions([])');
     }
   
     // invoke native method
@@ -336,7 +336,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<int> getDottedLineType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getDottedLineType([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getDottedLineType([])');
     }
   
     // invoke native method
@@ -360,7 +360,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   Future<void> setDottedLineType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setDottedLineType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::setDottedLineType([\'var1\':$var1])');
     }
   
     // invoke native method

@@ -66,7 +66,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   static Future<com_amap_api_maps_model_LatLngBounds_Builder> builder() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds::builder([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds::builder([])');
     }
   
     // invoke native method
@@ -90,7 +90,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   Future<bool> contains__com_amap_api_maps_model_LatLng(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
     }
   
     // invoke native method
@@ -114,7 +114,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   Future<bool> contains__com_amap_api_maps_model_LatLngBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::contains([])');
     }
   
     // invoke native method
@@ -138,7 +138,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   Future<bool> intersects(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::intersects([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::intersects([])');
     }
   
     // invoke native method
@@ -162,7 +162,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   Future<com_amap_api_maps_model_LatLngBounds> including(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::including([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.LatLngBounds@$refId::including([])');
     }
   
     // invoke native method

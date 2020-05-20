@@ -24,7 +24,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   Future<bool> canDismiss(Object var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::canDismiss([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::canDismiss([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   Future<void> onDismiss(android_view_View var1, Object var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onDismiss([\'var2\':$var2])');
+      debugPrint('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onDismiss([\'var2\':$var2])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks on java_lang_
   Future<void> onNotifySwipe() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onNotifySwipe([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks@$refId::onNotifySwipe([])');
     }
   
     // invoke native method

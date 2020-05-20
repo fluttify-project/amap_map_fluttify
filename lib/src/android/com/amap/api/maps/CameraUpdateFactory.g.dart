@@ -55,7 +55,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> zoomIn() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomIn([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomIn([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> zoomOut() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomOut([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomOut([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> scrollBy(double var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::scrollBy([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::scrollBy([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> zoomTo(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomTo([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomTo([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> zoomBy__double(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomBy([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomBy([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> zoomBy__double__android_graphics_Point(double var0, android_graphics_Point var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomBy([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::zoomBy([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newCameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newCameraPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newCameraPosition([])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newLatLng(com_amap_api_maps_model_LatLng var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLng([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLng([])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int(com_amap_api_maps_model_LatLngBounds var0, int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> changeLatLng(com_amap_api_maps_model_LatLng var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeLatLng([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeLatLng([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> changeBearing(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearing([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearing([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(double var0, com_autonavi_amap_mapcore_IPoint var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> changeTilt(double var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeTilt([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeTilt([\'var0\':$var0])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int(com_amap_api_maps_model_LatLngBounds var0, int var1, int var2, int var3) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBounds([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBoundsRect(com_amap_api_maps_model_LatLngBounds var0, int var1, int var2, int var3, int var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
     }
   
     // invoke native method

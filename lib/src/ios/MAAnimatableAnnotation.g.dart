@@ -24,7 +24,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<void> step(double timeDelta) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatableAnnotation@$refId::step([\'timeDelta\':$timeDelta])');
+      debugPrint('fluttify-dart: MAAnimatableAnnotation@$refId::step([\'timeDelta\':$timeDelta])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<bool> isAnimationFinished() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatableAnnotation@$refId::isAnimationFinished([])');
+      debugPrint('fluttify-dart: MAAnimatableAnnotation@$refId::isAnimationFinished([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<bool> shouldAnimationStart() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatableAnnotation@$refId::shouldAnimationStart([])');
+      debugPrint('fluttify-dart: MAAnimatableAnnotation@$refId::shouldAnimationStart([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin MAAnimatableAnnotation on NSObject {
   Future<double> rotateDegree() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAAnimatableAnnotation@$refId::rotateDegree([])');
+      debugPrint('fluttify-dart: MAAnimatableAnnotation@$refId::rotateDegree([])');
     }
   
     // invoke native method

@@ -62,7 +62,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> logoPosition(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::logoPosition([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::logoPosition([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -86,7 +86,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> zOrderOnTop(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zOrderOnTop([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zOrderOnTop([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -110,7 +110,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> mapType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::mapType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::mapType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -134,7 +134,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> camera(com_amap_api_maps_model_CameraPosition var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::camera([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::camera([])');
     }
   
     // invoke native method
@@ -158,7 +158,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> scaleControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scaleControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scaleControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -182,7 +182,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> zoomControlsEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomControlsEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomControlsEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -206,7 +206,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> compassEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::compassEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::compassEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -230,7 +230,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> scrollGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scrollGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scrollGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -254,7 +254,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> zoomGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -278,7 +278,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> tiltGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::tiltGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::tiltGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -302,7 +302,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_AMapOptions> rotateGesturesEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::rotateGesturesEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::rotateGesturesEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -326,7 +326,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<int> getLogoPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getLogoPosition([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getLogoPosition([])');
     }
   
     // invoke native method
@@ -350,7 +350,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getZOrderOnTop() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZOrderOnTop([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZOrderOnTop([])');
     }
   
     // invoke native method
@@ -374,7 +374,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<int> getMapType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getMapType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getMapType([])');
     }
   
     // invoke native method
@@ -398,7 +398,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<com_amap_api_maps_model_CameraPosition> getCamera() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCamera([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCamera([])');
     }
   
     // invoke native method
@@ -422,7 +422,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getScaleControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScaleControlsEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScaleControlsEnabled([])');
     }
   
     // invoke native method
@@ -446,7 +446,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getZoomControlsEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomControlsEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomControlsEnabled([])');
     }
   
     // invoke native method
@@ -470,7 +470,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getCompassEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCompassEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCompassEnabled([])');
     }
   
     // invoke native method
@@ -494,7 +494,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getScrollGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScrollGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScrollGesturesEnabled([])');
     }
   
     // invoke native method
@@ -518,7 +518,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getZoomGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomGesturesEnabled([])');
     }
   
     // invoke native method
@@ -542,7 +542,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getTiltGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getTiltGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getTiltGesturesEnabled([])');
     }
   
     // invoke native method
@@ -566,7 +566,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
   Future<bool> getRotateGesturesEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getRotateGesturesEnabled([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getRotateGesturesEnabled([])');
     }
   
     // invoke native method

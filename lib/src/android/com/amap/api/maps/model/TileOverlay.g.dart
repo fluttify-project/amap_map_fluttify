@@ -37,7 +37,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<void> clearTileCache() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -157,7 +157,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -181,7 +181,7 @@ class com_amap_api_maps_model_TileOverlay extends java_lang_Object  {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
     }
   
     // invoke native method

@@ -74,7 +74,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<com_amap_api_maps_AMap> getMap({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::getMap([])');
     }
   
     // invoke native method
@@ -98,7 +98,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onCreate(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
     }
   
     // invoke native method
@@ -122,7 +122,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onResume({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
     }
   
     // invoke native method
@@ -146,7 +146,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onPause({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
     }
   
     // invoke native method
@@ -170,7 +170,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onDestroy({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
     }
   
     // invoke native method
@@ -194,7 +194,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onLowMemory({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
     }
   
     // invoke native method
@@ -218,7 +218,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onSaveInstanceState(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
     }
   
     // invoke native method
@@ -242,7 +242,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> setVisibility(int var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -266,7 +266,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
     }
   
     // invoke native method
@@ -284,7 +284,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDismiss([])');
+                debugPrint('fluttify-dart-callback: onDismiss([])');
               }
         
               // handle the native call
@@ -293,7 +293,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onNotifySwipe([])');
+                debugPrint('fluttify-dart-callback: onNotifySwipe([])');
               }
         
               // handle the native call
@@ -318,7 +318,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onDismiss({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
     }
   
     // invoke native method
@@ -342,7 +342,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onEnterAmbient(android_os_Bundle var1, {bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
     }
   
     // invoke native method
@@ -366,7 +366,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   Future<void> onExitAmbient({bool viewChannel = true}) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
     }
   
     // invoke native method

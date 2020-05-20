@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<void> remove() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::remove([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::remove([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<void> destroy(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::destroy([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::destroy([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<void> clearTileCache() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::clearTileCache([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::clearTileCache([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<String> getId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getId([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getId([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<void> setZIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -168,7 +168,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setVisible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setVisible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -192,7 +192,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -216,7 +216,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::equalsRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::equalsRemote([])');
     }
   
     // invoke native method
@@ -240,7 +240,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   Future<int> hashCodeRemote() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::hashCodeRemote([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::hashCodeRemote([])');
     }
   
     // invoke native method

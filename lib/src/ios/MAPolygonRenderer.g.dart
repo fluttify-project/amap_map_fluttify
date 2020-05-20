@@ -60,7 +60,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   Future<MAPolygonRenderer> initWithPolygon(MAPolygon polygon) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAPolygonRenderer@$refId::initWithPolygon([])');
+      debugPrint('fluttify-dart: MAPolygonRenderer@$refId::initWithPolygon([])');
     }
   
     // invoke native method

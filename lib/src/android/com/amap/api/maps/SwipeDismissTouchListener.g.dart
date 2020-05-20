@@ -57,7 +57,7 @@ class com_amap_api_maps_SwipeDismissTouchListener extends java_lang_Object with 
   Future<bool> onTouch(android_view_View var1, android_view_MotionEvent var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener@$refId::onTouch([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener@$refId::onTouch([])');
     }
   
     // invoke native method

@@ -299,7 +299,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: onFinish([])');
+              debugPrint('fluttify-dart-callback: onFinish([])');
             }
         
             // handle the native call
@@ -308,7 +308,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
           case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
             // print log
             if (fluttifyLogEnabled) {
-              print('fluttify-dart-callback: onCancel([])');
+              debugPrint('fluttify-dart-callback: onCancel([])');
             }
         
             // handle the native call
@@ -345,7 +345,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
     }
   
     // invoke native method
@@ -369,7 +369,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
     }
   
     // invoke native method
@@ -393,7 +393,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
     }
   
     // invoke native method

@@ -37,7 +37,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
   Future<void> setAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setAngle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setAngle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -61,7 +61,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
   Future<double> getAngle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getAngle([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::getAngle([])');
     }
   
     // invoke native method
@@ -85,7 +85,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
   Future<void> setModelFixedLength(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setModelFixedLength([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setModelFixedLength([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ class com_amap_api_maps_model_GL3DModel extends com_amap_api_maps_model_BasePoin
   Future<void> setZoomLimit(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setZoomLimit([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.GL3DModel@$refId::setZoomLimit([\'var1\':$var1])');
     }
   
     // invoke native method

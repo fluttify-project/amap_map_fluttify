@@ -24,7 +24,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraPosition([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraPosition([])');
     }
   
     // invoke native method
@@ -48,7 +48,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getMaxZoomLevel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMaxZoomLevel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMaxZoomLevel([])');
     }
   
     // invoke native method
@@ -72,7 +72,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getMinZoomLevel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMinZoomLevel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMinZoomLevel([])');
     }
   
     // invoke native method
@@ -96,7 +96,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> moveCamera(com_amap_api_maps_CameraUpdate var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::moveCamera([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::moveCamera([])');
     }
   
     // invoke native method
@@ -120,7 +120,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> animateCamera(com_amap_api_maps_CameraUpdate var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCamera([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCamera([])');
     }
   
     // invoke native method
@@ -144,7 +144,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> animateCameraWithCallback(com_amap_api_maps_CameraUpdate var1, com_amap_api_maps_AMap_CancelableCallback var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithCallback([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithCallback([])');
     }
   
     // invoke native method
@@ -162,7 +162,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFinish([])');
+                debugPrint('fluttify-dart-callback: onFinish([])');
               }
         
               // handle the native call
@@ -171,7 +171,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onCancel([])');
+                debugPrint('fluttify-dart-callback: onCancel([])');
               }
         
               // handle the native call
@@ -196,7 +196,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> animateCameraWithDurationAndCallback(com_amap_api_maps_CameraUpdate var1, int var2, com_amap_api_maps_AMap_CancelableCallback var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithDurationAndCallback([\'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::animateCameraWithDurationAndCallback([\'var2\':$var2])');
     }
   
     // invoke native method
@@ -214,7 +214,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFinish([])');
+                debugPrint('fluttify-dart-callback: onFinish([])');
               }
         
               // handle the native call
@@ -223,7 +223,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onCancel([])');
+                debugPrint('fluttify-dart-callback: onCancel([])');
               }
         
               // handle the native call
@@ -248,7 +248,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> stopAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::stopAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::stopAnimation([])');
     }
   
     // invoke native method
@@ -272,7 +272,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_NavigateArrow> addNavigateArrow(com_amap_api_maps_model_NavigateArrowOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNavigateArrow([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNavigateArrow([])');
     }
   
     // invoke native method
@@ -296,7 +296,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Polyline> addPolyline(com_amap_api_maps_model_PolylineOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolyline([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolyline([])');
     }
   
     // invoke native method
@@ -320,7 +320,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Circle> addCircle(com_amap_api_maps_model_CircleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCircle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCircle([])');
     }
   
     // invoke native method
@@ -344,7 +344,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Arc> addArc(com_amap_api_maps_model_ArcOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addArc([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addArc([])');
     }
   
     // invoke native method
@@ -368,7 +368,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Polygon> addPolygon(com_amap_api_maps_model_PolygonOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolygon([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addPolygon([])');
     }
   
     // invoke native method
@@ -392,7 +392,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_GroundOverlay> addGroundOverlay(com_amap_api_maps_model_GroundOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGroundOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGroundOverlay([])');
     }
   
     // invoke native method
@@ -416,7 +416,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_MultiPointOverlay> addMultiPointOverlay(com_amap_api_maps_model_MultiPointOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMultiPointOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMultiPointOverlay([])');
     }
   
     // invoke native method
@@ -440,7 +440,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Marker> addMarker(com_amap_api_maps_model_MarkerOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarker([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarker([])');
     }
   
     // invoke native method
@@ -464,7 +464,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<List<com_amap_api_maps_model_Marker>> addMarkers(List<com_amap_api_maps_model_MarkerOptions> var1, bool var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarkers([\'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addMarkers([\'var2\':$var2])');
     }
   
     // invoke native method
@@ -488,7 +488,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_Text> addText(com_amap_api_maps_model_TextOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addText([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addText([])');
     }
   
     // invoke native method
@@ -512,7 +512,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addTileOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addTileOverlay([])');
     }
   
     // invoke native method
@@ -536,7 +536,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> clear() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::clear([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::clear([])');
     }
   
     // invoke native method
@@ -560,7 +560,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> clear__bool(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::clear([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::clear([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -584,7 +584,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapType([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapType([])');
     }
   
     // invoke native method
@@ -608,7 +608,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -632,7 +632,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isTrafficEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isTrafficEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isTrafficEnabled([])');
     }
   
     // invoke native method
@@ -656,7 +656,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setTrafficEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setTrafficEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setTrafficEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -680,7 +680,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isIndoorEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isIndoorEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isIndoorEnabled([])');
     }
   
     // invoke native method
@@ -704,7 +704,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setIndoorEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -728,7 +728,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> set3DBuildingEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::set3DBuildingEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::set3DBuildingEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -752,7 +752,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isMyLocationEnabled() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMyLocationEnabled([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMyLocationEnabled([])');
     }
   
     // invoke native method
@@ -776,7 +776,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationEnabled(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationEnabled([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationEnabled([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -800,7 +800,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setLoadOfflineData(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLoadOfflineData([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLoadOfflineData([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -824,7 +824,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationStyle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationStyle([])');
     }
   
     // invoke native method
@@ -848,7 +848,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -872,7 +872,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<List<com_amap_api_maps_model_Marker>> getMapScreenMarkers() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenMarkers([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenMarkers([])');
     }
   
     // invoke native method
@@ -896,7 +896,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapTextEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -920,7 +920,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRoadArrowEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRoadArrowEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRoadArrowEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -944,7 +944,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyTrafficStyle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyTrafficStyle([])');
     }
   
     // invoke native method
@@ -968,7 +968,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<android_location_Location> getMyLocation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocation([])');
     }
   
     // invoke native method
@@ -992,7 +992,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setLocationSource(com_amap_api_maps_LocationSource var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLocationSource([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setLocationSource([])');
     }
   
     // invoke native method
@@ -1016,7 +1016,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationRotateAngle(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationRotateAngle([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMyLocationRotateAngle([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1040,7 +1040,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_UiSettings> getAMapUiSettings() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapUiSettings([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapUiSettings([])');
     }
   
     // invoke native method
@@ -1064,7 +1064,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_Projection> getAMapProjection() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapProjection([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getAMapProjection([])');
     }
   
     // invoke native method
@@ -1088,7 +1088,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnCameraChangeListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnCameraChangeListener([])');
     }
   
     // invoke native method
@@ -1106,7 +1106,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onCameraChange([])');
+                debugPrint('fluttify-dart-callback: onCameraChange([])');
               }
         
               // handle the native call
@@ -1115,7 +1115,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onCameraChangeFinish([])');
+                debugPrint('fluttify-dart-callback: onCameraChangeFinish([])');
               }
         
               // handle the native call
@@ -1140,7 +1140,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapClickListener([])');
     }
   
     // invoke native method
@@ -1158,7 +1158,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapClick([])');
+                debugPrint('fluttify-dart-callback: onMapClick([])');
               }
         
               // handle the native call
@@ -1183,7 +1183,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapTouchListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapTouchListener([])');
     }
   
     // invoke native method
@@ -1201,7 +1201,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onTouch([])');
+                debugPrint('fluttify-dart-callback: onTouch([])');
               }
         
               // handle the native call
@@ -1226,7 +1226,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapLongClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMapLongClickListener([])');
     }
   
     // invoke native method
@@ -1244,7 +1244,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapLongClick([])');
+                debugPrint('fluttify-dart-callback: onMapLongClick([])');
               }
         
               // handle the native call
@@ -1269,7 +1269,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerClickListener([])');
     }
   
     // invoke native method
@@ -1287,7 +1287,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMarkerClick([])');
+                debugPrint('fluttify-dart-callback: onMarkerClick([])');
               }
         
               // handle the native call
@@ -1312,7 +1312,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPolylineClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPolylineClickListener([])');
     }
   
     // invoke native method
@@ -1330,7 +1330,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onPolylineClick([])');
+                debugPrint('fluttify-dart-callback: onPolylineClick([])');
               }
         
               // handle the native call
@@ -1355,7 +1355,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerDragListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMarkerDragListener([])');
     }
   
     // invoke native method
@@ -1373,7 +1373,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMarkerDragStart([])');
+                debugPrint('fluttify-dart-callback: onMarkerDragStart([])');
               }
         
               // handle the native call
@@ -1382,7 +1382,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMarkerDrag([])');
+                debugPrint('fluttify-dart-callback: onMarkerDrag([])');
               }
         
               // handle the native call
@@ -1391,7 +1391,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMarkerDragEnd([])');
+                debugPrint('fluttify-dart-callback: onMarkerDragEnd([])');
               }
         
               // handle the native call
@@ -1416,7 +1416,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMaploadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMaploadedListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMaploadedListener([])');
     }
   
     // invoke native method
@@ -1434,7 +1434,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapLoaded([])');
+                debugPrint('fluttify-dart-callback: onMapLoaded([])');
               }
         
               // handle the native call
@@ -1459,7 +1459,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnInfoWindowClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnInfoWindowClickListener([])');
     }
   
     // invoke native method
@@ -1477,7 +1477,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onInfoWindowClick([])');
+                debugPrint('fluttify-dart-callback: onInfoWindowClick([])');
               }
         
               // handle the native call
@@ -1502,7 +1502,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMyLocationChangeListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMyLocationChangeListener([])');
     }
   
     // invoke native method
@@ -1520,7 +1520,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMyLocationChange([])');
+                debugPrint('fluttify-dart-callback: onMyLocationChange([])');
               }
         
               // handle the native call
@@ -1545,7 +1545,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPOIClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnPOIClickListener([])');
     }
   
     // invoke native method
@@ -1563,7 +1563,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onPOIClick([])');
+                debugPrint('fluttify-dart-callback: onPOIClick([])');
               }
         
               // handle the native call
@@ -1588,7 +1588,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_InfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter([])');
     }
   
     // invoke native method
@@ -1612,7 +1612,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setInfoWindowAdapter__com_amap_api_maps_AMap_CommonInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter([])');
     }
   
     // invoke native method
@@ -1630,7 +1630,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: getInfoWindowParams([])');
+                debugPrint('fluttify-dart-callback: getInfoWindowParams([])');
               }
         
               // handle the native call
@@ -1655,7 +1655,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnIndoorBuildingActiveListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnIndoorBuildingActiveListener([])');
     }
   
     // invoke native method
@@ -1673,7 +1673,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: OnIndoorBuilding([])');
+                debugPrint('fluttify-dart-callback: OnIndoorBuilding([])');
               }
         
               // handle the native call
@@ -1698,7 +1698,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapPrintScreen([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapPrintScreen([])');
     }
   
     // invoke native method
@@ -1716,7 +1716,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapPrint([])');
+                debugPrint('fluttify-dart-callback: onMapPrint([])');
               }
         
               // handle the native call
@@ -1741,7 +1741,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenShot([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapScreenShot([])');
     }
   
     // invoke native method
@@ -1759,7 +1759,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap([])');
+                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap([])');
               }
         
               // handle the native call
@@ -1768,7 +1768,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1793,7 +1793,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getScalePerPixel() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getScalePerPixel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getScalePerPixel([])');
     }
   
     // invoke native method
@@ -1817,7 +1817,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRunLowFrame(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRunLowFrame([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRunLowFrame([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1841,7 +1841,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> removecache() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removecache([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removecache([])');
     }
   
     // invoke native method
@@ -1865,7 +1865,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> removecache__com_amap_api_maps_AMap_OnCacheRemoveListener(com_amap_api_maps_AMap_OnCacheRemoveListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removecache([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removecache([])');
     }
   
     // invoke native method
@@ -1883,7 +1883,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onRemoveCacheFinish([\'var1\':${args['var1']}])');
+                debugPrint('fluttify-dart-callback: onRemoveCacheFinish([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1908,7 +1908,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCenterToPixel(int var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCenterToPixel([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCenterToPixel([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -1932,7 +1932,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapTextZIndex(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextZIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapTextZIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -1956,7 +1956,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapTextZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapTextZIndex([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapTextZIndex([])');
     }
   
     // invoke native method
@@ -1980,7 +1980,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> reloadMap() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::reloadMap([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::reloadMap([])');
     }
   
     // invoke native method
@@ -2004,7 +2004,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRenderFps(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderFps([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderFps([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2028,7 +2028,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorBuildingInfo([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setIndoorBuildingInfo([])');
     }
   
     // invoke native method
@@ -2052,7 +2052,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setAMapGestureListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setAMapGestureListener([])');
     }
   
     // invoke native method
@@ -2070,7 +2070,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDoubleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onDoubleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2079,7 +2079,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onSingleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onSingleTap([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2088,7 +2088,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onFling':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFling([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onFling([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2097,7 +2097,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onScroll':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onScroll([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onScroll([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2106,7 +2106,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onLongPress([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onLongPress([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2115,7 +2115,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDown':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDown([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onDown([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2124,7 +2124,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onUp':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onUp([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onUp([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -2133,7 +2133,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onMapStable([])');
+                debugPrint('fluttify-dart-callback: onMapStable([])');
               }
         
               // handle the native call
@@ -2158,7 +2158,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getZoomToSpanLevel(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getZoomToSpanLevel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getZoomToSpanLevel([])');
     }
   
     // invoke native method
@@ -2182,7 +2182,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getInfoWindowAnimationManager([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getInfoWindowAnimationManager([])');
     }
   
     // invoke native method
@@ -2206,7 +2206,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaskLayerParams([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaskLayerParams([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
     }
   
     // invoke native method
@@ -2230,7 +2230,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMaxZoomLevel(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaxZoomLevel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMaxZoomLevel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2254,7 +2254,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMinZoomLevel(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMinZoomLevel([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMinZoomLevel([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2278,7 +2278,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> resetMinMaxZoomPreference() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetMinMaxZoomPreference([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetMinMaxZoomPreference([])');
     }
   
     // invoke native method
@@ -2302,7 +2302,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapStatusLimits([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapStatusLimits([])');
     }
   
     // invoke native method
@@ -2326,7 +2326,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStylePath(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStylePath([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStylePath([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2350,7 +2350,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapCustomEnable(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapCustomEnable([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapCustomEnable([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2374,7 +2374,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onChangeFinish() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onChangeFinish([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onChangeFinish([])');
     }
   
     // invoke native method
@@ -2398,7 +2398,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setZoomScaleParam(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZoomScaleParam([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZoomScaleParam([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2422,7 +2422,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onFling() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onFling([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onFling([])');
     }
   
     // invoke native method
@@ -2446,7 +2446,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapWidth([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapWidth([])');
     }
   
     // invoke native method
@@ -2470,7 +2470,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getMapHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapHeight([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapHeight([])');
     }
   
     // invoke native method
@@ -2494,7 +2494,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getCameraAngle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraAngle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCameraAngle([])');
     }
   
     // invoke native method
@@ -2518,7 +2518,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<double> getSkyHeight() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSkyHeight([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSkyHeight([])');
     }
   
     // invoke native method
@@ -2542,7 +2542,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> isMaploaded() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMaploaded([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::isMaploaded([])');
     }
   
     // invoke native method
@@ -2566,7 +2566,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_autonavi_amap_mapcore_MapConfig> getMapConfig() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapConfig([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapConfig([])');
     }
   
     // invoke native method
@@ -2590,7 +2590,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<android_view_View> getView() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getView([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getView([])');
     }
   
     // invoke native method
@@ -2614,7 +2614,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setZOrderOnTop(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZOrderOnTop([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setZOrderOnTop([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2638,7 +2638,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroy([])');
     }
   
     // invoke native method
@@ -2662,7 +2662,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setVisibilityEx(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setVisibilityEx([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setVisibilityEx([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2686,7 +2686,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onActivityPause() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityPause([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityPause([])');
     }
   
     // invoke native method
@@ -2710,7 +2710,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onActivityResume() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityResume([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onActivityResume([])');
     }
   
     // invoke native method
@@ -2734,7 +2734,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> createGLOverlay(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::createGLOverlay([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::createGLOverlay([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2758,7 +2758,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getGlOverlayMgrPtr() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getGlOverlayMgrPtr([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getGlOverlayMgrPtr([])');
     }
   
     // invoke native method
@@ -2782,7 +2782,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CrossOverlay> addCrossVector(com_amap_api_maps_model_CrossOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCrossVector([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addCrossVector([])');
     }
   
     // invoke native method
@@ -2806,7 +2806,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNaviRouteOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addNaviRouteOverlay([])');
     }
   
     // invoke native method
@@ -2830,7 +2830,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<Float64List> getViewMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getViewMatrix([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getViewMatrix([])');
     }
   
     // invoke native method
@@ -2854,7 +2854,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<Float64List> getProjectionMatrix() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getProjectionMatrix([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getProjectionMatrix([])');
     }
   
     // invoke native method
@@ -2878,7 +2878,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addOverlayTexture([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addOverlayTexture([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2902,7 +2902,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> onTouchEvent(android_view_MotionEvent var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onTouchEvent([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onTouchEvent([])');
     }
   
     // invoke native method
@@ -2926,7 +2926,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<bool> canStopMapRender() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::canStopMapRender([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::canStopMapRender([])');
     }
   
     // invoke native method
@@ -2950,7 +2950,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomTextureResourcePath(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -2974,7 +2974,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_MyLocationStyle> getMyLocationStyle() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocationStyle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMyLocationStyle([])');
     }
   
     // invoke native method
@@ -2998,7 +2998,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<int> getRenderMode() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getRenderMode([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getRenderMode([])');
     }
   
     // invoke native method
@@ -3022,7 +3022,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> destroySurface(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroySurface([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::destroySurface([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -3046,7 +3046,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> requestRender() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::requestRender([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::requestRender([])');
     }
   
     // invoke native method
@@ -3070,7 +3070,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> resetRenderTime() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetRenderTime([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::resetRenderTime([])');
     }
   
     // invoke native method
@@ -3094,7 +3094,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> onIndoorBuildingActivity(int var1, Uint8List var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::onIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -3118,7 +3118,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCamerInfo([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getCamerInfo([])');
     }
   
     // invoke native method
@@ -3142,7 +3142,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> checkMapState(com_autonavi_ae_gmap_GLMapState var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::checkMapState([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::checkMapState([])');
     }
   
     // invoke native method
@@ -3166,7 +3166,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setRenderMode(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderMode([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setRenderMode([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -3190,7 +3190,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMultiPointClickListener([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setOnMultiPointClickListener([])');
     }
   
     // invoke native method
@@ -3208,7 +3208,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
             case 'Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onPointClick([])');
+                debugPrint('fluttify-dart-callback: onPointClick([])');
               }
         
               // handle the native call
@@ -3233,7 +3233,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<String> getMapContentApprovalNumber() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapContentApprovalNumber([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getMapContentApprovalNumber([])');
     }
   
     // invoke native method
@@ -3257,7 +3257,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<String> getSatelliteImageApprovalNumber() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSatelliteImageApprovalNumber([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::getSatelliteImageApprovalNumber([])');
     }
   
     // invoke native method
@@ -3281,7 +3281,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMapLanguage(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapLanguage([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setMapLanguage([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -3305,7 +3305,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStyleID(String var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyleID([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyleID([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -3329,7 +3329,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_BuildingOverlay> addBuildingOverlay() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addBuildingOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addBuildingOverlay([])');
     }
   
     // invoke native method
@@ -3353,7 +3353,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_GL3DModel> addGLModel(com_amap_api_maps_model_GL3DModelOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGLModel([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addGLModel([])');
     }
   
     // invoke native method
@@ -3377,7 +3377,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_particle_ParticleOverlay> addParticleOverlay(com_amap_api_maps_model_particle_ParticleOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addParticleOverlay([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::addParticleOverlay([])');
     }
   
     // invoke native method
@@ -3401,7 +3401,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyle([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomMapStyle([])');
     }
   
     // invoke native method

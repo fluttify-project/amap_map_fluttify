@@ -84,7 +84,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   static Future<com_amap_api_maps_model_CameraPosition> fromLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::fromLatLngZoom([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CameraPosition::fromLatLngZoom([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -108,7 +108,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   static Future<com_amap_api_maps_model_CameraPosition_Builder> builder() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
     }
   
     // invoke native method
@@ -132,7 +132,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
   static Future<com_amap_api_maps_model_CameraPosition_Builder> builder__com_amap_api_maps_model_CameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CameraPosition::builder([])');
     }
   
     // invoke native method

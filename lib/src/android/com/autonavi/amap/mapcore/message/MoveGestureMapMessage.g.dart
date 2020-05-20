@@ -77,7 +77,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
   static Future<com_autonavi_amap_mapcore_message_MoveGestureMapMessage> obtain(int var0, double var1, double var2) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
     }
   
     // invoke native method
@@ -101,7 +101,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends com_autona
   static Future<void> destory() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
     }
   
     // invoke native method

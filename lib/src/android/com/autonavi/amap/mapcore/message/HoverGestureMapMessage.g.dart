@@ -65,7 +65,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
   static Future<com_autonavi_amap_mapcore_message_HoverGestureMapMessage> obtain(int var0, double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\'var0\':$var0, \'var1\':$var1])');
     }
   
     // invoke native method
@@ -89,7 +89,7 @@ class com_autonavi_amap_mapcore_message_HoverGestureMapMessage extends com_auton
   static Future<void> destory() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::destory([])');
     }
   
     // invoke native method

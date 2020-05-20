@@ -55,7 +55,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::center([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::center([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> radius(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::radius([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::radius([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> strokeWidth(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -127,7 +127,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> strokeColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> fillColor(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::fillColor([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::fillColor([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -175,7 +175,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> zIndex(double var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -199,7 +199,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> visible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::visible([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::visible([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -223,7 +223,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getCenter([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getCenter([])');
     }
   
     // invoke native method
@@ -247,7 +247,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<double> getRadius() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getRadius([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getRadius([])');
     }
   
     // invoke native method
@@ -271,7 +271,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<double> getStrokeWidth() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth([])');
     }
   
     // invoke native method
@@ -295,7 +295,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<int> getStrokeColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor([])');
     }
   
     // invoke native method
@@ -319,7 +319,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<int> getFillColor() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getFillColor([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getFillColor([])');
     }
   
     // invoke native method
@@ -343,7 +343,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<double> getZIndex() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getZIndex([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getZIndex([])');
     }
   
     // invoke native method
@@ -367,7 +367,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<bool> isVisible() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isVisible([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isVisible([])');
     }
   
     // invoke native method
@@ -391,7 +391,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> addHoles__com_amap_api_maps_model_BaseHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
     }
   
     // invoke native method
@@ -415,7 +415,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> addHoles__List_com_amap_api_maps_model_BaseHoleOptions_(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
     }
   
     // invoke native method
@@ -439,7 +439,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getHoleOptions([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getHoleOptions([])');
     }
   
     // invoke native method
@@ -463,7 +463,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -487,7 +487,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   Future<int> getStrokeDottedLineType() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType([])');
     }
   
     // invoke native method

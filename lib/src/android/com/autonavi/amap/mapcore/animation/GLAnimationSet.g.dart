@@ -55,7 +55,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::addAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::addAnimation([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
   Future<List<com_autonavi_amap_mapcore_animation_GLAnimation>> getAnimations() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getAnimations([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::getAnimations([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimationSet extends com_autonavi_am
   Future<void> cleanAnimation() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::cleanAnimation([])');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::cleanAnimation([])');
     }
   
     // invoke native method

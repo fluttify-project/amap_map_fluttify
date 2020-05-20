@@ -55,7 +55,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   Future<String> getName() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getName([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getName([])');
     }
   
     // invoke native method
@@ -79,7 +79,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   Future<com_amap_api_maps_model_LatLng> getCoordinate() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getCoordinate([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getCoordinate([])');
     }
   
     // invoke native method
@@ -103,7 +103,7 @@ class com_amap_api_maps_model_Poi extends java_lang_Object with android_os_Parce
   Future<String> getPoiId() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getPoiId([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getPoiId([])');
     }
   
     // invoke native method

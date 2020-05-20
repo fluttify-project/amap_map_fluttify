@@ -83,7 +83,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   static Future<MACircle> circleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACircle::circleWithCenterCoordinate([\'radius\':$radius])');
+      debugPrint('fluttify-dart: MACircle::circleWithCenterCoordinate([\'radius\':$radius])');
     }
   
     // invoke native method
@@ -107,7 +107,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   static Future<MACircle> circleWithMapRect(MAMapRect mapRect) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACircle::circleWithMapRect([])');
+      debugPrint('fluttify-dart: MACircle::circleWithMapRect([])');
     }
   
     // invoke native method
@@ -131,7 +131,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
   Future<bool> setCircleWithCenterCoordinate_radius(CLLocationCoordinate2D coord, double radius) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACircle@$refId::setCircleWithCenterCoordinate([\'radius\':$radius])');
+      debugPrint('fluttify-dart: MACircle@$refId::setCircleWithCenterCoordinate([\'radius\':$radius])');
     }
   
     // invoke native method

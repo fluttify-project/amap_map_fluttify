@@ -60,7 +60,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   Future<MACustomBuildingOverlayRenderer> initWithCustomBuildingOverlay(MACustomBuildingOverlay customBuildingOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MACustomBuildingOverlayRenderer@$refId::initWithCustomBuildingOverlay([])');
+      debugPrint('fluttify-dart: MACustomBuildingOverlayRenderer@$refId::initWithCustomBuildingOverlay([])');
     }
   
     // invoke native method

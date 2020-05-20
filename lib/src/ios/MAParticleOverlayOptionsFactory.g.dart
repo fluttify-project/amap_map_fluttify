@@ -55,7 +55,7 @@ class MAParticleOverlayOptionsFactory extends NSObject  {
   static Future<List<MAParticleOverlayOptions>> particleOverlayOptionsWithType(MAParticleOverlayType particleType) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType([])');
+      debugPrint('fluttify-dart: MAParticleOverlayOptionsFactory::particleOverlayOptionsWithType([])');
     }
   
     // invoke native method

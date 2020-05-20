@@ -60,7 +60,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+      debugPrint('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
     }
   
     // invoke native method

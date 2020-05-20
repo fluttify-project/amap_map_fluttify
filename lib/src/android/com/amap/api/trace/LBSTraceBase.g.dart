@@ -24,7 +24,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
     }
   
     // invoke native method
@@ -42,7 +42,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onRequestFailed':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onRequestFailed([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onRequestFailed([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -51,7 +51,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onTraceProcessing':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onTraceProcessing([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onTraceProcessing([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -60,7 +60,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceListener::onFinished':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onFinished([\'var1\':${args['var1']}, \'var3\':${args['var3']}, \'var4\':${args['var4']}])');
+                debugPrint('fluttify-dart-callback: onFinished([\'var1\':${args['var1']}, \'var3\':${args['var3']}, \'var4\':${args['var4']}])');
               }
         
               // handle the native call
@@ -85,7 +85,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> setLocationInterval(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setLocationInterval([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setLocationInterval([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -109,7 +109,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> setTraceStatusInterval(int var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setTraceStatusInterval([\'var1\':$var1])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::setTraceStatusInterval([\'var1\':$var1])');
     }
   
     // invoke native method
@@ -133,7 +133,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::startTrace([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::startTrace([])');
     }
   
     // invoke native method
@@ -151,7 +151,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
             case 'Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onTraceStatus([\'var3\':${args['var3']}])');
+                debugPrint('fluttify-dart-callback: onTraceStatus([\'var3\':${args['var3']}])');
               }
         
               // handle the native call
@@ -176,7 +176,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> stopTrace() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::stopTrace([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::stopTrace([])');
     }
   
     // invoke native method
@@ -200,7 +200,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   Future<void> destroy() async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::destroy([])');
+      debugPrint('fluttify-dart: com.amap.api.trace.LBSTraceBase@$refId::destroy([])');
     }
   
     // invoke native method

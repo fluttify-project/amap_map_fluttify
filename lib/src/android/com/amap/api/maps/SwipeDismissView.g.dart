@@ -55,7 +55,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   Future<void> setCallback(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // print log
     if (fluttifyLogEnabled) {
-      print('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
     }
   
     // invoke native method
@@ -73,7 +73,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onDismiss([])');
+                debugPrint('fluttify-dart-callback: onDismiss([])');
               }
         
               // handle the native call
@@ -82,7 +82,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe':
               // print log
               if (fluttifyLogEnabled) {
-                print('fluttify-dart-callback: onNotifySwipe([])');
+                debugPrint('fluttify-dart-callback: onNotifySwipe([])');
               }
         
               // handle the native call
