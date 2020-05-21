@@ -1078,8 +1078,7 @@ public class SubHandler4 {
             // method
             put("com.autonavi.ae.gmap.GLMapEngine::setMapListener", (__args__, __methodResult__) -> {
                 // args
-                // ref arg
-                com.autonavi.amap.mapcore.interfaces.IAMapListener var1 = (com.autonavi.amap.mapcore.interfaces.IAMapListener) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -1087,12 +1086,167 @@ public class SubHandler4 {
             
                 // print log
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapListener(" + var1 + ")");
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::setMapListener(" + "" + ")");
                 }
             
                 // invoke native method
                 try {
-                    ref.setMapListener(var1);
+                    ref.setMapListener(new com.autonavi.amap.mapcore.interfaces.IAMapListener() {
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
+            
+                    // call dart method
+                    @Override
+                    public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
+                        }
+            
+                        // convert to jsonable data
+                        // jsonable arg
+                        int argvar1 = var1;
+                        // ref arg
+                        final Integer argvar2;
+                        if (var2 != null) {
+                            argvar2 = System.identityHashCode(var2);
+                            getHEAP().put(argvar2, var2);
+                        } else {
+                            argvar2 = null;
+                        }
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame",
+                                new HashMap<String, Object>() {{
+                                    put("var1", argvar1);
+                                    put("var2", argvar2);
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                    @Override
+                    public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                        }
+            
+                        // convert to jsonable data
+                        // jsonable arg
+                        int argvar1 = var1;
+                        // ref arg
+                        final Integer argvar2;
+                        if (var2 != null) {
+                            argvar2 = System.identityHashCode(var2);
+                            getHEAP().put(argvar2, var2);
+                        } else {
+                            argvar2 = null;
+                        }
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel",
+                                new HashMap<String, Object>() {{
+                                    put("var1", argvar1);
+                                    put("var2", argvar2);
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                    @Override
+                    public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                        }
+            
+                        // convert to jsonable data
+                        // jsonable arg
+                        int argvar1 = var1;
+                        // ref arg
+                        final Integer argvar2;
+                        if (var2 != null) {
+                            argvar2 = System.identityHashCode(var2);
+                            getHEAP().put(argvar2, var2);
+                        } else {
+                            argvar2 = null;
+                        }
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel",
+                                new HashMap<String, Object>() {{
+                                    put("var1", argvar1);
+                                    put("var2", argvar2);
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                    @Override
+                    public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                        }
+            
+                        // convert to jsonable data
+                        // jsonable arg
+                        int argvar1 = var1;
+                        // ref arg
+                        final Integer argvar2;
+                        if (var2 != null) {
+                            argvar2 = System.identityHashCode(var2);
+                            getHEAP().put(argvar2, var2);
+                        } else {
+                            argvar2 = null;
+                        }
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver",
+                                new HashMap<String, Object>() {{
+                                    put("var1", argvar1);
+                                    put("var2", argvar2);
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                    @Override
+                    public void afterAnimation() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
+                        }
+            
+                        // convert to jsonable data
+            
+            
+                        // call dart method
+                        callbackChannel.invokeMethod(
+                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation",
+                                new HashMap<String, Object>() {{
+                
+                                }}
+                        );
+            
+                        // method result
+            
+                    }
+            
+                });
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
@@ -3780,7 +3934,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimationold", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
+                java.lang.Object var1 = (java.lang.Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -3812,7 +3966,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::commitAnimation", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
+                java.lang.Object var1 = (java.lang.Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -3908,7 +4062,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::doAnimation", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
+                java.lang.Object var1 = (java.lang.Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -4134,7 +4288,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom::commitAnimation", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
+                java.lang.Object var1 = (java.lang.Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -4855,7 +5009,7 @@ public class SubHandler4 {
             put("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::commitAnimation", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Object var1 = (Object) ((Map<String, Object>) __args__).get("var1");
+                java.lang.Object var1 = (java.lang.Object) ((Map<String, Object>) __args__).get("var1");
             
                 // ref
                 int refId = (int) ((Map<String, Object>) __args__).get("refId");

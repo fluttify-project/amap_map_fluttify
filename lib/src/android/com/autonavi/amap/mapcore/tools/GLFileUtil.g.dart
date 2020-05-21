@@ -124,30 +124,6 @@ class com_autonavi_amap_mapcore_tools_GLFileUtil extends java_lang_Object  {
   }
   
   
-  static Future<void> closeQuietly(java_io_Closeable var0) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.tools.GLFileUtil::closeQuietly([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::closeQuietly', {"var0": var0.refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
   static Future<Uint8List> readFileContents(String var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -280,26 +256,6 @@ extension com_autonavi_amap_mapcore_tools_GLFileUtil_Batch on List<com_autonavi_
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::writeDatasToFile_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__]}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  static Future<List<void>> closeQuietly_batch(List<java_io_Closeable> var0) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.tools.GLFileUtil::closeQuietly_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__].refId}]);
   
   
     // convert native result to dart side object

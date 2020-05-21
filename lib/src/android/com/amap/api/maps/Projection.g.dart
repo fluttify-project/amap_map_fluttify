@@ -99,7 +99,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -123,7 +123,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -316,7 +316,7 @@ extension com_amap_api_maps_Projection_Batch on List<com_amap_api_maps_Projectio
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -336,7 +336,7 @@ extension com_amap_api_maps_Projection_Batch on List<com_amap_api_maps_Projectio
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

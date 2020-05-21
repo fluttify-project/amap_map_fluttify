@@ -545,11 +545,66 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener', {"refId": refId});
   
   
     // handle native call
+    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: afterDrawFrame([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.afterDrawFrame(args['var1'], (com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag__ = 'amap_map_fluttify'));
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: afterDrawLabel([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.afterDrawLabel(args['var1'], (com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag__ = 'amap_map_fluttify'));
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: beforeDrawLabel([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.beforeDrawLabel(args['var1'], (com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag__ = 'amap_map_fluttify'));
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: afterRendererOver([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.afterRendererOver(args['var1'], (com_autonavi_ae_gmap_GLMapState()..refId = (args['var2'])..tag__ = 'amap_map_fluttify'));
+              break;
+            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: afterAnimation([])');
+              }
+        
+              // handle the native call
+              var1?.afterAnimation();
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (__result__ == null) {
@@ -2474,26 +2529,6 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setIndoorBuildingToBeActive_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "var4": var4[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setMapListener_batch(List<com_autonavi_amap_mapcore_interfaces_IAMapListener> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
