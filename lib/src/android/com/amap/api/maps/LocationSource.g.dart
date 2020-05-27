@@ -20,51 +20,21 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
 
   
 
+  @mustCallSuper
+  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::activate([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::activate', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> deactivate() {
   
-  Future<void> deactivate() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::deactivate([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::deactivate', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

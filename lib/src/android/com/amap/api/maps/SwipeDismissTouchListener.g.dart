@@ -23,19 +23,19 @@ class com_amap_api_maps_SwipeDismissTouchListener extends java_lang_Object with 
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_SwipeDismissTouchListener> create__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks(android_view_View var1, Object var2, com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks var3) async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', {"var1": var1.refId, "var2": var2, "var3": var3.refId});
+  static Future<com_amap_api_maps_SwipeDismissTouchListener> create__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks(android_view_View var1, Object var2, com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', {"var1": var1.refId, "var2": var2, "var3": var3.refId});
     final object = com_amap_api_maps_SwipeDismissTouchListener()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
   }
   
-  static Future<List<com_amap_api_maps_SwipeDismissTouchListener>> create_batch__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks(List<android_view_View> var1, List<Object> var2, List<com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks> var3) async {
+  static Future<List<com_amap_api_maps_SwipeDismissTouchListener>> create_batch__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks(List<android_view_View> var1, List<Object> var2, List<com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks> var3) async {
     if (var1.length != var2.length || var2.length != var3.length) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__], "var3": var3[__i__].refId}]);
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__], "var3": var3[__i__].refId}]);
   
     final List<com_amap_api_maps_SwipeDismissTouchListener> typedResult = resultBatch.map((result) => com_amap_api_maps_SwipeDismissTouchListener()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

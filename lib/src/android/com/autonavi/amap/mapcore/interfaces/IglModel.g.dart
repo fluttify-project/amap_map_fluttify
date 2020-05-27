@@ -20,507 +20,192 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
 
   
 
+  @mustCallSuper
+  Future<String> getTitle() {
   
-  Future<String> getTitle() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getTitle([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getTitle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getTitle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<String> getSnippet() {
   
-  Future<String> getSnippet() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getSnippet([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getSnippet', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getSnippet::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<String> getId() {
   
-  Future<String> getId() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getId([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getId', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setPosition([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setPosition', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setRotateAngle(double var1) {
   
-  Future<void> setRotateAngle(double var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setRotateAngle([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setRotateAngle', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setRotateAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<double> getRotateAngle() {
   
-  Future<double> getRotateAngle() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getRotateAngle([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getRotateAngle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getRotateAngle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<com_amap_api_maps_model_LatLng> getPosition() {
   
-  Future<com_amap_api_maps_model_LatLng> getPosition() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getPosition([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getPosition', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
-      return __return__;
+      debugPrint('getPosition::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setAnimation([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setAnimation', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<bool> startAnimation() {
   
-  Future<bool> startAnimation() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::startAnimation([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::startAnimation', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('startAnimation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<bool> remove() {
   
-  Future<bool> remove() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::remove([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::remove', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setVisible(bool var1) {
   
-  Future<void> setVisible(bool var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setVisible([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setVisible', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<bool> isVisible() {
   
-  Future<bool> isVisible() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::isVisible([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::isVisible', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setObject(Object var1) {
   
-  Future<void> setObject(Object var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setObject([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setObject', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setObject::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<Object> getObject() {
   
-  Future<Object> getObject() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::getObject([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::getObject', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getObject::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setZoomLimit(double var1) {
   
-  Future<void> setZoomLimit(double var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setZoomLimit([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setZoomLimit', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setZoomLimit::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> destroy() {
   
-  Future<void> destroy() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::destroy([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::destroy', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setGeoPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setGeoPoint', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setGeoPoint::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> showInfoWindow() {
   
-  Future<void> showInfoWindow() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::showInfoWindow([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::showInfoWindow', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('showInfoWindow::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setTitle(String var1) {
   
-  Future<void> setTitle(String var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setTitle([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setTitle', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setTitle::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setSnippet(String var1) {
   
-  Future<void> setSnippet(String var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setSnippet([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setSnippet', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setSnippet::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setModelFixedLength(int var1) {
   
-  Future<void> setModelFixedLength(int var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IglModel@$refId::setModelFixedLength([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IglModel::setModelFixedLength', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setModelFixedLength::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   

@@ -20,171 +20,66 @@ mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Obj
 
   
 
+  @mustCallSuper
+  Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationOption([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationOption', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setLocationOption::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::setLocationListener([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::setLocationListener', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('setLocationListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> startLocation() {
   
-  Future<void> startLocation() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::startLocation([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::startLocation', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('startLocation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> stopLocation() {
   
-  Future<void> stopLocation() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::stopLocation([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::stopLocation', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('stopLocation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {
+    kNativeObjectPool.add(var1);
   
-  Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::unRegisterLocationListener([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::unRegisterLocationListener', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('unRegisterLocationListener::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() {
   
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::getLastKnownLocation([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::getLastKnownLocation', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
-      return __return__;
+      debugPrint('getLastKnownLocation::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> destroy() {
   
-  Future<void> destroy() async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase@$refId::destroy([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationManagerBase::destroy', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
