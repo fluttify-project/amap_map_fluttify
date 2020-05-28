@@ -877,11 +877,6 @@ class AmapController with WidgetsBindingObserver {
         if (option.object != null) {
           await annotation.addJsonableProperty__(7, option.object);
         }
-        // 宽高
-        if (option.width != null && option.height != null) {
-          await annotation.addJsonableProperty__(8, option.width);
-          await annotation.addJsonableProperty__(9, option.height);
-        }
         // 是否可见
         await annotation.addJsonableProperty__(10, option.visible);
 
@@ -926,8 +921,6 @@ class AmapController with WidgetsBindingObserver {
         else if (option.widget != null)
           await _state.widgetToImageData(option.widget)
     ];
-    final widthBatch = options.map((it) => it.width).toList();
-    final heightBatch = options.map((it) => it.height).toList();
 
     return platform(
       android: (pool) async {
@@ -1013,10 +1006,6 @@ class AmapController with WidgetsBindingObserver {
         await annotationBatch.addJsonableProperty_batch(6, anchorVBatch);
         // 自定义数据
         await annotationBatch.addJsonableProperty_batch(7, objectBatch);
-        // 宽
-        await annotationBatch.addJsonableProperty_batch(8, widthBatch);
-        // 高
-        await annotationBatch.addJsonableProperty_batch(9, heightBatch);
         // 是否可见
         await annotationBatch.addJsonableProperty_batch(10, visibleBatch);
 
