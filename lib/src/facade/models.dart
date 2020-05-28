@@ -113,9 +113,11 @@ class MarkerOption {
   final String object;
 
   /// 图片宽度 iOS only
+  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
   final double width;
 
   /// 图片高度 iOS only
+  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
   final double height;
 
   MarkerOption({
@@ -142,7 +144,7 @@ class MarkerOption {
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, visible: $visible, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object, width: $width, height: $height}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, visible: $visible, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object}';
   }
 }
 

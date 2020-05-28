@@ -1,8 +1,9 @@
-## 0.22.3
+## 0.23.0
 - roll engine #ee5b257c
 - docs: 配置key的说明
 - chore: 重新创建ios工程
 - docs: 调整权限申请示例
+- enhance: [breaking change] ios端的marker不再需要设置width和height
 
 ## 0.22.2
 - enhance: Marker添加修改icon的方法
