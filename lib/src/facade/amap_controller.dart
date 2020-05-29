@@ -27,7 +27,7 @@ typedef Future<void> OnMultiPointClicked(
   String id,
   String title,
   String snippet,
-  String obejct,
+  String object,
 );
 
 /// 地图控制类
@@ -2100,6 +2100,86 @@ class AmapController with WidgetsBindingObserver {
         pool.addAll(nodeList);
 
         return Heatmap.ios(overlay, iosController);
+      },
+    );
+  }
+
+  /// 添加图片覆盖物
+  Future<GroundOverlay> addGroundOverlay(GroundOverlayOption option) async {
+    assert(option != null);
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final groundOverlayOption =
+            await com_amap_api_maps_model_GroundOverlayOptions.create__();
+
+        // 创建图片边界
+        final southWestPoint =
+            await com_amap_api_maps_model_LatLng.create__double__double(
+                option.southWest.latitude, option.southWest.longitude);
+        final northEastPoint =
+            await com_amap_api_maps_model_LatLng.create__double__double(
+                option.northEast.latitude, option.northEast.longitude);
+
+        final bounds = await com_amap_api_maps_model_LatLngBounds
+            .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                southWestPoint, northEastPoint);
+        await groundOverlayOption.positionFromBounds(bounds);
+
+        // 创建图片
+        final bitmap = await android_graphics_Bitmap.create(await uri2ImageData(
+          option.imageConfiguration,
+          option.imageUri,
+        ));
+        final descriptor = await com_amap_api_maps_model_BitmapDescriptorFactory
+            .fromBitmap(bitmap);
+        await groundOverlayOption.image(descriptor);
+
+        // 进行添加
+        final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
+
+        bitmap.recycle();
+        pool
+          ..add(map)
+          ..add(groundOverlayOption)
+          ..add(southWestPoint)
+          ..add(descriptor)
+          ..add(northEastPoint);
+
+        return GroundOverlay.android(groundOverlay);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(_iosMapDelegate);
+
+        final southWestPoint = await CLLocationCoordinate2D.create(
+          option.southWest.latitude,
+          option.southWest.longitude,
+        );
+        final northEastPoint = await CLLocationCoordinate2D.create(
+          option.northEast.latitude,
+          option.northEast.longitude,
+        );
+        final bounds =
+            await MACoordinateBoundsMake(northEastPoint, southWestPoint);
+
+        final bitmap = await UIImage.create(await uri2ImageData(
+          option.imageConfiguration,
+          option.imageUri,
+        ));
+        final overlay =
+            await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
+
+        // 添加热力图
+        await iosController.addOverlay(overlay);
+
+        pool
+          ..add(southWestPoint)
+          ..add(northEastPoint)
+          ..add(bounds)
+          ..add(bitmap);
+
+        return GroundOverlay.ios(overlay, iosController);
       },
     );
   }

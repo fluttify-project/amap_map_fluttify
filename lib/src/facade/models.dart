@@ -312,6 +312,30 @@ class HeatmapTileOption {
   }
 }
 
+/// 图片覆盖物创建参数
+@immutable
+class GroundOverlayOption {
+  final LatLng southWest;
+  final LatLng northEast;
+  final Uri imageUri;
+  final ImageConfiguration imageConfiguration;
+
+  GroundOverlayOption({
+    @required this.southWest,
+    @required this.northEast,
+    @required this.imageUri,
+    @required this.imageConfiguration,
+  }) : assert(
+          (imageUri != null && imageConfiguration != null) || imageUri == null,
+          'imageUri与imageConfiguration同时设置!',
+        );
+
+  @override
+  String toString() {
+    return 'GroundOverlayOption{southWest: $southWest, northEast: $northEast, imageUri: $imageUri, imageConfiguration: $imageConfiguration}';
+  }
+}
+
 /// 海量点创建参数
 @immutable
 class MultiPointOption {
@@ -712,6 +736,24 @@ class Heatmap {
 
   com_amap_api_maps_model_TileOverlay _androidModel;
   MAHeatMapTileOverlay _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
+  }
+}
+
+/// 图片覆盖物
+class GroundOverlay {
+  GroundOverlay.android(this._androidModel);
+
+  GroundOverlay.ios(this._iosModel, this._iosController);
+
+  com_amap_api_maps_model_GroundOverlay _androidModel;
+  MAGroundOverlay _iosModel;
   MAMapView _iosController;
 
   Future<void> remove() {

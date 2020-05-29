@@ -5,6 +5,7 @@
 - docs: 调整权限申请示例
 - enhance: [breaking change] ios端的marker不再需要设置width和height
 - fix: addMarkers返回类型不匹配的问题
+- feat: 添加图片覆盖物
 
 ## 0.22.2
 - enhance: Marker添加修改icon的方法

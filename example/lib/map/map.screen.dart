@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'create_map/create_map.screen.dart';
 import 'create_map/multi_map.screen.dart';
 import 'draw_on_map/draw_circle.screen.dart';
+import 'draw_on_map/draw_ground_overlay.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
 import 'draw_on_map/draw_polyline.screen.dart';
@@ -87,6 +88,11 @@ class MapDemo extends StatelessWidget {
               label: '绘制多边形',
               sublabel: 'DrawPolygonScreen',
               target: DrawPolygonScreen(),
+            ),
+            FunctionItem(
+              label: '绘制图片覆盖物',
+              sublabel: 'DrawGroundOverlayScreen',
+              target: DrawGroundOverlayScreen(),
             ),
           ],
         ),
