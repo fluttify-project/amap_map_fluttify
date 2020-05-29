@@ -813,7 +813,9 @@ class AmapController with WidgetsBindingObserver {
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          _iosMapDelegate.._iosController = iosController,
+          _iosMapDelegate
+            .._iosController = iosController
+            .._annotationViewCompleter = Completer(),
         );
 
         // 创建marker
@@ -885,7 +887,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 等待添加完成 获取对应的view
         final annotationViewList =
-            await _iosMapDelegate._annotationViewStream.stream.first;
+            await _iosMapDelegate._annotationViewCompleter.future;
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
@@ -973,7 +975,9 @@ class AmapController with WidgetsBindingObserver {
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          _iosMapDelegate.._iosController = iosController,
+          _iosMapDelegate
+            .._iosController = iosController
+            .._annotationViewCompleter = Completer(),
         );
 
         // 创建marker
@@ -1014,10 +1018,15 @@ class AmapController with WidgetsBindingObserver {
 
         // 等待添加完成 获取对应的view
         // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
-        final annotationViewList = List(options.length);
         final visibleMarkers =
-            await _iosMapDelegate._annotationViewStream.stream.first;
-        annotationViewList.fillRange(0, visibleMarkers.length, visibleMarkers);
+            await _iosMapDelegate._annotationViewCompleter.future;
+        final annotationViewList = <MAAnnotationView>[
+          for (int i = 0; i < options.length; i++)
+            if (visibleMarkers.length <= options.length)
+              visibleMarkers[i]
+            else
+              null
+        ];
 
         pool.addAll(coordinateBatch);
         return [
@@ -2096,7 +2105,6 @@ class AmapController with WidgetsBindingObserver {
   }
 
   Future<void> dispose() async {
-    _iosMapDelegate._annotationViewStream.close();
     _locateSubscription?.cancel();
 
     await androidController?.onPause();
@@ -2141,8 +2149,7 @@ class _IOSMapDelegate extends NSObject
   OnMultiPointClicked _onMultiPointClicked;
 
   MAMapView _iosController;
-  final _annotationViewStream =
-      StreamController<List<MAAnnotationView>>.broadcast();
+  Completer<List<MAAnnotationView>> _annotationViewCompleter;
 
   @override
   Future<void> mapView_didAddAnnotationViews(
@@ -2150,11 +2157,11 @@ class _IOSMapDelegate extends NSObject
     List<NSObject> views,
   ) async {
     super.mapView_didAddAnnotationViews(mapView, views);
-    if (_annotationViewStream != null && !_annotationViewStream.isClosed) {
+    if (_annotationViewCompleter?.isCompleted == false) {
       List<MAAnnotationView> result = [
         for (final view in views) await view.asMAAnnotationView()
       ];
-      _annotationViewStream.add(result);
+      _annotationViewCompleter.complete(result);
     }
   }
 

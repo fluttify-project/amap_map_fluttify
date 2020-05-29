@@ -58,7 +58,9 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 /// !!使用真机调试!!
 /// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
 /// 
-/// 初始化(0.17.0开始可以不用配置AndroidManifest.xml), 但是你如果你使用了amap_search_fluttify或amap_location_fluttify, 那么仍旧需要在AndroidManifest.xml中配置key!
+/// 初始化(0.17.0开始可以不用配置AndroidManifest.xml) 
+/// !!但是你如果你使用了amap_search_fluttify或amap_location_fluttify, 那么仍旧需要在AndroidManifest.xml中配置key!
+/// AndroidManifest.xml配置key参考 https://lbs.amap.com/api/android-sdk/gettingstarted
 await AmapService.init(iosKey: '7a***********************f4', androidKey: '7c***********************fa');
 /// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
 await enableFluttifyLog(false); // 关闭log
