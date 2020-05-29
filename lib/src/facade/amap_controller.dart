@@ -27,7 +27,7 @@ typedef Future<void> OnMultiPointClicked(
   String id,
   String title,
   String snippet,
-  String obejct,
+  String object,
 );
 
 /// 地图控制类
@@ -2100,6 +2100,82 @@ class AmapController with WidgetsBindingObserver {
         pool.addAll(nodeList);
 
         return Heatmap.ios(overlay, iosController);
+      },
+    );
+  }
+
+  /// 添加图片覆盖物
+  Future<GroundOverlay> addGroundOverlay(GroundOverlayOption option) async {
+    assert(option != null);
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final groundOverlayOption =
+            await com_amap_api_maps_model_GroundOverlayOptions.create__();
+
+        final southWestPoint =
+            await com_amap_api_maps_model_LatLng.create__double__double(
+                option.southWest.latitude, option.southWest.longitude);
+        final northEastPoint =
+            await com_amap_api_maps_model_LatLng.create__double__double(
+                option.northEast.latitude, option.northEast.longitude);
+
+        final bounds = await com_amap_api_maps_model_LatLngBounds
+            .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
+                southWestPoint, northEastPoint);
+        await groundOverlayOption.positionFromBounds(bounds);
+
+        final bitmap = await android_graphics_Bitmap.create(await uri2ImageData(
+          option.imageConfiguration,
+          option.imageUri,
+        ));
+        final descriptor = await com_amap_api_maps_model_BitmapDescriptorFactory
+            .fromBitmap(bitmap);
+        await groundOverlayOption.image(descriptor);
+
+        final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
+
+        pool
+          ..add(map)
+          ..add(groundOverlayOption)
+          ..add(southWestPoint)
+          ..add(descriptor)
+          ..add(northEastPoint);
+
+        return GroundOverlay.android(groundOverlay);
+      },
+      ios: (pool) async {
+////        await iosController.set_delegate(_iosMapDelegate);
+////
+////        // 创建热力图选项
+////        final overlay = await MAHeatMapTileOverlay.create__();
+////
+////        // 构造热力图结点
+////        List<MAHeatMapNode> nodeList = [];
+////        for (final latLng in option.latLngList) {
+////          final node = await MAHeatMapNode.create__();
+////          final coordinate = await CLLocationCoordinate2D.create(
+////            latLng.latitude,
+////            latLng.longitude,
+////          );
+////          pool..add(node)..add(coordinate);
+////
+////          // 坐标点
+////          await node.set_coordinate(coordinate);
+////          // 权重值 暂时全部都为1
+////          await node.set_intensity(1);
+////          nodeList.add(node);
+////        }
+////        // 添加结点数据
+////        await overlay.set_data(nodeList);
+////
+////        // 添加热力图
+////        await iosController.addOverlay(overlay);
+////
+////        pool.addAll(nodeList);
+//
+//        return Heatmap.ios(overlay, iosController);
       },
     );
   }
