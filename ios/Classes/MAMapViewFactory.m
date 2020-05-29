@@ -4317,6 +4317,13 @@ extern BOOL enableLog;
       }
       return multiPointOverlayRenderer;
   }
+  
+  // 图片
+  if ([overlay isKindOfClass:[MAGroundOverlay class]])
+  {
+      MAGroundOverlayRenderer *groundPverlayRenderer = [[MAGroundOverlayRenderer alloc] initWithGroundOverlay: overlay];
+      return groundPverlayRenderer;
+  }
   ////////////////////////////////////////////////////////////////////////////////
   
   return nil;

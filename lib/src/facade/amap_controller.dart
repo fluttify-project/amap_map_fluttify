@@ -2114,6 +2114,7 @@ class AmapController with WidgetsBindingObserver {
         final groundOverlayOption =
             await com_amap_api_maps_model_GroundOverlayOptions.create__();
 
+        // 创建图片边界
         final southWestPoint =
             await com_amap_api_maps_model_LatLng.create__double__double(
                 option.southWest.latitude, option.southWest.longitude);
@@ -2126,6 +2127,7 @@ class AmapController with WidgetsBindingObserver {
                 southWestPoint, northEastPoint);
         await groundOverlayOption.positionFromBounds(bounds);
 
+        // 创建图片
         final bitmap = await android_graphics_Bitmap.create(await uri2ImageData(
           option.imageConfiguration,
           option.imageUri,
@@ -2134,8 +2136,10 @@ class AmapController with WidgetsBindingObserver {
             .fromBitmap(bitmap);
         await groundOverlayOption.image(descriptor);
 
+        // 进行添加
         final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
 
+        bitmap.recycle();
         pool
           ..add(map)
           ..add(groundOverlayOption)
@@ -2146,36 +2150,36 @@ class AmapController with WidgetsBindingObserver {
         return GroundOverlay.android(groundOverlay);
       },
       ios: (pool) async {
-////        await iosController.set_delegate(_iosMapDelegate);
-////
-////        // 创建热力图选项
-////        final overlay = await MAHeatMapTileOverlay.create__();
-////
-////        // 构造热力图结点
-////        List<MAHeatMapNode> nodeList = [];
-////        for (final latLng in option.latLngList) {
-////          final node = await MAHeatMapNode.create__();
-////          final coordinate = await CLLocationCoordinate2D.create(
-////            latLng.latitude,
-////            latLng.longitude,
-////          );
-////          pool..add(node)..add(coordinate);
-////
-////          // 坐标点
-////          await node.set_coordinate(coordinate);
-////          // 权重值 暂时全部都为1
-////          await node.set_intensity(1);
-////          nodeList.add(node);
-////        }
-////        // 添加结点数据
-////        await overlay.set_data(nodeList);
-////
-////        // 添加热力图
-////        await iosController.addOverlay(overlay);
-////
-////        pool.addAll(nodeList);
-//
-//        return Heatmap.ios(overlay, iosController);
+        await iosController.set_delegate(_iosMapDelegate);
+
+        final southWestPoint = await CLLocationCoordinate2D.create(
+          option.southWest.latitude,
+          option.southWest.longitude,
+        );
+        final northEastPoint = await CLLocationCoordinate2D.create(
+          option.northEast.latitude,
+          option.northEast.longitude,
+        );
+        final bounds =
+            await MACoordinateBoundsMake(northEastPoint, southWestPoint);
+
+        final bitmap = await UIImage.create(await uri2ImageData(
+          option.imageConfiguration,
+          option.imageUri,
+        ));
+        final overlay =
+            await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
+
+        // 添加热力图
+        await iosController.addOverlay(overlay);
+
+        pool
+          ..add(southWestPoint)
+          ..add(northEastPoint)
+          ..add(bounds)
+          ..add(bitmap);
+
+        return GroundOverlay.ios(overlay, iosController);
       },
     );
   }
