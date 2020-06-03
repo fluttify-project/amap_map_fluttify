@@ -122,8 +122,8 @@ class MarkerOption {
 
   MarkerOption({
     @required this.latLng,
-    this.title,
-    this.snippet,
+    this.title = '',
+    this.snippet = '',
     this.iconUri,
     this.widget,
     this.imageConfig,
