@@ -1022,10 +1022,7 @@ class AmapController with WidgetsBindingObserver {
             await _iosMapDelegate._annotationViewCompleter.future;
         final annotationViewList = <MAAnnotationView>[
           for (int i = 0; i < options.length; i++)
-            if (visibleMarkers.length <= options.length)
-              visibleMarkers[i]
-            else
-              null
+            if (i < visibleMarkers.length) visibleMarkers[i] else null
         ];
 
         pool.addAll(coordinateBatch);

@@ -177,11 +177,12 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         for (int i = 0; i < 100; i++)
                           MarkerOption(
                             latLng: getNextLatLng(),
-                            title: '北京$i',
-                            snippet: '描述$i',
+//                            title: '北京$i',
+//                            snippet: '描述$i',
                             iconUri: i % 2 == 0 ? _assetsIcon1 : _assetsIcon2,
                             imageConfig: createLocalImageConfiguration(context),
                             width: 40,
+                            infoWindowEnabled: false,
 //                            rotateAngle: 90,
                             height: 40,
                             object: 'Marker_$i',
