@@ -1,3 +1,6 @@
+## 0.23.1
+- fix: 给snippet和title默认设置为空字符串, 防止ios端崩溃
+
 ## 0.23.0
 - roll engine #ee5b257c
 - docs: 配置key的说明
