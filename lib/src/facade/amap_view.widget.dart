@@ -216,16 +216,6 @@ class _AmapViewState extends State<AmapView> {
     return completer.future;
   }
 
-  @override
-  void dispose() {
-    final isCurrentPlugin = (Ref it) => it.tag__ == 'amap_map_fluttify';
-    kNativeObjectPool
-        .where(isCurrentPlugin)
-        .release_batch()
-        .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
-    super.dispose();
-  }
-
   Future<void> _onPlatformViewDispose() async {
     await _controller?.dispose();
   }
