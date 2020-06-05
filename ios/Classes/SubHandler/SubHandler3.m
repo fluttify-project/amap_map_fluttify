@@ -2383,10 +2383,10 @@ extern BOOL enableLog;
                 // ref object
                 MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
-                longlong result = ref.size;
+                long long result = ref.size;
         
-                // 返回值: jsonable
-                id jsonableResult = result;
+                // 返回值: Value
+                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -2423,10 +2423,10 @@ extern BOOL enableLog;
                 // ref object
                 MAOfflineItem* ref = (MAOfflineItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
-                longlong result = ref.downloadedSize;
+                long long result = ref.downloadedSize;
         
-                // 返回值: jsonable
-                id jsonableResult = result;
+                // 返回值: Value
+                id jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
