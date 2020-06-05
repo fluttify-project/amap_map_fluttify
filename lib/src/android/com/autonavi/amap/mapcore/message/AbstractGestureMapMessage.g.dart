@@ -13,7 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_autonavi_ae_gmap_AbstractMapMessage  {
+/* abstract */ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_autonavi_ae_gmap_AbstractMapMessage  {
   //region constants
   static const String name__ = 'com.autonavi.amap.mapcore.message.AbstractGestureMapMessage';
 

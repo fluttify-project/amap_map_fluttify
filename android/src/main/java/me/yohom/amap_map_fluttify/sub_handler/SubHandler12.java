@@ -31,6 +31,70 @@ public class SubHandler12 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed", (__args__, __methodResult__) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.particle.VelocityGenerate var1 = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.ParticleOverlay@" + refId + "::setParticleStartSpeed(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setParticleStartSpeed(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.model.particle.ParticleOverlay::setLoop", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.ParticleOverlay@" + refId + "::setLoop(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setLoop(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
@@ -3035,53 +3099,64 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onAnimationStart() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onAnimationStart() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onAnimationEnd() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onAnimationEnd() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -3596,53 +3671,64 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onDismiss() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onDismiss() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onNotifySwipe() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onNotifySwipe() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -3935,53 +4021,64 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.animateCamera(var1, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onFinish() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onCancel() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -4018,53 +4115,64 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.animateCamera(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onFinish() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onCancel() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5149,60 +5257,71 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setLocationSource(new com.amap.api.maps.LocationSource() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setLocationSource::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void activate(com.amap.api.maps.LocationSource.OnLocationChangedListener var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setLocationSource::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.LocationSource::activate",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void activate(com.amap.api.maps.LocationSource.OnLocationChangedListener var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: activate(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.LocationSource::activate",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void deactivate() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void deactivate() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: deactivate(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.LocationSource::deactivate",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.LocationSource::deactivate",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5440,67 +5559,78 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnCameraChangeListener(new com.amap.api.maps.AMap.OnCameraChangeListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onCameraChange(com.amap.api.maps.model.CameraPosition var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onCameraChange(com.amap.api.maps.model.CameraPosition var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCameraChange(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onCameraChangeFinish(com.amap.api.maps.model.CameraPosition var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
+                        @Override
+                        public void onCameraChangeFinish(com.amap.api.maps.model.CameraPosition var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCameraChangeFinish(" + var1 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
             
                 });
                 } catch (Throwable throwable) {
@@ -5534,38 +5664,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMapClickListener(new com.amap.api.maps.AMap.OnMapClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapClick(com.amap.api.maps.model.LatLng var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMapClick(com.amap.api.maps.model.LatLng var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapClick(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5599,38 +5735,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMapTouchListener(new com.amap.api.maps.AMap.OnMapTouchListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapTouchListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onTouch(android.view.MotionEvent var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapTouchListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onTouch(android.view.MotionEvent var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onTouch(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5664,38 +5806,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnPOIClickListener(new com.amap.api.maps.AMap.OnPOIClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPOIClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onPOIClick(com.amap.api.maps.model.Poi var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPOIClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onPOIClick(com.amap.api.maps.model.Poi var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onPOIClick(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5729,38 +5877,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMyLocationChangeListener(new com.amap.api.maps.AMap.OnMyLocationChangeListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMyLocationChange(android.location.Location var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMyLocationChange(android.location.Location var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMyLocationChange(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5794,38 +5948,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMapLongClickListener(new com.amap.api.maps.AMap.OnMapLongClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapLongClick(com.amap.api.maps.model.LatLng var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMapLongClick(com.amap.api.maps.model.LatLng var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapLongClick(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5859,38 +6019,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMarkerClickListener(new com.amap.api.maps.AMap.OnMarkerClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public boolean onMarkerClick(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public boolean onMarkerClick(com.amap.api.maps.model.Marker var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMarkerClick(" + var1 + ")");
+                            }
             
-                        // method result
-                        return true;
-                    }
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+                            return true;
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5924,38 +6090,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnPolylineClickListener(new com.amap.api.maps.AMap.OnPolylineClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onPolylineClick(com.amap.api.maps.model.Polyline var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onPolylineClick(com.amap.api.maps.model.Polyline var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onPolylineClick(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5989,96 +6161,112 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMarkerDragListener(new com.amap.api.maps.AMap.OnMarkerDragListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMarkerDragStart(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMarkerDragStart(com.amap.api.maps.model.Marker var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMarkerDragStart(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onMarkerDrag(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
+                        @Override
+                        public void onMarkerDrag(com.amap.api.maps.model.Marker var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMarkerDrag(" + var1 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMarkerDragEnd(com.amap.api.maps.model.Marker var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onMarkerDragEnd(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMarkerDragEnd(" + var1 + ")");
+                            // method result
+            
                         }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
             
                 });
                 } catch (Throwable throwable) {
@@ -6112,38 +6300,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnInfoWindowClickListener(new com.amap.api.maps.AMap.OnInfoWindowClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onInfoWindowClick(com.amap.api.maps.model.Marker var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onInfoWindowClick(com.amap.api.maps.model.Marker var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onInfoWindowClick(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6209,38 +6403,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setCommonInfoWindowAdapter(new com.amap.api.maps.AMap.CommonInfoWindowAdapter() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback");
-            
-                    // call dart method
-                    @Override
-                    public com.amap.api.maps.InfoWindowParams getInfoWindowParams(com.amap.api.maps.model.BasePointOverlay var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public com.amap.api.maps.InfoWindowParams getInfoWindowParams(com.amap.api.maps.model.BasePointOverlay var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: getInfoWindowParams(" + var1 + ")");
+                            }
             
-                        // method result
-                        return null;
-                    }
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+                            return null;
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6274,31 +6474,37 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMapLoadedListener(new com.amap.api.maps.AMap.OnMapLoadedListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapLoaded() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onMapLoaded() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapLoaded(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6332,38 +6538,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnIndoorBuildingActiveListener(new com.amap.api.maps.AMap.OnIndoorBuildingActiveListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void OnIndoorBuilding(com.amap.api.maps.model.IndoorBuildingInfo var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void OnIndoorBuilding(com.amap.api.maps.model.IndoorBuildingInfo var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: OnIndoorBuilding(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6397,38 +6609,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setOnMultiPointClickListener(new com.amap.api.maps.AMap.OnMultiPointClickListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public boolean onPointClick(com.amap.api.maps.model.MultiPointItem var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public boolean onPointClick(com.amap.api.maps.model.MultiPointItem var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onPointClick(" + var1 + ")");
+                            }
             
-                        // method result
-                        return true;
-                    }
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+                            return true;
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6462,38 +6680,44 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.getMapPrintScreen(new com.amap.api.maps.AMap.onMapPrintScreenListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapPrintScreen::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapPrint(android.graphics.drawable.Drawable var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapPrintScreen::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMapPrint(android.graphics.drawable.Drawable var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapPrint(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6527,70 +6751,81 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.getMapScreenShot(new com.amap.api.maps.AMap.OnMapScreenShotListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapScreenShot::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapScreenShot(android.graphics.Bitmap var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::getMapScreenShot::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMapScreenShot(android.graphics.Bitmap var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onMapScreenShot(android.graphics.Bitmap var1, int var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
+                        @Override
+                        public void onMapScreenShot(android.graphics.Bitmap var1, int var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapScreenShot(" + var1 + var2 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+                            // jsonable arg
+                            int argvar2 = var2;
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
-                        // jsonable arg
-                        int argvar2 = var2;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
             
                 });
                 } catch (Throwable throwable) {
@@ -6718,32 +6953,38 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.removecache(new com.amap.api.maps.AMap.OnCacheRemoveListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onRemoveCacheFinish(boolean var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onRemoveCacheFinish(" + var1 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        boolean argvar1 = var1;
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onRemoveCacheFinish(boolean var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onRemoveCacheFinish(" + var1 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            boolean argvar1 = var1;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -7033,213 +7274,254 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setAMapGestureListener(new com.amap.api.maps.model.AMapGestureListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setAMapGestureListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onDoubleTap(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::setAMapGestureListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void onDoubleTap(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onDoubleTap(" + var1 + var2 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onSingleTap(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onSingleTap(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onSingleTap(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onFling(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onFling(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFling(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onFling",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onFling",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onScroll(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onScroll(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onScroll(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onScroll",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onScroll",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onLongPress(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onLongPress(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onLongPress(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onDown(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onDown(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onDown(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onDown",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDown",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onUp(float var1, float var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        float argvar1 = var1;
-                        // jsonable arg
-                        float argvar2 = var2;
+                        @Override
+                        public void onUp(float var1, float var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onUp(" + var1 + var2 + ")");
+                            }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onUp",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                            // convert to jsonable data
+                            // jsonable arg
+                            float argvar1 = var1;
+                            // jsonable arg
+                            float argvar2 = var2;
             
-                        // method result
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onUp",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    }
+                            // method result
             
-                    @Override
-                    public void onMapStable() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onMapStable() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapStable(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -7715,70 +7997,6 @@ public class SubHandler12 {
                 // invoke native method
                 try {
                     ref.setCustomMapStyle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.AMap::setCustomMapStyleID", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::setCustomMapStyleID(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomMapStyleID(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.AMap::setCustomTextureResourcePath", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::setCustomTextureResourcePath(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setCustomTextureResourcePath(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

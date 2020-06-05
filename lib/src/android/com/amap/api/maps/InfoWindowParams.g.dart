@@ -166,7 +166,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -238,7 +238,7 @@ class com_amap_api_maps_InfoWindowParams extends java_lang_Object  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -351,7 +351,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -411,7 +411,7 @@ extension com_amap_api_maps_InfoWindowParams_Batch on List<com_amap_api_maps_Inf
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _MAAnnotation_SUB extends NSObject with MAAnnotation {}
+
 mixin MAAnnotation on NSObject {
   
+
+  static MAAnnotation subInstance() => _MAAnnotation_SUB();
 
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAAnnotation::get_coordinate", {'refId': refId});

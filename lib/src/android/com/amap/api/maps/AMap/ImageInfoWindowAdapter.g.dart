@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _com_amap_api_maps_AMap_ImageInfoWindowAdapter_SUB extends java_lang_Object with com_amap_api_maps_AMap_InfoWindowAdapter, com_amap_api_maps_AMap_ImageInfoWindowAdapter {}
+
 mixin com_amap_api_maps_AMap_ImageInfoWindowAdapter on com_amap_api_maps_AMap_InfoWindowAdapter {
   
+
+  static com_amap_api_maps_AMap_ImageInfoWindowAdapter subInstance() => _com_amap_api_maps_AMap_ImageInfoWindowAdapter_SUB();
 
   
 

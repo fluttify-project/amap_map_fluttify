@@ -31,6 +31,116 @@ public class SubHandler16 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    long var1 = (long) (int) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.amap.mapcore.Inner_3dMap_locationOption ref = (com.autonavi.amap.mapcore.Inner_3dMap_locationOption) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.setHttpTimeOut(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset_batch", (__argsBatch__, __methodResult__) -> {
+                List<Boolean> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.amap.mapcore.Inner_3dMap_locationOption ref = (com.autonavi.amap.mapcore.Inner_3dMap_locationOption) getHEAP().get(refId);
+            
+                    // invoke native method
+                    boolean __result__;
+                    try {
+                        __result__ = ref.isOffset();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    boolean jsonableResult = __result__;
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.amap.mapcore.Inner_3dMap_locationOption ref = (com.autonavi.amap.mapcore.Inner_3dMap_locationOption) getHEAP().get(refId);
+            
+                    // invoke native method
+                    com.autonavi.amap.mapcore.Inner_3dMap_locationOption __result__;
+                    try {
+                        __result__ = ref.setOffset(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    Integer jsonableResult = null;
+                    if (__result__ != null) {
+                        jsonableResult = System.identityHashCode(__result__);
+                        getHEAP().put(jsonableResult, __result__);
+                    }
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
             put("com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable_batch", (__argsBatch__, __methodResult__) -> {
                 List<Boolean> __resultList__ = new ArrayList<>();
             
@@ -7124,111 +7234,6 @@ public class SubHandler16 {
             
                     // convert result to jsonable result
                     String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolygon::getStrokeWidth_batch", (__argsBatch__, __methodResult__) -> {
-                List<Float> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.interfaces.IPolygon ref = (com.autonavi.amap.mapcore.interfaces.IPolygon) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float __result__;
-                    try {
-                        __result__ = ref.getStrokeWidth();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolygon::setFillColor_batch", (__argsBatch__, __methodResult__) -> {
-                List<String> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.interfaces.IPolygon ref = (com.autonavi.amap.mapcore.interfaces.IPolygon) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setFillColor(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.interfaces.IPolygon::getFillColor_batch", (__argsBatch__, __methodResult__) -> {
-                List<Integer> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.interfaces.IPolygon ref = (com.autonavi.amap.mapcore.interfaces.IPolygon) getHEAP().get(refId);
-            
-                    // invoke native method
-                    int __result__;
-                    try {
-                        __result__ = ref.getFillColor();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    int jsonableResult = __result__;
             
                     __resultList__.add(jsonableResult);
                 }

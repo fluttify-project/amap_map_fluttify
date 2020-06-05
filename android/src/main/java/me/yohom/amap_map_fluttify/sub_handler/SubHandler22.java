@@ -31,6 +31,144 @@ public class SubHandler22 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.MapView::onDestroy_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.onDestroy();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.MapView::onLowMemory_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.onLowMemory();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.MapView::onSaveInstanceState_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // ref arg
+                    android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.onSaveInstanceState(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.MapView::setVisibility_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.MapView ref = (com.amap.api.maps.MapView) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.setVisibility(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
             put("com.amap.api.trace.TraceLocation::getLatitude_batch", (__argsBatch__, __methodResult__) -> {
                 List<Double> __resultList__ = new ArrayList<>();
             
@@ -4594,86 +4732,6 @@ public class SubHandler22 {
             
                 // create target object
                 com.amap.api.maps.model.particle.ParticleOverlayOptions __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
-            });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TextOptions __obj__ = new com.amap.api.maps.model.TextOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
-            });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.PolygonOptionsCreator __obj__ = new com.amap.api.maps.model.PolygonOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
-            });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjectionCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TileProjectionCreator __obj__ = new com.amap.api.maps.model.TileProjectionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
-            });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.GroundOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
                 getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
                 // print current HEAP

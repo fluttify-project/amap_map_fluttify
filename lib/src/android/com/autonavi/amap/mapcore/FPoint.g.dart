@@ -88,7 +88,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -112,7 +112,7 @@ class com_autonavi_amap_mapcore_FPoint extends android_graphics_PointF  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -145,7 +145,7 @@ extension com_autonavi_amap_mapcore_FPoint_Batch on List<com_autonavi_amap_mapco
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -165,7 +165,7 @@ extension com_autonavi_amap_mapcore_FPoint_Batch on List<com_autonavi_amap_mapco
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint3()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_FPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

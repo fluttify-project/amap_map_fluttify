@@ -13,7 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_lang_Object  {
+/* abstract */ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam';
 

@@ -13,7 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
+/* abstract */ class com_amap_api_maps_model_particle_VelocityGenerate extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   //region constants
   static const String name__ = 'com.amap.api.maps.model.particle.VelocityGenerate';
 

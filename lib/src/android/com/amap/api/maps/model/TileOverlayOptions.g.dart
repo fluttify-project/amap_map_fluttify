@@ -261,7 +261,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends java_lang_Object with a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -622,7 +622,7 @@ extension com_amap_api_maps_model_TileOverlayOptions_Batch on List<com_amap_api_
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_HeatmapTileProvider()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_TileProvider.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

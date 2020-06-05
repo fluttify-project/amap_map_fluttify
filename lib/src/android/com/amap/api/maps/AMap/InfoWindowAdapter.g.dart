@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _com_amap_api_maps_AMap_InfoWindowAdapter_SUB extends java_lang_Object with com_amap_api_maps_AMap_InfoWindowAdapter {}
+
 mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
   
+
+  static com_amap_api_maps_AMap_InfoWindowAdapter subInstance() => _com_amap_api_maps_AMap_InfoWindowAdapter_SUB();
 
   
 
@@ -38,7 +42,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -62,7 +66,7 @@ mixin com_amap_api_maps_AMap_InfoWindowAdapter on java_lang_Object {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_offlinemap_DownloadProgressView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }

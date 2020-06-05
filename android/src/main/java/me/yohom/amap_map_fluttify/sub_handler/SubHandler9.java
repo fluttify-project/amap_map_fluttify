@@ -31,6 +31,80 @@ public class SubHandler9 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getInfoWindowClick", (__args__, __methodResult__) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter ref = (com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@" + refId + "::getInfoWindowClick(" + var1 + ")");
+                }
+            
+                // invoke native method
+                android.view.View __result__;
+                try {
+                    __result__ = ref.getInfoWindowClick(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindow", (__args__, __methodResult__) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.Marker var1 = (com.amap.api.maps.model.Marker) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter ref = (com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter@" + refId + "::getOverturnInfoWindow(" + var1 + ")");
+                }
+            
+                // invoke native method
+                android.view.View __result__;
+                try {
+                    __result__ = ref.getOverturnInfoWindow(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.amap.api.maps.AMap.MultiPositionInfoWindowAdapter::getOverturnInfoWindowClick", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
@@ -6852,72 +6926,6 @@ public class SubHandler9 {
                 // invoke native method
                 try {
                     ref.setDimensions(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setImage", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setImage(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setImage(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setDimensions__double__double", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setDimensions(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDimensions(new Double(var1).floatValue(), new Double(var2).floatValue());
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

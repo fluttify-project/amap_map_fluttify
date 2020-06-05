@@ -31,6 +31,81 @@ public class SubHandler11 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.model.Circle::setHoleOptions", (__args__, __methodResult__) -> {
+                // args
+                // list arg
+                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
+                for (int refId : var1RefIdList) {
+                    ((ArrayList<com.amap.api.maps.model.BaseHoleOptions>) var1).add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
+                }
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Circle@" + refId + "::setHoleOptions(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setHoleOptions((ArrayList) var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.model.Circle::getHoleOptions", (__args__, __methodResult__) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Circle@" + refId + "::getHoleOptions(" + "" + ")");
+                }
+            
+                // invoke native method
+                java.util.List<com.amap.api.maps.model.BaseHoleOptions> __result__;
+                try {
+                    __result__ = ref.getHoleOptions();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                List<Integer> jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = new ArrayList<>();
+                    for (com.amap.api.maps.model.BaseHoleOptions item : __result__) {
+                        getHEAP().put(System.identityHashCode(item), item);
+                        jsonableResult.add(System.identityHashCode(item));
+                    }
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.amap.api.maps.model.Circle::setStrokeDottedLineType", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
@@ -3369,53 +3444,64 @@ public class SubHandler11 {
                 // invoke native method
                 try {
                     ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.Marker::setAnimationListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onAnimationStart() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.Marker::setAnimationListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onAnimationStart() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onAnimationEnd() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onAnimationEnd() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -5169,41 +5255,47 @@ public class SubHandler11 {
                 // invoke native method
                 try {
                     ref.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
-                        // jsonable arg
-                        int argvar2 = var2;
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void onGenerateComplete(android.graphics.Bitmap var1, int var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onGenerateComplete(" + var1 + var2 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
+                            // jsonable arg
+                            int argvar2 = var2;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6844,70 +6936,6 @@ public class SubHandler11 {
                 // invoke native method
                 try {
                     ref.setParticleLifeTime(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.particle.VelocityGenerate var1 = (com.amap.api.maps.model.particle.VelocityGenerate) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.ParticleOverlay@" + refId + "::setParticleStartSpeed(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setParticleStartSpeed(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.particle.ParticleOverlay::setLoop", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.particle.ParticleOverlay ref = (com.amap.api.maps.model.particle.ParticleOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.particle.ParticleOverlay@" + refId + "::setLoop(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setLoop(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

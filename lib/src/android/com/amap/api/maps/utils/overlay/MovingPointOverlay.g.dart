@@ -189,7 +189,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_BasePointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -533,7 +533,7 @@ extension com_amap_api_maps_utils_overlay_MovingPointOverlay_Batch on List<com_a
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_BasePointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
