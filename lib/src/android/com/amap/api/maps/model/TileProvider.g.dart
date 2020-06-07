@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _com_amap_api_maps_model_TileProvider_SUB extends java_lang_Object with com_amap_api_maps_model_TileProvider {}
+
 mixin com_amap_api_maps_model_TileProvider on java_lang_Object {
   
+
+  static com_amap_api_maps_model_TileProvider subInstance() => _com_amap_api_maps_model_TileProvider_SUB();
 
   
 

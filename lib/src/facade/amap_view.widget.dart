@@ -15,7 +15,6 @@ import 'package:flutter/services.dart';
 
 import 'enums.dart';
 import 'models.dart';
-import 'utils.dart';
 
 part 'amap_controller.dart';
 
@@ -214,16 +213,6 @@ class _AmapViewState extends State<AmapView> {
     });
 
     return completer.future;
-  }
-
-  @override
-  void dispose() {
-    final isCurrentPlugin = (Ref it) => it.tag__ == 'amap_map_fluttify';
-    kNativeObjectPool
-        .where(isCurrentPlugin)
-        .release_batch()
-        .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
-    super.dispose();
   }
 
   Future<void> _onPlatformViewDispose() async {

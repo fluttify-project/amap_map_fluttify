@@ -67,10 +67,22 @@ class MAOfflineItem extends NSObject  {
     return __result__;
   }
   
+  Future<int> get_size() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_size", {'refId': refId});
+  
+    return __result__;
+  }
+  
   Future<MAOfflineItemStatus> get_itemStatus() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus", {'refId': refId});
   
     return MAOfflineItemStatus.values[__result__];
+  }
+  
+  Future<int> get_downloadedSize() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_downloadedSize", {'refId': refId});
+  
+    return __result__;
   }
   
   //endregion
@@ -114,9 +126,23 @@ extension MAOfflineItem_Batch on List<MAOfflineItem> {
     return typedResult;
   }
   
+  Future<List<int>> get_size_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_size_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
   Future<List<MAOfflineItemStatus>> get_itemStatus_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOfflineItemStatus.values[__result__]).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<int>> get_downloadedSize_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_downloadedSize_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
   
     return typedResult;
   }

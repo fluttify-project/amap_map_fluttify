@@ -31,6 +31,72 @@ public class SubHandler10 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.model.GroundOverlay::setImage", (__args__, __methodResult__) -> {
+                // args
+                // ref arg
+                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setImage(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setImage(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.model.GroundOverlay::setDimensions__double__double", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                // jsonable arg
+                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setDimensions(" + var1 + var2 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setDimensions(new Double(var1).floatValue(), new Double(var2).floatValue());
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.amap.api.maps.model.GroundOverlay::getWidth", (__args__, __methodResult__) -> {
                 // args
             
@@ -3250,53 +3316,64 @@ public class SubHandler10 {
                 // invoke native method
                 try {
                     ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onAnimationStart() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onAnimationStart() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onAnimationEnd() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onAnimationEnd() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6691,81 +6768,6 @@ public class SubHandler10 {
             
                 // convert result to jsonable result
                 boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::setHoleOptions", (__args__, __methodResult__) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.List<com.amap.api.maps.model.BaseHoleOptions> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.BaseHoleOptions>) var1).add((com.amap.api.maps.model.BaseHoleOptions) getHEAP().get(refId));
-                }
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Circle@" + refId + "::setHoleOptions(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setHoleOptions((ArrayList) var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::getHoleOptions", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Circle@" + refId + "::getHoleOptions(" + "" + ")");
-                }
-            
-                // invoke native method
-                java.util.List<com.amap.api.maps.model.BaseHoleOptions> __result__;
-                try {
-                    __result__ = ref.getHoleOptions();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.BaseHoleOptions item : __result__) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
-                }
             
                 __methodResult__.success(jsonableResult);
             });

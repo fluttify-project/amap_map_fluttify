@@ -13,7 +13,7 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Object  {
+/* abstract */ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Object  {
   //region constants
   static const String name__ = 'com.autonavi.amap.mapcore.AbstractCameraUpdateMessage';
 
@@ -63,8 +63,8 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   Future<android_graphics_Point> get_focus() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus", {'refId': refId});
-    kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<double> get_zoom() async {
@@ -87,8 +87,8 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Ob
   
   Future<android_graphics_Point> get_geoPoint() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_geoPoint", {'refId': refId});
-    kNativeObjectPool.add(com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<bool> get_isUseAnchor() async {
@@ -462,7 +462,7 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
   
   Future<List<android_graphics_Point>> get_focus_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -490,7 +490,7 @@ extension com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Batch on List<co
   
   Future<List<android_graphics_Point>> get_geoPoint_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_geoPoint_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }

@@ -13,7 +13,7 @@ A new flutter plugin project.
   s.author           = { 'yohom' => 'yohombao@qq.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
-  s.public_header_files = ['Classes/**/*.h', 'Vendor/**/*.h']
+  s.public_header_files = ['Classes/**/*.h', 'Vendors/**/*.h']
   s.dependency 'Flutter'
   s.dependency 'foundation_fluttify'
   # flutter plugin dependency
@@ -25,9 +25,9 @@ A new flutter plugin project.
   s.static_framework = true
   s.ios.deployment_target = '8.0'
   # include project framework
-  s.vendored_frameworks = 'Vendor/*.framework'
+  s.vendored_frameworks = 'Vendors/*.framework'
   # include project .a
-  s.vendored_libraries = 'Vendor/*.a'
+  s.vendored_libraries = 'Vendors/*.a'
   # ios system framework
   s.frameworks = [
         
@@ -37,9 +37,9 @@ A new flutter plugin project.
         
   ]
   # resources
-  s.resources = 'Vendor/*.framework/*.bundle'
+  s.resources = 'Vendors/*.framework/*.bundle'
   # s.resource_bundles = {
-  #   'amap_map_fluttify' => ['Vendor/*.framework/*.bundle']
+  #   'amap_map_fluttify' => ['Vendors/*.framework/*.bundle']
   # }
 end
 

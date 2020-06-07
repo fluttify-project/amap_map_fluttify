@@ -31,6 +31,111 @@ public class SubHandler14 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.autonavi.ae.gmap.GLMapState::getViewMatrix_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    float[] var1 = (float[]) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.getViewMatrix(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.autonavi.ae.gmap.GLMapState::getProjectionMatrix_batch", (__argsBatch__, __methodResult__) -> {
+                List<String> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    float[] var1 = (float[]) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
+            
+                    // invoke native method
+                    try {
+                        ref.getProjectionMatrix(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.autonavi.ae.gmap.GLMapState::getSkyHeight_batch", (__argsBatch__, __methodResult__) -> {
+                List<Float> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
+            
+                    // invoke native method
+                    float __result__;
+                    try {
+                        __result__ = ref.getSkyHeight();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    float jsonableResult = __result__;
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
             put("com.autonavi.ae.gmap.GLMapState::setNativeMapengineState_batch", (__argsBatch__, __methodResult__) -> {
                 List<String> __resultList__ = new ArrayList<>();
             
@@ -7201,111 +7306,6 @@ public class SubHandler14 {
             
                     // convert result to jsonable result
                     int jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.animation.GLAnimation::getDetachWallpaper_batch", (__argsBatch__, __methodResult__) -> {
-                List<Boolean> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAnimation ref = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean __result__;
-                    try {
-                        __result__ = ref.getDetachWallpaper();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.animation.GLAnimation::willChangeTransformationMatrix_batch", (__argsBatch__, __methodResult__) -> {
-                List<Boolean> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAnimation ref = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean __result__;
-                    try {
-                        __result__ = ref.willChangeTransformationMatrix();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.animation.GLAnimation::willChangeBounds_batch", (__argsBatch__, __methodResult__) -> {
-                List<Boolean> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.amap.mapcore.animation.GLAnimation ref = (com.autonavi.amap.mapcore.animation.GLAnimation) getHEAP().get(refId);
-            
-                    // invoke native method
-                    boolean __result__;
-                    try {
-                        __result__ = ref.willChangeBounds();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    boolean jsonableResult = __result__;
             
                     __resultList__.add(jsonableResult);
                 }

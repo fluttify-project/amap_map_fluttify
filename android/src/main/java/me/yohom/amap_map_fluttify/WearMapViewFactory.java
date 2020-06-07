@@ -327,53 +327,64 @@ class WearMapViewFactory extends PlatformViewFactory {
             // invoke native method
             try {
                 ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
-                // method channel
-                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
-        
-                // call dart method
-                @Override
-                public void onDismiss() {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
-                    }
-        
-                    // convert to jsonable data
-        
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                    android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
         
                     // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
-                            new HashMap<String, Object>() {{
-                
-                            }}
-                    );
+                    @Override
+                    public void onDismiss() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                        }
         
-                    // method result
+                        // convert to jsonable data
         
-                }
         
-                @Override
-                public void onNotifySwipe() {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                        // call dart method
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callbackChannel.invokeMethod(
+                                    "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
+                                    new HashMap<String, Object>() {{
+                    
+                                    }}
+                                );
+                            }
+                        });
+        
+                        // method result
+        
                     }
         
-                    // convert to jsonable data
+                    @Override
+                    public void onNotifySwipe() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                        }
+        
+                        // convert to jsonable data
         
         
-                    // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
-                            new HashMap<String, Object>() {{
-                
-                            }}
-                    );
+                        // call dart method
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callbackChannel.invokeMethod(
+                                    "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
+                                    new HashMap<String, Object>() {{
+                    
+                                    }}
+                                );
+                            }
+                        });
         
-                    // method result
+                        // method result
         
-                }
+                    }
         
             });
             } catch (Throwable throwable) {

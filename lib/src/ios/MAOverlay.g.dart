@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _MAOverlay_SUB extends NSObject with MAAnnotation, MAOverlay {}
+
 mixin MAOverlay on MAAnnotation {
   
+
+  static MAOverlay subInstance() => _MAOverlay_SUB();
 
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlay::get_coordinate", {'refId': refId});

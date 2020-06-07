@@ -14,6 +14,257 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler4)
 - (NSDictionary<NSString*, Handler>*) getSubHandler4 {
     return @{
+        @"MAParticleOverlayOptions::get_maxParticles_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSInteger result = ref.maxParticles;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_icon_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                UIImage* result = ref.icon;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_startParticleSize_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGSize result = ref.startParticleSize;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGSize)];
+                HEAP[@(resultValue.hash)] = resultValue;
+                NSNumber* jsonableResult = @(resultValue.hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleLifeTime_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSTimeInterval result = ref.particleLifeTime;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleStartColor_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                id<MAParticleColorGenerate> result = ref.particleStartColor;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleStartSpeed_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                id<MAParticleVelocityGenerate> result = ref.particleStartSpeed;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleEmissionModule_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAParticleEmissionModule* result = ref.particleEmissionModule;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleShapeModule_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                id<MAParticleShapeModule> result = ref.particleShapeModule;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_particleOverLifeModule_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAParticleOverLifeModule* result = ref.particleOverLifeModule;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAOverlayRenderer::get_overlay_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                id<MAOverlay> result = ref.overlay;
+        
+                // return a ref
+                HEAP[@((result).hash)] = result;
+                NSNumber* jsonableResult = @((result).hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAOverlayRenderer::get_glPoints_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGPoint* result = ref.glPoints;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint*)];
+                HEAP[@(resultValue.hash)] = resultValue;
+                NSNumber* jsonableResult = @(resultValue.hash);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAOverlayRenderer::get_glPointCount_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSUInteger result = ref.glPointCount;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
         @"MAOverlayRenderer::get_strokeImage_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -3699,220 +3950,6 @@ extern BOOL enableLog;
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
             ref.maxParticles = maxParticles;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_icon");
-            }
-        
-            // args
-            // ref arg
-            UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.icon = icon;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_startParticleSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_startParticleSize");
-            }
-        
-            // args
-            // struct arg
-            NSValue* startParticleSizeValue = (NSValue*) HEAP[@([args[@"startParticleSize"] integerValue])];
-            CGSize startParticleSize;
-            [startParticleSizeValue getValue:&startParticleSize];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.startParticleSize = startParticleSize;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleLifeTime": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleLifeTime");
-            }
-        
-            // args
-            // jsonable arg
-            NSTimeInterval particleLifeTime = [args[@"particleLifeTime"] doubleValue];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleLifeTime = particleLifeTime;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleStartColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleStartColor");
-            }
-        
-            // args
-            // ref arg
-            id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[@([args[@"particleStartColor"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleStartColor = particleStartColor;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleStartSpeed": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleStartSpeed");
-            }
-        
-            // args
-            // ref arg
-            id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"particleStartSpeed"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleStartSpeed = particleStartSpeed;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleEmissionModule");
-            }
-        
-            // args
-            // ref arg
-            MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[@([args[@"particleEmissionModule"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleEmissionModule = particleEmissionModule;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleShapeModule");
-            }
-        
-            // args
-            // ref arg
-            id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[@([args[@"particleShapeModule"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleShapeModule = particleShapeModule;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_particleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_particleOverLifeModule");
-            }
-        
-            // args
-            // ref arg
-            MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[@([args[@"particleOverLifeModule"] integerValue])];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.particleOverLifeModule = particleOverLifeModule;
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_glPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAOverlayRenderer::set_glPoints");
-            }
-        
-            // args
-            // list arg struct
-            NSArray* glPointsRefIdArray = (NSArray*) args[@"glPoints"];
-            CGPoint glPoints[glPointsRefIdArray.count];
-        
-            for (int __i__ = 0; __i__ < glPointsRefIdArray.count; __i__++) {
-                NSValue* glPointsValue = (NSValue*) HEAP[[glPointsRefIdArray objectAtIndex:__i__]];
-                CGPoint glPointsItem;
-                [glPointsValue getValue:&glPointsItem];
-                glPoints[__i__] = glPointsItem;
-            }
-        
-            // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.glPoints = glPoints;
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_glPointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAOverlayRenderer::set_glPointCount");
-            }
-        
-            // args
-            // jsonable arg
-            NSUInteger glPointCount = [args[@"glPointCount"] unsignedIntegerValue];
-        
-            // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.glPointCount = glPointCount;
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_strokeImage": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAOverlayRenderer::set_strokeImage");
-            }
-        
-            // args
-            // ref arg
-            UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
-        
-            // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.strokeImage = strokeImage;
-            methodResult(@"success");
-        },
-        
-        @"MAOverlayRenderer::set_alpha": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAOverlayRenderer::set_alpha");
-            }
-        
-            // args
-            // jsonable arg
-            CGFloat alpha = [args[@"alpha"] floatValue];
-        
-            // ref
-            MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.alpha = alpha;
             methodResult(@"success");
         },
         

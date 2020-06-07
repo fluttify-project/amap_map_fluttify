@@ -31,6 +31,38 @@ public class SubHandler6 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.autonavi.amap.mapcore.MapConfig::isTiltChanged", (__args__, __methodResult__) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.MapConfig@" + refId + "::isTiltChanged(" + "" + ")");
+                }
+            
+                // invoke native method
+                boolean __result__;
+                try {
+                    __result__ = ref.isTiltChanged();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                boolean jsonableResult = __result__;
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.autonavi.amap.mapcore.MapConfig::isBearingChanged", (__args__, __methodResult__) -> {
                 // args
             
@@ -6559,39 +6591,6 @@ public class SubHandler6 {
                 // invoke native method
                 try {
                     com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleLifeTime(var0, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
-                // jsonable arg
-                long var2 = (long) (int) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setParticleStartSpeed(var0, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

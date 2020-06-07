@@ -31,6 +31,70 @@ public class SubHandler13 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.AMap::setCustomMapStyleID", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::setCustomMapStyleID(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCustomMapStyleID(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.AMap::setCustomTextureResourcePath", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.AMap@" + refId + "::setCustomTextureResourcePath(" + var1 + ")");
+                }
+            
+                // invoke native method
+                try {
+                    ref.setCustomTextureResourcePath(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.amap.api.maps.AMap::setRenderMode", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
@@ -896,104 +960,120 @@ public class SubHandler13 {
                 // invoke native method
                 try {
                     ref.queryProcessedTrace(var1, (ArrayList) var2, var3, new com.amap.api.trace.TraceListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onRequestFailed(int var1, String var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // jsonable arg
-                        String argvar2 = var2;
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.trace.TraceListener::onRequestFailed",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void onRequestFailed(int var1, String var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onRequestFailed(" + var1 + var2 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // jsonable arg
+                            String argvar2 = var2;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.trace.TraceListener::onRequestFailed",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onTraceProcessing(int var1, int var2, java.util.List<com.amap.api.maps.model.LatLng> var3) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // jsonable arg
-                        int argvar2 = var2;
-                        // list arg
-                        List<Integer> argvar3 = new ArrayList<>();
-                        for (com.amap.api.maps.model.LatLng item : var3) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            argvar3.add(System.identityHashCode(item));
+                        @Override
+                        public void onTraceProcessing(int var1, int var2, java.util.List<com.amap.api.maps.model.LatLng> var3) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onTraceProcessing(" + var1 + var2 + var3 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // jsonable arg
+                            int argvar2 = var2;
+                            // list arg
+                            List<Integer> argvar3 = new ArrayList<>();
+                            for (com.amap.api.maps.model.LatLng item : var3) {
+                                getHEAP().put(System.identityHashCode(item), item);
+                                argvar3.add(System.identityHashCode(item));
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.trace.TraceListener::onTraceProcessing",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                            put("var3", argvar3);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.trace.TraceListener::onTraceProcessing",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                    put("var3", argvar3);
-                                }}
-                        );
+                        @Override
+                        public void onFinished(int var1, java.util.List<com.amap.api.maps.model.LatLng> var2, int var3, int var4) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // list arg
+                            List<Integer> argvar2 = new ArrayList<>();
+                            for (com.amap.api.maps.model.LatLng item : var2) {
+                                getHEAP().put(System.identityHashCode(item), item);
+                                argvar2.add(System.identityHashCode(item));
+                            }
+                            // jsonable arg
+                            int argvar3 = var3;
+                            // jsonable arg
+                            int argvar4 = var4;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.trace.TraceListener::onFinished",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                            put("var3", argvar3);
+                                            put("var4", argvar4);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void onFinished(int var1, java.util.List<com.amap.api.maps.model.LatLng> var2, int var3, int var4) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinished(" + var1 + var2 + var3 + var4 + ")");
+                            // method result
+            
                         }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // list arg
-                        List<Integer> argvar2 = new ArrayList<>();
-                        for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            argvar2.add(System.identityHashCode(item));
-                        }
-                        // jsonable arg
-                        int argvar3 = var3;
-                        // jsonable arg
-                        int argvar4 = var4;
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.trace.TraceListener::onFinished",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                    put("var3", argvar3);
-                                    put("var4", argvar4);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
             
                 });
                 } catch (Throwable throwable) {
@@ -1027,46 +1107,52 @@ public class SubHandler13 {
                 // invoke native method
                 try {
                     ref.startTrace(new com.amap.api.trace.TraceStatusListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::startTrace::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onTraceStatus(java.util.List<com.amap.api.trace.TraceLocation> var1, java.util.List<com.amap.api.maps.model.LatLng> var2, String var3) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // list arg
-                        List<Integer> argvar1 = new ArrayList<>();
-                        for (com.amap.api.trace.TraceLocation item : var1) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            argvar1.add(System.identityHashCode(item));
-                        }
-                        // list arg
-                        List<Integer> argvar2 = new ArrayList<>();
-                        for (com.amap.api.maps.model.LatLng item : var2) {
-                            getHEAP().put(System.identityHashCode(item), item);
-                            argvar2.add(System.identityHashCode(item));
-                        }
-                        // jsonable arg
-                        String argvar3 = var3;
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.trace.LBSTraceClient::startTrace::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                    put("var3", argvar3);
-                                }}
-                        );
+                        @Override
+                        public void onTraceStatus(java.util.List<com.amap.api.trace.TraceLocation> var1, java.util.List<com.amap.api.maps.model.LatLng> var2, String var3) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onTraceStatus(" + var1 + var2 + var3 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // list arg
+                            List<Integer> argvar1 = new ArrayList<>();
+                            for (com.amap.api.trace.TraceLocation item : var1) {
+                                getHEAP().put(System.identityHashCode(item), item);
+                                argvar1.add(System.identityHashCode(item));
+                            }
+                            // list arg
+                            List<Integer> argvar2 = new ArrayList<>();
+                            for (com.amap.api.maps.model.LatLng item : var2) {
+                                getHEAP().put(System.identityHashCode(item), item);
+                                argvar2.add(System.identityHashCode(item));
+                            }
+                            // jsonable arg
+                            String argvar3 = var3;
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                            put("var3", argvar3);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -2953,6 +3039,45 @@ public class SubHandler13 {
             
                     // convert result to jsonable result
                     String jsonableResult = "success";
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.autonavi.ae.gmap.GLMapEngine::getStateMessage_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+            
+                    // invoke native method
+                    com.autonavi.amap.mapcore.AbstractCameraUpdateMessage __result__;
+                    try {
+                        __result__ = ref.getStateMessage();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    Integer jsonableResult = null;
+                    if (__result__ != null) {
+                        jsonableResult = System.identityHashCode(__result__);
+                        getHEAP().put(jsonableResult, __result__);
+                    }
             
                     __resultList__.add(jsonableResult);
                 }
@@ -7238,111 +7363,6 @@ public class SubHandler13 {
             
                     // convert result to jsonable result
                     long jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getViewMatrix_batch", (__argsBatch__, __methodResult__) -> {
-                List<String> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    float[] var1 = (float[]) ((Map<String, Object>) __args__).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.getViewMatrix(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getProjectionMatrix_batch", (__argsBatch__, __methodResult__) -> {
-                List<String> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    float[] var1 = (float[]) ((Map<String, Object>) __args__).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.getProjectionMatrix(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::getSkyHeight_batch", (__argsBatch__, __methodResult__) -> {
-                List<Float> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.autonavi.ae.gmap.GLMapState ref = (com.autonavi.ae.gmap.GLMapState) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float __result__;
-                    try {
-                        __result__ = ref.getSkyHeight();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = __result__;
             
                     __resultList__.add(jsonableResult);
                 }

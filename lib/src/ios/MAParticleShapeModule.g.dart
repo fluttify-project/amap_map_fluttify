@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _MAParticleShapeModule_SUB extends NSObject with MAParticleShapeModule {}
+
 mixin MAParticleShapeModule on NSObject {
   
+
+  static MAParticleShapeModule subInstance() => _MAParticleShapeModule_SUB();
 
   
 

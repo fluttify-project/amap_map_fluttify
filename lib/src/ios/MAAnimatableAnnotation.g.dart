@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _MAAnimatableAnnotation_SUB extends NSObject with MAAnimatableAnnotation {}
+
 mixin MAAnimatableAnnotation on NSObject {
   
+
+  static MAAnimatableAnnotation subInstance() => _MAAnimatableAnnotation_SUB();
 
   
 

@@ -357,7 +357,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ParticleShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -405,7 +405,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_VelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -477,7 +477,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = com_amap_api_maps_model_particle_ColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -966,7 +966,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_ParticleShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1006,7 +1006,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_VelocityGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -1066,7 +1066,7 @@ extension com_amap_api_maps_model_particle_ParticleOverlayOptions_Batch on List<
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_particle_ColorGenerate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

@@ -1092,159 +1092,185 @@ public class SubHandler4 {
                 // invoke native method
                 try {
                     ref.setMapListener(new com.autonavi.amap.mapcore.interfaces.IAMapListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = System.identityHashCode(var2);
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::setMapListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void afterDrawFrame(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: afterDrawFrame(" + var1 + var2 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // ref arg
+                            final Integer argvar2;
+                            if (var2 != null) {
+                                argvar2 = System.identityHashCode(var2);
+                                getHEAP().put(argvar2, var2);
+                            } else {
+                                argvar2 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = System.identityHashCode(var2);
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
+                        @Override
+                        public void afterDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: afterDrawLabel(" + var1 + var2 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // ref arg
+                            final Integer argvar2;
+                            if (var2 != null) {
+                                argvar2 = System.identityHashCode(var2);
+                                getHEAP().put(argvar2, var2);
+                            } else {
+                                argvar2 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // ref arg
+                            final Integer argvar2;
+                            if (var2 != null) {
+                                argvar2 = System.identityHashCode(var2);
+                                getHEAP().put(argvar2, var2);
+                            } else {
+                                argvar2 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
             
-                    @Override
-                    public void beforeDrawLabel(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: beforeDrawLabel(" + var1 + var2 + ")");
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = System.identityHashCode(var2);
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
+                        @Override
+                        public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                            }
+            
+                            // convert to jsonable data
+                            // jsonable arg
+                            int argvar1 = var1;
+                            // ref arg
+                            final Integer argvar2;
+                            if (var2 != null) {
+                                argvar2 = System.identityHashCode(var2);
+                                getHEAP().put(argvar2, var2);
+                            } else {
+                                argvar2 = null;
+                            }
+            
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                            put("var2", argvar2);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
+                        @Override
+                        public void afterAnimation() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void afterRendererOver(int var1, com.autonavi.ae.gmap.GLMapState var2) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterRendererOver(" + var1 + var2 + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
-            
-                        // convert to jsonable data
-                        // jsonable arg
-                        int argvar1 = var1;
-                        // ref arg
-                        final Integer argvar2;
-                        if (var2 != null) {
-                            argvar2 = System.identityHashCode(var2);
-                            getHEAP().put(argvar2, var2);
-                        } else {
-                            argvar2 = null;
-                        }
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                    put("var2", argvar2);
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
-            
-                    @Override
-                    public void afterAnimation() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: afterAnimation(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
-            
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
-            
-                        // method result
-            
-                    }
             
                 });
                 } catch (Throwable throwable) {
@@ -1578,53 +1604,64 @@ public class SubHandler4 {
                 // invoke native method
                 try {
                     ref.addGroupAnimation(var1, var2, new Double(var3).floatValue(), var4, var5, var6, var7, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onFinish() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onCancel() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -1949,6 +1986,42 @@ public class SubHandler4 {
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.autonavi.ae.gmap.GLMapEngine::getStateMessage", (__args__, __methodResult__) -> {
+                // args
+            
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getStateMessage(" + "" + ")");
+                }
+            
+                // invoke native method
+                com.autonavi.amap.mapcore.AbstractCameraUpdateMessage __result__;
+                try {
+                    __result__ = ref.getStateMessage();
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
             
                 __methodResult__.success(jsonableResult);
             });
@@ -3607,53 +3680,64 @@ public class SubHandler4 {
                 // invoke native method
                 try {
                     ref.addAnimation(var1, new com.amap.api.maps.AMap.CancelableCallback() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onFinish() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-            
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                        @Override
+                        public void onFinish() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onFinish(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
             
-                    }
             
-                    @Override
-                    public void onCancel() {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
                         }
             
-                        // convert to jsonable data
+                        @Override
+                        public void onCancel() {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onCancel(" + "" + ")");
+                            }
+            
+                            // convert to jsonable data
             
             
-                        // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
-                                new HashMap<String, Object>() {{
-                
-                                }}
-                        );
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
+                                        new HashMap<String, Object>() {{
+                    
+                                        }}
+                                    );
+                                }
+                            });
             
-                        // method result
+                            // method result
             
-                    }
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -3687,38 +3771,44 @@ public class SubHandler4 {
                 // invoke native method
                 try {
                     ref.setMapAnimationListener(new com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener() {
-                    // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
-            
-                    // call dart method
-                    @Override
-                    public void onMapAnimationFinish(com.amap.api.maps.AMap.CancelableCallback var1) {
-                        // print log
-                        if (getEnableLog()) {
-                            Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
-                        }
-            
-                        // convert to jsonable data
-                        // ref arg
-                        final Integer argvar1;
-                        if (var1 != null) {
-                            argvar1 = System.identityHashCode(var1);
-                            getHEAP().put(argvar1, var1);
-                        } else {
-                            argvar1 = null;
-                        }
+                        // method channel
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback");
+                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
-                        callbackChannel.invokeMethod(
-                                "Callback::com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish",
-                                new HashMap<String, Object>() {{
-                                    put("var1", argvar1);
-                                }}
-                        );
+                        @Override
+                        public void onMapAnimationFinish(com.amap.api.maps.AMap.CancelableCallback var1) {
+                            // print log
+                            if (getEnableLog()) {
+                                Log.d("java-callback", "fluttify-java-callback: onMapAnimationFinish(" + "" + ")");
+                            }
             
-                        // method result
+                            // convert to jsonable data
+                            // ref arg
+                            final Integer argvar1;
+                            if (var1 != null) {
+                                argvar1 = System.identityHashCode(var1);
+                                getHEAP().put(argvar1, var1);
+                            } else {
+                                argvar1 = null;
+                            }
             
-                    }
+                            // call dart method
+                            handler.post(new Runnable() {
+                                @Override
+                                public void run() {
+                                    callbackChannel.invokeMethod(
+                                        "Callback::com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish",
+                                        new HashMap<String, Object>() {{
+                                            put("var1", argvar1);
+                                        }}
+                                    );
+                                }
+                            });
+            
+                            // method result
+            
+                        }
             
                 });
                 } catch (Throwable throwable) {
@@ -6714,40 +6804,6 @@ public class SubHandler4 {
                 float __result__;
                 try {
                     __result__ = com.autonavi.ae.gmap.GLMapState.nativeGetSkyHeight(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin(" + var0 + var2 + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = com.autonavi.ae.gmap.GLMapState.nativeGetGLUnitWithWin(var0, var2);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {

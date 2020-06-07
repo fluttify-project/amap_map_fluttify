@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _com_autonavi_amap_mapcore_interfaces_IGroundOverlay_SUB extends java_lang_Object with com_autonavi_amap_mapcore_interfaces_IOverlay, com_autonavi_amap_mapcore_interfaces_IGroundOverlay {}
+
 mixin com_autonavi_amap_mapcore_interfaces_IGroundOverlay on com_autonavi_amap_mapcore_interfaces_IOverlay {
   
+
+  static com_autonavi_amap_mapcore_interfaces_IGroundOverlay subInstance() => _com_autonavi_amap_mapcore_interfaces_IGroundOverlay_SUB();
 
   
 

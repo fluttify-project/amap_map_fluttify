@@ -45,8 +45,8 @@ class MAOverlayRenderer extends NSObject  {
   //region getters
   Future<MAOverlay> get_overlay() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay", {'refId': refId});
-    kNativeObjectPool.add(MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(MAOverlay.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAOverlay.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<List<CGPoint>> get_glPoints() async {
@@ -133,7 +133,7 @@ class MAOverlayRenderer extends NSObject  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -794,7 +794,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
   //region getters
   Future<List<MAOverlay>> get_overlay_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayRenderer::get_overlay_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOverlay.subInstance()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -885,7 +885,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

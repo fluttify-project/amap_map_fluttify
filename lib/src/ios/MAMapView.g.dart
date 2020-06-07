@@ -1818,7 +1818,7 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -1842,7 +1842,7 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -2010,7 +2010,7 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+      final __return__ = (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(__return__);
       return __return__;
     }
@@ -2346,7 +2346,7 @@ class MAMapView extends UIView  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -3919,7 +3919,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -3939,7 +3939,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPinAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
@@ -4079,7 +4079,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
       kNativeObjectPool.addAll(typedResult.expand((e) => e));
       return typedResult;
     }
@@ -4359,7 +4359,7 @@ extension MAMapView_Batch on List<MAMapView> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolygonRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

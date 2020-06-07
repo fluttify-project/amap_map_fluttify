@@ -45,8 +45,8 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   //region getters
   Future<MAPolyline> get_polyline() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
-    kNativeObjectPool.add(MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
+    kNativeObjectPool.add(MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
   Future<bool> get_is3DArrowLine() async {
@@ -97,7 +97,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      final __return__ = MAPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
       kNativeObjectPool.add(__return__);
       return __return__;
     }
@@ -110,7 +110,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   //region getters
   Future<List<MAPolyline>> get_polyline_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_polyline_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAGeodesicPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolyline()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);
     return typedResult;
   }
@@ -161,7 +161,7 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
     if (resultBatch == null) {
       return null;
     } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAMultiColoredPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPolylineRenderer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }

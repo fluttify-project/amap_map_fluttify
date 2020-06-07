@@ -31,6 +31,156 @@ public class SubHandler19 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.amap.api.maps.model.GL3DModelOptions::position_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // ref arg
+                    com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+            
+                    // invoke native method
+                    com.amap.api.maps.model.GL3DModelOptions __result__;
+                    try {
+                        __result__ = ref.position(var1);
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    Integer jsonableResult = null;
+                    if (__result__ != null) {
+                        jsonableResult = System.identityHashCode(__result__);
+                        getHEAP().put(jsonableResult, __result__);
+                    }
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.model.GL3DModelOptions::angle_batch", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+            
+                    // invoke native method
+                    com.amap.api.maps.model.GL3DModelOptions __result__;
+                    try {
+                        __result__ = ref.angle(new Double(var1).floatValue());
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    Integer jsonableResult = null;
+                    if (__result__ != null) {
+                        jsonableResult = System.identityHashCode(__result__);
+                        getHEAP().put(jsonableResult, __result__);
+                    }
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.model.GL3DModelOptions::getVertext_batch", (__argsBatch__, __methodResult__) -> {
+                List<java.util.List<Float>> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+            
+                    // invoke native method
+                    java.util.List<Float> __result__;
+                    try {
+                        __result__ = ref.getVertext();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    java.util.List<Float> jsonableResult = __result__;
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
+            put("com.amap.api.maps.model.GL3DModelOptions::getTextrue_batch", (__argsBatch__, __methodResult__) -> {
+                List<java.util.List<Float>> __resultList__ = new ArrayList<>();
+            
+                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
+                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+            
+                    // args
+            
+            
+                    // ref
+                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                    com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+            
+                    // invoke native method
+                    java.util.List<Float> __result__;
+                    try {
+                        __result__ = ref.getTextrue();
+                    } catch (Throwable throwable) {
+                        throwable.printStackTrace();
+                        if (getEnableLog()) {
+                            Log.d("Current HEAP: ", getHEAP().toString());
+                        }
+                        __methodResult__.error(throwable.getMessage(), null, null);
+                        return;
+                    }
+            
+                    // convert result to jsonable result
+                    java.util.List<Float> jsonableResult = __result__;
+            
+                    __resultList__.add(jsonableResult);
+                }
+            
+                __methodResult__.success(__resultList__);
+            });
+            // method
             put("com.amap.api.maps.model.GL3DModelOptions::getAngle_batch", (__argsBatch__, __methodResult__) -> {
                 List<Float> __resultList__ = new ArrayList<>();
             
@@ -7181,146 +7331,6 @@ public class SubHandler19 {
                         jsonableResult = System.identityHashCode(__result__);
                         getHEAP().put(jsonableResult, __result__);
                     }
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::setRadius_batch", (__argsBatch__, __methodResult__) -> {
-                List<String> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setRadius(var1);
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::getRadius_batch", (__argsBatch__, __methodResult__) -> {
-                List<Double> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                    // invoke native method
-                    double __result__;
-                    try {
-                        __result__ = ref.getRadius();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    double jsonableResult = __result__;
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::setStrokeWidth_batch", (__argsBatch__, __methodResult__) -> {
-                List<String> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-                    // jsonable arg
-                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                    // invoke native method
-                    try {
-                        ref.setStrokeWidth(new Double(var1).floatValue());
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    String jsonableResult = "success";
-            
-                    __resultList__.add(jsonableResult);
-                }
-            
-                __methodResult__.success(__resultList__);
-            });
-            // method
-            put("com.amap.api.maps.model.Circle::getStrokeWidth_batch", (__argsBatch__, __methodResult__) -> {
-                List<Float> __resultList__ = new ArrayList<>();
-            
-                for (int __i__ = 0; __i__ < ((List<Map<String, Object>>) __argsBatch__).size(); __i__++) {
-                    Map<String, Object> __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
-            
-                    // args
-            
-            
-                    // ref
-                    int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                    com.amap.api.maps.model.Circle ref = (com.amap.api.maps.model.Circle) getHEAP().get(refId);
-            
-                    // invoke native method
-                    float __result__;
-                    try {
-                        __result__ = ref.getStrokeWidth();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                        if (getEnableLog()) {
-                            Log.d("Current HEAP: ", getHEAP().toString());
-                        }
-                        __methodResult__.error(throwable.getMessage(), null, null);
-                        return;
-                    }
-            
-                    // convert result to jsonable result
-                    float jsonableResult = __result__;
             
                     __resultList__.add(jsonableResult);
                 }

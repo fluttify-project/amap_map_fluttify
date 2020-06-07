@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _MAParticleRotationGenerate_SUB extends NSObject with MAParticleRotationGenerate {}
+
 mixin MAParticleRotationGenerate on NSObject {
   
+
+  static MAParticleRotationGenerate subInstance() => _MAParticleRotationGenerate_SUB();
 
   
 

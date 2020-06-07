@@ -13,8 +13,12 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+class _com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener_SUB extends java_lang_Object with com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener {}
+
 mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on java_lang_Object {
   
+
+  static com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener subInstance() => _com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener_SUB();
 
   
 

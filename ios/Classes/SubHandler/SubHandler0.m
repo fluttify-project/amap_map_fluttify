@@ -2176,6 +2176,98 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
+        @"NSValue::MAMapPointValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+            NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: NSValue@%@::MAMapPointValue()", args[@"refId"]);
+            }
+        
+            // invoke native method
+            MAMapPoint result = [ref MAMapPointValue];
+        
+            // result
+            // 返回值: 结构体
+            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"NSValue::MAMapSizeValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+            NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: NSValue@%@::MAMapSizeValue()", args[@"refId"]);
+            }
+        
+            // invoke native method
+            MAMapSize result = [ref MAMapSizeValue];
+        
+            // result
+            // 返回值: 结构体
+            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"NSValue::MAMapRectValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+            NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: NSValue@%@::MAMapRectValue()", args[@"refId"]);
+            }
+        
+            // invoke native method
+            MAMapRect result = [ref MAMapRectValue];
+        
+            // result
+            // 返回值: 结构体
+            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
+        
+            methodResult(jsonableResult);
+        },
+        @"NSValue::MACoordinateValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+        
+        
+            // ref
+            NSValue* ref = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: NSValue@%@::MACoordinateValue()", args[@"refId"]);
+            }
+        
+            // invoke native method
+            CLLocationCoordinate2D result = [ref MACoordinateValue];
+        
+            // result
+            // 返回值: 结构体
+            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+            HEAP[@(resultValue.hash)] = resultValue;
+            NSNumber* jsonableResult = @(resultValue.hash);
+        
+            methodResult(jsonableResult);
+        },
         @"MAParticleVelocityGenerate::getX": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
         
@@ -5331,104 +5423,6 @@ extern BOOL enableLog;
             NSString* jsonableResult = @"success";
         
             methodResult(jsonableResult);
-        },
-        @"MAMapView::setCustomMapStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // ref arg
-            MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[@([args[@"styleOptions"] integerValue])];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(%@)", args[@"refId"], args[@"styleOptions"]);
-            }
-        
-            // invoke native method
-            [ref setCustomMapStyleOptions : styleOptions];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
-        @"MAGroundOverlayRenderer::initWithGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // ref arg
-            MAGroundOverlay* groundOverlay = (MAGroundOverlay*) HEAP[@([args[@"groundOverlay"] integerValue])];
-        
-            // ref
-            MAGroundOverlayRenderer* ref = (MAGroundOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAGroundOverlayRenderer@%@::initWithGroundOverlay(%@)", args[@"refId"], args[@"groundOverlay"]);
-            }
-        
-            // invoke native method
-            MAGroundOverlayRenderer* result = [ref initWithGroundOverlay: groundOverlay];
-        
-            // result
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
-        
-            methodResult(jsonableResult);
-        },
-        @"MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // ref arg
-            MACustomBuildingOverlay* customBuildingOverlay = (MACustomBuildingOverlay*) HEAP[@([args[@"customBuildingOverlay"] integerValue])];
-        
-            // ref
-            MACustomBuildingOverlayRenderer* ref = (MACustomBuildingOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MACustomBuildingOverlayRenderer@%@::initWithCustomBuildingOverlay(%@)", args[@"refId"], args[@"customBuildingOverlay"]);
-            }
-        
-            // invoke native method
-            MACustomBuildingOverlayRenderer* result = [ref initWithCustomBuildingOverlay: customBuildingOverlay];
-        
-            // result
-            // return a ref
-            HEAP[@((result).hash)] = result;
-            NSNumber* jsonableResult = @((result).hash);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAGroundOverlay::groundOverlayWithBounds_icon_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // struct arg
-                NSValue* boundsValue = (NSValue*) HEAP[@([args[@"bounds"] integerValue])];
-                MACoordinateBounds bounds;
-                [boundsValue getValue:&bounds];
-                // ref arg
-                UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
-        
-                // ref
-        
-        
-                // invoke native method
-                MAGroundOverlay* result = [MAGroundOverlay groundOverlayWithBounds: bounds icon: icon];
-        
-                // result
-                // return a ref
-                HEAP[@((result).hash)] = result;
-                NSNumber* jsonableResult = @((result).hash);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
         },
     };
 }
