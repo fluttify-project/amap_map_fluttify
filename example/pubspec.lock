@@ -174,7 +174,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.8.0"
+    version: "0.8.2"
   http:
     dependency: transitive
     description:
