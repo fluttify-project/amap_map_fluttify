@@ -1,3 +1,6 @@
+## 0.23.2
+- roll engine #1aee42f3
+
 ## 0.23.1
 - fix: 给snippet和title默认设置为空字符串, 防止ios端崩溃
 
