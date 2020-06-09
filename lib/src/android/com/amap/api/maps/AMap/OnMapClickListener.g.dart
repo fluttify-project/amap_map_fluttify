@@ -34,3 +34,4 @@ mixin com_amap_api_maps_AMap_OnMapClickListener on java_lang_Object {
   }
   
 }
+

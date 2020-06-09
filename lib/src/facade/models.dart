@@ -516,6 +516,7 @@ class Marker {
   MAAnnotationView _annotationView;
   MAMapView iosController;
 
+  /// 获取标题
   Future<String> get title {
     return platform(
       android: (_) => androidModel.getTitle(),
@@ -523,6 +524,7 @@ class Marker {
     );
   }
 
+  /// 获取副标题
   Future<String> get snippet {
     return platform(
       android: (_) => androidModel.getSnippet(),
@@ -530,6 +532,7 @@ class Marker {
     );
   }
 
+  /// 获取定位信息
   Future<LatLng> get location {
     return platform(
       android: (_) async {
@@ -546,6 +549,7 @@ class Marker {
     );
   }
 
+  /// 获取自定义信息
   Future<String> get object {
     return platform(
       android: (_) {
@@ -559,6 +563,7 @@ class Marker {
     );
   }
 
+  /// 删除marker
   Future<void> remove() async {
     return platform(
       android: (_) => androidModel.remove(),
@@ -566,6 +571,7 @@ class Marker {
     );
   }
 
+  /// 设置坐标
   Future<void> setCoordinate(LatLng coord) async {
     assert(coord != null);
     return platform(
@@ -590,6 +596,7 @@ class Marker {
     );
   }
 
+  /// 设置可见性
   Future<void> setVisible(bool visible) async {
     assert(visible != null);
     return platform(
@@ -605,6 +612,7 @@ class Marker {
     );
   }
 
+  /// 显示弹窗
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => androidModel.showInfoWindow(),
@@ -612,6 +620,7 @@ class Marker {
     );
   }
 
+  /// 关闭弹窗
   Future<void> hideInfoWindow() async {
     return platform(
       android: (_) => androidModel.hideInfoWindow(),
@@ -619,6 +628,7 @@ class Marker {
     );
   }
 
+  /// 设置图标
   Future<void> setIcon(Uri iconUri, ImageConfiguration configuration) async {
     return platform(
       android: (pool) async {

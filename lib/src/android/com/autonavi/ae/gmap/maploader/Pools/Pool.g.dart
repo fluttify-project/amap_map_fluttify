@@ -52,3 +52,4 @@ mixin com_autonavi_ae_gmap_maploader_Pools_Pool<T> on java_lang_Object {
   }
   
 }
+

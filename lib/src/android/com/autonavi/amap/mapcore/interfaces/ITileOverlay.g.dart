@@ -13,105 +13,460 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_autonavi_amap_mapcore_interfaces_ITileOverlay_SUB extends java_lang_Object with com_autonavi_amap_mapcore_interfaces_ITileOverlay {}
 
 mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
   
 
-  
+  static com_autonavi_amap_mapcore_interfaces_ITileOverlay subInstance() => _com_autonavi_amap_mapcore_interfaces_ITileOverlay_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<void> remove() {
   
-  
+  Future<void> remove() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('remove::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::remove([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::remove', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> destroy(bool var1) {
   
-  
+  Future<void> destroy(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::destroy([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::destroy', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> clearTileCache() {
   
-  
+  Future<void> clearTileCache() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('clearTileCache::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::clearTileCache([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::clearTileCache', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<String> getId() {
   
-  
+  Future<String> getId() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getId::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getId([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::getId', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setZIndex(double var1) {
   
-  
+  Future<void> setZIndex(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setZIndex::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setZIndex([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::setZIndex', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<double> getZIndex() {
   
-  
+  Future<double> getZIndex() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getZIndex::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::getZIndex([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::getZIndex', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setVisible(bool var1) {
   
-  
+  Future<void> setVisible(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setVisible::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::setVisible([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::setVisible', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> isVisible() {
   
-  
+  Future<bool> isVisible() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isVisible::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::isVisible([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::isVisible', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_ITileOverlay var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('equalsRemote::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::equalsRemote([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<int> hashCodeRemote() {
   
-  
+  Future<int> hashCodeRemote() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('hashCodeRemote::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.ITileOverlay@$refId::hashCodeRemote([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::hashCodeRemote', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
+}
+
+extension com_autonavi_amap_mapcore_interfaces_ITileOverlay_Batch on List<com_autonavi_amap_mapcore_interfaces_ITileOverlay> {
+  //region methods
+  
+  Future<List<void>> remove_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::remove_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> destroy_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::destroy_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> clearTileCache_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::clearTileCache_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<String>> getId_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::getId_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setZIndex_batch(List<double> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::setZIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> getZIndex_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::getZIndex_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setVisible_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::setVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isVisible_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::isVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> equalsRemote_batch(List<com_autonavi_amap_mapcore_interfaces_ITileOverlay> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::equalsRemote_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<int>> hashCodeRemote_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.ITileOverlay::hashCodeRemote_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

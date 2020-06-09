@@ -61,3 +61,4 @@ mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
   }
   
 }
+

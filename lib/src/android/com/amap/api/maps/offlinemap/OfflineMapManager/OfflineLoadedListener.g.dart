@@ -13,24 +13,64 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener_SUB extends java_lang_Object with com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener {}
 
 mixin com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener on java_lang_Object {
   
 
-  
+  static com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener subInstance() => _com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<void> onVerifyComplete() {
   
-  
+  Future<void> onVerifyComplete() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onVerifyComplete::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener@$refId::onVerifyComplete([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
+}
+
+extension com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener_Batch on List<com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener> {
+  //region methods
+  
+  Future<List<void>> onVerifyComplete_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

@@ -369,3 +369,4 @@ mixin MAMapViewDelegate on NSObject {
   }
   
 }
+

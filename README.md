@@ -6,24 +6,13 @@
 ![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
 
 Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译器生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
-同款[百度地图插件](https://github.com/fluttify-project/bmap_map_fluttify), 有其他插件需求的也都可以走技术支持流程请求支持 :) .
 
 ## 💰&nbsp;技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
-- 目前提供的标准服务:
-  - 配置高德appkey: 如果你自己配置的高德appkey一直不成功, 本方案可以提供支持.
-  - iOS端NO-IDFA版本: 如果你的APP中并没有使用到IDFA相关服务, 本方案提供非IDFA版本的插件.
-  - 应用内导航: 如果你需要使用应用内导航, 本方案提供**集成高德导航SDK版本**的地图插件. 目前支持**跳转驾车导航组件**. <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/navi_ios.gif" height="300"> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/navi_android.gif" height="300">
-  - 位置选择器: <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/location_picker_ios.gif" height="300"> <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/location_picker_android.gif" height="300"> 
-  - 其他个性化技术支持, 请前往 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 新开工单.
+- **百度地图**/**腾讯地图**插件在售, 有需求的请联系 382146139@qq.com .
 
-## 💻&nbsp;Fluttify网站
-- Fluttify编译器自助服务[fluttify.com](http://fluttify.com/#/)网站已上线, 欢迎各位来试用, 目前网站仍然处于早期阶段, 如果有什么建议可以在[技术支持](https://github.com/fluttify-project/technical-support-plan/issues/new?assignees=yohom&labels=&template=------.md&title=)中提issue.
-- 如何使用网站?
-  1. 使用github账号登录网站, 我需要知道是谁在使用我的网站;
-  2. 填写原生SDK相关的信息, 填写maven坐标和cocoapods名称的时候会进行联网自动补全;
-  3. 提交请求, 目前默认获取目标SDK的最新版本来生成插件;
-  4. 请求完成后会往github账号关联的邮箱地址发一份邮件, 产物插件便在邮件的附件中; 
+## 整合插件 [amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify)
+- 除了集成了地图, 搜索, 定位的接口外, 增加了一些需要协调三个插件功能才能实现的方法, 具体请参考[README](https://github.com/fluttify-project/amap_all_fluttify).
 
 ## 🔧&nbsp;接外包
 **本人承接外包项目(地图类app优先), 有意者请联系qq 382146139.**

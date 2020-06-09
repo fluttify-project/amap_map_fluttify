@@ -13,33 +13,108 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_amap_api_maps_LocationSource_SUB extends java_lang_Object with com_amap_api_maps_LocationSource {}
 
 mixin com_amap_api_maps_LocationSource on java_lang_Object {
   
 
-  
+  static com_amap_api_maps_LocationSource subInstance() => _com_amap_api_maps_LocationSource_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<void> activate(com_amap_api_maps_LocationSource_OnLocationChangedListener var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('activate::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::activate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::activate', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> deactivate() {
   
-  
+  Future<void> deactivate() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('deactivate::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource@$refId::deactivate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::deactivate', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
+}
+
+extension com_amap_api_maps_LocationSource_Batch on List<com_amap_api_maps_LocationSource> {
+  //region methods
+  
+  Future<List<void>> activate_batch(List<com_amap_api_maps_LocationSource_OnLocationChangedListener> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::activate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> deactivate_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::deactivate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

@@ -52,3 +52,4 @@ mixin com_amap_api_trace_TraceListener on java_lang_Object {
   }
   
 }
+

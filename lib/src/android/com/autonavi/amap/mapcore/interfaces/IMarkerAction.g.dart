@@ -13,168 +13,768 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_autonavi_amap_mapcore_interfaces_IMarkerAction_SUB extends java_lang_Object with com_autonavi_amap_mapcore_interfaces_IMarkerAction {}
 
 mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   
 
-  
+  static com_autonavi_amap_mapcore_interfaces_IMarkerAction subInstance() => _com_autonavi_amap_mapcore_interfaces_IMarkerAction_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<double> getAlpha() {
   
-  
+  Future<double> getAlpha() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getAlpha::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getAlpha([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getAlpha', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setAlpha(double var1) {
   
-  
+  Future<void> setAlpha(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setAlpha::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAlpha([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAlpha', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<int> getDisplayLevel() {
   
-  
+  Future<int> getDisplayLevel() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getDisplayLevel::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getDisplayLevel([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getDisplayLevel', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_MarkerOptions> getOptions() {
   
-  
+  Future<com_amap_api_maps_model_MarkerOptions> getOptions() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getOptions::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::getOptions([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getOptions', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> isClickable() {
   
-  
+  Future<bool> isClickable() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isClickable::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isClickable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isClickable', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> isInfoWindowAutoOverturn() {
   
-  
+  Future<bool> isInfoWindowAutoOverturn() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isInfoWindowAutoOverturn::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowAutoOverturn([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowAutoOverturn', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<bool> isInfoWindowEnable() {
   
-  
+  Future<bool> isInfoWindowEnable() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('isInfoWindowEnable::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::isInfoWindowEnable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowEnable', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setInfoWindowEnable(bool var1) {
   
-  
+  Future<void> setInfoWindowEnable(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setInfoWindowEnable::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setInfoWindowEnable([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setInfoWindowEnable', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setMarkerOptions::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setMarkerOptions([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setMarkerOptions', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setAutoOverturnInfoWindow(bool var1) {
   
-  
+  Future<void> setAutoOverturnInfoWindow(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setAutoOverturnInfoWindow::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAutoOverturnInfoWindow', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setClickable(bool var1) {
   
-  
+  Future<void> setClickable(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setClickable::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setClickable([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setClickable', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setDisplayLevel(int var1) {
   
-  
+  Future<void> setDisplayLevel(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setDisplayLevel::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setDisplayLevel([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setDisplayLevel', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setFixingPointEnable(bool var1) {
   
-  
+  Future<void> setFixingPointEnable(bool var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setFixingPointEnable::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setFixingPointEnable([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setFixingPointEnable', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setPositionNotUpdate::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setPositionNotUpdate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setPositionNotUpdate', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setRotateAngleNotUpdate(double var1) {
   
-  
+  Future<void> setRotateAngleNotUpdate(double var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setRotateAngleNotUpdate::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setRotateAngleNotUpdate', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setSnippet(String var1) {
   
-  
+  Future<void> setSnippet(String var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setSnippet::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setSnippet([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setSnippet', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<void> setTitle(String var1) {
   
-  
+  Future<void> setTitle(String var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('setTitle::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IMarkerAction@$refId::setTitle([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setTitle', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
+}
+
+extension com_autonavi_amap_mapcore_interfaces_IMarkerAction_Batch on List<com_autonavi_amap_mapcore_interfaces_IMarkerAction> {
+  //region methods
+  
+  Future<List<double>> getAlpha_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getAlpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setAlpha_batch(List<double> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAlpha_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<int>> getDisplayLevel_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getDisplayLevel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_MarkerOptions>> getOptions_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::getOptions_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isClickable_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isClickable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isInfoWindowAutoOverturn_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowAutoOverturn_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isInfoWindowEnable_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::isInfoWindowEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setInfoWindowEnable_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setInfoWindowEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setMarkerOptions_batch(List<com_amap_api_maps_model_MarkerOptions> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setMarkerOptions_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setAutoOverturnInfoWindow_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setAutoOverturnInfoWindow_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setClickable_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setClickable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setDisplayLevel_batch(List<int> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setDisplayLevel_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setFixingPointEnable_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setFixingPointEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setPositionNotUpdate_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setPositionNotUpdate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setRotateAngleNotUpdate_batch(List<double> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setRotateAngleNotUpdate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setSnippet_batch(List<String> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setSnippet_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setTitle_batch(List<String> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IMarkerAction::setTitle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

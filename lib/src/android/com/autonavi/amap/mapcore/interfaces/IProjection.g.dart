@@ -13,87 +13,372 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_autonavi_amap_mapcore_interfaces_IProjection_SUB extends java_lang_Object with com_autonavi_amap_mapcore_interfaces_IProjection {}
 
 mixin com_autonavi_amap_mapcore_interfaces_IProjection on java_lang_Object {
   
 
-  
+  static com_autonavi_amap_mapcore_interfaces_IProjection subInstance() => _com_autonavi_amap_mapcore_interfaces_IProjection_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fromScreenLocation::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromScreenLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toScreenLocation::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toScreenLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<android_graphics_PointF> toMapLocation(com_amap_api_maps_model_LatLng var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<android_graphics_PointF> toMapLocation(com_amap_api_maps_model_LatLng var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toMapLocation::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLocation([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = android_graphics_PointF()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() {
   
-  
+  Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getVisibleRegion::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getVisibleRegion([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getVisibleRegion', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_VisibleRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<double> toMapLenWithWin(int var1) {
   
-  
+  Future<double> toMapLenWithWin(int var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('toMapLenWithWin::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::toMapLenWithWin([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLenWithWin', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) {
-    kNativeObjectPool.add(var1);
   
+  Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fromBoundsToTile::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromBoundsToTile', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) {
-    kNativeObjectPool.add(var1);
   
+  Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getMapBounds::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getMapBounds([\'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getMapBounds', {"var1": var1.refId, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
-  @mustCallSuper
-  Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() {
   
-  
+  Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('getCameraInfo::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IProjection@$refId::getCameraInfo([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getCameraInfo', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
+      kNativeObjectPool.add(__return__);
+      return __return__;
     }
   }
   
+}
+
+extension com_autonavi_amap_mapcore_interfaces_IProjection_Batch on List<com_autonavi_amap_mapcore_interfaces_IProjection> {
+  //region methods
+  
+  Future<List<com_amap_api_maps_model_LatLng>> fromScreenLocation_batch(List<android_graphics_Point> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromScreenLocation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<android_graphics_Point>> toScreenLocation_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toScreenLocation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_graphics_Point()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<android_graphics_PointF>> toMapLocation_batch(List<com_amap_api_maps_model_LatLng> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLocation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_graphics_PointF()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_VisibleRegion>> getVisibleRegion_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getVisibleRegion_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_VisibleRegion()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> toMapLenWithWin_batch(List<int> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::toMapLenWithWin_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_TileProjection>> fromBoundsToTile_batch(List<com_amap_api_maps_model_LatLngBounds> var1, List<int> var2, List<int> var3) async {
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::fromBoundsToTile_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__], "var3": var3[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_LatLngBounds>> getMapBounds_batch(List<com_amap_api_maps_model_LatLng> var1, List<double> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getMapBounds_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLngBounds()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_AMapCameraInfo>> getCameraInfo_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IProjection::getCameraInfo_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

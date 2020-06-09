@@ -97,3 +97,4 @@ mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
   }
   
 }
+

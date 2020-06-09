@@ -34,3 +34,4 @@ mixin com_amap_api_maps_AMap_OnPOIClickListener on java_lang_Object {
   }
   
 }
+

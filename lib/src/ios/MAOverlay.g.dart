@@ -37,3 +37,9 @@ mixin MAOverlay on MAAnnotation {
 
   
 }
+
+extension MAOverlay_Batch on List<MAOverlay> {
+  //region methods
+  
+  //endregion
+}
