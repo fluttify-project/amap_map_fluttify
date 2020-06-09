@@ -179,7 +179,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
+              downloadBlock((MAOfflineItem()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -385,7 +385,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
+              downloadBlock((MAOfflineItem()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;
@@ -428,7 +428,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((MAOfflineCity()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
+              downloadBlock((MAOfflineItem()..refId = (args['downloadItem'])..tag__ = 'amap_map_fluttify'), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (Ref()..refId = (args['info'])..tag__ = 'amap_map_fluttify'));
               break;
             default:
               break;

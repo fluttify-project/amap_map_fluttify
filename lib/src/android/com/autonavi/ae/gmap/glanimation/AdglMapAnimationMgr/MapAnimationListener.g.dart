@@ -34,3 +34,4 @@ mixin com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener 
   }
   
 }
+

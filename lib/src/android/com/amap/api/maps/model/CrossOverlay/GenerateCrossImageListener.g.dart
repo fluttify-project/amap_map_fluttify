@@ -34,3 +34,4 @@ mixin com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener on java_la
   }
   
 }
+

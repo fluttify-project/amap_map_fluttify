@@ -49,3 +49,28 @@ mixin com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener on 
   }
   
 }
+
+extension com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener_Batch on List<com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener> {
+  //region methods
+  
+  Future<List<void>> networkStateChanged_batch(List<android_content_Context> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

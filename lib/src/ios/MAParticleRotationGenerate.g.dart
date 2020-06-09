@@ -49,3 +49,28 @@ mixin MAParticleRotationGenerate on NSObject {
   }
   
 }
+
+extension MAParticleRotationGenerate_Batch on List<MAParticleRotationGenerate> {
+  //region methods
+  
+  Future<List<double>> getRotate_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleRotationGenerate::getRotate_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
+}

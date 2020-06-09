@@ -21,6 +21,24 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends java_lang_Object  
   //endregion
 
   //region creators
+  static Future<com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay> create__int__android_content_Context__com_autonavi_amap_mapcore_interfaces_IAMap(int var1, android_content_Context var2, com_autonavi_amap_mapcore_interfaces_IAMap var3) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_BaseRouteOverlay__int__android_content_Context__com_autonavi_amap_mapcore_interfaces_IAMap', {"var1": var1, "var2": var2.refId, "var3": var3.refId});
+    final object = com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
+  
+    kNativeObjectPool.add(object);
+    return object;
+  }
+  
+  static Future<List<com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay>> create_batch__int__android_content_Context__com_autonavi_amap_mapcore_interfaces_IAMap(List<int> var1, List<android_content_Context> var2, List<com_autonavi_amap_mapcore_interfaces_IAMap> var3) async {
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_autonavi_ae_gmap_gloverlay_BaseRouteOverlay__int__android_content_Context__com_autonavi_amap_mapcore_interfaces_IAMap', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__].refId, "var3": var3[__i__].refId}]);
+  
+    final List<com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay> typedResult = resultBatch.map((result) => com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

@@ -13,24 +13,64 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-
+class _com_amap_api_maps_LocationSource_OnLocationChangedListener_SUB extends java_lang_Object with com_amap_api_maps_LocationSource_OnLocationChangedListener {}
 
 mixin com_amap_api_maps_LocationSource_OnLocationChangedListener on java_lang_Object {
   
 
-  
+  static com_amap_api_maps_LocationSource_OnLocationChangedListener subInstance() => _com_amap_api_maps_LocationSource_OnLocationChangedListener_SUB();
 
   
 
   
 
-  @mustCallSuper
-  Future<void> onLocationChanged(android_location_Location var1) {
-    kNativeObjectPool.add(var1);
   
+  Future<void> onLocationChanged(android_location_Location var1) async {
+    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('onLocationChanged::kNativeObjectPool: $kNativeObjectPool');
+      debugPrint('fluttify-dart: com.amap.api.maps.LocationSource.OnLocationChangedListener@$refId::onLocationChanged([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource.OnLocationChangedListener::onLocationChanged', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
     }
   }
   
+}
+
+extension com_amap_api_maps_LocationSource_OnLocationChangedListener_Batch on List<com_amap_api_maps_LocationSource_OnLocationChangedListener> {
+  //region methods
+  
+  Future<List<void>> onLocationChanged_batch(List<android_location_Location> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource.OnLocationChangedListener::onLocationChanged_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  //endregion
 }

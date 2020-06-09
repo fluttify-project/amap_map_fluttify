@@ -43,3 +43,4 @@ mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
   }
   
 }
+

@@ -35,3 +35,4 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
   }
   
 }
+

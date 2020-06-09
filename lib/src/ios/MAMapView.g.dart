@@ -501,7 +501,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_viewForAnnotation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAMultiPoint()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_viewForAnnotation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotation.subInstance()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
@@ -519,7 +519,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSelectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didSelectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
@@ -528,7 +528,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didDeselectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didDeselectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -582,7 +582,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -591,7 +591,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_rendererForOverlay((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAGroundOverlay()..refId = (args['overlay'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_rendererForOverlay((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAOverlay.subInstance()..refId = (args['overlay'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers':
             // print log
@@ -609,7 +609,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_calloutAccessoryControlTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), (UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), (UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
@@ -618,7 +618,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewCalloutTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didAnnotationViewCalloutTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
@@ -627,7 +627,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAPinAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didAnnotationViewTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
