@@ -59,7 +59,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from', {"var1": var1.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from', {"var1": var1.index + 0, "refId": refId});
   
   
     // handle native call

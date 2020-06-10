@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MALineCapType {
-  kMALineCapButt,
-  kMALineCapSquare,
-  kMALineCapArrow,
-  kMALineCapRound
+  kMALineCapButt /* 0 */,
+  kMALineCapSquare /* 0 */,
+  kMALineCapArrow /* 0 */,
+  kMALineCapRound /* 0 */
 }

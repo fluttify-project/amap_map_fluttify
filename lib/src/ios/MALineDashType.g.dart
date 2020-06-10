@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////
 
 enum MALineDashType {
-  kMALineDashTypeNone,
-  kMALineDashTypeSquare,
-  kMALineDashTypeDot
+  kMALineDashTypeNone /* 0 */,
+  kMALineDashTypeSquare /* 0 */,
+  kMALineDashTypeDot /* 0 */
 }

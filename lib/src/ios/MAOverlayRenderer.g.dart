@@ -459,7 +459,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
   
   
     // handle native call
@@ -531,7 +531,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index, "lineCapType": lineCapType.index, "lineDash": lineDash.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
   
   
     // handle native call
@@ -579,7 +579,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index, "strokeLineDash": strokeLineDash.index, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index + 0, "strokeLineDash": strokeLineDash.index + 0, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call

@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MAOfflineItemStatus {
-  MAOfflineItemStatusNone,
-  MAOfflineItemStatusCached,
-  MAOfflineItemStatusInstalled,
-  MAOfflineItemStatusExpired
+  MAOfflineItemStatusNone /* 0 */,
+  MAOfflineItemStatusCached /* 0 */,
+  MAOfflineItemStatusInstalled /* 0 */,
+  MAOfflineItemStatusExpired /* 0 */
 }

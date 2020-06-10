@@ -4,6 +4,6 @@
 //////////////////////////////////////////////////////////
 
 enum MAOverlayLevel {
-  MAOverlayLevelAboveRoads,
-  MAOverlayLevelAboveLabels
+  MAOverlayLevelAboveRoads /* 0 */,
+  MAOverlayLevelAboveLabels /* 0 */
 }

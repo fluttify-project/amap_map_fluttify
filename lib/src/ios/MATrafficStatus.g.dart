@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MATrafficStatus {
-  MATrafficStatusSmooth,
-  MATrafficStatusSlow,
-  MATrafficStatusJam,
-  MATrafficStatusSeriousJam
+  MATrafficStatusSmooth /* 1 */,
+  MATrafficStatusSlow /* 0 */,
+  MATrafficStatusJam /* 0 */,
+  MATrafficStatusSeriousJam /* 0 */
 }

@@ -52,6 +52,7 @@ android {
         merge 'AndroidManifest.xml'
         merge 'R.txt'
         merge 'classes.jar'
+        merge 'proguard.txt'
     }
     buildTypes {
         release {

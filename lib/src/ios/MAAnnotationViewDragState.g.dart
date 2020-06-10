@@ -4,9 +4,9 @@
 //////////////////////////////////////////////////////////
 
 enum MAAnnotationViewDragState {
-  MAAnnotationViewDragStateNone,
-  MAAnnotationViewDragStateStarting,
-  MAAnnotationViewDragStateDragging,
-  MAAnnotationViewDragStateCanceling,
-  MAAnnotationViewDragStateEnding
+  MAAnnotationViewDragStateNone /* 0 */,
+  MAAnnotationViewDragStateStarting /* 0 */,
+  MAAnnotationViewDragStateDragging /* 0 */,
+  MAAnnotationViewDragStateCanceling /* 0 */,
+  MAAnnotationViewDragStateEnding /* 0 */
 }
