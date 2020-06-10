@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum com_amap_api_maps_model_PolylineOptions_LineCapType {
-  LineCapButt,
-  LineCapSquare,
-  LineCapArrow,
-  LineCapRound
+  LineCapButt /* 0 */,
+  LineCapSquare /* 0 */,
+  LineCapArrow /* 0 */,
+  LineCapRound /* 0 */
 }

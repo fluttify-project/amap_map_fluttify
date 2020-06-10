@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MAParticleOverlayType {
-  MAParticleOverlayTypeSunny,
-  MAParticleOverlayTypeRain,
-  MAParticleOverlayTypeSnowy,
-  MAParticleOverlayTypeHaze
+  MAParticleOverlayTypeSunny /* 1 */,
+  MAParticleOverlayTypeRain /* 0 */,
+  MAParticleOverlayTypeSnowy /* 0 */,
+  MAParticleOverlayTypeHaze /* 0 */
 }

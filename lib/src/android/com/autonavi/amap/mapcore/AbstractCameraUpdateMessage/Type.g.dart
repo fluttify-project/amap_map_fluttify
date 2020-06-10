@@ -4,19 +4,19 @@
 //////////////////////////////////////////////////////////
 
 enum com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type {
-  none,
-  zoomIn,
-  changeCenter,
-  changeTilt,
-  changeBearing,
-  changeBearingGeoCenter,
-  changeGeoCenterZoom,
-  zoomOut,
-  zoomTo,
-  zoomBy,
-  scrollBy,
-  newCameraPosition,
-  newLatLngBounds,
-  newLatLngBoundsWithSize,
-  changeGeoCenterZoomTiltBearing
+  none /* 0 */,
+  zoomIn /* 0 */,
+  changeCenter /* 0 */,
+  changeTilt /* 0 */,
+  changeBearing /* 0 */,
+  changeBearingGeoCenter /* 0 */,
+  changeGeoCenterZoom /* 0 */,
+  zoomOut /* 0 */,
+  zoomTo /* 0 */,
+  zoomBy /* 0 */,
+  scrollBy /* 0 */,
+  newCameraPosition /* 0 */,
+  newLatLngBounds /* 0 */,
+  newLatLngBoundsWithSize /* 0 */,
+  changeGeoCenterZoomTiltBearing /* 0 */
 }

@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////
 
 enum MAUserTrackingMode {
-  MAUserTrackingModeNone,
-  MAUserTrackingModeFollow,
-  MAUserTrackingModeFollowWithHeading
+  MAUserTrackingModeNone /* 0 */,
+  MAUserTrackingModeFollow /* 1 */,
+  MAUserTrackingModeFollowWithHeading /* 2 */
 }

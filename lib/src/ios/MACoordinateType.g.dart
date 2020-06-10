@@ -4,11 +4,11 @@
 //////////////////////////////////////////////////////////
 
 enum MACoordinateType {
-  MACoordinateTypeBaidu,
-  MACoordinateTypeMapBar,
-  MACoordinateTypeMapABC,
-  MACoordinateTypeSoSoMap,
-  MACoordinateTypeAliYun,
-  MACoordinateTypeGoogle,
-  MACoordinateTypeGPS
+  MACoordinateTypeBaidu /* 0 */,
+  MACoordinateTypeMapBar /* 0 */,
+  MACoordinateTypeMapABC /* 0 */,
+  MACoordinateTypeSoSoMap /* 0 */,
+  MACoordinateTypeAliYun /* 0 */,
+  MACoordinateTypeGoogle /* 0 */,
+  MACoordinateTypeGPS /* 0 */
 }

@@ -419,7 +419,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index + 0, "refId": refId});
   
   
     // handle native call
@@ -443,7 +443,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends java_lang_Obj
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index + 0});
   
   
     // handle native call

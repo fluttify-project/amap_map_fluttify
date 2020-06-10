@@ -4,11 +4,11 @@
 //////////////////////////////////////////////////////////
 
 enum com_amap_api_maps_CoordinateConverter_CoordType {
-  BAIDU,
-  MAPBAR,
-  GPS,
-  MAPABC,
-  SOSOMAP,
-  ALIYUN,
-  GOOGLE
+  BAIDU /* 0 */,
+  MAPBAR /* 0 */,
+  GPS /* 0 */,
+  MAPABC /* 0 */,
+  SOSOMAP /* 0 */,
+  ALIYUN /* 0 */,
+  GOOGLE /* 0 */
 }

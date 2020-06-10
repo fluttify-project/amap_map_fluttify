@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MAOfflineMapError {
-  MAOfflineMapErrorUnknown,
-  MAOfflineMapErrorCannotWriteToTmp,
-  MAOfflineMapErrorCannotOpenZipFile,
-  MAOfflineMapErrorCannotExpand
+  MAOfflineMapErrorUnknown /* -1 */,
+  MAOfflineMapErrorCannotWriteToTmp /* -2 */,
+  MAOfflineMapErrorCannotOpenZipFile /* -3 */,
+  MAOfflineMapErrorCannotExpand /* -4 */
 }

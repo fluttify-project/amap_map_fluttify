@@ -4,12 +4,12 @@
 //////////////////////////////////////////////////////////
 
 enum MAOfflineMapDownloadStatus {
-  MAOfflineMapDownloadStatusWaiting,
-  MAOfflineMapDownloadStatusStart,
-  MAOfflineMapDownloadStatusProgress,
-  MAOfflineMapDownloadStatusCompleted,
-  MAOfflineMapDownloadStatusCancelled,
-  MAOfflineMapDownloadStatusUnzip,
-  MAOfflineMapDownloadStatusFinished,
-  MAOfflineMapDownloadStatusError
+  MAOfflineMapDownloadStatusWaiting /* 0 */,
+  MAOfflineMapDownloadStatusStart /* 0 */,
+  MAOfflineMapDownloadStatusProgress /* 0 */,
+  MAOfflineMapDownloadStatusCompleted /* 0 */,
+  MAOfflineMapDownloadStatusCancelled /* 0 */,
+  MAOfflineMapDownloadStatusUnzip /* 0 */,
+  MAOfflineMapDownloadStatusFinished /* 0 */,
+  MAOfflineMapDownloadStatusError /* 0 */
 }

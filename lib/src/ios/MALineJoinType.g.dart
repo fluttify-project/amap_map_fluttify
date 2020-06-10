@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////
 
 enum MALineJoinType {
-  kMALineJoinBevel,
-  kMALineJoinMiter,
-  kMALineJoinRound
+  kMALineJoinBevel /* 0 */,
+  kMALineJoinMiter /* 0 */,
+  kMALineJoinRound /* 0 */
 }

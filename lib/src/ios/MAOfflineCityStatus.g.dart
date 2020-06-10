@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////
 
 enum MAOfflineCityStatus {
-  MAOfflineCityStatusNone,
-  MAOfflineCityStatusCached,
-  MAOfflineCityStatusInstalled,
-  MAOfflineCityStatusExpired
+  MAOfflineCityStatusNone /* 0 */,
+  MAOfflineCityStatusCached /* 0 */,
+  MAOfflineCityStatusInstalled /* 0 */,
+  MAOfflineCityStatusExpired /* 0 */
 }

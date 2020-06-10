@@ -4,9 +4,9 @@
 //////////////////////////////////////////////////////////
 
 enum MAMapType {
-  MAMapTypeStandard,
-  MAMapTypeSatellite,
-  MAMapTypeStandardNight,
-  MAMapTypeNavi,
-  MAMapTypeBus
+  MAMapTypeStandard /* 0 */,
+  MAMapTypeSatellite /* 0 */,
+  MAMapTypeStandardNight /* 0 */,
+  MAMapTypeNavi /* 0 */,
+  MAMapTypeBus /* 0 */
 }

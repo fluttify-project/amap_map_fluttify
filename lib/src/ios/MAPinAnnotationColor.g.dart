@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////
 
 enum MAPinAnnotationColor {
-  MAPinAnnotationColorRed,
-  MAPinAnnotationColorGreen,
-  MAPinAnnotationColorPurple
+  MAPinAnnotationColorRed /* 0 */,
+  MAPinAnnotationColorGreen /* 0 */,
+  MAPinAnnotationColorPurple /* 0 */
 }

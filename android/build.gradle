@@ -57,6 +57,7 @@ android {
         release {
             consumerProguardFiles "proguard-rules.pro"
         }
+        merge 'proguard.txt'
     }
 }
 

@@ -1952,7 +1952,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingMode_animated', {"mode": mode.index, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setUserTrackingMode_animated', {"mode": mode.index + 0, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -2000,7 +2000,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel', {"level": level.index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::overlaysInLevel', {"level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2072,7 +2072,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level', {"overlay": overlay.refId, "level": level.index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level', {"overlay": overlay.refId, "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2096,7 +2096,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "level": level.index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2168,7 +2168,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level', {"overlay": overlay.refId, "index": index, "level": level.index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level', {"overlay": overlay.refId, "index": index, "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2288,7 +2288,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel', {"index1": index1, "index2": index2, "level": level.index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlayAtIndex_withOverlayAtIndex_atLevel', {"index1": index1, "index2": index2, "level": level.index + 0, "refId": refId});
   
   
     // handle native call
