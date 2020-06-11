@@ -133,7 +133,7 @@ iOS `Info.plist`配置:
 </array>
 ```
 
-## 导航组件
+## 导航组件/NO-IDFA
 导航组件在`feature/navi`中, 如需要, 则使用git依赖:
 ```yaml
 amap_map_fluttify:
