@@ -31,6 +31,38 @@ public class SubHandler5 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
+            put("com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
+            
+                // ref
+            
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight(" + var0 + ")");
+                }
+            
+                // invoke native method
+                float __result__;
+                try {
+                    __result__ = com.autonavi.ae.gmap.GLMapState.nativeGetSkyHeight(var0);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                float jsonableResult = __result__;
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.autonavi.ae.gmap.GLMapState::nativeGetGLUnitWithWin", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
@@ -6766,38 +6798,6 @@ public class SubHandler5 {
             
                 // convert result to jsonable result
                 int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.amap.mapcore.MapConfig::setAnchorY", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.autonavi.amap.mapcore.MapConfig ref = (com.autonavi.amap.mapcore.MapConfig) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.amap.mapcore.MapConfig@" + refId + "::setAnchorY(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAnchorY(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
                 __methodResult__.success(jsonableResult);
             });

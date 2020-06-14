@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -43,7 +42,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -291,7 +290,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_NavigateArrow()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -315,7 +314,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Polyline()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -339,7 +338,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Circle()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -363,7 +362,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Arc()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -387,7 +386,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Polygon()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -411,7 +410,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_GroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -435,7 +434,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -459,7 +458,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -507,7 +506,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Text()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -531,7 +530,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_TileOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -987,7 +986,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -1059,7 +1058,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_UiSettings()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -1083,7 +1082,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_Projection()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -1114,7 +1113,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChange((com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onCameraChange(await (args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
@@ -1123,7 +1122,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChangeFinish((com_amap_api_maps_model_CameraPosition()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onCameraChangeFinish(await (args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
               break;
             default:
               break;
@@ -1166,7 +1165,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapClick((com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMapClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1209,7 +1208,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onTouch((android_view_MotionEvent()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onTouch(await (args['var1'] as Object).as__<android_view_MotionEvent>());
               break;
             default:
               break;
@@ -1252,7 +1251,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapLongClick((com_amap_api_maps_model_LatLng()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMapLongClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1295,7 +1294,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerClick((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMarkerClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1338,7 +1337,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPolylineClick((com_amap_api_maps_model_Polyline()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onPolylineClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Polyline>());
               break;
             default:
               break;
@@ -1381,7 +1380,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragStart((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMarkerDragStart(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
@@ -1390,7 +1389,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDrag((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMarkerDrag(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
@@ -1399,7 +1398,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragEnd((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMarkerDragEnd(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1485,7 +1484,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onInfoWindowClick((com_amap_api_maps_model_Marker()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onInfoWindowClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1528,7 +1527,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMyLocationChange((android_location_Location()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMyLocationChange(await (args['var1'] as Object).as__<android_location_Location>());
               break;
             default:
               break;
@@ -1571,7 +1570,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPOIClick((com_amap_api_maps_model_Poi()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onPOIClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Poi>());
               break;
             default:
               break;
@@ -1638,7 +1637,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.getInfoWindowParams((com_amap_api_maps_model_BasePointOverlay()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.getInfoWindowParams(await (args['var1'] as Object).as__<com_amap_api_maps_model_BasePointOverlay>());
               break;
             default:
               break;
@@ -1681,7 +1680,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.OnIndoorBuilding((com_amap_api_maps_model_IndoorBuildingInfo()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.OnIndoorBuilding(await (args['var1'] as Object).as__<com_amap_api_maps_model_IndoorBuildingInfo>());
               break;
             default:
               break;
@@ -1724,7 +1723,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapPrint((android_graphics_drawable_Drawable()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMapPrint(await (args['var1'] as Object).as__<android_graphics_drawable_Drawable>());
               break;
             default:
               break;
@@ -1767,7 +1766,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onMapScreenShot__android_graphics_Bitmap(await (args['var1'] as Object).as__<android_graphics_Bitmap>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
@@ -1776,7 +1775,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap__int((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'), args['var2']);
+              var1?.onMapScreenShot__android_graphics_Bitmap__int(await (args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
@@ -2201,7 +2200,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_InfoWindowAnimationManager()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -2585,7 +2584,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_autonavi_amap_mapcore_MapConfig()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -2609,7 +2608,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = android_view_View()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -2801,7 +2800,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_CrossOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -2825,7 +2824,31 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeEngineGLOverlay(com_autonavi_ae_gmap_gloverlay_BaseMapOverlay var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::removeEngineGLOverlay([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IAMap::removeEngineGLOverlay', {"var1": var1.refId, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
       return __return__;
     }
   }
@@ -2993,7 +3016,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -3137,7 +3160,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -3216,7 +3239,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPointClick((com_amap_api_maps_model_MultiPointItem()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'));
+              var1?.onPointClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_MultiPointItem>());
               break;
             default:
               break;
@@ -3348,7 +3371,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_BuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -3372,7 +3395,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -3396,7 +3419,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_particle_ParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -4985,6 +5008,26 @@ extension com_autonavi_amap_mapcore_interfaces_IAMap_Batch on List<com_autonavi_
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> removeEngineGLOverlay_batch(List<com_autonavi_ae_gmap_gloverlay_BaseMapOverlay> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.amap.mapcore.interfaces.IAMap::removeEngineGLOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
       return typedResult;
     }
   }

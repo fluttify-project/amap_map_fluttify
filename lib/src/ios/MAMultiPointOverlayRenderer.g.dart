@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -87,7 +86,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             }
         
             // handle the native call
-            delegate?.multiPointOverlayRenderer_didItemTapped((MAMultiPointOverlayRenderer()..refId = (args['renderer'])..tag__ = 'amap_map_fluttify'), (MAMultiPointItem()..refId = (args['item'])..tag__ = 'amap_map_fluttify'));
+            delegate?.multiPointOverlayRenderer_didItemTapped(await (args['renderer'] as Object).as__<MAMultiPointOverlayRenderer>(), await (args['item'] as Object).as__<MAMultiPointItem>());
             break;
           default:
             break;
@@ -135,7 +134,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MAMultiPointOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }

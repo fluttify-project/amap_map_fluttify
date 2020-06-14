@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -70,7 +69,7 @@ class MAParticleRectShapeModule extends NSObject with MAParticleShapeModule {
       return null;
     } else {
       final __return__ = MAParticleRectShapeModule()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }

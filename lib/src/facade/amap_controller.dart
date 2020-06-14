@@ -2236,7 +2236,8 @@ class _IOSMapDelegate extends NSObject
     super.mapView_didAddAnnotationViews(mapView, views);
     if (_annotationViewCompleter?.isCompleted == false) {
       List<MAAnnotationView> result = [
-        for (final view in views) await view.asMAAnnotationView()
+        for (final view in views)
+          await TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
       ];
       _annotationViewCompleter.complete(result);
     }
@@ -2447,9 +2448,11 @@ class _IOSMapDelegate extends NSObject
   ) async {
     super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
     if (overlayRenderers.length == 1 &&
-        await overlayRenderers[0].isMAMultiPointOverlayRenderer()) {
+        await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
+            .is__<MAMultiPointOverlayRenderer>()) {
       final multiPointRenderer =
-          await overlayRenderers[0].asMAMultiPointOverlayRenderer();
+          await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
+              .as__<MAMultiPointOverlayRenderer>();
       multiPointRenderer.set_delegate(this);
     }
   }

@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -64,7 +63,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.traceManager_didTrace_correct_distance_withError((MATraceManager()..refId = (args['manager'])..tag__ = 'amap_map_fluttify'), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+            delegate?.traceManager_didTrace_correct_distance_withError(await (args['manager'] as Object).as__<MATraceManager>(), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], await (args['error'] as Object).as__<NSError>());
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -73,7 +72,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth((CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewRequireLocationAuth(await (args['locationManager'] as Object).as__<CLLocationManager>());
             break;
           default:
             break;
@@ -103,7 +102,7 @@ class MATraceManager extends NSObject  {
       return null;
     } else {
       final __return__ = MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -164,7 +163,7 @@ class MATraceManager extends NSObject  {
       return null;
     } else {
       final __return__ = NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -195,7 +194,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              locCallback((args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+              locCallback((args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], await (args['error'] as Object).as__<NSError>());
               break;
             default:
               break;

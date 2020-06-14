@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -179,7 +178,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onGenerateComplete((android_graphics_Bitmap()..refId = (args['var1'])..tag__ = 'amap_map_fluttify'), args['var2']);
+              var1?.onGenerateComplete(await (args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;

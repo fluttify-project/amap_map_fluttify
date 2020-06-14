@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -172,7 +171,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
       return null;
     } else {
       final __return__ = android_content_Context()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -604,7 +603,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
       return null;
     } else {
       final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -628,7 +627,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
       return null;
     } else {
       final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -652,7 +651,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
       return null;
     } else {
       final __return__ = com_autonavi_ae_gmap_GLMapState()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -1040,7 +1039,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
       return null;
     } else {
       final __return__ = com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -1281,6 +1280,30 @@ class com_autonavi_ae_gmap_GLMapEngine extends java_lang_Object with com_autonav
     } else {
       final __return__ = __result__;
     
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle> getOverlayBundle(int var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getOverlayBundle([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getOverlayBundle', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_autonavi_ae_gmap_gloverlay_GLOverlayBundle()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -3086,6 +3109,26 @@ extension com_autonavi_ae_gmap_GLMapEngine_Batch on List<com_autonavi_ae_gmap_GL
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_autonavi_ae_gmap_gloverlay_GLOverlayBundle>> getOverlayBundle_batch(List<int> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getOverlayBundle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_ae_gmap_gloverlay_GLOverlayBundle()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
   }

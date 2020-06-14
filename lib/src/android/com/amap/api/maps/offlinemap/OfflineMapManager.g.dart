@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -172,7 +171,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -196,7 +195,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_offlinemap_OfflineMapCity()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -220,7 +219,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }

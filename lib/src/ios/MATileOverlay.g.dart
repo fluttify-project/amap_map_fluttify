@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -146,7 +145,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
       return null;
     } else {
       final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -177,7 +176,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result((NSData()..refId = (args['tileData'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+              result(await (args['tileData'] as Object).as__<NSData>(), await (args['error'] as Object).as__<NSError>());
               break;
             default:
               break;

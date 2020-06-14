@@ -2187,6 +2187,43 @@ public class SubHandler4 {
                 __methodResult__.success(jsonableResult);
             });
             // method
+            put("com.autonavi.ae.gmap.GLMapEngine::getOverlayBundle", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.autonavi.ae.gmap.GLMapEngine ref = (com.autonavi.ae.gmap.GLMapEngine) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapEngine@" + refId + "::getOverlayBundle(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.autonavi.ae.gmap.gloverlay.GLOverlayBundle __result__;
+                try {
+                    __result__ = ref.getOverlayBundle(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
             put("com.autonavi.ae.gmap.GLMapEngine::destroyOverlay", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
@@ -6603,38 +6640,6 @@ public class SubHandler4 {
             
                 // convert result to jsonable result
                 String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                long var0 = (long) (int) ((Map<String, Object>) __args__).get("var0");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.autonavi.ae.gmap.GLMapState::nativeGetSkyHeight(" + var0 + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = com.autonavi.ae.gmap.GLMapState.nativeGetSkyHeight(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
                 __methodResult__.success(jsonableResult);
             });

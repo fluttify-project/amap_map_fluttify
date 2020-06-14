@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -99,7 +98,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
       return null;
     } else {
       final __return__ = MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
@@ -139,7 +138,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback((MAAnnotationMoveAnimation()..refId = (args['currentAni'])..tag__ = 'amap_map_fluttify'));
+              stepCallback(await (args['currentAni'] as Object).as__<MAAnnotationMoveAnimation>());
               break;
             default:
               break;
@@ -151,7 +150,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
       return null;
     } else {
       final __return__ = MAAnnotationMoveAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }
   }
