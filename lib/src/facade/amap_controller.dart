@@ -2237,7 +2237,7 @@ class _IOSMapDelegate extends NSObject
     if (_annotationViewCompleter?.isCompleted == false) {
       List<MAAnnotationView> result = [
         for (final view in views)
-          await TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
+          TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
       ];
       _annotationViewCompleter.complete(result);
     }
@@ -2450,9 +2450,8 @@ class _IOSMapDelegate extends NSObject
     if (overlayRenderers.length == 1 &&
         await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
             .is__<MAMultiPointOverlayRenderer>()) {
-      final multiPointRenderer =
-          await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
-              .as__<MAMultiPointOverlayRenderer>();
+      final multiPointRenderer = TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
+          .as__<MAMultiPointOverlayRenderer>();
       multiPointRenderer.set_delegate(this);
     }
   }
