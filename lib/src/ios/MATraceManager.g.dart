@@ -63,7 +63,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.traceManager_didTrace_correct_distance_withError(await (args['manager'] as Object).as__<MATraceManager>(), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], await (args['error'] as Object).as__<NSError>());
+            delegate?.traceManager_didTrace_correct_distance_withError((args['manager'] as Object).as__<MATraceManager>(), (args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (args['error'] as Object).as__<NSError>());
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -72,7 +72,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth(await (args['locationManager'] as Object).as__<CLLocationManager>());
+            delegate?.mapViewRequireLocationAuth((args['locationManager'] as Object).as__<CLLocationManager>());
             break;
           default:
             break;
@@ -194,7 +194,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              locCallback((args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], await (args['error'] as Object).as__<NSError>());
+              locCallback((args['locations'] as List).cast<int>().map((it) => CLLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['tracePoints'] as List).cast<int>().map((it) => MATracePoint()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['distance'], (args['error'] as Object).as__<NSError>());
               break;
             default:
               break;

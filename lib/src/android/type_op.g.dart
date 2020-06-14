@@ -1159,863 +1159,863 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
   }
 
   // type cast
-  Future<T> as__<T>() async {
+  T as__<T>() {
     final typeName = T.toString();
     // jsonable 直接造型 返回
     if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
       return this as T;
     }
     else if (T == com_autonavi_ae_gmap_maploader_Pools_SimplePool) {
-      return (com_autonavi_ae_gmap_maploader_Pools_SimplePool()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_maploader_Pools_SimplePool()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_maploader_Pools) {
-      return (com_autonavi_ae_gmap_maploader_Pools()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_maploader_Pools()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool) {
-      return (com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_maploader_ProcessingTile) {
-      return (com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_GLMapEngine) {
-      return (com_autonavi_ae_gmap_GLMapEngine()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_GLMapEngine()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_AbstractMapMessage) {
-      return (com_autonavi_ae_gmap_AbstractMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_AbstractMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glinterface_MapLabelItem) {
-      return (com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr) {
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation2V) {
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues) {
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimFling) {
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation) {
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation1V) {
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom) {
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam) {
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V) {
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup) {
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V) {
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_style_StyleItem) {
-      return (com_autonavi_ae_gmap_style_StyleItem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_style_StyleItem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_style_StyleElement) {
-      return (com_autonavi_ae_gmap_style_StyleElement()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_style_StyleElement()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam) {
-      return (com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo) {
-      return (com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_GLMapState) {
-      return (com_autonavi_ae_gmap_GLMapState()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_GLMapState()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay) {
-      return (com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLTextureProperty) {
-      return (com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector) {
-      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits) {
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle) {
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr) {
-      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_BaseMapOverlay) {
-      return (com_autonavi_ae_gmap_gloverlay_BaseMapOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_BaseMapOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay) {
-      return (com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlay) {
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLRouteProperty) {
-      return (com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayTexture) {
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_ae_gmap_GLMapEngine_InitParam) {
-      return (com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam) {
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_maploader_NetworkState) {
-      return (com_autonavi_amap_mapcore_maploader_NetworkState()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_maploader_NetworkState()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener) {
-      return (com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest) {
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader) {
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_maploader_AMapLoader()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_MapProjection) {
-      return (com_autonavi_amap_mapcore_MapProjection()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_MapProjection()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_tools_TextTextureGenerator) {
-      return (com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_tools_GLFileUtil) {
-      return (com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_tools_GlMapUtil) {
-      return (com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_tools_GLMapStaticValue) {
-      return (com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_tools_GLConvertUtil) {
-      return (com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_MsgProcessor) {
-      return (com_autonavi_amap_mapcore_MsgProcessor()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_MsgProcessor()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake) {
-      return (com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AbstractNativeInstance) {
-      return (com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_LinkInfo) {
-      return (com_autonavi_amap_mapcore_LinkInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_LinkInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapNativePolyline) {
-      return (com_autonavi_amap_mapcore_AMapNativePolyline()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapNativePolyline()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase) {
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_IPoint) {
-      return (com_autonavi_amap_mapcore_IPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_IPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager) {
-      return (com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationListener) {
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Inner_3dMap_locationListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_DPoint) {
-      return (com_autonavi_amap_mapcore_DPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_DPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapNativeRenderer) {
-      return (com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_FileUtil) {
-      return (com_autonavi_amap_mapcore_FileUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_FileUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_IAMapEngineCallback) {
-      return (com_autonavi_amap_mapcore_IAMapEngineCallback.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_IAMapEngineCallback.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLTranslateAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLRotateAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLRotateAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLRotateAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLAlphaAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLScaleAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLTransformation) {
-      return (com_autonavi_amap_mapcore_animation_GLTransformation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLTransformation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLAnimationSet) {
-      return (com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLEmergeAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_animation_GLAnimation) {
-      return (com_autonavi_amap_mapcore_animation_GLAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_animation_GLAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_MapConfig) {
-      return (com_autonavi_amap_mapcore_MapConfig()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_MapConfig()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_message_HoverGestureMapMessage) {
-      return (com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_message_MoveGestureMapMessage) {
-      return (com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_message_ScaleGestureMapMessage) {
-      return (com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_message_AbstractGestureMapMessage) {
-      return (com_autonavi_amap_mapcore_message_AbstractGestureMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_message_AbstractGestureMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_message_RotateGestureMapMessage) {
-      return (com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_FPointBounds) {
-      return (com_autonavi_amap_mapcore_FPointBounds()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_FPointBounds()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_CoordUtil) {
-      return (com_autonavi_amap_mapcore_CoordUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_CoordUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AeUtil) {
-      return (com_autonavi_amap_mapcore_AeUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AeUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_VirtualEarthProjection) {
-      return (com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Rectangle) {
-      return (com_autonavi_amap_mapcore_Rectangle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Rectangle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Inner_3dMap_location) {
-      return (com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapEngineUtils) {
-      return (com_autonavi_amap_mapcore_AMapEngineUtils()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapEngineUtils()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_FPoint3) {
-      return (com_autonavi_amap_mapcore_FPoint3()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_FPoint3()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapEtaDecoder) {
-      return (com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_FPointBounds_Builder) {
-      return (com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationOption) {
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_FPoint) {
-      return (com_autonavi_amap_mapcore_FPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_FPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapNativeParticleSystem) {
-      return (com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AbstractCameraUpdateMessage) {
-      return (com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_AMapNativeBuildingRenderer) {
-      return (com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_Convert) {
-      return (com_autonavi_amap_mapcore_Convert()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_Convert()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay) {
-      return (com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IOverlay) {
-      return (com_autonavi_amap_mapcore_interfaces_IOverlay.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IOverlay.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IText) {
-      return (com_autonavi_amap_mapcore_interfaces_IText.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IText.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IAnimation) {
-      return (com_autonavi_amap_mapcore_interfaces_IAnimation.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IAnimation.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IglModel) {
-      return (com_autonavi_amap_mapcore_interfaces_IglModel.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IglModel.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IArc) {
-      return (com_autonavi_amap_mapcore_interfaces_IArc.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IArc.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IUiSettings) {
-      return (com_autonavi_amap_mapcore_interfaces_IUiSettings.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IUiSettings.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IOverlayImage) {
-      return (com_autonavi_amap_mapcore_interfaces_IOverlayImage.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IOverlayImage.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_INavigateArrow) {
-      return (com_autonavi_amap_mapcore_interfaces_INavigateArrow.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_INavigateArrow.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IGroundOverlay) {
-      return (com_autonavi_amap_mapcore_interfaces_IGroundOverlay.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IGroundOverlay.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IPolyline) {
-      return (com_autonavi_amap_mapcore_interfaces_IPolyline.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IPolyline.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IMarker) {
-      return (com_autonavi_amap_mapcore_interfaces_IMarker.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IMarker.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IAMapListener) {
-      return (com_autonavi_amap_mapcore_interfaces_IAMapListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IAMapListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IInfoWindowManager) {
-      return (com_autonavi_amap_mapcore_interfaces_IInfoWindowManager.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IInfoWindowManager.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_ITileOverlay) {
-      return (com_autonavi_amap_mapcore_interfaces_ITileOverlay.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_ITileOverlay.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IProjection) {
-      return (com_autonavi_amap_mapcore_interfaces_IProjection.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IProjection.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_ICircle) {
-      return (com_autonavi_amap_mapcore_interfaces_ICircle.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_ICircle.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IAMap) {
-      return (com_autonavi_amap_mapcore_interfaces_IAMap.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IAMap.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate) {
-      return (com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IMarkerAction) {
-      return (com_autonavi_amap_mapcore_interfaces_IMarkerAction.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IMarkerAction.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_autonavi_amap_mapcore_interfaces_IPolygon) {
-      return (com_autonavi_amap_mapcore_interfaces_IPolygon.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_autonavi_amap_mapcore_interfaces_IPolygon.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
-      return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_LocationSource) {
-      return (com_amap_api_maps_LocationSource.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_LocationSource.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_UiSettings) {
-      return (com_amap_api_maps_UiSettings()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_UiSettings()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener) {
-      return (com_amap_api_maps_SwipeDismissTouchListener()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissTouchListener()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowParams) {
-      return (com_amap_api_maps_InfoWindowParams()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_InfoWindowParams()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdateFactory) {
-      return (com_amap_api_maps_CameraUpdateFactory()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CameraUpdateFactory()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapException) {
-      return (com_amap_api_maps_AMapException()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapException()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptions) {
-      return (com_amap_api_maps_AMapOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptionsCreator) {
-      return (com_amap_api_maps_AMapOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CoordinateConverter) {
-      return (com_amap_api_maps_CoordinateConverter()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CoordinateConverter()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_InfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_InfoWindowAdapter.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_InfoWindowAdapter.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_ImageInfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_ImageInfoWindowAdapter.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_ImageInfoWindowAdapter.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_SpatialRelationUtil) {
-      return (com_amap_api_maps_utils_SpatialRelationUtil()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_SpatialRelationUtil()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_MovingPointOverlay) {
-      return (com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_SmoothMoveMarker) {
-      return (com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdate) {
-      return (com_amap_api_maps_CameraUpdate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_CameraUpdate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissCallBack) {
-      return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_LocationSource_OnLocationChangedListener) {
-      return (com_amap_api_maps_LocationSource_OnLocationChangedListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_LocationSource_OnLocationChangedListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissView) {
-      return (com_amap_api_maps_SwipeDismissView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapsInitializer) {
-      return (com_amap_api_maps_MapsInitializer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_MapsInitializer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapStatus) {
-      return (com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
-      return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
-      return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_Province) {
-      return (com_amap_api_maps_offlinemap_Province()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_Province()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapManager()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapCity) {
-      return (com_amap_api_maps_offlinemap_OfflineMapCity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapCity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapActivity) {
-      return (com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_City) {
-      return (com_amap_api_maps_offlinemap_City()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_City()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_Projection) {
-      return (com_amap_api_maps_Projection()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_Projection()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter) {
-      return (com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polygon) {
-      return (com_amap_api_maps_model_Polygon()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Polygon()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
-      return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonHoleOptions) {
-      return (com_amap_api_maps_model_PolygonHoleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonHoleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptionsCreator) {
-      return (com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Poi) {
-      return (com_amap_api_maps_model_Poi()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Poi()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyle) {
-      return (com_amap_api_maps_model_MyLocationStyle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyLocationStyle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RouteOverlay) {
-      return (com_amap_api_maps_model_RouteOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RouteOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegion) {
-      return (com_amap_api_maps_model_VisibleRegion()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_VisibleRegion()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngCreator) {
-      return (com_amap_api_maps_model_LatLngCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleHoleOptions) {
-      return (com_amap_api_maps_model_CircleHoleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleHoleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Text) {
-      return (com_amap_api_maps_model_Text()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Text()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds_Builder) {
-      return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
-      return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorFactory) {
-      return (com_amap_api_maps_model_BitmapDescriptorFactory()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptorFactory()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_UrlTileProvider) {
-      return (com_amap_api_maps_model_UrlTileProvider()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_UrlTileProvider()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlayOptions) {
-      return (com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiCreator) {
-      return (com_amap_api_maps_model_PoiCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PoiCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptions) {
-      return (com_amap_api_maps_model_PolylineOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolylineOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Tile) {
-      return (com_amap_api_maps_model_Tile()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Tile()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModel) {
-      return (com_amap_api_maps_model_GL3DModel()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GL3DModel()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Gradient) {
-      return (com_amap_api_maps_model_Gradient()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Gradient()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
-      return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
-      return (com_amap_api_maps_model_NaviPara()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NaviPara()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptions) {
-      return (com_amap_api_maps_model_GroundOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModelOptions) {
-      return (com_amap_api_maps_model_GL3DModelOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GL3DModelOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlay) {
-      return (com_amap_api_maps_model_GroundOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyTrafficStyle) {
-      return (com_amap_api_maps_model_MyTrafficStyle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyTrafficStyle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition) {
-      return (com_amap_api_maps_model_CameraPosition()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPosition()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptionsCreator) {
-      return (com_amap_api_maps_model_TextOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TextOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiPara) {
-      return (com_amap_api_maps_model_PoiPara()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PoiPara()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptions) {
-      return (com_amap_api_maps_model_MarkerOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MarkerOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider) {
-      return (com_amap_api_maps_model_HeatmapTileProvider()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatmapTileProvider()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrow) {
-      return (com_amap_api_maps_model_NavigateArrow()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrow()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AnimationSet) {
-      return (com_amap_api_maps_model_animation_AnimationSet()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_AnimationSet()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_RotateAnimation) {
-      return (com_amap_api_maps_model_animation_RotateAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_RotateAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_TranslateAnimation) {
-      return (com_amap_api_maps_model_animation_TranslateAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_TranslateAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_Animation) {
-      return (com_amap_api_maps_model_animation_Animation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_Animation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_EmergeAnimation) {
-      return (com_amap_api_maps_model_animation_EmergeAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_EmergeAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AlphaAnimation) {
-      return (com_amap_api_maps_model_animation_AlphaAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_AlphaAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_ScaleAnimation) {
-      return (com_amap_api_maps_model_animation_ScaleAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_animation_ScaleAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds) {
-      return (com_amap_api_maps_model_LatLngBounds()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBounds()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CustomMapStyleOptions) {
-      return (com_amap_api_maps_model_CustomMapStyleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CustomMapStyleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlayOptions) {
-      return (com_amap_api_maps_model_BuildingOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BuildingOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlayOptions) {
-      return (com_amap_api_maps_model_CrossOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CrossOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegionCreator) {
-      return (com_amap_api_maps_model_VisibleRegionCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_VisibleRegionCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLng) {
-      return (com_amap_api_maps_model_LatLng()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLng()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjection) {
-      return (com_amap_api_maps_model_TileProjection()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProjection()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapPara) {
-      return (com_amap_api_maps_model_AMapPara()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapPara()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition_Builder) {
-      return (com_amap_api_maps_model_CameraPosition_Builder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPosition_Builder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BasePointOverlay) {
-      return (com_amap_api_maps_model_BasePointOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BasePointOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptionsCreator) {
-      return (com_amap_api_maps_model_CircleOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Arc) {
-      return (com_amap_api_maps_model_Arc()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Arc()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapCameraInfo) {
-      return (com_amap_api_maps_model_AMapCameraInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapCameraInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Circle) {
-      return (com_amap_api_maps_model_Circle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Circle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptions) {
-      return (com_amap_api_maps_model_PolygonOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_WeightedLatLng) {
-      return (com_amap_api_maps_model_WeightedLatLng()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_WeightedLatLng()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyleCreator) {
-      return (com_amap_api_maps_model_MyLocationStyleCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MyLocationStyleCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptionsCreator) {
-      return (com_amap_api_maps_model_MarkerOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MarkerOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointItem) {
-      return (com_amap_api_maps_model_MultiPointItem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointItem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBoundsCreator) {
-      return (com_amap_api_maps_model_LatLngBoundsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_LatLngBoundsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptions) {
-      return (com_amap_api_maps_model_ArcOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_ArcOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorCreator) {
-      return (com_amap_api_maps_model_BitmapDescriptorCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BitmapDescriptorCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptions) {
-      return (com_amap_api_maps_model_CircleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CircleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptionsCreator) {
-      return (com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RuntimeRemoteException) {
-      return (com_amap_api_maps_model_RuntimeRemoteException()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RuntimeRemoteException()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapGLOverlay) {
-      return (com_amap_api_maps_model_AMapGLOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_AMapGLOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider_Builder) {
-      return (com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlay) {
-      return (com_amap_api_maps_model_MultiPointOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_MultiPointOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOptions) {
-      return (com_amap_api_maps_model_BaseOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptionsCreator) {
-      return (com_amap_api_maps_model_PolylineOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolylineOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOverlay) {
-      return (com_amap_api_maps_model_BaseOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Marker) {
-      return (com_amap_api_maps_model_Marker()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Marker()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptions) {
-      return (com_amap_api_maps_model_TileOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RoutePara) {
-      return (com_amap_api_maps_model_RoutePara()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_RoutePara()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptionsCreator) {
-      return (com_amap_api_maps_model_ArcOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_ArcOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPositionCreator) {
-      return (com_amap_api_maps_model_CameraPositionCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CameraPositionCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlay) {
-      return (com_amap_api_maps_model_CrossOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_CrossOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverLifeModule) {
-      return (com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ConstantRotationOverLife) {
-      return (com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_SinglePointParticleShape) {
-      return (com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants) {
-      return (com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_CurveSizeOverLife) {
-      return (com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleEmissionModule) {
-      return (com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_SizeOverLife) {
-      return (com_amap_api_maps_model_particle_SizeOverLife()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_SizeOverLife()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_RectParticleShape) {
-      return (com_amap_api_maps_model_particle_RectParticleShape()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_RectParticleShape()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ColorGenerate) {
-      return (com_amap_api_maps_model_particle_ColorGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ColorGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_VelocityGenerate) {
-      return (com_amap_api_maps_model_particle_VelocityGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_VelocityGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_RotationOverLife) {
-      return (com_amap_api_maps_model_particle_RotationOverLife()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_RotationOverLife()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants) {
-      return (com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleShapeModule) {
-      return (com_amap_api_maps_model_particle_ParticleShapeModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleShapeModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory) {
-      return (com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptions) {
-      return (com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlay) {
-      return (com_amap_api_maps_model_particle_ParticleOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_particle_ParticleOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseHoleOptions) {
-      return (com_amap_api_maps_model_BaseHoleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BaseHoleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptions) {
-      return (com_amap_api_maps_model_TextOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TextOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlay) {
-      return (com_amap_api_maps_model_TileOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptionsCreator) {
-      return (com_amap_api_maps_model_PolygonOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_PolygonOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjectionCreator) {
-      return (com_amap_api_maps_model_TileProjectionCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_TileProjectionCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptionsCreator) {
-      return (com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_IndoorBuildingInfo) {
-      return (com_amap_api_maps_model_IndoorBuildingInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_IndoorBuildingInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polyline) {
-      return (com_amap_api_maps_model_Polyline()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_Polyline()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlay) {
-      return (com_amap_api_maps_model_BuildingOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_model_BuildingOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks) {
-      return (com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_TextureMapView) {
-      return (com_amap_api_maps_TextureMapView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_TextureMapView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapUtils) {
-      return (com_amap_api_maps_AMapUtils()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMapUtils()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowAnimationManager) {
-      return (com_amap_api_maps_InfoWindowAnimationManager()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_InfoWindowAnimationManager()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_WearMapView) {
-      return (com_amap_api_maps_WearMapView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_WearMapView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap) {
-      return (com_amap_api_maps_AMap()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_AMap()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_interfaces_IGlOverlayLayer) {
-      return (com_amap_api_maps_interfaces_IGlOverlayLayer.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_interfaces_IGlOverlayLayer.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapView) {
-      return (com_amap_api_maps_MapView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_maps_MapView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_LBSTraceBase) {
-      return (com_amap_api_trace_LBSTraceBase.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_LBSTraceBase.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
-      return (com_amap_api_trace_TraceLocation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_TraceLocation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_LBSTraceClient) {
-      return (com_amap_api_trace_LBSTraceClient()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_LBSTraceClient()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceOverlay) {
-      return (com_amap_api_trace_TraceOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_trace_TraceOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_mapcore_util_) {
-      return (com_amap_api_mapcore_util_()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (com_amap_api_mapcore_util_()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Context) {
-      return (android_content_Context()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_Context()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Intent) {
-      return (android_content_Intent()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_Intent()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_ContentProvider) {
-      return (android_content_ContentProvider()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_content_ContentProvider()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Application) {
-      return (android_app_Application()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Application()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Notification) {
-      return (android_app_Notification()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Notification()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Activity) {
-      return (android_app_Activity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_Activity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_PendingIntent) {
-      return (android_app_PendingIntent()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_app_PendingIntent()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Bundle) {
-      return (android_os_Bundle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Bundle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Binder) {
-      return (android_os_Binder()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Binder()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_View) {
-      return (android_view_View()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_View()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_SurfaceView) {
-      return (android_view_SurfaceView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_SurfaceView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_ViewGroup) {
-      return (android_view_ViewGroup()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_ViewGroup()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Point) {
-      return (android_graphics_Point()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_Point()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_PointF) {
-      return (android_graphics_PointF()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_PointF()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Bitmap) {
-      return (android_graphics_Bitmap()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_Bitmap()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_ImageView) {
-      return (android_widget_ImageView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_ImageView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == java_io_Serializable) {
-      return (java_io_Serializable.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (java_io_Serializable.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == java_io_File) {
-      return (java_io_File()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (java_io_File()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_location_Location) {
-      return (android_location_Location()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_location_Location()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_MotionEvent) {
-      return (android_view_MotionEvent()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_view_MotionEvent()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_drawable_Drawable) {
-      return (android_graphics_drawable_Drawable()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_graphics_drawable_Drawable()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_FrameLayout) {
-      return (android_widget_FrameLayout()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_FrameLayout()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_TextView) {
-      return (android_widget_TextView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_TextView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_LinearLayout) {
-      return (android_widget_LinearLayout()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_LinearLayout()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_RelativeLayout) {
-      return (android_widget_RelativeLayout()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_widget_RelativeLayout()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Parcelable) {
-      return (android_os_Parcelable.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_os_Parcelable.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_util_Pair) {
-      return (android_util_Pair()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (android_util_Pair()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
   }
 }

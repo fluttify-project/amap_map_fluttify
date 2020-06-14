@@ -138,7 +138,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback(await (args['currentAni'] as Object).as__<MAAnnotationMoveAnimation>());
+              stepCallback((args['currentAni'] as Object).as__<MAAnnotationMoveAnimation>());
               break;
             default:
               break;

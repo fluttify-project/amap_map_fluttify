@@ -86,7 +86,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             }
         
             // handle the native call
-            delegate?.multiPointOverlayRenderer_didItemTapped(await (args['renderer'] as Object).as__<MAMultiPointOverlayRenderer>(), await (args['item'] as Object).as__<MAMultiPointItem>());
+            delegate?.multiPointOverlayRenderer_didItemTapped((args['renderer'] as Object).as__<MAMultiPointOverlayRenderer>(), (args['item'] as Object).as__<MAMultiPointItem>());
             break;
           default:
             break;

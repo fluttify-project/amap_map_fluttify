@@ -250,7 +250,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends java_lang_Object
               }
         
               // handle the native call
-              var1?.onGenerateComplete(await (args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onGenerateComplete((args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;

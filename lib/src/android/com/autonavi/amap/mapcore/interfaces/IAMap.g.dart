@@ -1113,7 +1113,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChange(await (args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChange((args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
@@ -1122,7 +1122,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onCameraChangeFinish(await (args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChangeFinish((args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
               break;
             default:
               break;
@@ -1165,7 +1165,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapClick((args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1208,7 +1208,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onTouch(await (args['var1'] as Object).as__<android_view_MotionEvent>());
+              var1?.onTouch((args['var1'] as Object).as__<android_view_MotionEvent>());
               break;
             default:
               break;
@@ -1251,7 +1251,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapLongClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapLongClick((args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1294,7 +1294,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerClick((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1337,7 +1337,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPolylineClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Polyline>());
+              var1?.onPolylineClick((args['var1'] as Object).as__<com_amap_api_maps_model_Polyline>());
               break;
             default:
               break;
@@ -1380,7 +1380,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragStart(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragStart((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
@@ -1389,7 +1389,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDrag(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDrag((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
@@ -1398,7 +1398,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMarkerDragEnd(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragEnd((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1484,7 +1484,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onInfoWindowClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onInfoWindowClick((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1527,7 +1527,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMyLocationChange(await (args['var1'] as Object).as__<android_location_Location>());
+              var1?.onMyLocationChange((args['var1'] as Object).as__<android_location_Location>());
               break;
             default:
               break;
@@ -1570,7 +1570,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPOIClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_Poi>());
+              var1?.onPOIClick((args['var1'] as Object).as__<com_amap_api_maps_model_Poi>());
               break;
             default:
               break;
@@ -1637,7 +1637,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.getInfoWindowParams(await (args['var1'] as Object).as__<com_amap_api_maps_model_BasePointOverlay>());
+              var1?.getInfoWindowParams((args['var1'] as Object).as__<com_amap_api_maps_model_BasePointOverlay>());
               break;
             default:
               break;
@@ -1680,7 +1680,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.OnIndoorBuilding(await (args['var1'] as Object).as__<com_amap_api_maps_model_IndoorBuildingInfo>());
+              var1?.OnIndoorBuilding((args['var1'] as Object).as__<com_amap_api_maps_model_IndoorBuildingInfo>());
               break;
             default:
               break;
@@ -1723,7 +1723,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapPrint(await (args['var1'] as Object).as__<android_graphics_drawable_Drawable>());
+              var1?.onMapPrint((args['var1'] as Object).as__<android_graphics_drawable_Drawable>());
               break;
             default:
               break;
@@ -1766,7 +1766,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap(await (args['var1'] as Object).as__<android_graphics_Bitmap>());
+              var1?.onMapScreenShot__android_graphics_Bitmap((args['var1'] as Object).as__<android_graphics_Bitmap>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
@@ -1775,7 +1775,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap__int(await (args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onMapScreenShot__android_graphics_Bitmap__int((args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
@@ -3239,7 +3239,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
               }
         
               // handle the native call
-              var1?.onPointClick(await (args['var1'] as Object).as__<com_amap_api_maps_model_MultiPointItem>());
+              var1?.onPointClick((args['var1'] as Object).as__<com_amap_api_maps_model_MultiPointItem>());
               break;
             default:
               break;

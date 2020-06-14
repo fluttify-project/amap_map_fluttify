@@ -122,7 +122,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlayBundle<E> extends java_lang_Object
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = await Object().as__<E>();
+      final __return__ = Object().as__<E>();
       if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }

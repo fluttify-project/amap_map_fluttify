@@ -344,6 +344,14 @@ extension TypeOpAmapMapFluttifyIOS on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMACustomBuildingOverlayRenderer', {'refId': (this as Ref).refId});
       return result;
     }
+    else if (T == CLLocation) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocation', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == CLHeading) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLHeading', {'refId': (this as Ref).refId});
+      return result;
+    }
     else if (T == CGRect) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCGRect', {'refId': (this as Ref).refId});
       return result;
@@ -358,6 +366,14 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     }
     else if (T == UIEdgeInsets) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfUIEdgeInsets', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == CLLocationCoordinate2D) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocationCoordinate2D', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == CLLocationManager) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfCLLocationManager', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == NSError) {
@@ -403,296 +419,308 @@ extension TypeOpAmapMapFluttifyIOS on Object {
   }
 
   // type cast
-  Future<T> as__<T>() async {
+  T as__<T>() {
     final typeName = T.toString();
     // jsonable 直接造型 返回
     if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
       return this as T;
     }
     else if (T == MAOfflineCity) {
-      return (MAOfflineCity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineCity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemNationWide) {
-      return (MAOfflineItemNationWide()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemNationWide()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPoint) {
-      return (MAMultiPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlay) {
-      return (MAGroundOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAGroundOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygonRenderer) {
-      return (MAPolygonRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolygonRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPinAnnotationView) {
-      return (MAPinAnnotationView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPinAnnotationView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapNode) {
-      return (MAHeatMapNode()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapNode()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapGradient) {
-      return (MAHeatMapGradient()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapGradient()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapTileOverlay) {
-      return (MAHeatMapTileOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAHeatMapTileOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapStatus) {
-      return (MAMapStatus()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapStatus()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPointAnnotation) {
-      return (MAPointAnnotation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPointAnnotation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircle) {
-      return (MACircle()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACircle()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArcRenderer) {
-      return (MAArcRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAArcRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotation) {
-      return (MAAnnotation.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotation.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatableAnnotation) {
-      return (MAAnimatableAnnotation.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnimatableAnnotation.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMapViewController) {
-      return (MAOfflineMapViewController()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineMapViewController()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapCustomStyleOptions) {
-      return (MAMapCustomStyleOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapCustomStyleOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygon) {
-      return (MAPolygon()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolygon()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlay) {
-      return (MAParticleOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolyline) {
-      return (MAPolyline()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolyline()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiColoredPolylineRenderer) {
-      return (MAMultiColoredPolylineRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiColoredPolylineRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatedAnnotation) {
-      return (MAAnimatedAnnotation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnimatedAnnotation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlay) {
-      return (MAOverlay.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlay.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiTexturePolylineRenderer) {
-      return (MAMultiTexturePolylineRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiTexturePolylineRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineProvince) {
-      return (MAOfflineProvince()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineProvince()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayRenderer) {
-      return (MATileOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItem) {
-      return (MAOfflineItem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGeodesicPolyline) {
-      return (MAGeodesicPolyline()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAGeodesicPolyline()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATouchPoi) {
-      return (MATouchPoi()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATouchPoi()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemMunicipality) {
-      return (MAOfflineItemMunicipality()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemMunicipality()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPolyline) {
-      return (MAMultiPolyline()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPolyline()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceManager) {
-      return (MATraceManager()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATraceManager()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlayRenderer) {
-      return (MAMultiPointOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorFloorInfo) {
-      return (MAIndoorFloorInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAIndoorFloorInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorInfo) {
-      return (MAIndoorInfo()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAIndoorInfo()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolylineRenderer) {
-      return (MAPolylineRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAPolylineRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationMoveAnimation) {
-      return (MAAnnotationMoveAnimation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotationMoveAnimation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAShape) {
-      return (MAShape()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAShape()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationView) {
-      return (MAAnnotationView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAAnnotationView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlay) {
-      return (MATileOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayPath) {
-      return (MATileOverlayPath()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATileOverlayPath()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomCalloutView) {
-      return (MACustomCalloutView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomCalloutView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemCommonCity) {
-      return (MAOfflineItemCommonCity()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineItemCommonCity()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMap) {
-      return (MAOfflineMap()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOfflineMap()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircleRenderer) {
-      return (MACircleRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACircleRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayRenderer) {
-      return (MAParticleOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateBounds) {
-      return (MACoordinateBounds()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateBounds()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateSpan) {
-      return (MACoordinateSpan()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateSpan()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateRegion) {
-      return (MACoordinateRegion()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACoordinateRegion()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapPoint) {
-      return (MAMapPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapSize) {
-      return (MAMapSize()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapSize()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapRect) {
-      return (MAMapRect()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapRect()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleVelocityGenerate) {
-      return (MAParticleVelocityGenerate.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleVelocityGenerate.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomVelocityGenerate) {
-      return (MAParticleRandomVelocityGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRandomVelocityGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleColorGenerate) {
-      return (MAParticleColorGenerate.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleColorGenerate.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomColorGenerate) {
-      return (MAParticleRandomColorGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRandomColorGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRotationGenerate) {
-      return (MAParticleRotationGenerate.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRotationGenerate.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleConstantRotationGenerate) {
-      return (MAParticleConstantRotationGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleConstantRotationGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSizeGenerate) {
-      return (MAParticleSizeGenerate.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleSizeGenerate.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleCurveSizeGenerate) {
-      return (MAParticleCurveSizeGenerate()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleCurveSizeGenerate()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleEmissionModule) {
-      return (MAParticleEmissionModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleEmissionModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleShapeModule) {
-      return (MAParticleShapeModule.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleShapeModule.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSinglePointShapeModule) {
-      return (MAParticleSinglePointShapeModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleSinglePointShapeModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRectShapeModule) {
-      return (MAParticleRectShapeModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleRectShapeModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverLifeModule) {
-      return (MAParticleOverLifeModule()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverLifeModule()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptions) {
-      return (MAParticleOverlayOptions()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayOptions()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptionsFactory) {
-      return (MAParticleOverlayOptionsFactory()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAParticleOverlayOptionsFactory()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayRenderer) {
-      return (MAOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocation) {
-      return (MAUserLocation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAUserLocation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointItem) {
-      return (MAMultiPointItem()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointItem()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlay) {
-      return (MAMultiPointOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMultiPointOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayOption) {
-      return (MACustomBuildingOverlayOption()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlayOption()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlay) {
-      return (MACustomBuildingOverlay()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlay()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATracePoint) {
-      return (MATracePoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATracePoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceLocation) {
-      return (MATraceLocation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MATraceLocation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArc) {
-      return (MAArc()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAArc()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocationRepresentation) {
-      return (MAUserLocationRepresentation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAUserLocationRepresentation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapView) {
-      return (MAMapView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAMapView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayPathRenderer) {
-      return (MAOverlayPathRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAOverlayPathRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlayRenderer) {
-      return (MAGroundOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MAGroundOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayRenderer) {
-      return (MACustomBuildingOverlayRenderer()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (MACustomBuildingOverlayRenderer()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == CLLocation) {
+      return (CLLocation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == CLHeading) {
+      return (CLHeading()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGRect) {
-      return (CGRect()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (CGRect()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGPoint) {
-      return (CGPoint()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (CGPoint()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGSize) {
-      return (CGSize()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (CGSize()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIEdgeInsets) {
-      return (UIEdgeInsets()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIEdgeInsets()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == CLLocationCoordinate2D) {
+      return (CLLocationCoordinate2D()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == CLLocationManager) {
+      return (CLLocationManager()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSError) {
-      return (NSError()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (NSError()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCoding) {
-      return (NSCoding.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (NSCoding.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCopying) {
-      return (NSCopying.subInstance()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (NSCopying.subInstance()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIView) {
-      return (UIView()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIView()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIViewController) {
-      return (UIViewController()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIViewController()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIControl) {
-      return (UIControl()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIControl()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIImage) {
-      return (UIImage()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIImage()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIColor) {
-      return (UIColor()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (UIColor()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSData) {
-      return (NSData()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (NSData()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSOperation) {
-      return (NSOperation()..refId = (this as Ref).refId..tag__ = 'amap_map_fluttify') as T;
+      return (NSOperation()..refId = (this as int)..tag__ = 'amap_map_fluttify') as T;
     }
   }
 }

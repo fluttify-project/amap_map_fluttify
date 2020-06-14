@@ -176,7 +176,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result(await (args['tileData'] as Object).as__<NSData>(), await (args['error'] as Object).as__<NSError>());
+              result((args['tileData'] as Object).as__<NSData>(), (args['error'] as Object).as__<NSError>());
               break;
             default:
               break;

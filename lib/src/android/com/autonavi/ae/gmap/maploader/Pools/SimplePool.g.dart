@@ -68,7 +68,7 @@ class com_autonavi_ae_gmap_maploader_Pools_SimplePool<T> extends java_lang_Objec
     if (__result__ == null) {
       return null;
     } else {
-      final __return__ = await Object().as__<T>();
+      final __return__ = Object().as__<T>();
       if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
       return __return__;
     }

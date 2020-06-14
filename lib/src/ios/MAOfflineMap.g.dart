@@ -178,7 +178,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock(await (args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], await (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
               break;
             default:
               break;
@@ -384,7 +384,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock(await (args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], await (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
               break;
             default:
               break;
@@ -427,7 +427,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock(await (args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], await (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
               break;
             default:
               break;
