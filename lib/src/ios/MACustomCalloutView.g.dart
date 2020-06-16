@@ -74,7 +74,7 @@ class MACustomCalloutView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView', {"customView": customView.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MACustomCalloutView' : 'me.yohom/amap_map_fluttify').invokeMethod('MACustomCalloutView::initWithCustomView', {"customView": customView?.refId, "refId": refId});
   
   
     // handle native call

@@ -177,30 +177,6 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   }
   
   
-  Future<void> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleStartSpeed([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
   Future<void> setLoop(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -225,54 +201,6 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   }
   
   
-  Future<void> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleShapeModule([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
-  Future<void> setParticleEmission(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleEmission([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleEmission', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
   Future<int> getCurrentParticleNum() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -281,54 +209,6 @@ class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps
   
     // invoke native method
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::getCurrentParticleNum', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
-  Future<void> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setParticleOverLifeModule([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleOverLifeModule', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
-  Future<void> setStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlay@$refId::setStartColor([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartColor', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -478,26 +358,6 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
   }
   
   
-  Future<List<void>> setParticleStartSpeed_batch(List<com_amap_api_maps_model_particle_VelocityGenerate> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleStartSpeed_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
   Future<List<void>> setLoop_batch(List<bool> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -505,46 +365,6 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setLoop_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setParticleShapeModule_batch(List<com_amap_api_maps_model_particle_ParticleShapeModule> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleShapeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setParticleEmission_batch(List<com_amap_api_maps_model_particle_ParticleEmissionModule> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleEmission_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -572,46 +392,6 @@ extension com_amap_api_maps_model_particle_ParticleOverlay_Batch on List<com_ama
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setParticleOverLifeModule_batch(List<com_amap_api_maps_model_particle_ParticleOverLifeModule> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setParticleOverLifeModule_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setStartColor_batch(List<com_amap_api_maps_model_particle_ColorGenerate> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.particle.ParticleOverlay::setStartColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

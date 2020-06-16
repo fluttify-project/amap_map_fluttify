@@ -88,7 +88,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -184,7 +184,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcon', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setIcon', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -345,30 +345,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   }
   
   
-  Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getGeoPoint', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
-      return __return__;
-    }
-  }
-  
-  
   Future<void> setFlat(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -503,9 +479,6 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
@@ -740,7 +713,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setMarkerOptions', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setMarkerOptions', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -884,7 +857,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionNotUpdate', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::setPositionNotUpdate', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -1265,26 +1238,6 @@ extension com_amap_api_maps_model_Marker_Batch on List<com_amap_api_maps_model_M
     } else {
       final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<com_autonavi_amap_mapcore_IPoint>> getGeoPoint_batch() async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Marker::getGeoPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
       return typedResult;
     }
   }

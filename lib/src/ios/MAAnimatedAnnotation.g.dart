@@ -68,16 +68,13 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback', {"coordinates": coordinates.map((__it__) => __it__.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback', {"coordinates": coordinates.map((__it__) => __it__?.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::void|BOOL#isFinished::void|BOOL#isFinished':
               // print log
@@ -111,16 +108,13 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback', {"coordinates": coordinates.map((__it__) => __it__.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback', {"coordinates": coordinates.map((__it__) => __it__?.refId).toList(), "count": count, "duration": duration, "name": name, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::void|BOOL#isFinished::void|BOOL#isFinished':
               // print log
@@ -138,7 +132,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback((args['currentAni'] as Object).as__<MAAnnotationMoveAnimation>());
+              stepCallback((args['currentAni'] as Object)?.as__<MAAnnotationMoveAnimation>());
               break;
             default:
               break;

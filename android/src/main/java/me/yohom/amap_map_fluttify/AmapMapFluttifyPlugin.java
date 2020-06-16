@@ -60,21 +60,6 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler9.getSubHandler(messenger));
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
-        handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandler13.getSubHandler(messenger));
-        handlerMapList.add(SubHandler14.getSubHandler(messenger));
-        handlerMapList.add(SubHandler15.getSubHandler(messenger));
-        handlerMapList.add(SubHandler16.getSubHandler(messenger));
-        handlerMapList.add(SubHandler17.getSubHandler(messenger));
-        handlerMapList.add(SubHandler18.getSubHandler(messenger));
-        handlerMapList.add(SubHandler19.getSubHandler(messenger));
-        handlerMapList.add(SubHandler20.getSubHandler(messenger));
-        handlerMapList.add(SubHandler21.getSubHandler(messenger));
-        handlerMapList.add(SubHandler22.getSubHandler(messenger));
-        handlerMapList.add(SubHandler23.getSubHandler(messenger));
-        handlerMapList.add(SubHandler24.getSubHandler(messenger));
-        handlerMapList.add(SubHandler25.getSubHandler(messenger));
-        handlerMapList.add(SubHandler26.getSubHandler(messenger));
         handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
 
         channel.setMethodCallHandler(plugin);
@@ -114,21 +99,6 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler9.getSubHandler(messenger));
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
-        handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandler13.getSubHandler(messenger));
-        handlerMapList.add(SubHandler14.getSubHandler(messenger));
-        handlerMapList.add(SubHandler15.getSubHandler(messenger));
-        handlerMapList.add(SubHandler16.getSubHandler(messenger));
-        handlerMapList.add(SubHandler17.getSubHandler(messenger));
-        handlerMapList.add(SubHandler18.getSubHandler(messenger));
-        handlerMapList.add(SubHandler19.getSubHandler(messenger));
-        handlerMapList.add(SubHandler20.getSubHandler(messenger));
-        handlerMapList.add(SubHandler21.getSubHandler(messenger));
-        handlerMapList.add(SubHandler22.getSubHandler(messenger));
-        handlerMapList.add(SubHandler23.getSubHandler(messenger));
-        handlerMapList.add(SubHandler24.getSubHandler(messenger));
-        handlerMapList.add(SubHandler25.getSubHandler(messenger));
-        handlerMapList.add(SubHandler26.getSubHandler(messenger));
         handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
 
         channel.setMethodCallHandler(this);

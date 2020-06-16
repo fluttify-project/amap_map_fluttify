@@ -82,7 +82,7 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setLatLng', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setLatLng', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -227,54 +227,6 @@ class com_amap_api_maps_model_MultiPointItem extends java_lang_Object  {
   
     // invoke native method
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setTitle', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
-  Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getIPoint', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
-      return __return__;
-    }
-  }
-  
-  
-  Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setIPoint', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -499,46 +451,6 @@ extension com_amap_api_maps_model_MultiPointItem_Batch on List<com_amap_api_maps
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setTitle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<com_autonavi_amap_mapcore_IPoint>> getIPoint_batch() async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::getIPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_IPoint()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setIPoint_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointItem::setIPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

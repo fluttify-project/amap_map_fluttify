@@ -25,7 +25,7 @@ mixin com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener on java_la
 
   @mustCallSuper
   Future<void> onGenerateComplete(android_graphics_Bitmap var1, int var2) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onGenerateComplete::kNativeObjectPool: $kNativeObjectPool');

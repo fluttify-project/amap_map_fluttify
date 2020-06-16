@@ -80,7 +80,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline?.refId, "refId": refId});
   
   
     // handle native call
@@ -104,7 +104,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::loadStrokeTextureImages', {"textureImages": textureImages.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::loadStrokeTextureImages', {"textureImages": textureImages.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call

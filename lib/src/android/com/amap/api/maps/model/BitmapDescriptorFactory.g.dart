@@ -82,7 +82,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromView', {"var0": var0?.refId});
   
   
     // handle native call
@@ -226,7 +226,7 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptorFactory::fromBitmap', {"var0": var0?.refId});
   
   
     // handle native call

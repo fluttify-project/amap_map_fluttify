@@ -124,7 +124,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::moveCamera', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::moveCamera', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -148,7 +148,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -172,16 +172,13 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
     MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
@@ -224,16 +221,13 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1?.refId, "var2": var2, "refId": refId});
   
   
     // handle native call
     MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
               // print log
@@ -300,7 +294,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addNavigateArrow', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addNavigateArrow', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -324,7 +318,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolyline', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolyline', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -372,7 +366,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCircle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCircle', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -396,7 +390,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addArc', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addArc', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -420,7 +414,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolygon', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolygon', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -444,7 +438,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGroundOverlay', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGroundOverlay', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -468,7 +462,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarker', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarker', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -492,7 +486,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGL3DModel', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGL3DModel', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -516,7 +510,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addText', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addText', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -540,7 +534,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarkers', {"var1": var1.map((__it__) => __it__.refId).toList(), "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarkers', {"var1": var1.map((__it__) => __it__?.refId).toList(), "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -588,7 +582,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addTileOverlay', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addTileOverlay', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -612,7 +606,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMultiPointOverlay', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMultiPointOverlay', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -636,7 +630,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addParticleOverlay', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addParticleOverlay', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -876,7 +870,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyTrafficStyle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyTrafficStyle', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -996,7 +990,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -1020,7 +1014,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyLocationStyle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyLocationStyle', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -1171,9 +1165,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
               // print log
@@ -1182,7 +1173,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onCameraChange((args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChange((args['var1'] as Object)?.as__<com_amap_api_maps_model_CameraPosition>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
@@ -1191,7 +1182,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onCameraChangeFinish((args['var1'] as Object).as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChangeFinish((args['var1'] as Object)?.as__<com_amap_api_maps_model_CameraPosition>());
               break;
             default:
               break;
@@ -1223,9 +1214,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
               // print log
@@ -1234,7 +1222,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapClick((args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1266,9 +1254,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
               // print log
@@ -1277,7 +1262,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onTouch((args['var1'] as Object).as__<android_view_MotionEvent>());
+              var1?.onTouch((args['var1'] as Object)?.as__<android_view_MotionEvent>());
               break;
             default:
               break;
@@ -1309,9 +1294,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
               // print log
@@ -1320,7 +1302,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPOIClick((args['var1'] as Object).as__<com_amap_api_maps_model_Poi>());
+              var1?.onPOIClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Poi>());
               break;
             default:
               break;
@@ -1352,9 +1334,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
               // print log
@@ -1363,7 +1342,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMyLocationChange((args['var1'] as Object).as__<android_location_Location>());
+              var1?.onMyLocationChange((args['var1'] as Object)?.as__<android_location_Location>());
               break;
             default:
               break;
@@ -1395,9 +1374,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
               // print log
@@ -1406,7 +1382,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapLongClick((args['var1'] as Object).as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapLongClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1438,9 +1414,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
               // print log
@@ -1449,7 +1422,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerClick((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1481,9 +1454,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
               // print log
@@ -1492,7 +1462,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPolylineClick((args['var1'] as Object).as__<com_amap_api_maps_model_Polyline>());
+              var1?.onPolylineClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Polyline>());
               break;
             default:
               break;
@@ -1524,9 +1494,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
               // print log
@@ -1535,7 +1502,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDragStart((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragStart((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
@@ -1544,7 +1511,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDrag((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDrag((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
@@ -1553,7 +1520,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDragEnd((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragEnd((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1585,9 +1552,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
               // print log
@@ -1596,7 +1560,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onInfoWindowClick((args['var1'] as Object).as__<com_amap_api_maps_model_Marker>());
+              var1?.onInfoWindowClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1621,7 +1585,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setInfoWindowAdapter', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setInfoWindowAdapter', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -1652,9 +1616,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams':
               // print log
@@ -1663,7 +1624,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.getInfoWindowParams((args['var1'] as Object).as__<com_amap_api_maps_model_BasePointOverlay>());
+              var1?.getInfoWindowParams((args['var1'] as Object)?.as__<com_amap_api_maps_model_BasePointOverlay>());
               break;
             default:
               break;
@@ -1695,9 +1656,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded':
               // print log
@@ -1738,9 +1696,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
               // print log
@@ -1749,7 +1704,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.OnIndoorBuilding((args['var1'] as Object).as__<com_amap_api_maps_model_IndoorBuildingInfo>());
+              var1?.OnIndoorBuilding((args['var1'] as Object)?.as__<com_amap_api_maps_model_IndoorBuildingInfo>());
               break;
             default:
               break;
@@ -1781,9 +1736,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick':
               // print log
@@ -1792,7 +1744,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPointClick((args['var1'] as Object).as__<com_amap_api_maps_model_MultiPointItem>());
+              var1?.onPointClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_MultiPointItem>());
               break;
             default:
               break;
@@ -1824,9 +1776,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint':
               // print log
@@ -1835,7 +1784,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapPrint((args['var1'] as Object).as__<android_graphics_drawable_Drawable>());
+              var1?.onMapPrint((args['var1'] as Object)?.as__<android_graphics_drawable_Drawable>());
               break;
             default:
               break;
@@ -1867,9 +1816,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap':
               // print log
@@ -1878,7 +1824,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap((args['var1'] as Object).as__<android_graphics_Bitmap>());
+              var1?.onMapScreenShot__android_graphics_Bitmap((args['var1'] as Object)?.as__<android_graphics_Bitmap>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
@@ -1887,7 +1833,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap__int((args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onMapScreenShot__android_graphics_Bitmap__int((args['var1'] as Object)?.as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
@@ -1991,9 +1937,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnCacheRemoveListener::onRemoveCacheFinish':
               // print log
@@ -2195,7 +2138,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setIndoorBuildingInfo', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setIndoorBuildingInfo', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -2226,9 +2169,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap':
               // print log
@@ -2325,7 +2265,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getZoomToSpanLevel', {"var1": var1.refId, "var2": var2.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getZoomToSpanLevel', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
   
   
     // handle native call
@@ -2469,7 +2409,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMapStatusLimits', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMapStatusLimits', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -2493,7 +2433,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCrossOverlay', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCrossOverlay', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -2637,7 +2577,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setCustomMapStyle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setCustomMapStyle', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -2710,30 +2650,6 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
     // invoke native method
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setRenderMode', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
-  Future<void> getP20MapCenter(com_autonavi_amap_mapcore_IPoint var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::getP20MapCenter([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getP20MapCenter', {"var1": var1.refId, "refId": refId});
   
   
     // handle native call
@@ -4266,26 +4182,6 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setRenderMode_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> getP20MapCenter_batch(List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getP20MapCenter_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

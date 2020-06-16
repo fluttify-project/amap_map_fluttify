@@ -65,9 +65,6 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
     MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss':
               // print log

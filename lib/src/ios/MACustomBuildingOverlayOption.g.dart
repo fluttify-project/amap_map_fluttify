@@ -116,7 +116,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinates_count', {"coords": coords.map((__it__) => __it__.refId).toList(), "count": count});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinates_count', {"coords": coords.map((__it__) => __it__?.refId).toList(), "count": count});
   
   
     // handle native call
@@ -140,7 +140,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint with MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinates_count', {"coords": coords.map((__it__) => __it__.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinates_count', {"coords": coords.map((__it__) => __it__?.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call

@@ -69,7 +69,7 @@ class MAHeatMapGradient extends NSObject with NSCopying {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColor_andWithStartPoints', {"colors": colors.map((__it__) => __it__.refId).toList(), "startPoints": startPoints, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapGradient::initWithColor_andWithStartPoints', {"colors": colors.map((__it__) => __it__?.refId).toList(), "startPoints": startPoints, "refId": refId});
   
   
     // handle native call

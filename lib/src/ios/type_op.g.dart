@@ -425,400 +425,302 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
       return this as T;
     }
+    // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
     else if (T == MAOfflineCity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemNationWide) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineItemNationWide()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAGroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygonRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPolygonRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPinAnnotationView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPinAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapNode) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAHeatMapNode()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapGradient) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAHeatMapGradient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAHeatMapTileOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAHeatMapTileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapStatus) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPointAnnotation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPointAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACircle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArcRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAArcRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatableAnnotation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAAnimatableAnnotation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMapViewController) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineMapViewController()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapCustomStyleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapCustomStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolygon) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPolygon()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiColoredPolylineRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiColoredPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnimatedAnnotation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAAnimatedAnnotation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiTexturePolylineRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiTexturePolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineProvince) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATileOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGeodesicPolyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAGeodesicPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATouchPoi) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATouchPoi()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemMunicipality) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineItemMunicipality()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPolyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiPolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATraceManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiPointOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorFloorInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAIndoorFloorInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAIndoorInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAIndoorInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAPolylineRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAPolylineRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationMoveAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAAnnotationMoveAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAShape) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAShape()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAAnnotationView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAAnnotationView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATileOverlayPath) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATileOverlayPath()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomCalloutView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACustomCalloutView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemCommonCity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineItemCommonCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineMap) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOfflineMap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACircleRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACircleRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateBounds) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACoordinateBounds()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateSpan) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACoordinateSpan()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACoordinateRegion) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACoordinateRegion()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapSize) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapSize()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapRect) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapRect()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleVelocityGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleVelocityGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomVelocityGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleRandomVelocityGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleColorGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleColorGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRandomColorGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleRandomColorGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRotationGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleRotationGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleConstantRotationGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleConstantRotationGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSizeGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleSizeGenerate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleCurveSizeGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleCurveSizeGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleEmissionModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleEmissionModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleShapeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleShapeModule.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleSinglePointShapeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleSinglePointShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleRectShapeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleRectShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverLifeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleOverLifeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAParticleOverlayOptionsFactory) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAUserLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointItem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayOption) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACustomBuildingOverlayOption()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACustomBuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATracePoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATracePoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MATraceLocation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MATraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAArc) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAArc()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAUserLocationRepresentation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAUserLocationRepresentation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMapView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOverlayPathRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAOverlayPathRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAGroundOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MAGroundOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MACustomBuildingOverlayRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (MACustomBuildingOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CLLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLHeading) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CLHeading()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGRect) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CGRect()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CGPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CGSize) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CGSize()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIEdgeInsets) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIEdgeInsets()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocationCoordinate2D) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CLLocationCoordinate2D()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == CLLocationManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (CLLocationManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSError) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (NSError()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCoding) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (NSCoding.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSCopying) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (NSCopying.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIViewController) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIViewController()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIControl) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIControl()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIImage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIImage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == UIColor) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (UIColor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSData) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (NSData()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == NSOperation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (NSOperation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
   }

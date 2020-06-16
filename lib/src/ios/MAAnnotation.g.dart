@@ -59,7 +59,7 @@ mixin MAAnnotation on NSObject {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::setCoordinate', {"newCoordinate": newCoordinate.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAnnotation::setCoordinate', {"newCoordinate": newCoordinate?.refId, "refId": refId});
   
   
     // handle native call

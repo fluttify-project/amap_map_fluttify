@@ -98,7 +98,7 @@ class MAArc extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate', {"startCoordinate": startCoordinate.refId, "passedCoordinate": passedCoordinate.refId, "endCoordinate": endCoordinate.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArc::arcWithStartCoordinate_passedCoordinate_endCoordinate', {"startCoordinate": startCoordinate?.refId, "passedCoordinate": passedCoordinate?.refId, "endCoordinate": endCoordinate?.refId});
   
   
     // handle native call

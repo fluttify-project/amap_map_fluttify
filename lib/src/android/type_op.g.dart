@@ -20,446 +20,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
       return this is T;
     }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools_SimplePool) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools_SimplePool', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools_SynchronizedPool', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_ProcessingTile) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_ProcessingTile', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_GLMapEngine', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_AbstractMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_AbstractMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glinterface_MapLabelItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glinterface_MapLabelItem', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation2V) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation2V', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimFling) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation1V) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglAnimation1V', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_style_StyleItem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_style_StyleItem', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_style_StyleElement) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_style_StyleElement', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapState) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_GLMapState', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_BaseRouteOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLTextureProperty) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLTextureProperty', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLCrossVector', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_BaseMapOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_BaseMapOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_CrossVectorOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLRouteProperty) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLRouteProperty', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayTexture) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine_InitParam) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_GLMapEngine_InitParam', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_NetworkState) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_NetworkState', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_maploader_AMapLoader', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_MapProjection) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_MapProjection', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_TextTextureGenerator) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_tools_TextTextureGenerator', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLFileUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_tools_GLFileUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GlMapUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_tools_GlMapUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLMapStaticValue) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_tools_GLMapStaticValue', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLConvertUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_tools_GLConvertUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_MsgProcessor) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_MsgProcessor', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AbstractNativeInstance) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AbstractNativeInstance', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_LinkInfo) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_LinkInfo', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativePolyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapNativePolyline', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_IPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_IPoint', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_locationListener', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_DPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_DPoint', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapNativeRenderer', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_FileUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FileUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_IAMapEngineCallback) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_IAMapEngineCallback', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLTranslateAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLTranslateAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLRotateAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLRotateAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAlphaAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLAlphaAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLScaleAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLScaleAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLTransformation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLTransformation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAnimationSet) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLAnimationSet', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLEmergeAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLEmergeAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_animation_GLAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_MapConfig) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_MapConfig', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_HoverGestureMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_HoverGestureMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_MoveGestureMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_MoveGestureMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_ScaleGestureMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_AbstractGestureMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_AbstractGestureMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_RotateGestureMapMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_message_RotateGestureMapMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPointBounds) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPointBounds', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_CoordUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_CoordUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AeUtil) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AeUtil', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_VirtualEarthProjection) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_VirtualEarthProjection', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Rectangle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Rectangle', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_location) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_location', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapEngineUtils) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapEngineUtils', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPoint3) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPoint3', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapEtaDecoder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapEtaDecoder', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPointBounds_Builder) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPointBounds_Builder', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationOption) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_locationOption', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPoint) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPoint', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeParticleSystem) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapNativeParticleSystem', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AbstractCameraUpdateMessage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AbstractCameraUpdateMessage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeBuildingRenderer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_Convert) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Convert', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IMultiPointOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IText) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IText', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAnimation) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IAnimation', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IglModel) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IglModel', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IArc) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IArc', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IUiSettings) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IUiSettings', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IOverlayImage) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IOverlayImage', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_INavigateArrow) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_INavigateArrow', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IGroundOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IGroundOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IPolyline) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IPolyline', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMarker) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IMarker', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAMapListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IAMapListener', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IInfoWindowManager) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IInfoWindowManager', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_ITileOverlay) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_ITileOverlay', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IProjection) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IProjection', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_ICircle) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_ICircle', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAMap) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IAMap', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMarkerAction) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IMarkerAction', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IPolygon) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_interfaces_IPolygon', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_offlineservice_AMapPermissionActivity', {'refId': (this as Ref).refId});
       return result;
@@ -896,58 +456,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_CrossOverlay', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_maps_model_particle_ParticleOverLifeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverLifeModule', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_ConstantRotationOverLife) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ConstantRotationOverLife', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_SinglePointParticleShape) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_SinglePointParticleShape', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_CurveSizeOverLife) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_CurveSizeOverLife', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_ParticleEmissionModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleEmissionModule', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_SizeOverLife) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_SizeOverLife', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_RectParticleShape) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_RectParticleShape', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_ColorGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ColorGenerate', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_VelocityGenerate) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_VelocityGenerate', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_RotationOverLife) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_RotationOverLife', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_model_particle_ParticleShapeModule) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleShapeModule', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory', {'refId': (this as Ref).refId});
       return result;
@@ -1112,10 +620,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_widget_ImageView', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == java_io_Serializable) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfjava_io_Serializable', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == java_io_File) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfjava_io_File', {'refId': (this as Ref).refId});
       return result;
@@ -1165,1140 +669,485 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     if (RegExp('(List<)?(String|int|double)(>)?|(Map<String,(String|int|double)>)').hasMatch(typeName)) {
       return this as T;
     }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools_SimplePool) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_maploader_Pools_SimplePool()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_maploader_Pools()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_maploader_Pools_SynchronizedPool()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_maploader_ProcessingTile) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_GLMapEngine()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_AbstractMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_AbstractMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glinterface_MapLabelItem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glinterface_MapLabelItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation2V) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimation2V()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimationContantValues()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimFling) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimFling()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglAnimation1V) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglAnimation1V()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_style_StyleItem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_style_StyleItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_style_StyleElement) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_style_StyleElement()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_GLMapEngine_MapViewInitParam()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapState) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_GLMapState()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLTextureProperty) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLTextureProperty()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayBundle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayBundle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_BaseMapOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_BaseMapOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLRouteProperty) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLRouteProperty()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_gloverlay_GLOverlayTexture) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_gloverlay_GLOverlayTexture()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_ae_gmap_GLMapEngine_InitParam) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_NetworkState) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_maploader_NetworkState()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_maploader_AMapLoader) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_maploader_AMapLoader()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_MapProjection) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_MapProjection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_TextTextureGenerator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_tools_TextTextureGenerator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLFileUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_tools_GLFileUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GlMapUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_tools_GlMapUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLMapStaticValue) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_tools_GLMapStaticValue()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_tools_GLConvertUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_tools_GLConvertUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_MsgProcessor) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_MsgProcessor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AeUtil_UnZipFileBrake()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AbstractNativeInstance) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AbstractNativeInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_LinkInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_LinkInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativePolyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapNativePolyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_IPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_IPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_DPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_DPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapNativeRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_FileUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_FileUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_IAMapEngineCallback) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_IAMapEngineCallback.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLTranslateAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLTranslateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLRotateAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLRotateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAlphaAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLAlphaAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLScaleAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLScaleAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLTransformation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLTransformation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAnimationSet) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLAnimationSet()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLEmergeAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLEmergeAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_animation_GLAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_animation_GLAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_MapConfig) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_MapConfig()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_HoverGestureMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_message_HoverGestureMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_MoveGestureMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_ScaleGestureMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_message_ScaleGestureMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_AbstractGestureMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_message_AbstractGestureMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_message_RotateGestureMapMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_message_RotateGestureMapMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPointBounds) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_FPointBounds()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_CoordUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_CoordUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AeUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AeUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_VirtualEarthProjection) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_VirtualEarthProjection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Rectangle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Rectangle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_location) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapEngineUtils) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapEngineUtils()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPoint3) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_FPoint3()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapEtaDecoder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapEtaDecoder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPointBounds_Builder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_FPointBounds_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Inner_3dMap_locationOption) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_FPoint) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_FPoint()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeParticleSystem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapNativeParticleSystem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AbstractCameraUpdateMessage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_AMapNativeBuildingRenderer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_AMapNativeBuildingRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_Convert) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_Convert()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IText) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IText.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IAnimation.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IglModel) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IglModel.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IArc) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IArc.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IUiSettings) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IUiSettings.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IOverlayImage) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IOverlayImage.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_INavigateArrow) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_INavigateArrow.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IGroundOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IGroundOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IPolyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IPolyline.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMarker) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IMarker.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAMapListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IAMapListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IInfoWindowManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IInfoWindowManager.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_ITileOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_ITileOverlay.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IProjection) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IProjection.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_ICircle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_ICircle.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IAMap) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IAMap.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IMarkerAction) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IMarkerAction.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_autonavi_amap_mapcore_interfaces_IPolygon) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_autonavi_amap_mapcore_interfaces_IPolygon.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
+    // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_LocationSource) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_LocationSource.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_UiSettings) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_UiSettings()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_SwipeDismissTouchListener()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowParams) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_InfoWindowParams()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdateFactory) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_CameraUpdateFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapException) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMapException()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMapOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMapOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CoordinateConverter) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_CoordinateConverter()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_InfoWindowAdapter) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMap_InfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_ImageInfoWindowAdapter) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMap_ImageInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_SpatialRelationUtil) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_utils_SpatialRelationUtil()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_MovingPointOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_utils_overlay_MovingPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_utils_overlay_SmoothMoveMarker) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_CameraUpdate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_CameraUpdate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissCallBack) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_LocationSource_OnLocationChangedListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_LocationSource_OnLocationChangedListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_SwipeDismissView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapsInitializer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_MapsInitializer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapStatus) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapStatus()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_Province) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_Province()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapCity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapCity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapActivity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapActivity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_City) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_City()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_Projection) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_Projection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMap_MultiPositionInfoWindowAdapter.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polygon) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Polygon()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonHoleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PolygonHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Poi) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Poi()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MyLocationStyle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RouteOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_RouteOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegion) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_VisibleRegion()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_LatLngCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleHoleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CircleHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Text) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Text()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds_Builder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorFactory) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BitmapDescriptorFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_UrlTileProvider) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_UrlTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MultiPointOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PoiCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PolylineOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Tile) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Tile()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModel) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_GL3DModel()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Gradient) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Gradient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_NaviPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_GroundOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GL3DModelOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_GL3DModelOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_GroundOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyTrafficStyle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MyTrafficStyle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CameraPosition()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TextOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PoiPara) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PoiPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MarkerOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_HeatmapTileProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrow) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_NavigateArrow()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AnimationSet) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_AnimationSet()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_RotateAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_RotateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_TranslateAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_TranslateAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_Animation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_Animation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_EmergeAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_EmergeAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_AlphaAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_AlphaAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_animation_ScaleAnimation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_animation_ScaleAnimation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBounds) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_LatLngBounds()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CustomMapStyleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CustomMapStyleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BuildingOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CrossOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_VisibleRegionCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_VisibleRegionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLng) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_LatLng()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjection) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileProjection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapPara) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_AMapPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPosition_Builder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CameraPosition_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BasePointOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BasePointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CircleOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Arc) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Arc()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapCameraInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_AMapCameraInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Circle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Circle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PolygonOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_WeightedLatLng) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_WeightedLatLng()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MyLocationStyleCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MyLocationStyleCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MarkerOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MarkerOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointItem) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_LatLngBoundsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_LatLngBoundsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_ArcOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptorCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BitmapDescriptorCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CircleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CircleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NavigateArrowOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RuntimeRemoteException) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_RuntimeRemoteException()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_AMapGLOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_AMapGLOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_HeatmapTileProvider_Builder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_HeatmapTileProvider_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_MultiPointOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_MultiPointOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BaseOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolylineOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PolylineOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BaseOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Marker) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Marker()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_RoutePara) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_RoutePara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_ArcOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_ArcOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CameraPositionCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CameraPositionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_CrossOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_CrossOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == com_amap_api_maps_model_particle_ParticleOverLifeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_ConstantRotationOverLife) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_ConstantRotationOverLife()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_SinglePointParticleShape) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_SinglePointParticleShape()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_CurveSizeOverLife) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_CurveSizeOverLife()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_ParticleEmissionModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_SizeOverLife) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_SizeOverLife()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_RectParticleShape) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_RectParticleShape()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_ColorGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_ColorGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_VelocityGenerate) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_VelocityGenerate()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_RotationOverLife) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_RotationOverLife()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_model_particle_ParticleShapeModule) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (com_amap_api_maps_model_particle_ParticleShapeModule()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlayOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_particle_ParticleOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_particle_ParticleOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BaseHoleOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BaseHoleOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TextOptions) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TextOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_PolygonOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_PolygonOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_TileProjectionCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_TileProjectionCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_GroundOverlayOptionsCreator) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_IndoorBuildingInfo) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_IndoorBuildingInfo()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_Polyline) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_Polyline()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BuildingOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_model_BuildingOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_TextureMapView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_TextureMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMapUtils) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMapUtils()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_InfoWindowAnimationManager) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_InfoWindowAnimationManager()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_WearMapView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_WearMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_AMap) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_AMap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_interfaces_IGlOverlayLayer) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_interfaces_IGlOverlayLayer.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_MapView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_maps_MapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_LBSTraceBase) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_trace_LBSTraceBase.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_trace_TraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_LBSTraceClient) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_trace_LBSTraceClient()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceOverlay) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_trace_TraceOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_mapcore_util_) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (com_amap_api_mapcore_util_()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Context) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_content_Context()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Intent) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_content_Intent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_ContentProvider) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_content_ContentProvider()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Application) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_app_Application()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Notification) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_app_Notification()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_Activity) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_app_Activity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_app_PendingIntent) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_app_PendingIntent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Bundle) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_os_Bundle()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Binder) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_os_Binder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_View) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_view_View()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_SurfaceView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_view_SurfaceView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_ViewGroup) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_view_ViewGroup()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Point) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_graphics_Point()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_PointF) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_graphics_PointF()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_Bitmap) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_graphics_Bitmap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_ImageView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_widget_ImageView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == java_io_Serializable) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
-      return (java_io_Serializable.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == java_io_File) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (java_io_File()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_location_Location) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_location_Location()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_view_MotionEvent) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_view_MotionEvent()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_graphics_drawable_Drawable) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_graphics_drawable_Drawable()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_FrameLayout) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_widget_FrameLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_TextView) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_widget_TextView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_LinearLayout) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_widget_LinearLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_widget_RelativeLayout) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_widget_RelativeLayout()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_os_Parcelable) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_os_Parcelable.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_util_Pair) {
-      // 如果是Ref类的cast, 那么取其refId, 如果本身是refId, 那么直接使用(int)
       return (android_util_Pair()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
   }

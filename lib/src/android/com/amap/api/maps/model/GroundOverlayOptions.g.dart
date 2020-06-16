@@ -58,7 +58,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -106,7 +106,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double', {"var1": var1?.refId, "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -130,7 +130,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double', {"var1": var1?.refId, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
@@ -154,7 +154,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

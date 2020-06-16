@@ -158,16 +158,13 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::loadTileAtPath_result', {"path": path.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::loadTileAtPath_result', {"path": path?.refId, "refId": refId});
   
   
     // handle native call
     MethodChannel('MATileOverlay::loadTileAtPath_result::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error':
               // print log
@@ -176,7 +173,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result((args['tileData'] as Object).as__<NSData>(), (args['error'] as Object).as__<NSError>());
+              result((args['tileData'] as Object)?.as__<NSData>(), (args['error'] as Object)?.as__<NSError>());
               break;
             default:
               break;
@@ -201,7 +198,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path?.refId, "refId": refId});
   
   
     // handle native call

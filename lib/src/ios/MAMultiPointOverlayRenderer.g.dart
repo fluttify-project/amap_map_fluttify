@@ -75,9 +75,6 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     MethodChannel('MAMultiPointOverlayRendererDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
-  
         switch (methodCall.method) {
           case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped':
             // print log
@@ -86,7 +83,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             }
         
             // handle the native call
-            delegate?.multiPointOverlayRenderer_didItemTapped((args['renderer'] as Object).as__<MAMultiPointOverlayRenderer>(), (args['item'] as Object).as__<MAMultiPointItem>());
+            delegate?.multiPointOverlayRenderer_didItemTapped((args['renderer'] as Object)?.as__<MAMultiPointOverlayRenderer>(), (args['item'] as Object)?.as__<MAMultiPointItem>());
             break;
           default:
             break;
@@ -123,7 +120,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay', {"multiPointOverlay": multiPointOverlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay', {"multiPointOverlay": multiPointOverlay?.refId, "refId": refId});
   
   
     // handle native call

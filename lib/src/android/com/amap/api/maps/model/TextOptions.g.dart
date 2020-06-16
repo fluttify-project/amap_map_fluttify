@@ -58,7 +58,7 @@ class com_amap_api_maps_model_TextOptions extends java_lang_Object with android_
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::position', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.TextOptions::position', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

@@ -106,7 +106,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::closeScr__android_os_Bundle', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -130,7 +130,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::onClick', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.offlinemap.OfflineMapActivity::onClick', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

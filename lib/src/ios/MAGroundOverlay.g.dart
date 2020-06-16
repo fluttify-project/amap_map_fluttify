@@ -86,7 +86,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon', {"bounds": bounds?.refId, "icon": icon?.refId});
   
   
     // handle native call
@@ -110,7 +110,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "icon": icon?.refId});
   
   
     // handle native call
@@ -134,7 +134,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon', {"bounds": bounds?.refId, "icon": icon?.refId, "refId": refId});
   
   
     // handle native call
@@ -158,7 +158,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "icon": icon?.refId, "refId": refId});
   
   
     // handle native call

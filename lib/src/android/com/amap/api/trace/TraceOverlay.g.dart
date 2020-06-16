@@ -80,7 +80,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::add', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::add', {"var1": var1.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -128,7 +128,7 @@ class com_amap_api_trace_TraceOverlay extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.TraceOverlay::setProperCamera', {"var1": var1.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call

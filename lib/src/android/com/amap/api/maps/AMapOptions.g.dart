@@ -137,7 +137,7 @@ class com_amap_api_maps_AMapOptions extends java_lang_Object with android_os_Par
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::camera', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapOptions::camera', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

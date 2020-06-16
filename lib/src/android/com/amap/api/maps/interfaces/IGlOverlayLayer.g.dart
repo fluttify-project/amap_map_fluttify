@@ -127,7 +127,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getNearestLatLng', {"var1": var1.refId, "var2": var2.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getNearestLatLng', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
   
   
     // handle native call
@@ -151,7 +151,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsPolygonContainsPoint', {"var1": var1.refId, "var2": var2.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsPolygonContainsPoint', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
   
   
     // handle native call
@@ -175,7 +175,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processPolygonHoleOption', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processPolygonHoleOption', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -199,7 +199,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsCircleContainPoint', {"var1": var1.refId, "var2": var2.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsCircleContainPoint', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
   
   
     // handle native call
@@ -223,7 +223,7 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processCircleHoleOption', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processCircleHoleOption', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

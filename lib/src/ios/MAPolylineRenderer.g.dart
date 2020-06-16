@@ -86,7 +86,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline?.refId, "refId": refId});
   
   
     // handle native call

@@ -63,7 +63,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0?.refId});
   
   
     // handle native call
@@ -87,16 +87,13 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.map((__it__) => __it__.refId).toList(), "var3": var3, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.map((__it__) => __it__?.refId).toList(), "var3": var3, "refId": refId});
   
   
     // handle native call
     MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.trace.TraceListener::onRequestFailed':
               // print log
@@ -114,7 +111,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
               }
         
               // handle the native call
-              var4?.onTraceProcessing(args['var1'], args['var2'], (args['var3'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList());
+              var4?.onTraceProcessing(args['var1'], args['var2'], (args['var3'] as List).cast<int>().map((__it__) => __it__.as__<com_amap_api_maps_model_LatLng>()).toList());
               break;
             case 'Callback::com.amap.api.trace.TraceListener::onFinished':
               // print log
@@ -123,7 +120,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
               }
         
               // handle the native call
-              var4?.onFinished(args['var1'], (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['var3'], args['var4']);
+              var4?.onFinished(args['var1'], (args['var2'] as List).cast<int>().map((__it__) => __it__.as__<com_amap_api_maps_model_LatLng>()).toList(), args['var3'], args['var4']);
               break;
             default:
               break;
@@ -155,9 +152,6 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus':
               // print log
@@ -166,7 +160,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((it) => com_amap_api_trace_TraceLocation()..refId = it..tag__ = 'amap_map_fluttify').toList(), (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it..tag__ = 'amap_map_fluttify').toList(), args['var3']);
+              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((__it__) => __it__.as__<com_amap_api_trace_TraceLocation>()).toList(), (args['var2'] as List).cast<int>().map((__it__) => __it__.as__<com_amap_api_maps_model_LatLng>()).toList(), args['var3']);
               break;
             default:
               break;

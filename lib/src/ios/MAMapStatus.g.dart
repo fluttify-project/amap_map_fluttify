@@ -116,7 +116,7 @@ class MAMapStatus extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "rotationDegree": rotationDegree, "cameraDegree": cameraDegree, "screenAnchor": screenAnchor.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::statusWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "rotationDegree": rotationDegree, "cameraDegree": cameraDegree, "screenAnchor": screenAnchor?.refId});
   
   
     // handle native call
@@ -140,7 +140,7 @@ class MAMapStatus extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "rotationDegree": rotationDegree, "cameraDegree": cameraDegree, "screenAnchor": screenAnchor.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapStatus::initWithCenterCoordinate_zoomLevel_rotationDegree_cameraDegree_screenAnchor', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "rotationDegree": rotationDegree, "cameraDegree": cameraDegree, "screenAnchor": screenAnchor?.refId, "refId": refId});
   
   
     // handle native call

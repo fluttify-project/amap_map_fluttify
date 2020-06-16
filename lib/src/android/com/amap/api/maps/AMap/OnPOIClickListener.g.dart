@@ -25,7 +25,7 @@ mixin com_amap_api_maps_AMap_OnPOIClickListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onPOIClick(com_amap_api_maps_model_Poi var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onPOIClick::kNativeObjectPool: $kNativeObjectPool');

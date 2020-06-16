@@ -63,7 +63,7 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc', {"arc": arc.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAArcRenderer::initWithArc', {"arc": arc?.refId, "refId": refId});
   
   
     // handle native call

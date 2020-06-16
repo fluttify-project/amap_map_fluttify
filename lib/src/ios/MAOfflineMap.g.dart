@@ -124,9 +124,6 @@ class MAOfflineMap extends NSObject  {
     MethodChannel('MAOfflineMap::setupWithCompletionBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::void|BOOL#setupSuccess::void|BOOL#setupSuccess':
               // print log
@@ -160,16 +157,13 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock', {"item": item.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock', {"item": item?.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAOfflineMap::downloadItem_shouldContinueWhenAppEntersBackground_downloadBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
               // print log
@@ -178,7 +172,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
               break;
             default:
               break;
@@ -203,7 +197,7 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item?.refId, "refId": refId});
   
   
     // handle native call
@@ -227,7 +221,7 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem', {"item": item.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pauseItem', {"item": item?.refId, "refId": refId});
   
   
     // handle native call
@@ -251,7 +245,7 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem', {"item": item.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::deleteItem', {"item": item?.refId, "refId": refId});
   
   
     // handle native call
@@ -330,9 +324,6 @@ class MAOfflineMap extends NSObject  {
     MethodChannel('MAOfflineMap::checkNewestVersion::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapNewestVersionBlock::MAOfflineMapNewestVersionBlock':
               // print log
@@ -366,16 +357,13 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_downloadBlock', {"city": city.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_downloadBlock', {"city": city?.refId, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAOfflineMap::downloadCity_downloadBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
               // print log
@@ -384,7 +372,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
               break;
             default:
               break;
@@ -409,16 +397,13 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock', {"city": city.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock', {"city": city?.refId, "shouldContinueWhenAppEntersBackground": shouldContinueWhenAppEntersBackground, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAOfflineMap::downloadCity_shouldContinueWhenAppEntersBackground_downloadBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock':
               // print log
@@ -427,7 +412,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object).as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object).as__<dynamic>());
+              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
               break;
             default:
               break;
@@ -452,7 +437,7 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForCity', {"city": city.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::isDownloadingForCity', {"city": city?.refId, "refId": refId});
   
   
     // handle native call
@@ -476,7 +461,7 @@ class MAOfflineMap extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pause', {"city": city.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOfflineMap::pause', {"city": city?.refId, "refId": refId});
   
   
     // handle native call

@@ -57,30 +57,6 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   }
   
   
-  Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlay::setAttribute', {"var1": var1.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
-  
   Future<void> setVisible(bool var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -167,9 +143,6 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
     MethodChannel('com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete':
               // print log
@@ -178,7 +151,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onGenerateComplete((args['var1'] as Object).as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onGenerateComplete((args['var1'] as Object)?.as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
@@ -223,26 +196,6 @@ extension com_amap_api_maps_model_CrossOverlay_Batch on List<com_amap_api_maps_m
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setAttribute_batch(List<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CrossOverlay::setAttribute_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

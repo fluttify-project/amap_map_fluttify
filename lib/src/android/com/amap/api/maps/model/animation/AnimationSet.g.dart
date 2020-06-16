@@ -58,7 +58,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends com_amap_api_maps_m
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AnimationSet::addAnimation', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.AnimationSet::addAnimation', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

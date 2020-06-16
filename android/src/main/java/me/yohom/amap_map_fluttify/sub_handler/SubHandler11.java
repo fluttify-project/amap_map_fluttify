@@ -30,6860 +30,4304 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 public class SubHandler11 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::lineJoinType", (__args__, __methodResult__) -> {
-                // args
-                // enum arg
-                com.amap.api.maps.model.PolylineOptions.LineJoinType var1 = com.amap.api.maps.model.PolylineOptions.LineJoinType.values()[(int) ((Map<String, Object>) __args__).get("var1")];
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
+            // factory
+            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::lineJoinType(" + var1 + ")");
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions");
                 }
             
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions __result__;
-                try {
-                    __result__ = ref.lineJoinType(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getLineCapType", (__args__, __methodResult__) -> {
                 // args
+                // ref arg
+                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+                // ref arg
+                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
             
+                // create target object
+                com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1, var2);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
+                // print current HEAP
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getLineCapType(" + "" + ")");
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions.LineCapType __result__;
-                try {
-                    __result__ = ref.getLineCapType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getLineJoinType", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
+            // factory
+            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getLineJoinType(" + "" + ")");
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__double__double__float__float__long");
                 }
             
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions.LineJoinType __result__;
-                try {
-                    __result__ = ref.getLineJoinType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getDottedLineType", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getDottedLineType(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getDottedLineType();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getPoints", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getPoints(" + "" + ")");
-                }
-            
-                // invoke native method
-                java.util.List<com.amap.api.maps.model.LatLng> __result__;
-                try {
-                    __result__ = ref.getPoints();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.LatLng item : __result__) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getWidth", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getWidth(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getColor", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getColor(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getZIndex", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getZIndex(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::isVisible", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::isVisible(" + "" + ")");
-                }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::transparency", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::transparency(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions __result__;
-                try {
-                    __result__ = ref.transparency(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getTransparency", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getTransparency(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getTransparency();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::aboveMaskLayer", (__args__, __methodResult__) -> {
-                // args
+                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
                 // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                // jsonable arg
+                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                // jsonable arg
+                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
+                // jsonable arg
+                long var7 = (long) (int) ((Map<String, Object>) __args__).get("var7");
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
+                // create target object
+                com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // print log
+                // print current HEAP
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::aboveMaskLayer(" + var1 + ")");
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions __result__;
-                try {
-                    __result__ = ref.aboveMaskLayer(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::isAboveMaskLayer", (__args__, __methodResult__) -> {
+            // factory
+            put("ObjectFactory::createcom_amap_api_trace_TraceLocation__", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceLocation__");
+                }
+            
                 // args
             
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
+                // create target object
+                com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation();
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // print log
+                // print current HEAP
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::isAboveMaskLayer(" + "" + ")");
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isAboveMaskLayer();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::setPoints", (__args__, __methodResult__) -> {
+            // factory
+            put("ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_LBSTraceClient__android_content_Context");
+                }
+            
                 // args
+                // ref arg
+                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+            
+                // create target object
+                com.amap.api.trace.LBSTraceClient __obj__ = new com.amap.api.trace.LBSTraceClient(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                // print current HEAP
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                }
+            
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_", (__args__, __methodResult__) -> {
+                if (getEnableLog()) {
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_");
+                }
+            
+                // args
+                // ref arg
+                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
                 // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var2");
+                java.util.List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
+                for (int refId : var2RefIdList) {
+                    ((ArrayList<com.amap.api.maps.model.LatLng>) var2).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
                 }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
+                // create target object
+                com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1, (ArrayList) var2);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // print log
+                // print current HEAP
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::setPoints(" + var1 + ")");
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                // invoke native method
-                try {
-                    ref.setPoints((ArrayList) var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(System.identityHashCode(__obj__));
             });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getShownRatio", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
+            // factory
+            put("ObjectFactory::createcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getShownRatio(" + "" + ")");
+                    Log.d("ObjectFactory", "创建对象: com_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap");
                 }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getShownRatio();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::setShownRatio", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::setShownRatio(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions __result__;
-                try {
-                    __result__ = ref.setShownRatio(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::setShownRange", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::setShownRange(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.PolylineOptions __result__;
-                try {
-                    __result__ = ref.setShownRange(new Double(var1).floatValue(), new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getShownRangeBegin", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getShownRangeBegin(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getShownRangeBegin();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PolylineOptions::getShownRangeEnd", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PolylineOptions ref = (com.amap.api.maps.model.PolylineOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PolylineOptions@" + refId + "::getShownRangeEnd(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getShownRangeEnd();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.Tile::obtain", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var0 = (int) ((Map<String, Object>) __args__).get("var0");
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                byte[] var2 = (byte[]) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.Tile::obtain(" + var0 + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Tile __result__;
-                try {
-                    __result__ = com.amap.api.maps.model.Tile.obtain(var0, var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModel::setAngle", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModel ref = (com.amap.api.maps.model.GL3DModel) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModel@" + refId + "::setAngle(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setAngle(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModel::getAngle", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModel ref = (com.amap.api.maps.model.GL3DModel) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModel@" + refId + "::getAngle(" + "" + ")");
-                }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAngle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModel::setModelFixedLength", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModel ref = (com.amap.api.maps.model.GL3DModel) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModel@" + refId + "::setModelFixedLength(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setModelFixedLength(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModel::setZoomLimit", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModel ref = (com.amap.api.maps.model.GL3DModel) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModel@" + refId + "::setZoomLimit(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setZoomLimit(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.TileProvider::getTile", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProvider ref = (com.amap.api.maps.model.TileProvider) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TileProvider@" + refId + "::getTile(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.Tile __result__;
-                try {
-                    __result__ = ref.getTile(var1, var2, var3);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.TileProvider::getTileWidth", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProvider ref = (com.amap.api.maps.model.TileProvider) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TileProvider@" + refId + "::getTileWidth(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getTileWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.TileProvider::getTileHeight", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProvider ref = (com.amap.api.maps.model.TileProvider) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TileProvider@" + refId + "::getTileHeight(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getTileHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NaviPara::setTargetPoint", (__args__, __methodResult__) -> {
                 // args
                 // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NaviPara ref = (com.amap.api.maps.model.NaviPara) getHEAP().get(refId);
+                // create target object
+                com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1);
+                getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // print log
+                // print current HEAP
                 if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NaviPara@" + refId + "::setTargetPoint(" + var1 + ")");
+                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
                 }
             
-                // invoke native method
-                try {
-                    ref.setTargetPoint(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                __methodResult__.success(System.identityHashCode(__obj__));
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_offlineservice_AMapPermissionActivity__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NaviPara::setNaviStyle", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NaviPara ref = (com.amap.api.maps.model.NaviPara) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NaviPara@" + refId + "::setNaviStyle(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.offlineservice.AMapPermissionActivity __obj__ = new com.amap.api.offlineservice.AMapPermissionActivity();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setNaviStyle(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NaviPara::getTargetPoint", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NaviPara ref = (com.amap.api.maps.model.NaviPara) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NaviPara@" + refId + "::getTargetPoint(" + "" + ")");
-                }
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.view.View var1 = __var1__ != null ? (android.view.View) getHEAP().get(__var1__) : null;
+                    // jsonable arg
+                    java.lang.Object var2 = (java.lang.Object) ((Map<String, Object>) __args__).get("var2");
+                    // ref arg
+                    Integer __var3__ = (Integer) ((Map<String, Object>) __args__).get("var3");
+                    com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = __var3__ != null ? (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(__var3__) : null;
             
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getTargetPoint();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.SwipeDismissTouchListener __obj__ = new com.amap.api.maps.SwipeDismissTouchListener(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NaviPara::getNaviStyle", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NaviPara ref = (com.amap.api.maps.model.NaviPara) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_InfoWindowParams__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NaviPara@" + refId + "::getNaviStyle(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getNaviStyle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::image", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::image(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.InfoWindowParams __obj__ = new com.amap.api.maps.InfoWindowParams();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.image(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::anchor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_CameraUpdateFactory__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::anchor(" + var1 + var2 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::position(" + var1 + var2 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.CameraUpdateFactory __obj__ = new com.amap.api.maps.CameraUpdateFactory();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.position(var1, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__String", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::position(" + var1 + var2 + var3 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.position(var1, new Double(var2).floatValue(), new Double(var3).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::positionFromBounds(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.positionFromBounds(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::bearing", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapException__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::bearing(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.bearing(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::zIndex", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::zIndex(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.zIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::visible", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::visible(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.visible(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::transparency", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::transparency(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.AMapOptions __obj__ = new com.amap.api.maps.AMapOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GroundOverlayOptions __result__;
-                try {
-                    __result__ = ref.transparency(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getImage", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getImage(" + "" + ")");
-                }
             
-                // invoke native method
-                com.amap.api.maps.model.BitmapDescriptor __result__;
-                try {
-                    __result__ = ref.getImage();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.AMapOptionsCreator __obj__ = new com.amap.api.maps.AMapOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getLocation", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_CoordinateConverter__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getLocation(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.CoordinateConverter __obj__ = new com.amap.api.maps.CoordinateConverter(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getLocation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getWidth", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_SpatialRelationUtil__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getWidth(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getHeight", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getHeight(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.utils.SpatialRelationUtil __obj__ = new com.amap.api.maps.utils.SpatialRelationUtil();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getBounds", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.model.BasePointOverlay var2 = __var2__ != null ? (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(__var2__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getBounds(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.utils.overlay.MovingPointOverlay __obj__ = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLngBounds __result__;
-                try {
-                    __result__ = ref.getBounds();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getBearing", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getBearing(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.utils.overlay.SmoothMoveMarker __obj__ = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getBearing();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getZIndex", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.SwipeDismissView var1 = __var1__ != null ? (com.amap.api.maps.SwipeDismissView) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getZIndex(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.SwipeDismissCallBack __obj__ = new com.amap.api.maps.SwipeDismissCallBack(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getTransparency", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    android.view.View var2 = __var2__ != null ? (android.view.View) getHEAP().get(__var2__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getTransparency(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.SwipeDismissView __obj__ = new com.amap.api.maps.SwipeDismissView(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getTransparency();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getAnchorU", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapsInitializer__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getAnchorU(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAnchorU();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::getAnchorV", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::getAnchorV(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.MapsInitializer __obj__ = new com.amap.api.maps.MapsInitializer();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAnchorV();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlayOptions::isVisible", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlayOptions ref = (com.amap.api.maps.model.GroundOverlayOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapStatus__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlayOptions@" + refId + "::isVisible(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::textureDrawable", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::textureDrawable(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapStatus __obj__ = new com.amap.api.maps.offlinemap.OfflineMapStatus();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GL3DModelOptions __result__;
-                try {
-                    __result__ = ref.textureDrawable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::vertexData", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                java.util.List<Float> var1 = (java.util.List<Float>) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                java.util.List<Float> var2 = (java.util.List<Float>) ((Map<String, Object>) __args__).get("var2");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapProvince__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::vertexData(" + var1 + var2 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.GL3DModelOptions __result__;
-                try {
-                    __result__ = ref.vertexData((ArrayList) var1, (ArrayList) var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::position", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::position(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapProvince __obj__ = new com.amap.api.maps.offlinemap.OfflineMapProvince();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GL3DModelOptions __result__;
-                try {
-                    __result__ = ref.position(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::angle", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::angle(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
+            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // invoke native method
-                com.amap.api.maps.model.GL3DModelOptions __result__;
-                try {
-                    __result__ = ref.angle(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.offlinemap.DownloadProgressView __obj__ = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getVertext", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_Province__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getVertext(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                java.util.List<Float> __result__;
-                try {
-                    __result__ = ref.getVertext();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                java.util.List<Float> jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getTextrue", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getTextrue(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.offlinemap.Province __obj__ = new com.amap.api.maps.offlinemap.Province();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                java.util.List<Float> __result__;
-                try {
-                    __result__ = ref.getTextrue();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                java.util.List<Float> jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getAngle", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapCity__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getAngle(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAngle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getLatLng", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getLatLng(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapCity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapCity();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getLatLng();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getBitmapDescriptor", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_OfflineMapActivity__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getBitmapDescriptor(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.BitmapDescriptor __result__;
-                try {
-                    __result__ = ref.getBitmapDescriptor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::setModelFixedLength", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::setModelFixedLength(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.offlinemap.OfflineMapActivity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapActivity();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.GL3DModelOptions __result__;
-                try {
-                    __result__ = ref.setModelFixedLength(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GL3DModelOptions::getModelFixedLength", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_offlinemap_City__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GL3DModelOptions ref = (com.amap.api.maps.model.GL3DModelOptions) getHEAP().get(refId);
+                    // args
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GL3DModelOptions@" + refId + "::getModelFixedLength(" + "" + ")");
-                }
+            
+                    // create target object
+                    com.amap.api.maps.offlinemap.City __obj__ = new com.amap.api.maps.offlinemap.City();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getModelFixedLength();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::remove", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonHoleOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::remove(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                try {
-                    ref.remove();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getId", (__args__, __methodResult__) -> {
-                // args
             
+                    // create target object
+                    com.amap.api.maps.model.PolygonHoleOptions __obj__ = new com.amap.api.maps.model.PolygonHoleOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getId(" + "" + ")");
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getId();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setPosition", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setPosition(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.TileOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.TileOverlayOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setPosition(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getPosition", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getPosition(" + "" + ")");
-                }
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
+                    // jsonable arg
+                    String var3 = (String) ((Map<String, Object>) __args__).get("var3");
             
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getPosition();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.model.Poi __obj__ = new com.amap.api.maps.model.Poi(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setDimensions__double", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyle__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setDimensions(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // invoke native method
-                try {
-                    ref.setDimensions(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setImage", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+                    // create target object
+                    com.amap.api.maps.model.MyLocationStyle __obj__ = new com.amap.api.maps.model.MyLocationStyle();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setImage(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setImage(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setDimensions__double__double", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setDimensions(" + var1 + var2 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setDimensions(new Double(var1).floatValue(), new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getWidth", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getWidth(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getHeight", (__args__, __methodResult__) -> {
-                // args
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
+                    // ref arg
+                    Integer __var3__ = (Integer) ((Map<String, Object>) __args__).get("var3");
+                    com.amap.api.maps.model.LatLng var3 = __var3__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var3__) : null;
+                    // ref arg
+                    Integer __var4__ = (Integer) ((Map<String, Object>) __args__).get("var4");
+                    com.amap.api.maps.model.LatLng var4 = __var4__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var4__) : null;
+                    // ref arg
+                    Integer __var5__ = (Integer) ((Map<String, Object>) __args__).get("var5");
+                    com.amap.api.maps.model.LatLngBounds var5 = __var5__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var5__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getHeight(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.VisibleRegion __obj__ = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getHeight();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setPositionFromBounds", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setPositionFromBounds(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setPositionFromBounds(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getBounds", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getBounds(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.LatLngCreator __obj__ = new com.amap.api.maps.model.LatLngCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLngBounds __result__;
-                try {
-                    __result__ = ref.getBounds();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setBearing", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setBearing(" + var1 + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleHoleOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                try {
-                    ref.setBearing(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getBearing", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getBearing(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getBearing();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setZIndex", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setZIndex(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.CircleHoleOptions __obj__ = new com.amap.api.maps.model.CircleHoleOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setZIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getZIndex", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getZIndex(" + "" + ")");
-                }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setVisible", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setVisible(" + var1 + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBounds_Builder__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                try {
-                    ref.setVisible(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::isVisible", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::isVisible(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::setTransparency", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::setTransparency(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.LatLngBounds.Builder __obj__ = new com.amap.api.maps.model.LatLngBounds.Builder();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setTransparency(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::getTransparency", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::getTransparency(" + "" + ")");
-                }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getTransparency();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.GroundOverlay::destroy", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.GroundOverlay ref = (com.amap.api.maps.model.GroundOverlay) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.GroundOverlay@" + refId + "::destroy(" + "" + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NavigateArrowOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                try {
-                    ref.destroy();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getSmoothColor", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getSmoothColor(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getSmoothColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setSmoothColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setSmoothColor(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.NavigateArrowOptions __obj__ = new com.amap.api.maps.model.NavigateArrowOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setSmoothColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getSlowColor", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getSlowColor(" + "" + ")");
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getSlowColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setSlowColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BitmapDescriptorFactory__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setSlowColor(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setSlowColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getCongestedColor", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getCongestedColor(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getCongestedColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setCongestedColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setCongestedColor(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.BitmapDescriptorFactory __obj__ = new com.amap.api.maps.model.BitmapDescriptorFactory();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setCongestedColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getSeriousCongestedColor", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getSeriousCongestedColor(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getSeriousCongestedColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setSeriousCongestedColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setSeriousCongestedColor(" + var1 + ")");
-                }
-            
-                // invoke native method
-                try {
-                    ref.setSeriousCongestedColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getRatio", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getRatio(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getRatio();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setRatio", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setRatio(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.MultiPointOverlayOptions __obj__ = new com.amap.api.maps.model.MultiPointOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setRatio(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::getTrafficRoadBackgroundColor", (__args__, __methodResult__) -> {
-                // args
-            
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::getTrafficRoadBackgroundColor(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getTrafficRoadBackgroundColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MyTrafficStyle::setTrafficRoadBackgroundColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PoiCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MyTrafficStyle ref = (com.amap.api.maps.model.MyTrafficStyle) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MyTrafficStyle@" + refId + "::setTrafficRoadBackgroundColor(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setTrafficRoadBackgroundColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CameraPosition::fromLatLngZoom", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var0 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var0"));
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
+                    // args
             
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CameraPosition::fromLatLngZoom(" + var0 + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.PoiCreator __obj__ = new com.amap.api.maps.model.PoiCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CameraPosition __result__;
-                try {
-                    __result__ = com.amap.api.maps.model.CameraPosition.fromLatLngZoom(var0, new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CameraPosition::builder", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolylineOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-            
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CameraPosition::builder(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.CameraPosition.Builder __result__;
-                try {
-                    __result__ = com.amap.api.maps.model.CameraPosition.builder();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.CameraPosition var0 = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) ((Map<String, Object>) __args__).get("var0"));
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
+                    // args
             
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CameraPosition::builder(" + var0 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.PolylineOptions __obj__ = new com.amap.api.maps.model.PolylineOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CameraPosition.Builder __result__;
-                try {
-                    __result__ = com.amap.api.maps.model.CameraPosition.builder(var0);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.PoiPara::getCenter", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PoiPara ref = (com.amap.api.maps.model.PoiPara) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PoiPara@" + refId + "::getCenter(" + "" + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Tile__int__int__byteArray", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getCenter();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PoiPara::setCenter", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PoiPara ref = (com.amap.api.maps.model.PoiPara) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    byte[] var3 = (byte[]) ((Map<String, Object>) __args__).get("var3");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PoiPara@" + refId + "::setCenter(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1, var2, var3);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setCenter(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.PoiPara::getKeywords", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_Gradient__intArray__floatArray", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PoiPara ref = (com.amap.api.maps.model.PoiPara) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PoiPara@" + refId + "::getKeywords(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getKeywords();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.PoiPara::setKeywords", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.PoiPara ref = (com.amap.api.maps.model.PoiPara) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    int[] var1 = (int[]) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.PoiPara@" + refId + "::setKeywords(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.Gradient __obj__ = new com.amap.api.maps.model.Gradient(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setKeywords(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::icons", (__args__, __methodResult__) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.ArrayList<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.BitmapDescriptor>) var1).add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NaviPara__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::icons(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.icons((ArrayList) var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::rotatingIcons", (__args__, __methodResult__) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.ArrayList<com.amap.api.maps.model.BitmapDescriptor> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.BitmapDescriptor>) var1).add((com.amap.api.maps.model.BitmapDescriptor) getHEAP().get(refId));
-                }
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::rotatingIcons(" + var1 + var2 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.NaviPara __obj__ = new com.amap.api.maps.model.NaviPara();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.rotatingIcons((ArrayList) var1, new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getAngleOffset", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getAngleOffset(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAngleOffset();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                float jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isRotatingMode", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isRotatingMode(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.GroundOverlayOptions __obj__ = new com.amap.api.maps.model.GroundOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isRotatingMode();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getIcons", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GL3DModelOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getIcons(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                java.util.ArrayList<com.amap.api.maps.model.BitmapDescriptor> __result__;
-                try {
-                    __result__ = ref.getIcons();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.BitmapDescriptor item : __result__) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::period", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::period(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.GL3DModelOptions __obj__ = new com.amap.api.maps.model.GL3DModelOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.period(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getPeriod", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyTrafficStyle__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getPeriod(" + "" + ")");
-                }
-            
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getPeriod();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                int jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isPerspective", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isPerspective(" + "" + ")");
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isPerspective();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::perspective", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::perspective(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.MyTrafficStyle __obj__ = new com.amap.api.maps.model.MyTrafficStyle();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.perspective(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::position", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::position(" + var1 + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.position(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::setFlat", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::setFlat(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.setFlat(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::icon", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.BitmapDescriptor var1 = (com.amap.api.maps.model.BitmapDescriptor) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TextOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::icon(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.icon(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::anchor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::anchor(" + var1 + var2 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.TextOptionsCreator __obj__ = new com.amap.api.maps.model.TextOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.anchor(new Double(var1).floatValue(), new Double(var2).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::setInfoWindowOffset", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PoiPara__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::setInfoWindowOffset(" + var1 + var2 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.setInfoWindowOffset(var1, var2);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::title", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::title(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.PoiPara __obj__ = new com.amap.api.maps.model.PoiPara();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.title(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::snippet", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MarkerOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::snippet(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.snippet(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::draggable", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::draggable(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.MarkerOptions __obj__ = new com.amap.api.maps.model.MarkerOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.draggable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::visible", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::visible(" + var1 + ")");
-                }
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_AnimationSet__boolean", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.visible(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::setGps", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::setGps(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.AnimationSet __obj__ = new com.amap.api.maps.model.animation.AnimationSet(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.setGps(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getPosition", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getPosition(" + "" + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.LatLng __result__;
-                try {
-                    __result__ = ref.getPosition();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getTitle", (__args__, __methodResult__) -> {
-                // args
-            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getTitle(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getTitle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getSnippet", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_RotateAnimation__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getSnippet(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getSnippet();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getIcon", (__args__, __methodResult__) -> {
-                // args
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getIcon(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.BitmapDescriptor __result__;
-                try {
-                    __result__ = ref.getIcon();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getAnchorU", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getAnchorU(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.TranslateAnimation __obj__ = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAnchorU();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getInfoWindowOffsetX", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getInfoWindowOffsetX(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.EmergeAnimation __obj__ = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getInfoWindowOffsetX();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getInfoWindowOffsetY", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getInfoWindowOffsetY(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getInfoWindowOffsetY();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getAnchorV", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getAnchorV(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAnchorV();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isDraggable", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isDraggable(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.LatLngBounds __obj__ = new com.amap.api.maps.model.LatLngBounds(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isDraggable();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isVisible", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CustomMapStyleOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isVisible(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isGps", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isGps(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.CustomMapStyleOptions __obj__ = new com.amap.api.maps.model.CustomMapStyleOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isGps();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isFlat", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BuildingOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isFlat(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isFlat();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::zIndex", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::zIndex(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.BuildingOverlayOptions __obj__ = new com.amap.api.maps.model.BuildingOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.zIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getZIndex", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CrossOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getZIndex(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::alpha", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::alpha(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.CrossOverlayOptions __obj__ = new com.amap.api.maps.model.CrossOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.alpha(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getAlpha", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_VisibleRegionCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getAlpha(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getAlpha();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::autoOverturnInfoWindow", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::autoOverturnInfoWindow(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.VisibleRegionCreator __obj__ = new com.amap.api.maps.model.VisibleRegionCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.autoOverturnInfoWindow(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isInfoWindowAutoOverturn", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isInfoWindowAutoOverturn(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isInfoWindowAutoOverturn();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::displayLevel", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::displayLevel(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.displayLevel(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getDisplayLevel", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLng__double__double__boolean", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getDisplayLevel(" + "" + ")");
-                }
+                    // args
+                    // jsonable arg
+                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getDisplayLevel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3, var5);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::rotateAngle", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::rotateAngle(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
+            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.rotateAngle(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // args
+                    // jsonable arg
+                    int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    int var2 = (int) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    int var3 = (int) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    int var4 = (int) ((Map<String, Object>) __args__).get("var4");
+                    // jsonable arg
+                    int var5 = (int) ((Map<String, Object>) __args__).get("var5");
+                    // jsonable arg
+                    int var6 = (int) ((Map<String, Object>) __args__).get("var6");
+            
+                    // create target object
+                    com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::getRotateAngle", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_AMapPara__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::getRotateAngle(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getRotateAngle();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::infoWindowEnable", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::infoWindowEnable(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.AMapPara __obj__ = new com.amap.api.maps.model.AMapPara();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.infoWindowEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isInfoWindowEnable", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isInfoWindowEnable(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isInfoWindowEnable();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::belowMaskLayer", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::belowMaskLayer(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.CircleOptionsCreator __obj__ = new com.amap.api.maps.model.CircleOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.MarkerOptions __result__;
-                try {
-                    __result__ = ref.belowMaskLayer(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.MarkerOptions::isBelowMaskLayer", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.MarkerOptions ref = (com.amap.api.maps.model.MarkerOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
+                    // jsonable arg
+                    Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.MarkerOptions@" + refId + "::isBelowMaskLayer(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isBelowMaskLayer();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::remove", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::remove(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.remove();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getId", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getId(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.PolygonOptions __obj__ = new com.amap.api.maps.model.PolygonOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getId();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setPoints", (__args__, __methodResult__) -> {
-                // args
-                // list arg
-                List<Integer> var1RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var1");
-                java.util.List<com.amap.api.maps.model.LatLng> var1 = new ArrayList<>();
-                for (int refId : var1RefIdList) {
-                    ((ArrayList<com.amap.api.maps.model.LatLng>) var1).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setPoints(" + var1 + ")");
-                }
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+                    // jsonable arg
+                    double var2 = (double) ((Map<String, Object>) __args__).get("var2");
+            
+                    // create target object
+                    com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setPoints((ArrayList) var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getPoints", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getPoints(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                java.util.List<com.amap.api.maps.model.LatLng> __result__;
-                try {
-                    __result__ = ref.getPoints();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                List<Integer> jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = new ArrayList<>();
-                    for (com.amap.api.maps.model.LatLng item : __result__) {
-                        getHEAP().put(System.identityHashCode(item), item);
-                        jsonableResult.add(System.identityHashCode(item));
-                    }
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setWidth", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MyLocationStyleCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setWidth(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // invoke native method
-                try {
-                    ref.setWidth(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getWidth", (__args__, __methodResult__) -> {
-                // args
             
+                    // create target object
+                    com.amap.api.maps.model.MyLocationStyleCreator __obj__ = new com.amap.api.maps.model.MyLocationStyleCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getWidth(" + "" + ")");
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getWidth();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MarkerOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setTopColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setTopColor(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.MarkerOptionsCreator __obj__ = new com.amap.api.maps.model.MarkerOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setTopColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getTopColor", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getTopColor(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.MultiPointItem __obj__ = new com.amap.api.maps.model.MultiPointItem(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getTopColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setSideColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_LatLngBoundsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setSideColor(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // invoke native method
-                try {
-                    ref.setSideColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getSideColor", (__args__, __methodResult__) -> {
-                // args
             
+                    // create target object
+                    com.amap.api.maps.model.LatLngBoundsCreator __obj__ = new com.amap.api.maps.model.LatLngBoundsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getSideColor(" + "" + ")");
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getSideColor();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_ArcOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setZIndex", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setZIndex(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.ArcOptions __obj__ = new com.amap.api.maps.model.ArcOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setZIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::getZIndex", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BitmapDescriptorCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // args
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::getZIndex(" + "" + ")");
-                }
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.model.BitmapDescriptorCreator __obj__ = new com.amap.api.maps.model.BitmapDescriptorCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::setVisible", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CircleOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::setVisible(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                try {
-                    ref.setVisible(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    // args
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::isVisible", (__args__, __methodResult__) -> {
-                // args
             
+                    // create target object
+                    com.amap.api.maps.model.CircleOptions __obj__ = new com.amap.api.maps.model.CircleOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::isVisible(" + "" + ")");
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::set3DModel", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::set3DModel(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.NavigateArrowOptionsCreator __obj__ = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.set3DModel(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.NavigateArrow::is3DModel", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_RuntimeRemoteException__String", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.NavigateArrow ref = (com.amap.api.maps.model.NavigateArrow) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    String var1 = (String) ((Map<String, Object>) __args__).get("var1");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.NavigateArrow@" + refId + "::is3DModel(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.RuntimeRemoteException __obj__ = new com.amap.api.maps.model.RuntimeRemoteException(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.is3DModel();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.AnimationSet::addAnimation", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.animation.Animation var1 = (com.amap.api.maps.model.animation.Animation) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.AnimationSet ref = (com.amap.api.maps.model.animation.AnimationSet) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.AnimationSet@" + refId + "::addAnimation(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.addAnimation(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
-            
-                // convert result to jsonable result
-                String jsonableResult = "success";
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.animation.AnimationSet::cleanAnimation", (__args__, __methodResult__) -> {
-                // args
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.AnimationSet ref = (com.amap.api.maps.model.animation.AnimationSet) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.AnimationSet@" + refId + "::cleanAnimation(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.HeatmapTileProvider.Builder __obj__ = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.cleanAnimation();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::setAnimationListener", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BaseOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::setAnimationListener(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
-                        // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
-                        android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                        // call dart method
-                        @Override
-                        public void onAnimationStart() {
-                            // print log
-                            if (getEnableLog()) {
-                                Log.d("java-callback", "fluttify-java-callback: onAnimationStart(" + "" + ")");
-                            }
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                            // convert to jsonable data
+                    // args
             
             
-                            // call dart method
-                            handler.post(new Runnable() {
-                                @Override
-                                public void run() {
-                                    callbackChannel.invokeMethod(
-                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
-                                        new HashMap<String, Object>() {{
-                    
-                                        }}
-                                    );
-                                }
-                            });
+                    // create target object
+                    com.amap.api.maps.model.BaseOptions __obj__ = new com.amap.api.maps.model.BaseOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                            // method result
+                    // print current HEAP
+                    if (getEnableLog()) {
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
+                    }
             
-                        }
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                        @Override
-                        public void onAnimationEnd() {
-                            // print log
-                            if (getEnableLog()) {
-                                Log.d("java-callback", "fluttify-java-callback: onAnimationEnd(" + "" + ")");
-                            }
+                __methodResult__.success(__resultList__);
+            });
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolylineOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                            // convert to jsonable data
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                            // call dart method
-                            handler.post(new Runnable() {
-                                @Override
-                                public void run() {
-                                    callbackChannel.invokeMethod(
-                                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
-                                        new HashMap<String, Object>() {{
-                    
-                                        }}
-                                    );
-                                }
-                            });
+                    // args
             
-                            // method result
             
-                        }
+                    // create target object
+                    com.amap.api.maps.model.PolylineOptionsCreator __obj__ = new com.amap.api.maps.model.PolylineOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                });
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::setDuration", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                long var1 = (long) (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_BaseOverlay__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::setDuration(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setDuration(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::setFillMode", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::setFillMode(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.BaseOverlay __obj__ = new com.amap.api.maps.model.BaseOverlay();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setFillMode(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::getFillMode", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::getFillMode(" + "" + ")");
-                }
+                    // args
+            
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getFillMode();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.model.TileOverlayOptions __obj__ = new com.amap.api.maps.model.TileOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::setRepeatCount", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_RoutePara__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::setRepeatCount(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setRepeatCount(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::setRepeatMode", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::setRepeatMode(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.RoutePara __obj__ = new com.amap.api.maps.model.RoutePara();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setRepeatMode(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::getRepeatMode", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_ArcOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::getRepeatMode(" + "" + ")");
-                }
+                    // args
+            
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getRepeatMode();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.model.ArcOptionsCreator __obj__ = new com.amap.api.maps.model.ArcOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.animation.Animation::getRepeatCount", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_CameraPositionCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.animation.Animation ref = (com.amap.api.maps.model.animation.Animation) getHEAP().get(refId);
+                    // args
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.animation.Animation@" + refId + "::getRepeatCount(" + "" + ")");
-                }
+            
+                    // create target object
+                    com.amap.api.maps.model.CameraPositionCreator __obj__ = new com.amap.api.maps.model.CameraPositionCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getRepeatCount();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.LatLngBounds::builder", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
+                    // args
             
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds::builder(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLngBounds.Builder __result__;
-                try {
-                    __result__ = com.amap.api.maps.model.LatLngBounds.builder();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds@" + refId + "::contains(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.contains(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds@" + refId + "::contains(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.particle.ParticleOverlayOptions __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.contains(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.LatLngBounds::intersects", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLngBounds var1 = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TextOptions__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds@" + refId + "::intersects(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.intersects(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.LatLngBounds::including", (__args__, __methodResult__) -> {
-                // args
-                // ref arg
-                com.amap.api.maps.model.LatLng var1 = (com.amap.api.maps.model.LatLng) getHEAP().get((int) ((Map<String, Object>) __args__).get("var1"));
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.LatLngBounds@" + refId + "::including(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.TextOptions __obj__ = new com.amap.api.maps.model.TextOptions();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.LatLngBounds __result__;
-                try {
-                    __result__ = ref.including(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataPath", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_PolygonOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleDataPath(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getStyleDataPath();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataPath", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleDataPath(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.PolygonOptionsCreator __obj__ = new com.amap.api.maps.model.PolygonOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleDataPath(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleTexturePath", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_TileProjectionCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleTexturePath(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getStyleTexturePath();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleTexturePath", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleTexturePath(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.TileProjectionCreator __obj__ = new com.amap.api.maps.model.TileProjectionCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleTexturePath(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleData", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleData(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                byte[] __result__;
-                try {
-                    __result__ = ref.getStyleData();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                byte[] jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleData", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                byte[] var1 = (byte[]) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleData(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.GroundOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleData(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData", (__args__, __methodResult__) -> {
-                // args
-            
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_model_IndoorBuildingInfo__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleTextureData(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                byte[] __result__;
-                try {
-                    __result__ = ref.getStyleTextureData();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                byte[] jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                byte[] var1 = (byte[]) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleTextureData(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.model.IndoorBuildingInfo __obj__ = new com.amap.api.maps.model.IndoorBuildingInfo();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleTextureData(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleId", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleId(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getStyleId();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleId", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleId(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
+            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleId(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::isEnable", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_AMapUtils__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::isEnable(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isEnable();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setEnable", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setEnable(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.AMapUtils __obj__ = new com.amap.api.maps.AMapUtils();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setEnable(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraData", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_WearMapView__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleExtraData(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                byte[] __result__;
-                try {
-                    __result__ = ref.getStyleExtraData();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                byte[] jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraData", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                byte[] var1 = (byte[]) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleExtraData(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
+            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
+            
+                    // create target object
+                    com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleExtraData(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleExtraPath", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleExtraPath(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                String __result__;
-                try {
-                    __result__ = ref.getStyleExtraPath();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleExtraPath(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
+            
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+                    // ref arg
+                    Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+                    com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
+            
+                    // create target object
+                    com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1, var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleExtraPath(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::getZIndex", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__double__double__float__float__long", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
+            
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // jsonable arg
+                    double var1 = (double) ((Map<String, Object>) __args__).get("var1");
+                    // jsonable arg
+                    double var3 = (double) ((Map<String, Object>) __args__).get("var3");
+                    // jsonable arg
+                    Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
+                    // jsonable arg
+                    Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
+                    // jsonable arg
+                    long var7 = (long) (int) ((Map<String, Object>) __args__).get("var7");
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::getZIndex(" + "" + ")");
-                }
+                    // create target object
+                    com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation(var1, var3, new Double(var5).floatValue(), new Double(var6).floatValue(), var7);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                float __result__;
-                try {
-                    __result__ = ref.getZIndex();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                float jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::setZIndex", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceLocation__", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::setZIndex(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                try {
-                    ref.setZIndex(new Double(var1).floatValue());
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::setVisible", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
+                    // args
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::setVisible(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.trace.TraceLocation __obj__ = new com.amap.api.trace.TraceLocation();
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                try {
-                    ref.setVisible(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                String jsonableResult = "success";
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::isVisible", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_LBSTraceClient__android_content_Context", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::isVisible(" + "" + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
                 }
-            
-                // invoke native method
-                boolean __result__;
-                try {
-                    __result__ = ref.isVisible();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // convert result to jsonable result
-                boolean jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::setBuildingHeightScale", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::setBuildingHeightScale(" + var1 + ")");
-                }
+                    // create target object
+                    com.amap.api.trace.LBSTraceClient __obj__ = new com.amap.api.trace.LBSTraceClient(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
             
-                // invoke native method
-                com.amap.api.maps.model.BuildingOverlayOptions __result__;
-                try {
-                    __result__ = ref.setBuildingHeightScale(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::getBuildingHeightScale", (__args__, __methodResult__) -> {
-                // args
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap__java_util_List_com_amap_api_maps_model_LatLng_", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
+                }
             
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::getBuildingHeightScale(" + "" + ")");
-                }
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
+                    // list arg
+                    List<Integer> var2RefIdList = (List<Integer>) ((Map<String, Object>) __args__).get("var2");
+                    java.util.List<com.amap.api.maps.model.LatLng> var2 = new ArrayList<>();
+                    for (int refId : var2RefIdList) {
+                        ((ArrayList<com.amap.api.maps.model.LatLng>) var2).add((com.amap.api.maps.model.LatLng) getHEAP().get(refId));
+                    }
             
-                // invoke native method
-                int __result__;
-                try {
-                    __result__ = ref.getBuildingHeightScale();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                    // create target object
+                    com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1, (ArrayList) var2);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                int jsonableResult = __result__;
+                    __resultList__.add(System.identityHashCode(__obj__));
+                }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
-            // method
-            put("com.amap.api.maps.model.BuildingOverlayOptions::setBuildingTopColor", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.BuildingOverlayOptions ref = (com.amap.api.maps.model.BuildingOverlayOptions) getHEAP().get(refId);
+            // factory
+            put("ObjectFactory::create_batchcom_amap_api_trace_TraceOverlay__com_amap_api_maps_AMap", (__argsBatch__, __methodResult__) -> {
+                List<Integer> __resultList__ = new ArrayList<>();
             
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.BuildingOverlayOptions@" + refId + "::setBuildingTopColor(" + var1 + ")");
+                int __length__ = 0;
+                // when batch size is 0, dart side will put a map with key 'length' to indicate the length
+                // of this batch
+                if (__argsBatch__ instanceof Map) {
+                    __length__ = (Integer) ((Map<String, Object>) __argsBatch__).get("length");
+                }
+                // or directly put the arg batch
+                else if (__argsBatch__ instanceof List) {
+                    __length__ = ((List<Map<String, Object>>) __argsBatch__).size();
                 }
             
-                // invoke native method
-                com.amap.api.maps.model.BuildingOverlayOptions __result__;
-                try {
-                    __result__ = ref.setBuildingTopColor(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
+                for (int __i__ = 0; __i__ < __length__; __i__++) {
+                    Map<String, Object> __args__ = new HashMap<>();
+                    // only when arg batch is not empty, java side needs to parse args;
+                    if (__argsBatch__ instanceof List) {
+                        __args__ = ((List<Map<String, Object>>) __argsBatch__).get(__i__);
+                    }
+            
+                    // args
+                    // ref arg
+                    Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+                    com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
+            
+                    // create target object
+                    com.amap.api.trace.TraceOverlay __obj__ = new com.amap.api.trace.TraceOverlay(var1);
+                    getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            
+                    // print current HEAP
                     if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
+                        Log.d("ObjectFactory", "HEAP: " + getHEAP());
                     }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
             
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
+                    __resultList__.add(System.identityHashCode(__obj__));
                 }
             
-                __methodResult__.success(jsonableResult);
+                __methodResult__.success(__resultList__);
             });
         }};
     }

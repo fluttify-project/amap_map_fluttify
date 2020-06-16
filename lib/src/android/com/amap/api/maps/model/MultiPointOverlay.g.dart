@@ -20,24 +20,6 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_MultiPointOverlay> create__com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay(com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay var1) async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlay__com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_MultiPointOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
-    return object;
-  }
-  
-  static Future<List<com_amap_api_maps_model_MultiPointOverlay>> create_batch__com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay(List<com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_MultiPointOverlay__com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
-  
-    final List<com_amap_api_maps_model_MultiPointOverlay> typedResult = resultBatch.map((result) => com_amap_api_maps_model_MultiPointOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
   
   //endregion
 
@@ -58,7 +40,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setItems', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MultiPointOverlay::setItems', {"var1": var1.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call

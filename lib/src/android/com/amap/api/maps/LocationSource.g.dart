@@ -31,7 +31,7 @@ mixin com_amap_api_maps_LocationSource on java_lang_Object {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::activate', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.LocationSource::activate', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call

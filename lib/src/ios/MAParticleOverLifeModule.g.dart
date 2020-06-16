@@ -58,7 +58,7 @@ class MAParticleOverLifeModule extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setVelocityOverLife', {"velocity": velocity.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setVelocityOverLife', {"velocity": velocity?.refId, "refId": refId});
   
   
     // handle native call
@@ -82,7 +82,7 @@ class MAParticleOverLifeModule extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setRotationOverLife', {"rotation": rotation.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setRotationOverLife', {"rotation": rotation?.refId, "refId": refId});
   
   
     // handle native call
@@ -106,7 +106,7 @@ class MAParticleOverLifeModule extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setSizeOverLife', {"size": size.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setSizeOverLife', {"size": size?.refId, "refId": refId});
   
   
     // handle native call
@@ -130,7 +130,7 @@ class MAParticleOverLifeModule extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setColorOverLife', {"color": color.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverLifeModule::setColorOverLife', {"color": color?.refId, "refId": refId});
   
   
     // handle native call
