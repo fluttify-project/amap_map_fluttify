@@ -407,7 +407,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRegionChanged((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapViewRegionChanged(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated':
             // print log
@@ -416,7 +416,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_regionWillChangeAnimated((args['mapView'] as Object)?.as__<MAMapView>(), args['animated']);
+            delegate?.mapView_regionWillChangeAnimated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated':
             // print log
@@ -425,7 +425,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_regionDidChangeAnimated((args['mapView'] as Object)?.as__<MAMapView>(), args['animated']);
+            delegate?.mapView_regionDidChangeAnimated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillMoveByUser':
             // print log
@@ -434,7 +434,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapWillMoveByUser((args['mapView'] as Object)?.as__<MAMapView>(), args['wasUserAction']);
+            delegate?.mapView_mapWillMoveByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidMoveByUser':
             // print log
@@ -443,7 +443,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapDidMoveByUser((args['mapView'] as Object)?.as__<MAMapView>(), args['wasUserAction']);
+            delegate?.mapView_mapDidMoveByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillZoomByUser':
             // print log
@@ -452,7 +452,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapWillZoomByUser((args['mapView'] as Object)?.as__<MAMapView>(), args['wasUserAction']);
+            delegate?.mapView_mapWillZoomByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidZoomByUser':
             // print log
@@ -461,7 +461,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapDidZoomByUser((args['mapView'] as Object)?.as__<MAMapView>(), args['wasUserAction']);
+            delegate?.mapView_mapDidZoomByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
@@ -470,7 +470,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLoadingMap((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapViewWillStartLoadingMap(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // print log
@@ -479,7 +479,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFinishLoadingMap((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapViewDidFinishLoadingMap(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError':
             // print log
@@ -488,7 +488,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFailLoadingMap_withError((args['mapView'] as Object)?.as__<MAMapView>(), (args['error'] as Object)?.as__<NSError>());
+            delegate?.mapViewDidFailLoadingMap_withError(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_viewForAnnotation':
             // print log
@@ -497,7 +497,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_viewForAnnotation((args['mapView'] as Object)?.as__<MAMapView>(), (args['annotation'] as Object)?.as__<MAAnnotation>());
+            delegate?.mapView_viewForAnnotation(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['annotation'] as Object))?.as__<MAAnnotation>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
@@ -506,7 +506,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddAnnotationViews((args['mapView'] as Object)?.as__<MAMapView>(), (args['views'] as List).cast<int>().map((__it__) => __it__.as__<NSObject>()).toList());
+            delegate?.mapView_didAddAnnotationViews(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['views'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSelectAnnotationView':
             // print log
@@ -515,7 +515,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSelectAnnotationView((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>());
+            delegate?.mapView_didSelectAnnotationView(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
@@ -524,7 +524,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didDeselectAnnotationView((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>());
+            delegate?.mapView_didDeselectAnnotationView(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -533,7 +533,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLocatingUser((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapViewWillStartLocatingUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // print log
@@ -542,7 +542,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidStopLocatingUser((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapViewDidStopLocatingUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation':
             // print log
@@ -551,7 +551,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didUpdateUserLocation_updatingLocation((args['mapView'] as Object)?.as__<MAMapView>(), (args['userLocation'] as Object)?.as__<MAUserLocation>(), args['updatingLocation']);
+            delegate?.mapView_didUpdateUserLocation_updatingLocation(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['userLocation'] as Object))?.as__<MAUserLocation>(), args['updatingLocation']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
@@ -560,7 +560,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth((args['locationManager'] as Object)?.as__<CLLocationManager>());
+            delegate?.mapViewRequireLocationAuth(TypeOpAmapMapFluttifyIOS((args['locationManager'] as Object))?.as__<CLLocationManager>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError':
             // print log
@@ -569,7 +569,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didFailToLocateUserWithError((args['mapView'] as Object)?.as__<MAMapView>(), (args['error'] as Object)?.as__<NSError>());
+            delegate?.mapView_didFailToLocateUserWithError(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState':
             // print log
@@ -578,7 +578,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>(), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -587,7 +587,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_rendererForOverlay((args['mapView'] as Object)?.as__<MAMapView>(), (args['overlay'] as Object)?.as__<MAOverlay>());
+            delegate?.mapView_rendererForOverlay(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['overlay'] as Object))?.as__<MAOverlay>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers':
             // print log
@@ -596,7 +596,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddOverlayRenderers((args['mapView'] as Object)?.as__<MAMapView>(), (args['overlayRenderers'] as List).cast<int>().map((__it__) => __it__.as__<NSObject>()).toList());
+            delegate?.mapView_didAddOverlayRenderers(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['overlayRenderers'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped':
             // print log
@@ -605,7 +605,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_calloutAccessoryControlTapped((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>(), (args['control'] as Object)?.as__<UIControl>());
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), TypeOpAmapMapFluttifyIOS((args['control'] as Object))?.as__<UIControl>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
@@ -614,7 +614,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewCalloutTapped((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>());
+            delegate?.mapView_didAnnotationViewCalloutTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
@@ -623,7 +623,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewTapped((args['mapView'] as Object)?.as__<MAMapView>(), (args['view'] as Object)?.as__<MAAnnotationView>());
+            delegate?.mapView_didAnnotationViewTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
@@ -632,7 +632,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didChangeUserTrackingMode_animated((args['mapView'] as Object)?.as__<MAMapView>(), MAUserTrackingMode.values[(args['mode'])], args['animated']);
+            delegate?.mapView_didChangeUserTrackingMode_animated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled':
             // print log
@@ -641,7 +641,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didChangeOpenGLESDisabled((args['mapView'] as Object)?.as__<MAMapView>(), args['openGLESDisabled']);
+            delegate?.mapView_didChangeOpenGLESDisabled(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['openGLESDisabled']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didTouchPois':
             // print log
@@ -650,7 +650,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didTouchPois((args['mapView'] as Object)?.as__<MAMapView>(), (args['pois'] as List).cast<int>().map((__it__) => __it__.as__<NSObject>()).toList());
+            delegate?.mapView_didTouchPois(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['pois'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSingleTappedAtCoordinate':
             // print log
@@ -659,7 +659,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSingleTappedAtCoordinate((args['mapView'] as Object)?.as__<MAMapView>(), (args['coordinate'] as Object)?.as__<CLLocationCoordinate2D>());
+            delegate?.mapView_didSingleTappedAtCoordinate(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['coordinate'] as Object))?.as__<CLLocationCoordinate2D>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didLongPressedAtCoordinate':
             // print log
@@ -668,7 +668,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didLongPressedAtCoordinate((args['mapView'] as Object)?.as__<MAMapView>(), (args['coordinate'] as Object)?.as__<CLLocationCoordinate2D>());
+            delegate?.mapView_didLongPressedAtCoordinate(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['coordinate'] as Object))?.as__<CLLocationCoordinate2D>());
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
@@ -677,7 +677,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapInitComplete((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.mapInitComplete(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapShowed':
             // print log
@@ -686,7 +686,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapShowed((args['mapView'] as Object)?.as__<MAMapView>(), (args['indoorInfo'] as Object)?.as__<MAIndoorInfo>());
+            delegate?.mapView_didIndoorMapShowed(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged':
             // print log
@@ -695,7 +695,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapFloorIndexChanged((args['mapView'] as Object)?.as__<MAMapView>(), (args['indoorInfo'] as Object)?.as__<MAIndoorInfo>());
+            delegate?.mapView_didIndoorMapFloorIndexChanged(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapHidden':
             // print log
@@ -704,7 +704,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapHidden((args['mapView'] as Object)?.as__<MAMapView>(), (args['indoorInfo'] as Object)?.as__<MAIndoorInfo>());
+            delegate?.mapView_didIndoorMapHidden(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
@@ -713,7 +713,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataWillReload((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.offlineDataWillReload(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // print log
@@ -722,7 +722,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataDidReload((args['mapView'] as Object)?.as__<MAMapView>());
+            delegate?.offlineDataDidReload(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           default:
             break;
@@ -1052,7 +1052,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1100,7 +1100,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1124,7 +1124,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1292,7 +1292,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1388,7 +1388,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = UIImage()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1416,7 +1416,7 @@ class MAMapView extends UIView  {
               }
         
               // handle the native call
-              block((args['resultImage'] as Object)?.as__<UIImage>(), args['state']);
+              block(TypeOpAmapMapFluttifyIOS((args['resultImage'] as Object))?.as__<UIImage>(), args['state']);
               break;
             default:
               break;
@@ -1476,7 +1476,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1500,7 +1500,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1524,7 +1524,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1548,7 +1548,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1812,7 +1812,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1836,7 +1836,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -2340,7 +2340,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

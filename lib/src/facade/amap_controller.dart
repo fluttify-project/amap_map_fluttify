@@ -796,7 +796,7 @@ class AmapController with WidgetsBindingObserver {
 
         final marker = await map.addMarker(markerOption);
         marker.tag__ = 'amap_$hashCode'; // 标记为当前地图对象的对象
-
+        print('当前marker的tag: amap_$hashCode');
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
           await marker.setInfoWindowEnable(option.infoWindowEnabled);

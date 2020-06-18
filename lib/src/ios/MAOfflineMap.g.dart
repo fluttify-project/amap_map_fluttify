@@ -104,7 +104,7 @@ class MAOfflineMap extends NSObject  {
       return null;
     } else {
       final __return__ = MAOfflineMap()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -172,7 +172,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
+              downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;
@@ -372,7 +372,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
+              downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;
@@ -412,7 +412,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              downloadBlock((args['downloadItem'] as Object)?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], (args['info'] as Object)?.as__<dynamic>());
+              downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[(args['downloadStatus'])], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;

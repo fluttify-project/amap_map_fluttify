@@ -198,6 +198,7 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
+    print('释放tag为amap_${_controller.hashCode}的对象');
     final isCurrentMap = (Ref it) => it.tag__ == 'amap_${_controller.hashCode}';
     kNativeObjectPool
         .where(isCurrentMap)

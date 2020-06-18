@@ -69,7 +69,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -93,7 +93,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -165,7 +165,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -189,7 +189,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -213,7 +213,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -237,7 +237,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -261,7 +261,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -285,7 +285,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -309,7 +309,7 @@ class com_amap_api_maps_model_PolygonOptions extends com_amap_api_maps_model_Bas
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_PolygonOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

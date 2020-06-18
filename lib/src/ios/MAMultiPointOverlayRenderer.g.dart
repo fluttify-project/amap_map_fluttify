@@ -83,7 +83,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             }
         
             // handle the native call
-            delegate?.multiPointOverlayRenderer_didItemTapped((args['renderer'] as Object)?.as__<MAMultiPointOverlayRenderer>(), (args['item'] as Object)?.as__<MAMultiPointItem>());
+            delegate?.multiPointOverlayRenderer_didItemTapped(TypeOpAmapMapFluttifyIOS((args['renderer'] as Object))?.as__<MAMultiPointOverlayRenderer>(), TypeOpAmapMapFluttifyIOS((args['item'] as Object))?.as__<MAMultiPointItem>());
             break;
           default:
             break;
@@ -131,7 +131,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MAMultiPointOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

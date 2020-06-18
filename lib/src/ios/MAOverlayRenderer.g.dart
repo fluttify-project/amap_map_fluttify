@@ -133,7 +133,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -157,7 +157,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -181,7 +181,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -205,7 +205,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -253,7 +253,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -277,7 +277,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -301,7 +301,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -325,7 +325,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -349,7 +349,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

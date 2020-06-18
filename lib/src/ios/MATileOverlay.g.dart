@@ -145,7 +145,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
       return null;
     } else {
       final __return__ = Ref()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -173,7 +173,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result((args['tileData'] as Object)?.as__<NSData>(), (args['error'] as Object)?.as__<NSError>());
+              result(TypeOpAmapMapFluttifyIOS((args['tileData'] as Object))?.as__<NSData>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
               break;
             default:
               break;

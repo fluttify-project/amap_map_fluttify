@@ -63,7 +63,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_CameraPosition()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -305,7 +305,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_NavigateArrow()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -329,7 +329,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Polyline()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -353,7 +353,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_BuildingOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -377,7 +377,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Circle()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -401,7 +401,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Arc()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -425,7 +425,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Polygon()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -449,7 +449,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_GroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -473,7 +473,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -497,7 +497,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_GL3DModel()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -521,7 +521,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Text()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -593,7 +593,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_TileOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -617,7 +617,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MultiPointOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -641,7 +641,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_particle_ParticleOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -905,7 +905,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MyTrafficStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -977,7 +977,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1049,7 +1049,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MyLocationStyle()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1121,7 +1121,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_UiSettings()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1145,7 +1145,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_Projection()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1173,7 +1173,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onCameraChange((args['var1'] as Object)?.as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
@@ -1182,7 +1182,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onCameraChangeFinish((args['var1'] as Object)?.as__<com_amap_api_maps_model_CameraPosition>());
+              var1?.onCameraChangeFinish(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
               break;
             default:
               break;
@@ -1222,7 +1222,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1262,7 +1262,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onTouch((args['var1'] as Object)?.as__<android_view_MotionEvent>());
+              var1?.onTouch(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_view_MotionEvent>());
               break;
             default:
               break;
@@ -1302,7 +1302,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPOIClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Poi>());
+              var1?.onPOIClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Poi>());
               break;
             default:
               break;
@@ -1342,7 +1342,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMyLocationChange((args['var1'] as Object)?.as__<android_location_Location>());
+              var1?.onMyLocationChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_location_Location>());
               break;
             default:
               break;
@@ -1382,7 +1382,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapLongClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_LatLng>());
+              var1?.onMapLongClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
               break;
             default:
               break;
@@ -1422,7 +1422,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1462,7 +1462,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPolylineClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Polyline>());
+              var1?.onPolylineClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Polyline>());
               break;
             default:
               break;
@@ -1502,7 +1502,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDragStart((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragStart(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
@@ -1511,7 +1511,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDrag((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDrag(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
@@ -1520,7 +1520,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMarkerDragEnd((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
+              var1?.onMarkerDragEnd(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1560,7 +1560,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onInfoWindowClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_Marker>());
+              var1?.onInfoWindowClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
               break;
             default:
               break;
@@ -1624,7 +1624,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.getInfoWindowParams((args['var1'] as Object)?.as__<com_amap_api_maps_model_BasePointOverlay>());
+              var1?.getInfoWindowParams(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_BasePointOverlay>());
               break;
             default:
               break;
@@ -1704,7 +1704,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.OnIndoorBuilding((args['var1'] as Object)?.as__<com_amap_api_maps_model_IndoorBuildingInfo>());
+              var1?.OnIndoorBuilding(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_IndoorBuildingInfo>());
               break;
             default:
               break;
@@ -1744,7 +1744,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onPointClick((args['var1'] as Object)?.as__<com_amap_api_maps_model_MultiPointItem>());
+              var1?.onPointClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_MultiPointItem>());
               break;
             default:
               break;
@@ -1784,7 +1784,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapPrint((args['var1'] as Object)?.as__<android_graphics_drawable_Drawable>());
+              var1?.onMapPrint(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_graphics_drawable_Drawable>());
               break;
             default:
               break;
@@ -1824,7 +1824,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap((args['var1'] as Object)?.as__<android_graphics_Bitmap>());
+              var1?.onMapScreenShot__android_graphics_Bitmap(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_graphics_Bitmap>());
               break;
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
@@ -1833,7 +1833,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onMapScreenShot__android_graphics_Bitmap__int((args['var1'] as Object)?.as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onMapScreenShot__android_graphics_Bitmap__int(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
@@ -2300,7 +2300,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_InfoWindowAnimationManager()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -2444,7 +2444,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_CrossOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -2468,7 +2468,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_RouteOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

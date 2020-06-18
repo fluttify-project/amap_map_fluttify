@@ -74,7 +74,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MATileOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

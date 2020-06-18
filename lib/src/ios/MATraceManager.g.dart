@@ -60,7 +60,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.traceManager_didTrace_correct_distance_withError((args['manager'] as Object)?.as__<MATraceManager>(), (args['locations'] as List).cast<int>().map((__it__) => __it__.as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => __it__.as__<MATracePoint>()).toList(), args['distance'], (args['error'] as Object)?.as__<NSError>());
+            delegate?.traceManager_didTrace_correct_distance_withError(TypeOpAmapMapFluttifyIOS((args['manager'] as Object))?.as__<MATraceManager>(), (args['locations'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance'], TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
             break;
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
@@ -69,7 +69,7 @@ class MATraceManager extends NSObject  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth((args['locationManager'] as Object)?.as__<CLLocationManager>());
+            delegate?.mapViewRequireLocationAuth(TypeOpAmapMapFluttifyIOS((args['locationManager'] as Object))?.as__<CLLocationManager>());
             break;
           default:
             break;
@@ -99,7 +99,7 @@ class MATraceManager extends NSObject  {
       return null;
     } else {
       final __return__ = MATraceManager()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -127,7 +127,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              processingCallback(args['index'], (args['points'] as List).cast<int>().map((__it__) => __it__.as__<MATracePoint>()).toList());
+              processingCallback(args['index'], (args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList());
               break;
             case 'Callback::MAFinishCallback::MAFinishCallback':
               // print log
@@ -136,7 +136,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              finishCallback((args['points'] as List).cast<int>().map((__it__) => __it__.as__<MATracePoint>()).toList(), args['distance']);
+              finishCallback((args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance']);
               break;
             case 'Callback::MAFailedCallback::MAFailedCallback':
               // print log
@@ -157,7 +157,7 @@ class MATraceManager extends NSObject  {
       return null;
     } else {
       final __return__ = NSOperation()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -185,7 +185,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              locCallback((args['locations'] as List).cast<int>().map((__it__) => __it__.as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => __it__.as__<MATracePoint>()).toList(), args['distance'], (args['error'] as Object)?.as__<NSError>());
+              locCallback((args['locations'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance'], TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
               break;
             default:
               break;

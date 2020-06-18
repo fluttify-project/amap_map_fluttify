@@ -165,7 +165,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_Marker()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -189,7 +189,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__result__ is Ref) kNativeObjectPool.add(__return__ as Ref);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

@@ -151,7 +151,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
               }
         
               // handle the native call
-              var1?.onGenerateComplete((args['var1'] as Object)?.as__<android_graphics_Bitmap>(), args['var2']);
+              var1?.onGenerateComplete(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_graphics_Bitmap>(), args['var2']);
               break;
             default:
               break;
