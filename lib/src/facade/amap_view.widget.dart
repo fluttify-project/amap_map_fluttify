@@ -151,6 +151,7 @@ class _AmapViewState extends State<AmapView> {
                   var2: snapshot.data,
                   onDispose: _onPlatformViewDispose,
                   onViewCreated: (controller) async {
+                    controller.tag__ = 'amap_${controller.hashCode}';
                     _controller = AmapController.android(controller, this);
 
                     final bundle = await android_os_Bundle.create();
@@ -178,6 +179,7 @@ class _AmapViewState extends State<AmapView> {
           MAMapView_iOS(
             onDispose: _onPlatformViewDispose,
             onViewCreated: (controller) async {
+              controller.tag__ = 'amap_${controller.hashCode}';
               _controller = AmapController.ios(controller, this);
 
               await _initIOS();
@@ -192,6 +194,16 @@ class _AmapViewState extends State<AmapView> {
     } else {
       return Center(child: Text('未实现的平台'));
     }
+  }
+
+  @override
+  void dispose() {
+    final isCurrentMap = (Ref it) => it.tag__ == 'amap_${_controller.hashCode}';
+    kNativeObjectPool
+        .where(isCurrentMap)
+        .release_batch()
+        .then((_) => kNativeObjectPool.removeWhere(isCurrentMap));
+    super.dispose();
   }
 
   Future<Uint8List> widgetToImageData(Widget marker) {
