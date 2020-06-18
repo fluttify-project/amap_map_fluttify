@@ -407,7 +407,7 @@ class MapMove {
 
   @override
   String toString() {
-    return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+    return 'MapDrag{latitude: ${latLng.latitude}, longitude: ${latLng.longitude}, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
   }
 }
 
