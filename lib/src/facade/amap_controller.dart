@@ -140,13 +140,23 @@ class AmapController with WidgetsBindingObserver {
           // 定位间隔
           await locationStyle.interval(option.interval.inMilliseconds);
 
-          // 定位图标
+          // 定位图标 兼容代码
           if (option.iconUri != null) {
             final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
             );
+            final bitmap = await android_graphics_Bitmap.create(imageData);
+            final bitmapDescriptor =
+                await com_amap_api_maps_model_BitmapDescriptorFactory
+                    .fromBitmap(bitmap);
+            await locationStyle.myLocationIcon(bitmapDescriptor);
+          }
+          // 定位图标
+          if (option.iconProvider != null) {
+            final imageData = await option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context));
             final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
                 await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -226,13 +236,20 @@ class AmapController with WidgetsBindingObserver {
 
           final style = await MAUserLocationRepresentation.create__();
 
-          // 定位图标
+          // 定位图标 兼容代码
           if (option.iconUri != null) {
             final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
             );
+            final bitmap = await UIImage.create(imageData);
+            await style.set_image(bitmap);
+          }
+          // 定位图标
+          if (option.iconProvider != null) {
+            final imageData = await option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context));
             final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
@@ -758,10 +775,22 @@ class AmapController with WidgetsBindingObserver {
           await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
-        // 普通图片
+        // 普通图片 兼容代码
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await uri2ImageData(option.imageConfig, option.iconUri);
+
+          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await markerOption.icon(icon);
+
+          pool..add(bitmap)..add(icon);
+        }
+        // 普通图片
+        if (option.iconProvider != null) {
+          Uint8List iconData = await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context));
 
           final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -836,10 +865,22 @@ class AmapController with WidgetsBindingObserver {
           await annotation.set_subtitle(option.snippet);
         }
         // 设置图片
-        // 普通图片
+        // 普通图片 兼容代码
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await uri2ImageData(option.imageConfig, option.iconUri);
+
+          final icon = await UIImage.create(iconData);
+
+          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+          await annotation.addProperty__(1, icon);
+
+          pool..add(icon);
+        }
+        // 普通图片
+        if (option.iconProvider != null) {
+          Uint8List iconData = await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context));
 
           final icon = await UIImage.create(iconData);
 
@@ -921,7 +962,10 @@ class AmapController with WidgetsBindingObserver {
     final objectBatch = options.map((it) => it.object).toList();
     final iconDataBatch = <Uint8List>[
       for (final option in options)
-        if (option.iconUri != null && option.imageConfig != null)
+        if (option.iconProvider != null)
+          await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context))
+        else if (option.iconUri != null && option.imageConfig != null)
           await uri2ImageData(option.imageConfig, option.iconUri)
         else if (option.widget != null)
           await _state.widgetToImageData(option.widget)

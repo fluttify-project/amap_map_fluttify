@@ -47,6 +47,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/path_provider_macos/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/path_provider_macos/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/path_provider_macos/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/permission_handler/example/build" />

@@ -40,6 +40,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onSelected: (value) async {
                     await _controller?.showMyLocation(MyLocationOption(
                       show: value,
+                      iconProvider: AssetImage('images/test_icon.png'),
                     ));
                   },
                 ),
