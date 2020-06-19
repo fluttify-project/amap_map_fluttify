@@ -68,6 +68,7 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/url_launcher_web/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/url_launcher_web/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/url_launcher_web/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/Flutter/App.framework/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/connectivity/example/.pub" />
@@ -116,6 +117,7 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_web/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_web/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/url_launcher_web/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/Flutter/App.framework/flutter_assets/packages" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
