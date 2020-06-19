@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -26,7 +25,7 @@ mixin com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener on java_la
 
   @mustCallSuper
   Future<void> onGenerateComplete(android_graphics_Bitmap var1, int var2) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onGenerateComplete::kNativeObjectPool: $kNativeObjectPool');

@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -26,7 +25,7 @@ mixin com_amap_api_maps_AMap_OnMarkerDragListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onMarkerDragStart::kNativeObjectPool: $kNativeObjectPool');
@@ -35,7 +34,7 @@ mixin com_amap_api_maps_AMap_OnMarkerDragListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onMarkerDrag::kNativeObjectPool: $kNativeObjectPool');
@@ -44,7 +43,7 @@ mixin com_amap_api_maps_AMap_OnMarkerDragListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onMarkerDragEnd::kNativeObjectPool: $kNativeObjectPool');

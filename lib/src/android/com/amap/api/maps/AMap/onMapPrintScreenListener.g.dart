@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -26,7 +25,7 @@ mixin com_amap_api_maps_AMap_onMapPrintScreenListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onMapPrint(android_graphics_drawable_Drawable var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onMapPrint::kNativeObjectPool: $kNativeObjectPool');

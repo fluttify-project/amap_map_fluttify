@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -26,7 +25,7 @@ mixin MAMapViewDelegate on NSObject {
 
   @mustCallSuper
   Future<void> mapViewRegionChanged(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewRegionChanged::kNativeObjectPool: $kNativeObjectPool');
@@ -35,7 +34,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_regionWillChangeAnimated(MAMapView mapView, bool animated) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_regionWillChangeAnimated::kNativeObjectPool: $kNativeObjectPool');
@@ -44,7 +43,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_regionDidChangeAnimated(MAMapView mapView, bool animated) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_regionDidChangeAnimated::kNativeObjectPool: $kNativeObjectPool');
@@ -53,7 +52,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_mapWillMoveByUser(MAMapView mapView, bool wasUserAction) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_mapWillMoveByUser::kNativeObjectPool: $kNativeObjectPool');
@@ -62,7 +61,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_mapDidMoveByUser(MAMapView mapView, bool wasUserAction) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_mapDidMoveByUser::kNativeObjectPool: $kNativeObjectPool');
@@ -71,7 +70,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_mapWillZoomByUser(MAMapView mapView, bool wasUserAction) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_mapWillZoomByUser::kNativeObjectPool: $kNativeObjectPool');
@@ -80,7 +79,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_mapDidZoomByUser(MAMapView mapView, bool wasUserAction) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_mapDidZoomByUser::kNativeObjectPool: $kNativeObjectPool');
@@ -89,7 +88,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewWillStartLoadingMap::kNativeObjectPool: $kNativeObjectPool');
@@ -98,7 +97,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewDidFinishLoadingMap::kNativeObjectPool: $kNativeObjectPool');
@@ -107,8 +106,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewDidFailLoadingMap_withError(MAMapView mapView, NSError error) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(error);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (error is Ref) kNativeObjectPool.add(error);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewDidFailLoadingMap_withError::kNativeObjectPool: $kNativeObjectPool');
@@ -117,8 +116,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<MAAnnotationView> mapView_viewForAnnotation(MAMapView mapView, MAAnnotation annotation) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(annotation);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (annotation is Ref) kNativeObjectPool.add(annotation);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_viewForAnnotation::kNativeObjectPool: $kNativeObjectPool');
@@ -127,7 +126,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didAddAnnotationViews(MAMapView mapView, List<NSObject> views) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
     kNativeObjectPool.addAll(views);
   
     if (fluttifyLogEnabled) {
@@ -137,8 +136,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didSelectAnnotationView(MAMapView mapView, MAAnnotationView view) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didSelectAnnotationView::kNativeObjectPool: $kNativeObjectPool');
@@ -147,8 +146,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didDeselectAnnotationView(MAMapView mapView, MAAnnotationView view) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didDeselectAnnotationView::kNativeObjectPool: $kNativeObjectPool');
@@ -157,7 +156,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewWillStartLocatingUser::kNativeObjectPool: $kNativeObjectPool');
@@ -166,7 +165,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewDidStopLocatingUser::kNativeObjectPool: $kNativeObjectPool');
@@ -175,8 +174,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didUpdateUserLocation_updatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(userLocation);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (userLocation is Ref) kNativeObjectPool.add(userLocation);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didUpdateUserLocation_updatingLocation::kNativeObjectPool: $kNativeObjectPool');
@@ -185,7 +184,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {
-    kNativeObjectPool.add(locationManager);
+    if (locationManager is Ref) kNativeObjectPool.add(locationManager);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapViewRequireLocationAuth::kNativeObjectPool: $kNativeObjectPool');
@@ -194,8 +193,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didFailToLocateUserWithError(MAMapView mapView, NSError error) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(error);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (error is Ref) kNativeObjectPool.add(error);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didFailToLocateUserWithError::kNativeObjectPool: $kNativeObjectPool');
@@ -204,8 +203,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_annotationView_didChangeDragState_fromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_annotationView_didChangeDragState_fromOldState::kNativeObjectPool: $kNativeObjectPool');
@@ -214,8 +213,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<MAOverlayRenderer> mapView_rendererForOverlay(MAMapView mapView, MAOverlay overlay) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(overlay);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (overlay is Ref) kNativeObjectPool.add(overlay);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_rendererForOverlay::kNativeObjectPool: $kNativeObjectPool');
@@ -224,7 +223,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didAddOverlayRenderers(MAMapView mapView, List<NSObject> overlayRenderers) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
     kNativeObjectPool.addAll(overlayRenderers);
   
     if (fluttifyLogEnabled) {
@@ -234,9 +233,9 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_annotationView_calloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
-    kNativeObjectPool.add(control);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
+    if (control is Ref) kNativeObjectPool.add(control);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_annotationView_calloutAccessoryControlTapped::kNativeObjectPool: $kNativeObjectPool');
@@ -245,8 +244,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didAnnotationViewCalloutTapped::kNativeObjectPool: $kNativeObjectPool');
@@ -255,8 +254,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didAnnotationViewTapped(MAMapView mapView, MAAnnotationView view) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(view);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (view is Ref) kNativeObjectPool.add(view);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didAnnotationViewTapped::kNativeObjectPool: $kNativeObjectPool');
@@ -265,7 +264,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didChangeUserTrackingMode_animated(MAMapView mapView, MAUserTrackingMode mode, bool animated) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didChangeUserTrackingMode_animated::kNativeObjectPool: $kNativeObjectPool');
@@ -274,7 +273,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didChangeOpenGLESDisabled::kNativeObjectPool: $kNativeObjectPool');
@@ -283,7 +282,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didTouchPois(MAMapView mapView, List<NSObject> pois) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
     kNativeObjectPool.addAll(pois);
   
     if (fluttifyLogEnabled) {
@@ -293,8 +292,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(coordinate);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (coordinate is Ref) kNativeObjectPool.add(coordinate);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didSingleTappedAtCoordinate::kNativeObjectPool: $kNativeObjectPool');
@@ -303,8 +302,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(coordinate);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (coordinate is Ref) kNativeObjectPool.add(coordinate);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didLongPressedAtCoordinate::kNativeObjectPool: $kNativeObjectPool');
@@ -313,7 +312,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapInitComplete(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapInitComplete::kNativeObjectPool: $kNativeObjectPool');
@@ -322,8 +321,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(indoorInfo);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didIndoorMapShowed::kNativeObjectPool: $kNativeObjectPool');
@@ -332,8 +331,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(indoorInfo);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didIndoorMapFloorIndexChanged::kNativeObjectPool: $kNativeObjectPool');
@@ -342,8 +341,8 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> mapView_didIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo) {
-    kNativeObjectPool.add(mapView);
-    kNativeObjectPool.add(indoorInfo);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+    if (indoorInfo is Ref) kNativeObjectPool.add(indoorInfo);
   
     if (fluttifyLogEnabled) {
       debugPrint('mapView_didIndoorMapHidden::kNativeObjectPool: $kNativeObjectPool');
@@ -352,7 +351,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> offlineDataWillReload(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('offlineDataWillReload::kNativeObjectPool: $kNativeObjectPool');
@@ -361,7 +360,7 @@ mixin MAMapViewDelegate on NSObject {
   
   @mustCallSuper
   Future<void> offlineDataDidReload(MAMapView mapView) {
-    kNativeObjectPool.add(mapView);
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
   
     if (fluttifyLogEnabled) {
       debugPrint('offlineDataDidReload::kNativeObjectPool: $kNativeObjectPool');

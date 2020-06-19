@@ -1,5 +1,6 @@
 ## 0.23.3
 - enhance: 枚举优化
+- enhance: 简化图片逻辑
 
 ## 0.23.2
 - roll engine #1aee42f3

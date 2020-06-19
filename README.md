@@ -133,6 +133,22 @@ iOS `Info.plist`配置:
 </array>
 ```
 
+## 导航组件/NO-IDFA
+导航组件在`feature/navi`中, 如需要, 则使用git依赖:
+```yaml
+amap_map_fluttify:
+  git:
+    url: https://github.com/fluttify-project/amap_map_fluttify.git
+    ref: feature/navi  
+```
+同理, 插件提供了NO-IDFA版本, 使用git依赖:
+```yaml
+amap_map_fluttify:
+  git:
+    url: https://github.com/fluttify-project/amap_map_fluttify.git
+    ref: feature/NO-IDFA  
+```
+
 | 微信支持 | 支付宝支持 |
 | :----------: | :----------: |
 | <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true" height="300"> | <img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true" height="300"> |

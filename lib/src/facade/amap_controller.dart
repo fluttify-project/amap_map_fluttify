@@ -140,13 +140,23 @@ class AmapController with WidgetsBindingObserver {
           // 定位间隔
           await locationStyle.interval(option.interval.inMilliseconds);
 
-          // 定位图标
+          // 定位图标 兼容代码
           if (option.iconUri != null) {
             final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
             );
+            final bitmap = await android_graphics_Bitmap.create(imageData);
+            final bitmapDescriptor =
+                await com_amap_api_maps_model_BitmapDescriptorFactory
+                    .fromBitmap(bitmap);
+            await locationStyle.myLocationIcon(bitmapDescriptor);
+          }
+          // 定位图标
+          if (option.iconProvider != null) {
+            final imageData = await option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context));
             final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
                 await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -226,13 +236,20 @@ class AmapController with WidgetsBindingObserver {
 
           final style = await MAUserLocationRepresentation.create__();
 
-          // 定位图标
+          // 定位图标 兼容代码
           if (option.iconUri != null) {
             final imageData = await uri2ImageData(
               option.imageConfiguration,
               option.iconUri,
               package: option.package,
             );
+            final bitmap = await UIImage.create(imageData);
+            await style.set_image(bitmap);
+          }
+          // 定位图标
+          if (option.iconProvider != null) {
+            final imageData = await option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context));
             final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
@@ -758,10 +775,22 @@ class AmapController with WidgetsBindingObserver {
           await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
-        // 普通图片
+        // 普通图片 兼容代码
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await uri2ImageData(option.imageConfig, option.iconUri);
+
+          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
+              .fromBitmap(bitmap);
+          await markerOption.icon(icon);
+
+          pool..add(bitmap)..add(icon);
+        }
+        // 普通图片
+        if (option.iconProvider != null) {
+          Uint8List iconData = await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context));
 
           final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -795,7 +824,8 @@ class AmapController with WidgetsBindingObserver {
         await markerOption.visible(option.visible);
 
         final marker = await map.addMarker(markerOption);
-
+        marker.tag__ = 'amap_$hashCode'; // 标记为当前地图对象的对象
+        print('当前marker的tag: amap_$hashCode');
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
           await marker.setInfoWindowEnable(option.infoWindowEnabled);
@@ -835,10 +865,22 @@ class AmapController with WidgetsBindingObserver {
           await annotation.set_subtitle(option.snippet);
         }
         // 设置图片
-        // 普通图片
+        // 普通图片 兼容代码
         if (option.iconUri != null && option.imageConfig != null) {
           Uint8List iconData =
               await uri2ImageData(option.imageConfig, option.iconUri);
+
+          final icon = await UIImage.create(iconData);
+
+          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+          await annotation.addProperty__(1, icon);
+
+          pool..add(icon);
+        }
+        // 普通图片
+        if (option.iconProvider != null) {
+          Uint8List iconData = await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context));
 
           final icon = await UIImage.create(iconData);
 
@@ -888,6 +930,8 @@ class AmapController with WidgetsBindingObserver {
         // 等待添加完成 获取对应的view
         final annotationViewList =
             await _iosMapDelegate._annotationViewCompleter.future;
+        annotation.tag__ = 'amap_$hashCode'; // 标记为当前地图对象的对象
+
         // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
@@ -918,7 +962,10 @@ class AmapController with WidgetsBindingObserver {
     final objectBatch = options.map((it) => it.object).toList();
     final iconDataBatch = <Uint8List>[
       for (final option in options)
-        if (option.iconUri != null && option.imageConfig != null)
+        if (option.iconProvider != null)
+          await option.iconProvider
+              .toImageData(createLocalImageConfiguration(_state.context))
+        else if (option.iconUri != null && option.imageConfig != null)
           await uri2ImageData(option.imageConfig, option.iconUri)
         else if (option.widget != null)
           await _state.widgetToImageData(option.widget)
@@ -960,6 +1007,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 添加marker
         final markers = await map.addMarkers(markerOptionBatch, false);
+        markers.forEach((element) => element.tag__ = 'amap_$hashCode');
 
         // 弹窗使能
         await markers.setInfoWindowEnable_batch(infoWindowEnabledBatch);
@@ -983,6 +1031,8 @@ class AmapController with WidgetsBindingObserver {
         // 创建marker
         final annotationBatch =
             await MAPointAnnotation.create_batch__(options.length);
+        annotationBatch.forEach((element) => element.tag__ = 'amap_$hashCode');
+
         // 经纬度列表
         final coordinateBatch =
             await CLLocationCoordinate2D.create_batch(latBatch, lngBatch);
@@ -1024,6 +1074,8 @@ class AmapController with WidgetsBindingObserver {
           for (int i = 0; i < options.length; i++)
             if (i < visibleMarkers.length) visibleMarkers[i] else null
         ];
+        annotationViewList
+            .forEach((element) => element.tag__ = 'amap_$hashCode');
 
         pool.addAll(coordinateBatch);
         return [
@@ -1074,6 +1126,7 @@ class AmapController with WidgetsBindingObserver {
         await marker.setTotalDuration(option.duration.inSeconds);
         // 执行动画
         await marker.startSmoothMove();
+        marker.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1120,6 +1173,8 @@ class AmapController with WidgetsBindingObserver {
           'name',
           (finished) {},
         );
+        animation.tag__ = 'amap_$hashCode';
+
         await iosController.addAnnotation(annotation);
 
         pool..addAll(points);
@@ -1298,6 +1353,7 @@ class AmapController with WidgetsBindingObserver {
         }
         // 设置参数
         final polyline = await map.addPolyline(polylineOptions);
+        polyline.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1317,6 +1373,7 @@ class AmapController with WidgetsBindingObserver {
         // 构造折线参数
         final polyline = await MAPolyline.polylineWithCoordinates_count(
             latLngList, latLngList.length);
+        polyline.tag__ = 'amap_$hashCode';
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
@@ -1404,6 +1461,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 设置参数
         final polygon = await map.addPolygon(polygonOptions);
+        polygon.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1423,6 +1481,7 @@ class AmapController with WidgetsBindingObserver {
         // 构造折线参数
         final polygon = await MAPolygon.polygonWithCoordinates_count(
             latLngList, latLngList.length);
+        polygon.tag__ = 'amap_$hashCode';
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
@@ -1485,6 +1544,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 设置参数
         final circle = await map.addCircle(circleOptions);
+        circle.tag__ = 'amap_$hashCode';
 
         pool..add(map)..add(circleOptions)..add(latLng);
 
@@ -1503,6 +1563,7 @@ class AmapController with WidgetsBindingObserver {
           latLng,
           option.radius,
         );
+        circle.tag__ = 'amap_$hashCode';
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
@@ -2057,6 +2118,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 添加热力图
         final heatmap = await map.addTileOverlay(tileOverlayOption);
+        heatmap.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -2090,6 +2152,7 @@ class AmapController with WidgetsBindingObserver {
         }
         // 添加结点数据
         await overlay.set_data(nodeList);
+        overlay.tag__ = 'amap_$hashCode';
 
         // 添加热力图
         await iosController.addOverlay(overlay);
@@ -2135,6 +2198,7 @@ class AmapController with WidgetsBindingObserver {
 
         // 进行添加
         final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
+        groundOverlay.tag__ = 'amap_$hashCode';
 
         bitmap.recycle();
         pool
@@ -2166,6 +2230,7 @@ class AmapController with WidgetsBindingObserver {
         ));
         final overlay =
             await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
+        overlay.tag__ = 'amap_$hashCode';
 
         // 添加热力图
         await iosController.addOverlay(overlay);
@@ -2236,7 +2301,8 @@ class _IOSMapDelegate extends NSObject
     super.mapView_didAddAnnotationViews(mapView, views);
     if (_annotationViewCompleter?.isCompleted == false) {
       List<MAAnnotationView> result = [
-        for (final view in views) await view.asMAAnnotationView()
+        for (final view in views)
+          TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
       ];
       _annotationViewCompleter.complete(result);
     }
@@ -2447,9 +2513,10 @@ class _IOSMapDelegate extends NSObject
   ) async {
     super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
     if (overlayRenderers.length == 1 &&
-        await overlayRenderers[0].isMAMultiPointOverlayRenderer()) {
-      final multiPointRenderer =
-          await overlayRenderers[0].asMAMultiPointOverlayRenderer();
+        await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
+            .is__<MAMultiPointOverlayRenderer>()) {
+      final multiPointRenderer = TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
+          .as__<MAMultiPointOverlayRenderer>();
       multiPointRenderer.set_delegate(this);
     }
   }

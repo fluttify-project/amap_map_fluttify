@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -21,24 +20,6 @@ class com_amap_api_maps_model_RouteOverlay extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_RouteOverlay> create__com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay(com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay var1) async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_RouteOverlay__com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay', {"var1": var1.refId});
-    final object = com_amap_api_maps_model_RouteOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
-  
-    kNativeObjectPool.add(object);
-    return object;
-  }
-  
-  static Future<List<com_amap_api_maps_model_RouteOverlay>> create_batch__com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay(List<com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_RouteOverlay__com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__].refId}]);
-  
-    final List<com_amap_api_maps_model_RouteOverlay> typedResult = resultBatch.map((result) => com_amap_api_maps_model_RouteOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
   
   //endregion
 

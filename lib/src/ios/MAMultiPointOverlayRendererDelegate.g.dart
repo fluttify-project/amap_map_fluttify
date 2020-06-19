@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -26,8 +25,8 @@ mixin MAMultiPointOverlayRendererDelegate on NSObject {
 
   @mustCallSuper
   Future<void> multiPointOverlayRenderer_didItemTapped(MAMultiPointOverlayRenderer renderer, MAMultiPointItem item) {
-    kNativeObjectPool.add(renderer);
-    kNativeObjectPool.add(item);
+    if (renderer is Ref) kNativeObjectPool.add(renderer);
+    if (item is Ref) kNativeObjectPool.add(item);
   
     if (fluttifyLogEnabled) {
       debugPrint('multiPointOverlayRenderer_didItemTapped::kNativeObjectPool: $kNativeObjectPool');

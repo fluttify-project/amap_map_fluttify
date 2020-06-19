@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -59,7 +58,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icons', {"var1": var1.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icons', {"var1": var1.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -70,7 +69,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -83,7 +82,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::rotatingIcons', {"var1": var1.map((__it__) => __it__.refId).toList(), "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::rotatingIcons', {"var1": var1.map((__it__) => __it__?.refId).toList(), "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -94,7 +93,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -190,7 +189,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -262,7 +261,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -275,7 +274,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::position', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::position', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -286,7 +285,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -310,7 +309,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -323,7 +322,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icon', {"var1": var1.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MarkerOptions::icon', {"var1": var1?.refId, "refId": refId});
   
   
     // handle native call
@@ -334,7 +333,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -358,7 +357,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -382,7 +381,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -406,7 +405,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -430,7 +429,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -454,7 +453,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -478,7 +477,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -502,7 +501,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -526,7 +525,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -598,7 +597,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -814,7 +813,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -862,7 +861,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -910,7 +909,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -958,7 +957,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1006,7 +1005,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1054,7 +1053,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1102,7 +1101,7 @@ class com_amap_api_maps_model_MarkerOptions extends java_lang_Object with androi
       return null;
     } else {
       final __return__ = com_amap_api_maps_model_MarkerOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

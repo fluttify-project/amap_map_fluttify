@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -87,7 +86,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithBounds_icon', {"bounds": bounds?.refId, "icon": icon?.refId});
   
   
     // handle native call
@@ -98,7 +97,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
       return null;
     } else {
       final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -111,7 +110,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::groundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "icon": icon?.refId});
   
   
     // handle native call
@@ -122,7 +121,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
       return null;
     } else {
       final __return__ = MAGroundOverlay()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -135,7 +134,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon', {"bounds": bounds.refId, "icon": icon.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithBounds_icon', {"bounds": bounds?.refId, "icon": icon?.refId, "refId": refId});
   
   
     // handle native call
@@ -159,7 +158,7 @@ class MAGroundOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "icon": icon.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGroundOverlay::setGroundOverlayWithCoordinate_zoomLevel_icon', {"coordinate": coordinate?.refId, "zoomLevel": zoomLevel, "icon": icon?.refId, "refId": refId});
   
   
     // handle native call

@@ -20,6 +20,7 @@ class MyLocationOption {
     this.strokeColor,
     this.strokeWidth,
     this.fillColor,
+    this.iconProvider,
   }) : assert(
           (iconUri != null && imageConfiguration != null) || iconUri == null,
           'iconUri与imageConfiguration同时设置!',
@@ -35,9 +36,11 @@ class MyLocationOption {
   final Duration interval;
 
   /// 我的位置图标
+  @Deprecated('使用iconProvider代替')
   final Uri iconUri;
 
   /// 图片所在package, 通AssetImage构造器里的package参数
+  @Deprecated('使用iconProvider代替')
   final String package;
 
   /// 图标配置
@@ -52,6 +55,9 @@ class MyLocationOption {
   /// 填充颜色
   final Color fillColor;
 
+  /// 图标
+  final ImageProvider iconProvider;
+
   @override
   String toString() {
     return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, iconUri: $iconUri, package: $package, imageConfiguration: $imageConfiguration, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor}';
@@ -61,6 +67,29 @@ class MyLocationOption {
 /// Marker创建参数
 @immutable
 class MarkerOption {
+  MarkerOption({
+    @required this.latLng,
+    this.title = '',
+    this.snippet = '',
+    this.iconUri,
+    this.widget,
+    this.imageConfig,
+    this.draggable = false,
+    this.infoWindowEnabled = true,
+    this.visible = true,
+    this.rotateAngle = 0,
+    this.anchorU = 0.5,
+    this.anchorV = 0,
+    this.object,
+    this.width,
+    this.height,
+    this.iconProvider,
+  })  : assert(
+          (iconUri != null && imageConfig != null) || iconUri == null,
+          'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
+        ),
+        assert(!(widget != null && iconUri != null), 'widget和iconUri不能同时设置! ');
+
   /// 经纬度
   final LatLng latLng;
 
@@ -74,6 +103,7 @@ class MarkerOption {
   ///
   /// 如果设置了[iconUri], 那么必须同时设置[imageConfig], 否则图片大小会不一致, 这是flutter
   /// 的bug
+  @Deprecated('使用iconProvider代替')
   final Uri iconUri;
 
   /// 图片参数
@@ -82,6 +112,7 @@ class MarkerOption {
   /// 对应分辨率的图片(Android), iOS使用1.0x的图片. 所以[size]设置了是没用的, 这是flutter
   /// 的PlatformView的bug, 参考https://github.com/flutter/flutter/issues/24865.
   /// 这个bug彻底解决之后才能保证marker是完美的.
+  @Deprecated('使用iconProvider代替')
   final ImageConfiguration imageConfig;
 
   /// Widget形式的Marker
@@ -119,27 +150,8 @@ class MarkerOption {
   @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
   final double height;
 
-  MarkerOption({
-    @required this.latLng,
-    this.title = '',
-    this.snippet = '',
-    this.iconUri,
-    this.widget,
-    this.imageConfig,
-    this.draggable = false,
-    this.infoWindowEnabled = true,
-    this.visible = true,
-    this.rotateAngle = 0,
-    this.anchorU = 0.5,
-    this.anchorV = 0,
-    this.object,
-    this.width,
-    this.height,
-  })  : assert(
-          (iconUri != null && imageConfig != null) || iconUri == null,
-          'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
-        ),
-        assert(!(widget != null && iconUri != null), 'widget和iconUri不能同时设置! ');
+  /// 图标
+  final ImageProvider iconProvider;
 
   @override
   String toString() {
@@ -407,7 +419,7 @@ class MapMove {
 
   @override
   String toString() {
-    return 'MapDrag{latLng: $latLng, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+    return 'MapDrag{latitude: ${latLng.latitude}, longitude: ${latLng.longitude}, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
   }
 }
 

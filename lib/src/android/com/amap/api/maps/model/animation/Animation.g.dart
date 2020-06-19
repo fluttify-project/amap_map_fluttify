@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -29,20 +28,10 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
   //endregion
 
   //region getters
-  Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
-    kNativeObjectPool.add(com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify';
-  }
   
   //endregion
 
   //region setters
-  Future<void> set_glAnimation(com_autonavi_amap_mapcore_animation_GLAnimation glAnimation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation', {'refId': refId, "glAnimation": glAnimation.refId});
-  
-  
-  }
   
   //endregion
 
@@ -62,9 +51,6 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
     MethodChannel('com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart':
               // print log
@@ -272,21 +258,10 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 extension com_amap_api_maps_model_animation_Animation_Batch on List<com_amap_api_maps_model_animation_Animation> {
   //region getters
-  Future<List<com_autonavi_amap_mapcore_animation_GLAnimation>> get_glAnimation_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_autonavi_amap_mapcore_animation_GLAnimation()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
   
   //endregion
 
   //region setters
-  Future<void> set_glAnimation_batch(List<com_autonavi_amap_mapcore_animation_GLAnimation> glAnimation) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "glAnimation": glAnimation[__i__].refId}]);
-  
-  
-  }
   
   //endregion
 

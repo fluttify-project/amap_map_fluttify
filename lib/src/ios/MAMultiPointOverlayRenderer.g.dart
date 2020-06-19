@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -76,9 +75,6 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     MethodChannel('MAMultiPointOverlayRendererDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
-  
         switch (methodCall.method) {
           case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped':
             // print log
@@ -87,7 +83,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
             }
         
             // handle the native call
-            delegate?.multiPointOverlayRenderer_didItemTapped((MAMultiPointOverlayRenderer()..refId = (args['renderer'])..tag__ = 'amap_map_fluttify'), (MAMultiPointItem()..refId = (args['item'])..tag__ = 'amap_map_fluttify'));
+            delegate?.multiPointOverlayRenderer_didItemTapped(TypeOpAmapMapFluttifyIOS((args['renderer'] as Object))?.as__<MAMultiPointOverlayRenderer>(), TypeOpAmapMapFluttifyIOS((args['item'] as Object))?.as__<MAMultiPointItem>());
             break;
           default:
             break;
@@ -124,7 +120,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay', {"multiPointOverlay": multiPointOverlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiPointOverlayRenderer::initWithMultiPointOverlay', {"multiPointOverlay": multiPointOverlay?.refId, "refId": refId});
   
   
     // handle native call
@@ -135,7 +131,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
       return null;
     } else {
       final __return__ = MAMultiPointOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }

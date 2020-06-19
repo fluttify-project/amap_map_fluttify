@@ -919,8 +919,12 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argcurrentAni = @(currentAni.hash);
-                HEAP[argcurrentAni] = currentAni;
+                NSNumber* argcurrentAni = [NSNull null];
+                if (currentAni != nil) {
+                    argcurrentAni = @(currentAni.hash);
+                    HEAP[argcurrentAni] = currentAni;
+                }
+        
         
                 [channel invokeMethod:@"Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni" arguments:@{@"currentAni": argcurrentAni}];
         
@@ -1242,8 +1246,12 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argdistance = @(distance);
                 // ref callback arg
-                NSNumber* argerror = @(error.hash);
-                HEAP[argerror] = error;
+                NSNumber* argerror = [NSNull null];
+                if (error != nil) {
+                    argerror = @(error.hash);
+                    HEAP[argerror] = error;
+                }
+        
         
                 [channel invokeMethod:@"Callback::MATraceLocationCallback::MATraceLocationCallback" arguments:@{@"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
         
@@ -1680,11 +1688,19 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argtileData = @(tileData.hash);
-                HEAP[argtileData] = tileData;
+                NSNumber* argtileData = [NSNull null];
+                if (tileData != nil) {
+                    argtileData = @(tileData.hash);
+                    HEAP[argtileData] = tileData;
+                }
+        
                 // ref callback arg
-                NSNumber* argerror = @(error.hash);
-                HEAP[argerror] = error;
+                NSNumber* argerror = [NSNull null];
+                if (error != nil) {
+                    argerror = @(error.hash);
+                    HEAP[argerror] = error;
+                }
+        
         
                 [channel invokeMethod:@"Callback::void|NSData*#tileData,NSError*#error::void|NSData*#tileData,NSError*#error" arguments:@{@"tileData": argtileData, @"error": argerror}];
         
@@ -1831,13 +1847,21 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argdownloadItem = @(downloadItem.hash);
-                HEAP[argdownloadItem] = downloadItem;
+                NSNumber* argdownloadItem = [NSNull null];
+                if (downloadItem != nil) {
+                    argdownloadItem = @(downloadItem.hash);
+                    HEAP[argdownloadItem] = downloadItem;
+                }
+        
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSNumber* arginfo = @(((NSObject*) info).hash);
-                HEAP[arginfo] = ((NSObject*) info);
+                NSNumber* arginfo = [NSNull null];
+                if (((NSObject*) info) != nil) {
+                    arginfo = @(((NSObject*) info).hash);
+                    HEAP[arginfo] = ((NSObject*) info);
+                }
+        
         
                 [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
         
@@ -2021,13 +2045,21 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argdownloadItem = @(downloadItem.hash);
-                HEAP[argdownloadItem] = downloadItem;
+                NSNumber* argdownloadItem = [NSNull null];
+                if (downloadItem != nil) {
+                    argdownloadItem = @(downloadItem.hash);
+                    HEAP[argdownloadItem] = downloadItem;
+                }
+        
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSNumber* arginfo = @(((NSObject*) info).hash);
-                HEAP[arginfo] = ((NSObject*) info);
+                NSNumber* arginfo = [NSNull null];
+                if (((NSObject*) info) != nil) {
+                    arginfo = @(((NSObject*) info).hash);
+                    HEAP[arginfo] = ((NSObject*) info);
+                }
+        
         
                 [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
         
@@ -2068,13 +2100,21 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argdownloadItem = @(downloadItem.hash);
-                HEAP[argdownloadItem] = downloadItem;
+                NSNumber* argdownloadItem = [NSNull null];
+                if (downloadItem != nil) {
+                    argdownloadItem = @(downloadItem.hash);
+                    HEAP[argdownloadItem] = downloadItem;
+                }
+        
                 // enum callback arg
                 NSNumber* argdownloadStatus = @((NSInteger) downloadStatus);
                 // ref callback arg
-                NSNumber* arginfo = @(((NSObject*) info).hash);
-                HEAP[arginfo] = ((NSObject*) info);
+                NSNumber* arginfo = [NSNull null];
+                if (((NSObject*) info) != nil) {
+                    arginfo = @(((NSObject*) info).hash);
+                    HEAP[arginfo] = ((NSObject*) info);
+                }
+        
         
                 [channel invokeMethod:@"Callback::MAOfflineMapDownloadBlock::MAOfflineMapDownloadBlock" arguments:@{@"downloadItem": argdownloadItem, @"downloadStatus": argdownloadStatus, @"info": arginfo}];
         
@@ -4259,8 +4299,12 @@ extern BOOL enableLog;
         
                 // 构造可以直接传输的参数
                 // ref callback arg
-                NSNumber* argresultImage = @(resultImage.hash);
-                HEAP[argresultImage] = resultImage;
+                NSNumber* argresultImage = [NSNull null];
+                if (resultImage != nil) {
+                    argresultImage = @(resultImage.hash);
+                    HEAP[argresultImage] = resultImage;
+                }
+        
                 // primitive callback arg
                 NSNumber* argstate = @(state);
         

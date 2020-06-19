@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -273,14 +272,14 @@ class MAMapView extends UIView  {
   
   Future<List<NSObject>> get_annotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<List<NSObject>> get_selectedAnnotations({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<CGRect> get_annotationVisibleRect({bool viewChannel = true}) async {
@@ -363,8 +362,8 @@ class MAMapView extends UIView  {
   
   Future<List<NSObject>> get_overlays({bool viewChannel = true}) async {
     final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays", {'refId': refId});
-    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
-    return (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll((__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList());
+    return (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList();
   }
   
   Future<bool> get_showsIndoorMap({bool viewChannel = true}) async {
@@ -400,9 +399,6 @@ class MAMapView extends UIView  {
     MethodChannel('MAMapViewDelegate::Callback@$refId')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
-  
         switch (methodCall.method) {
           case 'Callback::MAMapViewDelegate::mapViewRegionChanged':
             // print log
@@ -411,7 +407,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRegionChanged((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewRegionChanged(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated':
             // print log
@@ -420,7 +416,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_regionWillChangeAnimated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['animated']);
+            delegate?.mapView_regionWillChangeAnimated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated':
             // print log
@@ -429,7 +425,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_regionDidChangeAnimated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['animated']);
+            delegate?.mapView_regionDidChangeAnimated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillMoveByUser':
             // print log
@@ -438,7 +434,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapWillMoveByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
+            delegate?.mapView_mapWillMoveByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidMoveByUser':
             // print log
@@ -447,7 +443,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapDidMoveByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
+            delegate?.mapView_mapDidMoveByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapWillZoomByUser':
             // print log
@@ -456,7 +452,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapWillZoomByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
+            delegate?.mapView_mapWillZoomByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_mapDidZoomByUser':
             // print log
@@ -465,7 +461,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_mapDidZoomByUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['wasUserAction']);
+            delegate?.mapView_mapDidZoomByUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['wasUserAction']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // print log
@@ -474,7 +470,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLoadingMap((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewWillStartLoadingMap(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // print log
@@ -483,7 +479,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFinishLoadingMap((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewDidFinishLoadingMap(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError':
             // print log
@@ -492,7 +488,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidFailLoadingMap_withError((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewDidFailLoadingMap_withError(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_viewForAnnotation':
             // print log
@@ -501,7 +497,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_viewForAnnotation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotation.subInstance()..refId = (args['annotation'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_viewForAnnotation(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['annotation'] as Object))?.as__<MAAnnotation>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddAnnotationViews':
             // print log
@@ -510,7 +506,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddAnnotationViews((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['views'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddAnnotationViews(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['views'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSelectAnnotationView':
             // print log
@@ -519,7 +515,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSelectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didSelectAnnotationView(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView':
             // print log
@@ -528,7 +524,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didDeselectAnnotationView((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didDeselectAnnotationView(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // print log
@@ -537,7 +533,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewWillStartLocatingUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewWillStartLocatingUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // print log
@@ -546,7 +542,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewDidStopLocatingUser((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewDidStopLocatingUser(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didUpdateUserLocation_updatingLocation':
             // print log
@@ -555,7 +551,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didUpdateUserLocation_updatingLocation((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAUserLocation()..refId = (args['userLocation'])..tag__ = 'amap_map_fluttify'), args['updatingLocation']);
+            delegate?.mapView_didUpdateUserLocation_updatingLocation(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['userLocation'] as Object))?.as__<MAUserLocation>(), args['updatingLocation']);
             break;
           case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // print log
@@ -564,7 +560,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapViewRequireLocationAuth((CLLocationManager()..refId = (args['locationManager'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapViewRequireLocationAuth(TypeOpAmapMapFluttifyIOS((args['locationManager'] as Object))?.as__<CLLocationManager>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError':
             // print log
@@ -573,7 +569,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didFailToLocateUserWithError((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (NSError()..refId = (args['error'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didFailToLocateUserWithError(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_didChangeDragState_fromOldState':
             // print log
@@ -582,7 +578,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -591,7 +587,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_rendererForOverlay((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAOverlay.subInstance()..refId = (args['overlay'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_rendererForOverlay(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['overlay'] as Object))?.as__<MAOverlay>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAddOverlayRenderers':
             // print log
@@ -600,7 +596,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAddOverlayRenderers((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['overlayRenderers'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didAddOverlayRenderers(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['overlayRenderers'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped':
             // print log
@@ -609,7 +605,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_calloutAccessoryControlTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'), (UIControl()..refId = (args['control'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_annotationView_calloutAccessoryControlTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), TypeOpAmapMapFluttifyIOS((args['control'] as Object))?.as__<UIControl>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped':
             // print log
@@ -618,7 +614,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewCalloutTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didAnnotationViewCalloutTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped':
             // print log
@@ -627,7 +623,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didAnnotationViewTapped((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAAnnotationView()..refId = (args['view'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didAnnotationViewTapped(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeUserTrackingMode_animated':
             // print log
@@ -636,7 +632,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didChangeUserTrackingMode_animated((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), MAUserTrackingMode.values[(args['mode'])], args['animated']);
+            delegate?.mapView_didChangeUserTrackingMode_animated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled':
             // print log
@@ -645,7 +641,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didChangeOpenGLESDisabled((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), args['openGLESDisabled']);
+            delegate?.mapView_didChangeOpenGLESDisabled(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), args['openGLESDisabled']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didTouchPois':
             // print log
@@ -654,7 +650,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didTouchPois((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (args['pois'] as List).cast<int>().map((it) => NSObject()..refId = it..tag__ = 'amap_map_fluttify').toList());
+            delegate?.mapView_didTouchPois(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['pois'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<NSObject>()).toList());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didSingleTappedAtCoordinate':
             // print log
@@ -663,7 +659,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didSingleTappedAtCoordinate((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didSingleTappedAtCoordinate(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['coordinate'] as Object))?.as__<CLLocationCoordinate2D>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didLongPressedAtCoordinate':
             // print log
@@ -672,7 +668,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didLongPressedAtCoordinate((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (CLLocationCoordinate2D()..refId = (args['coordinate'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didLongPressedAtCoordinate(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['coordinate'] as Object))?.as__<CLLocationCoordinate2D>());
             break;
           case 'Callback::MAMapViewDelegate::mapInitComplete':
             // print log
@@ -681,7 +677,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapInitComplete((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapInitComplete(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapShowed':
             // print log
@@ -690,7 +686,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapShowed((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didIndoorMapShowed(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged':
             // print log
@@ -699,7 +695,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapFloorIndexChanged((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didIndoorMapFloorIndexChanged(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::mapView_didIndoorMapHidden':
             // print log
@@ -708,7 +704,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didIndoorMapHidden((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'), (MAIndoorInfo()..refId = (args['indoorInfo'])..tag__ = 'amap_map_fluttify'));
+            delegate?.mapView_didIndoorMapHidden(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['indoorInfo'] as Object))?.as__<MAIndoorInfo>());
             break;
           case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // print log
@@ -717,7 +713,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataWillReload((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.offlineDataWillReload(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // print log
@@ -726,7 +722,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.offlineDataDidReload((MAMapView()..refId = (args['mapView'])..tag__ = 'amap_map_fluttify'));
+            delegate?.offlineDataDidReload(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>());
             break;
           default:
             break;
@@ -1021,7 +1017,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegion_animated', {"region": region.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setRegion_animated', {"region": region?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1045,7 +1041,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::regionThatFits', {"region": region.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::regionThatFits', {"region": region?.refId, "refId": refId});
   
   
     // handle native call
@@ -1056,7 +1052,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1069,7 +1065,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_animated', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_animated', {"mapRect": mapRect?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1093,7 +1089,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits', {"mapRect": mapRect.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits', {"mapRect": mapRect?.refId, "refId": refId});
   
   
     // handle native call
@@ -1104,7 +1100,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1117,7 +1113,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_edgePadding', {"mapRect": mapRect.refId, "insets": insets.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::mapRectThatFits_edgePadding', {"mapRect": mapRect?.refId, "insets": insets?.refId, "refId": refId});
   
   
     // handle native call
@@ -1128,7 +1124,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1141,7 +1137,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_edgePadding_animated', {"mapRect": mapRect.refId, "insets": insets.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setVisibleMapRect_edgePadding_animated', {"mapRect": mapRect?.refId, "insets": insets?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1165,7 +1161,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinate_animated', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCenterCoordinate_animated', {"coordinate": coordinate?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1213,7 +1209,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_atPivot_animated', {"zoomLevel": zoomLevel, "pivot": pivot.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setZoomLevel_atPivot_animated', {"zoomLevel": zoomLevel, "pivot": pivot?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1296,7 +1292,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAMapStatus()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1309,7 +1305,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated', {"status": status.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated', {"status": status?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1333,7 +1329,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated_duration', {"status": status.refId, "animated": animated, "duration": duration, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setMapStatus_animated_duration', {"status": status?.refId, "animated": animated, "duration": duration, "refId": refId});
   
   
     // handle native call
@@ -1357,7 +1353,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCompassImage', {"image": image.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCompassImage', {"image": image?.refId, "refId": refId});
   
   
     // handle native call
@@ -1381,7 +1377,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect', {"rect": rect.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect', {"rect": rect?.refId, "refId": refId});
   
   
     // handle native call
@@ -1392,7 +1388,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = UIImage()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1405,16 +1401,13 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect_withCompletionBlock', {"rect": rect.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::takeSnapshotInRect_withCompletionBlock', {"rect": rect?.refId, "refId": refId});
   
   
     // handle native call
     MethodChannel('MAMapView::takeSnapshotInRect_withCompletionBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
-  
           switch (methodCall.method) {
             case 'Callback::void|UIImage*#resultImage,NSInteger#state::void|UIImage*#resultImage,NSInteger#state':
               // print log
@@ -1423,7 +1416,7 @@ class MAMapView extends UIView  {
               }
         
               // handle the native call
-              block((UIImage()..refId = (args['resultImage'])..tag__ = 'amap_map_fluttify'), args['state']);
+              block(TypeOpAmapMapFluttifyIOS((args['resultImage'] as Object))?.as__<UIImage>(), args['state']);
               break;
             default:
               break;
@@ -1472,7 +1465,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinate_toPointToView', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertCoordinate_toPointToView', {"coordinate": coordinate?.refId, "view": view?.refId, "refId": refId});
   
   
     // handle native call
@@ -1483,7 +1476,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1496,7 +1489,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPoint_toCoordinateFromView', {"point": point.refId, "view": view.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertPoint_toCoordinateFromView', {"point": point?.refId, "view": view?.refId, "refId": refId});
   
   
     // handle native call
@@ -1507,7 +1500,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CLLocationCoordinate2D()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1520,7 +1513,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegion_toRectToView', {"region": region.refId, "view": view.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRegion_toRectToView', {"region": region?.refId, "view": view?.refId, "refId": refId});
   
   
     // handle native call
@@ -1531,7 +1524,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1544,7 +1537,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRect_toRegionFromView', {"rect": rect.refId, "view": view.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::convertRect_toRegionFromView', {"rect": rect?.refId, "view": view?.refId, "refId": refId});
   
   
     // handle native call
@@ -1555,7 +1548,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MACoordinateRegion()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1712,7 +1705,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotation', {"annotation": annotation.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotation', {"annotation": annotation?.refId, "refId": refId});
   
   
     // handle native call
@@ -1736,7 +1729,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations', {"annotations": annotations.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addAnnotations', {"annotations": annotations.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -1760,7 +1753,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation', {"annotation": annotation.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotation', {"annotation": annotation?.refId, "refId": refId});
   
   
     // handle native call
@@ -1784,7 +1777,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -1808,7 +1801,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::viewForAnnotation', {"annotation": annotation.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::viewForAnnotation', {"annotation": annotation?.refId, "refId": refId});
   
   
     // handle native call
@@ -1819,7 +1812,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1843,7 +1836,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAAnnotationView()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -1856,7 +1849,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotation_animated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::selectAnnotation_animated', {"annotation": annotation?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1880,7 +1873,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotation_animated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::deselectAnnotation_animated', {"annotation": annotation?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1904,7 +1897,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_animated', {"annotations": annotations.map((__it__) => __it__.refId).toList(), "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_animated', {"annotations": annotations.map((__it__) => __it__?.refId).toList(), "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1928,7 +1921,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_edgePadding_animated', {"annotations": annotations.map((__it__) => __it__.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showAnnotations_edgePadding_animated', {"annotations": annotations.map((__it__) => __it__?.refId).toList(), "insets": insets?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -1976,7 +1969,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::updateUserLocationRepresentation', {"representation": representation.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::updateUserLocationRepresentation', {"representation": representation?.refId, "refId": refId});
   
   
     // handle native call
@@ -2024,7 +2017,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay', {"overlay": overlay.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay', {"overlay": overlay?.refId, "refId": refId});
   
   
     // handle native call
@@ -2048,7 +2041,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays', {"overlays": overlays.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -2072,7 +2065,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level', {"overlay": overlay.refId, "level": level.index + 0, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlay_level', {"overlay": overlay?.refId, "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2096,7 +2089,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "level": level.index + 0, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::addOverlays_level', {"overlays": overlays.map((__it__) => __it__?.refId).toList(), "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2120,7 +2113,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay', {"overlay": overlay.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlay', {"overlay": overlay?.refId, "refId": refId});
   
   
     // handle native call
@@ -2144,7 +2137,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::removeOverlays', {"overlays": overlays.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -2168,7 +2161,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level', {"overlay": overlay.refId, "index": index, "level": level.index + 0, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex_level', {"overlay": overlay?.refId, "index": index, "level": level.index + 0, "refId": refId});
   
   
     // handle native call
@@ -2192,7 +2185,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_aboveOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_aboveOverlay', {"overlay": overlay?.refId, "sibling": sibling?.refId, "refId": refId});
   
   
     // handle native call
@@ -2216,7 +2209,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_belowOverlay', {"overlay": overlay.refId, "sibling": sibling.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_belowOverlay', {"overlay": overlay?.refId, "sibling": sibling?.refId, "refId": refId});
   
   
     // handle native call
@@ -2240,7 +2233,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex', {"overlay": overlay.refId, "index": index, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::insertOverlay_atIndex', {"overlay": overlay?.refId, "index": index, "refId": refId});
   
   
     // handle native call
@@ -2312,7 +2305,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlay_withOverlay', {"overlay1": overlay1.refId, "overlay2": overlay2.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::exchangeOverlay_withOverlay', {"overlay1": overlay1?.refId, "overlay2": overlay2?.refId, "refId": refId});
   
   
     // handle native call
@@ -2336,7 +2329,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::rendererForOverlay', {"overlay": overlay.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::rendererForOverlay', {"overlay": overlay?.refId, "refId": refId});
   
   
     // handle native call
@@ -2347,7 +2340,7 @@ class MAMapView extends UIView  {
       return null;
     } else {
       final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -2360,7 +2353,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_animated', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_animated', {"overlays": overlays.map((__it__) => __it__?.refId).toList(), "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -2384,7 +2377,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_edgePadding_animated', {"overlays": overlays.map((__it__) => __it__.refId).toList(), "insets": insets.refId, "animated": animated, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::showOverlays_edgePadding_animated', {"overlays": overlays.map((__it__) => __it__?.refId).toList(), "insets": insets?.refId, "animated": animated, "refId": refId});
   
   
     // handle native call
@@ -2408,7 +2401,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setIndoorMapControlOrigin', {"origin": origin.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setIndoorMapControlOrigin', {"origin": origin?.refId, "refId": refId});
   
   
     // handle native call
@@ -2480,7 +2473,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyle', {"customJson": customJson.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyle', {"customJson": customJson?.refId, "refId": refId});
   
   
     // handle native call
@@ -2504,7 +2497,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleWithWebData', {"data": data.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleWithWebData', {"data": data?.refId, "refId": refId});
   
   
     // handle native call
@@ -2576,7 +2569,7 @@ class MAMapView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleOptions', {"styleOptions": styleOptions.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAMapView::setCustomMapStyleOptions', {"styleOptions": styleOptions?.refId, "refId": refId});
   
   
     // handle native call
@@ -2865,14 +2858,14 @@ extension MAMapView_Batch on List<MAMapView> {
   
   Future<List<List<NSObject>>> get_annotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_annotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
   
   Future<List<List<NSObject>>> get_selectedAnnotations_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_selectedAnnotations_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }
@@ -2970,7 +2963,7 @@ extension MAMapView_Batch on List<MAMapView> {
   
   Future<List<List<NSObject>>> get_overlays_batch({bool viewChannel = true}) async {
     final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAMapView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAMapView::get_overlays_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => MAOfflineCity()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as List).cast<int>().map((__it__) => NSObject()..refId = __it__..tag__ = 'amap_map_fluttify').toList()).toList();
     kNativeObjectPool.addAll(typedResult.expand((e) => e));
     return typedResult;
   }

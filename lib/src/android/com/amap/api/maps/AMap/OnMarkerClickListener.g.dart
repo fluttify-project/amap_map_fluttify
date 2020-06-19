@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -26,7 +25,7 @@ mixin com_amap_api_maps_AMap_OnMarkerClickListener on java_lang_Object {
 
   @mustCallSuper
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) {
-    kNativeObjectPool.add(var1);
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onMarkerClick::kNativeObjectPool: $kNativeObjectPool');

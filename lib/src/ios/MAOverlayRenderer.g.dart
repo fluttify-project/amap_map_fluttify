@@ -6,7 +6,6 @@
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -123,7 +122,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay', {"overlay": overlay.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::initWithOverlay', {"overlay": overlay?.refId, "refId": refId});
   
   
     // handle native call
@@ -134,7 +133,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAOverlayRenderer()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -158,7 +157,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -182,7 +181,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = NSValue/* float* */()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -206,7 +205,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -243,7 +242,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::pointForMapPoint', {"mapPoint": mapPoint.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::pointForMapPoint', {"mapPoint": mapPoint?.refId, "refId": refId});
   
   
     // handle native call
@@ -254,7 +253,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -267,7 +266,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::mapPointForPoint', {"point": point.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::mapPointForPoint', {"point": point?.refId, "refId": refId});
   
   
     // handle native call
@@ -278,7 +277,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -291,7 +290,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::rectForMapRect', {"mapRect": mapRect.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::rectForMapRect', {"mapRect": mapRect?.refId, "refId": refId});
   
   
     // handle native call
@@ -302,7 +301,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -315,7 +314,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::mapRectForRect', {"rect": rect.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::mapRectForRect', {"rect": rect?.refId, "refId": refId});
   
   
     // handle native call
@@ -326,7 +325,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = MAMapRect()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -339,7 +338,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint', {"mapPoint": mapPoint.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointForMapPoint', {"mapPoint": mapPoint?.refId, "refId": refId});
   
   
     // handle native call
@@ -350,7 +349,7 @@ class MAOverlayRenderer extends NSObject  {
       return null;
     } else {
       final __return__ = CGPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -363,7 +362,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPoints_count', {"mapPoints": mapPoints.map((__it__) => __it__.refId).toList(), "count": count, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::glPointsForMapPoints_count', {"mapPoints": mapPoints.map((__it__) => __it__?.refId).toList(), "count": count, "refId": refId});
   
   
     // handle native call
@@ -435,7 +434,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor?.refId, "lineWidth": lineWidth, "looped": looped, "refId": refId});
   
   
     // handle native call
@@ -459,7 +458,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor?.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
   
   
     // handle native call
@@ -483,7 +482,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureID_looped', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureID": textureID, "looped": looped, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureID_looped', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureID": textureID, "looped": looped, "refId": refId});
   
   
     // handle native call
@@ -507,7 +506,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureIDs": textureIDs.map((__it__) => __it__.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__.refId).toList(), "looped": looped, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTexturedLinesWithPoints_pointCount_lineWidth_textureIDs_drawStyleIndexes_looped', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "lineWidth": lineWidth, "textureIDs": textureIDs.map((__it__) => __it__?.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__?.refId).toList(), "looped": looped, "refId": refId});
   
   
     // handle native call
@@ -531,7 +530,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__?.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__?.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
   
   
     // handle native call
@@ -555,7 +554,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderRegionWithPoints_pointCount_fillColor_usingTriangleFan', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "fillColor": fillColor?.refId, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
@@ -579,7 +578,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeColor": strokeColor.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index + 0, "strokeLineDash": strokeLineDash.index + 0, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "fillColor": fillColor?.refId, "strokeColor": strokeColor?.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index + 0, "strokeLineDash": strokeLineDash.index + 0, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
@@ -603,7 +602,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTextureStrokedRegionWithPoints_pointCount_fillColor_strokeTineWidth_strokeTextureID_usingTriangleFan', {"points": points.map((__it__) => __it__.refId).toList(), "pointCount": pointCount, "fillColor": fillColor.refId, "strokeLineWidth": strokeLineWidth, "strokeTexture": strokeTexture, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderTextureStrokedRegionWithPoints_pointCount_fillColor_strokeTineWidth_strokeTextureID_usingTriangleFan', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "fillColor": fillColor?.refId, "strokeLineWidth": strokeLineWidth, "strokeTexture": strokeTexture, "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
@@ -627,7 +626,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderIconWithTextureID_points', {"textureID": textureID, "points": points.map((__it__) => __it__.refId).toList(), "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderIconWithTextureID_points', {"textureID": textureID, "points": points.map((__it__) => __it__?.refId).toList(), "refId": refId});
   
   
     // handle native call
@@ -651,7 +650,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderIconWithTextureID_points_modulateColor', {"textureID": textureID, "points": points.map((__it__) => __it__.refId).toList(), "modulateColor": modulateColor.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderIconWithTextureID_points_modulateColor', {"textureID": textureID, "points": points.map((__it__) => __it__?.refId).toList(), "modulateColor": modulateColor?.refId, "refId": refId});
   
   
     // handle native call
@@ -699,7 +698,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::loadStrokeTextureImage', {"textureImage": textureImage.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::loadStrokeTextureImage', {"textureImage": textureImage?.refId, "refId": refId});
   
   
     // handle native call
@@ -723,7 +722,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::loadTexture', {"textureImage": textureImage.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::loadTexture', {"textureImage": textureImage?.refId, "refId": refId});
   
   
     // handle native call

@@ -164,8 +164,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmanager = @(manager.hash);
-  HEAP[argmanager] = manager;
+  NSNumber* argmanager = [NSNull null];
+  if (manager != nil) {
+      argmanager = @(manager.hash);
+      HEAP[argmanager] = manager;
+  }
+  
   // list callback arg
   NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int __i__ = 0; __i__ < locations.count; __i__++) {
@@ -187,8 +191,12 @@ extern BOOL enableLog;
   // primitive callback arg
   NSNumber* argdistance = @(distance);
   // ref callback arg
-  NSNumber* argerror = @(error.hash);
-  HEAP[argerror] = error;
+  NSNumber* argerror = [NSNull null];
+  if (error != nil) {
+      argerror = @(error.hash);
+      HEAP[argerror] = error;
+  }
+  
 
   [channel invokeMethod:@"Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError" arguments:@{@"manager": argmanager, @"locations": arglocations, @"tracePoints": argtracePoints, @"distance": argdistance, @"error": argerror}];
   
@@ -206,8 +214,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* arglocationManager = @(locationManager.hash);
-  HEAP[arglocationManager] = locationManager;
+  NSNumber* arglocationManager = [NSNull null];
+  if (locationManager != nil) {
+      arglocationManager = @(locationManager.hash);
+      HEAP[arglocationManager] = locationManager;
+  }
+  
 
   [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": arglocationManager}];
   
@@ -225,11 +237,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argrenderer = @(renderer.hash);
-  HEAP[argrenderer] = renderer;
+  NSNumber* argrenderer = [NSNull null];
+  if (renderer != nil) {
+      argrenderer = @(renderer.hash);
+      HEAP[argrenderer] = renderer;
+  }
+  
   // ref callback arg
-  NSNumber* argitem = @(item.hash);
-  HEAP[argitem] = item;
+  NSNumber* argitem = [NSNull null];
+  if (item != nil) {
+      argitem = @(item.hash);
+      HEAP[argitem] = item;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped" arguments:@{@"renderer": argrenderer, @"item": argitem}];
   
@@ -247,8 +267,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": argmapView}];
   
@@ -266,8 +290,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -287,8 +315,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* arganimated = @(animated);
 
@@ -308,8 +340,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -329,8 +365,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -350,8 +390,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -371,8 +415,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* argwasUserAction = @(wasUserAction);
 
@@ -392,8 +440,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": argmapView}];
   
@@ -411,8 +463,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": argmapView}];
   
@@ -430,11 +486,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argerror = @(error.hash);
-  HEAP[argerror] = error;
+  NSNumber* argerror = [NSNull null];
+  if (error != nil) {
+      argerror = @(error.hash);
+      HEAP[argerror] = error;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMap_withError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
@@ -452,11 +516,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argannotation = @(annotation.hash);
-  HEAP[argannotation] = annotation;
+  NSNumber* argannotation = [NSNull null];
+  if (annotation != nil) {
+      argannotation = @(annotation.hash);
+      HEAP[argannotation] = annotation;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_viewForAnnotation"
               arguments:@{}
@@ -485,8 +557,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // list callback arg
   NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
   for (int __i__ = 0; __i__ < views.count; __i__++) {
@@ -513,11 +589,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didSelectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -535,11 +619,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didDeselectAnnotationView" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -557,8 +649,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": argmapView}];
   
@@ -576,8 +672,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": argmapView}];
   
@@ -595,11 +695,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* arguserLocation = @(userLocation.hash);
-  HEAP[arguserLocation] = userLocation;
+  NSNumber* arguserLocation = [NSNull null];
+  if (userLocation != nil) {
+      arguserLocation = @(userLocation.hash);
+      HEAP[arguserLocation] = userLocation;
+  }
+  
   // primitive callback arg
   NSNumber* argupdatingLocation = @(updatingLocation);
 
@@ -619,11 +727,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argerror = @(error.hash);
-  HEAP[argerror] = error;
+  NSNumber* argerror = [NSNull null];
+  if (error != nil) {
+      argerror = @(error.hash);
+      HEAP[argerror] = error;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didFailToLocateUserWithError" arguments:@{@"mapView": argmapView, @"error": argerror}];
   
@@ -641,11 +757,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
   // enum callback arg
   NSNumber* argnewState = @((NSInteger) newState);
   // enum callback arg
@@ -667,11 +791,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argoverlay = @(overlay.hash);
-  HEAP[argoverlay] = overlay;
+  NSNumber* argoverlay = [NSNull null];
+  if (overlay != nil) {
+      argoverlay = @(overlay.hash);
+      HEAP[argoverlay] = overlay;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_rendererForOverlay"
               arguments:@{}
@@ -700,8 +832,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // list callback arg
   NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
   for (int __i__ = 0; __i__ < overlayRenderers.count; __i__++) {
@@ -728,14 +864,26 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
   // ref callback arg
-  NSNumber* argcontrol = @(control.hash);
-  HEAP[argcontrol] = control;
+  NSNumber* argcontrol = [NSNull null];
+  if (control != nil) {
+      argcontrol = @(control.hash);
+      HEAP[argcontrol] = control;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_annotationView_calloutAccessoryControlTapped" arguments:@{@"mapView": argmapView, @"view": argview, @"control": argcontrol}];
   
@@ -753,11 +901,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewCalloutTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -775,11 +931,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argview = @(view.hash);
-  HEAP[argview] = view;
+  NSNumber* argview = [NSNull null];
+  if (view != nil) {
+      argview = @(view.hash);
+      HEAP[argview] = view;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didAnnotationViewTapped" arguments:@{@"mapView": argmapView, @"view": argview}];
   
@@ -797,8 +961,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // enum callback arg
   NSNumber* argmode = @((NSInteger) mode);
   // primitive callback arg
@@ -820,8 +988,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // primitive callback arg
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
@@ -841,8 +1013,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // list callback arg
   NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
   for (int __i__ = 0; __i__ < pois.count; __i__++) {
@@ -869,8 +1045,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
@@ -893,8 +1073,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // struct callback arg
   NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
   NSNumber* argcoordinate = @(coordinateValue.hash);
@@ -917,8 +1101,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": argmapView}];
   
@@ -936,11 +1124,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP[argindoorInfo] = indoorInfo;
+  NSNumber* argindoorInfo = [NSNull null];
+  if (indoorInfo != nil) {
+      argindoorInfo = @(indoorInfo.hash);
+      HEAP[argindoorInfo] = indoorInfo;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapShowed" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -958,11 +1154,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP[argindoorInfo] = indoorInfo;
+  NSNumber* argindoorInfo = [NSNull null];
+  if (indoorInfo != nil) {
+      argindoorInfo = @(indoorInfo.hash);
+      HEAP[argindoorInfo] = indoorInfo;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapFloorIndexChanged" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -980,11 +1184,19 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
   // ref callback arg
-  NSNumber* argindoorInfo = @(indoorInfo.hash);
-  HEAP[argindoorInfo] = indoorInfo;
+  NSNumber* argindoorInfo = [NSNull null];
+  if (indoorInfo != nil) {
+      argindoorInfo = @(indoorInfo.hash);
+      HEAP[argindoorInfo] = indoorInfo;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_didIndoorMapHidden" arguments:@{@"mapView": argmapView, @"indoorInfo": argindoorInfo}];
   
@@ -1002,8 +1214,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": argmapView}];
   
@@ -1021,8 +1237,12 @@ extern BOOL enableLog;
 
   // convert to jsonable arg
   // ref callback arg
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = @(mapView.hash);
+      HEAP[argmapView] = mapView;
+  }
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": argmapView}];
   

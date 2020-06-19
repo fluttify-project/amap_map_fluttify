@@ -5,7 +5,6 @@
 
 import 'dart:typed_data';
 
-import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
@@ -70,7 +69,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -94,7 +93,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -118,7 +117,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -142,7 +141,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -166,7 +165,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -179,7 +178,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point', {"var0": var0, "var1": var1.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point', {"var0": var0, "var1": var1?.refId});
   
   
     // handle native call
@@ -190,7 +189,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -203,7 +202,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0?.refId});
   
   
     // handle native call
@@ -214,7 +213,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -227,7 +226,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0?.refId});
   
   
     // handle native call
@@ -238,7 +237,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -251,7 +250,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0.refId, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0?.refId, "var1": var1});
   
   
     // handle native call
@@ -262,7 +261,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -275,7 +274,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int', {"var0": var0.refId, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int', {"var0": var0?.refId, "var1": var1});
   
   
     // handle native call
@@ -286,7 +285,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -299,7 +298,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0?.refId});
   
   
     // handle native call
@@ -310,7 +309,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -334,31 +333,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
-      return __return__;
-    }
-  }
-  
-  
-  static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(double var0, com_autonavi_amap_mapcore_IPoint var1) async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter', {"var0": var0, "var1": var1.refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -382,7 +357,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -395,7 +370,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int', {"var0": var0?.refId, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -406,7 +381,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -419,7 +394,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0?.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
@@ -430,7 +405,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
       return null;
     } else {
       final __return__ = com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify';
-      kNativeObjectPool.add(__return__);
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
       return __return__;
     }
   }
@@ -676,26 +651,6 @@ extension com_amap_api_maps_CameraUpdateFactory_Batch on List<com_amap_api_maps_
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearing_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_CameraUpdate()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
-      return typedResult;
-    }
-  }
-  
-  
-  static Future<List<com_amap_api_maps_CameraUpdate>> changeBearingGeoCenter_batch(List<double> var0, List<com_autonavi_amap_mapcore_IPoint> var1) async {
-    if (var0.length != var1.length) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__], "var1": var1[__i__].refId}]);
   
   
     // convert native result to dart side object
