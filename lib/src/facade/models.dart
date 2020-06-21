@@ -14,9 +14,9 @@ class MyLocationOption {
     this.show = true,
     this.myLocationType = MyLocationType.Locate,
     this.interval = Duration.zero,
-    this.iconUri,
+    @Deprecated('使用iconProvider代替') this.iconUri,
     this.package,
-    this.imageConfiguration,
+    @Deprecated('使用iconProvider代替') this.imageConfiguration,
     this.strokeColor,
     this.strokeWidth,
     this.fillColor,
@@ -71,9 +71,9 @@ class MarkerOption {
     @required this.latLng,
     this.title = '',
     this.snippet = '',
-    this.iconUri,
+    @Deprecated('使用iconProvider代替') this.iconUri,
     this.widget,
-    this.imageConfig,
+    @Deprecated('使用iconProvider代替') this.imageConfig,
     this.draggable = false,
     this.infoWindowEnabled = true,
     this.visible = true,
@@ -100,18 +100,10 @@ class MarkerOption {
   final String snippet;
 
   /// 图片uri 可以是url, asset路径或者文件路径
-  ///
-  /// 如果设置了[iconUri], 那么必须同时设置[imageConfig], 否则图片大小会不一致, 这是flutter
-  /// 的bug
   @Deprecated('使用iconProvider代替')
   final Uri iconUri;
 
   /// 图片参数
-  ///
-  /// 目前利用到的信息只有[devicePixelRatio], 使用[devicePixelRatio]获取当前设备
-  /// 对应分辨率的图片(Android), iOS使用1.0x的图片. 所以[size]设置了是没用的, 这是flutter
-  /// 的PlatformView的bug, 参考https://github.com/flutter/flutter/issues/24865.
-  /// 这个bug彻底解决之后才能保证marker是完美的.
   @Deprecated('使用iconProvider代替')
   final ImageConfiguration imageConfig;
 
@@ -169,24 +161,25 @@ class SmoothMoveMarkerOption {
   ///
   /// 如果设置了[iconUri], 那么必须同时设置[imageConfig], 否则图片大小会不一致, 这是flutter
   /// 的bug
+  @Deprecated('使用iconProvider代替')
   final Uri iconUri;
 
   /// 图片参数
-  ///
-  /// 目前利用到的信息只有[devicePixelRatio], 使用[devicePixelRatio]获取当前设备
-  /// 对应分辨率的图片(Android), iOS使用1.0x的图片. 所以[size]设置了是没用的, 这是flutter
-  /// 的PlatformView的bug, 参考https://github.com/flutter/flutter/issues/24865.
-  /// 这个bug彻底解决之后才能保证marker是完美的.
+  @Deprecated('使用iconProvider代替')
   final ImageConfiguration imageConfig;
+
+  /// 图标
+  final ImageProvider iconProvider;
 
   /// 动画时长
   final Duration duration;
 
   SmoothMoveMarkerOption({
     @required this.path,
-    @required this.iconUri,
-    @required this.imageConfig,
+    @Deprecated('使用iconProvider代替') this.iconUri,
+    @Deprecated('使用iconProvider代替') this.imageConfig,
     @required this.duration,
+    @required this.iconProvider,
   }) : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,
           'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
@@ -354,19 +347,26 @@ class MultiPointOption {
   final List<PointOption> pointList;
 
   /// 图片uri
+  @Deprecated('使用iconProvider代替')
   final Uri iconUri;
 
   /// 图片配置
+  @Deprecated('使用iconProvider代替')
   final ImageConfiguration imageConfiguration;
 
   /// 图片大小 仅限ios
+  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
   final Size size;
+
+  /// 图标
+  final ImageProvider iconProvider;
 
   MultiPointOption({
     @required this.pointList,
-    this.iconUri,
-    this.imageConfiguration,
+    @Deprecated('使用iconProvider代替') this.iconUri,
+    @Deprecated('使用iconProvider代替') this.imageConfiguration,
     this.size,
+    this.iconProvider,
   });
 
   @override
@@ -641,19 +641,19 @@ class Marker {
   }
 
   /// 设置图标
-  Future<void> setIcon(Uri iconUri, ImageConfiguration configuration) async {
+  Future<void> setIcon(
+    ImageProvider iconProvider,
+    ImageConfiguration configuration,
+  ) async {
+    final iconData = await iconProvider.toImageData(configuration);
     return platform(
       android: (pool) async {
-        final iconData = await uri2ImageData(configuration, iconUri);
-
         final bitmap = await android_graphics_Bitmap.create(iconData);
         final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
             .fromBitmap(bitmap);
         await androidModel.setIcon(icon);
       },
       ios: (pool) async {
-        final iconData = await uri2ImageData(configuration, iconUri);
-
         final icon = await UIImage.create(iconData);
 
         _annotationView.set_image(icon, viewChannel: false);
@@ -776,6 +776,28 @@ class GroundOverlay {
   com_amap_api_maps_model_GroundOverlay _androidModel;
   MAGroundOverlay _iosModel;
   MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
+  }
+}
+
+/// 海量点
+class MultiPointOverlay {
+  MultiPointOverlay.android(this._androidModel)
+      : _iosModel = null,
+        _iosController = null;
+
+  MultiPointOverlay.ios(this._iosModel, this._iosController)
+      : _androidModel = null;
+
+  final com_amap_api_maps_model_MultiPointOverlay _androidModel;
+
+  final MAMultiPointOverlay _iosModel;
+  final MAMapView _iosController;
 
   Future<void> remove() {
     return platform(
