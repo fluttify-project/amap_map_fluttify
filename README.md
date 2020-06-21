@@ -9,7 +9,7 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
 
 ## 💰&nbsp;技术支持
 - 请参考 [technical-support-plan](https://github.com/fluttify-project/technical-support-plan) 进行操作, 技术支持工单将以最高优先级处理.
-- **百度地图**/**腾讯地图**插件在售, 有需求的请联系 382146139@qq.com .
+- **百度地图**/**腾讯地图**插件在售, 有需求的请联系qq 382146139 .
 
 ## 整合插件 [amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify)
 - 除了集成了地图, 搜索, 定位的接口外, 增加了一些需要协调三个插件功能才能实现的方法, 具体请参考[README](https://github.com/fluttify-project/amap_all_fluttify).

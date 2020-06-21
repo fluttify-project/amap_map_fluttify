@@ -1585,7 +1585,8 @@ class AmapController with WidgetsBindingObserver {
   }
 
   /// 添加海量点
-  Future<void> addMultiPointOverlay(MultiPointOption option) async {
+  Future<MultiPointOverlay> addMultiPointOverlay(
+      MultiPointOption option) async {
     assert(option != null && option.pointList.isNotEmpty);
 
     final latitudeBatch =
@@ -1599,9 +1600,12 @@ class AmapController with WidgetsBindingObserver {
     Uint8List iconData;
     if (option.iconUri != null && option.imageConfiguration != null) {
       iconData = await uri2ImageData(option.imageConfiguration, option.iconUri);
+    } else if (option.iconProvider != null) {
+      iconData = await option.iconProvider
+          .toImageData(createLocalImageConfiguration(_state.context));
     }
 
-    await platform(
+    return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
@@ -1633,6 +1637,11 @@ class AmapController with WidgetsBindingObserver {
         await multiPointList.setObject_batch(objectBatch);
 
         await multiPointOverlay.setItems(multiPointList);
+
+        pool
+          ..add(map)
+          ..addAll(latLngBatch);
+        return MultiPointOverlay.android(multiPointOverlay);
       },
       ios: (pool) async {
         await iosController.set_delegate(_iosMapDelegate);
@@ -1666,6 +1675,9 @@ class AmapController with WidgetsBindingObserver {
         await overlay.initWithMultiPointItems(pointItemList);
 
         iosController.addOverlay(overlay);
+
+        pool..addAll(pointItemList)..addAll(latLngBatch);
+        return MultiPointOverlay.ios(overlay, iosController);
       },
     );
   }
