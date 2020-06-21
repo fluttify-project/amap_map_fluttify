@@ -662,6 +662,7 @@ class Marker {
   }
 }
 
+/// 平滑移动点
 class SmoothMoveMarker {
   SmoothMoveMarker.android(this._androidModel);
 

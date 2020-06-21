@@ -1093,10 +1093,13 @@ class AmapController with WidgetsBindingObserver {
   /// 批量添加marker
   ///
   /// 根据[options]批量创建Marker
-  Future<SmoothMoveMarker> addSmoothMoveMarker(SmoothMoveMarkerOption option) {
+  Future<SmoothMoveMarker> addSmoothMoveMarker(
+      SmoothMoveMarkerOption option) async {
     assert(option != null);
     final latitudeBatch = option.path.map((e) => e.latitude).toList();
     final longitudeBatch = option.path.map((e) => e.longitude).toList();
+    final iconData = await option.iconProvider
+        ?.toImageData(createLocalImageConfiguration(_state.context));
     return platform(
       android: (pool) async {
         // 获取地图
@@ -1107,8 +1110,7 @@ class AmapController with WidgetsBindingObserver {
             .create__com_amap_api_maps_AMap(map);
 
         // 创建marker的图标
-        final bitmap = await android_graphics_Bitmap
-            .create(await uri2ImageData(option.imageConfig, option.iconUri));
+        final bitmap = await android_graphics_Bitmap.create(iconData);
         final bitmapDescriptor =
             await com_amap_api_maps_model_BitmapDescriptorFactory
                 .fromBitmap(bitmap);
@@ -1149,17 +1151,9 @@ class AmapController with WidgetsBindingObserver {
 
         // 设置图片
         // 普通图片
-        if (option.iconUri != null && option.imageConfig != null) {
-          Uint8List iconData =
-              await uri2ImageData(option.imageConfig, option.iconUri);
-
-          final icon = await UIImage.create(iconData);
-
-          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty__(1, icon);
-
-          pool..add(icon);
-        }
+        final icon = await UIImage.create(iconData);
+        // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
+        await annotation.addProperty__(1, icon);
 
         // 设置起始点
         await annotation.set_coordinate(points[0]);
@@ -1177,8 +1171,9 @@ class AmapController with WidgetsBindingObserver {
 
         await iosController.addAnnotation(annotation);
 
-        pool..addAll(points);
-
+        pool
+          ..addAll(points)
+          ..add(icon);
         return SmoothMoveMarker.ios(animation);
       },
     );
