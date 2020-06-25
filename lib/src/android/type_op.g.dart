@@ -552,10 +552,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_trace_TraceOverlay', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_mapcore_util_) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_mapcore_util_', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == android_content_Context) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfandroid_content_Context', {'refId': (this as Ref).refId});
       return result;
@@ -1068,9 +1064,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_trace_TraceOverlay) {
       return (com_amap_api_trace_TraceOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_mapcore_util_) {
-      return (com_amap_api_mapcore_util_()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == android_content_Context) {
       return (android_content_Context()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;

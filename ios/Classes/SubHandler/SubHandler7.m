@@ -14,957 +14,6 @@ extern BOOL enableLog;
 @implementation AmapMapFluttifyPlugin (SubHandler7)
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
     return @{
-        @"RefClass::asMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // 引用对象
-            NSNumber* refId = ((NSDictionary<NSString*, NSNumber*>*) args)[@"refId"];
-            id ref = HEAP[refId];
-        
-            // 转型
-            ref = (MACustomBuildingOverlayRenderer *) ref;
-            // 放回HEAP
-            HEAP[refId] = ref;
-        
-            methodResult(refId);
-        },
-        
-        @"ObjectFactory::createMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineCity");
-            }
-        
-            MAOfflineCity* ref = [[MAOfflineCity alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineItemNationWide");
-            }
-        
-            MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiPoint");
-            }
-        
-            MAMultiPoint* ref = [[MAMultiPoint alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAGroundOverlay");
-            }
-        
-            MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPolygonRenderer");
-            }
-        
-            MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPinAnnotationView");
-            }
-        
-            MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAHeatMapNode");
-            }
-        
-            MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAHeatMapGradient");
-            }
-        
-            MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAHeatMapTileOverlay");
-            }
-        
-            MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapStatus");
-            }
-        
-            MAMapStatus* ref = [[MAMapStatus alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPointAnnotation");
-            }
-        
-            MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACircle");
-            }
-        
-            MACircle* ref = [[MACircle alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAArcRenderer");
-            }
-        
-            MAArcRenderer* ref = [[MAArcRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineMapViewController": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineMapViewController");
-            }
-        
-            MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapCustomStyleOptions");
-            }
-        
-            MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPolygon");
-            }
-        
-            MAPolygon* ref = [[MAPolygon alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleOverlay");
-            }
-        
-            MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPolyline");
-            }
-        
-            MAPolyline* ref = [[MAPolyline alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiColoredPolylineRenderer");
-            }
-        
-            MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAAnimatedAnnotation");
-            }
-        
-            MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiTexturePolylineRenderer");
-            }
-        
-            MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineProvince");
-            }
-        
-            MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATileOverlayRenderer");
-            }
-        
-            MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineItem");
-            }
-        
-            MAOfflineItem* ref = [[MAOfflineItem alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAGeodesicPolyline");
-            }
-        
-            MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATouchPoi");
-            }
-        
-            MATouchPoi* ref = [[MATouchPoi alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineItemMunicipality");
-            }
-        
-            MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiPolyline");
-            }
-        
-            MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATraceManager");
-            }
-        
-            MATraceManager* ref = [[MATraceManager alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiPointOverlayRenderer");
-            }
-        
-            MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAIndoorFloorInfo");
-            }
-        
-            MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAIndoorInfo");
-            }
-        
-            MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAPolylineRenderer");
-            }
-        
-            MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAAnnotationMoveAnimation");
-            }
-        
-            MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAShape");
-            }
-        
-            MAShape* ref = [[MAShape alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAAnnotationView");
-            }
-        
-            MAAnnotationView* ref = [[MAAnnotationView alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATileOverlay");
-            }
-        
-            MATileOverlay* ref = [[MATileOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATileOverlayPath": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATileOverlayPath");
-            }
-        
-            MATileOverlayPath data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MATileOverlayPath)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACustomCalloutView");
-            }
-        
-            MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineItemCommonCity");
-            }
-        
-            MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOfflineMap");
-            }
-        
-            MAOfflineMap* ref = [[MAOfflineMap alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACircleRenderer");
-            }
-        
-            MACircleRenderer* ref = [[MACircleRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleOverlayRenderer");
-            }
-        
-            MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACoordinateBounds": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACoordinateBounds");
-            }
-        
-            MACoordinateBounds data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateBounds)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACoordinateSpan": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACoordinateSpan");
-            }
-        
-            MACoordinateSpan data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateSpan)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACoordinateRegion");
-            }
-        
-            MACoordinateRegion data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateRegion)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapPoint");
-            }
-        
-            MAMapPoint data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapPoint)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapSize");
-            }
-        
-            MAMapSize data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapSize)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapRect");
-            }
-        
-            MAMapRect data;
-        
-            NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapRect)];
-            HEAP[@(dataValue.hash)] = dataValue;
-        
-            methodResult(@(dataValue.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createNSValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createNSValue");
-            }
-        
-            NSValue* ref = [[NSValue alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleRandomVelocityGenerate");
-            }
-        
-            MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleRandomColorGenerate");
-            }
-        
-            MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleConstantRotationGenerate");
-            }
-        
-            MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleCurveSizeGenerate");
-            }
-        
-            MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleEmissionModule");
-            }
-        
-            MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleSinglePointShapeModule");
-            }
-        
-            MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleRectShapeModule");
-            }
-        
-            MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleOverLifeModule");
-            }
-        
-            MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleOverlayOptions");
-            }
-        
-            MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAParticleOverlayOptionsFactory");
-            }
-        
-            MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAOverlayRenderer");
-            }
-        
-            MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAUserLocation");
-            }
-        
-            MAUserLocation* ref = [[MAUserLocation alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiPointItem");
-            }
-        
-            MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMultiPointOverlay");
-            }
-        
-            MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACustomBuildingOverlayOption");
-            }
-        
-            MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMACustomBuildingOverlay");
-            }
-        
-            MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
-            HEAP[@(ref.hash)] = ref;
-        
-            methodResult(@(ref.hash));
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
         @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -972,9 +21,9 @@ extern BOOL enableLog;
             }
         
             MATracePoint* ref = [[MATracePoint alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -986,9 +35,9 @@ extern BOOL enableLog;
             }
         
             MATraceLocation* ref = [[MATraceLocation alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1000,9 +49,9 @@ extern BOOL enableLog;
             }
         
             MAArc* ref = [[MAArc alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1014,9 +63,9 @@ extern BOOL enableLog;
             }
         
             MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1028,9 +77,9 @@ extern BOOL enableLog;
             }
         
             MAMapView* ref = [[MAMapView alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1042,9 +91,9 @@ extern BOOL enableLog;
             }
         
             MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1056,9 +105,9 @@ extern BOOL enableLog;
             }
         
             MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1070,9 +119,9 @@ extern BOOL enableLog;
             }
         
             MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
-            HEAP[@(ref.hash)] = ref;
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-            methodResult(@(ref.hash));
+            methodResult([NSNumber numberWithLong: ref.hash]);
         
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
@@ -1082,9 +131,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineCity* ref = [[MAOfflineCity alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1097,9 +146,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemNationWide* ref = [[MAOfflineItemNationWide alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1112,9 +161,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPoint* ref = [[MAMultiPoint alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1127,9 +176,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGroundOverlay* ref = [[MAGroundOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1142,9 +191,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolygonRenderer* ref = [[MAPolygonRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1157,9 +206,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPinAnnotationView* ref = [[MAPinAnnotationView alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1172,9 +221,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapNode* ref = [[MAHeatMapNode alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1187,9 +236,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapGradient* ref = [[MAHeatMapGradient alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1202,9 +251,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAHeatMapTileOverlay* ref = [[MAHeatMapTileOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1217,9 +266,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapStatus* ref = [[MAMapStatus alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1232,9 +281,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPointAnnotation* ref = [[MAPointAnnotation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1247,9 +296,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACircle* ref = [[MACircle alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1262,9 +311,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAArcRenderer* ref = [[MAArcRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1277,9 +326,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineMapViewController* ref = [[MAOfflineMapViewController alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1292,9 +341,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapCustomStyleOptions* ref = [[MAMapCustomStyleOptions alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1307,9 +356,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolygon* ref = [[MAPolygon alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1322,9 +371,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlay* ref = [[MAParticleOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1337,9 +386,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolyline* ref = [[MAPolyline alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1352,9 +401,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiColoredPolylineRenderer* ref = [[MAMultiColoredPolylineRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1367,9 +416,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnimatedAnnotation* ref = [[MAAnimatedAnnotation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1382,9 +431,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiTexturePolylineRenderer* ref = [[MAMultiTexturePolylineRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1397,9 +446,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineProvince* ref = [[MAOfflineProvince alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1412,9 +461,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATileOverlayRenderer* ref = [[MATileOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1427,9 +476,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItem* ref = [[MAOfflineItem alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1442,9 +491,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGeodesicPolyline* ref = [[MAGeodesicPolyline alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1457,9 +506,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATouchPoi* ref = [[MATouchPoi alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1472,9 +521,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemMunicipality* ref = [[MAOfflineItemMunicipality alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1487,9 +536,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPolyline* ref = [[MAMultiPolyline alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1502,9 +551,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATraceManager* ref = [[MATraceManager alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1517,9 +566,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointOverlayRenderer* ref = [[MAMultiPointOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1532,9 +581,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAIndoorFloorInfo* ref = [[MAIndoorFloorInfo alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1547,9 +596,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAIndoorInfo* ref = [[MAIndoorInfo alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1562,9 +611,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAPolylineRenderer* ref = [[MAPolylineRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1577,9 +626,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnnotationMoveAnimation* ref = [[MAAnnotationMoveAnimation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1592,9 +641,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAShape* ref = [[MAShape alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1607,9 +656,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAAnnotationView* ref = [[MAAnnotationView alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1622,9 +671,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATileOverlay* ref = [[MATileOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1639,9 +688,9 @@ extern BOOL enableLog;
                 MATileOverlayPath data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MATileOverlayPath)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1654,9 +703,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomCalloutView* ref = [[MACustomCalloutView alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1669,9 +718,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineItemCommonCity* ref = [[MAOfflineItemCommonCity alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1684,9 +733,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOfflineMap* ref = [[MAOfflineMap alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1699,9 +748,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACircleRenderer* ref = [[MACircleRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1714,9 +763,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayRenderer* ref = [[MAParticleOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1731,9 +780,9 @@ extern BOOL enableLog;
                 MACoordinateBounds data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateBounds)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1748,9 +797,9 @@ extern BOOL enableLog;
                 MACoordinateSpan data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateSpan)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1765,9 +814,9 @@ extern BOOL enableLog;
                 MACoordinateRegion data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MACoordinateRegion)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1782,9 +831,9 @@ extern BOOL enableLog;
                 MAMapPoint data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapPoint)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1799,9 +848,9 @@ extern BOOL enableLog;
                 MAMapSize data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapSize)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1816,9 +865,9 @@ extern BOOL enableLog;
                 MAMapRect data;
         
                 NSValue* dataValue = [NSValue value:&data withObjCType:@encode(MAMapRect)];
-                HEAP[@(dataValue.hash)] = dataValue;
+                HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
-                [resultList addObject:@(dataValue.hash)];
+                [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
             }
         
             methodResult(resultList);
@@ -1831,9 +880,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 NSValue* ref = [[NSValue alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1846,9 +895,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRandomVelocityGenerate* ref = [[MAParticleRandomVelocityGenerate alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1861,9 +910,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRandomColorGenerate* ref = [[MAParticleRandomColorGenerate alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1876,9 +925,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleConstantRotationGenerate* ref = [[MAParticleConstantRotationGenerate alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1891,9 +940,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleCurveSizeGenerate* ref = [[MAParticleCurveSizeGenerate alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1906,9 +955,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleEmissionModule* ref = [[MAParticleEmissionModule alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1921,9 +970,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleSinglePointShapeModule* ref = [[MAParticleSinglePointShapeModule alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1936,9 +985,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleRectShapeModule* ref = [[MAParticleRectShapeModule alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1951,9 +1000,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverLifeModule* ref = [[MAParticleOverLifeModule alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1966,9 +1015,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayOptions* ref = [[MAParticleOverlayOptions alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1981,9 +1030,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAParticleOverlayOptionsFactory* ref = [[MAParticleOverlayOptionsFactory alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -1996,9 +1045,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOverlayRenderer* ref = [[MAOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2011,9 +1060,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAUserLocation* ref = [[MAUserLocation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2026,9 +1075,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointItem* ref = [[MAMultiPointItem alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2041,9 +1090,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMultiPointOverlay* ref = [[MAMultiPointOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2056,9 +1105,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlayOption* ref = [[MACustomBuildingOverlayOption alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2071,9 +1120,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2086,9 +1135,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATracePoint* ref = [[MATracePoint alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2101,9 +1150,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MATraceLocation* ref = [[MATraceLocation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2116,9 +1165,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAArc* ref = [[MAArc alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2131,9 +1180,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2146,9 +1195,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAMapView* ref = [[MAMapView alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2161,9 +1210,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAOverlayPathRenderer* ref = [[MAOverlayPathRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2176,9 +1225,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MAGroundOverlayRenderer* ref = [[MAGroundOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2191,9 +1240,9 @@ extern BOOL enableLog;
         
             for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
                 MACustomBuildingOverlayRenderer* ref = [[MACustomBuildingOverlayRenderer alloc] init];
-                HEAP[@(ref.hash)] = ref;
+                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
-                [resultList addObject:@(ref.hash)];
+                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -2204,11 +1253,11 @@ extern BOOL enableLog;
         @"MACoordinateBoundsMake::MACoordinateBoundsMake": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+            NSValue* northEastValue = (NSValue*) HEAP[args[@"northEast"]];
             CLLocationCoordinate2D northEast;
             [northEastValue getValue:&northEast];
             // struct arg
-            NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+            NSValue* southWestValue = (NSValue*) HEAP[args[@"southWest"]];
             CLLocationCoordinate2D southWest;
             [southWestValue getValue:&southWest];
         
@@ -2226,8 +1275,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateBounds)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
@@ -2252,19 +1301,19 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateSpan)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MACoordinateRegionMake::MACoordinateRegionMake": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+            NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
             CLLocationCoordinate2D centerCoordinate;
             [centerCoordinateValue getValue:&centerCoordinate];
             // struct arg
-            NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+            NSValue* spanValue = (NSValue*) HEAP[args[@"span"]];
             MACoordinateSpan span;
             [spanValue getValue:&span];
         
@@ -2282,15 +1331,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+            NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
             CLLocationCoordinate2D centerCoordinate;
             [centerCoordinateValue getValue:&centerCoordinate];
             // jsonable arg
@@ -2312,15 +1361,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MAMapPointForCoordinate::MAMapPointForCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
             CLLocationCoordinate2D coordinate;
             [coordinateValue getValue:&coordinate];
         
@@ -2338,15 +1387,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MACoordinateForMapPoint::MACoordinateForMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* mapPointValue = (NSValue*) HEAP[@([args[@"mapPoint"] integerValue])];
+            NSValue* mapPointValue = (NSValue*) HEAP[args[@"mapPoint"]];
             MAMapPoint mapPoint;
             [mapPointValue getValue:&mapPoint];
         
@@ -2364,15 +1413,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MACoordinateRegionForMapRect::MACoordinateRegionForMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -2390,15 +1439,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* regionValue = (NSValue*) HEAP[@([args[@"region"] integerValue])];
+            NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
             MACoordinateRegion region;
             [regionValue getValue:&region];
         
@@ -2416,8 +1465,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
@@ -2468,11 +1517,11 @@ extern BOOL enableLog;
         @"MAMetersBetweenMapPoints::MAMetersBetweenMapPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* aValue = (NSValue*) HEAP[@([args[@"a"] integerValue])];
+            NSValue* aValue = (NSValue*) HEAP[args[@"a"]];
             MAMapPoint a;
             [aValue getValue:&a];
             // struct arg
-            NSValue* bValue = (NSValue*) HEAP[@([args[@"b"] integerValue])];
+            NSValue* bValue = (NSValue*) HEAP[args[@"b"]];
             MAMapPoint b;
             [bValue getValue:&b];
         
@@ -2496,11 +1545,11 @@ extern BOOL enableLog;
         @"MAAreaBetweenCoordinates::MAAreaBetweenCoordinates": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+            NSValue* northEastValue = (NSValue*) HEAP[args[@"northEast"]];
             CLLocationCoordinate2D northEast;
             [northEastValue getValue:&northEast];
             // struct arg
-            NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+            NSValue* southWestValue = (NSValue*) HEAP[args[@"southWest"]];
             CLLocationCoordinate2D southWest;
             [southWestValue getValue:&southWest];
         
@@ -2524,7 +1573,7 @@ extern BOOL enableLog;
         @"MAMapRectInset::MAMapRectInset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
             // jsonable arg
@@ -2546,19 +1595,19 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MAMapRectUnion::MAMapRectUnion": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+            NSValue* rect1Value = (NSValue*) HEAP[args[@"rect1"]];
             MAMapRect rect1;
             [rect1Value getValue:&rect1];
             // struct arg
-            NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+            NSValue* rect2Value = (NSValue*) HEAP[args[@"rect2"]];
             MAMapRect rect2;
             [rect2Value getValue:&rect2];
         
@@ -2576,19 +1625,19 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MAMapSizeContainsSize::MAMapSizeContainsSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* size1Value = (NSValue*) HEAP[@([args[@"size1"] integerValue])];
+            NSValue* size1Value = (NSValue*) HEAP[args[@"size1"]];
             MAMapSize size1;
             [size1Value getValue:&size1];
             // struct arg
-            NSValue* size2Value = (NSValue*) HEAP[@([args[@"size2"] integerValue])];
+            NSValue* size2Value = (NSValue*) HEAP[args[@"size2"]];
             MAMapSize size2;
             [size2Value getValue:&size2];
         
@@ -2612,11 +1661,11 @@ extern BOOL enableLog;
         @"MAMapRectContainsPoint::MAMapRectContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
         
@@ -2640,11 +1689,11 @@ extern BOOL enableLog;
         @"MAMapRectIntersectsRect::MAMapRectIntersectsRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+            NSValue* rect1Value = (NSValue*) HEAP[args[@"rect1"]];
             MAMapRect rect1;
             [rect1Value getValue:&rect1];
             // struct arg
-            NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+            NSValue* rect2Value = (NSValue*) HEAP[args[@"rect2"]];
             MAMapRect rect2;
             [rect2Value getValue:&rect2];
         
@@ -2668,11 +1717,11 @@ extern BOOL enableLog;
         @"MAMapRectContainsRect::MAMapRectContainsRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+            NSValue* rect1Value = (NSValue*) HEAP[args[@"rect1"]];
             MAMapRect rect1;
             [rect1Value getValue:&rect1];
             // struct arg
-            NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+            NSValue* rect2Value = (NSValue*) HEAP[args[@"rect2"]];
             MAMapRect rect2;
             [rect2Value getValue:&rect2];
         
@@ -2696,11 +1745,11 @@ extern BOOL enableLog;
         @"MACircleContainsPoint::MACircleContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
             // struct arg
-            NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+            NSValue* centerValue = (NSValue*) HEAP[args[@"center"]];
             MAMapPoint center;
             [centerValue getValue:&center];
             // jsonable arg
@@ -2726,11 +1775,11 @@ extern BOOL enableLog;
         @"MACircleContainsCoordinate::MACircleContainsCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             CLLocationCoordinate2D point;
             [pointValue getValue:&point];
             // struct arg
-            NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+            NSValue* centerValue = (NSValue*) HEAP[args[@"center"]];
             CLLocationCoordinate2D center;
             [centerValue getValue:&center];
             // jsonable arg
@@ -2756,7 +1805,7 @@ extern BOOL enableLog;
         @"MAPolygonContainsPoint::MAPolygonContainsPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
             // list arg struct
@@ -2792,7 +1841,7 @@ extern BOOL enableLog;
         @"MAPolygonContainsCoordinate::MAPolygonContainsCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             CLLocationCoordinate2D point;
             [pointValue getValue:&point];
             // list arg struct
@@ -2828,15 +1877,15 @@ extern BOOL enableLog;
         @"MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* lineStartValue = (NSValue*) HEAP[@([args[@"lineStart"] integerValue])];
+            NSValue* lineStartValue = (NSValue*) HEAP[args[@"lineStart"]];
             MAMapPoint lineStart;
             [lineStartValue getValue:&lineStart];
             // struct arg
-            NSValue* lineEndValue = (NSValue*) HEAP[@([args[@"lineEnd"] integerValue])];
+            NSValue* lineEndValue = (NSValue*) HEAP[args[@"lineEnd"]];
             MAMapPoint lineEnd;
             [lineEndValue getValue:&lineEnd];
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
         
@@ -2854,8 +1903,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
@@ -2912,8 +1961,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
@@ -2938,8 +1987,8 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapSize)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
@@ -2968,15 +2017,15 @@ extern BOOL enableLog;
             // result
             // 返回值: 结构体
             NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
-            HEAP[@(resultValue.hash)] = resultValue;
-            NSNumber* jsonableResult = @(resultValue.hash);
+            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
         
             methodResult(jsonableResult);
         },
         @"MAMapRectGetMinX::MAMapRectGetMinX": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3000,7 +2049,7 @@ extern BOOL enableLog;
         @"MAMapRectGetMinY::MAMapRectGetMinY": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3024,7 +2073,7 @@ extern BOOL enableLog;
         @"MAMapRectGetMidX::MAMapRectGetMidX": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3048,7 +2097,7 @@ extern BOOL enableLog;
         @"MAMapRectGetMidY::MAMapRectGetMidY": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3072,7 +2121,7 @@ extern BOOL enableLog;
         @"MAMapRectGetMaxX::MAMapRectGetMaxX": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3096,7 +2145,7 @@ extern BOOL enableLog;
         @"MAMapRectGetMaxY::MAMapRectGetMaxY": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3120,7 +2169,7 @@ extern BOOL enableLog;
         @"MAMapRectGetWidth::MAMapRectGetWidth": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3144,7 +2193,7 @@ extern BOOL enableLog;
         @"MAMapRectGetHeight::MAMapRectGetHeight": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3168,11 +2217,11 @@ extern BOOL enableLog;
         @"MAMapPointEqualToPoint::MAMapPointEqualToPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* point1Value = (NSValue*) HEAP[@([args[@"point1"] integerValue])];
+            NSValue* point1Value = (NSValue*) HEAP[args[@"point1"]];
             MAMapPoint point1;
             [point1Value getValue:&point1];
             // struct arg
-            NSValue* point2Value = (NSValue*) HEAP[@([args[@"point2"] integerValue])];
+            NSValue* point2Value = (NSValue*) HEAP[args[@"point2"]];
             MAMapPoint point2;
             [point2Value getValue:&point2];
         
@@ -3196,11 +2245,11 @@ extern BOOL enableLog;
         @"MAMapSizeEqualToSize::MAMapSizeEqualToSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* size1Value = (NSValue*) HEAP[@([args[@"size1"] integerValue])];
+            NSValue* size1Value = (NSValue*) HEAP[args[@"size1"]];
             MAMapSize size1;
             [size1Value getValue:&size1];
             // struct arg
-            NSValue* size2Value = (NSValue*) HEAP[@([args[@"size2"] integerValue])];
+            NSValue* size2Value = (NSValue*) HEAP[args[@"size2"]];
             MAMapSize size2;
             [size2Value getValue:&size2];
         
@@ -3224,11 +2273,11 @@ extern BOOL enableLog;
         @"MAMapRectEqualToRect::MAMapRectEqualToRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rect1Value = (NSValue*) HEAP[@([args[@"rect1"] integerValue])];
+            NSValue* rect1Value = (NSValue*) HEAP[args[@"rect1"]];
             MAMapRect rect1;
             [rect1Value getValue:&rect1];
             // struct arg
-            NSValue* rect2Value = (NSValue*) HEAP[@([args[@"rect2"] integerValue])];
+            NSValue* rect2Value = (NSValue*) HEAP[args[@"rect2"]];
             MAMapRect rect2;
             [rect2Value getValue:&rect2];
         
@@ -3252,7 +2301,7 @@ extern BOOL enableLog;
         @"MAMapRectIsNull::MAMapRectIsNull": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3276,7 +2325,7 @@ extern BOOL enableLog;
         @"MAMapRectIsEmpty::MAMapRectIsEmpty": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3300,7 +2349,7 @@ extern BOOL enableLog;
         @"MAStringFromMapPoint::MAStringFromMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
         
@@ -3324,7 +2373,7 @@ extern BOOL enableLog;
         @"MAStringFromMapSize::MAStringFromMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
+            NSValue* sizeValue = (NSValue*) HEAP[args[@"size"]];
             MAMapSize size;
             [sizeValue getValue:&size];
         
@@ -3348,7 +2397,7 @@ extern BOOL enableLog;
         @"MAStringFromMapRect::MAStringFromMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[@([args[@"rect"] integerValue])];
+            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
             MAMapRect rect;
             [rectValue getValue:&rect];
         
@@ -3372,11 +2421,11 @@ extern BOOL enableLog;
         @"MAGetDirectionFromCoords::MAGetDirectionFromCoords": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* fromCoordValue = (NSValue*) HEAP[@([args[@"fromCoord"] integerValue])];
+            NSValue* fromCoordValue = (NSValue*) HEAP[args[@"fromCoord"]];
             CLLocationCoordinate2D fromCoord;
             [fromCoordValue getValue:&fromCoord];
             // struct arg
-            NSValue* toCoordValue = (NSValue*) HEAP[@([args[@"toCoord"] integerValue])];
+            NSValue* toCoordValue = (NSValue*) HEAP[args[@"toCoord"]];
             CLLocationCoordinate2D toCoord;
             [toCoordValue getValue:&toCoord];
         
@@ -3400,11 +2449,11 @@ extern BOOL enableLog;
         @"MAGetDirectionFromPoints::MAGetDirectionFromPoints": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* fromPointValue = (NSValue*) HEAP[@([args[@"fromPoint"] integerValue])];
+            NSValue* fromPointValue = (NSValue*) HEAP[args[@"fromPoint"]];
             MAMapPoint fromPoint;
             [fromPointValue getValue:&fromPoint];
             // struct arg
-            NSValue* toPointValue = (NSValue*) HEAP[@([args[@"toPoint"] integerValue])];
+            NSValue* toPointValue = (NSValue*) HEAP[args[@"toPoint"]];
             MAMapPoint toPoint;
             [toPointValue getValue:&toPoint];
         
@@ -3428,15 +2477,15 @@ extern BOOL enableLog;
         @"MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg
-            NSValue* pointValue = (NSValue*) HEAP[@([args[@"point"] integerValue])];
+            NSValue* pointValue = (NSValue*) HEAP[args[@"point"]];
             MAMapPoint point;
             [pointValue getValue:&point];
             // struct arg
-            NSValue* lineBeginValue = (NSValue*) HEAP[@([args[@"lineBegin"] integerValue])];
+            NSValue* lineBeginValue = (NSValue*) HEAP[args[@"lineBegin"]];
             MAMapPoint lineBegin;
             [lineBeginValue getValue:&lineBegin];
             // struct arg
-            NSValue* lineEndValue = (NSValue*) HEAP[@([args[@"lineEnd"] integerValue])];
+            NSValue* lineEndValue = (NSValue*) HEAP[args[@"lineEnd"]];
             MAMapPoint lineEnd;
             [lineEndValue getValue:&lineEnd];
         

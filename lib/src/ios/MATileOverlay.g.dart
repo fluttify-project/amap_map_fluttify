@@ -162,7 +162,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   
   
     // handle native call
-    MethodChannel('MATileOverlay::loadTileAtPath_result::Callback')
+    MethodChannel('void|NSData*#tileData,NSError*#error::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

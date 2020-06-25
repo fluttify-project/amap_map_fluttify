@@ -530,7 +530,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
   
 
   // handle native call
-  MethodChannel('MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds::Callback')
+  MethodChannel('AMapTileProjectionBlock::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
         switch (methodCall.method) {

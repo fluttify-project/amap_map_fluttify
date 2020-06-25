@@ -56,7 +56,7 @@ class MATraceManager extends NSObject  {
           case 'Callback::MATraceDelegate::traceManager_didTrace_correct_distance_withError':
             // print log
             if (fluttifyLogEnabled) {
-              debugPrint('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'distance\':${args['distance']}])');
+              debugPrint('fluttify-dart-callback: traceManager_didTrace_correct_distance_withError([\'manager\':${args['manager']}, \'locations\':${args['locations']}, \'tracePoints\':${args['tracePoints']}, \'distance\':${args['distance']}, \'error\':${args['error']}])');
             }
         
             // handle the native call
@@ -65,7 +65,7 @@ class MATraceManager extends NSObject  {
           case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // print log
             if (fluttifyLogEnabled) {
-              debugPrint('fluttify-dart-callback: mapViewRequireLocationAuth([])');
+              debugPrint('fluttify-dart-callback: mapViewRequireLocationAuth([\'locationManager\':${args['locationManager']}])');
             }
         
             // handle the native call
@@ -116,7 +116,7 @@ class MATraceManager extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MATraceManager::queryProcessedTraceWith_type_processingCallback_finishCallback_failedCallback::Callback')
+    MethodChannel('MAProcessingCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -129,6 +129,14 @@ class MATraceManager extends NSObject  {
               // handle the native call
               processingCallback(args['index'], (args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList());
               break;
+            default:
+              break;
+          }
+        });
+    MethodChannel('MAFinishCallback::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
             case 'Callback::MAFinishCallback::MAFinishCallback':
               // print log
               if (fluttifyLogEnabled) {
@@ -138,6 +146,14 @@ class MATraceManager extends NSObject  {
               // handle the native call
               finishCallback((args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance']);
               break;
+            default:
+              break;
+          }
+        });
+    MethodChannel('MAFailedCallback::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
             case 'Callback::MAFailedCallback::MAFailedCallback':
               // print log
               if (fluttifyLogEnabled) {
@@ -174,7 +190,7 @@ class MATraceManager extends NSObject  {
   
   
     // handle native call
-    MethodChannel('MATraceManager::startTraceWith::Callback')
+    MethodChannel('MATraceLocationCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

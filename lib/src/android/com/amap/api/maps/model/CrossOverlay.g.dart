@@ -140,14 +140,14 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback')
+    MethodChannel('com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onGenerateComplete([\'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onGenerateComplete([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call

@@ -941,7 +941,7 @@ public class SubHandler4 {
                 try {
                     ref.setGenerateCrossImageListener(new com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -4754,7 +4754,7 @@ public class SubHandler4 {
                 try {
                     ref.setInfoWindowAnimation(var1, new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5331,7 +5331,7 @@ public class SubHandler4 {
                 try {
                     ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView.OnDismissCallback::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5685,7 +5685,7 @@ public class SubHandler4 {
                 try {
                     ref.animateCamera(var1, new com.amap.api.maps.AMap.CancelableCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap.CancelableCallback::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5780,7 +5780,7 @@ public class SubHandler4 {
                 try {
                     ref.animateCamera(var1, var2, new com.amap.api.maps.AMap.CancelableCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.AMap.CancelableCallback::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

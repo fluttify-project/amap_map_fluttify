@@ -3,7 +3,7 @@ import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
 
-final _assetsIcon = Uri.parse('images/test_icon.png');
+final _assetsIcon = AssetImage('images/test_icon.png');
 
 class CreateMapScreen extends StatefulWidget {
   @override
@@ -117,9 +117,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onTap: () async {
                     await _controller?.showMyLocation(MyLocationOption(
                       myLocationType: MyLocationType.Rotate,
-                      iconUri: _assetsIcon,
-                      imageConfiguration:
-                          createLocalImageConfiguration(context),
+                      iconProvider: _assetsIcon,
                     ));
                   },
                 ),

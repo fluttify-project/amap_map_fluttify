@@ -72,7 +72,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // handle native call
-    MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback::Callback')
+    MethodChannel('void|BOOL#isFinished::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -112,7 +112,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // handle native call
-    MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback_stepCallback::Callback')
+    MethodChannel('void|BOOL#isFinished::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -125,6 +125,14 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               // handle the native call
               completeCallback(args['isFinished']);
               break;
+            default:
+              break;
+          }
+        });
+    MethodChannel('void|MAAnnotationMoveAnimation*#currentAni::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
             case 'Callback::void|MAAnnotationMoveAnimation*#currentAni::void|MAAnnotationMoveAnimation*#currentAni':
               // print log
               if (fluttifyLogEnabled) {

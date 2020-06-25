@@ -22,7 +22,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
+            UIImage* icon = (UIImage*) HEAP[args[@"icon"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -39,7 +39,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* startParticleSizeValue = (NSValue*) HEAP[@([args[@"startParticleSize"] integerValue])];
+            NSValue* startParticleSizeValue = (NSValue*) HEAP[args[@"startParticleSize"]];
             CGSize startParticleSize;
             [startParticleSizeValue getValue:&startParticleSize];
         
@@ -75,7 +75,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[@([args[@"particleStartColor"] integerValue])];
+            id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[args[@"particleStartColor"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -92,7 +92,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"particleStartSpeed"] integerValue])];
+            id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[args[@"particleStartSpeed"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -109,7 +109,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[@([args[@"particleEmissionModule"] integerValue])];
+            MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[args[@"particleEmissionModule"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -126,7 +126,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[@([args[@"particleShapeModule"] integerValue])];
+            id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[args[@"particleShapeModule"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -143,7 +143,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[@([args[@"particleOverLifeModule"] integerValue])];
+            MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[args[@"particleOverLifeModule"]];
         
             // ref
             MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -202,7 +202,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
+            UIImage* strokeImage = (UIImage*) HEAP[args[@"strokeImage"]];
         
             // ref
             MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -236,7 +236,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+            NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
             CLLocationCoordinate2D coordinate;
             [coordinateValue getValue:&coordinate];
         
@@ -340,7 +340,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* topColor = (UIColor*) HEAP[@([args[@"topColor"] integerValue])];
+            UIColor* topColor = (UIColor*) HEAP[args[@"topColor"]];
         
             // ref
             MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -357,7 +357,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
+            UIColor* sideColor = (UIColor*) HEAP[args[@"sideColor"]];
         
             // ref
             MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -425,7 +425,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* locValue = (NSValue*) HEAP[@([args[@"loc"] integerValue])];
+            NSValue* locValue = (NSValue*) HEAP[args[@"loc"]];
             CLLocationCoordinate2D loc;
             [locValue getValue:&loc];
         
@@ -495,7 +495,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* startCoordinateValue = (NSValue*) HEAP[@([args[@"startCoordinate"] integerValue])];
+            NSValue* startCoordinateValue = (NSValue*) HEAP[args[@"startCoordinate"]];
             CLLocationCoordinate2D startCoordinate;
             [startCoordinateValue getValue:&startCoordinate];
         
@@ -514,7 +514,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* passedCoordinateValue = (NSValue*) HEAP[@([args[@"passedCoordinate"] integerValue])];
+            NSValue* passedCoordinateValue = (NSValue*) HEAP[args[@"passedCoordinate"]];
             CLLocationCoordinate2D passedCoordinate;
             [passedCoordinateValue getValue:&passedCoordinate];
         
@@ -533,7 +533,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* endCoordinateValue = (NSValue*) HEAP[@([args[@"endCoordinate"] integerValue])];
+            NSValue* endCoordinateValue = (NSValue*) HEAP[args[@"endCoordinate"]];
             CLLocationCoordinate2D endCoordinate;
             [endCoordinateValue getValue:&endCoordinate];
         
@@ -586,7 +586,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+            UIColor* fillColor = (UIColor*) HEAP[args[@"fillColor"]];
         
             // ref
             MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -603,7 +603,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+            UIColor* strokeColor = (UIColor*) HEAP[args[@"strokeColor"]];
         
             // ref
             MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -637,7 +637,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* locationDotBgColor = (UIColor*) HEAP[@([args[@"locationDotBgColor"] integerValue])];
+            UIColor* locationDotBgColor = (UIColor*) HEAP[args[@"locationDotBgColor"]];
         
             // ref
             MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -654,7 +654,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* locationDotFillColor = (UIColor*) HEAP[@([args[@"locationDotFillColor"] integerValue])];
+            UIColor* locationDotFillColor = (UIColor*) HEAP[args[@"locationDotFillColor"]];
         
             // ref
             MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -688,7 +688,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
+            UIImage* image = (UIImage*) HEAP[args[@"image"]];
         
             // ref
             MAUserLocationRepresentation* ref = (MAUserLocationRepresentation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -738,7 +738,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+            NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
             CLLocationCoordinate2D centerCoordinate;
             [centerCoordinateValue getValue:&centerCoordinate];
         
@@ -757,7 +757,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* regionValue = (NSValue*) HEAP[@([args[@"region"] integerValue])];
+            NSValue* regionValue = (NSValue*) HEAP[args[@"region"]];
             MACoordinateRegion region;
             [regionValue getValue:&region];
         
@@ -776,7 +776,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* visibleMapRectValue = (NSValue*) HEAP[@([args[@"visibleMapRect"] integerValue])];
+            NSValue* visibleMapRectValue = (NSValue*) HEAP[args[@"visibleMapRect"]];
             MAMapRect visibleMapRect;
             [visibleMapRectValue getValue:&visibleMapRect];
         
@@ -795,7 +795,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* limitRegionValue = (NSValue*) HEAP[@([args[@"limitRegion"] integerValue])];
+            NSValue* limitRegionValue = (NSValue*) HEAP[args[@"limitRegion"]];
             MACoordinateRegion limitRegion;
             [limitRegionValue getValue:&limitRegion];
         
@@ -814,7 +814,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* limitMapRectValue = (NSValue*) HEAP[@([args[@"limitMapRect"] integerValue])];
+            NSValue* limitMapRectValue = (NSValue*) HEAP[args[@"limitMapRect"]];
             MAMapRect limitMapRect;
             [limitMapRectValue getValue:&limitMapRect];
         
@@ -1122,7 +1122,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* compassOriginValue = (NSValue*) HEAP[@([args[@"compassOrigin"] integerValue])];
+            NSValue* compassOriginValue = (NSValue*) HEAP[args[@"compassOrigin"]];
             CGPoint compassOrigin;
             [compassOriginValue getValue:&compassOrigin];
         
@@ -1158,7 +1158,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* scaleOriginValue = (NSValue*) HEAP[@([args[@"scaleOrigin"] integerValue])];
+            NSValue* scaleOriginValue = (NSValue*) HEAP[args[@"scaleOrigin"]];
             CGPoint scaleOrigin;
             [scaleOriginValue getValue:&scaleOrigin];
         
@@ -1177,7 +1177,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* logoCenterValue = (NSValue*) HEAP[@([args[@"logoCenter"] integerValue])];
+            NSValue* logoCenterValue = (NSValue*) HEAP[args[@"logoCenter"]];
             CGPoint logoCenter;
             [logoCenterValue getValue:&logoCenter];
         
@@ -1247,7 +1247,7 @@ extern BOOL enableLog;
         
             // args
             // struct arg
-            NSValue* screenAnchorValue = (NSValue*) HEAP[@([args[@"screenAnchor"] integerValue])];
+            NSValue* screenAnchorValue = (NSValue*) HEAP[args[@"screenAnchor"]];
             CGPoint screenAnchor;
             [screenAnchorValue getValue:&screenAnchor];
         
@@ -1526,7 +1526,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* fillColor = (UIColor*) HEAP[@([args[@"fillColor"] integerValue])];
+            UIColor* fillColor = (UIColor*) HEAP[args[@"fillColor"]];
         
             // ref
             MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -1543,7 +1543,7 @@ extern BOOL enableLog;
         
             // args
             // ref arg
-            UIColor* strokeColor = (UIColor*) HEAP[@([args[@"strokeColor"] integerValue])];
+            UIColor* strokeColor = (UIColor*) HEAP[args[@"strokeColor"]];
         
             // ref
             MAOverlayPathRenderer* ref = (MAOverlayPathRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -1714,7 +1714,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
@@ -1811,7 +1811,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAHeatMapGradient* gradient = (MAHeatMapGradient*) HEAP[@([args[@"gradient"] integerValue])];
+                MAHeatMapGradient* gradient = (MAHeatMapGradient*) HEAP[args[@"gradient"]];
         
                 // ref
                 MAHeatMapTileOverlay* ref = (MAHeatMapTileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -1847,7 +1847,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* centerCoordinateValue = (NSValue*) HEAP[@([args[@"centerCoordinate"] integerValue])];
+                NSValue* centerCoordinateValue = (NSValue*) HEAP[args[@"centerCoordinate"]];
                 CLLocationCoordinate2D centerCoordinate;
                 [centerCoordinateValue getValue:&centerCoordinate];
         
@@ -1921,7 +1921,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* screenAnchorValue = (NSValue*) HEAP[@([args[@"screenAnchor"] integerValue])];
+                NSValue* screenAnchorValue = (NSValue*) HEAP[args[@"screenAnchor"]];
                 CGPoint screenAnchor;
                 [screenAnchorValue getValue:&screenAnchor];
         
@@ -1941,7 +1941,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
@@ -1979,7 +1979,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* lockedScreenPointValue = (NSValue*) HEAP[@([args[@"lockedScreenPoint"] integerValue])];
+                NSValue* lockedScreenPointValue = (NSValue*) HEAP[args[@"lockedScreenPoint"]];
                 CGPoint lockedScreenPoint;
                 [lockedScreenPointValue getValue:&lockedScreenPoint];
         
@@ -1999,7 +1999,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
@@ -2073,7 +2073,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleData = (NSData*) HEAP[@([args[@"styleData"] integerValue])];
+                NSData* styleData = (NSData*) HEAP[args[@"styleData"]];
         
                 // ref
                 MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2109,7 +2109,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleTextureData = (NSData*) HEAP[@([args[@"styleTextureData"] integerValue])];
+                NSData* styleTextureData = (NSData*) HEAP[args[@"styleTextureData"]];
         
                 // ref
                 MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2127,7 +2127,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                NSData* styleExtraData = (NSData*) HEAP[@([args[@"styleExtraData"] integerValue])];
+                NSData* styleExtraData = (NSData*) HEAP[args[@"styleExtraData"]];
         
                 // ref
                 MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2245,7 +2245,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
+                UIImage* icon = (UIImage*) HEAP[args[@"icon"]];
         
                 // ref
                 MAMultiPointOverlayRenderer* ref = (MAMultiPointOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2263,7 +2263,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* pointSizeValue = (NSValue*) HEAP[@([args[@"pointSize"] integerValue])];
+                NSValue* pointSizeValue = (NSValue*) HEAP[args[@"pointSize"]];
                 CGSize pointSize;
                 [pointSizeValue getValue:&pointSize];
         
@@ -2283,7 +2283,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* anchorValue = (NSValue*) HEAP[@([args[@"anchor"] integerValue])];
+                NSValue* anchorValue = (NSValue*) HEAP[args[@"anchor"]];
                 CGPoint anchor;
                 [anchorValue getValue:&anchor];
         
@@ -2321,7 +2321,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
+                UIColor* sideColor = (UIColor*) HEAP[args[@"sideColor"]];
         
                 // ref
                 MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2393,7 +2393,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[@([args[@"annotation"] integerValue])];
+                id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
         
                 // ref
                 MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2411,7 +2411,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* image = (UIImage*) HEAP[@([args[@"image"] integerValue])];
+                UIImage* image = (UIImage*) HEAP[args[@"image"]];
         
                 // ref
                 MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2429,7 +2429,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[@([args[@"customCalloutView"] integerValue])];
+                MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[args[@"customCalloutView"]];
         
                 // ref
                 MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2447,7 +2447,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* centerOffsetValue = (NSValue*) HEAP[@([args[@"centerOffset"] integerValue])];
+                NSValue* centerOffsetValue = (NSValue*) HEAP[args[@"centerOffset"]];
                 CGPoint centerOffset;
                 [centerOffsetValue getValue:&centerOffset];
         
@@ -2467,7 +2467,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* calloutOffsetValue = (NSValue*) HEAP[@([args[@"calloutOffset"] integerValue])];
+                NSValue* calloutOffsetValue = (NSValue*) HEAP[args[@"calloutOffset"]];
                 CGPoint calloutOffset;
                 [calloutOffsetValue getValue:&calloutOffset];
         
@@ -2559,7 +2559,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* leftCalloutAccessoryView = (UIView*) HEAP[@([args[@"leftCalloutAccessoryView"] integerValue])];
+                UIView* leftCalloutAccessoryView = (UIView*) HEAP[args[@"leftCalloutAccessoryView"]];
         
                 // ref
                 MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2577,7 +2577,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIView* rightCalloutAccessoryView = (UIView*) HEAP[@([args[@"rightCalloutAccessoryView"] integerValue])];
+                UIView* rightCalloutAccessoryView = (UIView*) HEAP[args[@"rightCalloutAccessoryView"]];
         
                 // ref
                 MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2631,7 +2631,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* tileSizeValue = (NSValue*) HEAP[@([args[@"tileSize"] integerValue])];
+                NSValue* tileSizeValue = (NSValue*) HEAP[args[@"tileSize"]];
                 CGSize tileSize;
                 [tileSizeValue getValue:&tileSize];
         
@@ -2705,7 +2705,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* boundingMapRectValue = (NSValue*) HEAP[@([args[@"boundingMapRect"] integerValue])];
+                NSValue* boundingMapRectValue = (NSValue*) HEAP[args[@"boundingMapRect"]];
                 MAMapRect boundingMapRect;
                 [boundingMapRectValue getValue:&boundingMapRect];
         
@@ -2852,7 +2852,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAOfflineItem* province = (MAOfflineItem*) HEAP[@([args[@"province"] integerValue])];
+                MAOfflineItem* province = (MAOfflineItem*) HEAP[args[@"province"]];
         
                 // ref
                 MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -2870,7 +2870,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* northEastValue = (NSValue*) HEAP[@([args[@"northEast"] integerValue])];
+                NSValue* northEastValue = (NSValue*) HEAP[args[@"northEast"]];
                 CLLocationCoordinate2D northEast;
                 [northEastValue getValue:&northEast];
         
@@ -2892,7 +2892,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* southWestValue = (NSValue*) HEAP[@([args[@"southWest"] integerValue])];
+                NSValue* southWestValue = (NSValue*) HEAP[args[@"southWest"]];
                 CLLocationCoordinate2D southWest;
                 [southWestValue getValue:&southWest];
         
@@ -2954,7 +2954,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* centerValue = (NSValue*) HEAP[@([args[@"center"] integerValue])];
+                NSValue* centerValue = (NSValue*) HEAP[args[@"center"]];
                 CLLocationCoordinate2D center;
                 [centerValue getValue:&center];
         
@@ -2976,7 +2976,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* spanValue = (NSValue*) HEAP[@([args[@"span"] integerValue])];
+                NSValue* spanValue = (NSValue*) HEAP[args[@"span"]];
                 MACoordinateSpan span;
                 [spanValue getValue:&span];
         
@@ -3078,7 +3078,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* originValue = (NSValue*) HEAP[@([args[@"origin"] integerValue])];
+                NSValue* originValue = (NSValue*) HEAP[args[@"origin"]];
                 MAMapPoint origin;
                 [originValue getValue:&origin];
         
@@ -3100,7 +3100,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* sizeValue = (NSValue*) HEAP[@([args[@"size"] integerValue])];
+                NSValue* sizeValue = (NSValue*) HEAP[args[@"size"]];
                 MAMapSize size;
                 [sizeValue getValue:&size];
         
@@ -3194,7 +3194,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* icon = (UIImage*) HEAP[@([args[@"icon"] integerValue])];
+                UIImage* icon = (UIImage*) HEAP[args[@"icon"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3212,7 +3212,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* startParticleSizeValue = (NSValue*) HEAP[@([args[@"startParticleSize"] integerValue])];
+                NSValue* startParticleSizeValue = (NSValue*) HEAP[args[@"startParticleSize"]];
                 CGSize startParticleSize;
                 [startParticleSizeValue getValue:&startParticleSize];
         
@@ -3250,7 +3250,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[@([args[@"particleStartColor"] integerValue])];
+                id<MAParticleColorGenerate> particleStartColor = (id<MAParticleColorGenerate>) HEAP[args[@"particleStartColor"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3268,7 +3268,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[@([args[@"particleStartSpeed"] integerValue])];
+                id<MAParticleVelocityGenerate> particleStartSpeed = (id<MAParticleVelocityGenerate>) HEAP[args[@"particleStartSpeed"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3286,7 +3286,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[@([args[@"particleEmissionModule"] integerValue])];
+                MAParticleEmissionModule* particleEmissionModule = (MAParticleEmissionModule*) HEAP[args[@"particleEmissionModule"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3304,7 +3304,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[@([args[@"particleShapeModule"] integerValue])];
+                id<MAParticleShapeModule> particleShapeModule = (id<MAParticleShapeModule>) HEAP[args[@"particleShapeModule"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3322,7 +3322,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[@([args[@"particleOverLifeModule"] integerValue])];
+                MAParticleOverLifeModule* particleOverLifeModule = (MAParticleOverLifeModule*) HEAP[args[@"particleOverLifeModule"]];
         
                 // ref
                 MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3384,7 +3384,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIImage* strokeImage = (UIImage*) HEAP[@([args[@"strokeImage"] integerValue])];
+                UIImage* strokeImage = (UIImage*) HEAP[args[@"strokeImage"]];
         
                 // ref
                 MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3420,7 +3420,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* coordinateValue = (NSValue*) HEAP[@([args[@"coordinate"] integerValue])];
+                NSValue* coordinateValue = (NSValue*) HEAP[args[@"coordinate"]];
                 CLLocationCoordinate2D coordinate;
                 [coordinateValue getValue:&coordinate];
         
@@ -3530,7 +3530,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* topColor = (UIColor*) HEAP[@([args[@"topColor"] integerValue])];
+                UIColor* topColor = (UIColor*) HEAP[args[@"topColor"]];
         
                 // ref
                 MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3548,7 +3548,7 @@ extern BOOL enableLog;
         
                 // args
                 // ref arg
-                UIColor* sideColor = (UIColor*) HEAP[@([args[@"sideColor"] integerValue])];
+                UIColor* sideColor = (UIColor*) HEAP[args[@"sideColor"]];
         
                 // ref
                 MACustomBuildingOverlayOption* ref = (MACustomBuildingOverlayOption*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
@@ -3620,7 +3620,7 @@ extern BOOL enableLog;
         
                 // args
                 // struct arg
-                NSValue* locValue = (NSValue*) HEAP[@([args[@"loc"] integerValue])];
+                NSValue* locValue = (NSValue*) HEAP[args[@"loc"]];
                 CLLocationCoordinate2D loc;
                 [locValue getValue:&loc];
         

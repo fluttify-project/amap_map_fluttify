@@ -176,7 +176,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback')
+    MethodChannel('com.amap.api.maps.AMap.CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -225,7 +225,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback')
+    MethodChannel('com.amap.api.maps.AMap.CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1162,14 +1162,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnCameraChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onCameraChange([])');
+                debugPrint('fluttify-dart-callback: onCameraChange([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1178,7 +1178,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onCameraChangeFinish([])');
+                debugPrint('fluttify-dart-callback: onCameraChangeFinish([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1211,14 +1211,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMapClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMapClick([])');
+                debugPrint('fluttify-dart-callback: onMapClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1251,14 +1251,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMapTouchListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onTouch([])');
+                debugPrint('fluttify-dart-callback: onTouch([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1291,14 +1291,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnPOIClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onPOIClick([])');
+                debugPrint('fluttify-dart-callback: onPOIClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1331,14 +1331,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMyLocationChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMyLocationChange([])');
+                debugPrint('fluttify-dart-callback: onMyLocationChange([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1371,14 +1371,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMapLongClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMapLongClick([])');
+                debugPrint('fluttify-dart-callback: onMapLongClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1411,14 +1411,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMarkerClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMarkerClick([])');
+                debugPrint('fluttify-dart-callback: onMarkerClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1451,14 +1451,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnPolylineClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onPolylineClick([])');
+                debugPrint('fluttify-dart-callback: onPolylineClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1491,14 +1491,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMarkerDragListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMarkerDragStart([])');
+                debugPrint('fluttify-dart-callback: onMarkerDragStart([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1507,7 +1507,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMarkerDrag([])');
+                debugPrint('fluttify-dart-callback: onMarkerDrag([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1516,7 +1516,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMarkerDragEnd([])');
+                debugPrint('fluttify-dart-callback: onMarkerDragEnd([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1549,14 +1549,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnInfoWindowClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onInfoWindowClick([])');
+                debugPrint('fluttify-dart-callback: onInfoWindowClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1613,14 +1613,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback')
+    MethodChannel('com.amap.api.maps.AMap.CommonInfoWindowAdapter::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: getInfoWindowParams([])');
+                debugPrint('fluttify-dart-callback: getInfoWindowParams([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1653,7 +1653,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMapLoadedListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1693,14 +1693,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: OnIndoorBuilding([])');
+                debugPrint('fluttify-dart-callback: OnIndoorBuilding([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1733,14 +1733,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMultiPointClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onPointClick([])');
+                debugPrint('fluttify-dart-callback: onPointClick([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1773,14 +1773,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback')
+    MethodChannel('com.amap.api.maps.AMap.onMapPrintScreenListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMapPrint([])');
+                debugPrint('fluttify-dart-callback: onMapPrint([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1813,14 +1813,14 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnMapScreenShotListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap([])');
+                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap([\'var1\':${args['var1']}])');
               }
         
               // handle the native call
@@ -1829,7 +1829,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
             case 'Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot__android_graphics_Bitmap__int':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onMapScreenShot__android_graphics_Bitmap__int([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
               }
         
               // handle the native call
@@ -1934,7 +1934,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap.OnCacheRemoveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -2166,7 +2166,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback')
+    MethodChannel('com.amap.api.maps.model.AMapGestureListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

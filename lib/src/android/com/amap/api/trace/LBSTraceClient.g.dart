@@ -91,7 +91,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace::Callback')
+    MethodChannel('com.amap.api.trace.TraceListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -107,7 +107,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
             case 'Callback::com.amap.api.trace.TraceListener::onTraceProcessing':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onTraceProcessing([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+                debugPrint('fluttify-dart-callback: onTraceProcessing([\'var1\':${args['var1']}, \'var2\':${args['var2']}, \'var3\':${args['var3']}])');
               }
         
               // handle the native call
@@ -116,7 +116,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
             case 'Callback::com.amap.api.trace.TraceListener::onFinished':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onFinished([\'var1\':${args['var1']}, \'var3\':${args['var3']}, \'var4\':${args['var4']}])');
+                debugPrint('fluttify-dart-callback: onFinished([\'var1\':${args['var1']}, \'var2\':${args['var2']}, \'var3\':${args['var3']}, \'var4\':${args['var4']}])');
               }
         
               // handle the native call
@@ -149,14 +149,14 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace::Callback')
+    MethodChannel('com.amap.api.trace.TraceStatusListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
             case 'Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus':
               // print log
               if (fluttifyLogEnabled) {
-                debugPrint('fluttify-dart-callback: onTraceStatus([\'var3\':${args['var3']}])');
+                debugPrint('fluttify-dart-callback: onTraceStatus([\'var1\':${args['var1']}, \'var2\':${args['var2']}, \'var3\':${args['var3']}])');
               }
         
               // handle the native call
