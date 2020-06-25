@@ -159,7 +159,9 @@ class _AmapViewState extends State<AmapView> {
 
                     await _initAndroid();
                     if (widget.onMapCreated != null) {
-                      await widget.onMapCreated(_controller);
+                      // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
+                      Future.delayed(Duration(milliseconds: 300), () => 0)
+                          .then((value) => widget.onMapCreated(_controller));
                     }
                     await bundle.release__();
                   },
