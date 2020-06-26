@@ -15,7 +15,10 @@ dependencies:
   demo_widgets: ^0.1.1
 
 dev_dependencies:
+  test: any
   flutter_test:
+    sdk: flutter
+  flutter_driver:
     sdk: flutter
   amap_map_fluttify:
     path: ../
