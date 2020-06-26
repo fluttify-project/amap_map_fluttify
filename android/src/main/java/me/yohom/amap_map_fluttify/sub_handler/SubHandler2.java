@@ -6217,7 +6217,7 @@ public class SubHandler2 {
                 try {
                     ref.setAnimationListener(new com.amap.api.maps.model.animation.Animation.AnimationListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

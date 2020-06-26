@@ -44,7 +44,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.animation.Animation.AnimationListener::Callback')
+    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

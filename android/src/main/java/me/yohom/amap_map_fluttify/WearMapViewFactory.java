@@ -330,7 +330,7 @@ class WearMapViewFactory extends PlatformViewFactory {
             try {
                 ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                     // method channel
-                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView.OnDismissCallback::Callback");
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
                     android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
         
                     // call dart method

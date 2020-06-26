@@ -127,7 +127,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              processingCallback(args['index'], (args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList());
+              if (processingCallback != null) processingCallback(args['index'], (args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList());
               break;
             default:
               break;
@@ -144,7 +144,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              finishCallback((args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance']);
+              if (finishCallback != null) finishCallback((args['points'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance']);
               break;
             default:
               break;
@@ -161,7 +161,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              failedCallback(args['errorCode'], args['errorDesc']);
+              if (failedCallback != null) failedCallback(args['errorCode'], args['errorDesc']);
               break;
             default:
               break;
@@ -201,7 +201,7 @@ class MATraceManager extends NSObject  {
               }
         
               // handle the native call
-              locCallback((args['locations'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance'], TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
+              if (locCallback != null) locCallback((args['locations'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<CLLocation>()).toList(), (args['tracePoints'] as List).cast<int>().map((__it__) => TypeOpAmapMapFluttifyIOS(__it__).as__<MATracePoint>()).toList(), args['distance'], TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
               break;
             default:
               break;

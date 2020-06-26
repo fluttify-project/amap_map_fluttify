@@ -173,7 +173,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
               }
         
               // handle the native call
-              result(TypeOpAmapMapFluttifyIOS((args['tileData'] as Object))?.as__<NSData>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
+              if (result != null) result(TypeOpAmapMapFluttifyIOS((args['tileData'] as Object))?.as__<NSData>(), TypeOpAmapMapFluttifyIOS((args['error'] as Object))?.as__<NSError>());
               break;
             default:
               break;

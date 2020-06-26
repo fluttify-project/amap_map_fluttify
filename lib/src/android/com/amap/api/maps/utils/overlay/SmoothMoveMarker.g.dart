@@ -398,7 +398,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::Callback')
+    MethodChannel('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

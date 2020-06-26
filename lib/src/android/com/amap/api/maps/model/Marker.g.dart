@@ -476,7 +476,7 @@ class com_amap_api_maps_model_Marker extends com_amap_api_maps_model_BasePointOv
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.animation.Animation.AnimationListener::Callback')
+    MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

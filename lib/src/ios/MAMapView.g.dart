@@ -1416,7 +1416,7 @@ class MAMapView extends UIView  {
               }
         
               // handle the native call
-              block(TypeOpAmapMapFluttifyIOS((args['resultImage'] as Object))?.as__<UIImage>(), args['state']);
+              if (block != null) block(TypeOpAmapMapFluttifyIOS((args['resultImage'] as Object))?.as__<UIImage>(), args['state']);
               break;
             default:
               break;

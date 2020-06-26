@@ -541,7 +541,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
             }
         
             // handle the native call
-            tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
+            if (tileProjection != null) tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
             break;
           default:
             break;

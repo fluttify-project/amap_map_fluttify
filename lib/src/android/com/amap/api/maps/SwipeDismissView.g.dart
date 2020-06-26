@@ -62,7 +62,7 @@ class com_amap_api_maps_SwipeDismissView extends android_widget_RelativeLayout  
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.WearMapView.OnDismissCallback::Callback')
+    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

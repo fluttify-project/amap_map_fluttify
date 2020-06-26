@@ -140,7 +140,7 @@ class com_amap_api_maps_model_CrossOverlay extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::Callback')
+    MethodChannel('com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

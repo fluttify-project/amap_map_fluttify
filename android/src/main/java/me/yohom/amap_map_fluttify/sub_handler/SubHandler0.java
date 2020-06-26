@@ -4556,7 +4556,7 @@ public class SubHandler0 {
                 try {
                     ref.setMoveListener(new com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5078,7 +5078,7 @@ public class SubHandler0 {
                 try {
                     ref.setMoveListener(new com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method
@@ -5176,7 +5176,7 @@ public class SubHandler0 {
                 try {
                     ref.setCallback(new com.amap.api.maps.WearMapView.OnDismissCallback() {
                         // method channel
-                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView.OnDismissCallback::Callback");
+                        MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.SwipeDismissView::setCallback::Callback");
                         android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
             
                         // call dart method

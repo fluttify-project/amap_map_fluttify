@@ -35,7 +35,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.TraceListener::Callback')
+    MethodChannel('com.amap.api.trace.LBSTraceBase::queryProcessedTrace::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -141,7 +141,7 @@ mixin com_amap_api_trace_LBSTraceBase on java_lang_Object {
   
   
     // handle native call
-    MethodChannel('com.amap.api.trace.TraceStatusListener::Callback')
+    MethodChannel('com.amap.api.trace.LBSTraceBase::startTrace::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

@@ -176,7 +176,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.CancelableCallback::Callback')
+    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -225,7 +225,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.CancelableCallback::Callback')
+    MethodChannel('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1162,7 +1162,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnCameraChangeListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1211,7 +1211,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMapClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1251,7 +1251,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMapTouchListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1291,7 +1291,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnPOIClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1331,7 +1331,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMyLocationChangeListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1371,7 +1371,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMapLongClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1411,7 +1411,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMarkerClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1451,7 +1451,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnPolylineClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1491,7 +1491,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMarkerDragListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1549,7 +1549,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnInfoWindowClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1613,7 +1613,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.CommonInfoWindowAdapter::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1653,7 +1653,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMapLoadedListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1693,7 +1693,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1733,7 +1733,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMultiPointClickListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1773,7 +1773,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.onMapPrintScreenListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1813,7 +1813,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnMapScreenShotListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -1934,7 +1934,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.AMap.OnCacheRemoveListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::removecache__com_amap_api_maps_AMap_OnCacheRemoveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {
@@ -2166,7 +2166,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
   
     // handle native call
-    MethodChannel('com.amap.api.maps.model.AMapGestureListener::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           switch (methodCall.method) {

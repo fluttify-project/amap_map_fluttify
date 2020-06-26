@@ -83,7 +83,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              completeCallback(args['isFinished']);
+              if (completeCallback != null) completeCallback(args['isFinished']);
               break;
             default:
               break;
@@ -123,7 +123,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              completeCallback(args['isFinished']);
+              if (completeCallback != null) completeCallback(args['isFinished']);
               break;
             default:
               break;
@@ -140,7 +140,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
               }
         
               // handle the native call
-              stepCallback(TypeOpAmapMapFluttifyIOS((args['currentAni'] as Object))?.as__<MAAnnotationMoveAnimation>());
+              if (stepCallback != null) stepCallback(TypeOpAmapMapFluttifyIOS((args['currentAni'] as Object))?.as__<MAAnnotationMoveAnimation>());
               break;
             default:
               break;
