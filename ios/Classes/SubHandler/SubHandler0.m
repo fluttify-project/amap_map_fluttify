@@ -13,6 +13,7 @@ extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin (SubHandler0)
 - (NSDictionary<NSString*, Handler>*) getSubHandler0 {
+    __weak __typeof(self)weakSelf = self;
     return @{
         @"MAGroundOverlay::groundOverlayWithBounds_icon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
@@ -839,7 +840,7 @@ extern BOOL enableLog;
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|BOOL#isFinished::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -896,7 +897,7 @@ extern BOOL enableLog;
             MAAnnotationMoveAnimation* result = [ref addMoveAnimationWithKeyCoordinates: coordinates count: count withDuration: duration withName: name completeCallback: ^(BOOL isFinished) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|BOOL#isFinished::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -914,7 +915,7 @@ extern BOOL enableLog;
             } stepCallback: ^(MAAnnotationMoveAnimation* currentAni) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|MAAnnotationMoveAnimation*#currentAni::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1133,7 +1134,7 @@ extern BOOL enableLog;
             NSOperation* result = [ref queryProcessedTraceWith: locations type: type processingCallback: ^(int index, NSArray<MATracePoint*>* points) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAProcessingCallback::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1160,7 +1161,7 @@ extern BOOL enableLog;
             } finishCallback: ^(NSArray<MATracePoint*>* points, double distance) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAFinishCallback::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1187,7 +1188,7 @@ extern BOOL enableLog;
             } failedCallback: ^(int errorCode, NSString* errorDesc) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAFailedCallback::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1229,7 +1230,7 @@ extern BOOL enableLog;
             [ref startTraceWith : ^(NSArray<CLLocation*>* locations, NSArray<MATracePoint*>* tracePoints, double distance, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MATraceLocationCallback::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1693,7 +1694,7 @@ extern BOOL enableLog;
             [ref loadTileAtPath : path result: ^(NSData* tileData, NSError* error) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|NSData*#tileData,NSError*#error::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1813,7 +1814,7 @@ extern BOOL enableLog;
             [ref setupWithCompletionBlock : ^(BOOL setupSuccess) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|BOOL#setupSuccess::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -1856,7 +1857,7 @@ extern BOOL enableLog;
             [ref downloadItem : item shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -2017,7 +2018,7 @@ extern BOOL enableLog;
             [ref checkNewestVersion : ^(BOOL hasNewestVersion) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAOfflineMapNewestVersionBlock::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -2058,7 +2059,7 @@ extern BOOL enableLog;
             [ref downloadCity : city downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -2115,7 +2116,7 @@ extern BOOL enableLog;
             [ref downloadCity : city shouldContinueWhenAppEntersBackground: shouldContinueWhenAppEntersBackground downloadBlock: ^(MAOfflineItem* downloadItem, MAOfflineMapDownloadStatus downloadStatus, id info) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"MAOfflineMapDownloadBlock::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {
@@ -4316,7 +4317,7 @@ extern BOOL enableLog;
             [ref takeSnapshotInRect : rect withCompletionBlock: ^(UIImage* resultImage, NSInteger state) {
                 FlutterMethodChannel *channel = [FlutterMethodChannel
                     methodChannelWithName:@"void|UIImage*#resultImage,NSInteger#state::Callback"
-                          binaryMessenger:[[self registrar] messenger]];
+                          binaryMessenger:[[weakSelf registrar] messenger]];
         
                 // print log
                 if (enableLog) {

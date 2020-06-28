@@ -13,6 +13,7 @@ extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin (SubHandler2)
 - (NSDictionary<NSString*, Handler>*) getSubHandler2 {
+    __weak __typeof(self)weakSelf = self;
     return @{
         // top constant
         @"getkMAMapLayerRotationDegreeKey": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {

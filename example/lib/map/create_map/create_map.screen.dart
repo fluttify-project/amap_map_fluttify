@@ -102,7 +102,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   title: Center(child: Text('获取当前位置经纬度')),
                   onTap: () async {
                     final latLng = await _controller?.getLocation();
-                    toast('当前经纬度: ${latLng.toString()}');
+                    toast('当前经纬度: ${latLng.latitude}, ${latLng.longitude}');
                   },
                 ),
                 ListTile(

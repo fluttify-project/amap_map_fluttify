@@ -13,6 +13,7 @@ extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin (SubHandler3)
 - (NSDictionary<NSString*, Handler>*) getSubHandler3 {
+    __weak __typeof(self)weakSelf = self;
     return @{
         @"MAMapView::get_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log

@@ -13,6 +13,7 @@ extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin (SubHandler1)
 - (NSDictionary<NSString*, Handler>*) getSubHandler1 {
+    __weak __typeof(self)weakSelf = self;
     return @{
         @"MAMapView::setCustomMapStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args

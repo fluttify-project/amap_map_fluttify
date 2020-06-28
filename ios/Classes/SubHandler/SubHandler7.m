@@ -13,6 +13,7 @@ extern BOOL enableLog;
 
 @implementation AmapMapFluttifyPlugin (SubHandler7)
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
+    __weak __typeof(self)weakSelf = self;
     return @{
         @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
