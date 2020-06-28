@@ -47,7 +47,9 @@ class AmapController with WidgetsBindingObserver {
 
   _AmapViewState _state;
 
+  // iOS端的回调处理类
   final _iosMapDelegate = _IOSMapDelegate();
+  // Android端的回调处理类
   final _androidMapDelegate = _AndroidMapDelegate();
 
   // 定位间隔订阅事件
@@ -103,6 +105,8 @@ class AmapController with WidgetsBindingObserver {
   }
 
   /// 显示我的位置
+  ///
+  /// 可配置的参数详见[MyLocationOption]
   Future<void> showMyLocation(MyLocationOption option) async {
     assert(option != null);
     await platform(
