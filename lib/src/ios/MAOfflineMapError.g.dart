@@ -9,3 +9,26 @@ enum MAOfflineMapError {
   MAOfflineMapErrorCannotOpenZipFile /* -3 */,
   MAOfflineMapErrorCannotExpand /* -4 */
 }
+
+extension MAOfflineMapErrorToX on MAOfflineMapError {
+  int toValue() {
+    switch (this) {
+      case MAOfflineMapError.MAOfflineMapErrorUnknown: return -1;
+      case MAOfflineMapError.MAOfflineMapErrorCannotWriteToTmp: return -2;
+      case MAOfflineMapError.MAOfflineMapErrorCannotOpenZipFile: return -3;
+      case MAOfflineMapError.MAOfflineMapErrorCannotExpand: return -4;
+    }
+  }
+}
+
+extension MAOfflineMapErrorFromX on int {
+  MAOfflineMapError toMAOfflineMapError() {
+    switch (this) {
+      case -1: return MAOfflineMapError.MAOfflineMapErrorUnknown;
+      case -2: return MAOfflineMapError.MAOfflineMapErrorCannotWriteToTmp;
+      case -3: return MAOfflineMapError.MAOfflineMapErrorCannotOpenZipFile;
+      case -4: return MAOfflineMapError.MAOfflineMapErrorCannotExpand;
+      default: return MAOfflineMapError.values[this + -1];
+    }
+  }
+}

@@ -12,10 +12,13 @@ dependencies:
   permission_handler: ^5.0.0+hotfix.6
   oktoast: ^2.3.1+1
   decorated_flutter: ^0.12.0+1
-  demo_widgets: ^0.0.3
+  demo_widgets: ^0.1.1
 
 dev_dependencies:
+  test: any
   flutter_test:
+    sdk: flutter
+  flutter_driver:
     sdk: flutter
   amap_map_fluttify:
     path: ../

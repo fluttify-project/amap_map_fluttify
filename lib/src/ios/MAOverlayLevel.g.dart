@@ -5,5 +5,23 @@
 
 enum MAOverlayLevel {
   MAOverlayLevelAboveRoads /* 0 */,
-  MAOverlayLevelAboveLabels /* 0 */
+  MAOverlayLevelAboveLabels /* null */
+}
+
+extension MAOverlayLevelToX on MAOverlayLevel {
+  int toValue() {
+    switch (this) {
+      case MAOverlayLevel.MAOverlayLevelAboveRoads: return 0;
+      case MAOverlayLevel.MAOverlayLevelAboveLabels: return MAOverlayLevel.MAOverlayLevelAboveLabels.index + 0;
+    }
+  }
+}
+
+extension MAOverlayLevelFromX on int {
+  MAOverlayLevel toMAOverlayLevel() {
+    switch (this) {
+      case 0: return MAOverlayLevel.MAOverlayLevelAboveRoads;
+      default: return MAOverlayLevel.values[this + 0];
+    }
+  }
 }

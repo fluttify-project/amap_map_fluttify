@@ -530,7 +530,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
   
 
   // handle native call
-  MethodChannel('MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds::Callback')
+  MethodChannel('AMapTileProjectionBlock::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
         switch (methodCall.method) {
@@ -541,7 +541,7 @@ Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelO
             }
         
             // handle the native call
-            tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
+            if (tileProjection != null) tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
             break;
           default:
             break;

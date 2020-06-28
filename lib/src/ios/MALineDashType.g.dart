@@ -5,6 +5,25 @@
 
 enum MALineDashType {
   kMALineDashTypeNone /* 0 */,
-  kMALineDashTypeSquare /* 0 */,
-  kMALineDashTypeDot /* 0 */
+  kMALineDashTypeSquare /* null */,
+  kMALineDashTypeDot /* null */
+}
+
+extension MALineDashTypeToX on MALineDashType {
+  int toValue() {
+    switch (this) {
+      case MALineDashType.kMALineDashTypeNone: return 0;
+      case MALineDashType.kMALineDashTypeSquare: return MALineDashType.kMALineDashTypeSquare.index + 0;
+      case MALineDashType.kMALineDashTypeDot: return MALineDashType.kMALineDashTypeDot.index + 0;
+    }
+  }
+}
+
+extension MALineDashTypeFromX on int {
+  MALineDashType toMALineDashType() {
+    switch (this) {
+      case 0: return MALineDashType.kMALineDashTypeNone;
+      default: return MALineDashType.values[this + 0];
+    }
+  }
 }

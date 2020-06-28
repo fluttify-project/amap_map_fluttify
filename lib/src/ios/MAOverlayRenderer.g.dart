@@ -458,7 +458,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor?.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColor": strokeColor?.refId, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.toValue(), "lineCapType": lineCapType.toValue(), "lineDash": lineDash.toValue(), "refId": refId});
   
   
     // handle native call
@@ -530,7 +530,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__?.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__?.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.index + 0, "lineCapType": lineCapType.index + 0, "lineDash": lineDash.index + 0, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "strokeColors": strokeColors.map((__it__) => __it__?.refId).toList(), "drawStyleIndexes": drawStyleIndexes.map((__it__) => __it__?.refId).toList(), "isGradient": isGradient, "lineWidth": lineWidth, "looped": looped, "lineJoinType": lineJoinType.toValue(), "lineCapType": lineCapType.toValue(), "lineDash": lineDash.toValue(), "refId": refId});
   
   
     // handle native call
@@ -578,7 +578,7 @@ class MAOverlayRenderer extends NSObject  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "fillColor": fillColor?.refId, "strokeColor": strokeColor?.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.index + 0, "strokeLineDash": strokeLineDash.index + 0, "usingTriangleFan": usingTriangleFan, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan', {"points": points.map((__it__) => __it__?.refId).toList(), "pointCount": pointCount, "fillColor": fillColor?.refId, "strokeColor": strokeColor?.refId, "strokeLineWidth": strokeLineWidth, "strokeLineJoinType": strokeLineJoinType.toValue(), "strokeLineDash": strokeLineDash.toValue(), "usingTriangleFan": usingTriangleFan, "refId": refId});
   
   
     // handle native call
@@ -1157,7 +1157,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "strokeColor": strokeColor[__i__].refId, "lineWidth": lineWidth[__i__], "looped": looped[__i__], "lineJoinType": lineJoinType[__i__].index, "lineCapType": lineCapType[__i__].index, "lineDash": lineDash[__i__].index, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColor_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "strokeColor": strokeColor[__i__].refId, "lineWidth": lineWidth[__i__], "looped": looped[__i__], "lineJoinType": lineJoinType[__i__].toValue(), "lineCapType": lineCapType[__i__].toValue(), "lineDash": lineDash[__i__].toValue(), "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1217,7 +1217,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "strokeColors": strokeColors[__i__].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[__i__].map((it) => it.refId).toList(), "isGradient": isGradient[__i__], "lineWidth": lineWidth[__i__], "looped": looped[__i__], "lineJoinType": lineJoinType[__i__].index, "lineCapType": lineCapType[__i__].index, "lineDash": lineDash[__i__].index, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderLinesWithPoints_pointCount_strokeColors_drawStyleIndexes_isGradient_lineWidth_looped_LineJoinType_LineCapType_lineDash_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "strokeColors": strokeColors[__i__].map((it) => it.refId).toList(), "drawStyleIndexes": drawStyleIndexes[__i__].map((it) => it.refId).toList(), "isGradient": isGradient[__i__], "lineWidth": lineWidth[__i__], "looped": looped[__i__], "lineJoinType": lineJoinType[__i__].toValue(), "lineCapType": lineCapType[__i__].toValue(), "lineDash": lineDash[__i__].toValue(), "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
@@ -1257,7 +1257,7 @@ extension MAOverlayRenderer_Batch on List<MAOverlayRenderer> {
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "fillColor": fillColor[__i__].refId, "strokeColor": strokeColor[__i__].refId, "strokeLineWidth": strokeLineWidth[__i__], "strokeLineJoinType": strokeLineJoinType[__i__].index, "strokeLineDash": strokeLineDash[__i__].index, "usingTriangleFan": usingTriangleFan[__i__], "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayRenderer::renderStrokedRegionWithPoints_pointCount_fillColor_strokeColor_strokeLineWidth_strokeLineJoinType_strokeLineDash_usingTriangleFan_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"points": points[__i__].map((it) => it.refId).toList(), "pointCount": pointCount[__i__], "fillColor": fillColor[__i__].refId, "strokeColor": strokeColor[__i__].refId, "strokeLineWidth": strokeLineWidth[__i__], "strokeLineJoinType": strokeLineJoinType[__i__].toValue(), "strokeLineDash": strokeLineDash[__i__].toValue(), "usingTriangleFan": usingTriangleFan[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

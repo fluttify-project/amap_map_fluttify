@@ -4,7 +4,26 @@
 //////////////////////////////////////////////////////////
 
 enum MALineJoinType {
-  kMALineJoinBevel /* 0 */,
-  kMALineJoinMiter /* 0 */,
-  kMALineJoinRound /* 0 */
+  kMALineJoinBevel /* null */,
+  kMALineJoinMiter /* null */,
+  kMALineJoinRound /* null */
+}
+
+extension MALineJoinTypeToX on MALineJoinType {
+  int toValue() {
+    switch (this) {
+      case MALineJoinType.kMALineJoinBevel: return MALineJoinType.kMALineJoinBevel.index + 0;
+      case MALineJoinType.kMALineJoinMiter: return MALineJoinType.kMALineJoinMiter.index + 0;
+      case MALineJoinType.kMALineJoinRound: return MALineJoinType.kMALineJoinRound.index + 0;
+    }
+  }
+}
+
+extension MALineJoinTypeFromX on int {
+  MALineJoinType toMALineJoinType() {
+    switch (this) {
+      
+      default: return MALineJoinType.values[this + 0];
+    }
+  }
 }

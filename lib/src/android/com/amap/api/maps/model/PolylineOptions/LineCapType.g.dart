@@ -4,8 +4,28 @@
 //////////////////////////////////////////////////////////
 
 enum com_amap_api_maps_model_PolylineOptions_LineCapType {
-  LineCapButt /* 0 */,
-  LineCapSquare /* 0 */,
-  LineCapArrow /* 0 */,
-  LineCapRound /* 0 */
+  LineCapButt /* null */,
+  LineCapSquare /* null */,
+  LineCapArrow /* null */,
+  LineCapRound /* null */
+}
+
+extension com_amap_api_maps_model_PolylineOptions_LineCapTypeToX on com_amap_api_maps_model_PolylineOptions_LineCapType {
+  int toValue() {
+    switch (this) {
+      case com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapButt: return com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapButt.index + 0;
+      case com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapSquare: return com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapSquare.index + 0;
+      case com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapArrow: return com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapArrow.index + 0;
+      case com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapRound: return com_amap_api_maps_model_PolylineOptions_LineCapType.LineCapRound.index + 0;
+    }
+  }
+}
+
+extension com_amap_api_maps_model_PolylineOptions_LineCapTypeFromX on int {
+  com_amap_api_maps_model_PolylineOptions_LineCapType tocom_amap_api_maps_model_PolylineOptions_LineCapType() {
+    switch (this) {
+      
+      default: return com_amap_api_maps_model_PolylineOptions_LineCapType.values[this + 0];
+    }
+  }
 }

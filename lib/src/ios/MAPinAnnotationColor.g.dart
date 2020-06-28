@@ -5,6 +5,25 @@
 
 enum MAPinAnnotationColor {
   MAPinAnnotationColorRed /* 0 */,
-  MAPinAnnotationColorGreen /* 0 */,
-  MAPinAnnotationColorPurple /* 0 */
+  MAPinAnnotationColorGreen /* null */,
+  MAPinAnnotationColorPurple /* null */
+}
+
+extension MAPinAnnotationColorToX on MAPinAnnotationColor {
+  int toValue() {
+    switch (this) {
+      case MAPinAnnotationColor.MAPinAnnotationColorRed: return 0;
+      case MAPinAnnotationColor.MAPinAnnotationColorGreen: return MAPinAnnotationColor.MAPinAnnotationColorGreen.index + 0;
+      case MAPinAnnotationColor.MAPinAnnotationColorPurple: return MAPinAnnotationColor.MAPinAnnotationColorPurple.index + 0;
+    }
+  }
+}
+
+extension MAPinAnnotationColorFromX on int {
+  MAPinAnnotationColor toMAPinAnnotationColor() {
+    switch (this) {
+      case 0: return MAPinAnnotationColor.MAPinAnnotationColorRed;
+      default: return MAPinAnnotationColor.values[this + 0];
+    }
+  }
 }

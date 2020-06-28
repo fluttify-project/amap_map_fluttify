@@ -63,7 +63,7 @@ class MAOfflineCity extends MAOfflineItem  {
   Future<MAOfflineCityStatus> get_status() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_status", {'refId': refId});
   
-    return MAOfflineCityStatus.values[__result__];
+    return (__result__ as int).toMAOfflineCityStatus();
   }
   
   //endregion
@@ -102,7 +102,7 @@ extension MAOfflineCity_Batch on List<MAOfflineCity> {
   
   Future<List<MAOfflineCityStatus>> get_status_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineCity::get_status_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOfflineCityStatus.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as int).toMAOfflineCityStatus()).toList();
   
     return typedResult;
   }

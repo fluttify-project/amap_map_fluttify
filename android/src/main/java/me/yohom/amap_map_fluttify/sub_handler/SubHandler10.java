@@ -3799,2074 +3799,677 @@ public class SubHandler10 {
             
                 __methodResult__.success(__resultList__);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_offlineservice_AMapPermissionActivity__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_offlineservice_AMapPermissionActivity", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.offlineservice.AMapPermissionActivity __obj__ = new com.amap.api.offlineservice.AMapPermissionActivity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.offlineservice.AMapPermissionActivity);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissTouchListener__android_view_View__java_lang_Object__com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.view.View var1 = __var1__ != null ? (android.view.View) getHEAP().get(__var1__) : null;
-                // jsonable arg
-                java.lang.Object var2 = (java.lang.Object) ((Map<String, Object>) __args__).get("var2");
-                // ref arg
-                Integer __var3__ = (Integer) ((Map<String, Object>) __args__).get("var3");
-                com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks var3 = __var3__ != null ? (com.amap.api.maps.SwipeDismissTouchListener.DismissCallbacks) getHEAP().get(__var3__) : null;
-            
-                // create target object
-                com.amap.api.maps.SwipeDismissTouchListener __obj__ = new com.amap.api.maps.SwipeDismissTouchListener(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_UiSettings", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.UiSettings);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_InfoWindowParams__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_InfoWindowParams__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.InfoWindowParams __obj__ = new com.amap.api.maps.InfoWindowParams();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_SwipeDismissTouchListener", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.SwipeDismissTouchListener);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CameraUpdateFactory__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_InfoWindowParams", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.CameraUpdateFactory __obj__ = new com.amap.api.maps.CameraUpdateFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.InfoWindowParams);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapException__String", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__String");
-                }
-            
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
+            put("RefClass::isKindOfcom_amap_api_maps_CameraUpdateFactory", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.CameraUpdateFactory);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapException__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapException__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.AMapException __obj__ = new com.amap.api.maps.AMapException();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_AMapException", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.AMapException);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptions__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.AMapOptions __obj__ = new com.amap.api.maps.AMapOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.AMapOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapOptionsCreator__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_AMapOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.AMapOptionsCreator __obj__ = new com.amap.api.maps.AMapOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.AMapOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_CoordinateConverter__android_content_Context");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.CoordinateConverter __obj__ = new com.amap.api.maps.CoordinateConverter(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_CoordinateConverter", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.CoordinateConverter);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_SpatialRelationUtil__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_utils_SpatialRelationUtil", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.utils.SpatialRelationUtil __obj__ = new com.amap.api.maps.utils.SpatialRelationUtil();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
-            });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_MovingPointOverlay__com_amap_api_maps_AMap__com_amap_api_maps_model_BasePointOverlay");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.BasePointOverlay var2 = __var2__ != null ? (com.amap.api.maps.model.BasePointOverlay) getHEAP().get(__var2__) : null;
-            
-                // create target object
-                com.amap.api.maps.utils.overlay.MovingPointOverlay __obj__ = new com.amap.api.maps.utils.overlay.MovingPointOverlay(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.utils.SpatialRelationUtil);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_utils_overlay_SmoothMoveMarker__com_amap_api_maps_AMap");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.AMap var1 = __var1__ != null ? (com.amap.api.maps.AMap) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.utils.overlay.SmoothMoveMarker __obj__ = new com.amap.api.maps.utils.overlay.SmoothMoveMarker(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_utils_overlay_MovingPointOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.utils.overlay.MovingPointOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_utils_overlay_SmoothMoveMarker", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.SwipeDismissView var1 = __var1__ != null ? (com.amap.api.maps.SwipeDismissView) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.SwipeDismissCallBack __obj__ = new com.amap.api.maps.SwipeDismissCallBack(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.utils.overlay.SmoothMoveMarker);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                android.view.View var2 = __var2__ != null ? (android.view.View) getHEAP().get(__var2__) : null;
-            
-                // create target object
-                com.amap.api.maps.SwipeDismissView __obj__ = new com.amap.api.maps.SwipeDismissView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_CameraUpdate", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.CameraUpdate);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_MapsInitializer__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapsInitializer__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_SwipeDismissCallBack", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.MapsInitializer __obj__ = new com.amap.api.maps.MapsInitializer();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.SwipeDismissCallBack);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapStatus__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_SwipeDismissView", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.offlinemap.OfflineMapStatus __obj__ = new com.amap.api.maps.offlinemap.OfflineMapStatus();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.SwipeDismissView);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapProvince__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_MapsInitializer", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.offlinemap.OfflineMapProvince __obj__ = new com.amap.api.maps.offlinemap.OfflineMapProvince();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.MapsInitializer);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapStatus", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.offlinemap.DownloadProgressView __obj__ = new com.amap.api.maps.offlinemap.DownloadProgressView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.OfflineMapStatus);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_Province__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_Province__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapProvince", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.offlinemap.Province __obj__ = new com.amap.api.maps.offlinemap.Province();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.OfflineMapProvince);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapCity__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_DownloadProgressView", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.offlinemap.OfflineMapCity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapCity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.DownloadProgressView);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_OfflineMapActivity__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.offlinemap.OfflineMapActivity __obj__ = new com.amap.api.maps.offlinemap.OfflineMapActivity();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_Province", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.Province);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_offlinemap_City__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_offlinemap_City__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapManager", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.offlinemap.City __obj__ = new com.amap.api.maps.offlinemap.City();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.OfflineMapManager);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonHoleOptions__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapCity", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.PolygonHoleOptions __obj__ = new com.amap.api.maps.model.PolygonHoleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.OfflineMapCity);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TileOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.TileOverlayOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapActivity", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.OfflineMapActivity);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String");
-                }
-            
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
-                // jsonable arg
-                String var3 = (String) ((Map<String, Object>) __args__).get("var3");
+            put("RefClass::isKindOfcom_amap_api_maps_offlinemap_City", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.Poi __obj__ = new com.amap.api.maps.model.Poi(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.offlinemap.City);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyle__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_Projection", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.MyLocationStyle __obj__ = new com.amap.api.maps.model.MyLocationStyle();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.Projection);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
-                // ref arg
-                Integer __var3__ = (Integer) ((Map<String, Object>) __args__).get("var3");
-                com.amap.api.maps.model.LatLng var3 = __var3__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var3__) : null;
-                // ref arg
-                Integer __var4__ = (Integer) ((Map<String, Object>) __args__).get("var4");
-                com.amap.api.maps.model.LatLng var4 = __var4__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var4__) : null;
-                // ref arg
-                Integer __var5__ = (Integer) ((Map<String, Object>) __args__).get("var5");
-                com.amap.api.maps.model.LatLngBounds var5 = __var5__ != null ? (com.amap.api.maps.model.LatLngBounds) getHEAP().get(__var5__) : null;
-            
-                // create target object
-                com.amap.api.maps.model.VisibleRegion __obj__ = new com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_Polygon", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Polygon);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngCreator__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptor", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.LatLngCreator __obj__ = new com.amap.api.maps.model.LatLngCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BitmapDescriptor);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleHoleOptions__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_PolygonHoleOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.CircleHoleOptions __obj__ = new com.amap.api.maps.model.CircleHoleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolygonHoleOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds_Builder__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.LatLngBounds.Builder __obj__ = new com.amap.api.maps.model.LatLngBounds.Builder();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_TileOverlayOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileOverlayOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.NavigateArrowOptions __obj__ = new com.amap.api.maps.model.NavigateArrowOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_Poi", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Poi);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorFactory__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyle", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.BitmapDescriptorFactory __obj__ = new com.amap.api.maps.model.BitmapDescriptorFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MyLocationStyle);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointOverlayOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_RouteOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.MultiPointOverlayOptions __obj__ = new com.amap.api.maps.model.MultiPointOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.RouteOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PoiCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.PoiCreator __obj__ = new com.amap.api.maps.model.PoiCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_VisibleRegion", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.VisibleRegion);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_LatLngCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.PolylineOptions __obj__ = new com.amap.api.maps.model.PolylineOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Tile__int__int__byteArray");
-                }
-            
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                byte[] var3 = (byte[]) ((Map<String, Object>) __args__).get("var3");
+            put("RefClass::isKindOfcom_amap_api_maps_model_CircleHoleOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.Tile __obj__ = new com.amap.api.maps.model.Tile(var1, var2, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CircleHoleOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_Gradient__intArray__floatArray");
-                }
-            
-                // args
-                // jsonable arg
-                int[] var1 = (int[]) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                float[] var2 = (float[]) ((Map<String, Object>) __args__).get("var2");
-            
-                // create target object
-                com.amap.api.maps.model.Gradient __obj__ = new com.amap.api.maps.model.Gradient(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_Text", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Text);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NaviPara__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NaviPara__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds_Builder", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.NaviPara __obj__ = new com.amap.api.maps.model.NaviPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngBounds.Builder);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.GroundOverlayOptions __obj__ = new com.amap.api.maps.model.GroundOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.NavigateArrowOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GL3DModelOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.GL3DModelOptions __obj__ = new com.amap.api.maps.model.GL3DModelOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorFactory", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BitmapDescriptorFactory);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyTrafficStyle__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_UrlTileProvider", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.MyTrafficStyle __obj__ = new com.amap.api.maps.model.MyTrafficStyle();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.UrlTileProvider);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
+            put("RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlayOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.CameraPosition __obj__ = new com.amap.api.maps.model.CameraPosition(var1, new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MultiPointOverlayOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TextOptionsCreator __obj__ = new com.amap.api.maps.model.TextOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_PoiCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PoiCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PoiPara__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PoiPara__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_PolylineOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.PoiPara __obj__ = new com.amap.api.maps.model.PoiPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolylineOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptions__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_Tile", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.MarkerOptions __obj__ = new com.amap.api.maps.model.MarkerOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Tile);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AnimationSet__boolean");
-                }
-            
-                // args
-                // jsonable arg
-                boolean var1 = (boolean) ((Map<String, Object>) __args__).get("var1");
-            
-                // create target object
-                com.amap.api.maps.model.animation.AnimationSet __obj__ = new com.amap.api.maps.model.animation.AnimationSet(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_GL3DModel", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.GL3DModel);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float");
-                }
-            
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
-            
-                // create target object
-                com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_Gradient", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Gradient);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_RotateAnimation__float__float");
-                }
-            
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-            
-                // create target object
-                com.amap.api.maps.model.animation.RotateAnimation __obj__ = new com.amap.api.maps.model.animation.RotateAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_NaviPara", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.NaviPara);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+            put("RefClass::isKindOfcom_amap_api_maps_model_GroundOverlayOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.animation.TranslateAnimation __obj__ = new com.amap.api.maps.model.animation.TranslateAnimation(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.GroundOverlayOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
+            put("RefClass::isKindOfcom_amap_api_maps_model_GL3DModelOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.animation.EmergeAnimation __obj__ = new com.amap.api.maps.model.animation.EmergeAnimation(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.GL3DModelOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_AlphaAnimation__float__float");
-                }
-            
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-            
-                // create target object
-                com.amap.api.maps.model.animation.AlphaAnimation __obj__ = new com.amap.api.maps.model.animation.AlphaAnimation(new Double(var1).floatValue(), new Double(var2).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_GroundOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.GroundOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_MyTrafficStyle", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
-            
-                // create target object
-                com.amap.api.maps.model.animation.ScaleAnimation __obj__ = new com.amap.api.maps.model.animation.ScaleAnimation(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MyTrafficStyle);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.model.LatLng var2 = __var2__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var2__) : null;
-            
-                // create target object
-                com.amap.api.maps.model.LatLngBounds __obj__ = new com.amap.api.maps.model.LatLngBounds(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_CameraPosition", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CameraPosition);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CustomMapStyleOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_TextOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.CustomMapStyleOptions __obj__ = new com.amap.api.maps.model.CustomMapStyleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.TextOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BuildingOverlayOptions__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_PoiPara", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.BuildingOverlayOptions __obj__ = new com.amap.api.maps.model.BuildingOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PoiPara);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CrossOverlayOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_MarkerOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.CrossOverlayOptions __obj__ = new com.amap.api.maps.model.CrossOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MarkerOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_VisibleRegionCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.VisibleRegionCreator __obj__ = new com.amap.api.maps.model.VisibleRegionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.HeatmapTileProvider);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_NavigateArrow", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // jsonable arg
-                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
-            
-                // create target object
-                com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.NavigateArrow);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLng__double__double__boolean");
-                }
-            
-                // args
-                // jsonable arg
-                double var1 = (double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                double var3 = (double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                boolean var5 = (boolean) ((Map<String, Object>) __args__).get("var5");
-            
-                // create target object
-                com.amap.api.maps.model.LatLng __obj__ = new com.amap.api.maps.model.LatLng(var1, var3, var5);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_AnimationSet", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.AnimationSet);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjection__int__int__int__int__int__int");
-                }
-            
-                // args
-                // jsonable arg
-                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                int var2 = (int) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                int var3 = (int) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                int var4 = (int) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
-                int var5 = (int) ((Map<String, Object>) __args__).get("var5");
-                // jsonable arg
-                int var6 = (int) ((Map<String, Object>) __args__).get("var6");
-            
-                // create target object
-                com.amap.api.maps.model.TileProjection __obj__ = new com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_RotateAnimation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.RotateAnimation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_AMapPara__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapPara__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_TranslateAnimation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.AMapPara __obj__ = new com.amap.api.maps.model.AMapPara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.TranslateAnimation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.CircleOptionsCreator __obj__ = new com.amap.api.maps.model.CircleOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_Animation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.Animation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float");
-                }
-            
-                // args
-                // jsonable arg
-                Double var1 = (Double) ((Map<String, Object>) __args__).get("var1");
-                // jsonable arg
-                Double var2 = (Double) ((Map<String, Object>) __args__).get("var2");
-                // jsonable arg
-                Double var3 = (Double) ((Map<String, Object>) __args__).get("var3");
-                // jsonable arg
-                Double var4 = (Double) ((Map<String, Object>) __args__).get("var4");
-                // jsonable arg
-                Double var5 = (Double) ((Map<String, Object>) __args__).get("var5");
-                // jsonable arg
-                Double var6 = (Double) ((Map<String, Object>) __args__).get("var6");
-            
-                // create target object
-                com.amap.api.maps.model.AMapCameraInfo __obj__ = new com.amap.api.maps.model.AMapCameraInfo(new Double(var1).floatValue(), new Double(var2).floatValue(), new Double(var3).floatValue(), new Double(var4).floatValue(), new Double(var5).floatValue(), new Double(var6).floatValue());
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_EmergeAnimation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.EmergeAnimation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_AlphaAnimation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.PolygonOptions __obj__ = new com.amap.api.maps.model.PolygonOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.AlphaAnimation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-                // jsonable arg
-                double var2 = (double) ((Map<String, Object>) __args__).get("var2");
-            
-                // create target object
-                com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_animation_ScaleAnimation", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.animation.ScaleAnimation);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.model.WeightedLatLng __obj__ = new com.amap.api.maps.model.WeightedLatLng(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngBounds);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MyLocationStyleCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.MyLocationStyleCreator __obj__ = new com.amap.api.maps.model.MyLocationStyleCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_CustomMapStyleOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CustomMapStyleOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MarkerOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.MarkerOptionsCreator __obj__ = new com.amap.api.maps.model.MarkerOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlayOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BuildingOverlayOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_CrossOverlayOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                com.amap.api.maps.model.LatLng var1 = __var1__ != null ? (com.amap.api.maps.model.LatLng) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.model.MultiPointItem __obj__ = new com.amap.api.maps.model.MultiPointItem(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CrossOverlayOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_LatLngBoundsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.LatLngBoundsCreator __obj__ = new com.amap.api.maps.model.LatLngBoundsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_VisibleRegionCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.VisibleRegionCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.ArcOptions __obj__ = new com.amap.api.maps.model.ArcOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_LatLng", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLng);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BitmapDescriptorCreator__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_TileProjection", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.BitmapDescriptorCreator __obj__ = new com.amap.api.maps.model.BitmapDescriptorCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.TileProjection);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CircleOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CircleOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_AMapPara", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.CircleOptions __obj__ = new com.amap.api.maps.model.CircleOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapPara);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_NavigateArrowOptionsCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.NavigateArrowOptionsCreator __obj__ = new com.amap.api.maps.model.NavigateArrowOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_CameraPosition_Builder", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CameraPosition.Builder);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RuntimeRemoteException__String");
-                }
-            
-                // args
-                // jsonable arg
-                String var1 = (String) ((Map<String, Object>) __args__).get("var1");
-            
-                // create target object
-                com.amap.api.maps.model.RuntimeRemoteException __obj__ = new com.amap.api.maps.model.RuntimeRemoteException(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_BasePointOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BasePointOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_HeatmapTileProvider_Builder__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_CircleOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.HeatmapTileProvider.Builder __obj__ = new com.amap.api.maps.model.HeatmapTileProvider.Builder();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CircleOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BaseOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.BaseOptions __obj__ = new com.amap.api.maps.model.BaseOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_Arc", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Arc);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolylineOptionsCreator__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_AMapCameraInfo", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.PolylineOptionsCreator __obj__ = new com.amap.api.maps.model.PolylineOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapCameraInfo);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_BaseOverlay__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_Circle", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.BaseOverlay __obj__ = new com.amap.api.maps.model.BaseOverlay();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Circle);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileOverlayOptions__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_PolygonOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.TileOverlayOptions __obj__ = new com.amap.api.maps.model.TileOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolygonOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_RoutePara__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_RoutePara__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.RoutePara __obj__ = new com.amap.api.maps.model.RoutePara();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_WeightedLatLng", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.WeightedLatLng);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_ArcOptionsCreator__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_MyLocationStyleCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.ArcOptionsCreator __obj__ = new com.amap.api.maps.model.ArcOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MyLocationStyleCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_CameraPositionCreator__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_MarkerOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.CameraPositionCreator __obj__ = new com.amap.api.maps.model.CameraPositionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MarkerOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_MultiPointItem", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MultiPointItem);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_particle_ParticleOverlayOptions__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.particle.ParticleOverlayOptions __obj__ = new com.amap.api.maps.model.particle.ParticleOverlayOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_LatLngBoundsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.LatLngBoundsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TextOptions__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TextOptions__");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_ArcOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TextOptions __obj__ = new com.amap.api.maps.model.TextOptions();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.ArcOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_PolygonOptionsCreator__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptorCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.PolygonOptionsCreator __obj__ = new com.amap.api.maps.model.PolygonOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BitmapDescriptorCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_TileProjectionCreator__");
-                }
-            
-                // args
-            
-            
-                // create target object
-                com.amap.api.maps.model.TileProjectionCreator __obj__ = new com.amap.api.maps.model.TileProjectionCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_CircleOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.CircleOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_GroundOverlayOptionsCreator__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.model.GroundOverlayOptionsCreator __obj__ = new com.amap.api.maps.model.GroundOverlayOptionsCreator();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.NavigateArrowOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_model_IndoorBuildingInfo__");
-                }
-            
-                // args
+            put("RefClass::isKindOfcom_amap_api_maps_model_RuntimeRemoteException", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-            
-                // create target object
-                com.amap.api.maps.model.IndoorBuildingInfo __obj__ = new com.amap.api.maps.model.IndoorBuildingInfo();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.RuntimeRemoteException);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_AMapGLOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.AMapGLOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
-            
-                // create target object
-                com.amap.api.maps.TextureMapView __obj__ = new com.amap.api.maps.TextureMapView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
+            put("RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider_Builder", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.HeatmapTileProvider.Builder);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_AMapUtils__", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_AMapUtils__");
-                }
-            
-                // args
-            
+            put("RefClass::isKindOfcom_amap_api_maps_model_MultiPointOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // create target object
-                com.amap.api.maps.AMapUtils __obj__ = new com.amap.api.maps.AMapUtils();
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.MultiPointOverlay);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context");
-                }
-            
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_BaseOptions", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BaseOptions);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_PolylineOptionsCreator", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-                // ref arg
-                Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-                com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
-            
-                // create target object
-                com.amap.api.maps.WearMapView __obj__ = new com.amap.api.maps.WearMapView(var1, var2);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
-            
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.PolylineOptionsCreator);
             });
-            // factory
-            put("ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context", (__args__, __methodResult__) -> {
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "创建对象: com_amap_api_maps_MapView__android_content_Context");
-                }
+            put("RefClass::isKindOfcom_amap_api_maps_model_BaseOverlay", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                // args
-                // ref arg
-                Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-                android.content.Context var1 = __var1__ != null ? (android.content.Context) getHEAP().get(__var1__) : null;
-            
-                // create target object
-                com.amap.api.maps.MapView __obj__ = new com.amap.api.maps.MapView(var1);
-                getHEAP().put(System.identityHashCode(__obj__), __obj__);
-            
-                // print current HEAP
-                if (getEnableLog()) {
-                    Log.d("ObjectFactory", "HEAP: " + getHEAP());
-                }
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.BaseOverlay);
+            });
+            put("RefClass::isKindOfcom_amap_api_maps_model_Marker", (__args__, __methodResult__) -> {
+                // 引用对象
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                Object ref = getHEAP().get(refId);
             
-                __methodResult__.success(System.identityHashCode(__obj__));
+                __methodResult__.success(ref instanceof com.amap.api.maps.model.Marker);
             });
         }};
     }

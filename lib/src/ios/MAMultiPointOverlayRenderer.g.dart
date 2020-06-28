@@ -79,7 +79,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
           case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRenderer_didItemTapped':
             // print log
             if (fluttifyLogEnabled) {
-              debugPrint('fluttify-dart-callback: multiPointOverlayRenderer_didItemTapped([])');
+              debugPrint('fluttify-dart-callback: multiPointOverlayRenderer_didItemTapped([\'renderer\':${args['renderer']}, \'item\':${args['item']}])');
             }
         
             // handle the native call

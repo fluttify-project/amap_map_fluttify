@@ -5,7 +5,27 @@
 
 enum MATrafficStatus {
   MATrafficStatusSmooth /* 1 */,
-  MATrafficStatusSlow /* 0 */,
-  MATrafficStatusJam /* 0 */,
-  MATrafficStatusSeriousJam /* 0 */
+  MATrafficStatusSlow /* null */,
+  MATrafficStatusJam /* null */,
+  MATrafficStatusSeriousJam /* null */
+}
+
+extension MATrafficStatusToX on MATrafficStatus {
+  int toValue() {
+    switch (this) {
+      case MATrafficStatus.MATrafficStatusSmooth: return 1;
+      case MATrafficStatus.MATrafficStatusSlow: return MATrafficStatus.MATrafficStatusSlow.index + 1;
+      case MATrafficStatus.MATrafficStatusJam: return MATrafficStatus.MATrafficStatusJam.index + 1;
+      case MATrafficStatus.MATrafficStatusSeriousJam: return MATrafficStatus.MATrafficStatusSeriousJam.index + 1;
+    }
+  }
+}
+
+extension MATrafficStatusFromX on int {
+  MATrafficStatus toMATrafficStatus() {
+    switch (this) {
+      case 1: return MATrafficStatus.MATrafficStatusSmooth;
+      default: return MATrafficStatus.values[this + 1];
+    }
+  }
 }

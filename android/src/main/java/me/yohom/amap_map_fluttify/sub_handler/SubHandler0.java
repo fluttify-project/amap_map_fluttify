@@ -31,364 +31,430 @@ public class SubHandler0 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearLeft", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+            put("com.amap.api.maps.model.VisibleRegion::get_nearLeft", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.nearLeft;
+               // ref object
+               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.nearLeft;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_nearRight", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+            put("com.amap.api.maps.model.VisibleRegion::get_nearRight", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.nearRight;
+               // ref object
+               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.nearRight;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farLeft", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+            put("com.amap.api.maps.model.VisibleRegion::get_farLeft", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.farLeft;
+               // ref object
+               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.farLeft;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_farRight", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+            put("com.amap.api.maps.model.VisibleRegion::get_farRight", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.farRight;
+               // ref object
+               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.farRight;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get(refId);
+            put("com.amap.api.maps.model.VisibleRegion::get_latLngBounds", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLngBounds result = ref.latLngBounds;
+               // ref object
+               com.amap.api.maps.model.VisibleRegion ref = (com.amap.api.maps.model.VisibleRegion) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLngBounds __result__ = ref.latLngBounds;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_width", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+            put("com.amap.api.maps.model.Tile::get_width", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.width;
+               // ref object
+               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.width;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_height", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+            put("com.amap.api.maps.model.Tile::get_height", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.height;
+               // ref object
+               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.height;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.Tile::get_data", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get(refId);
+            put("com.amap.api.maps.model.Tile::get_data", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                byte[] result = ref.data;
+               // ref object
+               com.amap.api.maps.model.Tile ref = (com.amap.api.maps.model.Tile) getHEAP().get((int) __args__.get("refId"));
             
+               byte[] __result__ = ref.data;
             
+               byte[] jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_target", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+            put("com.amap.api.maps.model.CameraPosition::get_target", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.target;
+               // ref object
+               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.target;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_zoom", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+            put("com.amap.api.maps.model.CameraPosition::get_zoom", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                float result = ref.zoom;
+               // ref object
+               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
+               float __result__ = ref.zoom;
             
+               float jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_tilt", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+            put("com.amap.api.maps.model.CameraPosition::get_tilt", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                float result = ref.tilt;
+               // ref object
+               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
+               float __result__ = ref.tilt;
             
+               float jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_bearing", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+            put("com.amap.api.maps.model.CameraPosition::get_bearing", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                float result = ref.bearing;
+               // ref object
+               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
+               float __result__ = ref.bearing;
             
+               float jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.CameraPosition::get_isAbroad", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get(refId);
+            put("com.amap.api.maps.model.CameraPosition::get_isAbroad", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                boolean result = ref.isAbroad;
+               // ref object
+               com.amap.api.maps.model.CameraPosition ref = (com.amap.api.maps.model.CameraPosition) getHEAP().get((int) __args__.get("refId"));
             
+               boolean __result__ = ref.isAbroad;
             
+               boolean jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_southwest", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+            put("com.amap.api.maps.model.LatLngBounds::get_southwest", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.southwest;
+               // ref object
+               com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.southwest;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.LatLngBounds::get_northeast", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get(refId);
+            put("com.amap.api.maps.model.LatLngBounds::get_northeast", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.northeast;
+               // ref object
+               com.amap.api.maps.model.LatLngBounds ref = (com.amap.api.maps.model.LatLngBounds) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.northeast;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.LatLng::get_latitude", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+            put("com.amap.api.maps.model.LatLng::get_latitude", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                double result = ref.latitude;
+               // ref object
+               com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
             
+               double __result__ = ref.latitude;
             
+               double jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.LatLng::get_longitude", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get(refId);
+            put("com.amap.api.maps.model.LatLng::get_longitude", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                double result = ref.longitude;
+               // ref object
+               com.amap.api.maps.model.LatLng ref = (com.amap.api.maps.model.LatLng) getHEAP().get((int) __args__.get("refId"));
             
+               double __result__ = ref.longitude;
             
+               double jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetX", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_offsetX", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.offsetX;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.offsetX;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_offsetY", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_offsetY", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.offsetY;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.offsetY;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_minX", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_minX", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.minX;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.minX;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_maxX", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_maxX", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.maxX;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.maxX;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_minY", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_minY", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.minY;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.minY;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.TileProjection::get_maxY", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get(refId);
+            put("com.amap.api.maps.model.TileProjection::get_maxY", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.maxY;
+               // ref object
+               com.amap.api.maps.model.TileProjection ref = (com.amap.api.maps.model.TileProjection) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.maxY;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.WeightedLatLng::get_intensity", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId);
+            put("com.amap.api.maps.model.WeightedLatLng::get_intensity", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                double result = ref.intensity;
+               // ref object
+               com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
             
+               double __result__ = ref.intensity;
             
+               double jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.WeightedLatLng::get_latLng", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get(refId);
+            put("com.amap.api.maps.model.WeightedLatLng::get_latLng", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                com.amap.api.maps.model.LatLng result = ref.latLng;
+               // ref object
+               com.amap.api.maps.model.WeightedLatLng ref = (com.amap.api.maps.model.WeightedLatLng) getHEAP().get((int) __args__.get("refId"));
             
-                getHEAP().put(result.hashCode(), result);
+               com.amap.api.maps.model.LatLng __result__ = ref.latLng;
             
-                __methodResult__.success(result.hashCode());
+               Integer jsonableResult = null;
+               if (__result__ != null) {
+                   jsonableResult = System.identityHashCode(__result__);
+                   getHEAP().put(jsonableResult, __result__);
+               }
+            
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorName", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                String result = ref.activeFloorName;
+               // ref object
+               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
+               String __result__ = ref.activeFloorName;
             
+               String jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_activeFloorIndex", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int result = ref.activeFloorIndex;
+               // ref object
+               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
+               int __result__ = ref.activeFloorIndex;
             
+               int jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_poiid", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                String result = ref.poiid;
+               // ref object
+               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
+               String __result__ = ref.poiid;
             
+               String jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                int[] result = ref.floor_indexs;
+               // ref object
+               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
+               int[] __result__ = ref.floor_indexs;
             
+               int[] jsonableResult = __result__;
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
-            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names", (__args__, __methodResult__) -> {
-                // ref object
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get(refId);
+            put("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_names", (__rawArgs__, __methodResult__) -> {
+               Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
             
-                String[] result = ref.floor_names;
+               // ref object
+               com.amap.api.maps.model.IndoorBuildingInfo ref = (com.amap.api.maps.model.IndoorBuildingInfo) getHEAP().get((int) __args__.get("refId"));
             
+               String[] __result__ = ref.floor_names;
             
+               List<String> jsonableResult = new ArrayList<String>(java.util.Arrays.asList(__result__));
             
-                __methodResult__.success(result);
+                __methodResult__.success(jsonableResult);
             });
             // getter
             put("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", (__argsBatch__, __methodResult__) -> {

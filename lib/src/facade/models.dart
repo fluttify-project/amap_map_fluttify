@@ -15,7 +15,7 @@ class MyLocationOption {
     this.myLocationType = MyLocationType.Locate,
     this.interval = Duration.zero,
     @Deprecated('使用iconProvider代替') this.iconUri,
-    this.package,
+    @Deprecated('已不需要') this.package,
     @Deprecated('使用iconProvider代替') this.imageConfiguration,
     this.strokeColor,
     this.strokeWidth,
@@ -44,6 +44,7 @@ class MyLocationOption {
   final String package;
 
   /// 图标配置
+  @Deprecated('已不需要')
   final ImageConfiguration imageConfiguration;
 
   /// 边框颜色
@@ -56,6 +57,8 @@ class MyLocationOption {
   final Color fillColor;
 
   /// 图标
+  ///
+  /// 资源图片则使用[AssetImage], 网络图片则使用[NetworkImage], 文件图片则使用[FileImage]
   final ImageProvider iconProvider;
 
   @override
@@ -662,6 +665,7 @@ class Marker {
   }
 }
 
+/// 平滑移动点
 class SmoothMoveMarker {
   SmoothMoveMarker.android(this._androidModel);
 

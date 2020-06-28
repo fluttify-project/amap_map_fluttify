@@ -63,13 +63,13 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   Future<MALineJoinType> get_lineJoinType() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType", {'refId': refId});
   
-    return MALineJoinType.values[__result__];
+    return (__result__ as int).toMALineJoinType();
   }
   
   Future<MALineCapType> get_lineCapType() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType", {'refId': refId});
   
-    return MALineCapType.values[__result__];
+    return (__result__ as int).toMALineCapType();
   }
   
   Future<double> get_miterLimit() async {
@@ -87,7 +87,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   Future<MALineDashType> get_lineDashType() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType", {'refId': refId});
   
-    return MALineDashType.values[__result__];
+    return (__result__ as int).toMALineDashType();
   }
   
   //endregion
@@ -173,14 +173,14 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
   
   Future<List<MALineJoinType>> get_lineJoinType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineJoinType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MALineJoinType.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as int).toMALineJoinType()).toList();
   
     return typedResult;
   }
   
   Future<List<MALineCapType>> get_lineCapType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineCapType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MALineCapType.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as int).toMALineCapType()).toList();
   
     return typedResult;
   }
@@ -201,7 +201,7 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
   
   Future<List<MALineDashType>> get_lineDashType_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOverlayPathRenderer::get_lineDashType_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MALineDashType.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as int).toMALineDashType()).toList();
   
     return typedResult;
   }
