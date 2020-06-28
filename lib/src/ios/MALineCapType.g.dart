@@ -4,8 +4,28 @@
 //////////////////////////////////////////////////////////
 
 enum MALineCapType {
-  kMALineCapButt /* 0 */,
-  kMALineCapSquare /* 0 */,
-  kMALineCapArrow /* 0 */,
-  kMALineCapRound /* 0 */
+  kMALineCapButt /* null */,
+  kMALineCapSquare /* null */,
+  kMALineCapArrow /* null */,
+  kMALineCapRound /* null */
+}
+
+extension MALineCapTypeToX on MALineCapType {
+  int toValue() {
+    switch (this) {
+      case MALineCapType.kMALineCapButt: return MALineCapType.kMALineCapButt.index + 0;
+      case MALineCapType.kMALineCapSquare: return MALineCapType.kMALineCapSquare.index + 0;
+      case MALineCapType.kMALineCapArrow: return MALineCapType.kMALineCapArrow.index + 0;
+      case MALineCapType.kMALineCapRound: return MALineCapType.kMALineCapRound.index + 0;
+    }
+  }
+}
+
+extension MALineCapTypeFromX on int {
+  MALineCapType toMALineCapType() {
+    switch (this) {
+      
+      default: return MALineCapType.values[this + 0];
+    }
+  }
 }

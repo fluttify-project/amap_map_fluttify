@@ -5,8 +5,29 @@
 
 enum MAMapType {
   MAMapTypeStandard /* 0 */,
-  MAMapTypeSatellite /* 0 */,
-  MAMapTypeStandardNight /* 0 */,
-  MAMapTypeNavi /* 0 */,
-  MAMapTypeBus /* 0 */
+  MAMapTypeSatellite /* null */,
+  MAMapTypeStandardNight /* null */,
+  MAMapTypeNavi /* null */,
+  MAMapTypeBus /* null */
+}
+
+extension MAMapTypeToX on MAMapType {
+  int toValue() {
+    switch (this) {
+      case MAMapType.MAMapTypeStandard: return 0;
+      case MAMapType.MAMapTypeSatellite: return MAMapType.MAMapTypeSatellite.index + 0;
+      case MAMapType.MAMapTypeStandardNight: return MAMapType.MAMapTypeStandardNight.index + 0;
+      case MAMapType.MAMapTypeNavi: return MAMapType.MAMapTypeNavi.index + 0;
+      case MAMapType.MAMapTypeBus: return MAMapType.MAMapTypeBus.index + 0;
+    }
+  }
+}
+
+extension MAMapTypeFromX on int {
+  MAMapType toMAMapType() {
+    switch (this) {
+      case 0: return MAMapType.MAMapTypeStandard;
+      default: return MAMapType.values[this + 0];
+    }
+  }
 }

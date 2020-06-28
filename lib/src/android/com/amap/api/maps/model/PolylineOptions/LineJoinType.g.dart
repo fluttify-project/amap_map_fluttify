@@ -4,7 +4,26 @@
 //////////////////////////////////////////////////////////
 
 enum com_amap_api_maps_model_PolylineOptions_LineJoinType {
-  LineJoinBevel /* 0 */,
-  LineJoinMiter /* 0 */,
-  LineJoinRound /* 0 */
+  LineJoinBevel /* null */,
+  LineJoinMiter /* null */,
+  LineJoinRound /* null */
+}
+
+extension com_amap_api_maps_model_PolylineOptions_LineJoinTypeToX on com_amap_api_maps_model_PolylineOptions_LineJoinType {
+  int toValue() {
+    switch (this) {
+      case com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinBevel: return com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinBevel.index + 0;
+      case com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinMiter: return com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinMiter.index + 0;
+      case com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinRound: return com_amap_api_maps_model_PolylineOptions_LineJoinType.LineJoinRound.index + 0;
+    }
+  }
+}
+
+extension com_amap_api_maps_model_PolylineOptions_LineJoinTypeFromX on int {
+  com_amap_api_maps_model_PolylineOptions_LineJoinType tocom_amap_api_maps_model_PolylineOptions_LineJoinType() {
+    switch (this) {
+      
+      default: return com_amap_api_maps_model_PolylineOptions_LineJoinType.values[this + 0];
+    }
+  }
 }

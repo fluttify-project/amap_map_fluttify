@@ -4,11 +4,34 @@
 //////////////////////////////////////////////////////////
 
 enum com_amap_api_maps_CoordinateConverter_CoordType {
-  BAIDU /* 0 */,
-  MAPBAR /* 0 */,
-  GPS /* 0 */,
-  MAPABC /* 0 */,
-  SOSOMAP /* 0 */,
-  ALIYUN /* 0 */,
-  GOOGLE /* 0 */
+  BAIDU /* null */,
+  MAPBAR /* null */,
+  GPS /* null */,
+  MAPABC /* null */,
+  SOSOMAP /* null */,
+  ALIYUN /* null */,
+  GOOGLE /* null */
+}
+
+extension com_amap_api_maps_CoordinateConverter_CoordTypeToX on com_amap_api_maps_CoordinateConverter_CoordType {
+  int toValue() {
+    switch (this) {
+      case com_amap_api_maps_CoordinateConverter_CoordType.BAIDU: return com_amap_api_maps_CoordinateConverter_CoordType.BAIDU.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.MAPBAR: return com_amap_api_maps_CoordinateConverter_CoordType.MAPBAR.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.GPS: return com_amap_api_maps_CoordinateConverter_CoordType.GPS.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.MAPABC: return com_amap_api_maps_CoordinateConverter_CoordType.MAPABC.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.SOSOMAP: return com_amap_api_maps_CoordinateConverter_CoordType.SOSOMAP.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.ALIYUN: return com_amap_api_maps_CoordinateConverter_CoordType.ALIYUN.index + 0;
+      case com_amap_api_maps_CoordinateConverter_CoordType.GOOGLE: return com_amap_api_maps_CoordinateConverter_CoordType.GOOGLE.index + 0;
+    }
+  }
+}
+
+extension com_amap_api_maps_CoordinateConverter_CoordTypeFromX on int {
+  com_amap_api_maps_CoordinateConverter_CoordType tocom_amap_api_maps_CoordinateConverter_CoordType() {
+    switch (this) {
+      
+      default: return com_amap_api_maps_CoordinateConverter_CoordType.values[this + 0];
+    }
+  }
 }

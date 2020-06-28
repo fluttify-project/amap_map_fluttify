@@ -8,3 +8,24 @@ enum MAUserTrackingMode {
   MAUserTrackingModeFollow /* 1 */,
   MAUserTrackingModeFollowWithHeading /* 2 */
 }
+
+extension MAUserTrackingModeToX on MAUserTrackingMode {
+  int toValue() {
+    switch (this) {
+      case MAUserTrackingMode.MAUserTrackingModeNone: return 0;
+      case MAUserTrackingMode.MAUserTrackingModeFollow: return 1;
+      case MAUserTrackingMode.MAUserTrackingModeFollowWithHeading: return 2;
+    }
+  }
+}
+
+extension MAUserTrackingModeFromX on int {
+  MAUserTrackingMode toMAUserTrackingMode() {
+    switch (this) {
+      case 0: return MAUserTrackingMode.MAUserTrackingModeNone;
+      case 1: return MAUserTrackingMode.MAUserTrackingModeFollow;
+      case 2: return MAUserTrackingMode.MAUserTrackingModeFollowWithHeading;
+      default: return MAUserTrackingMode.values[this + 0];
+    }
+  }
+}

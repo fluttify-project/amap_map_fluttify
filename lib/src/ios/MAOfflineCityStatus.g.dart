@@ -4,8 +4,28 @@
 //////////////////////////////////////////////////////////
 
 enum MAOfflineCityStatus {
-  MAOfflineCityStatusNone /* 0 */,
-  MAOfflineCityStatusCached /* 0 */,
-  MAOfflineCityStatusInstalled /* 0 */,
-  MAOfflineCityStatusExpired /* 0 */
+  MAOfflineCityStatusNone /* null */,
+  MAOfflineCityStatusCached /* null */,
+  MAOfflineCityStatusInstalled /* null */,
+  MAOfflineCityStatusExpired /* null */
+}
+
+extension MAOfflineCityStatusToX on MAOfflineCityStatus {
+  int toValue() {
+    switch (this) {
+      case MAOfflineCityStatus.MAOfflineCityStatusNone: return MAOfflineCityStatus.MAOfflineCityStatusNone.index + 0;
+      case MAOfflineCityStatus.MAOfflineCityStatusCached: return MAOfflineCityStatus.MAOfflineCityStatusCached.index + 0;
+      case MAOfflineCityStatus.MAOfflineCityStatusInstalled: return MAOfflineCityStatus.MAOfflineCityStatusInstalled.index + 0;
+      case MAOfflineCityStatus.MAOfflineCityStatusExpired: return MAOfflineCityStatus.MAOfflineCityStatusExpired.index + 0;
+    }
+  }
+}
+
+extension MAOfflineCityStatusFromX on int {
+  MAOfflineCityStatus toMAOfflineCityStatus() {
+    switch (this) {
+      
+      default: return MAOfflineCityStatus.values[this + 0];
+    }
+  }
 }

@@ -75,7 +75,7 @@ class MAOfflineItem extends NSObject  {
   Future<MAOfflineItemStatus> get_itemStatus() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus", {'refId': refId});
   
-    return MAOfflineItemStatus.values[__result__];
+    return (__result__ as int).toMAOfflineItemStatus();
   }
   
   Future<int> get_downloadedSize() async {
@@ -134,7 +134,7 @@ extension MAOfflineItem_Batch on List<MAOfflineItem> {
   
   Future<List<MAOfflineItemStatus>> get_itemStatus_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAOfflineItem::get_itemStatus_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAOfflineItemStatus.values[__result__]).toList();
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => (__result__ as int).toMAOfflineItemStatus()).toList();
   
     return typedResult;
   }

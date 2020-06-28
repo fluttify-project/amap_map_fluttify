@@ -58,7 +58,7 @@ class com_amap_api_maps_CoordinateConverter extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from', {"var1": var1.index + 0, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from', {"var1": var1.toValue(), "refId": refId});
   
   
     // handle native call
@@ -166,7 +166,7 @@ extension com_amap_api_maps_CoordinateConverter_Batch on List<com_amap_api_maps_
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].index, "refId": this[__i__].refId}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CoordinateConverter::from_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].toValue(), "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object
