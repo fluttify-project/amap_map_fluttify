@@ -828,7 +828,6 @@ class AmapController with WidgetsBindingObserver {
         await markerOption.visible(option.visible);
 
         final marker = await map.addMarker(markerOption);
-        marker.tag__ = 'amap_$hashCode'; // 标记为当前地图对象的对象
         print('当前marker的tag: amap_$hashCode');
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
@@ -934,9 +933,6 @@ class AmapController with WidgetsBindingObserver {
         // 等待添加完成 获取对应的view
         final annotationViewList =
             await _iosMapDelegate._annotationViewCompleter.future;
-        annotation.tag__ = 'amap_$hashCode'; // 标记为当前地图对象的对象
-
-        // pointAnnotation不释放, 还有用
         pool.add(coordinate);
 
         return Marker.ios(annotation, annotationViewList[0], iosController);
@@ -1011,7 +1007,6 @@ class AmapController with WidgetsBindingObserver {
 
         // 添加marker
         final markers = await map.addMarkers(markerOptionBatch, false);
-        markers.forEach((element) => element.tag__ = 'amap_$hashCode');
 
         // 弹窗使能
         await markers.setInfoWindowEnable_batch(infoWindowEnabledBatch);
@@ -1035,7 +1030,6 @@ class AmapController with WidgetsBindingObserver {
         // 创建marker
         final annotationBatch =
             await MAPointAnnotation.create_batch__(options.length);
-        annotationBatch.forEach((element) => element.tag__ = 'amap_$hashCode');
 
         // 经纬度列表
         final coordinateBatch =
@@ -1078,8 +1072,6 @@ class AmapController with WidgetsBindingObserver {
           for (int i = 0; i < options.length; i++)
             if (i < visibleMarkers.length) visibleMarkers[i] else null
         ];
-        annotationViewList
-            .forEach((element) => element.tag__ = 'amap_$hashCode');
 
         pool.addAll(coordinateBatch);
         return [
@@ -1132,7 +1124,6 @@ class AmapController with WidgetsBindingObserver {
         await marker.setTotalDuration(option.duration.inSeconds);
         // 执行动画
         await marker.startSmoothMove();
-        marker.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1171,7 +1162,6 @@ class AmapController with WidgetsBindingObserver {
           'name',
           (finished) {},
         );
-        animation.tag__ = 'amap_$hashCode';
 
         await iosController.addAnnotation(annotation);
 
@@ -1352,7 +1342,6 @@ class AmapController with WidgetsBindingObserver {
         }
         // 设置参数
         final polyline = await map.addPolyline(polylineOptions);
-        polyline.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1372,7 +1361,6 @@ class AmapController with WidgetsBindingObserver {
         // 构造折线参数
         final polyline = await MAPolyline.polylineWithCoordinates_count(
             latLngList, latLngList.length);
-        polyline.tag__ = 'amap_$hashCode';
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
@@ -1460,7 +1448,6 @@ class AmapController with WidgetsBindingObserver {
 
         // 设置参数
         final polygon = await map.addPolygon(polygonOptions);
-        polygon.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -1480,7 +1467,6 @@ class AmapController with WidgetsBindingObserver {
         // 构造折线参数
         final polygon = await MAPolygon.polygonWithCoordinates_count(
             latLngList, latLngList.length);
-        polygon.tag__ = 'amap_$hashCode';
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
@@ -1543,7 +1529,6 @@ class AmapController with WidgetsBindingObserver {
 
         // 设置参数
         final circle = await map.addCircle(circleOptions);
-        circle.tag__ = 'amap_$hashCode';
 
         pool..add(map)..add(circleOptions)..add(latLng);
 
@@ -1562,7 +1547,6 @@ class AmapController with WidgetsBindingObserver {
           latLng,
           option.radius,
         );
-        circle.tag__ = 'amap_$hashCode';
 
         if (option.width != null) {
           final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
@@ -2129,7 +2113,6 @@ class AmapController with WidgetsBindingObserver {
 
         // 添加热力图
         final heatmap = await map.addTileOverlay(tileOverlayOption);
-        heatmap.tag__ = 'amap_$hashCode';
 
         pool
           ..add(map)
@@ -2163,7 +2146,6 @@ class AmapController with WidgetsBindingObserver {
         }
         // 添加结点数据
         await overlay.set_data(nodeList);
-        overlay.tag__ = 'amap_$hashCode';
 
         // 添加热力图
         await iosController.addOverlay(overlay);
@@ -2209,7 +2191,6 @@ class AmapController with WidgetsBindingObserver {
 
         // 进行添加
         final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
-        groundOverlay.tag__ = 'amap_$hashCode';
 
         bitmap.recycle();
         pool
@@ -2241,7 +2222,6 @@ class AmapController with WidgetsBindingObserver {
         ));
         final overlay =
             await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
-        overlay.tag__ = 'amap_$hashCode';
 
         // 添加热力图
         await iosController.addOverlay(overlay);
