@@ -805,9 +805,10 @@ class AmapController with WidgetsBindingObserver {
         }
         // widget as marker
         else if (option.widget != null) {
-          Uint8List iconData = await _state.widgetToImageData(option.widget);
+          List<Uint8List> iconData =
+              await _state.widgetToImageData([option.widget]);
 
-          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final bitmap = await android_graphics_Bitmap.create(iconData[0]);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -894,9 +895,10 @@ class AmapController with WidgetsBindingObserver {
         }
         // widget as marker
         else if (option.widget != null) {
-          Uint8List iconData = await _state.widgetToImageData(option.widget);
+          List<Uint8List> iconData =
+              await _state.widgetToImageData([option.widget]);
 
-          final icon = await UIImage.create(iconData);
+          final icon = await UIImage.create(iconData[0]);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
           await annotation.addProperty__(1, icon);
@@ -966,9 +968,11 @@ class AmapController with WidgetsBindingObserver {
           await option.iconProvider
               .toImageData(createLocalImageConfiguration(_state.context))
         else if (option.iconUri != null && option.imageConfig != null)
-          await uri2ImageData(option.imageConfig, option.iconUri)
-        else if (option.widget != null)
-          await _state.widgetToImageData(option.widget)
+          await uri2ImageData(option.imageConfig, option.iconUri),
+      ...await _state.widgetToImageData(options
+          .where((element) => element.widget != null)
+          .map((e) => e.widget)
+          .toList())
     ];
 
     return platform(

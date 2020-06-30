@@ -111,6 +111,7 @@ class AmapView extends StatefulWidget {
 
 class _AmapViewState extends State<AmapView> {
   AmapController _controller;
+
   // _widgetLayer的存在是为了实现widget作为marker(或其他)而存在的. 添加widget作为marker后,
   // 会调用AmapViewState::setState, 然后等待一帧结束确认widget已经被渲染后再通过RepaintBoundary::toImage
   // 获取图片数据, 后面的流程和普通添加marker一样了.
@@ -213,22 +214,36 @@ class _AmapViewState extends State<AmapView> {
     super.dispose();
   }
 
-  Future<Uint8List> widgetToImageData(Widget marker) {
-    final completer = Completer<Uint8List>();
+  Future<List<Uint8List>> widgetToImageData(List<Widget> markerList) {
+    final completer = Completer<List<Uint8List>>();
+    final ratio = MediaQuery.of(context).devicePixelRatio;
+
+    final globalKeyList = <GlobalKey>[];
+    for (int i = 0; i < markerList.length; i++) globalKeyList.add(GlobalKey());
+
     setState(() {
-      _widgetLayer = marker;
+      _widgetLayer = Stack(
+        children: [
+          for (int i = 0; i < markerList.length; i++)
+            RepaintBoundary(key: globalKeyList[i], child: markerList[i])
+        ],
+      );
     });
 
     // 等待一帧结束再获取图片数据
-    WidgetsBinding.instance.addPostFrameCallback((duration) {
-      RenderRepaintBoundary boundary =
-          _markerKey.currentContext.findRenderObject();
+    WidgetsBinding.instance.addPostFrameCallback((duration) async {
+      final result = <Uint8List>[];
 
-      boundary
-          .toImage(pixelRatio: MediaQuery.of(context).devicePixelRatio)
-          .then((image) => image.toByteData(format: ImageByteFormat.png))
-          .then((byteData) => byteData.buffer.asUint8List())
-          .then((data) => completer.complete(data));
+      await Future.wait([
+        for (final key in globalKeyList)
+          (key.currentContext.findRenderObject() as RenderRepaintBoundary)
+              .toImage(pixelRatio: ratio)
+              .then((image) => image.toByteData(format: ImageByteFormat.png))
+              .then((byteData) => byteData.buffer.asUint8List())
+              .then((data) => result.add(data))
+      ]);
+
+      completer.complete(result);
     });
 
     return completer.future;
