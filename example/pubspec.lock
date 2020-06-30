@@ -21,7 +21,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.23.3"
+    version: "0.23.4-dev.0"
   analyzer:
     dependency: transitive
     description:
