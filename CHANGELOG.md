@@ -1,3 +1,7 @@
+## 0.23.4
+- enhance: 优化批量widget marker速度
+- feat: 设置地图长按监听事件
+
 ## 0.23.3
 - enhance: 枚举优化
 - enhance: 简化图片逻辑

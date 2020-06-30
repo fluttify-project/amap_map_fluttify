@@ -65,24 +65,24 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ListTile(
                   title: Center(child: Text('添加Widget Marker')),
                   onTap: () async {
-                    final marker = await _controller?.addMarker(
-                      MarkerOption(
-                        latLng: getNextLatLng(),
-                        widget: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Text('使用Widget作为Marker'),
-                            FlutterLogo(size: 80),
-                          ],
-                        ),
-                        imageConfig: createLocalImageConfiguration(context),
-                        title: '北京',
-                        snippet: '描述',
-                        width: 100,
-                        height: 100,
-                      ),
+                    final marker = await _controller?.addMarkers(
+                      [
+                        for (int i = 0; i < 100; i++)
+                          MarkerOption(
+                            latLng: getNextLatLng(),
+                            widget: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Text('使用Widget作为Marker: $i'),
+                                FlutterLogo(size: 80),
+                              ],
+                            ),
+                            title: '北京',
+                            snippet: '描述',
+                          )
+                      ],
                     );
-                    _markers.add(marker);
+                    _markers.addAll(marker);
                   },
                 ),
                 ListTile(
@@ -177,11 +177,8 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
 //                            snippet: '描述$i',
                             iconProvider:
                                 i % 2 == 0 ? _assetsIcon1 : _assetsIcon2,
-                            imageConfig: createLocalImageConfiguration(context),
-                            width: 40,
                             infoWindowEnabled: false,
 //                            rotateAngle: 90,
-                            height: 40,
                             object: 'Marker_$i',
                           ),
                       ],

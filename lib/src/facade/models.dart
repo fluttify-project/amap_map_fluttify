@@ -84,8 +84,8 @@ class MarkerOption {
     this.anchorU = 0.5,
     this.anchorV = 0,
     this.object,
-    this.width,
-    this.height,
+    @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height') this.width,
+    @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height') this.height,
     this.iconProvider,
   })  : assert(
           (iconUri != null && imageConfig != null) || iconUri == null,

@@ -805,9 +805,10 @@ class AmapController with WidgetsBindingObserver {
         }
         // widget as marker
         else if (option.widget != null) {
-          Uint8List iconData = await _state.widgetToImageData(option.widget);
+          List<Uint8List> iconData =
+              await _state.widgetToImageData([option.widget]);
 
-          final bitmap = await android_graphics_Bitmap.create(iconData);
+          final bitmap = await android_graphics_Bitmap.create(iconData[0]);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await markerOption.icon(icon);
@@ -894,9 +895,10 @@ class AmapController with WidgetsBindingObserver {
         }
         // widget as marker
         else if (option.widget != null) {
-          Uint8List iconData = await _state.widgetToImageData(option.widget);
+          List<Uint8List> iconData =
+              await _state.widgetToImageData([option.widget]);
 
-          final icon = await UIImage.create(iconData);
+          final icon = await UIImage.create(iconData[0]);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
           await annotation.addProperty__(1, icon);
@@ -961,14 +963,18 @@ class AmapController with WidgetsBindingObserver {
         options.map((it) => it.infoWindowEnabled).toList();
     final objectBatch = options.map((it) => it.object).toList();
     final iconDataBatch = <Uint8List>[
-      for (final option in options)
-        if (option.iconProvider != null)
-          await option.iconProvider
-              .toImageData(createLocalImageConfiguration(_state.context))
-        else if (option.iconUri != null && option.imageConfig != null)
-          await uri2ImageData(option.imageConfig, option.iconUri)
-        else if (option.widget != null)
-          await _state.widgetToImageData(option.widget)
+      ...await Future.wait([
+        for (final option in options)
+          if (option.iconProvider != null)
+            option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context))
+          else if (option.iconUri != null && option.imageConfig != null)
+            uri2ImageData(option.imageConfig, option.iconUri),
+      ]),
+      ...await _state.widgetToImageData(options
+          .where((element) => element.widget != null)
+          .map((e) => e.widget)
+          .toList()),
     ];
 
     return platform(
@@ -1754,6 +1760,26 @@ class AmapController with WidgetsBindingObserver {
     );
   }
 
+  /// 设置地图长按监听事件
+  Future<void> setMapLongPressedListener(OnMapClicked onMapLongPress) async {
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        await map.setOnMapLongClickListener(
+          _androidMapDelegate.._onMapLongClick = onMapLongPress,
+        );
+
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await iosController.set_delegate(
+          _iosMapDelegate.._onMapLongClick = onMapLongPress,
+        );
+      },
+    );
+  }
+
   /// 设置地图移动监听事件
   Future<void> setMapMoveListener({
     OnMapMove onMapMoveStart,
@@ -2274,6 +2300,7 @@ class _IOSMapDelegate extends NSObject
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
   OnMapClicked _onMapClick;
+  OnMapClicked _onMapLongClick;
   OnMapMove _onMapMoveStart;
   OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
@@ -2379,6 +2406,20 @@ class _IOSMapDelegate extends NSObject
     super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
     if (_onMapClick != null) {
       await _onMapClick(LatLng(
+        await coordinate.latitude,
+        await coordinate.longitude,
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapView_didLongPressedAtCoordinate(
+    MAMapView mapView,
+    CLLocationCoordinate2D coordinate,
+  ) async {
+    super.mapView_didLongPressedAtCoordinate(mapView, coordinate);
+    if (_onMapLongClick != null) {
+      await _onMapLongClick(LatLng(
         await coordinate.latitude,
         await coordinate.longitude,
       ));
@@ -2533,6 +2574,7 @@ class _AndroidMapDelegate extends java_lang_Object
         com_amap_api_maps_AMap_OnMarkerClickListener,
         com_amap_api_maps_AMap_OnMarkerDragListener,
         com_amap_api_maps_AMap_OnMapClickListener,
+        com_amap_api_maps_AMap_OnMapLongClickListener,
         com_amap_api_maps_AMap_OnCameraChangeListener,
         com_amap_api_maps_AMap_OnMapScreenShotListener,
         com_amap_api_maps_AMap_OnMyLocationChangeListener,
@@ -2546,6 +2588,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMapMove _onMapMoveStart;
   OnMapMove _onMapMoveEnd;
   OnMapClicked _onMapClick;
+  OnMapClicked _onMapLongClick;
   OnScreenShot _onSnapshot;
   OnLocationChange _onLocationChange;
   OnMarkerClicked _onInfoWindowClicked;
@@ -2689,5 +2732,16 @@ class _AndroidMapDelegate extends java_lang_Object
       _onMultiPointClicked(id, title, snippet, object);
     }
     return true;
+  }
+
+  @override
+  Future<void> onMapLongClick(com_amap_api_maps_model_LatLng var1) async {
+    super.onMapLongClick(var1);
+    if (_onMapLongClick != null) {
+      await _onMapLongClick(LatLng(
+        await var1.get_latitude(),
+        await var1.get_longitude(),
+      ));
+    }
   }
 }
