@@ -963,16 +963,18 @@ class AmapController with WidgetsBindingObserver {
         options.map((it) => it.infoWindowEnabled).toList();
     final objectBatch = options.map((it) => it.object).toList();
     final iconDataBatch = <Uint8List>[
-      for (final option in options)
-        if (option.iconProvider != null)
-          await option.iconProvider
-              .toImageData(createLocalImageConfiguration(_state.context))
-        else if (option.iconUri != null && option.imageConfig != null)
-          await uri2ImageData(option.imageConfig, option.iconUri),
+      ...await Future.wait([
+        for (final option in options)
+          if (option.iconProvider != null)
+            option.iconProvider
+                .toImageData(createLocalImageConfiguration(_state.context))
+          else if (option.iconUri != null && option.imageConfig != null)
+            uri2ImageData(option.imageConfig, option.iconUri),
+      ]),
       ...await _state.widgetToImageData(options
           .where((element) => element.widget != null)
           .map((e) => e.widget)
-          .toList())
+          .toList()),
     ];
 
     return platform(
