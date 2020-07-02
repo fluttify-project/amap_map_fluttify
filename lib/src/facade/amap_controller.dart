@@ -1,8 +1,8 @@
 // ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
-/// marker点击事件回调签名 输入[Marker]对象, 返回`是否已消耗事件`, 如果true则不再弹窗, 如果false则继续弹窗
-typedef Future<bool> OnMarkerClicked(Marker marker);
+/// marker点击事件回调签名 输入[Marker]对象
+typedef Future<void> OnMarkerClicked(Marker marker);
 
 /// 地图点击事件回调签名
 typedef Future<void> OnMapClicked(LatLng latLng);
@@ -1672,7 +1672,7 @@ class AmapController with WidgetsBindingObserver {
   }
 
   /// 自定义弹窗
-  Future<void> showInfoWindow(Marker marker, Widget widget) async {
+  Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
     final imageData = (await _state.widgetToImageData([widget]))[0];
 
     // 准备弹窗需要的数据
@@ -2649,9 +2649,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
-      if (!await _onMarkerClicked(Marker.android(var1))) {
-        await var1.showInfoWindow();
-      }
+      await _onMarkerClicked(Marker.android(var1));
     }
     return true;
   }

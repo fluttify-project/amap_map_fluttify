@@ -172,7 +172,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[args['downloadStatus'].toMAOfflineMapDownloadStatus()], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
+              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), (args['downloadStatus'] as int).toMAOfflineMapDownloadStatus(), TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;
@@ -372,7 +372,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[args['downloadStatus'].toMAOfflineMapDownloadStatus()], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
+              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), (args['downloadStatus'] as int).toMAOfflineMapDownloadStatus(), TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;
@@ -412,7 +412,7 @@ class MAOfflineMap extends NSObject  {
               }
         
               // handle the native call
-              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), MAOfflineMapDownloadStatus.values[args['downloadStatus'].toMAOfflineMapDownloadStatus()], TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
+              if (downloadBlock != null) downloadBlock(TypeOpAmapMapFluttifyIOS((args['downloadItem'] as Object))?.as__<MAOfflineItem>(), (args['downloadStatus'] as int).toMAOfflineMapDownloadStatus(), TypeOpAmapMapFluttifyIOS((args['info'] as Object))?.as__<dynamic>());
               break;
             default:
               break;

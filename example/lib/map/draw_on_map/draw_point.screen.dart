@@ -98,7 +98,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                       ),
                     );
                     await _controller?.setMarkerClickedListener((marker) async {
-                      await _controller.showInfoWindow(
+                      await _controller.showCustomInfoWindow(
                         marker,
                         Container(
                           width: 128,

@@ -578,7 +578,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_annotationView_didChangeDragState_fromOldState(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), MAAnnotationViewDragState.values[args['newState'].toMAAnnotationViewDragState()], MAAnnotationViewDragState.values[args['oldState'].toMAAnnotationViewDragState()]);
+            delegate?.mapView_annotationView_didChangeDragState_fromOldState(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), TypeOpAmapMapFluttifyIOS((args['view'] as Object))?.as__<MAAnnotationView>(), (args['newState'] as int).toMAAnnotationViewDragState(), (args['oldState'] as int).toMAAnnotationViewDragState());
             break;
           case 'Callback::MAMapViewDelegate::mapView_rendererForOverlay':
             // print log
@@ -632,7 +632,7 @@ class MAMapView extends UIView  {
             }
         
             // handle the native call
-            delegate?.mapView_didChangeUserTrackingMode_animated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), MAUserTrackingMode.values[args['mode'].toMAUserTrackingMode()], args['animated']);
+            delegate?.mapView_didChangeUserTrackingMode_animated(TypeOpAmapMapFluttifyIOS((args['mapView'] as Object))?.as__<MAMapView>(), (args['mode'] as int).toMAUserTrackingMode(), args['animated']);
             break;
           case 'Callback::MAMapViewDelegate::mapView_didChangeOpenGLESDisabled':
             // print log
