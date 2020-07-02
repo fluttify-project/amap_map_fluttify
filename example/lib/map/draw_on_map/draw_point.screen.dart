@@ -91,12 +91,27 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                     final marker = await _controller?.addMarker(
                       MarkerOption(
                         latLng: getNextLatLng(),
-                        title: '北京',
-                        snippet: '描述',
+                        title: '北京${random.nextDouble()}',
+                        snippet: '描述${random.nextDouble()}',
                         iconProvider: _assetsIcon1,
-                        object: '自定义数据',
+                        object: '自定义数据${random.nextDouble()}',
                       ),
                     );
+                    await _controller?.setMarkerClickedListener((marker) async {
+                      await _controller.showCustomInfoWindow(
+                        marker,
+                        Container(
+                          width: 128,
+                          height: 222,
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Text(await marker.title),
+                        ),
+                      );
+                      return true;
+                    });
                     _markers.add(marker);
                   },
                 ),

@@ -62,7 +62,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
         handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
+        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger, registrar.activity()));
 
         channel.setMethodCallHandler(plugin);
 
@@ -102,7 +102,6 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
         handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
 
         channel.setMethodCallHandler(this);
     }
@@ -120,6 +119,8 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
             Log.d("fluttify-java", "AmapMapFluttifyPlugin::onAttachedToActivity@" + binding);
         }
         Activity activity = binding.getActivity();
+
+        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger, activity));
 
         // register platform view
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger, activity));

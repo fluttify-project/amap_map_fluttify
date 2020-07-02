@@ -116,8 +116,7 @@ class _AmapViewState extends State<AmapView> {
   // 会调用AmapViewState::setState, 然后等待一帧结束确认widget已经被渲染后再通过RepaintBoundary::toImage
   // 获取图片数据, 后面的流程和普通添加marker一样了.
   Widget _mask = Container();
-  Widget _widgetLayer = Container();
-  final _markerKey = GlobalKey();
+  Widget _widgetLayer;
 
   @override
   void initState() {
@@ -143,7 +142,7 @@ class _AmapViewState extends State<AmapView> {
     if (Platform.isAndroid) {
       return Stack(
         children: <Widget>[
-          RepaintBoundary(key: _markerKey, child: _widgetLayer),
+          if (_widgetLayer != null) _widgetLayer,
           FutureBuilder<com_amap_api_maps_AMapOptions>(
             future: _androidOptions(),
             builder: (context, snapshot) {
@@ -177,7 +176,7 @@ class _AmapViewState extends State<AmapView> {
     } else if (Platform.isIOS) {
       return Stack(
         children: <Widget>[
-          RepaintBoundary(key: _markerKey, child: _widgetLayer),
+          if (_widgetLayer != null) _widgetLayer,
           MAMapView_iOS(
             onDispose: _onPlatformViewDispose,
             onViewCreated: (controller) async {
@@ -244,6 +243,11 @@ class _AmapViewState extends State<AmapView> {
       ]);
 
       completer.complete(result);
+
+      // 清空
+      setState(() {
+        _widgetLayer = null;
+      });
     });
 
     return completer.future;

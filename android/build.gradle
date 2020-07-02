@@ -9,6 +9,7 @@ buildscript {
         maven { url "https://oss.sonatype.org/content/groups/public" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
+        maven { url 'http://developer.huawei.com/repo/' }
     }
 
     dependencies {
@@ -24,6 +25,7 @@ rootProject.allprojects {
         maven { url "https://oss.sonatype.org/content/groups/public" }
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
         maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
+        maven { url 'http://developer.huawei.com/repo/' }
     }
 }
 

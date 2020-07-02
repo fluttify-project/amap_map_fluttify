@@ -21,7 +21,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.23.4-dev.0"
+    version: "0.23.4-dev.1"
   analyzer:
     dependency: transitive
     description:
@@ -207,7 +207,7 @@ packages:
       name: foundation_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.8+1"
+    version: "0.8.10"
   fuchsia_remote_debug_protocol:
     dependency: transitive
     description: flutter

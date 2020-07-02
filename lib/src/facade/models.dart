@@ -522,13 +522,13 @@ class MapLocation {
 class Marker {
   Marker.android(this.androidModel);
 
-  Marker.ios(this.iosModel, this._annotationView, this.iosController);
+  Marker.ios(this.iosModel, this.annotationView, this.iosController);
 
   com_amap_api_maps_model_Marker androidModel;
 
   MAPointAnnotation iosModel;
 
-  MAAnnotationView _annotationView;
+  MAAnnotationView annotationView;
   MAMapView iosController;
 
   /// 获取标题
@@ -597,13 +597,13 @@ class Marker {
         ),
       ),
       ios: (_) async {
-        if (_annotationView != null) {
+        if (annotationView != null) {
           final coordinate = await CLLocationCoordinate2D.create(
             coord.latitude,
             coord.longitude,
           );
           await iosModel.set_coordinate(coordinate);
-          await _annotationView.set_annotation(iosModel, viewChannel: false);
+          await annotationView.set_annotation(iosModel, viewChannel: false);
         } else {
           debugPrint('当前_annotationView为null, 无法设置经纬度!');
         }
@@ -618,8 +618,8 @@ class Marker {
       android: (_) => androidModel.setVisible(visible),
       ios: (_) async {
         debugPrint('ios端目前无法设置可见性!');
-        if (_annotationView != null) {
-          await _annotationView.setHidden(!visible);
+        if (annotationView != null) {
+          await annotationView.setHidden(!visible);
         } else {
           debugPrint('当前_annotationView为null, 无法设置可见性!');
         }
@@ -659,7 +659,7 @@ class Marker {
       ios: (pool) async {
         final icon = await UIImage.create(iconData);
 
-        _annotationView.set_image(icon, viewChannel: false);
+        annotationView.set_image(icon, viewChannel: false);
       },
     );
   }

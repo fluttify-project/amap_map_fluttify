@@ -1,8 +1,8 @@
 // ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
-/// marker点击事件回调签名 输入[Marker]对象, 返回`是否已消耗事件`, 如果true则不再弹窗, 如果false则继续弹窗
-typedef Future<bool> OnMarkerClicked(Marker marker);
+/// marker点击事件回调签名 输入[Marker]对象
+typedef Future<void> OnMarkerClicked(Marker marker);
 
 /// 地图点击事件回调签名
 typedef Future<void> OnMapClicked(LatLng latLng);
@@ -1671,6 +1671,53 @@ class AmapController with WidgetsBindingObserver {
     );
   }
 
+  /// 自定义弹窗
+  Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
+    final imageData = (await _state.widgetToImageData([widget]))[0];
+
+    // 准备弹窗需要的数据
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+        await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod(
+          'com.amap.api.maps.AMap::setInfoWindowAdapterX',
+          {'refId': map.refId},
+        );
+        final bitmap = await android_graphics_Bitmap.create(imageData);
+        await pushStack('infoWindow', bitmap);
+
+        pool..add(map)..add(bitmap);
+      },
+      ios: (pool) async {
+        // 创建弹窗view
+        final bitmap = await UIImage.create(imageData);
+        final imageView = await UIImageView.create(bitmap);
+
+        final frame = await imageView.frame;
+        final width = await frame.width;
+        final height = await frame.height;
+
+        // 由于默认偏移量是0, 这里根据弹窗view设置一下偏移量
+        await marker.annotationView.set_calloutOffset(
+            await CGPoint.create(-width / 2, -height),
+            viewChannel: false);
+
+        // 创建自定义弹窗
+        final calloutView = await MACustomCalloutView.create__();
+        await calloutView.initWithCustomView(imageView, viewChannel: false);
+
+        // 设置自定义弹窗
+        await marker.annotationView
+            .set_customCalloutView(calloutView, viewChannel: false);
+
+        pool..add(bitmap)..add(imageView)..add(calloutView);
+      },
+    );
+
+    // 显示弹窗
+    await marker.showInfoWindow();
+  }
+
   /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(
@@ -2602,9 +2649,7 @@ class _AndroidMapDelegate extends java_lang_Object
   Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
     super.onMarkerClick(var1);
     if (_onMarkerClicked != null) {
-      if (!await _onMarkerClicked(Marker.android(var1))) {
-        await var1.showInfoWindow();
-      }
+      await _onMarkerClicked(Marker.android(var1));
     }
     return true;
   }
