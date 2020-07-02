@@ -4087,6 +4087,8 @@ extern BOOL enableLog;
       if (visible != nil && (NSNull*) visible != [NSNull null]) {
           annotationView.hidden = ![visible boolValue];
       }
+      // 去掉默认的弹窗
+      annotationView.canShowCallout = false;
       return annotationView;
   }
   ////////////////////////////////////////////////////////////////////////////////

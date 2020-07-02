@@ -4,53 +4,68 @@
 
 package me.yohom.amap_map_fluttify.sub_handler.custom;
 
-import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import com.amap.api.maps.AMap;
+import com.amap.api.maps.model.Marker;
+
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import androidx.annotation.NonNull;
-import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
-import io.flutter.plugin.common.MethodCall;
-import io.flutter.plugin.common.MethodChannel;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
-import io.flutter.plugin.platform.PlatformViewRegistry;
-
 import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
+import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getSTACK;
 
 @SuppressWarnings("ALL")
 public class SubHandlerCustom {
-    public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
+    public static Map<String, Handler> getSubHandler(BinaryMessenger messenger, Activity activity) {
         return new HashMap<String, Handler>() {{
-            put("", (args, methodResult) -> {
-                // args
-
+            put("com.amap.api.maps.AMap::setInfoWindowAdapterX", (__args__, __methodResult__) -> {
                 // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.AMap ref = (com.amap.api.maps.AMap) getHEAP().get(refId);
 
                 // invoke native method
                 try {
+                    ref.setInfoWindowAdapter(new AMap.InfoWindowAdapter() {
+                        @Override
+                        public View getInfoWindow(Marker marker) {
+                            Bitmap bitmap = (Bitmap) getSTACK().get("infoWindow");
+                            ImageView view = new ImageView(activity);
+                            view.setBackgroundColor(Color.TRANSPARENT);
+                            view.setImageBitmap(bitmap);
 
+                            // 调用完成后清空栈
+                            getSTACK().clear();
+                            return view;
+                        }
+
+                        @Override
+                        public View getInfoContents(Marker marker) {
+                            return null;
+                        }
+                    });
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
                         Log.d("Current HEAP: ", getHEAP().toString());
                     }
-                    methodResult.error(throwable.getMessage(), null, null);
+                    __methodResult__.error(throwable.getMessage(), null, null);
                     return;
                 }
 
                 // convert result to jsonable result
                 String jsonableResult = "success";
 
-                methodResult.success(jsonableResult);
+                __methodResult__.success(jsonableResult);
             });
         }};
     }

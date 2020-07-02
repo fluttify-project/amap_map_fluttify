@@ -4,13 +4,10 @@
 
 package me.yohom.amap_map_fluttify;
 
-import android.os.Bundle;
-import android.util.Log;
 import android.app.Activity;
+import android.util.Log;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,12 +20,22 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 import io.flutter.plugin.platform.PlatformViewRegistry;
-
-import me.yohom.amap_map_fluttify.sub_handler.*;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler0;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler1;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler10;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler11;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler12;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler2;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler3;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler4;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler5;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler6;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler7;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler8;
+import me.yohom.amap_map_fluttify.sub_handler.SubHandler9;
 import me.yohom.amap_map_fluttify.sub_handler.custom.SubHandlerCustom;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
-import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
 
 @SuppressWarnings("ALL")
 public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodCallHandler, ActivityAware {
@@ -62,7 +69,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
         handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
+        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger, registrar.activity()));
 
         channel.setMethodCallHandler(plugin);
 
@@ -102,7 +109,6 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         handlerMapList.add(SubHandler10.getSubHandler(messenger));
         handlerMapList.add(SubHandler11.getSubHandler(messenger));
         handlerMapList.add(SubHandler12.getSubHandler(messenger));
-        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger));
 
         channel.setMethodCallHandler(this);
     }
@@ -121,6 +127,7 @@ public class AmapMapFluttifyPlugin implements FlutterPlugin, MethodChannel.Metho
         }
         Activity activity = binding.getActivity();
 
+        handlerMapList.add(SubHandlerCustom.getSubHandler(messenger, activity));
         // register platform view
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.offlinemap.DownloadProgressView", new DownloadProgressViewFactory(messenger, activity));
         platformViewRegistry.registerViewFactory("me.yohom/com.amap.api.maps.TextureMapView", new TextureMapViewFactory(messenger, activity));
