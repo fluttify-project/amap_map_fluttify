@@ -333,6 +333,8 @@ class AmapService {
       },
     );
   }
+
+  /// TODO 获取静态图片 https://blog.csdn.net/itlsq/article/details/85618017
 }
 
 class _TraceListener extends java_lang_Object
