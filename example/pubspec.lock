@@ -21,7 +21,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.23.4-dev.1"
+    version: "0.23.4-dev.2"
   analyzer:
     dependency: transitive
     description:
@@ -98,7 +98,7 @@ packages:
       name: core_location_fluttify
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.1"
+    version: "0.2.3"
   coverage:
     dependency: transitive
     description:
