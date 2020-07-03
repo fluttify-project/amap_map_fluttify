@@ -19,8 +19,8 @@ Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)编译
 
 ## 👨🏻‍💻&nbsp;DEMO 与 社区
 
-| Demo | QQ1群(已满)) | QQ2群 |
-| :----------: | :----------: |
+| Demo | QQ1群(已满) | QQ2群 |
+| :----------: | :----------: | :----------: |
 | 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> <img src="assets/amap_map_fluttify_apk.png" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-project/blob/master/resources/1593774713224_temp_qrcode_share_9993.png?raw=true" height="300"> | 加入QQ群讨论 <br/> <img src="https://github.com/fluttify-project/fluttify-project/blob/master/resources/qrcode_1593774649831.jpg?raw=true" height="300"> |
 
 ## 📱&nbsp;如何使用
