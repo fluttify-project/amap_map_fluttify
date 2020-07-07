@@ -144,19 +144,6 @@ class AmapController with WidgetsBindingObserver {
           // 定位间隔
           await locationStyle.interval(option.interval.inMilliseconds);
 
-          // 定位图标 兼容代码
-          if (option.iconUri != null) {
-            final imageData = await uri2ImageData(
-              option.imageConfiguration,
-              option.iconUri,
-              package: option.package,
-            );
-            final bitmap = await android_graphics_Bitmap.create(imageData);
-            final bitmapDescriptor =
-                await com_amap_api_maps_model_BitmapDescriptorFactory
-                    .fromBitmap(bitmap);
-            await locationStyle.myLocationIcon(bitmapDescriptor);
-          }
           // 定位图标
           if (option.iconProvider != null) {
             final imageData = await option.iconProvider
@@ -240,16 +227,6 @@ class AmapController with WidgetsBindingObserver {
 
           final style = await MAUserLocationRepresentation.create__();
 
-          // 定位图标 兼容代码
-          if (option.iconUri != null) {
-            final imageData = await uri2ImageData(
-              option.imageConfiguration,
-              option.iconUri,
-              package: option.package,
-            );
-            final bitmap = await UIImage.create(imageData);
-            await style.set_image(bitmap);
-          }
           // 定位图标
           if (option.iconProvider != null) {
             final imageData = await option.iconProvider

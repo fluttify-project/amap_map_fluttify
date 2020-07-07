@@ -14,17 +14,11 @@ class MyLocationOption {
     this.show = true,
     this.myLocationType = MyLocationType.Locate,
     this.interval = Duration.zero,
-    @Deprecated('使用iconProvider代替') this.iconUri,
-    @Deprecated('已不需要') this.package,
-    @Deprecated('使用iconProvider代替') this.imageConfiguration,
     this.strokeColor,
     this.strokeWidth,
     this.fillColor,
     this.iconProvider,
-  }) : assert(
-          (iconUri != null && imageConfiguration != null) || iconUri == null,
-          'iconUri与imageConfiguration同时设置!',
-        );
+  });
 
   /// 是否显示
   final bool show;
@@ -34,18 +28,6 @@ class MyLocationOption {
 
   /// 定位间隔
   final Duration interval;
-
-  /// 我的位置图标
-  @Deprecated('使用iconProvider代替')
-  final Uri iconUri;
-
-  /// 图片所在package, 通AssetImage构造器里的package参数
-  @Deprecated('使用iconProvider代替')
-  final String package;
-
-  /// 图标配置
-  @Deprecated('已不需要')
-  final ImageConfiguration imageConfiguration;
 
   /// 边框颜色
   final Color strokeColor;
@@ -63,7 +45,7 @@ class MyLocationOption {
 
   @override
   String toString() {
-    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, iconUri: $iconUri, package: $package, imageConfiguration: $imageConfiguration, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor}';
+    return 'MyLocationOption{show: $show, myLocationType: $myLocationType, interval: $interval, strokeColor: $strokeColor, strokeWidth: $strokeWidth, fillColor: $fillColor, iconProvider: $iconProvider}';
   }
 }
 
