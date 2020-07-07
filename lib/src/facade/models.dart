@@ -564,7 +564,7 @@ class Marker {
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => androidModel.showInfoWindow(),
-      ios: (_) => iosController?.selectAnnotation_animated(iosModel, true),
+      ios: (_) => iosController.selectAnnotation_animated(iosModel, true),
     );
   }
 

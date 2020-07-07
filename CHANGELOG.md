@@ -1,3 +1,7 @@
+## 1.0.0
+- chore: 清除deprecated接口
+- enhance: 增加autoRelease参数, 控制是否自动释放对象
+
 ## 0.23.4
 - enhance: 优化批量widget marker速度
 - feat: 设置地图长按监听事件
