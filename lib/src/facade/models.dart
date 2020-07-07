@@ -74,9 +74,7 @@ class MarkerOption {
     @required this.latLng,
     this.title = '',
     this.snippet = '',
-    @Deprecated('使用iconProvider代替') this.iconUri,
     this.widget,
-    @Deprecated('使用iconProvider代替') this.imageConfig,
     this.draggable = false,
     this.infoWindowEnabled = true,
     this.visible = true,
@@ -84,14 +82,9 @@ class MarkerOption {
     this.anchorU = 0.5,
     this.anchorV = 0,
     this.object,
-    @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height') this.width,
-    @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height') this.height,
     this.iconProvider,
-  })  : assert(
-          (iconUri != null && imageConfig != null) || iconUri == null,
-          'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
-        ),
-        assert(!(widget != null && iconUri != null), 'widget和iconUri不能同时设置! ');
+  }) : assert(!(widget != null && iconProvider != null),
+            'widget和iconProvider不能同时设置! ');
 
   /// 经纬度
   final LatLng latLng;
@@ -102,17 +95,9 @@ class MarkerOption {
   /// 副标题
   final String snippet;
 
-  /// 图片uri 可以是url, asset路径或者文件路径
-  @Deprecated('使用iconProvider代替')
-  final Uri iconUri;
-
-  /// 图片参数
-  @Deprecated('使用iconProvider代替')
-  final ImageConfiguration imageConfig;
-
   /// Widget形式的Marker
   ///
-  /// 不能和[iconUri]一起用.
+  /// 不能和[iconProvider]一起用.
   /// 注意控制Widget的大小, 比如Column默认是max, 会使用地图的高度, 那么此时需要设置成min.
   final Widget widget;
 
@@ -137,20 +122,12 @@ class MarkerOption {
   /// 自定义数据 理论上可以使用任何类型的数据, 但是为了减少意外情况, 这里一律转换成String来保存
   final String object;
 
-  /// 图片宽度 iOS only
-  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
-  final double width;
-
-  /// 图片高度 iOS only
-  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
-  final double height;
-
   /// 图标
   final ImageProvider iconProvider;
 
   @override
   String toString() {
-    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, iconUri: $iconUri, imageConfig: $imageConfig, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, visible: $visible, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object}';
+    return 'MarkerOption{latLng: $latLng, title: $title, snippet: $snippet, widget: $widget, draggable: $draggable, infoWindowEnabled: $infoWindowEnabled, visible: $visible, rotateAngle: $rotateAngle, anchorU: $anchorU, anchorV: $anchorV, object: $object, iconProvider: $iconProvider}';
   }
 }
 
@@ -160,17 +137,6 @@ class SmoothMoveMarkerOption {
   /// 轨迹经纬度列表
   final List<LatLng> path;
 
-  /// 图片uri 可以是url, asset路径或者文件路径
-  ///
-  /// 如果设置了[iconUri], 那么必须同时设置[imageConfig], 否则图片大小会不一致, 这是flutter
-  /// 的bug
-  @Deprecated('使用iconProvider代替')
-  final Uri iconUri;
-
-  /// 图片参数
-  @Deprecated('使用iconProvider代替')
-  final ImageConfiguration imageConfig;
-
   /// 图标
   final ImageProvider iconProvider;
 
@@ -179,18 +145,13 @@ class SmoothMoveMarkerOption {
 
   SmoothMoveMarkerOption({
     @required this.path,
-    @Deprecated('使用iconProvider代替') this.iconUri,
-    @Deprecated('使用iconProvider代替') this.imageConfig,
     @required this.duration,
     @required this.iconProvider,
-  }) : assert(
-          (iconUri != null && imageConfig != null) || iconUri == null,
-          'iconUri和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
-        );
+  });
 
   @override
   String toString() {
-    return 'SmoothMoveMarkerOption{path: $path, iconUri: $iconUri, imageConfig: $imageConfig, duration: $duration}';
+    return 'SmoothMoveMarkerOption{path: $path, iconProvider: $iconProvider, duration: $duration}';
   }
 }
 
@@ -207,10 +168,7 @@ class PolylineOption {
   final Color strokeColor;
 
   /// 自定义纹理
-  final Uri customTexture;
-
-  /// 图片参数
-  final ImageConfiguration imageConfig;
+  final ImageProvider textureProvider;
 
   /// 线段末端样式
   final LineCapType lineCapType;
@@ -225,20 +183,15 @@ class PolylineOption {
     @required this.latLngList,
     this.width = 5,
     this.strokeColor = Colors.green,
-    this.customTexture,
-    this.imageConfig,
+    this.textureProvider,
     this.lineCapType,
     this.lineJoinType,
     this.dashType,
-  }) : assert(
-          (customTexture != null && imageConfig != null) ||
-              customTexture == null,
-          'customTexture和imageConfig必须同时设置! 如果想要一个默认的imageConfig, 那么就直接调用[createLocalImageConfiguration]方法来创建!',
-        );
+  });
 
   @override
   String toString() {
-    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, customTexture: $customTexture, imageConfig: $imageConfig, lineCapType: $lineCapType, lineJoinType: $lineJoinType, dotted: $dashType}';
+    return 'PolylineOption{latLngList: $latLngList, width: $width, strokeColor: $strokeColor, textureProvider: $textureProvider, lineCapType: $lineCapType, lineJoinType: $lineJoinType, dashType: $dashType}';
   }
 }
 
@@ -324,22 +277,17 @@ class HeatmapTileOption {
 class GroundOverlayOption {
   final LatLng southWest;
   final LatLng northEast;
-  final Uri imageUri;
-  final ImageConfiguration imageConfiguration;
+  final ImageProvider imageProvider;
 
   GroundOverlayOption({
     @required this.southWest,
     @required this.northEast,
-    @required this.imageUri,
-    @required this.imageConfiguration,
-  }) : assert(
-          (imageUri != null && imageConfiguration != null) || imageUri == null,
-          'imageUri与imageConfiguration同时设置!',
-        );
+    @required this.imageProvider,
+  });
 
   @override
   String toString() {
-    return 'GroundOverlayOption{southWest: $southWest, northEast: $northEast, imageUri: $imageUri, imageConfiguration: $imageConfiguration}';
+    return 'GroundOverlayOption{southWest: $southWest, northEast: $northEast, imageProvider: $imageProvider}';
   }
 }
 
@@ -349,32 +297,17 @@ class MultiPointOption {
   /// 点列表
   final List<PointOption> pointList;
 
-  /// 图片uri
-  @Deprecated('使用iconProvider代替')
-  final Uri iconUri;
-
-  /// 图片配置
-  @Deprecated('使用iconProvider代替')
-  final ImageConfiguration imageConfiguration;
-
-  /// 图片大小 仅限ios
-  @Deprecated('从0.23.0开始会自适应大小, 不再需要设置width和height')
-  final Size size;
-
   /// 图标
   final ImageProvider iconProvider;
 
   MultiPointOption({
     @required this.pointList,
-    @Deprecated('使用iconProvider代替') this.iconUri,
-    @Deprecated('使用iconProvider代替') this.imageConfiguration,
-    this.size,
     this.iconProvider,
   });
 
   @override
   String toString() {
-    return 'MultiPointOption{pointList: $pointList, iconUri: $iconUri, imageConfiguration: $imageConfiguration, size: $size}';
+    return 'MultiPointOption{pointList: $pointList, iconProvider: $iconProvider}';
   }
 }
 
@@ -631,7 +564,7 @@ class Marker {
   Future<void> showInfoWindow() async {
     return platform(
       android: (_) => androidModel.showInfoWindow(),
-      ios: (_) => iosController?.selectAnnotation_animated(iosModel, true),
+      ios: (_) => iosController.selectAnnotation_animated(iosModel, true),
     );
   }
 

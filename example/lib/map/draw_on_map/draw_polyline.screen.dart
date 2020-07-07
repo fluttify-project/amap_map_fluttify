@@ -4,9 +4,10 @@ import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
 
-final _networkIcon = Uri.parse(
+final _networkIcon = NetworkImage(
     'https://w3.hoopchina.com.cn/30/a7/6a/30a76aea75aef69e4ea0e7d3dee552c7001.jpg');
-final _assetsIcon = Uri.parse('images/arrow.png');
+final _assetsIcon1 = AssetImage('images/test_icon.png');
+final _assetsIcon2 = AssetImage('images/arrow.png');
 
 class DrawPolylineScreen extends StatefulWidget {
   DrawPolylineScreen();
@@ -90,8 +91,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                         getNextLatLng(),
                       ],
                       width: 10,
-                      customTexture: _assetsIcon,
-                      imageConfig: createLocalImageConfiguration(context),
+                      textureProvider: _assetsIcon2,
                     ));
                   },
                 ),
