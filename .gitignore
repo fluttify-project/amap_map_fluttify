@@ -7,3 +7,4 @@
 build/
 
 *.iml
+!/amap_map_fluttify.iml
