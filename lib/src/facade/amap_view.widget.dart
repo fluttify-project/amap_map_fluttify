@@ -20,6 +20,14 @@ part 'amap_controller.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
 
+void releaseAmapObjectPool() {
+  final isCurrentPlugin = (Ref it) => it?.tag__ == 'amap_map_fluttify';
+  kNativeObjectPool
+      .where(isCurrentPlugin)
+      .release_batch()
+      .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
+}
+
 /// 高德地图 Widget
 class AmapView extends StatefulWidget {
   const AmapView({
@@ -42,6 +50,7 @@ class AmapView extends StatefulWidget {
     this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
+    this.autoRelease = true,
   })  : assert(
           zoomLevel == null || (zoomLevel >= 3 && zoomLevel <= 19),
           '缩放范围为3-19',
@@ -104,6 +113,12 @@ class AmapView extends StatefulWidget {
 
   /// 遮盖地图层的widget
   final Widget mask;
+
+  /// 是否在dispose时释放amap_map_fluttify插件所创建的原生对象
+  ///
+  /// 如果你在多个页面有地图widget时, 就设置为false, 防止第二个(以及后续的)地图页面dispose时,
+  /// 释放掉了第一个地图页面创建的原生对象, 导致第一个地图所有方法都失效.
+  final bool autoRelease;
 
   @override
   _AmapViewState createState() => _AmapViewState();
@@ -198,18 +213,7 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   void dispose() {
-//    print('释放tag为amap_${_controller.hashCode}的对象');
-//    final isCurrentMap = (Ref it) => it.tag__ == 'amap_${_controller.hashCode}';
-//    kNativeObjectPool
-//        .where(isCurrentMap)
-//        .release_batch()
-//        .then((_) => kNativeObjectPool.removeWhere(isCurrentMap));
-//    super.dispose();
-    final isCurrentPlugin = (Ref it) => it?.tag__ == 'amap_map_fluttify';
-    kNativeObjectPool
-        .where(isCurrentPlugin)
-        .release_batch()
-        .then((_) => kNativeObjectPool.removeWhere(isCurrentPlugin));
+    if (widget.autoRelease) releaseAmapObjectPool();
     super.dispose();
   }
 
