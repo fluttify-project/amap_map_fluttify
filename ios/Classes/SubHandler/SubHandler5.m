@@ -1302,9 +1302,9 @@ extern BOOL enableLog;
             // args
             // list arg
             NSArray<NSNumber*>* selectedAnnotationsRefArray = (NSArray<NSNumber*> *) args[@"selectedAnnotations"];
-            NSMutableArray<NSArray*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
+            NSMutableArray<NSObject*>* selectedAnnotations = [NSMutableArray arrayWithCapacity:selectedAnnotationsRefArray.count];
             for (int __i__ = 0; __i__ < selectedAnnotationsRefArray.count; __i__++) {
-                NSArray* item = (NSArray*) HEAP[[selectedAnnotationsRefArray objectAtIndex:__i__]];
+                NSObject* item = (NSObject*) HEAP[[selectedAnnotationsRefArray objectAtIndex:__i__]];
                 [selectedAnnotations addObject:item];
             }
         
@@ -1754,9 +1754,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* dataRefArray = (NSArray<NSNumber*> *) args[@"data"];
-                NSMutableArray<NSArray<MAHeatMapNode*>*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
+                NSMutableArray<MAHeatMapNode*>* data = [NSMutableArray arrayWithCapacity:dataRefArray.count];
                 for (int __i__ = 0; __i__ < dataRefArray.count; __i__++) {
-                    NSArray<MAHeatMapNode*>* item = (NSArray<MAHeatMapNode*>*) HEAP[[dataRefArray objectAtIndex:__i__]];
+                    MAHeatMapNode* item = (MAHeatMapNode*) HEAP[[dataRefArray objectAtIndex:__i__]];
                     [data addObject:item];
                 }
         
@@ -2147,9 +2147,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* strokeColorsRefArray = (NSArray<NSNumber*> *) args[@"strokeColors"];
-                NSMutableArray<NSArray<UIColor*>*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
+                NSMutableArray<UIColor*>* strokeColors = [NSMutableArray arrayWithCapacity:strokeColorsRefArray.count];
                 for (int __i__ = 0; __i__ < strokeColorsRefArray.count; __i__++) {
-                    NSArray<UIColor*>* item = (NSArray<UIColor*>*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
+                    UIColor* item = (UIColor*) HEAP[[strokeColorsRefArray objectAtIndex:__i__]];
                     [strokeColors addObject:item];
                 }
         
@@ -2206,9 +2206,9 @@ extern BOOL enableLog;
                 // args
                 // list arg
                 NSArray<NSNumber*>* strokeTextureImagesRefArray = (NSArray<NSNumber*> *) args[@"strokeTextureImages"];
-                NSMutableArray<NSArray*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
+                NSMutableArray<NSObject*>* strokeTextureImages = [NSMutableArray arrayWithCapacity:strokeTextureImagesRefArray.count];
                 for (int __i__ = 0; __i__ < strokeTextureImagesRefArray.count; __i__++) {
-                    NSArray* item = (NSArray*) HEAP[[strokeTextureImagesRefArray objectAtIndex:__i__]];
+                    NSObject* item = (NSObject*) HEAP[[strokeTextureImagesRefArray objectAtIndex:__i__]];
                     [strokeTextureImages addObject:item];
                 }
         

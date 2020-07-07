@@ -94,8 +94,8 @@ class MapViewFactory extends PlatformViewFactory {
         put("com.amap.api.maps.MapView::onCreate", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-            android.os.Bundle var1 = __var1__ != null ? (android.os.Bundle) getHEAP().get(__var1__) : null;
+            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
         
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -251,8 +251,8 @@ class MapViewFactory extends PlatformViewFactory {
         put("com.amap.api.maps.MapView::onSaveInstanceState", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            Integer __var1__ = (Integer) ((Map<String, Object>) __args__).get("var1");
-            android.os.Bundle var1 = __var1__ != null ? (android.os.Bundle) getHEAP().get(__var1__) : null;
+            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
         
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
@@ -318,8 +318,8 @@ class MapViewFactory extends PlatformViewFactory {
     public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
         // ref arg
-        Integer __var2__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-        com.amap.api.maps.AMapOptions var2 = __var2__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2__) : null;
+        Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+        com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
 
         com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity, var2);
         getHEAP().put(Integer.MAX_VALUE - id, view);
