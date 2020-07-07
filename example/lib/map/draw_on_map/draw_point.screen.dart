@@ -94,6 +94,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         title: '北京${random.nextDouble()}',
                         snippet: '描述${random.nextDouble()}',
                         iconProvider: _assetsIcon1,
+                        infoWindowEnabled: true,
                         object: '自定义数据${random.nextDouble()}',
                       ),
                     );
@@ -110,7 +111,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                           child: Text(await marker.title),
                         ),
                       );
-                      return true;
                     });
                     _markers.add(marker);
                   },

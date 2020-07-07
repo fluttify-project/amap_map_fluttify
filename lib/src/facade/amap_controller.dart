@@ -817,7 +817,6 @@ class AmapController with WidgetsBindingObserver {
         await markerOption.visible(option.visible);
 
         final marker = await map.addMarker(markerOption);
-        print('当前marker的tag: amap_$hashCode');
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
           await marker.setInfoWindowEnable(option.infoWindowEnabled);
@@ -1660,10 +1659,16 @@ class AmapController with WidgetsBindingObserver {
         final width = await frame.width;
         final height = await frame.height;
 
+        // 去掉默认的弹窗
+        await marker.annotationView.set_canShowCallout(
+          false,
+          viewChannel: false,
+        );
         // 由于默认偏移量是0, 这里根据弹窗view设置一下偏移量
         await marker.annotationView.set_calloutOffset(
-            await CGPoint.create(-width / 2, -height),
-            viewChannel: false);
+          await CGPoint.create(-width / 2, -height),
+          viewChannel: false,
+        );
 
         // 创建自定义弹窗
         final calloutView = await MACustomCalloutView.create__();
