@@ -779,18 +779,6 @@ class AmapController with WidgetsBindingObserver {
           await markerOption.snippet(option.snippet);
         }
         // 设置marker图标
-        // 普通图片 兼容代码
-        if (option.iconUri != null && option.imageConfig != null) {
-          Uint8List iconData =
-              await uri2ImageData(option.imageConfig, option.iconUri);
-
-          final bitmap = await android_graphics_Bitmap.create(iconData);
-          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
-              .fromBitmap(bitmap);
-          await markerOption.icon(icon);
-
-          pool..add(bitmap)..add(icon);
-        }
         // 普通图片
         if (option.iconProvider != null) {
           Uint8List iconData = await option.iconProvider
@@ -869,18 +857,6 @@ class AmapController with WidgetsBindingObserver {
           await annotation.set_subtitle(option.snippet);
         }
         // 设置图片
-        // 普通图片 兼容代码
-        if (option.iconUri != null && option.imageConfig != null) {
-          Uint8List iconData =
-              await uri2ImageData(option.imageConfig, option.iconUri);
-
-          final icon = await UIImage.create(iconData);
-
-          // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty__(1, icon);
-
-          pool..add(icon);
-        }
         // 普通图片
         if (option.iconProvider != null) {
           Uint8List iconData = await option.iconProvider
@@ -968,8 +944,6 @@ class AmapController with WidgetsBindingObserver {
           if (option.iconProvider != null)
             option.iconProvider
                 .toImageData(createLocalImageConfiguration(_state.context))
-          else if (option.iconUri != null && option.imageConfig != null)
-            uri2ImageData(option.imageConfig, option.iconUri),
       ]),
       ...await _state.widgetToImageData(options
           .where((element) => element.widget != null)
@@ -1274,12 +1248,13 @@ class AmapController with WidgetsBindingObserver {
   /// 添加折线
   ///
   /// 可配置参数详见[PolylineOption]
-  Future<Polyline> addPolyline(PolylineOption option) {
+  Future<Polyline> addPolyline(PolylineOption option) async {
     assert(option != null);
 
     final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
     final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
-
+    final textureData = await option.textureProvider
+        ?.toImageData(createLocalImageConfiguration(_state.context));
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -1306,10 +1281,8 @@ class AmapController with WidgetsBindingObserver {
               .color(Int32List.fromList([option.strokeColor.value])[0]);
         }
         // 自定义贴图
-        if (option.customTexture != null && option.imageConfig != null) {
-          Uint8List iconData =
-              await uri2ImageData(option.imageConfig, option.customTexture);
-          final bitmap = await android_graphics_Bitmap.create(iconData);
+        if (textureData != null) {
+          final bitmap = await android_graphics_Bitmap.create(textureData);
           final texture = await com_amap_api_maps_model_BitmapDescriptorFactory
               .fromBitmap(bitmap);
           await polylineOptions.setCustomTexture(texture);
@@ -1378,10 +1351,7 @@ class AmapController with WidgetsBindingObserver {
           polyline.addJsonableProperty__(2, option.strokeColor.value);
         }
         // 设置图片
-        if (option.customTexture != null && option.imageConfig != null) {
-          Uint8List textureData =
-              await uri2ImageData(option.imageConfig, option.customTexture);
-
+        if (textureData != null) {
           final texture = await UIImage.create(textureData);
 
           polyline.addProperty__(3, texture);
@@ -1587,9 +1557,7 @@ class AmapController with WidgetsBindingObserver {
     final snippetBatch = option.pointList.map((it) => it.snippet).toList();
     final objectBatch = option.pointList.map((it) => it.object).toList();
     Uint8List iconData;
-    if (option.iconUri != null && option.imageConfiguration != null) {
-      iconData = await uri2ImageData(option.imageConfiguration, option.iconUri);
-    } else if (option.iconProvider != null) {
+    if (option.iconProvider != null) {
       iconData = await option.iconProvider
           .toImageData(createLocalImageConfiguration(_state.context));
     }
@@ -1649,11 +1617,6 @@ class AmapController with WidgetsBindingObserver {
           final bitmap = await UIImage.create(iconData);
           await overlay.addProperty__(1, bitmap);
           pool.add(bitmap);
-        }
-        // 设置图片大小
-        if (option.size != null) {
-          await overlay.addJsonableProperty__(2, option.size.width);
-          await overlay.addJsonableProperty__(3, option.size.height);
         }
         await pointItemList.set_coordinate_batch(latLngBatch);
         await pointItemList.set_customID_batch(idBatch);
@@ -2233,6 +2196,8 @@ class AmapController with WidgetsBindingObserver {
   /// 添加图片覆盖物
   Future<GroundOverlay> addGroundOverlay(GroundOverlayOption option) async {
     assert(option != null);
+    final imageData = await option.imageProvider
+        .toImageData(createLocalImageConfiguration(_state.context));
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -2254,10 +2219,7 @@ class AmapController with WidgetsBindingObserver {
         await groundOverlayOption.positionFromBounds(bounds);
 
         // 创建图片
-        final bitmap = await android_graphics_Bitmap.create(await uri2ImageData(
-          option.imageConfiguration,
-          option.imageUri,
-        ));
+        final bitmap = await android_graphics_Bitmap.create(imageData);
         final descriptor = await com_amap_api_maps_model_BitmapDescriptorFactory
             .fromBitmap(bitmap);
         await groundOverlayOption.image(descriptor);
@@ -2289,10 +2251,7 @@ class AmapController with WidgetsBindingObserver {
         final bounds =
             await MACoordinateBoundsMake(northEastPoint, southWestPoint);
 
-        final bitmap = await UIImage.create(await uri2ImageData(
-          option.imageConfiguration,
-          option.imageUri,
-        ));
+        final bitmap = await UIImage.create(imageData);
         final overlay =
             await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
 
