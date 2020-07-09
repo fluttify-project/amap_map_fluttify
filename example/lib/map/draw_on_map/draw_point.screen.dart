@@ -269,7 +269,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ListTile(
                   title: Center(child: Text('画热力图')),
                   onTap: () async {
-                    await _controller?.addHeatmapTile(
+                    await _controller?.addHeatmapTileOverlay(
                       HeatmapTileOption(latLngList: getNextBatchLatLng(50)),
                     );
                   },
