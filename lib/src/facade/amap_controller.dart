@@ -2107,7 +2107,7 @@ class AmapController with WidgetsBindingObserver {
   }
 
   /// 添加热力图
-  Future<Heatmap> addHeatmapTile(HeatmapTileOption option) async {
+  Future<HeatmapOverlay> addHeatmapTileOverlay(HeatmapTileOption option) async {
     assert(option != null);
     return platform(
       android: (pool) async {
@@ -2138,7 +2138,7 @@ class AmapController with WidgetsBindingObserver {
           ..addAll(latLngList)
           ..add(tileOverlayOption);
 
-        return Heatmap.android(heatmap);
+        return HeatmapOverlay.android(heatmap);
       },
       ios: (pool) async {
         await iosController.set_delegate(_iosMapDelegate);
@@ -2170,7 +2170,7 @@ class AmapController with WidgetsBindingObserver {
 
         pool.addAll(nodeList);
 
-        return Heatmap.ios(overlay, iosController);
+        return HeatmapOverlay.ios(overlay, iosController);
       },
     );
   }

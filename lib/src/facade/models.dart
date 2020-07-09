@@ -669,10 +669,10 @@ class Circle {
 }
 
 /// 热力图
-class Heatmap {
-  Heatmap.android(this._androidModel);
+class HeatmapOverlay {
+  HeatmapOverlay.android(this._androidModel);
 
-  Heatmap.ios(this._iosModel, this._iosController);
+  HeatmapOverlay.ios(this._iosModel, this._iosController);
 
   com_amap_api_maps_model_TileOverlay _androidModel;
   MAHeatMapTileOverlay _iosModel;
