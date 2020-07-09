@@ -275,6 +275,20 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
+                  title: Center(child: Text('添加在线瓦片图')),
+                  onTap: () async {
+                    await _controller?.addUrlTileOverlay(
+                      UrlTileOption(
+                        width: 256,
+                        height: 256,
+                        urlTemplate:
+//                        'http://tile.opencyclemap.org/cycle/{scale}/{x}/{y}.png', // 由于没有api key, 这个链接无法显示瓦片
+                            'https://c2.hoopchina.com.cn/uploads/star/event/images/200709/bmiddle-34faa76c78ff3ba7a67282d64ff3c081135d4743.jpg?x-oss-process=image/resize,w_780,312',
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
                   title: Center(child: Text('添加平滑移动点')),
                   onTap: () async {
                     _moveMarker = await _controller?.addSmoothMoveMarker(

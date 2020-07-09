@@ -14,6 +14,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
+import 'extensions.dart';
 import 'models.dart';
 
 part 'amap_controller.dart';
