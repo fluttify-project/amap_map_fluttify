@@ -48,6 +48,12 @@ class MAMapCustomStyleOptions extends NSObject  {
     return NSData()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
+  Future<String> get_styleDataOverseaPath() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath", {'refId': refId});
+  
+    return __result__;
+  }
+  
   Future<String> get_styleId() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId", {'refId': refId});
   
@@ -71,6 +77,12 @@ class MAMapCustomStyleOptions extends NSObject  {
   //region setters
   Future<void> set_styleData(NSData styleData) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData', {'refId': refId, "styleData": styleData.refId});
+  
+  
+  }
+  
+  Future<void> set_styleDataOverseaPath(String styleDataOverseaPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath', {'refId': refId, "styleDataOverseaPath": styleDataOverseaPath});
   
   
   }
@@ -109,6 +121,13 @@ extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
     return typedResult;
   }
   
+  Future<List<String>> get_styleDataOverseaPath_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleDataOverseaPath_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
   Future<List<String>> get_styleId_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMapCustomStyleOptions::get_styleId_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
@@ -135,6 +154,12 @@ extension MAMapCustomStyleOptions_Batch on List<MAMapCustomStyleOptions> {
   //region setters
   Future<void> set_styleData_batch(List<NSData> styleData) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleData_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleData": styleData[__i__].refId}]);
+  
+  
+  }
+  
+  Future<void> set_styleDataOverseaPath_batch(List<String> styleDataOverseaPath) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapCustomStyleOptions::set_styleDataOverseaPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "styleDataOverseaPath": styleDataOverseaPath[__i__]}]);
   
   
   }

@@ -449,6 +449,24 @@ extern BOOL enableLog;
           methodResult(jsonableResult);
       },
       
+      @"MAAnnotationView::get_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_canAdjustPositon");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.canAdjustPositon;
+      
+          // 返回值: Value
+          id jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
       @"MAAnnotationView::set_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // print log
           if (enableLog) {
@@ -691,6 +709,23 @@ extern BOOL enableLog;
           methodResult(@"success");
       },
       
+      @"MAAnnotationView::set_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_canAdjustPositon");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL canAdjustPositon = [args[@"canAdjustPositon"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.canAdjustPositon = canAdjustPositon;
+          methodResult(@"success");
+      },
+      
   };
   //endregion
   return _view;
@@ -881,6 +916,64 @@ extern BOOL enableLog;
 
   dispatch_async(dispatch_get_main_queue(), ^{
       [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
   });
   
 }

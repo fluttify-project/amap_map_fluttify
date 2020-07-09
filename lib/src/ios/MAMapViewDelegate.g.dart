@@ -51,6 +51,24 @@ mixin MAMapViewDelegate on NSObject {
   }
   
   @mustCallSuper
+  Future<void> mapView_regionWillChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('mapView_regionWillChangeAnimated_wasUserAction::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> mapView_regionDidChangeAnimated_wasUserAction(MAMapView mapView, bool animated, bool wasUserAction) {
+    if (mapView is Ref) kNativeObjectPool.add(mapView);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('mapView_regionDidChangeAnimated_wasUserAction::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
   Future<void> mapView_mapWillMoveByUser(MAMapView mapView, bool wasUserAction) {
     if (mapView is Ref) kNativeObjectPool.add(mapView);
   

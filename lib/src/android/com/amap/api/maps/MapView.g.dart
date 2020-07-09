@@ -12,7 +12,7 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
+class com_amap_api_maps_MapView extends android_widget_FrameLayout with com_amap_api_maps_BaseMapView {
   //region constants
   static const String name__ = 'com.amap.api.maps.MapView';
 

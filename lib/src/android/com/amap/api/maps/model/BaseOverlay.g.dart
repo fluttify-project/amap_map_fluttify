@@ -20,19 +20,19 @@ class com_amap_api_maps_model_BaseOverlay extends java_lang_Object  {
   //endregion
 
   //region creators
-  static Future<com_amap_api_maps_model_BaseOverlay> create__() async {
-    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__');
+  static Future<com_amap_api_maps_model_BaseOverlay> create__String(String var1) async {
+    final int refId = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__String', {"var1": var1});
     final object = com_amap_api_maps_model_BaseOverlay()..refId = refId..tag__ = 'amap_map_fluttify';
   
     kNativeObjectPool.add(object);
     return object;
   }
   
-  static Future<List<com_amap_api_maps_model_BaseOverlay>> create_batch__(int length) async {
+  static Future<List<com_amap_api_maps_model_BaseOverlay>> create_batch__String(List<String> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
-    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_BaseOverlay__', {'length': length});
+    final List resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('ObjectFactory::create_batchcom_amap_api_maps_model_BaseOverlay__String', [for (int __i__ = 0; __i__ < var1.length; __i__++) {"var1": var1[__i__]}]);
   
     final List<com_amap_api_maps_model_BaseOverlay> typedResult = resultBatch.map((result) => com_amap_api_maps_model_BaseOverlay()..refId = result..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

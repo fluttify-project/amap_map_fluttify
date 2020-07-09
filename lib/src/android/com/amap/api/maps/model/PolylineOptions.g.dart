@@ -1083,6 +1083,342 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
     }
   }
   
+  
+  Future<com_amap_api_maps_model_PolylineOptions> showPolylineRangeEnabled(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::showPolylineRangeEnabled([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::showPolylineRangeEnabled', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<bool> isShowPolylineRangeEnable() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::isShowPolylineRangeEnable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isShowPolylineRangeEnable', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_PolylineOptions> setPolylineShowRange(double var1, double var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setPolylineShowRange([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setPolylineShowRange', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<double> getPolylineShownRangeBegin() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getPolylineShownRangeBegin([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPolylineShownRangeBegin', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<double> getPolylineShownRangeEnd() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getPolylineShownRangeEnd([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPolylineShownRangeEnd', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_PolylineOptions> setFootPrintTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setFootPrintTexture([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setFootPrintTexture', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_BitmapDescriptor> getFootPrintTexture() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getFootPrintTexture([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getFootPrintTexture', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_PolylineOptions> setFootPrintGap(double var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setFootPrintGap([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setFootPrintGap', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<double> getFootPrintGap() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getFootPrintGap([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getFootPrintGap', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_PolylineOptions> setEraseTexture(bool var1, com_amap_api_maps_model_BitmapDescriptor var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setEraseTexture([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setEraseTexture', {"var1": var1, "var2": var2 is Ref ? (var2 as Ref)?.refId : var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_BitmapDescriptor> getEraseTexture() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getEraseTexture([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseTexture', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<bool> getEraseVisible() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getEraseVisible([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseVisible', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_PolylineOptions> setEraseColor(bool var1, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setEraseColor([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setEraseColor', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<int> getEraseColor() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getEraseColor([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseColor', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   //endregion
 }
 
@@ -1951,6 +2287,286 @@ extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_map
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> showPolylineRangeEnabled_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::showPolylineRangeEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isShowPolylineRangeEnable_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::isShowPolylineRangeEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> setPolylineShowRange_batch(List<double> var1, List<double> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setPolylineShowRange_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> getPolylineShownRangeBegin_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPolylineShownRangeBegin_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> getPolylineShownRangeEnd_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getPolylineShownRangeEnd_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> setFootPrintTexture_batch(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setFootPrintTexture_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_BitmapDescriptor>> getFootPrintTexture_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getFootPrintTexture_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> setFootPrintGap_batch(List<double> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setFootPrintGap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> getFootPrintGap_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getFootPrintGap_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> setEraseTexture_batch(List<bool> var1, List<com_amap_api_maps_model_BitmapDescriptor> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setEraseTexture_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_BitmapDescriptor>> getEraseTexture_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseTexture_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_BitmapDescriptor()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> getEraseVisible_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseVisible_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_PolylineOptions>> setEraseColor_batch(List<bool> var1, List<int> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::setEraseColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<int>> getEraseColor_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.PolylineOptions::getEraseColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

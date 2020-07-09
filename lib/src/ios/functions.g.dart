@@ -13,6 +13,28 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
+Future<MAPathShowRange> MAPathShowRangeMake(double begin, double end) async {
+  // print log
+  if (fluttifyLogEnabled) {
+    debugPrint('fluttify-dart: MAPathShowRangeMake::MAPathShowRangeMake([\'begin\':$begin, \'end\':$end])');
+  }
+
+  // invoke native method
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPathShowRangeMake::MAPathShowRangeMake', {"begin": begin, "end": end});
+  
+
+  // handle native call
+  
+
+  // convert native result to dart side object
+  if (__result__ == null) {
+    return null;
+  } else {
+    kNativeObjectPool.add(MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+}
+
 Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEast, CLLocationCoordinate2D southWest) async {
   // print log
   if (fluttifyLogEnabled) {
@@ -450,6 +472,28 @@ Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocation
   } else {
     
     return __result__;
+  }
+}
+
+Future<MAMapPoint> MAGetNearestMapPointFromPolyline(MAMapPoint point, List<MAMapPoint> polyline, int count) async {
+  // print log
+  if (fluttifyLogEnabled) {
+    debugPrint('fluttify-dart: MAGetNearestMapPointFromPolyline::MAGetNearestMapPointFromPolyline([\'count\':$count])');
+  }
+
+  // invoke native method
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetNearestMapPointFromPolyline::MAGetNearestMapPointFromPolyline', {"point": point is Ref ? (point as Ref)?.refId : point, "polyline": polyline.map((__it__) => __it__?.refId).toList(), "count": count});
+  
+
+  // handle native call
+  
+
+  // convert native result to dart side object
+  if (__result__ == null) {
+    return null;
+  } else {
+    kNativeObjectPool.add(MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
 }
 
@@ -1049,6 +1093,28 @@ Future<double> MAGetDistanceFromPointToLine(MAMapPoint point, MAMapPoint lineBeg
 
   // invoke native method
   final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine', {"point": point is Ref ? (point as Ref)?.refId : point, "lineBegin": lineBegin is Ref ? (lineBegin as Ref)?.refId : lineBegin, "lineEnd": lineEnd is Ref ? (lineEnd as Ref)?.refId : lineEnd});
+  
+
+  // handle native call
+  
+
+  // convert native result to dart side object
+  if (__result__ == null) {
+    return null;
+  } else {
+    
+    return __result__;
+  }
+}
+
+Future<bool> MAPolylineHitTest(List<MAMapPoint> linePoints, int count, MAMapPoint tappedPoint, double lineWidth) async {
+  // print log
+  if (fluttifyLogEnabled) {
+    debugPrint('fluttify-dart: MAPolylineHitTest::MAPolylineHitTest([\'count\':$count, \'lineWidth\':$lineWidth])');
+  }
+
+  // invoke native method
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineHitTest::MAPolylineHitTest', {"linePoints": linePoints.map((__it__) => __it__?.refId).toList(), "count": count, "tappedPoint": tappedPoint is Ref ? (tappedPoint as Ref)?.refId : tappedPoint, "lineWidth": lineWidth});
   
 
   // handle native call

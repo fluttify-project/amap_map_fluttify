@@ -51,6 +51,53 @@ class com_amap_api_maps_model_Gradient extends java_lang_Object  {
 
   //region methods
   
+  Future<Int32List> getColors() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Gradient@$refId::getColors([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Gradient::getColors', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__ as Int32List;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<Float64List> getStartPoints() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.Gradient@$refId::getStartPoints([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Gradient::getStartPoints', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__ as Float64List;
+    
+      return __return__;
+    }
+  }
+  
   //endregion
 }
 
@@ -64,6 +111,45 @@ extension com_amap_api_maps_model_Gradient_Batch on List<com_amap_api_maps_model
   //endregion
 
   //region methods
+  
+  Future<List<Int32List>> getColors_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Gradient::getColors_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<Int32List>().map((__result__) => __result__ as Int32List).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<Float64List>> getStartPoints_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.Gradient::getStartPoints_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<Float64List>().map((__result__) => __result__ as Float64List).toList();
+    
+      return typedResult;
+    }
+  }
   
   //endregion
 }

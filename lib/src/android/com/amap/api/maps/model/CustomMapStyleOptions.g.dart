@@ -434,6 +434,102 @@ class com_amap_api_maps_model_CustomMapStyleOptions extends java_lang_Object  {
     }
   }
   
+  
+  Future<String> getStyleDataOverseaPath() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataOverseaPath([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataOverseaPath', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataOverseaPath(String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataOverseaPath([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataOverseaPath', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<Uint8List> getStyleDataOversea() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::getStyleDataOversea([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataOversea', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__ as Uint8List;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<com_amap_api_maps_model_CustomMapStyleOptions> setStyleDataOversea(Uint8List var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CustomMapStyleOptions@$refId::setStyleDataOversea([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataOversea', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
   //endregion
 }
 
@@ -755,6 +851,86 @@ extension com_amap_api_maps_model_CustomMapStyleOptions_Batch on List<com_amap_a
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleExtraPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<String>> getStyleDataOverseaPath_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataOverseaPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleDataOverseaPath_batch(List<String> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataOverseaPath_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CustomMapStyleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<Uint8List>> getStyleDataOversea_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::getStyleDataOversea_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<Uint8List>().map((__result__) => __result__ as Uint8List).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_CustomMapStyleOptions>> setStyleDataOversea_batch(List<Uint8List> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CustomMapStyleOptions::setStyleDataOversea_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

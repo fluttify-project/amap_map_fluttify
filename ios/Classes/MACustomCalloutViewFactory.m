@@ -359,6 +359,64 @@ extern BOOL enableLog;
   
 }
 
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
 - (void)mapView : (MAMapView*)mapView mapWillMoveByUser: (BOOL)wasUserAction
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
