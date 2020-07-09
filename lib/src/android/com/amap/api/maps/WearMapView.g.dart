@@ -101,7 +101,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onCreate', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -221,7 +221,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onSaveInstanceState', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -342,7 +342,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.WearMapView::onEnterAmbient', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call

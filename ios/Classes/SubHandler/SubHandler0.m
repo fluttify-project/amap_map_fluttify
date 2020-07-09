@@ -1199,7 +1199,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argerrorCode = @(errorCode);
                 // jsonable callback arg
-                NSString* argerrorDesc = errorDesc;
+                NSString* argerrorDesc = errorDesc == nil ? [NSNull null] : errorDesc;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [channel invokeMethod:@"Callback::MAFailedCallback::MAFailedCallback" arguments:@{@"errorCode": argerrorCode, @"errorDesc": argerrorDesc}];

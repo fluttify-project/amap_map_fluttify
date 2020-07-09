@@ -87,7 +87,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::fromLatLngZoom', {"var0": var0?.refId, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::fromLatLngZoom', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1});
   
   
     // handle native call
@@ -135,7 +135,7 @@ class com_amap_api_maps_model_CameraPosition extends java_lang_Object with andro
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CameraPosition::builder__com_amap_api_maps_model_CameraPosition', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call

@@ -101,7 +101,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onCreate', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -221,7 +221,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/com_amap_api_maps_MapView' : 'me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapView::onSaveInstanceState', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call

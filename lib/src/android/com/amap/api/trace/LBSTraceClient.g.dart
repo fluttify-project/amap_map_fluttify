@@ -63,7 +63,7 @@ class com_amap_api_trace_LBSTraceClient extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.trace.LBSTraceClient::getInstance', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call

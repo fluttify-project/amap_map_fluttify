@@ -158,7 +158,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::loadTileAtPath_result', {"path": path?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::loadTileAtPath_result', {"path": path is Ref ? (path as Ref)?.refId : path, "refId": refId});
   
   
     // handle native call
@@ -198,7 +198,7 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path is Ref ? (path as Ref)?.refId : path, "refId": refId});
   
   
     // handle native call

@@ -58,7 +58,7 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point', {"var1": var1?.refId, "var2": var2?.refId, "var3": var3?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.ArcOptions::point', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2 is Ref ? (var2 as Ref)?.refId : var2, "var3": var3 is Ref ? (var3 as Ref)?.refId : var3, "refId": refId});
   
   
     // handle native call

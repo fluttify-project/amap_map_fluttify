@@ -80,7 +80,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline is Ref ? (multiPolyline as Ref)?.refId : multiPolyline, "refId": refId});
   
   
     // handle native call

@@ -31,75 +31,6 @@ public class SubHandler3 {
     public static Map<String, Handler> getSubHandler(BinaryMessenger messenger) {
         return new HashMap<String, Handler>() {{
             // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleData", (__args__, __methodResult__) -> {
-                // args
-                // jsonable arg
-                byte[] var1 = (byte[]) ((Map<String, Object>) __args__).get("var1");
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::setStyleData(" + var1 + ")");
-                }
-            
-                // invoke native method
-                com.amap.api.maps.model.CustomMapStyleOptions __result__;
-                try {
-                    __result__ = ref.setStyleData(var1);
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                Integer jsonableResult = null;
-                if (__result__ != null) {
-                    jsonableResult = System.identityHashCode(__result__);
-                    getHEAP().put(jsonableResult, __result__);
-                }
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
-            put("com.amap.api.maps.model.CustomMapStyleOptions::getStyleTextureData", (__args__, __methodResult__) -> {
-                // args
-            
-            
-                // ref
-                int refId = (int) ((Map<String, Object>) __args__).get("refId");
-                com.amap.api.maps.model.CustomMapStyleOptions ref = (com.amap.api.maps.model.CustomMapStyleOptions) getHEAP().get(refId);
-            
-                // print log
-                if (getEnableLog()) {
-                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.CustomMapStyleOptions@" + refId + "::getStyleTextureData(" + "" + ")");
-                }
-            
-                // invoke native method
-                byte[] __result__;
-                try {
-                    __result__ = ref.getStyleTextureData();
-                } catch (Throwable throwable) {
-                    throwable.printStackTrace();
-                    if (getEnableLog()) {
-                        Log.d("Current HEAP: ", getHEAP().toString());
-                    }
-                    __methodResult__.error(throwable.getMessage(), null, null);
-                    return;
-                }
-            
-                // convert result to jsonable result
-                byte[] jsonableResult = __result__;
-            
-                __methodResult__.success(jsonableResult);
-            });
-            // method
             put("com.amap.api.maps.model.CustomMapStyleOptions::setStyleTextureData", (__args__, __methodResult__) -> {
                 // args
                 // jsonable arg
@@ -6846,6 +6777,80 @@ public class SubHandler3 {
                 com.amap.api.maps.model.TileOverlayOptions __result__;
                 try {
                     __result__ = ref.visible(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.model.TileOverlayOptions::memCacheSize", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TileOverlayOptions@" + refId + "::memCacheSize(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.TileOverlayOptions __result__;
+                try {
+                    __result__ = ref.memCacheSize(var1);
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
+            
+                // convert result to jsonable result
+                Integer jsonableResult = null;
+                if (__result__ != null) {
+                    jsonableResult = System.identityHashCode(__result__);
+                    getHEAP().put(jsonableResult, __result__);
+                }
+            
+                __methodResult__.success(jsonableResult);
+            });
+            // method
+            put("com.amap.api.maps.model.TileOverlayOptions::diskCacheSize", (__args__, __methodResult__) -> {
+                // args
+                // jsonable arg
+                int var1 = (int) ((Map<String, Object>) __args__).get("var1");
+            
+                // ref
+                int refId = (int) ((Map<String, Object>) __args__).get("refId");
+                com.amap.api.maps.model.TileOverlayOptions ref = (com.amap.api.maps.model.TileOverlayOptions) getHEAP().get(refId);
+            
+                // print log
+                if (getEnableLog()) {
+                    Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.model.TileOverlayOptions@" + refId + "::diskCacheSize(" + var1 + ")");
+                }
+            
+                // invoke native method
+                com.amap.api.maps.model.TileOverlayOptions __result__;
+                try {
+                    __result__ = ref.diskCacheSize(var1);
                 } catch (Throwable throwable) {
                     throwable.printStackTrace();
                     if (getEnableLog()) {
