@@ -3,7 +3,7 @@
 # 高德地图 地图组件 Flutter插件
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
 
-## 由于精力有限, `1.0.0`版本开始, 作为社区版将不再新增功能, 如果现有接口不能满足你的需求, 请使用专业版.
+## 由于精力有限, `1.0.0`版本开始, 作为社区版(0.x版本)将不再新增功能, 如果现有接口不能满足你的需求, 请使用专业版.
 
 **专业版为付费插件, 如有需要请联系qq 382146139**
 
