@@ -31,31 +31,54 @@ typedef Future<void> OnMultiPointClicked(
 );
 
 /// 地图控制类
-class AmapController with WidgetsBindingObserver {
+class AmapController extends _Holder
+    with WidgetsBindingObserver, _Community, _Pro {
   /// Android构造器
-  AmapController.android(this.androidController, this._state) {
+  AmapController.android(com_amap_api_maps_TextureMapView androidController,
+      _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
+    this.androidController = androidController;
+    this._state = state;
   }
 
   /// iOS构造器
-  AmapController.ios(this.iosController, this._state) {
+  AmapController.ios(MAMapView iosController, _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
+    this.iosController = iosController;
+    this._state = state;
   }
 
-  com_amap_api_maps_TextureMapView androidController;
-  MAMapView iosController;
+  Future<void> dispose() async {
+    _locateSubscription?.cancel();
 
-  _AmapViewState _state;
+    await androidController?.onPause();
+    await androidController?.onDestroy();
 
-  // iOS端的回调处理类
-  final _iosMapDelegate = _IOSMapDelegate();
+    WidgetsBinding.instance.removeObserver(this);
+  }
 
-  // Android端的回调处理类
-  final _androidMapDelegate = _AndroidMapDelegate();
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    debugPrint('didChangeAppLifecycleState: $state');
+    // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
+    switch (state) {
+      case AppLifecycleState.resumed:
+        androidController?.onResume();
+        break;
+      case AppLifecycleState.inactive:
+        break;
+      case AppLifecycleState.paused:
+        androidController?.onPause();
+        break;
+      case AppLifecycleState.detached:
+        androidController?.onDestroy();
+        break;
+    }
+  }
+}
 
-  // 定位间隔订阅事件
-  StreamSubscription _locateSubscription;
-
+mixin _Community on _Holder {
   /// 获取当前位置
   ///
   /// 由于定位需要时间, 如果进入地图后马上获取位置信息, 获取到的会是null, [getLocation]会默认
@@ -2251,530 +2274,22 @@ class AmapController with WidgetsBindingObserver {
       },
     );
   }
-
-  /// 添加瓦片图
-  Future<UrlTileOverlay> addUrlTileOverlay(UrlTileOption option) async {
-    assert(option != null);
-    final width = option.width;
-    final height = option.height;
-    final urlTemplate = option.urlTemplate;
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        final options =
-            await com_amap_api_maps_model_TileOverlayOptions.create__();
-        final provider = await com_amap_api_maps_model_UrlTileProvider_X.create(
-            width, height, urlTemplate);
-        await options.tileProvider(provider);
-        await options.diskCacheEnabled(true);
-        await options.diskCacheSize(100000);
-        await options.memoryCacheEnabled(true);
-        await options.memCacheSize(100000);
-        await options.zIndex(-9999);
-
-        // 进行添加
-        final tile = await map.addTileOverlay(options);
-        pool..add(map)..add(options)..add(provider);
-
-        return UrlTileOverlay.android(tile);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(_iosMapDelegate);
-
-        final overlay = await MATileOverlay.create__();
-        await overlay.initWithURLTemplate(urlTemplate);
-        await overlay.set_tileSize(
-          await CGSize.create(width.toDouble(), height.toDouble()),
-        );
-
-        // 添加热力图
-        await iosController.addOverlay(overlay);
-
-        pool..add(overlay);
-
-        return UrlTileOverlay.ios(overlay, iosController);
-      },
-    );
-  }
-
-  Future<void> dispose() async {
-    _locateSubscription?.cancel();
-
-    await androidController?.onPause();
-    await androidController?.onDestroy();
-
-    WidgetsBinding.instance.removeObserver(this);
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    super.didChangeAppLifecycleState(state);
-    debugPrint('didChangeAppLifecycleState: $state');
-    // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
-    switch (state) {
-      case AppLifecycleState.resumed:
-        androidController?.onResume();
-        break;
-      case AppLifecycleState.inactive:
-        break;
-      case AppLifecycleState.paused:
-        androidController?.onPause();
-        break;
-      case AppLifecycleState.detached:
-        androidController?.onDestroy();
-        break;
-    }
-  }
 }
 
-class _IOSMapDelegate extends NSObject
-    with MAMapViewDelegate, MAMultiPointOverlayRendererDelegate {
-  OnMarkerClicked _onMarkerClicked;
-  OnMarkerDrag _onMarkerDragStart;
-  OnMarkerDrag _onMarkerDragging;
-  OnMarkerDrag _onMarkerDragEnd;
-  OnMapClicked _onMapClick;
-  OnMapClicked _onMapLongClick;
-  OnMapMove _onMapMoveStart;
-  OnMapMove _onMapMoveEnd;
-  _OnRequireAlwaysAuth _onRequireAlwaysAuth;
-  OnLocationChange _onLocationChange;
-  OnMarkerClicked _onInfoWindowClicked;
-  OnMultiPointClicked _onMultiPointClicked;
+mixin _Pro on _Holder {}
 
-  MAMapView _iosController;
-  Completer<List<MAAnnotationView>> _annotationViewCompleter;
+class _Holder {
+  com_amap_api_maps_TextureMapView androidController;
+  MAMapView iosController;
 
-  @override
-  Future<void> mapView_didAddAnnotationViews(
-    MAMapView mapView,
-    List<NSObject> views,
-  ) async {
-    super.mapView_didAddAnnotationViews(mapView, views);
-    if (_annotationViewCompleter?.isCompleted == false) {
-      List<MAAnnotationView> result = [
-        for (final view in views)
-          TypeOpAmapMapFluttifyIOS(view).as__<MAAnnotationView>()
-      ];
-      _annotationViewCompleter.complete(result);
-    }
-  }
+  _AmapViewState _state;
 
-  @override
-  Future<void> mapView_didAnnotationViewTapped(
-    MAMapView mapView,
-    MAAnnotationView view,
-  ) async {
-    super.mapView_didAnnotationViewTapped(mapView, view);
-    if (_onMarkerClicked != null) {
-      await _onMarkerClicked(
-        Marker.ios(
-          // 这里由于传入的类型是MAAnnotation, 而fluttify对于抽象类的实体子类的处理方式是找到sdk
-          // 内的第一个实体子类进行实例化, 这里如果放任不管取第一个实体子类的话是MAGroundOverlay
-          // 跟当前需要的MAPointAnnotation类是冲突的.
-          //
-          // 解决办法很简单, 把refId取出来放到目标实体类里就行了
-          MAPointAnnotation()
-            ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
-          _iosController,
-        ),
-      );
-    }
-  }
+  // iOS端的回调处理类
+  final _iosMapDelegate = _IOSMapDelegate();
 
-  @override
-  Future<void> mapView_annotationView_didChangeDragState_fromOldState(
-    MAMapView mapView,
-    MAAnnotationView view,
-    MAAnnotationViewDragState newState,
-    MAAnnotationViewDragState oldState,
-  ) async {
-    super.mapView_annotationView_didChangeDragState_fromOldState(
-      mapView,
-      view,
-      newState,
-      oldState,
-    );
-    if (_onMarkerDragStart != null &&
-        newState ==
-            MAAnnotationViewDragState.MAAnnotationViewDragStateStarting) {
-      await _onMarkerDragStart(
-        Marker.ios(
-          await view.get_annotation(viewChannel: false),
-          view,
-          _iosController,
-        ),
-      );
-    }
+  // Android端的回调处理类
+  final _androidMapDelegate = _AndroidMapDelegate();
 
-    if (_onMarkerDragging != null &&
-        newState ==
-            MAAnnotationViewDragState.MAAnnotationViewDragStateDragging) {
-      await _onMarkerDragging(
-        Marker.ios(
-          await view.get_annotation(viewChannel: false),
-          view,
-          _iosController,
-        ),
-      );
-    }
-
-    if (_onMarkerDragEnd != null &&
-        newState == MAAnnotationViewDragState.MAAnnotationViewDragStateEnding) {
-      await _onMarkerDragEnd(
-        Marker.ios(
-          await view.get_annotation(viewChannel: false),
-          view,
-          _iosController,
-        ),
-      );
-    }
-  }
-
-  @override
-  Future<void> mapView_didSingleTappedAtCoordinate(
-    MAMapView mapView,
-    CLLocationCoordinate2D coordinate,
-  ) async {
-    super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
-    if (_onMapClick != null) {
-      await _onMapClick(LatLng(
-        await coordinate.latitude,
-        await coordinate.longitude,
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapView_didLongPressedAtCoordinate(
-    MAMapView mapView,
-    CLLocationCoordinate2D coordinate,
-  ) async {
-    super.mapView_didLongPressedAtCoordinate(mapView, coordinate);
-    if (_onMapLongClick != null) {
-      await _onMapLongClick(LatLng(
-        await coordinate.latitude,
-        await coordinate.longitude,
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapView_mapWillMoveByUser(
-    MAMapView mapView,
-    bool wasUserAction,
-  ) async {
-    super.mapView_mapWillMoveByUser(mapView, wasUserAction);
-    if (_onMapMoveStart != null) {
-      final location = await mapView.get_centerCoordinate();
-      await _onMapMoveStart(MapMove(
-        latLng: LatLng(await location.latitude, await location.longitude),
-        zoom: await mapView.get_zoomLevel(),
-        tilt: await mapView.get_cameraDegree(),
-        isAbroad: await mapView.get_isAbroad(),
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapView_mapDidMoveByUser(
-    MAMapView mapView,
-    bool wasUserAction,
-  ) async {
-    super.mapView_mapDidMoveByUser(mapView, wasUserAction);
-    if (_onMapMoveEnd != null) {
-      final location = await mapView.get_centerCoordinate();
-      await _onMapMoveEnd(MapMove(
-        latLng: LatLng(await location.latitude, await location.longitude),
-        zoom: await mapView.get_zoomLevel(),
-        tilt: await mapView.get_cameraDegree(),
-        isAbroad: await mapView.get_isAbroad(),
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapView_mapWillZoomByUser(
-    MAMapView mapView,
-    bool wasUserAction,
-  ) async {
-    super.mapView_mapWillZoomByUser(mapView, wasUserAction);
-    if (_onMapMoveStart != null) {
-      final location = await mapView.get_centerCoordinate();
-      await _onMapMoveStart(MapMove(
-        latLng: LatLng(await location.latitude, await location.longitude),
-        zoom: await mapView.get_zoomLevel(),
-        tilt: await mapView.get_cameraDegree(),
-        isAbroad: await mapView.get_isAbroad(),
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapView_mapDidZoomByUser(
-    MAMapView mapView,
-    bool wasUserAction,
-  ) async {
-    super.mapView_mapDidZoomByUser(mapView, wasUserAction);
-    if (_onMapMoveEnd != null) {
-      final location = await mapView.get_centerCoordinate();
-      await _onMapMoveEnd(MapMove(
-        latLng: LatLng(await location.latitude, await location.longitude),
-        zoom: await mapView.get_zoomLevel(),
-        tilt: await mapView.get_cameraDegree(),
-        isAbroad: await mapView.get_isAbroad(),
-      ));
-    }
-  }
-
-  @override
-  Future<void> mapViewRequireLocationAuth(
-    CLLocationManager locationManager,
-  ) async {
-    super.mapViewRequireLocationAuth(locationManager);
-    if (_onRequireAlwaysAuth != null) {
-      await _onRequireAlwaysAuth(locationManager);
-    }
-  }
-
-  @override
-  Future<void> mapView_didUpdateUserLocation_updatingLocation(
-    MAMapView mapView,
-    MAUserLocation userLocation,
-    bool updatingLocation,
-  ) async {
-    super.mapView_didUpdateUserLocation_updatingLocation(
-      mapView,
-      userLocation,
-      updatingLocation,
-    );
-    if (_onLocationChange != null) {
-      await _onLocationChange(MapLocation.ios(userLocation));
-    }
-  }
-
-  @override
-  Future<void> mapView_didAnnotationViewCalloutTapped(
-    MAMapView mapView,
-    MAAnnotationView view,
-  ) async {
-    super.mapView_didAnnotationViewCalloutTapped(mapView, view);
-    if (_onInfoWindowClicked != null) {
-      await _onInfoWindowClicked(
-        Marker.ios(
-          MAPointAnnotation()
-            ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
-          _iosController,
-        ),
-      );
-    }
-  }
-
-  @override
-  Future<void> mapView_didAddOverlayRenderers(
-    MAMapView mapView,
-    List<NSObject> overlayRenderers,
-  ) async {
-    super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
-    if (overlayRenderers.length == 1 &&
-        await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
-            .is__<MAMultiPointOverlayRenderer>()) {
-      final multiPointRenderer = TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
-          .as__<MAMultiPointOverlayRenderer>();
-      multiPointRenderer.set_delegate(this);
-    }
-  }
-
-  @override
-  Future<void> multiPointOverlayRenderer_didItemTapped(
-    MAMultiPointOverlayRenderer renderer,
-    MAMultiPointItem item,
-  ) async {
-    super.multiPointOverlayRenderer_didItemTapped(renderer, item);
-    if (_onMultiPointClicked != null) {
-      final id = await item.get_customID();
-      final title = await item.get_title();
-      final snippet = await item.get_subtitle();
-      final object = await item.getJsonableProperty__(1);
-      _onMultiPointClicked(id, title, snippet, object);
-    }
-  }
-}
-
-class _AndroidMapDelegate extends java_lang_Object
-    with
-        com_amap_api_maps_AMap_OnMarkerClickListener,
-        com_amap_api_maps_AMap_OnMarkerDragListener,
-        com_amap_api_maps_AMap_OnMapClickListener,
-        com_amap_api_maps_AMap_OnMapLongClickListener,
-        com_amap_api_maps_AMap_OnCameraChangeListener,
-        com_amap_api_maps_AMap_OnMapScreenShotListener,
-        com_amap_api_maps_AMap_OnMyLocationChangeListener,
-        com_amap_api_maps_AMap_OnInfoWindowClickListener,
-        com_amap_api_maps_AMap_OnMapLoadedListener,
-        com_amap_api_maps_AMap_OnMultiPointClickListener {
-  OnMarkerClicked _onMarkerClicked;
-  OnMarkerDrag _onMarkerDragStart;
-  OnMarkerDrag _onMarkerDragging;
-  OnMarkerDrag _onMarkerDragEnd;
-  OnMapMove _onMapMoveStart;
-  OnMapMove _onMapMoveEnd;
-  OnMapClicked _onMapClick;
-  OnMapClicked _onMapLongClick;
-  OnScreenShot _onSnapshot;
-  OnLocationChange _onLocationChange;
-  OnMarkerClicked _onInfoWindowClicked;
-  VoidCallback _onMapLoaded;
-  OnMultiPointClicked _onMultiPointClicked;
-
-  // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
-  bool _moveStarted = false;
-
-  @override
-  Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerClick(var1);
-    if (_onMarkerClicked != null) {
-      await _onMarkerClicked(Marker.android(var1));
-    }
-    return true;
-  }
-
-  @override
-  Future<void> onMarkerDragStart(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDragStart(var1);
-    if (_onMarkerDragStart != null) {
-      await _onMarkerDragStart(Marker.android(var1));
-    }
-  }
-
-  @override
-  Future<void> onMarkerDrag(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDrag(var1);
-    if (_onMarkerDragging != null) {
-      await _onMarkerDragging(Marker.android(var1));
-    }
-  }
-
-  @override
-  Future<void> onMarkerDragEnd(com_amap_api_maps_model_Marker var1) async {
-    super.onMarkerDragEnd(var1);
-    if (_onMarkerDragEnd != null) {
-      await _onMarkerDragEnd(Marker.android(var1));
-    }
-  }
-
-  @override
-  Future<void> onMapClick(com_amap_api_maps_model_LatLng var1) async {
-    super.onMapClick(var1);
-    if (_onMapClick != null) {
-      await _onMapClick(LatLng(
-        await var1.get_latitude(),
-        await var1.get_longitude(),
-      ));
-    }
-  }
-
-  @override
-  Future<void> onCameraChange(
-    com_amap_api_maps_model_CameraPosition var1,
-  ) async {
-    super.onCameraChange(var1);
-    if (_onMapMoveStart != null && !_moveStarted) {
-      final location = await var1.get_target();
-      await _onMapMoveStart(MapMove(
-        latLng: LatLng(
-          await location.get_latitude(),
-          await location.get_longitude(),
-        ),
-        zoom: await var1.get_zoom(),
-        tilt: await var1.get_tilt(),
-        isAbroad: await var1.get_isAbroad(),
-      ));
-      // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
-      // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
-      _moveStarted = true;
-    }
-  }
-
-  @override
-  Future<void> onCameraChangeFinish(
-    com_amap_api_maps_model_CameraPosition var1,
-  ) async {
-    super.onCameraChangeFinish(var1);
-    if (_onMapMoveEnd != null) {
-      final location = await var1.get_target();
-      await _onMapMoveEnd(MapMove(
-        latLng: LatLng(
-          await location.get_latitude(),
-          await location.get_longitude(),
-        ),
-        zoom: await var1.get_zoom(),
-        tilt: await var1.get_tilt(),
-        isAbroad: await var1.get_isAbroad(),
-      ));
-    }
-    // 无论有没有设置过回调, 这里都给它置回来
-    _moveStarted = false;
-  }
-
-  @override
-  Future<void> onMapScreenShot__android_graphics_Bitmap(
-      android_graphics_Bitmap var1) async {
-    super.onMapScreenShot__android_graphics_Bitmap(var1);
-    if (_onSnapshot != null) {
-      await _onSnapshot(await var1.data);
-      var1.recycle(); // 回收原生的Bitmap, 由于没有后续操作, 异步执行也无妨.
-    }
-  }
-
-  @override
-  Future<void> onMyLocationChange(android_location_Location var1) async {
-    super.onMyLocationChange(var1);
-    if (_onLocationChange != null) {
-      await _onLocationChange(MapLocation.android(var1));
-    }
-  }
-
-  @override
-  Future<void> onInfoWindowClick(com_amap_api_maps_model_Marker var1) async {
-    super.onInfoWindowClick(var1);
-    if (_onInfoWindowClicked != null) {
-      await _onInfoWindowClicked(Marker.android(var1));
-    }
-  }
-
-  @override
-  Future<void> onMapLoaded() async {
-    super.onMapLoaded();
-    if (_onMapLoaded != null) {
-      _onMapLoaded();
-    }
-  }
-
-  @override
-  Future<bool> onPointClick(com_amap_api_maps_model_MultiPointItem var1) async {
-    super.onPointClick(var1);
-    if (_onMultiPointClicked != null) {
-      final id = await var1.getCustomerId();
-      final title = await var1.getTitle();
-      final snippet = await var1.getSnippet();
-      final object = await var1.getObject();
-      _onMultiPointClicked(id, title, snippet, object);
-    }
-    return true;
-  }
-
-  @override
-  Future<void> onMapLongClick(com_amap_api_maps_model_LatLng var1) async {
-    super.onMapLongClick(var1);
-    if (_onMapLongClick != null) {
-      await _onMapLongClick(LatLng(
-        await var1.get_latitude(),
-        await var1.get_longitude(),
-      ));
-    }
-  }
+  // 定位间隔订阅事件
+  StreamSubscription _locateSubscription;
 }
