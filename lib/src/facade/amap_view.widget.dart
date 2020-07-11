@@ -17,6 +17,7 @@ import 'enums.dart';
 import 'models.dart';
 
 part 'amap_controller.dart';
+part 'delegates.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
 
