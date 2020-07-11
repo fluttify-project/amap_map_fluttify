@@ -2325,6 +2325,24 @@ mixin _Pro on _Holder {
       },
     );
   }
+
+  /// 设置地图朝向
+  ///
+  /// [bearing] 朝向角度, 单位为度(°), 范围为0°-360°
+  Future<void> setBearing(double bearing) async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final update = await com_amap_api_maps_CameraUpdateFactory
+            .changeBearing(bearing / 180 * math.pi);
+        await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+      },
+      ios: (pool) async {
+        await iosController.set_rotationDegree(bearing);
+      },
+    );
+  }
 }
 
 class _Holder {
