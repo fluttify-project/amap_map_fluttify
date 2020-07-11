@@ -1,3 +1,4 @@
+// ignore_for_file: non_constant_identifier_names
 part of 'amap_view.widget.dart';
 
 class _IOSMapDelegate extends NSObject
@@ -9,6 +10,7 @@ class _IOSMapDelegate extends NSObject
   OnMapClicked _onMapClick;
   OnMapClicked _onMapLongClick;
   OnMapMove _onMapMoveStart;
+  OnMapMove _onMapMoving;
   OnMapMove _onMapMoveEnd;
   _OnRequireAlwaysAuth _onRequireAlwaysAuth;
   OnLocationChange _onLocationChange;
@@ -20,9 +22,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didAddAnnotationViews(
-      MAMapView mapView,
-      List<NSObject> views,
-      ) async {
+    MAMapView mapView,
+    List<NSObject> views,
+  ) async {
     super.mapView_didAddAnnotationViews(mapView, views);
     if (_annotationViewCompleter?.isCompleted == false) {
       List<MAAnnotationView> result = [
@@ -35,9 +37,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didAnnotationViewTapped(
-      MAMapView mapView,
-      MAAnnotationView view,
-      ) async {
+    MAMapView mapView,
+    MAAnnotationView view,
+  ) async {
     super.mapView_didAnnotationViewTapped(mapView, view);
     if (_onMarkerClicked != null) {
       await _onMarkerClicked(
@@ -58,11 +60,11 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_annotationView_didChangeDragState_fromOldState(
-      MAMapView mapView,
-      MAAnnotationView view,
-      MAAnnotationViewDragState newState,
-      MAAnnotationViewDragState oldState,
-      ) async {
+    MAMapView mapView,
+    MAAnnotationView view,
+    MAAnnotationViewDragState newState,
+    MAAnnotationViewDragState oldState,
+  ) async {
     super.mapView_annotationView_didChangeDragState_fromOldState(
       mapView,
       view,
@@ -107,9 +109,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didSingleTappedAtCoordinate(
-      MAMapView mapView,
-      CLLocationCoordinate2D coordinate,
-      ) async {
+    MAMapView mapView,
+    CLLocationCoordinate2D coordinate,
+  ) async {
     super.mapView_didSingleTappedAtCoordinate(mapView, coordinate);
     if (_onMapClick != null) {
       await _onMapClick(LatLng(
@@ -121,9 +123,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didLongPressedAtCoordinate(
-      MAMapView mapView,
-      CLLocationCoordinate2D coordinate,
-      ) async {
+    MAMapView mapView,
+    CLLocationCoordinate2D coordinate,
+  ) async {
     super.mapView_didLongPressedAtCoordinate(mapView, coordinate);
     if (_onMapLongClick != null) {
       await _onMapLongClick(LatLng(
@@ -134,11 +136,30 @@ class _IOSMapDelegate extends NSObject
   }
 
   @override
-  Future<void> mapView_mapWillMoveByUser(
-      MAMapView mapView,
-      bool wasUserAction,
-      ) async {
-    super.mapView_mapWillMoveByUser(mapView, wasUserAction);
+  Future<void> mapViewRegionChanged(MAMapView mapView) async {
+    super.mapViewRegionChanged(mapView);
+    if (_onMapMoving != null) {
+      final location = await mapView.get_centerCoordinate();
+      await _onMapMoving(MapMove(
+        latLng: LatLng(await location.latitude, await location.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        isAbroad: await mapView.get_isAbroad(),
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapView_regionWillChangeAnimated_wasUserAction(
+    MAMapView mapView,
+    bool animated,
+    bool wasUserAction,
+  ) async {
+    super.mapView_regionWillChangeAnimated_wasUserAction(
+      mapView,
+      animated,
+      wasUserAction,
+    );
     if (_onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveStart(MapMove(
@@ -151,11 +172,16 @@ class _IOSMapDelegate extends NSObject
   }
 
   @override
-  Future<void> mapView_mapDidMoveByUser(
-      MAMapView mapView,
-      bool wasUserAction,
-      ) async {
-    super.mapView_mapDidMoveByUser(mapView, wasUserAction);
+  Future<void> mapView_regionDidChangeAnimated_wasUserAction(
+    MAMapView mapView,
+    bool animated,
+    bool wasUserAction,
+  ) async {
+    super.mapView_regionDidChangeAnimated_wasUserAction(
+      mapView,
+      animated,
+      wasUserAction,
+    );
     if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
       await _onMapMoveEnd(MapMove(
@@ -169,9 +195,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_mapWillZoomByUser(
-      MAMapView mapView,
-      bool wasUserAction,
-      ) async {
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
     super.mapView_mapWillZoomByUser(mapView, wasUserAction);
     if (_onMapMoveStart != null) {
       final location = await mapView.get_centerCoordinate();
@@ -186,9 +212,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_mapDidZoomByUser(
-      MAMapView mapView,
-      bool wasUserAction,
-      ) async {
+    MAMapView mapView,
+    bool wasUserAction,
+  ) async {
     super.mapView_mapDidZoomByUser(mapView, wasUserAction);
     if (_onMapMoveEnd != null) {
       final location = await mapView.get_centerCoordinate();
@@ -203,8 +229,8 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapViewRequireLocationAuth(
-      CLLocationManager locationManager,
-      ) async {
+    CLLocationManager locationManager,
+  ) async {
     super.mapViewRequireLocationAuth(locationManager);
     if (_onRequireAlwaysAuth != null) {
       await _onRequireAlwaysAuth(locationManager);
@@ -213,10 +239,10 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didUpdateUserLocation_updatingLocation(
-      MAMapView mapView,
-      MAUserLocation userLocation,
-      bool updatingLocation,
-      ) async {
+    MAMapView mapView,
+    MAUserLocation userLocation,
+    bool updatingLocation,
+  ) async {
     super.mapView_didUpdateUserLocation_updatingLocation(
       mapView,
       userLocation,
@@ -229,9 +255,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didAnnotationViewCalloutTapped(
-      MAMapView mapView,
-      MAAnnotationView view,
-      ) async {
+    MAMapView mapView,
+    MAAnnotationView view,
+  ) async {
     super.mapView_didAnnotationViewCalloutTapped(mapView, view);
     if (_onInfoWindowClicked != null) {
       await _onInfoWindowClicked(
@@ -247,9 +273,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> mapView_didAddOverlayRenderers(
-      MAMapView mapView,
-      List<NSObject> overlayRenderers,
-      ) async {
+    MAMapView mapView,
+    List<NSObject> overlayRenderers,
+  ) async {
     super.mapView_didAddOverlayRenderers(mapView, overlayRenderers);
     if (overlayRenderers.length == 1 &&
         await TypeOpAmapMapFluttifyIOS(overlayRenderers[0])
@@ -262,9 +288,9 @@ class _IOSMapDelegate extends NSObject
 
   @override
   Future<void> multiPointOverlayRenderer_didItemTapped(
-      MAMultiPointOverlayRenderer renderer,
-      MAMultiPointItem item,
-      ) async {
+    MAMultiPointOverlayRenderer renderer,
+    MAMultiPointItem item,
+  ) async {
     super.multiPointOverlayRenderer_didItemTapped(renderer, item);
     if (_onMultiPointClicked != null) {
       final id = await item.get_customID();
@@ -293,6 +319,7 @@ class _AndroidMapDelegate extends java_lang_Object
   OnMarkerDrag _onMarkerDragging;
   OnMarkerDrag _onMarkerDragEnd;
   OnMapMove _onMapMoveStart;
+  OnMapMove _onMapMoving;
   OnMapMove _onMapMoveEnd;
   OnMapClicked _onMapClick;
   OnMapClicked _onMapLongClick;
@@ -302,7 +329,6 @@ class _AndroidMapDelegate extends java_lang_Object
   VoidCallback _onMapLoaded;
   OnMultiPointClicked _onMultiPointClicked;
 
-  // 为了和ios端行为保持一致, 需要屏蔽掉移动过程中的回调
   bool _moveStarted = false;
 
   @override
@@ -351,30 +377,42 @@ class _AndroidMapDelegate extends java_lang_Object
 
   @override
   Future<void> onCameraChange(
-      com_amap_api_maps_model_CameraPosition var1,
-      ) async {
+    com_amap_api_maps_model_CameraPosition var1,
+  ) async {
     super.onCameraChange(var1);
-    if (_onMapMoveStart != null && !_moveStarted) {
+    if (_onMapMoveStart != null) {
       final location = await var1.get_target();
-      await _onMapMoveStart(MapMove(
-        latLng: LatLng(
-          await location.get_latitude(),
-          await location.get_longitude(),
-        ),
-        zoom: await var1.get_zoom(),
-        tilt: await var1.get_tilt(),
-        isAbroad: await var1.get_isAbroad(),
-      ));
-      // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
-      // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
-      _moveStarted = true;
+      if (_onMapMoving != null && _moveStarted) {
+        await _onMapMoving(MapMove(
+          latLng: LatLng(
+            await location.get_latitude(),
+            await location.get_longitude(),
+          ),
+          zoom: await var1.get_zoom(),
+          tilt: await var1.get_tilt(),
+          isAbroad: await var1.get_isAbroad(),
+        ));
+      } else if (_onMapMoveStart != null && !_moveStarted) {
+        await _onMapMoveStart(MapMove(
+          latLng: LatLng(
+            await location.get_latitude(),
+            await location.get_longitude(),
+          ),
+          zoom: await var1.get_zoom(),
+          tilt: await var1.get_tilt(),
+          isAbroad: await var1.get_isAbroad(),
+        ));
+        // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
+        // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
+        _moveStarted = true;
+      }
     }
   }
 
   @override
   Future<void> onCameraChangeFinish(
-      com_amap_api_maps_model_CameraPosition var1,
-      ) async {
+    com_amap_api_maps_model_CameraPosition var1,
+  ) async {
     super.onCameraChangeFinish(var1);
     if (_onMapMoveEnd != null) {
       final location = await var1.get_target();

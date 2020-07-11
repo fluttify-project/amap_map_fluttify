@@ -1799,6 +1799,7 @@ mixin _Community on _Holder {
   /// 设置地图移动监听事件
   Future<void> setMapMoveListener({
     OnMapMove onMapMoveStart,
+    OnMapMove onMapMoving,
     OnMapMove onMapMoveEnd,
   }) async {
     await platform(
@@ -1808,6 +1809,7 @@ mixin _Community on _Holder {
         await map.setOnCameraChangeListener(
           _androidMapDelegate
             .._onMapMoveStart = onMapMoveStart
+            .._onMapMoving = onMapMoving
             .._onMapMoveEnd = onMapMoveEnd,
         );
 
@@ -1817,6 +1819,7 @@ mixin _Community on _Holder {
         await iosController.set_delegate(
           _iosMapDelegate
             .._onMapMoveStart = onMapMoveStart
+            .._onMapMoving = onMapMoving
             .._onMapMoveEnd = onMapMoveEnd,
         );
       },

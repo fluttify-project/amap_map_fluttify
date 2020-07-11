@@ -257,8 +257,9 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
                     _controller?.setMapMoveListener(
-                      onMapMoveStart: (move) async => toast('开始移动: $move'),
-                      onMapMoveEnd: (move) async => toast('结束移动: $move'),
+                      onMapMoveStart: (move) async => debugPrint('开始移动: $move'),
+                      onMapMoving: (move) async => debugPrint('移动中: $move'),
+                      onMapMoveEnd: (move) async => debugPrint('结束移动: $move'),
                     );
                   },
                 ),
