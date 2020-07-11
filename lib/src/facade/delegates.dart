@@ -136,20 +136,6 @@ class _IOSMapDelegate extends NSObject
   }
 
   @override
-  Future<void> mapViewRegionChanged(MAMapView mapView) async {
-    super.mapViewRegionChanged(mapView);
-    if (_onMapMoving != null) {
-      final location = await mapView.get_centerCoordinate();
-      await _onMapMoving(MapMove(
-        latLng: LatLng(await location.latitude, await location.longitude),
-        zoom: await mapView.get_zoomLevel(),
-        tilt: await mapView.get_cameraDegree(),
-        isAbroad: await mapView.get_isAbroad(),
-      ));
-    }
-  }
-
-  @override
   Future<void> mapView_regionWillChangeAnimated_wasUserAction(
     MAMapView mapView,
     bool animated,
@@ -166,6 +152,22 @@ class _IOSMapDelegate extends NSObject
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
+        bearing: await mapView.get_rotationDegree(),
+        isAbroad: await mapView.get_isAbroad(),
+      ));
+    }
+  }
+
+  @override
+  Future<void> mapViewRegionChanged(MAMapView mapView) async {
+    super.mapViewRegionChanged(mapView);
+    if (_onMapMoving != null) {
+      final location = await mapView.get_centerCoordinate();
+      await _onMapMoving(MapMove(
+        latLng: LatLng(await location.latitude, await location.longitude),
+        zoom: await mapView.get_zoomLevel(),
+        tilt: await mapView.get_cameraDegree(),
+        bearing: await mapView.get_rotationDegree(),
         isAbroad: await mapView.get_isAbroad(),
       ));
     }
@@ -188,6 +190,7 @@ class _IOSMapDelegate extends NSObject
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
+        bearing: await mapView.get_rotationDegree(),
         isAbroad: await mapView.get_isAbroad(),
       ));
     }
@@ -205,6 +208,7 @@ class _IOSMapDelegate extends NSObject
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
+        bearing: await mapView.get_rotationDegree(),
         isAbroad: await mapView.get_isAbroad(),
       ));
     }
@@ -222,6 +226,7 @@ class _IOSMapDelegate extends NSObject
         latLng: LatLng(await location.latitude, await location.longitude),
         zoom: await mapView.get_zoomLevel(),
         tilt: await mapView.get_cameraDegree(),
+        bearing: await mapView.get_rotationDegree(),
         isAbroad: await mapView.get_isAbroad(),
       ));
     }
@@ -390,6 +395,7 @@ class _AndroidMapDelegate extends java_lang_Object
           ),
           zoom: await var1.get_zoom(),
           tilt: await var1.get_tilt(),
+          bearing: await var1.get_bearing(),
           isAbroad: await var1.get_isAbroad(),
         ));
       } else if (_onMapMoveStart != null && !_moveStarted) {
@@ -399,6 +405,7 @@ class _AndroidMapDelegate extends java_lang_Object
             await location.get_longitude(),
           ),
           zoom: await var1.get_zoom(),
+          bearing: await var1.get_bearing(),
           tilt: await var1.get_tilt(),
           isAbroad: await var1.get_isAbroad(),
         ));
@@ -422,6 +429,7 @@ class _AndroidMapDelegate extends java_lang_Object
           await location.get_longitude(),
         ),
         zoom: await var1.get_zoom(),
+        bearing: await var1.get_bearing(),
         tilt: await var1.get_tilt(),
         isAbroad: await var1.get_isAbroad(),
       ));

@@ -355,16 +355,26 @@ class PointOption {
 /// 地图移动
 @immutable
 class MapMove {
+  /// 经纬度
   final LatLng latLng;
+
+  /// 缩放等级
   final double zoom;
+
+  /// 倾斜度
   final double tilt;
+
+  /// 朝向
+  final double bearing;
+
+  /// 是否是国外
   final bool isAbroad;
 
-  MapMove({this.latLng, this.zoom, this.tilt, this.isAbroad});
+  MapMove({this.latLng, this.zoom, this.tilt, this.bearing, this.isAbroad});
 
   @override
   String toString() {
-    return 'MapDrag{latitude: ${latLng.latitude}, longitude: ${latLng.longitude}, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+    return 'MapMove{latLng: $latLng, zoom: $zoom, tilt: $tilt, bearing: $bearing, isAbroad: $isAbroad}';
   }
 }
 
