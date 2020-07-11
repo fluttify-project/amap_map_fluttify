@@ -385,34 +385,35 @@ class _AndroidMapDelegate extends java_lang_Object
     com_amap_api_maps_model_CameraPosition var1,
   ) async {
     super.onCameraChange(var1);
-    if (_onMapMoveStart != null) {
-      final location = await var1.get_target();
-      if (_onMapMoving != null && _moveStarted) {
-        await _onMapMoving(MapMove(
-          latLng: LatLng(
-            await location.get_latitude(),
-            await location.get_longitude(),
-          ),
-          zoom: await var1.get_zoom(),
-          tilt: await var1.get_tilt(),
-          bearing: await var1.get_bearing(),
-          isAbroad: await var1.get_isAbroad(),
-        ));
-      } else if (_onMapMoveStart != null && !_moveStarted) {
-        await _onMapMoveStart(MapMove(
-          latLng: LatLng(
-            await location.get_latitude(),
-            await location.get_longitude(),
-          ),
-          zoom: await var1.get_zoom(),
-          bearing: await var1.get_bearing(),
-          tilt: await var1.get_tilt(),
-          isAbroad: await var1.get_isAbroad(),
-        ));
-        // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
-        // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
-        _moveStarted = true;
-      }
+    final location = await var1.get_target();
+    if (_onMapMoving != null && _moveStarted) {
+      await _onMapMoving(MapMove(
+        latLng: LatLng(
+          await location.get_latitude(),
+          await location.get_longitude(),
+        ),
+        zoom: await var1.get_zoom(),
+        tilt: await var1.get_tilt(),
+        bearing: await var1.get_bearing(),
+        isAbroad: await var1.get_isAbroad(),
+      ));
+    } else if (_onMapMoveStart != null && !_moveStarted) {
+      await _onMapMoveStart(MapMove(
+        latLng: LatLng(
+          await location.get_latitude(),
+          await location.get_longitude(),
+        ),
+        zoom: await var1.get_zoom(),
+        bearing: await var1.get_bearing(),
+        tilt: await var1.get_tilt(),
+        isAbroad: await var1.get_isAbroad(),
+      ));
+      // 由于ios端只有`开始`和`结束`的回调, 而android这边是只要改变就有回调, 这里回调过
+      // 第一次之后就把标记记为已经触发, 在移动结束后再置回来
+      _moveStarted = true;
+    } else {
+      // 防止没有设置_onMapMoveStart, 这里一律在回调后设置成已经开始移动
+      _moveStarted = true;
     }
   }
 
