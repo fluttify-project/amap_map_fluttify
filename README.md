@@ -72,6 +72,11 @@ android {
 <key>io.flutter.embedded_views_preview</key>
 <string>YES</string>
 ```
+2. 定位需要声明权限, 在Info.plist中添加:
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>需要定位权限</string>
+```
 
 ## 导入
 ```dart
