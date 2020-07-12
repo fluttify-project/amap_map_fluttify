@@ -51,6 +51,7 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                   min: 0,
                   max: 360,
                   onChanged: (value) {
+                    debugPrint('bearing value: $value');
                     _controller?.setBearing(value);
                   },
                 ),

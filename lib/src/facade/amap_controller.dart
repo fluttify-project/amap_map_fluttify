@@ -2335,11 +2335,12 @@ mixin _Pro on _Holder {
         final map = await androidController.getMap();
 
         final update = await com_amap_api_maps_CameraUpdateFactory
-            .changeBearing(bearing / 180 * math.pi);
+            .changeBearing(bearing);
         await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
       },
       ios: (pool) async {
-        await iosController.set_rotationDegree(bearing);
+        await iosController.setRotationDegree_animated_duration(
+            (bearing % 360), true, 0.3);
       },
     );
   }
