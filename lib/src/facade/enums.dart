@@ -85,3 +85,11 @@ enum MyLocationType {
   /// 方向跟随
   Rotate,
 }
+
+enum RideType {
+  /// 电动车
+  elebike,
+
+  /// 自行车
+  bike,
+}

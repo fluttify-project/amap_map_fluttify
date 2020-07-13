@@ -5,6 +5,7 @@ import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'extensions.dart';
 import 'list.x.dart';
 
 export 'package:amap_core_fluttify/amap_core_fluttify.dart';
@@ -260,6 +261,25 @@ class AmapService {
         }
       },
     );
+  }
+
+  /// 调用高德地图骑行导航
+  ///
+  /// [target]目的地, [appName]当前应用名称, [dev]是否偏移(0:lat和lon是已经加密后的,不需要国测加密;1:需要国测加密)
+  /// !注意: iOS端需要在Info.plist配置白名单, 可以参考example工程的配置(LSApplicationQueriesSchemes), 具体文档详见 https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
+  static Future<void> navigateRide(
+    LatLng target, {
+    String appName = 'appname',
+    int dev = 1,
+    RideType rideType = RideType.bike,
+  }) async {
+    final urlScheme =
+        'amapuri://openFeature?featureName=OnRideNavi&rideType=${rideType.inString()}&sourceApplication=$appName&lat=${target.latitude}&lon=${target.longitude}&dev=$dev';
+    if (await canLaunch(urlScheme)) {
+      return launch(urlScheme);
+    } else {
+      return Future.error('无法调起高德地图');
+    }
   }
 
   /// 轨迹纠偏
