@@ -1,8 +1,12 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:amap_map_fluttify/src/android/android.export.g.dart';
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'extensions.dart';
@@ -25,11 +29,15 @@ final _traceListener = _TraceListener();
 class AmapService {
   AmapService._();
 
+  static String _webKey;
+
   /// 设置ios和android的app key
   static Future<void> init({
     @required String iosKey,
     @required String androidKey,
+    String webApiKey,
   }) async {
+    _webKey = webApiKey;
     await platform(
       android: (pool) async {
         await com_amap_api_maps_MapsInitializer.setApiKey(androidKey);
@@ -354,7 +362,23 @@ class AmapService {
     );
   }
 
-  /// TODO 获取静态图片 https://blog.csdn.net/itlsq/article/details/85618017
+  /// 获取静态图片
+  static Future<Uint8List> fetchStaticMapImage(
+    LatLng coordinate, {
+    int zoomLevel = 10,
+    Size size = const Size(400, 400),
+  }) async {
+    assert(coordinate != null);
+    final url =
+        'https://restapi.amap.com/v3/staticmap?location=${coordinate.longitude},${coordinate.latitude}&zoom=$zoomLevel&key=$_webKey&size=${size.width.toInt()}*${size.height.toInt()}';
+
+    debugPrint('拼接的url: $url');
+
+    HttpClient httpClient = HttpClient();
+    var request = await httpClient.getUrl(Uri.parse(url));
+    var response = await request.close();
+    return consolidateHttpClientResponseBytes(response);
+  }
 }
 
 class _TraceListener extends java_lang_Object

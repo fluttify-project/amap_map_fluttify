@@ -18,6 +18,7 @@ import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
 import 'tools/offline_manager_screen.dart';
 import 'tools/processed_trace.screen.dart';
+import 'tools/static_image.screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -124,6 +125,11 @@ class MapDemo extends StatelessWidget {
               label: "离线地图",
               sublabel: "OfflineManagerScreen",
               target: OfflineManagerScreen(),
+            ),
+            FunctionItem(
+              label: "获取静态图",
+              sublabel: "StaticImageScreen",
+              target: StaticImageScreen(),
             ),
           ],
         ),
