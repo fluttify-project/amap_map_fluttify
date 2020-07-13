@@ -2339,8 +2339,14 @@ mixin _Pro on _Holder {
         await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
       },
       ios: (pool) async {
-        await iosController.setRotationDegree_animated_duration(
-            bearing % 360, true, 0.3);
+        final currentRotation = await iosController.get_rotationDegree();
+        if ((bearing - currentRotation).abs() > 180) {
+          await iosController.setRotationDegree_animated_duration(
+              360 - bearing, true, 0.3);
+        } else {
+          await iosController.setRotationDegree_animated_duration(
+              bearing, true, 0.3);
+        }
       },
     );
   }
