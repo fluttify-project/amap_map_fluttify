@@ -2328,19 +2328,19 @@ mixin _Pro on _Holder {
 
   /// 设置地图朝向
   ///
-  /// [bearing] 朝向角度, 单位为度(°), 范围为0°-360°
+  /// [bearing] 朝向角度, 单位为度(°), 范围为[0°,360°]
   Future<void> setBearing(double bearing) async {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
-        final update = await com_amap_api_maps_CameraUpdateFactory
-            .changeBearing(bearing);
+        final update =
+            await com_amap_api_maps_CameraUpdateFactory.changeBearing(bearing);
         await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
       },
       ios: (pool) async {
         await iosController.setRotationDegree_animated_duration(
-            (bearing % 360), true, 0.3);
+            bearing % 360, true, 0.3);
       },
     );
   }
