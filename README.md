@@ -77,6 +77,14 @@ android {
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>需要定位权限</string>
 ```
+3. 调用高德地图需要添加白名单:
+```dart
+<key>LSApplicationQueriesSchemes</key>
+<array>
+	<string>iosamap</string>
+	<string>amapuri</string>
+</array>
+```
 
 ## 导入
 ```dart
