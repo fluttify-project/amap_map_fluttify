@@ -171,6 +171,7 @@ import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 |  其他  | 社区版 | 专业版 |
 |:-----:|:-----:|:-----:|
 |  NO-IDFA  |  ☑️ |  ✅   |
+|  获取地图静态图片  |  ☑️ |  ✅   |
 
 ## LICENSE
 > Copyright (C) 2020 yohom
