@@ -2329,14 +2329,18 @@ mixin _Pro on _Holder {
   /// 设置地图朝向
   ///
   /// [bearing] 朝向角度, 单位为度(°), 范围为[0°,360°]
-  Future<void> setBearing(double bearing) async {
+  Future<void> setBearing(double bearing, {bool animated = true}) async {
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
 
         final update =
             await com_amap_api_maps_CameraUpdateFactory.changeBearing(bearing);
-        await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+        if (animated) {
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+        } else {
+          await map.moveCamera(update);
+        }
 
         pool..add(map)..add(update);
       },
@@ -2344,11 +2348,43 @@ mixin _Pro on _Holder {
         final currentRotation = await iosController.get_rotationDegree();
         if ((bearing - currentRotation).abs() > 180) {
           await iosController.setRotationDegree_animated_duration(
-              360 - bearing, true, 0.3);
+            360 - bearing,
+            animated,
+            0.3,
+          );
         } else {
           await iosController.setRotationDegree_animated_duration(
-              bearing, true, 0.3);
+            bearing,
+            animated,
+            0.3,
+          );
         }
+      },
+    );
+  }
+
+  /// 设置地图倾斜度
+  Future<void> setTilt(double tilt, {bool animated = true}) async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        final update =
+            await com_amap_api_maps_CameraUpdateFactory.changeTilt(tilt);
+        if (animated) {
+          await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+        } else {
+          await map.moveCamera(update);
+        }
+
+        pool..add(map)..add(update);
+      },
+      ios: (pool) async {
+        await iosController.setCameraDegree_animated_duration(
+          tilt,
+          animated,
+          0.3,
+        );
       },
     );
   }
