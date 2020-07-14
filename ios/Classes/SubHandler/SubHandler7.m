@@ -772,20 +772,6 @@ extern BOOL enableLog;
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
         
-        @"ObjectFactory::createNSValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createNSValue");
-            }
-        
-            NSValue* ref = [[NSValue alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
         @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -1952,21 +1938,6 @@ extern BOOL enableLog;
                 HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
                 [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
-            }
-        
-            methodResult(resultList);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::create_batchNSValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                NSValue* ref = [[NSValue alloc] init];
-                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);
@@ -3415,6 +3386,62 @@ extern BOOL enableLog;
         
             // invoke native method
             double result = MAMapRectGetHeight(rect);
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapPointEqualToPoint::MAMapPointEqualToPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // struct arg
+            NSValue* point1Value = (NSValue*) HEAP[args[@"point1"]];
+            MAMapPoint point1;
+            [point1Value getValue:&point1];
+            // struct arg
+            NSValue* point2Value = (NSValue*) HEAP[args[@"point2"]];
+            MAMapPoint point2;
+            [point2Value getValue:&point2];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapPointEqualToPoint::MAMapPointEqualToPoint(%@, %@)", args[@"point1"], args[@"point2"]);
+            }
+        
+            // invoke native method
+            BOOL result = MAMapPointEqualToPoint(point1, point2);
+        
+            // result
+            // 返回值: Value
+            id jsonableResult = @(result);
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapSizeEqualToSize::MAMapSizeEqualToSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // struct arg
+            NSValue* size1Value = (NSValue*) HEAP[args[@"size1"]];
+            MAMapSize size1;
+            [size1Value getValue:&size1];
+            // struct arg
+            NSValue* size2Value = (NSValue*) HEAP[args[@"size2"]];
+            MAMapSize size2;
+            [size2Value getValue:&size2];
+        
+            // ref
+        
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapSizeEqualToSize::MAMapSizeEqualToSize(%@, %@)", args[@"size1"], args[@"size2"]);
+            }
+        
+            // invoke native method
+            BOOL result = MAMapSizeEqualToSize(size1, size2);
         
             // result
             // 返回值: Value

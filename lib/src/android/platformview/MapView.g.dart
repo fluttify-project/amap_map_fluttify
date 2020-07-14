@@ -67,6 +67,8 @@ class _com_amap_api_maps_MapView_AndroidState extends State<com_amap_api_maps_Ma
   void dispose() {
     if (widget.onDispose != null) {
       widget.onDispose().then((_) => _controller.release__());
+    } else {
+      _controller.release__();
     }
     super.dispose();
   }
