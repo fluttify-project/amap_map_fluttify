@@ -2353,7 +2353,7 @@ mixin _Pro on _Holder {
     );
   }
 
-  /// 显示3D楼块效果
+  /// 显示/隐藏3D楼块效果
   Future<void> showBuildings(bool show) async {
     return platform(
       android: (pool) async {
@@ -2368,7 +2368,7 @@ mixin _Pro on _Holder {
     );
   }
 
-  /// 显示地图上的文字标注
+  /// 显示/隐藏地图上的文字标注
   Future<void> showMapText(bool show) async {
     return platform(
       android: (pool) async {
