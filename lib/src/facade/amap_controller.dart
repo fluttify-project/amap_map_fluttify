@@ -2337,6 +2337,8 @@ mixin _Pro on _Holder {
         final update =
             await com_amap_api_maps_CameraUpdateFactory.changeBearing(bearing);
         await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+
+        pool..add(map)..add(update);
       },
       ios: (pool) async {
         final currentRotation = await iosController.get_rotationDegree();
@@ -2347,6 +2349,36 @@ mixin _Pro on _Holder {
           await iosController.setRotationDegree_animated_duration(
               bearing, true, 0.3);
         }
+      },
+    );
+  }
+
+  /// 显示3D楼块效果
+  Future<void> showBuildings(bool show) async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        await map.showBuildings(show);
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await iosController.set_showsBuildings(show);
+      },
+    );
+  }
+
+  /// 显示地图上的文字标注
+  Future<void> showMapText(bool show) async {
+    return platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+
+        await map.showMapText(show);
+        pool..add(map);
+      },
+      ios: (pool) async {
+        await iosController.set_showsLabels(show);
       },
     );
   }
