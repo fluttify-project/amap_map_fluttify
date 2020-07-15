@@ -563,44 +563,6 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
   }
 }
 
-Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelOfDetails, void tileProjection(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)) async {
-  // print log
-  if (fluttifyLogEnabled) {
-    debugPrint('fluttify-dart: MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds([\'levelOfDetails\':$levelOfDetails])');
-  }
-
-  // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds', {"bounds": bounds is Ref ? (bounds as Ref)?.refId : bounds, "levelOfDetails": levelOfDetails});
-  
-
-  // handle native call
-  MethodChannel('AMapTileProjectionBlock::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        switch (methodCall.method) {
-          case 'Callback::AMapTileProjectionBlock::AMapTileProjectionBlock':
-            // print log
-            if (fluttifyLogEnabled) {
-        
-            }
-        
-            // handle the native call
-            if (tileProjection != null) tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
-            break;
-          default:
-            break;
-        }
-      });
-
-  // convert native result to dart side object
-  if (__result__ == null) {
-    return null;
-  } else {
-    
-    return __result__;
-  }
-}
-
 Future<double> MAAreaForPolygon(List<CLLocationCoordinate2D> coordinates, int count) async {
   // print log
   if (fluttifyLogEnabled) {

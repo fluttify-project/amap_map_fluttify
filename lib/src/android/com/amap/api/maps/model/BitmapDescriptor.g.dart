@@ -24,6 +24,11 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_BitmapDescriptorCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptor::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -157,6 +162,12 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
 
 extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_maps_model_BitmapDescriptor> {
   //region getters
+  Future<List<com_amap_api_maps_model_BitmapDescriptorCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptor::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

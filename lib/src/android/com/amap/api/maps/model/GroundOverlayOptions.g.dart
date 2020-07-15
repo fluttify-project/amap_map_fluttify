@@ -42,6 +42,17 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_GroundOverlayOptionsCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+  
+  static Future<double> get_NO_DIMENSION() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION", );
+  
+    return __result__;
+  }
   
   //endregion
 
@@ -535,6 +546,19 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
 
 extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_api_maps_model_GroundOverlayOptions> {
   //region getters
+  Future<List<com_amap_api_maps_model_GroundOverlayOptionsCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_GroundOverlayOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
+  Future<List<double>> get_NO_DIMENSION_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 

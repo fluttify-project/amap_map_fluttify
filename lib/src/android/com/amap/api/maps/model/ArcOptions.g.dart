@@ -42,6 +42,11 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_ArcOptionsCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.ArcOptions::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_ArcOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_ArcOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -343,6 +348,12 @@ class com_amap_api_maps_model_ArcOptions extends com_amap_api_maps_model_BaseOpt
 
 extension com_amap_api_maps_model_ArcOptions_Batch on List<com_amap_api_maps_model_ArcOptions> {
   //region getters
+  Future<List<com_amap_api_maps_model_ArcOptionsCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.ArcOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_ArcOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

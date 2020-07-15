@@ -42,6 +42,65 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
   //endregion
 
   //region getters
+  static Future<double> get_HUE_RED() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_RED", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_ORANGE() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ORANGE", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_YELLOW() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_YELLOW", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_GREEN() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_GREEN", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_CYAN() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_CYAN", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_AZURE() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_AZURE", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_BLUE() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_BLUE", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_VIOLET() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_VIOLET", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_MAGENTA() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_MAGENTA", );
+  
+    return __result__;
+  }
+  
+  static Future<double> get_HUE_ROSE() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ROSE", );
+  
+    return __result__;
+  }
   
   //endregion
 
@@ -271,6 +330,75 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends java_lang_Object  
 
 extension com_amap_api_maps_model_BitmapDescriptorFactory_Batch on List<com_amap_api_maps_model_BitmapDescriptorFactory> {
   //region getters
+  Future<List<double>> get_HUE_RED_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_RED_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_ORANGE_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ORANGE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_YELLOW_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_YELLOW_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_GREEN_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_GREEN_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_CYAN_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_CYAN_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_AZURE_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_AZURE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_BLUE_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_BLUE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_VIOLET_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_VIOLET_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_MAGENTA_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_MAGENTA_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_HUE_ROSE_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ROSE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 

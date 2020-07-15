@@ -42,6 +42,12 @@ class com_amap_api_maps_model_TileProjection extends java_lang_Object with andro
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_TileProjection> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.TileProjection::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+  
   Future<int> get_offsetX() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.TileProjection::get_offsetX", {'refId': refId});
   
@@ -91,6 +97,13 @@ class com_amap_api_maps_model_TileProjection extends java_lang_Object with andro
 
 extension com_amap_api_maps_model_TileProjection_Batch on List<com_amap_api_maps_model_TileProjection> {
   //region getters
+  Future<List<com_amap_api_maps_model_TileProjection>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.TileProjection::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_TileProjection()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   Future<List<int>> get_offsetX_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.TileProjection::get_offsetX_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();

@@ -112,7 +112,7 @@ class MAHeatMapVectorOverlayOptions extends NSObject  {
 
   //region setters
   Future<void> set_type(MAHeatMapType type) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayOptions::set_type', {'refId': refId, "type": type.index});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayOptions::set_type', {'refId': refId, "type": type.toValue()});
   
   
   }
@@ -267,7 +267,7 @@ extension MAHeatMapVectorOverlayOptions_Batch on List<MAHeatMapVectorOverlayOpti
 
   //region setters
   Future<void> set_type_batch(List<MAHeatMapType> type) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayOptions::set_type_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "type": type[__i__].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAHeatMapVectorOverlayOptions::set_type_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "type": type[__i__].toValue()}]);
   
   
   }

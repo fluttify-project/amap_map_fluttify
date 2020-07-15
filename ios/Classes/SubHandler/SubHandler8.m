@@ -15,58 +15,6 @@ extern BOOL enableLog;
 - (NSDictionary<NSString*, Handler>*) getSubHandler8 {
     __weak __typeof(self)weakSelf = self;
     return @{
-        @"MAMapRectEqualToRect::MAMapRectEqualToRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* rect1Value = (NSValue*) HEAP[args[@"rect1"]];
-            MAMapRect rect1;
-            [rect1Value getValue:&rect1];
-            // struct arg
-            NSValue* rect2Value = (NSValue*) HEAP[args[@"rect2"]];
-            MAMapRect rect2;
-            [rect2Value getValue:&rect2];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapRectEqualToRect::MAMapRectEqualToRect(%@, %@)", args[@"rect1"], args[@"rect2"]);
-            }
-        
-            // invoke native method
-            BOOL result = MAMapRectEqualToRect(rect1, rect2);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        @"MAMapRectIsNull::MAMapRectIsNull": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // struct arg
-            NSValue* rectValue = (NSValue*) HEAP[args[@"rect"]];
-            MAMapRect rect;
-            [rectValue getValue:&rect];
-        
-            // ref
-        
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapRectIsNull::MAMapRectIsNull(%@)", args[@"rect"]);
-            }
-        
-            // invoke native method
-            BOOL result = MAMapRectIsNull(rect);
-        
-            // result
-            // 返回值: Value
-            id jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
         @"MAMapRectIsEmpty::MAMapRectIsEmpty": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // struct arg

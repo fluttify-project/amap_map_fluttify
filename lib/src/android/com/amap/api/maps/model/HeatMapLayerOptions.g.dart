@@ -46,6 +46,11 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_Gradient> get_DEFAULT_GRADIENT() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT", );
+    kNativeObjectPool.add(com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -611,6 +616,12 @@ class com_amap_api_maps_model_HeatMapLayerOptions extends com_amap_api_maps_mode
 
 extension com_amap_api_maps_model_HeatMapLayerOptions_Batch on List<com_amap_api_maps_model_HeatMapLayerOptions> {
   //region getters
+  Future<List<com_amap_api_maps_model_Gradient>> get_DEFAULT_GRADIENT_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.HeatMapLayerOptions::get_DEFAULT_GRADIENT_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

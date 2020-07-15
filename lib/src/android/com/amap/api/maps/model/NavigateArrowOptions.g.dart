@@ -42,6 +42,11 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_NavigateArrowOptionsCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.NavigateArrowOptions::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -439,6 +444,12 @@ class com_amap_api_maps_model_NavigateArrowOptions extends com_amap_api_maps_mod
 
 extension com_amap_api_maps_model_NavigateArrowOptions_Batch on List<com_amap_api_maps_model_NavigateArrowOptions> {
   //region getters
+  Future<List<com_amap_api_maps_model_NavigateArrowOptionsCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.NavigateArrowOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_NavigateArrowOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 
