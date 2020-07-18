@@ -247,12 +247,14 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         .toList()
                         .then((boundary) {
                       debugPrint('boundary: $boundary');
-                      return _controller?.zoomToSpan(
-                        boundary,
-                        padding: EdgeInsets.only(
-                          top: 100,
-                        ),
-                      );
+                      _controller
+                          .zoomToSpan(
+                            boundary,
+                            padding: EdgeInsets.only(bottom: 100),
+                          )
+                          .then((value) =>
+                              Future.delayed(Duration(milliseconds: 300)))
+                          .then((value) => _controller?.setTilt(40));
                     });
                   },
                 ),

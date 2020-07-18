@@ -304,6 +304,13 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   },
                 ),
                 ListTile(
+                  title: Center(child: Text('设置屏幕上的某个像素点为地图中心点')),
+                  onTap: () async {
+                    final screenPoint = Point(20, 20);
+                    await _controller?.setPointToCenter(screenPoint);
+                  },
+                ),
+                ListTile(
                   title: Center(child: Text('监听位置改变')),
                   onTap: () async {
                     await _controller
