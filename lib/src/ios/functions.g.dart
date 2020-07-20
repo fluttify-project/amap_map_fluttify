@@ -20,7 +20,7 @@ Future<MACoordinateBounds> MACoordinateBoundsMake(CLLocationCoordinate2D northEa
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBoundsMake::MACoordinateBoundsMake', {"northEast": northEast?.refId, "southWest": southWest?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateBoundsMake::MACoordinateBoundsMake', {"northEast": northEast is Ref ? (northEast as Ref)?.refId : northEast, "southWest": southWest is Ref ? (southWest as Ref)?.refId : southWest});
   
 
   // handle native call
@@ -64,7 +64,7 @@ Future<MACoordinateRegion> MACoordinateRegionMake(CLLocationCoordinate2D centerC
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionMake::MACoordinateRegionMake', {"centerCoordinate": centerCoordinate?.refId, "span": span?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionMake::MACoordinateRegionMake', {"centerCoordinate": centerCoordinate is Ref ? (centerCoordinate as Ref)?.refId : centerCoordinate, "span": span is Ref ? (span as Ref)?.refId : span});
   
 
   // handle native call
@@ -86,7 +86,7 @@ Future<MACoordinateRegion> MACoordinateRegionMakeWithDistance(CLLocationCoordina
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance', {"centerCoordinate": centerCoordinate?.refId, "latitudinalMeters": latitudinalMeters, "longitudinalMeters": longitudinalMeters});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionMakeWithDistance::MACoordinateRegionMakeWithDistance', {"centerCoordinate": centerCoordinate is Ref ? (centerCoordinate as Ref)?.refId : centerCoordinate, "latitudinalMeters": latitudinalMeters, "longitudinalMeters": longitudinalMeters});
   
 
   // handle native call
@@ -108,7 +108,7 @@ Future<MAMapPoint> MAMapPointForCoordinate(CLLocationCoordinate2D coordinate) as
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPointForCoordinate::MAMapPointForCoordinate', {"coordinate": coordinate?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPointForCoordinate::MAMapPointForCoordinate', {"coordinate": coordinate is Ref ? (coordinate as Ref)?.refId : coordinate});
   
 
   // handle native call
@@ -130,7 +130,7 @@ Future<CLLocationCoordinate2D> MACoordinateForMapPoint(MAMapPoint mapPoint) asyn
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateForMapPoint::MACoordinateForMapPoint', {"mapPoint": mapPoint?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateForMapPoint::MACoordinateForMapPoint', {"mapPoint": mapPoint is Ref ? (mapPoint as Ref)?.refId : mapPoint});
   
 
   // handle native call
@@ -152,7 +152,7 @@ Future<MACoordinateRegion> MACoordinateRegionForMapRect(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionForMapRect::MACoordinateRegionForMapRect', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACoordinateRegionForMapRect::MACoordinateRegionForMapRect', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -174,7 +174,7 @@ Future<MAMapRect> MAMapRectForCoordinateRegion(MACoordinateRegion region) async 
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion', {"region": region?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectForCoordinateRegion::MAMapRectForCoordinateRegion', {"region": region is Ref ? (region as Ref)?.refId : region});
   
 
   // handle native call
@@ -240,7 +240,7 @@ Future<double> MAMetersBetweenMapPoints(MAMapPoint a, MAMapPoint b) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMetersBetweenMapPoints::MAMetersBetweenMapPoints', {"a": a?.refId, "b": b?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMetersBetweenMapPoints::MAMetersBetweenMapPoints', {"a": a is Ref ? (a as Ref)?.refId : a, "b": b is Ref ? (b as Ref)?.refId : b});
   
 
   // handle native call
@@ -262,7 +262,7 @@ Future<double> MAAreaBetweenCoordinates(CLLocationCoordinate2D northEast, CLLoca
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAreaBetweenCoordinates::MAAreaBetweenCoordinates', {"northEast": northEast?.refId, "southWest": southWest?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAAreaBetweenCoordinates::MAAreaBetweenCoordinates', {"northEast": northEast is Ref ? (northEast as Ref)?.refId : northEast, "southWest": southWest is Ref ? (southWest as Ref)?.refId : southWest});
   
 
   // handle native call
@@ -284,7 +284,7 @@ Future<MAMapRect> MAMapRectInset(MAMapRect rect, double dx, double dy) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectInset::MAMapRectInset', {"rect": rect?.refId, "dx": dx, "dy": dy});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectInset::MAMapRectInset', {"rect": rect is Ref ? (rect as Ref)?.refId : rect, "dx": dx, "dy": dy});
   
 
   // handle native call
@@ -306,7 +306,7 @@ Future<MAMapRect> MAMapRectUnion(MAMapRect rect1, MAMapRect rect2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectUnion::MAMapRectUnion', {"rect1": rect1?.refId, "rect2": rect2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectUnion::MAMapRectUnion', {"rect1": rect1 is Ref ? (rect1 as Ref)?.refId : rect1, "rect2": rect2 is Ref ? (rect2 as Ref)?.refId : rect2});
   
 
   // handle native call
@@ -328,7 +328,7 @@ Future<bool> MAMapSizeContainsSize(MAMapSize size1, MAMapSize size2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSizeContainsSize::MAMapSizeContainsSize', {"size1": size1?.refId, "size2": size2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSizeContainsSize::MAMapSizeContainsSize', {"size1": size1 is Ref ? (size1 as Ref)?.refId : size1, "size2": size2 is Ref ? (size2 as Ref)?.refId : size2});
   
 
   // handle native call
@@ -350,7 +350,7 @@ Future<bool> MAMapRectContainsPoint(MAMapRect rect, MAMapPoint point) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectContainsPoint::MAMapRectContainsPoint', {"rect": rect?.refId, "point": point?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectContainsPoint::MAMapRectContainsPoint', {"rect": rect is Ref ? (rect as Ref)?.refId : rect, "point": point is Ref ? (point as Ref)?.refId : point});
   
 
   // handle native call
@@ -372,7 +372,7 @@ Future<bool> MAMapRectIntersectsRect(MAMapRect rect1, MAMapRect rect2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIntersectsRect::MAMapRectIntersectsRect', {"rect1": rect1?.refId, "rect2": rect2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIntersectsRect::MAMapRectIntersectsRect', {"rect1": rect1 is Ref ? (rect1 as Ref)?.refId : rect1, "rect2": rect2 is Ref ? (rect2 as Ref)?.refId : rect2});
   
 
   // handle native call
@@ -394,7 +394,7 @@ Future<bool> MAMapRectContainsRect(MAMapRect rect1, MAMapRect rect2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectContainsRect::MAMapRectContainsRect', {"rect1": rect1?.refId, "rect2": rect2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectContainsRect::MAMapRectContainsRect', {"rect1": rect1 is Ref ? (rect1 as Ref)?.refId : rect1, "rect2": rect2 is Ref ? (rect2 as Ref)?.refId : rect2});
   
 
   // handle native call
@@ -416,7 +416,7 @@ Future<bool> MACircleContainsPoint(MAMapPoint point, MAMapPoint center, double r
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleContainsPoint::MACircleContainsPoint', {"point": point?.refId, "center": center?.refId, "radius": radius});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleContainsPoint::MACircleContainsPoint', {"point": point is Ref ? (point as Ref)?.refId : point, "center": center is Ref ? (center as Ref)?.refId : center, "radius": radius});
   
 
   // handle native call
@@ -438,7 +438,7 @@ Future<bool> MACircleContainsCoordinate(CLLocationCoordinate2D point, CLLocation
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleContainsCoordinate::MACircleContainsCoordinate', {"point": point?.refId, "center": center?.refId, "radius": radius});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleContainsCoordinate::MACircleContainsCoordinate', {"point": point is Ref ? (point as Ref)?.refId : point, "center": center is Ref ? (center as Ref)?.refId : center, "radius": radius});
   
 
   // handle native call
@@ -460,7 +460,7 @@ Future<bool> MAPolygonContainsPoint(MAMapPoint point, List<MAMapPoint> polygon, 
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsPoint::MAPolygonContainsPoint', {"point": point?.refId, "polygon": polygon.map((__it__) => __it__?.refId).toList(), "count": count});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsPoint::MAPolygonContainsPoint', {"point": point is Ref ? (point as Ref)?.refId : point, "polygon": polygon.map((__it__) => __it__?.refId).toList(), "count": count});
   
 
   // handle native call
@@ -482,7 +482,7 @@ Future<bool> MAPolygonContainsCoordinate(CLLocationCoordinate2D point, List<CLLo
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsCoordinate::MAPolygonContainsCoordinate', {"point": point?.refId, "polygon": polygon.map((__it__) => __it__?.refId).toList(), "count": count});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonContainsCoordinate::MAPolygonContainsCoordinate', {"point": point is Ref ? (point as Ref)?.refId : point, "polygon": polygon.map((__it__) => __it__?.refId).toList(), "count": count});
   
 
   // handle native call
@@ -504,7 +504,7 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine', {"lineStart": lineStart?.refId, "lineEnd": lineEnd?.refId, "point": point?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetNearestMapPointFromLine::MAGetNearestMapPointFromLine', {"lineStart": lineStart is Ref ? (lineStart as Ref)?.refId : lineStart, "lineEnd": lineEnd is Ref ? (lineEnd as Ref)?.refId : lineEnd, "point": point is Ref ? (point as Ref)?.refId : point});
   
 
   // handle native call
@@ -516,44 +516,6 @@ Future<MAMapPoint> MAGetNearestMapPointFromLine(MAMapPoint lineStart, MAMapPoint
   } else {
     kNativeObjectPool.add(MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify');
     return MAMapPoint()..refId = __result__..tag__ = 'amap_map_fluttify';
-  }
-}
-
-Future<void> MAGetTileProjectionFromBounds(MACoordinateBounds bounds, int levelOfDetails, void tileProjection(int offsetX, int offsetY, int minX, int maxX, int minY, int maxY)) async {
-  // print log
-  if (fluttifyLogEnabled) {
-    debugPrint('fluttify-dart: MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds([\'levelOfDetails\':$levelOfDetails])');
-  }
-
-  // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetTileProjectionFromBounds::MAGetTileProjectionFromBounds', {"bounds": bounds?.refId, "levelOfDetails": levelOfDetails});
-  
-
-  // handle native call
-  MethodChannel('AMapTileProjectionBlock::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        switch (methodCall.method) {
-          case 'Callback::AMapTileProjectionBlock::AMapTileProjectionBlock':
-            // print log
-            if (fluttifyLogEnabled) {
-        
-            }
-        
-            // handle the native call
-            if (tileProjection != null) tileProjection(args['offsetX'], args['offsetY'], args['minX'], args['maxX'], args['minY'], args['maxY']);
-            break;
-          default:
-            break;
-        }
-      });
-
-  // convert native result to dart side object
-  if (__result__ == null) {
-    return null;
-  } else {
-    
-    return __result__;
   }
 }
 
@@ -652,7 +614,7 @@ Future<double> MAMapRectGetMinX(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMinX::MAMapRectGetMinX', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMinX::MAMapRectGetMinX', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -674,7 +636,7 @@ Future<double> MAMapRectGetMinY(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMinY::MAMapRectGetMinY', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMinY::MAMapRectGetMinY', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -696,7 +658,7 @@ Future<double> MAMapRectGetMidX(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMidX::MAMapRectGetMidX', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMidX::MAMapRectGetMidX', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -718,7 +680,7 @@ Future<double> MAMapRectGetMidY(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMidY::MAMapRectGetMidY', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMidY::MAMapRectGetMidY', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -740,7 +702,7 @@ Future<double> MAMapRectGetMaxX(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMaxX::MAMapRectGetMaxX', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMaxX::MAMapRectGetMaxX', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -762,7 +724,7 @@ Future<double> MAMapRectGetMaxY(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMaxY::MAMapRectGetMaxY', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetMaxY::MAMapRectGetMaxY', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -784,7 +746,7 @@ Future<double> MAMapRectGetWidth(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetWidth::MAMapRectGetWidth', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetWidth::MAMapRectGetWidth', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -806,7 +768,7 @@ Future<double> MAMapRectGetHeight(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetHeight::MAMapRectGetHeight', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectGetHeight::MAMapRectGetHeight', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -828,7 +790,7 @@ Future<bool> MAMapPointEqualToPoint(MAMapPoint point1, MAMapPoint point2) async 
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPointEqualToPoint::MAMapPointEqualToPoint', {"point1": point1?.refId, "point2": point2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapPointEqualToPoint::MAMapPointEqualToPoint', {"point1": point1 is Ref ? (point1 as Ref)?.refId : point1, "point2": point2 is Ref ? (point2 as Ref)?.refId : point2});
   
 
   // handle native call
@@ -850,7 +812,7 @@ Future<bool> MAMapSizeEqualToSize(MAMapSize size1, MAMapSize size2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSizeEqualToSize::MAMapSizeEqualToSize', {"size1": size1?.refId, "size2": size2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapSizeEqualToSize::MAMapSizeEqualToSize', {"size1": size1 is Ref ? (size1 as Ref)?.refId : size1, "size2": size2 is Ref ? (size2 as Ref)?.refId : size2});
   
 
   // handle native call
@@ -872,7 +834,7 @@ Future<bool> MAMapRectEqualToRect(MAMapRect rect1, MAMapRect rect2) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectEqualToRect::MAMapRectEqualToRect', {"rect1": rect1?.refId, "rect2": rect2?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectEqualToRect::MAMapRectEqualToRect', {"rect1": rect1 is Ref ? (rect1 as Ref)?.refId : rect1, "rect2": rect2 is Ref ? (rect2 as Ref)?.refId : rect2});
   
 
   // handle native call
@@ -894,7 +856,7 @@ Future<bool> MAMapRectIsNull(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIsNull::MAMapRectIsNull', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIsNull::MAMapRectIsNull', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -916,7 +878,7 @@ Future<bool> MAMapRectIsEmpty(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIsEmpty::MAMapRectIsEmpty', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMapRectIsEmpty::MAMapRectIsEmpty', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -938,7 +900,7 @@ Future<String> MAStringFromMapPoint(MAMapPoint point) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapPoint::MAStringFromMapPoint', {"point": point?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapPoint::MAStringFromMapPoint', {"point": point is Ref ? (point as Ref)?.refId : point});
   
 
   // handle native call
@@ -960,7 +922,7 @@ Future<String> MAStringFromMapSize(MAMapSize size) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapSize::MAStringFromMapSize', {"size": size?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapSize::MAStringFromMapSize', {"size": size is Ref ? (size as Ref)?.refId : size});
   
 
   // handle native call
@@ -982,7 +944,7 @@ Future<String> MAStringFromMapRect(MAMapRect rect) async {
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapRect::MAStringFromMapRect', {"rect": rect?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAStringFromMapRect::MAStringFromMapRect', {"rect": rect is Ref ? (rect as Ref)?.refId : rect});
   
 
   // handle native call
@@ -1004,7 +966,7 @@ Future<double> MAGetDirectionFromCoords(CLLocationCoordinate2D fromCoord, CLLoca
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDirectionFromCoords::MAGetDirectionFromCoords', {"fromCoord": fromCoord?.refId, "toCoord": toCoord?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDirectionFromCoords::MAGetDirectionFromCoords', {"fromCoord": fromCoord is Ref ? (fromCoord as Ref)?.refId : fromCoord, "toCoord": toCoord is Ref ? (toCoord as Ref)?.refId : toCoord});
   
 
   // handle native call
@@ -1026,7 +988,7 @@ Future<double> MAGetDirectionFromPoints(MAMapPoint fromPoint, MAMapPoint toPoint
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDirectionFromPoints::MAGetDirectionFromPoints', {"fromPoint": fromPoint?.refId, "toPoint": toPoint?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDirectionFromPoints::MAGetDirectionFromPoints', {"fromPoint": fromPoint is Ref ? (fromPoint as Ref)?.refId : fromPoint, "toPoint": toPoint is Ref ? (toPoint as Ref)?.refId : toPoint});
   
 
   // handle native call
@@ -1048,7 +1010,7 @@ Future<double> MAGetDistanceFromPointToLine(MAMapPoint point, MAMapPoint lineBeg
   }
 
   // invoke native method
-  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine', {"point": point?.refId, "lineBegin": lineBegin?.refId, "lineEnd": lineEnd?.refId});
+  final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAGetDistanceFromPointToLine::MAGetDistanceFromPointToLine', {"point": point is Ref ? (point as Ref)?.refId : point, "lineBegin": lineBegin is Ref ? (lineBegin as Ref)?.refId : lineBegin, "lineEnd": lineEnd is Ref ? (lineEnd as Ref)?.refId : lineEnd});
   
 
   // handle native call

@@ -14,7 +14,6 @@ export 'MAHeatMapTileOverlay.g.dart';
 export 'MAMultiTexturePolylineRenderer.g.dart';
 export 'MAPinAnnotationView.g.dart';
 export 'MAHeatMapGradient.g.dart';
-export 'MAOfflineCityStatus.g.dart';
 export 'MAParticleSizeGenerate.g.dart';
 export 'MATileOverlay.g.dart';
 export 'MAUserTrackingMode.g.dart';

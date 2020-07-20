@@ -1199,7 +1199,7 @@ extern BOOL enableLog;
                 // primitive callback arg
                 NSNumber* argerrorCode = @(errorCode);
                 // jsonable callback arg
-                NSString* argerrorDesc = errorDesc;
+                NSString* argerrorDesc = errorDesc == nil ? [NSNull null] : errorDesc;
         
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [channel invokeMethod:@"Callback::MAFailedCallback::MAFailedCallback" arguments:@{@"errorCode": argerrorCode, @"errorDesc": argerrorDesc}];
@@ -4126,32 +4126,6 @@ extern BOOL enableLog;
         
             methodResult(jsonableResult);
         },
-        @"MAMapView::setRotationDegree_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // jsonable arg
-            CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
-            // jsonable arg
-            BOOL animated = [args[@"animated"] boolValue];
-            // jsonable arg
-            CFTimeInterval duration = [args[@"duration"] doubleValue];
-        
-            // ref
-            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%@, %@, %@)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
-            }
-        
-            // invoke native method
-            [ref setRotationDegree : rotationDegree animated: animated duration: duration];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
         @"MAMapView::setCameraDegree_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // args
             // jsonable arg
@@ -5490,6 +5464,28 @@ extern BOOL enableLog;
         
             // invoke native method
             [ref setCustomMapStyleID : customMapStyleID];
+        
+            // result
+            // 无返回值
+            NSString* jsonableResult = @"success";
+        
+            methodResult(jsonableResult);
+        },
+        @"MAMapView::setCustomMapStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            MAMapCustomStyleOptions* styleOptions = (MAMapCustomStyleOptions*) HEAP[args[@"styleOptions"]];
+        
+            // ref
+            MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyleOptions(%@)", args[@"refId"], args[@"styleOptions"]);
+            }
+        
+            // invoke native method
+            [ref setCustomMapStyleOptions : styleOptions];
         
             // result
             // 无返回值

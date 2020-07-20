@@ -66,7 +66,7 @@ extern BOOL enableLog;
     NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
 
     __strong __typeof(weakSelf) strongSelf = weakSelf;
-    if (strongSelf->_handlerMap[methodCall.method] != nil) {
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
       strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
     } else {
       methodResult(FlutterMethodNotImplemented);
@@ -311,32 +311,6 @@ extern BOOL enableLog;
       
           // invoke native method
           [ref setZoomLevel : zoomLevel atPivot: pivot animated: animated];
-      
-          // result
-          // 无返回值
-          NSString* jsonableResult = @"success";
-      
-          methodResult(jsonableResult);
-      },
-      @"MAMapView::setRotationDegree_animated_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // args
-          // jsonable arg
-          CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
-          // jsonable arg
-          BOOL animated = [args[@"animated"] boolValue];
-          // jsonable arg
-          CFTimeInterval duration = [args[@"duration"] doubleValue];
-      
-          // ref
-          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          // print log
-          if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setRotationDegree(%@, %@, %@)", args[@"refId"], args[@"rotationDegree"], args[@"animated"], args[@"duration"]);
-          }
-      
-          // invoke native method
-          [ref setRotationDegree : rotationDegree animated: animated duration: duration];
       
           // result
           // 无返回值

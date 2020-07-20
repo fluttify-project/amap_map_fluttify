@@ -63,7 +63,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle', {"circle": circle?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircleRenderer::initWithCircle', {"circle": circle is Ref ? (circle as Ref)?.refId : circle, "refId": refId});
   
   
     // handle native call

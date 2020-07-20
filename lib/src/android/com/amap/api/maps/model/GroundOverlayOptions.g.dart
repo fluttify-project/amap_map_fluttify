@@ -42,6 +42,11 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
   //endregion
 
   //region getters
+  static Future<double> get_NO_DIMENSION() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION", );
+  
+    return __result__;
+  }
   
   //endregion
 
@@ -58,7 +63,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::image', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -106,7 +111,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double', {"var1": var1?.refId, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -130,7 +135,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double', {"var1": var1?.refId, "var2": var2, "var3": var3, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::position__com_amap_api_maps_model_LatLng__double__double', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
@@ -154,7 +159,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.GroundOverlayOptions::positionFromBounds', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -535,6 +540,12 @@ class com_amap_api_maps_model_GroundOverlayOptions extends com_amap_api_maps_mod
 
 extension com_amap_api_maps_model_GroundOverlayOptions_Batch on List<com_amap_api_maps_model_GroundOverlayOptions> {
   //region getters
+  Future<List<double>> get_NO_DIMENSION_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 

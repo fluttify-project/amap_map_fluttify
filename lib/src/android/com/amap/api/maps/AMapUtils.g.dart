@@ -72,7 +72,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateLineDistance', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateLineDistance', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -96,7 +96,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::calculateArea__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -144,7 +144,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::getLatestAMapApp', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::getLatestAMapApp', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call
@@ -168,7 +168,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapNavi', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapNavi', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -192,7 +192,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -216,7 +216,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapDrivingRoute', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapDrivingRoute', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -240,7 +240,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapTransitRoute', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapTransitRoute', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -264,7 +264,7 @@ class com_amap_api_maps_AMapUtils extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapWalkingRoute', {"var0": var0?.refId, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMapUtils::openAMapWalkingRoute', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call

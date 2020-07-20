@@ -63,7 +63,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon', {"polygon": polygon?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolygonRenderer::initWithPolygon', {"polygon": polygon is Ref ? (polygon as Ref)?.refId : polygon, "refId": refId});
   
   
     // handle native call

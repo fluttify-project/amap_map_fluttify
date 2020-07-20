@@ -15,76 +15,6 @@ extern BOOL enableLog;
 - (NSDictionary<NSString*, Handler>*) getSubHandler7 {
     __weak __typeof(self)weakSelf = self;
     return @{
-        @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATracePoint");
-            }
-        
-            MATracePoint* ref = [[MATracePoint alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMATraceLocation");
-            }
-        
-            MATraceLocation* ref = [[MATraceLocation alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAArc");
-            }
-        
-            MAArc* ref = [[MAArc alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAUserLocationRepresentation");
-            }
-        
-            MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::createMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createMAMapView");
-            }
-        
-            MAMapView* ref = [[MAMapView alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
         @"ObjectFactory::createMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -869,21 +799,6 @@ extern BOOL enableLog;
                 HEAP[[NSNumber numberWithLong: dataValue.hash]] = dataValue;
         
                 [resultList addObject:[NSNumber numberWithLong: dataValue.hash]];
-            }
-        
-            methodResult(resultList);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
-        @"ObjectFactory::create_batchNSValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray<NSNumber*>* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < [(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) argsBatch)[@"length"] integerValue]; __i__++) {
-                NSValue* ref = [[NSValue alloc] init];
-                HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-                [resultList addObject:[NSNumber numberWithLong: ref.hash]];
             }
         
             methodResult(resultList);

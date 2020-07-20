@@ -86,7 +86,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinate_radius', {"coord": coord?.refId, "radius": radius});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithCenterCoordinate_radius', {"coord": coord is Ref ? (coord as Ref)?.refId : coord, "radius": radius});
   
   
     // handle native call
@@ -110,7 +110,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect', {"mapRect": mapRect?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::circleWithMapRect', {"mapRect": mapRect is Ref ? (mapRect as Ref)?.refId : mapRect});
   
   
     // handle native call
@@ -134,7 +134,7 @@ class MACircle extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinate_radius', {"coord": coord?.refId, "radius": radius, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MACircle::setCircleWithCenterCoordinate_radius', {"coord": coord is Ref ? (coord as Ref)?.refId : coord, "radius": radius, "refId": refId});
   
   
     // handle native call

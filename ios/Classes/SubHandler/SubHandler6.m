@@ -15,84 +15,6 @@ extern BOOL enableLog;
 - (NSDictionary<NSString*, Handler>*) getSubHandler6 {
     __weak __typeof(self)weakSelf = self;
     return @{
-        @"MATraceLocation::set_time_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // jsonable arg
-                double time = [args[@"time"] doubleValue];
-        
-                // ref
-                MATraceLocation* ref = (MATraceLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.time = time;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAArc::set_startCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // struct arg
-                NSValue* startCoordinateValue = (NSValue*) HEAP[args[@"startCoordinate"]];
-                CLLocationCoordinate2D startCoordinate;
-                [startCoordinateValue getValue:&startCoordinate];
-        
-                // ref
-                MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.startCoordinate = startCoordinate;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAArc::set_passedCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // struct arg
-                NSValue* passedCoordinateValue = (NSValue*) HEAP[args[@"passedCoordinate"]];
-                CLLocationCoordinate2D passedCoordinate;
-                [passedCoordinateValue getValue:&passedCoordinate];
-        
-                // ref
-                MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.passedCoordinate = passedCoordinate;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
-        @"MAArc::set_endCoordinate_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // args
-                // struct arg
-                NSValue* endCoordinateValue = (NSValue*) HEAP[args[@"endCoordinate"]];
-                CLLocationCoordinate2D endCoordinate;
-                [endCoordinateValue getValue:&endCoordinate];
-        
-                // ref
-                MAArc* ref = (MAArc*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                ref.endCoordinate = endCoordinate;
-                methodResult(@"success");
-            }
-        
-            methodResult(@"success");
-        },
-        
         @"MAUserLocationRepresentation::set_showsAccuracyRing_batch": ^(NSObject <FlutterPluginRegistrar> * registrar, id argsBatch, FlutterResult methodResult) {
             for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
                 NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
@@ -2553,20 +2475,6 @@ extern BOOL enableLog;
             if (enableLog) NSLog(@"HEAP: %@", HEAP);
         },
         
-        @"ObjectFactory::createNSValue": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"ObjectFactory::createNSValue");
-            }
-        
-            NSValue* ref = [[NSValue alloc] init];
-            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
-        
-            methodResult([NSNumber numberWithLong: ref.hash]);
-        
-            if (enableLog) NSLog(@"HEAP: %@", HEAP);
-        },
-        
         @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -2784,6 +2692,76 @@ extern BOOL enableLog;
             }
         
             MACustomBuildingOverlay* ref = [[MACustomBuildingOverlay alloc] init];
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
+        
+            methodResult([NSNumber numberWithLong: ref.hash]);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMATracePoint");
+            }
+        
+            MATracePoint* ref = [[MATracePoint alloc] init];
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
+        
+            methodResult([NSNumber numberWithLong: ref.hash]);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMATraceLocation");
+            }
+        
+            MATraceLocation* ref = [[MATraceLocation alloc] init];
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
+        
+            methodResult([NSNumber numberWithLong: ref.hash]);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAArc");
+            }
+        
+            MAArc* ref = [[MAArc alloc] init];
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
+        
+            methodResult([NSNumber numberWithLong: ref.hash]);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAUserLocationRepresentation");
+            }
+        
+            MAUserLocationRepresentation* ref = [[MAUserLocationRepresentation alloc] init];
+            HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
+        
+            methodResult([NSNumber numberWithLong: ref.hash]);
+        
+            if (enableLog) NSLog(@"HEAP: %@", HEAP);
+        },
+        
+        @"ObjectFactory::createMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"ObjectFactory::createMAMapView");
+            }
+        
+            MAMapView* ref = [[MAMapView alloc] init];
             HEAP[[NSNumber numberWithLong: ref.hash]] = ref;
         
             methodResult([NSNumber numberWithLong: ref.hash]);

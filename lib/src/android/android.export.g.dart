@@ -40,7 +40,6 @@ export 'com/amap/api/maps/model/BasePointOverlay.g.dart';
 export 'com/amap/api/maps/model/BitmapDescriptor.g.dart';
 export 'com/amap/api/maps/model/Poi.g.dart';
 export 'com/amap/api/maps/model/Circle.g.dart';
-export 'com/amap/api/maps/model/UrlTileProvider.g.dart';
 export 'com/amap/api/maps/model/CircleOptions.g.dart';
 export 'com/amap/api/maps/model/RoutePara.g.dart';
 export 'com/amap/api/maps/model/TileOverlayOptions.g.dart';
