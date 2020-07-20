@@ -752,6 +752,30 @@ class com_amap_api_maps_UiSettings extends java_lang_Object  {
     }
   }
   
+  
+  Future<void> setLogoCenter(int var1, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoCenter([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoCenter', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   //endregion
 }
 
@@ -1360,6 +1384,26 @@ extension com_amap_api_maps_UiSettings_Batch on List<com_amap_api_maps_UiSetting
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setLogoCenter_batch(List<int> var1, List<int> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.UiSettings::setLogoCenter_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

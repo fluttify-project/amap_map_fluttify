@@ -42,6 +42,11 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_CircleOptionsCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CircleOptions::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -58,7 +63,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::center', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::center', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -394,7 +399,7 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::addHoles__com_amap_api_maps_model_BaseHoleOptions', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -506,11 +511,65 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
     }
   }
   
+  
+  Future<com_amap_api_maps_model_CircleOptions> usePolylineStroke(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::usePolylineStroke([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::usePolylineStroke', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<bool> isUsePolylineStroke() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isUsePolylineStroke([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::isUsePolylineStroke', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
   //endregion
 }
 
 extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_model_CircleOptions> {
   //region getters
+  Future<List<com_amap_api_maps_model_CircleOptionsCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CircleOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 
@@ -894,6 +953,46 @@ extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<com_amap_api_maps_model_CircleOptions>> usePolylineStroke_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::usePolylineStroke_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CircleOptions()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isUsePolylineStroke_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.CircleOptions::isUsePolylineStroke_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

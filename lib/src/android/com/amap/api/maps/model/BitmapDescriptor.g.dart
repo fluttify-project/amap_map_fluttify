@@ -24,6 +24,11 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_BitmapDescriptorCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptor::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -152,35 +157,17 @@ class com_amap_api_maps_model_BitmapDescriptor extends java_lang_Object with and
     }
   }
   
-  
-  Future<void> recycle() async {
-    // print log
-    if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::recycle([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::recycle', {"refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
-    }
-  }
-  
   //endregion
 }
 
 extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_maps_model_BitmapDescriptor> {
   //region getters
+  Future<List<com_amap_api_maps_model_BitmapDescriptorCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.BitmapDescriptor::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_BitmapDescriptorCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 
@@ -284,26 +271,6 @@ extension com_amap_api_maps_model_BitmapDescriptor_Batch on List<com_amap_api_ma
       return null;
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> recycle_batch() async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.BitmapDescriptor::recycle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
     
       return typedResult;
     }

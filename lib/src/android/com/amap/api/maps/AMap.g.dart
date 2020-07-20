@@ -28,6 +28,9 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   static final int MASK_LAYER_UNDER_MARKER = 0;
   static final String CHINESE = "zh_cn";
   static final String ENGLISH = "en";
+  static final String LOCAL = "local";
+  static final String CUSTOM = "custom";
+  static final String STYLE_CHINESE = "style_zh_cn";
   static final int MASK_LAYER_UNDER_LINE = 1;
   //endregion
 
@@ -124,7 +127,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::moveCamera', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::moveCamera', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -148,7 +151,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -172,7 +175,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -221,7 +224,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1?.refId, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -294,7 +297,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addNavigateArrow', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addNavigateArrow', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -318,7 +321,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolyline', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolyline', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -366,7 +369,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCircle', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCircle', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -390,7 +393,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addArc', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addArc', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -414,7 +417,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolygon', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addPolygon', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -438,7 +441,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGroundOverlay', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGroundOverlay', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -462,7 +465,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarker', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMarker', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -486,7 +489,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGL3DModel', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addGL3DModel', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -510,7 +513,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addText', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addText', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -582,7 +585,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addTileOverlay', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addTileOverlay', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -599,6 +602,30 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   }
   
   
+  Future<com_amap_api_maps_model_HeatMapLayer> addHeatMapLayer(com_amap_api_maps_model_HeatMapLayerOptions var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addHeatMapLayer([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addHeatMapLayer', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = com_amap_api_maps_model_HeatMapLayer()..refId = __result__..tag__ = 'amap_map_fluttify';
+      if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
   Future<com_amap_api_maps_model_MultiPointOverlay> addMultiPointOverlay(com_amap_api_maps_model_MultiPointOverlayOptions var1) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -606,7 +633,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMultiPointOverlay', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addMultiPointOverlay', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -630,7 +657,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addParticleOverlay', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addParticleOverlay', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -870,7 +897,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyTrafficStyle', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyTrafficStyle', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -990,11 +1017,27 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource', {"refId": refId});
   
   
     // handle native call
-  
+    MethodChannel('com.amap.api.maps.AMap::setLocationSource::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.LocationSource::deactivate':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: deactivate([])');
+              }
+        
+              // handle the native call
+              var1?.deactivate();
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (__result__ == null) {
@@ -1014,7 +1057,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyLocationStyle', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMyLocationStyle', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -1585,7 +1628,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setInfoWindowAdapter', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setInfoWindowAdapter', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -2138,7 +2181,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setIndoorBuildingInfo', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setIndoorBuildingInfo', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -2265,7 +2308,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getZoomToSpanLevel', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getZoomToSpanLevel', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2 is Ref ? (var2 as Ref)?.refId : var2, "refId": refId});
   
   
     // handle native call
@@ -2409,7 +2452,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMapStatusLimits', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setMapStatusLimits', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -2433,7 +2476,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCrossOverlay', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addCrossOverlay', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -2577,7 +2620,7 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setCustomMapStyle', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setCustomMapStyle', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -2746,6 +2789,1188 @@ class com_amap_api_maps_AMap extends java_lang_Object  {
   
     // invoke native method
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setRoadArrowEnable', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> setNaviLabelEnable(bool var1, int var2, int var3) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::setNaviLabelEnable([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setNaviLabelEnable', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> setTouchPoiEnable(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::setTouchPoiEnable([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setTouchPoiEnable', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<bool> isTouchPoiEnable() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::isTouchPoiEnable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::isTouchPoiEnable', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<int> getNativeMapController() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::getNativeMapController([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getNativeMapController', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnCameraChangeListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnCameraChangeListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnCameraChangeListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onCameraChange([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onCameraChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onCameraChangeFinish([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onCameraChangeFinish(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMapClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMapClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMapClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMapClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMarkerDragListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMarkerDragListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMarkerDragListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDragStart([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDragStart(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDrag([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDrag(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDragEnd([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDragEnd(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMapLoadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMapLoadedListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMapLoadedListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMapLoadedListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapLoaded([])');
+              }
+        
+              // handle the native call
+              var1?.onMapLoaded();
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMapTouchListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMapTouchListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMapTouchListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onTouch([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onTouch(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_view_MotionEvent>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMarkerClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMarkerClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMarkerClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnPolylineClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnPolylineClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnPolylineClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onPolylineClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onPolylineClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Polyline>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnPOIClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnPOIClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnPOIClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onPOIClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onPOIClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Poi>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMapLongClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMapLongClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMapLongClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapLongClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMapLongClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnInfoWindowClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnInfoWindowClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnInfoWindowClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onInfoWindowClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onInfoWindowClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnIndoorBuildingActiveListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnIndoorBuildingActiveListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: OnIndoorBuilding([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.OnIndoorBuilding(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_IndoorBuildingInfo>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> addOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::addOnMyLocationChangeListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addOnMyLocationChangeListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::addOnMyLocationChangeListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMyLocationChange([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMyLocationChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_location_Location>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnCameraChangeListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnCameraChangeListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnCameraChangeListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onCameraChange([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onCameraChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onCameraChangeFinish([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onCameraChangeFinish(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_CameraPosition>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMapClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMapClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMapClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMarkerDragListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMarkerDragListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerDragListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDragStart([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDragStart(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDrag([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDrag(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerDragEnd([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerDragEnd(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMapLoadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMapLoadedListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMapLoadedListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapLoadedListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapLoaded([])');
+              }
+        
+              // handle the native call
+              var1?.onMapLoaded();
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMapTouchListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMapTouchListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapTouchListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onTouch([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onTouch(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_view_MotionEvent>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMarkerClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMarkerClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMarkerClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMarkerClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMarkerClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnPolylineClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnPolylineClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnPolylineClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onPolylineClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onPolylineClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Polyline>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnPOIClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnPOIClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnPOIClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onPOIClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onPOIClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Poi>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMapLongClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMapLongClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMapLongClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMapLongClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMapLongClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_LatLng>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnInfoWindowClickListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnInfoWindowClickListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnInfoWindowClickListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onInfoWindowClick([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onInfoWindowClick(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_Marker>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnIndoorBuildingActiveListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnIndoorBuildingActiveListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnIndoorBuildingActiveListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: OnIndoorBuilding([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.OnIndoorBuilding(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<com_amap_api_maps_model_IndoorBuildingInfo>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> removeOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::removeOnMyLocationChangeListener([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::removeOnMyLocationChangeListener', {"refId": refId});
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.AMap::removeOnMyLocationChangeListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onMyLocationChange([\'var1\':${args['var1']}])');
+              }
+        
+              // handle the native call
+              var1?.onMyLocationChange(TypeOpAmapMapFluttifyAndroid((args['var1'] as Object))?.as__<android_location_Location>());
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> setWorldVectorMapStyle(String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::setWorldVectorMapStyle([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setWorldVectorMapStyle', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<String> getCurrentStyle() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::getCurrentStyle([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getCurrentStyle', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  Future<void> accelerateNetworkInChinese(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.AMap@$refId::accelerateNetworkInChinese([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::accelerateNetworkInChinese', {"var1": var1, "refId": refId});
   
   
     // handle native call
@@ -3155,6 +4380,26 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
   }
   
   
+  Future<List<com_amap_api_maps_model_HeatMapLayer>> addHeatMapLayer_batch(List<com_amap_api_maps_model_HeatMapLayerOptions> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::addHeatMapLayer_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_HeatMapLayer()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+      kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
   Future<List<com_amap_api_maps_model_MultiPointOverlay>> addMultiPointOverlay_batch(List<com_amap_api_maps_model_MultiPointOverlayOptions> var1) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -3470,26 +4715,6 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => android_location_Location()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> setLocationSource_batch(List<com_amap_api_maps_LocationSource> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setLocationSource_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
       return typedResult;
     }
   }
@@ -4262,6 +5487,146 @@ extension com_amap_api_maps_AMap_Batch on List<com_amap_api_maps_AMap> {
   
     // invoke native method
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setRoadArrowEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setNaviLabelEnable_batch(List<bool> var1, List<int> var2, List<int> var3) async {
+    if (var1.length != var2.length || var2.length != var3.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setNaviLabelEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "var3": var3[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setTouchPoiEnable_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setTouchPoiEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<bool>> isTouchPoiEnable_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::isTouchPoiEnable_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<int>> getNativeMapController_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getNativeMapController_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> setWorldVectorMapStyle_batch(List<String> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::setWorldVectorMapStyle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<String>> getCurrentStyle_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::getCurrentStyle_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<void>> accelerateNetworkInChinese_batch(List<bool> var1) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.AMap::accelerateNetworkInChinese_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
   
   
     // convert native result to dart side object

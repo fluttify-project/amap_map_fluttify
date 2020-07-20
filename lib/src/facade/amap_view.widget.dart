@@ -14,9 +14,11 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import 'enums.dart';
+import 'extensions.dart';
 import 'models.dart';
 
 part 'amap_controller.dart';
+part 'map_delegates.dart';
 
 typedef Future<void> _OnMapCreated(AmapController controller);
 
@@ -48,6 +50,7 @@ class AmapView extends StatefulWidget {
     this.onMarkerClicked,
     this.onMapClicked,
     this.onMapMoveStart,
+    this.onMapMoving,
     this.onMapMoveEnd,
     this.maskDelay = const Duration(seconds: 0),
     this.mask,
@@ -104,6 +107,9 @@ class AmapView extends StatefulWidget {
 
   /// 地图开始移动回调
   final OnMapMove onMapMoveStart;
+
+  /// 地图移动中回调
+  final OnMapMove onMapMoving;
 
   /// 地图结束移动回调
   final OnMapMove onMapMoveEnd;
@@ -312,6 +318,7 @@ class _AmapViewState extends State<AmapView> {
     if (widget.onMapMoveStart != null || widget.onMapMoveEnd != null) {
       await _controller?.setMapMoveListener(
         onMapMoveStart: widget.onMapMoveStart,
+        onMapMoving: widget.onMapMoving,
         onMapMoveEnd: widget.onMapMoveEnd,
       );
     }
@@ -363,6 +370,7 @@ class _AmapViewState extends State<AmapView> {
     if (widget.onMapMoveStart != null || widget.onMapMoveEnd != null) {
       await _controller?.setMapMoveListener(
         onMapMoveStart: widget.onMapMoveStart,
+        onMapMoving: widget.onMapMoving,
         onMapMoveEnd: widget.onMapMoveEnd,
       );
     }

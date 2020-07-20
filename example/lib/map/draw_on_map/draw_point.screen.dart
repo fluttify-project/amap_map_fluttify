@@ -247,12 +247,14 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         .toList()
                         .then((boundary) {
                       debugPrint('boundary: $boundary');
-                      return _controller?.zoomToSpan(
-                        boundary,
-                        padding: EdgeInsets.only(
-                          top: 100,
-                        ),
-                      );
+                      _controller
+                          .zoomToSpan(
+                            boundary,
+                            padding: EdgeInsets.only(bottom: 100),
+                          )
+                          .then((value) =>
+                              Future.delayed(Duration(milliseconds: 300)))
+                          .then((value) => _controller?.setTilt(40));
                     });
                   },
                 ),
@@ -269,8 +271,22 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                 ListTile(
                   title: Center(child: Text('画热力图')),
                   onTap: () async {
-                    await _controller?.addHeatmapTile(
+                    await _controller?.addHeatmapTileOverlay(
                       HeatmapTileOption(latLngList: getNextBatchLatLng(50)),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('添加在线瓦片图')),
+                  onTap: () async {
+                    await _controller?.addUrlTileOverlay(
+                      UrlTileOption(
+                        width: 256,
+                        height: 256,
+                        urlTemplate:
+//                        'http://tile.opencyclemap.org/cycle/{scale}/{x}/{y}.png', // 由于没有api key, 这个链接无法显示瓦片
+                            'https://c2.hoopchina.com.cn/uploads/star/event/images/200709/bmiddle-34faa76c78ff3ba7a67282d64ff3c081135d4743.jpg?x-oss-process=image/resize,w_780,312',
+                      ),
                     );
                   },
                 ),

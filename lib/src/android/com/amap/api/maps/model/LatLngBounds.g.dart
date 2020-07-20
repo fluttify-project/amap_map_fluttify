@@ -42,6 +42,12 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_LatLngBoundsCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_LatLngBoundsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_LatLngBoundsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+  
   Future<com_amap_api_maps_model_LatLng> get_southwest() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_southwest", {'refId': refId});
     kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
@@ -93,7 +99,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLng', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLng', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -117,7 +123,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLngBounds', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::contains__com_amap_api_maps_model_LatLngBounds', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -141,7 +147,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::intersects', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::intersects', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -165,7 +171,7 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::including', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.LatLngBounds::including', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -186,6 +192,13 @@ class com_amap_api_maps_model_LatLngBounds extends java_lang_Object with android
 
 extension com_amap_api_maps_model_LatLngBounds_Batch on List<com_amap_api_maps_model_LatLngBounds> {
   //region getters
+  Future<List<com_amap_api_maps_model_LatLngBoundsCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLngBoundsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   Future<List<com_amap_api_maps_model_LatLng>> get_southwest_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.LatLngBounds::get_southwest_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();

@@ -132,6 +132,12 @@ class MAAnnotationView extends UIView  {
     return (__result__ as int).toMAAnnotationViewDragState();
   }
   
+  Future<bool> get_canAdjustPositon({bool viewChannel = true}) async {
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_canAdjustPositon", {'refId': refId});
+  
+    return __result__;
+  }
+  
   //endregion
 
   //region setters
@@ -214,7 +220,13 @@ class MAAnnotationView extends UIView  {
   }
   
   Future<void> set_dragState(MAAnnotationViewDragState dragState, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState', {'refId': refId, "dragState": dragState.index});
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState', {'refId': refId, "dragState": dragState.toValue()});
+  
+  
+  }
+  
+  Future<void> set_canAdjustPositon(bool canAdjustPositon, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_canAdjustPositon', {'refId': refId, "canAdjustPositon": canAdjustPositon});
   
   
   }
@@ -254,7 +266,7 @@ class MAAnnotationView extends UIView  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotation_reuseIdentifier', {"annotation": annotation?.refId, "reuseIdentifier": reuseIdentifier, "refId": refId});
+    final __result__ = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::initWithAnnotation_reuseIdentifier', {"annotation": annotation is Ref ? (annotation as Ref)?.refId : annotation, "reuseIdentifier": reuseIdentifier, "refId": refId});
   
   
     // handle native call
@@ -428,6 +440,13 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
     return typedResult;
   }
   
+  Future<List<bool>> get_canAdjustPositon_batch({bool viewChannel = true}) async {
+    final resultBatch = await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod("MAAnnotationView::get_canAdjustPositon_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
   //endregion
 
   //region setters
@@ -510,7 +529,13 @@ extension MAAnnotationView_Batch on List<MAAnnotationView> {
   }
   
   Future<void> set_dragState_batch(List<MAAnnotationViewDragState> dragState, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "dragState": dragState[__i__].index}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_dragState_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "dragState": dragState[__i__].toValue()}]);
+  
+  
+  }
+  
+  Future<void> set_canAdjustPositon_batch(List<bool> canAdjustPositon, {bool viewChannel = true}) async {
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAAnnotationView::set_canAdjustPositon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "canAdjustPositon": canAdjustPositon[__i__]}]);
   
   
   }

@@ -15,6 +15,66 @@ extern BOOL enableLog;
 - (NSDictionary<NSString*, Handler>*) getSubHandler4 {
     __weak __typeof(self)weakSelf = self;
     return @{
+        @"MAParticleOverlayOptions::get_visibile_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.visibile;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_duration_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSTimeInterval result = ref.duration;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAParticleOverlayOptions::get_loop_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.loop;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
         @"MAParticleOverlayOptions::get_maxParticles_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -224,48 +284,6 @@ extern BOOL enableLog;
             methodResult(resultList);
         },
         
-        @"MAOverlayRenderer::get_glPoints_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                CGPoint* result = ref.glPoints;
-        
-                // 返回值: 结构体
-                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint*)];
-                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
-        @"MAOverlayRenderer::get_glPointCount_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
-            NSMutableArray* resultList = [NSMutableArray array];
-        
-            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
-                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
-        
-                // ref object
-                MAOverlayRenderer* ref = (MAOverlayRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-                NSUInteger result = ref.glPointCount;
-        
-                // 返回值: Value
-                id jsonableResult = @(result);
-        
-                [resultList addObject:jsonableResult];
-            }
-        
-            methodResult(resultList);
-        },
-        
         @"MAOverlayRenderer::get_strokeImage_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
             NSMutableArray* resultList = [NSMutableArray array];
         
@@ -398,6 +416,361 @@ extern BOOL enableLog;
                 MAUserLocation* ref = (MAUserLocation*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
                 CLHeading* result = ref.heading;
+        
+                // return a ref
+                HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+                NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorNode::get_coordinate_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CLLocationCoordinate2D result = ref.coordinate;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D)];
+                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorNode::get_weight_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorNode* ref = (MAHeatMapVectorNode*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                float result = ref.weight;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorItem::get_center_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorItem* ref = (MAHeatMapVectorItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAMapPoint result = ref.center;
+        
+                // 返回值: 结构体
+                NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapPoint)];
+                HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+                NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorItem::get_intensity_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorItem* ref = (MAHeatMapVectorItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                float result = ref.intensity;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorItem::get_nodeIndices_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorItem* ref = (MAHeatMapVectorItem*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSArray<NSNumber*>* result = ref.nodeIndices;
+        
+                // 返回值: jsonable
+                id jsonableResult = result;
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_type_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAHeatMapType result = ref.type;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_visible_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                BOOL result = ref.visible;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_inputNodes_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSArray<MAHeatMapVectorNode*>* result = ref.inputNodes;
+        
+                // 返回值: 列表
+                NSMutableArray* jsonableResult = [NSMutableArray array];
+                for (int __i__ = 0; __i__ < result.count; __i__++) {
+                    NSObject* object = [result objectAtIndex:__i__];
+                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
+                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                }
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_size_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CLLocationDistance result = ref.size;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_gap_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGFloat result = ref.gap;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_colors_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSArray<UIColor*>* result = ref.colors;
+        
+                // 返回值: 列表
+                NSMutableArray* jsonableResult = [NSMutableArray array];
+                for (int __i__ = 0; __i__ < result.count; __i__++) {
+                    NSObject* object = [result objectAtIndex:__i__];
+                    [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
+                    HEAP[[NSNumber numberWithLong: object.hash]] = object;
+                }
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_startPoints_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                NSArray<NSNumber*>* result = ref.startPoints;
+        
+                // 返回值: jsonable
+                id jsonableResult = result;
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_opacity_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGFloat result = ref.opacity;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_maxIntensity_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                int result = ref.maxIntensity;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_minZoom_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGFloat result = ref.minZoom;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlayOptions::get_maxZoom_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlayOptions* ref = (MAHeatMapVectorOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                CGFloat result = ref.maxZoom;
+        
+                // 返回值: Value
+                id jsonableResult = @(result);
+        
+                [resultList addObject:jsonableResult];
+            }
+        
+            methodResult(resultList);
+        },
+        
+        @"MAHeatMapVectorOverlay::get_option_batch": ^(NSObject <FlutterPluginRegistrar>* registrar, id argsBatch, FlutterResult methodResult) {
+            NSMutableArray* resultList = [NSMutableArray array];
+        
+            for (int __i__ = 0; __i__ < ((NSArray<NSDictionary<NSString*, NSObject*>*>*) argsBatch).count; __i__++) {
+                NSDictionary<NSString*, id>* args = [((NSArray<NSDictionary<NSString*, id>*>*) argsBatch) objectAtIndex:__i__];
+        
+                // ref object
+                MAHeatMapVectorOverlay* ref = (MAHeatMapVectorOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+                MAHeatMapVectorOverlayOptions* result = ref.option;
         
                 // return a ref
                 HEAP[[NSNumber numberWithLong: (result).hash]] = result;
@@ -2876,6 +3249,23 @@ extern BOOL enableLog;
             methodResult(@"success");
         },
         
+        @"MAMapCustomStyleOptions::set_styleDataOverseaPath": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMapCustomStyleOptions::set_styleDataOverseaPath");
+            }
+        
+            // args
+            // jsonable arg
+            NSString* styleDataOverseaPath = (NSString*) args[@"styleDataOverseaPath"];
+        
+            // ref
+            MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.styleDataOverseaPath = styleDataOverseaPath;
+            methodResult(@"success");
+        },
+        
         @"MAMapCustomStyleOptions::set_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
@@ -3002,6 +3392,80 @@ extern BOOL enableLog;
             MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
             ref.strokeTextureImages = strokeTextureImages;
+            methodResult(@"success");
+        },
+        
+        @"MAMultiTexturePolylineRenderer::set_showRangeEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMultiTexturePolylineRenderer::set_showRangeEnabled");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL showRangeEnabled = [args[@"showRangeEnabled"] boolValue];
+        
+            // ref
+            MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showRangeEnabled = showRangeEnabled;
+            methodResult(@"success");
+        },
+        
+        @"MAMultiTexturePolylineRenderer::set_showRange": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAMultiTexturePolylineRenderer::set_showRange");
+            }
+        
+            // args
+            // struct arg
+            NSValue* showRangeValue = (NSValue*) HEAP[args[@"showRange"]];
+            MAPathShowRange showRange;
+            [showRangeValue getValue:&showRange];
+        
+            // ref
+            MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showRange = showRange;
+            methodResult(@"success");
+        },
+        
+        @"MAPathShowRange::set_begin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPathShowRange::set_begin");
+            }
+        
+            // args
+            // jsonable arg
+            float begin = [args[@"begin"] floatValue];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPathShowRange ref;
+            [dataValue getValue:&ref];
+        
+            ref.begin = begin;
+            methodResult(@"success");
+        },
+        
+        @"MAPathShowRange::set_end": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPathShowRange::set_end");
+            }
+        
+            // args
+            // jsonable arg
+            float end = [args[@"end"] floatValue];
+        
+            // ref
+            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAPathShowRange ref;
+            [dataValue getValue:&ref];
+        
+            ref.end = end;
             methodResult(@"success");
         },
         
@@ -3140,6 +3604,76 @@ extern BOOL enableLog;
             MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
             ref.sideColor = sideColor;
+            methodResult(@"success");
+        },
+        
+        @"MAPolylineRenderer::set_userInteractionEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPolylineRenderer::set_userInteractionEnabled");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL userInteractionEnabled = [args[@"userInteractionEnabled"] boolValue];
+        
+            // ref
+            MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.userInteractionEnabled = userInteractionEnabled;
+            methodResult(@"success");
+        },
+        
+        @"MAPolylineRenderer::set_hitTestInset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPolylineRenderer::set_hitTestInset");
+            }
+        
+            // args
+            // jsonable arg
+            CGFloat hitTestInset = [args[@"hitTestInset"] floatValue];
+        
+            // ref
+            MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.hitTestInset = hitTestInset;
+            methodResult(@"success");
+        },
+        
+        @"MAPolylineRenderer::set_showRangeEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPolylineRenderer::set_showRangeEnabled");
+            }
+        
+            // args
+            // jsonable arg
+            BOOL showRangeEnabled = [args[@"showRangeEnabled"] boolValue];
+        
+            // ref
+            MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showRangeEnabled = showRangeEnabled;
+            methodResult(@"success");
+        },
+        
+        @"MAPolylineRenderer::set_showRange": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MAPolylineRenderer::set_showRange");
+            }
+        
+            // args
+            // struct arg
+            NSValue* showRangeValue = (NSValue*) HEAP[args[@"showRange"]];
+            MAPathShowRange showRange;
+            [showRangeValue getValue:&showRange];
+        
+            // ref
+            MAPolylineRenderer* ref = (MAPolylineRenderer*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.showRange = showRange;
             methodResult(@"success");
         },
         
@@ -3419,538 +3953,20 @@ extern BOOL enableLog;
             methodResult(@"success");
         },
         
-        @"MATileOverlay::set_tileSize": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+        @"MAAnnotationView::set_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
             // print log
             if (enableLog) {
-                NSLog(@"MATileOverlay::set_tileSize");
-            }
-        
-            // args
-            // struct arg
-            NSValue* tileSizeValue = (NSValue*) HEAP[args[@"tileSize"]];
-            CGSize tileSize;
-            [tileSizeValue getValue:&tileSize];
-        
-            // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.tileSize = tileSize;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlay::set_minimumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlay::set_minimumZ");
+                NSLog(@"MAAnnotationView::set_canAdjustPositon");
             }
         
             // args
             // jsonable arg
-            NSInteger minimumZ = [args[@"minimumZ"] longValue];
+            BOOL canAdjustPositon = [args[@"canAdjustPositon"] boolValue];
         
             // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
         
-            ref.minimumZ = minimumZ;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlay::set_maximumZ": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlay::set_maximumZ");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger maximumZ = [args[@"maximumZ"] longValue];
-        
-            // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.maximumZ = maximumZ;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlay::set_canReplaceMapContent": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlay::set_canReplaceMapContent");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL canReplaceMapContent = [args[@"canReplaceMapContent"] boolValue];
-        
-            // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.canReplaceMapContent = canReplaceMapContent;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlay::set_boundingMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlay::set_boundingMapRect");
-            }
-        
-            // args
-            // struct arg
-            NSValue* boundingMapRectValue = (NSValue*) HEAP[args[@"boundingMapRect"]];
-            MAMapRect boundingMapRect;
-            [boundingMapRectValue getValue:&boundingMapRect];
-        
-            // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.boundingMapRect = boundingMapRect;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlay::set_disableOffScreenTileLoading": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlay::set_disableOffScreenTileLoading");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL disableOffScreenTileLoading = [args[@"disableOffScreenTileLoading"] boolValue];
-        
-            // ref
-            MATileOverlay* ref = (MATileOverlay*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.disableOffScreenTileLoading = disableOffScreenTileLoading;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlayPath::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlayPath::set_x");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger x = [args[@"x"] longValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MATileOverlayPath ref;
-            [dataValue getValue:&ref];
-        
-            ref.x = x;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlayPath::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlayPath::set_y");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger y = [args[@"y"] longValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MATileOverlayPath ref;
-            [dataValue getValue:&ref];
-        
-            ref.y = y;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlayPath::set_z": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlayPath::set_z");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger z = [args[@"z"] longValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MATileOverlayPath ref;
-            [dataValue getValue:&ref];
-        
-            ref.z = z;
-            methodResult(@"success");
-        },
-        
-        @"MATileOverlayPath::set_contentScaleFactor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MATileOverlayPath::set_contentScaleFactor");
-            }
-        
-            // args
-            // jsonable arg
-            CGFloat contentScaleFactor = [args[@"contentScaleFactor"] floatValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MATileOverlayPath ref;
-            [dataValue getValue:&ref];
-        
-            ref.contentScaleFactor = contentScaleFactor;
-            methodResult(@"success");
-        },
-        
-        @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACustomCalloutView::set_userData");
-            }
-        
-            // args
-            // id arg
-            id userData;
-            // jsonable
-            if ([args[@"userData"] isKindOfClass:[NSNumber class]]
-                    || [args[@"userData"] isKindOfClass:[NSString class]]
-                    || [args[@"userData"] isKindOfClass:[NSArray class]]
-                    || [args[@"userData"] isKindOfClass:[NSDictionary class]]) {
-                userData = args[@"userData"];
-            }
-            // non jsonable
-            else {
-                userData = HEAP[@([args[@"userData"] integerValue])];
-            }
-        
-            // ref
-            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.userData = userData;
-            methodResult(@"success");
-        },
-        
-        @"MAOfflineItemCommonCity::set_province": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAOfflineItemCommonCity::set_province");
-            }
-        
-            // args
-            // ref arg
-            MAOfflineItem* province = (MAOfflineItem*) HEAP[args[@"province"]];
-        
-            // ref
-            MAOfflineItemCommonCity* ref = (MAOfflineItemCommonCity*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.province = province;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateBounds::set_northEast": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateBounds::set_northEast");
-            }
-        
-            // args
-            // struct arg
-            NSValue* northEastValue = (NSValue*) HEAP[args[@"northEast"]];
-            CLLocationCoordinate2D northEast;
-            [northEastValue getValue:&northEast];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateBounds ref;
-            [dataValue getValue:&ref];
-        
-            ref.northEast = northEast;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateBounds::set_southWest": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateBounds::set_southWest");
-            }
-        
-            // args
-            // struct arg
-            NSValue* southWestValue = (NSValue*) HEAP[args[@"southWest"]];
-            CLLocationCoordinate2D southWest;
-            [southWestValue getValue:&southWest];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateBounds ref;
-            [dataValue getValue:&ref];
-        
-            ref.southWest = southWest;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateSpan::set_latitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateSpan::set_latitudeDelta");
-            }
-        
-            // args
-            // jsonable arg
-            CLLocationDegrees latitudeDelta = [args[@"latitudeDelta"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateSpan ref;
-            [dataValue getValue:&ref];
-        
-            ref.latitudeDelta = latitudeDelta;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateSpan::set_longitudeDelta": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateSpan::set_longitudeDelta");
-            }
-        
-            // args
-            // jsonable arg
-            CLLocationDegrees longitudeDelta = [args[@"longitudeDelta"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateSpan ref;
-            [dataValue getValue:&ref];
-        
-            ref.longitudeDelta = longitudeDelta;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateRegion::set_center": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateRegion::set_center");
-            }
-        
-            // args
-            // struct arg
-            NSValue* centerValue = (NSValue*) HEAP[args[@"center"]];
-            CLLocationCoordinate2D center;
-            [centerValue getValue:&center];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateRegion ref;
-            [dataValue getValue:&ref];
-        
-            ref.center = center;
-            methodResult(@"success");
-        },
-        
-        @"MACoordinateRegion::set_span": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MACoordinateRegion::set_span");
-            }
-        
-            // args
-            // struct arg
-            NSValue* spanValue = (NSValue*) HEAP[args[@"span"]];
-            MACoordinateSpan span;
-            [spanValue getValue:&span];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MACoordinateRegion ref;
-            [dataValue getValue:&ref];
-        
-            ref.span = span;
-            methodResult(@"success");
-        },
-        
-        @"MAMapPoint::set_x": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapPoint::set_x");
-            }
-        
-            // args
-            // jsonable arg
-            double x = [args[@"x"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapPoint ref;
-            [dataValue getValue:&ref];
-        
-            ref.x = x;
-            methodResult(@"success");
-        },
-        
-        @"MAMapPoint::set_y": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapPoint::set_y");
-            }
-        
-            // args
-            // jsonable arg
-            double y = [args[@"y"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapPoint ref;
-            [dataValue getValue:&ref];
-        
-            ref.y = y;
-            methodResult(@"success");
-        },
-        
-        @"MAMapSize::set_width": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapSize::set_width");
-            }
-        
-            // args
-            // jsonable arg
-            double width = [args[@"width"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapSize ref;
-            [dataValue getValue:&ref];
-        
-            ref.width = width;
-            methodResult(@"success");
-        },
-        
-        @"MAMapSize::set_height": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapSize::set_height");
-            }
-        
-            // args
-            // jsonable arg
-            double height = [args[@"height"] doubleValue];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapSize ref;
-            [dataValue getValue:&ref];
-        
-            ref.height = height;
-            methodResult(@"success");
-        },
-        
-        @"MAMapRect::set_origin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapRect::set_origin");
-            }
-        
-            // args
-            // struct arg
-            NSValue* originValue = (NSValue*) HEAP[args[@"origin"]];
-            MAMapPoint origin;
-            [originValue getValue:&origin];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapRect ref;
-            [dataValue getValue:&ref];
-        
-            ref.origin = origin;
-            methodResult(@"success");
-        },
-        
-        @"MAMapRect::set_size": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAMapRect::set_size");
-            }
-        
-            // args
-            // struct arg
-            NSValue* sizeValue = (NSValue*) HEAP[args[@"size"]];
-            MAMapSize size;
-            [sizeValue getValue:&size];
-        
-            // ref
-            NSValue* dataValue = (NSValue*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-            MAMapRect ref;
-            [dataValue getValue:&ref];
-        
-            ref.size = size;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_visibile");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL visibile = [args[@"visibile"] boolValue];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.visibile = visibile;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_duration": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_duration");
-            }
-        
-            // args
-            // jsonable arg
-            NSTimeInterval duration = [args[@"duration"] doubleValue];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.duration = duration;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_loop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_loop");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL loop = [args[@"loop"] boolValue];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.loop = loop;
-            methodResult(@"success");
-        },
-        
-        @"MAParticleOverlayOptions::set_maxParticles": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAParticleOverlayOptions::set_maxParticles");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger maxParticles = [args[@"maxParticles"] longValue];
-        
-            // ref
-            MAParticleOverlayOptions* ref = (MAParticleOverlayOptions*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.maxParticles = maxParticles;
+            ref.canAdjustPositon = canAdjustPositon;
             methodResult(@"success");
         },
         

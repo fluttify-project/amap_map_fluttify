@@ -112,13 +112,13 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   }
   
   Future<void> set_lineJoinType(MALineJoinType lineJoinType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineJoinType', {'refId': refId, "lineJoinType": lineJoinType.index});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineJoinType', {'refId': refId, "lineJoinType": lineJoinType.toValue()});
   
   
   }
   
   Future<void> set_lineCapType(MALineCapType lineCapType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineCapType', {'refId': refId, "lineCapType": lineCapType.index});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineCapType', {'refId': refId, "lineCapType": lineCapType.toValue()});
   
   
   }
@@ -136,7 +136,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   }
   
   Future<void> set_lineDashType(MALineDashType lineDashType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType', {'refId': refId, "lineDashType": lineDashType.index});
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType', {'refId': refId, "lineDashType": lineDashType.toValue()});
   
   
   }
@@ -228,13 +228,13 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
   }
   
   Future<void> set_lineJoinType_batch(List<MALineJoinType> lineJoinType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineJoinType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineJoinType": lineJoinType[__i__].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineJoinType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineJoinType": lineJoinType[__i__].toValue()}]);
   
   
   }
   
   Future<void> set_lineCapType_batch(List<MALineCapType> lineCapType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineCapType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineCapType": lineCapType[__i__].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineCapType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineCapType": lineCapType[__i__].toValue()}]);
   
   
   }
@@ -252,7 +252,7 @@ extension MAOverlayPathRenderer_Batch on List<MAOverlayPathRenderer> {
   }
   
   Future<void> set_lineDashType_batch(List<MALineDashType> lineDashType) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineDashType": lineDashType[__i__].index}]);
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAOverlayPathRenderer::set_lineDashType_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "lineDashType": lineDashType[__i__].toValue()}]);
   
   
   }

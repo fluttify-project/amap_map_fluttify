@@ -12,416 +12,209 @@ import 'package:flutter/services.dart';
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 import 'package:core_location_fluttify/core_location_fluttify.dart';
 
-class _com_amap_api_maps_interfaces_IGlOverlayLayer_SUB extends java_lang_Object with com_amap_api_maps_interfaces_IGlOverlayLayer {}
+
 
 mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   
 
-  static com_amap_api_maps_interfaces_IGlOverlayLayer subInstance() => _com_amap_api_maps_interfaces_IGlOverlayLayer_SUB();
-
   
 
   
 
   
-  Future<void> updateOption(String var1, Object var2) async {
-    // print log
+
+  @mustCallSuper
+  Future<void> updateOption(String var1, com_amap_api_maps_model_BaseOptions var2) {
+    if (var2 is Ref) kNativeObjectPool.add(var2);
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::updateOption([\'var1\':$var1, \'var2\':$var2])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::updateOption', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('updateOption::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<bool> removeOverlay__String(String var1) {
   
-  Future<bool> removeOverlay(String var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::removeOverlay([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::removeOverlay', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('removeOverlay__String::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> prepareIcon(Object var1) {
   
-  Future<void> prepareIcon(Object var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::prepareIcon([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::prepareIcon', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('prepareIcon::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<int> getCurrentParticleNum(String var1) {
   
-  Future<int> getCurrentParticleNum(String var1) async {
-    // print log
+  
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getCurrentParticleNum([\'var1\':$var1])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getCurrentParticleNum', {"var1": var1, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getCurrentParticleNum::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> loadBitmapDescription(android_content_Context var1) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
-  Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::getNearestLatLng([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getNearestLatLng', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify';
-      if (__return__ is Ref) kNativeObjectPool.add(__return__);
-      return __return__;
+      debugPrint('loadBitmapDescription::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<com_amap_api_maps_model_BaseOverlay> addOverlayObject(String var1, com_amap_api_maps_model_BaseOverlay var2, com_amap_api_maps_model_BaseOptions var3) {
+    if (var2 is Ref) kNativeObjectPool.add(var2);
+    if (var3 is Ref) kNativeObjectPool.add(var3);
   
-  Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsPolygonContainsPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsPolygonContainsPoint', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('addOverlayObject::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<com_amap_api_maps_model_LatLng> getNearestLatLng(com_amap_api_maps_model_PolylineOptions var1, com_amap_api_maps_model_LatLng var2) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
+    if (var2 is Ref) kNativeObjectPool.add(var2);
   
-  Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processPolygonHoleOption([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processPolygonHoleOption', {"var1": var1?.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('getNearestLatLng::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
+    if (var2 is Ref) kNativeObjectPool.add(var2);
   
-  Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::IsCircleContainPoint([])');
-    }
-  
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsCircleContainPoint', {"var1": var1?.refId, "var2": var2?.refId, "refId": refId});
-  
-  
-    // handle native call
-  
-  
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+      debugPrint('IsPolygonContainsPoint::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
+  @mustCallSuper
+  Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
   
-  Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) async {
-    // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.interfaces.IGlOverlayLayer@$refId::processCircleHoleOption([])');
+      debugPrint('processPolygonHoleOption::kNativeObjectPool: $kNativeObjectPool');
     }
+  }
   
-    // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processCircleHoleOption', {"var1": var1?.refId, "refId": refId});
+  @mustCallSuper
+  Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
+    if (var2 is Ref) kNativeObjectPool.add(var2);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('IsCircleContainPoint::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('processCircleHoleOption::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> draw(bool var1, int var2) {
   
   
-    // handle native call
+    if (fluttifyLogEnabled) {
+      debugPrint('draw::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<com_amap_api_maps_model_Polyline> getHitOverlay(com_amap_api_maps_model_LatLng var1) {
+    if (var1 is Ref) kNativeObjectPool.add(var1);
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getHitOverlay::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<String> createId(String var1) {
   
   
-    // convert native result to dart side object
-    if (__result__ == null) {
-      return null;
-    } else {
-      final __return__ = __result__;
-    
-      return __return__;
+    if (fluttifyLogEnabled) {
+      debugPrint('createId::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> onCreateAMapInstance() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('onCreateAMapInstance::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<Float64List> getFinalMatrix() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('getFinalMatrix::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> clear(String var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('clear::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> destroy() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('destroy::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> changeOverlayIndex() {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('changeOverlayIndex::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<void> setRunLowFrame(bool var1) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('setRunLowFrame::kNativeObjectPool: $kNativeObjectPool');
+    }
+  }
+  
+  @mustCallSuper
+  Future<bool> removeOverlay__String__bool(String var1, bool var2) {
+  
+  
+    if (fluttifyLogEnabled) {
+      debugPrint('removeOverlay__String__bool::kNativeObjectPool: $kNativeObjectPool');
     }
   }
   
 }
 
-extension com_amap_api_maps_interfaces_IGlOverlayLayer_Batch on List<com_amap_api_maps_interfaces_IGlOverlayLayer> {
-  //region methods
-  
-  Future<List<void>> updateOption_batch(List<String> var1, List<Object> var2) async {
-    if (var1.length != var2.length) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::updateOption_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "var2": var2[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<bool>> removeOverlay_batch(List<String> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::removeOverlay_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> prepareIcon_batch(List<Object> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::prepareIcon_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<int>> getCurrentParticleNum_batch(List<String> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getCurrentParticleNum_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__], "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<com_amap_api_maps_model_LatLng>> getNearestLatLng_batch(List<com_amap_api_maps_model_PolylineOptions> var1, List<com_amap_api_maps_model_LatLng> var2) async {
-    if (var1.length != var2.length) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::getNearestLatLng_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-      kNativeObjectPool.addAll(typedResult);
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<bool>> IsPolygonContainsPoint_batch(List<com_amap_api_maps_model_PolygonOptions> var1, List<com_amap_api_maps_model_LatLng> var2) async {
-    if (var1.length != var2.length) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsPolygonContainsPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> processPolygonHoleOption_batch(List<com_amap_api_maps_model_PolygonOptions> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processPolygonHoleOption_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<bool>> IsCircleContainPoint_batch(List<com_amap_api_maps_model_CircleOptions> var1, List<com_amap_api_maps_model_LatLng> var2) async {
-    if (var1.length != var2.length) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::IsCircleContainPoint_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  
-  Future<List<void>> processCircleHoleOption_batch(List<com_amap_api_maps_model_CircleOptions> var1) async {
-    if (false) {
-      return Future.error('all args must have same length!');
-    }
-  
-    // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.interfaces.IGlOverlayLayer::processCircleHoleOption_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "refId": this[__i__].refId}]);
-  
-  
-    // convert native result to dart side object
-    if (resultBatch == null) {
-      return null;
-    } else {
-      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
-    
-      return typedResult;
-    }
-  }
-  
-  //endregion
-}

@@ -42,6 +42,11 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   //endregion
 
   //region getters
+  static Future<double> get_MIN_OFFSET_DISTANCE() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE", );
+  
+    return __result__;
+  }
   
   //endregion
 
@@ -298,7 +303,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPosition', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPosition', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -322,7 +327,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setDescriptor', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.utils.overlay.SmoothMoveMarker::setDescriptor', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -431,6 +436,12 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
 
 extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_amap_api_maps_utils_overlay_SmoothMoveMarker> {
   //region getters
+  Future<List<double>> get_MIN_OFFSET_DISTANCE_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 

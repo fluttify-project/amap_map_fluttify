@@ -60,11 +60,35 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     return (__result__ as List).cast<num>();
   }
   
+  Future<bool> get_showRangeEnabled() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_showRangeEnabled", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<MAPathShowRange> get_showRange() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_showRange", {'refId': refId});
+    kNativeObjectPool.add(MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+  
   //endregion
 
   //region setters
   Future<void> set_strokeTextureImages(List<NSObject> strokeTextureImages) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages', {'refId': refId, "strokeTextureImages": strokeTextureImages.map((it) => it.refId).toList()});
+  
+  
+  }
+  
+  Future<void> set_showRangeEnabled(bool showRangeEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_showRangeEnabled', {'refId': refId, "showRangeEnabled": showRangeEnabled});
+  
+  
+  }
+  
+  Future<void> set_showRange(MAPathShowRange showRange) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_showRange', {'refId': refId, "showRange": showRange.refId});
   
   
   }
@@ -80,7 +104,7 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline is Ref ? (multiPolyline as Ref)?.refId : multiPolyline, "refId": refId});
   
   
     // handle native call
@@ -146,11 +170,37 @@ extension MAMultiTexturePolylineRenderer_Batch on List<MAMultiTexturePolylineRen
     return typedResult;
   }
   
+  Future<List<bool>> get_showRangeEnabled_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_showRangeEnabled_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<MAPathShowRange>> get_showRange_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAMultiTexturePolylineRenderer::get_showRange_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region setters
   Future<void> set_strokeTextureImages_batch(List<List<NSObject>> strokeTextureImages) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_strokeTextureImages_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "strokeTextureImages": strokeTextureImages[__i__].map((it) => it.refId).toList()}]);
+  
+  
+  }
+  
+  Future<void> set_showRangeEnabled_batch(List<bool> showRangeEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_showRangeEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "showRangeEnabled": showRangeEnabled[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_showRange_batch(List<MAPathShowRange> showRange) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAMultiTexturePolylineRenderer::set_showRange_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "showRange": showRange[__i__].refId}]);
   
   
   }

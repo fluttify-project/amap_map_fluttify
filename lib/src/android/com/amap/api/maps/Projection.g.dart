@@ -40,7 +40,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromScreenLocation', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromScreenLocation', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -64,7 +64,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toScreenLocation', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toScreenLocation', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -88,7 +88,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toMapLocation', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toMapLocation', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -112,7 +112,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toOpenGLLocation', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::toOpenGLLocation', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -184,7 +184,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromBoundsToTile', {"var1": var1?.refId, "var2": var2, "var3": var3, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::fromBoundsToTile', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
@@ -208,7 +208,7 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::getMapBounds', {"var1": var1?.refId, "var2": var2, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::getMapBounds', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "refId": refId});
   
   
     // handle native call
@@ -244,6 +244,30 @@ class com_amap_api_maps_Projection extends java_lang_Object  {
     } else {
       final __return__ = com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify';
       if (__return__ is Ref) kNativeObjectPool.add(__return__);
+      return __return__;
+    }
+  }
+  
+  
+  Future<double> calZoomByTargetPos(com_amap_api_maps_model_LatLng var1, int var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.Projection@$refId::calZoomByTargetPos([\'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::calZoomByTargetPos', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
       return __return__;
     }
   }
@@ -437,6 +461,26 @@ extension com_amap_api_maps_Projection_Batch on List<com_amap_api_maps_Projectio
     } else {
       final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_AMapCameraInfo()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
       kNativeObjectPool.addAll(typedResult);
+      return typedResult;
+    }
+  }
+  
+  
+  Future<List<double>> calZoomByTargetPos_batch(List<com_amap_api_maps_model_LatLng> var1, List<int> var2) async {
+    if (var1.length != var2.length) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.Projection::calZoomByTargetPos_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {"var1": var1[__i__].refId, "var2": var2[__i__], "refId": this[__i__].refId}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+    
       return typedResult;
     }
   }

@@ -24,10 +24,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_offlineservice_AMapPermissionActivity', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_maps_LocationSource) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_LocationSource', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_maps_UiSettings) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_UiSettings', {'refId': (this as Ref).refId});
       return result;
@@ -88,10 +84,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissCallBack', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_maps_LocationSource_OnLocationChangedListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_LocationSource_OnLocationChangedListener', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_maps_SwipeDismissView) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissView', {'refId': (this as Ref).refId});
       return result;
@@ -106,10 +98,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapProvince', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
@@ -136,10 +124,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_City', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_maps_Projection) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_Projection', {'refId': (this as Ref).refId});
       return result;
@@ -150,6 +134,10 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_model_Polygon) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polygon', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == com_amap_api_maps_model_HeatMapLayerOptions) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayerOptions', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
@@ -196,6 +184,10 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_LatLngBounds_Builder', {'refId': (this as Ref).refId});
       return result;
     }
+    else if (T == com_amap_api_maps_model_HeatMapLayer) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapLayer', {'refId': (this as Ref).refId});
+      return result;
+    }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_NavigateArrowOptions', {'refId': (this as Ref).refId});
       return result;
@@ -234,6 +226,10 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_TileProvider', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == com_amap_api_maps_model_HeatMapItem) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatMapItem', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
@@ -524,20 +520,16 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_WearMapView', {'refId': (this as Ref).refId});
       return result;
     }
+    else if (T == com_amap_api_maps_BaseMapView) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_BaseMapView', {'refId': (this as Ref).refId});
+      return result;
+    }
     else if (T == com_amap_api_maps_AMap) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap', {'refId': (this as Ref).refId});
       return result;
     }
-    else if (T == com_amap_api_maps_interfaces_IGlOverlayLayer) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_interfaces_IGlOverlayLayer', {'refId': (this as Ref).refId});
-      return result;
-    }
     else if (T == com_amap_api_maps_MapView) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapView', {'refId': (this as Ref).refId});
-      return result;
-    }
-    else if (T == com_amap_api_trace_LBSTraceBase) {
-      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfcom_amap_api_trace_LBSTraceBase', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
@@ -669,9 +661,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     else if (T == com_amap_api_offlineservice_AMapPermissionActivity) {
       return (com_amap_api_offlineservice_AMapPermissionActivity()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == com_amap_api_maps_LocationSource) {
-      return (com_amap_api_maps_LocationSource.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == com_amap_api_maps_UiSettings) {
       return (com_amap_api_maps_UiSettings()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
@@ -717,9 +706,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     else if (T == com_amap_api_maps_SwipeDismissCallBack) {
       return (com_amap_api_maps_SwipeDismissCallBack()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == com_amap_api_maps_LocationSource_OnLocationChangedListener) {
-      return (com_amap_api_maps_LocationSource_OnLocationChangedListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == com_amap_api_maps_SwipeDismissView) {
       return (com_amap_api_maps_SwipeDismissView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
@@ -731,9 +717,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_offlinemap_OfflineMapProvince) {
       return (com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_offlinemap_DownloadProgressView) {
       return (com_amap_api_maps_offlinemap_DownloadProgressView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
@@ -753,9 +736,6 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     else if (T == com_amap_api_maps_offlinemap_City) {
       return (com_amap_api_maps_offlinemap_City()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener) {
-      return (com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == com_amap_api_maps_Projection) {
       return (com_amap_api_maps_Projection()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
@@ -764,6 +744,9 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_model_Polygon) {
       return (com_amap_api_maps_model_Polygon()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == com_amap_api_maps_model_HeatMapLayerOptions) {
+      return (com_amap_api_maps_model_HeatMapLayerOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_BitmapDescriptor) {
       return (com_amap_api_maps_model_BitmapDescriptor()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
@@ -798,6 +781,9 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     else if (T == com_amap_api_maps_model_LatLngBounds_Builder) {
       return (com_amap_api_maps_model_LatLngBounds_Builder()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
+    else if (T == com_amap_api_maps_model_HeatMapLayer) {
+      return (com_amap_api_maps_model_HeatMapLayer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
     else if (T == com_amap_api_maps_model_NavigateArrowOptions) {
       return (com_amap_api_maps_model_NavigateArrowOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
@@ -827,6 +813,9 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     }
     else if (T == com_amap_api_maps_model_TileProvider) {
       return (com_amap_api_maps_model_TileProvider.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == com_amap_api_maps_model_HeatMapItem) {
+      return (com_amap_api_maps_model_HeatMapItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_maps_model_NaviPara) {
       return (com_amap_api_maps_model_NaviPara()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
@@ -1044,17 +1033,14 @@ extension TypeOpAmapMapFluttifyAndroid on Object {
     else if (T == com_amap_api_maps_WearMapView) {
       return (com_amap_api_maps_WearMapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
+    else if (T == com_amap_api_maps_BaseMapView) {
+      return (com_amap_api_maps_BaseMapView.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
     else if (T == com_amap_api_maps_AMap) {
       return (com_amap_api_maps_AMap()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
-    else if (T == com_amap_api_maps_interfaces_IGlOverlayLayer) {
-      return (com_amap_api_maps_interfaces_IGlOverlayLayer.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
     else if (T == com_amap_api_maps_MapView) {
       return (com_amap_api_maps_MapView()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
-    }
-    else if (T == com_amap_api_trace_LBSTraceBase) {
-      return (com_amap_api_trace_LBSTraceBase.subInstance()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == com_amap_api_trace_TraceLocation) {
       return (com_amap_api_trace_TraceLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;

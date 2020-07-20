@@ -58,7 +58,7 @@ class MAPinAnnotationView extends MAAnnotationView  {
 
   //region setters
   Future<void> set_pinColor(MAPinAnnotationColor pinColor, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor', {'refId': refId, "pinColor": pinColor.index});
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor', {'refId': refId, "pinColor": pinColor.toValue()});
   
   
   }
@@ -96,7 +96,7 @@ extension MAPinAnnotationView_Batch on List<MAPinAnnotationView> {
 
   //region setters
   Future<void> set_pinColor_batch(List<MAPinAnnotationColor> pinColor, {bool viewChannel = true}) async {
-    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "pinColor": pinColor[__i__].index}]);
+    await MethodChannel(viewChannel ? 'me.yohom/amap_map_fluttify/MAPinAnnotationView' : 'me.yohom/amap_map_fluttify').invokeMethod('MAPinAnnotationView::set_pinColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "pinColor": pinColor[__i__].toValue()}]);
   
   
   }

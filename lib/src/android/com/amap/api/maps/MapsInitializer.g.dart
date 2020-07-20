@@ -43,10 +43,20 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //endregion
 
   //region getters
+  static Future<String> get_sdcardDir() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir", );
+  
+    return __result__;
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_sdcardDir(String sdcardDir) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::set_sdcardDir', {'refId': refId, "sdcardDir": sdcardDir});
+  
+  
+  }
   
   //endregion
 
@@ -59,7 +69,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::initialize', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call
@@ -220,6 +230,54 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   }
   
   
+  static Future<void> loadWorldVectorMap(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::loadWorldVectorMap([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> isLoadWorldVectorMap() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
   static Future<void> setBuildingHeight(int var0) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -364,14 +422,14 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   }
   
   
-  static Future<void> closeTileOverlay(bool var0) async {
+  static Future<void> setTextureViewDestorySync(bool var0) async {
     // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::closeTileOverlay([\'var0\':$var0])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setTextureViewDestorySync([\'var0\':$var0])');
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay', {"var0": var0});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync', {"var0": var0});
   
   
     // handle native call
@@ -388,14 +446,390 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   }
   
   
-  static Future<bool> isTileOverlayClosed() async {
+  static Future<bool> getTextureViewDestorySync() async {
     // print log
     if (fluttifyLogEnabled) {
-      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isTileOverlayClosed([])');
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getTextureViewDestorySync([])');
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed', );
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setWorldVectorOfflineMapStyleFilePath(String var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<String> getWorldVectorOfflineMapStyleFilePath() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setWorldVectorOfflineMapStyleAssetsPath(String var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<String> getWorldVectorOfflineMapStyleAssetsPath() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setTextureDestroyedRender(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setTextureDestroyedRender([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> getTextureDestroyRender() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getTextureDestroyRender([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setTextureSizeChangedInvoked(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> getTextureSizeChangedInvoked() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setExceptionLogger(com_amap_api_maps_ExceptionLogger var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setExceptionLogger([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setExceptionLogger', );
+  
+  
+    // handle native call
+    MethodChannel('com.amap.api.maps.MapsInitializer::setExceptionLogger::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          switch (methodCall.method) {
+            case 'Callback::com.amap.api.maps.ExceptionLogger::onDownloaderException':
+              // print log
+              if (fluttifyLogEnabled) {
+                debugPrint('fluttify-dart-callback: onDownloaderException([\'var1\':${args['var1']}, \'var2\':${args['var2']}])');
+              }
+        
+              // handle the native call
+              var0?.onDownloaderException(args['var1'], args['var2']);
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> disableCachedMapDataUpdate(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> isDisableCachedMapDataUpdate() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> isSupportRecycleView() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::isSupportRecycleView([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView', );
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setSupportRecycleView(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setSupportRecycleView([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<void> setPolyline2Enable(bool var0) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::setPolyline2Enable([\'var0\':$var0])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable', {"var0": var0});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (__result__ == null) {
+      return null;
+    } else {
+      final __return__ = __result__;
+    
+      return __return__;
+    }
+  }
+  
+  
+  static Future<bool> getPolyline2Enable() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      debugPrint('fluttify-dart: com.amap.api.maps.MapsInitializer::getPolyline2Enable([])');
+    }
+  
+    // invoke native method
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable', );
   
   
     // handle native call
@@ -416,10 +850,21 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
 
 extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_MapsInitializer> {
   //region getters
+  Future<List<String>> get_sdcardDir_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
   
   //endregion
 
   //region setters
+  Future<void> set_sdcardDir_batch(List<String> sdcardDir) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::set_sdcardDir_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "sdcardDir": sdcardDir[__i__]}]);
+  
+  
+  }
   
   //endregion
 
@@ -565,6 +1010,46 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   }
   
   
+  static Future<List<void>> loadWorldVectorMap_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::loadWorldVectorMap_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> isLoadWorldVectorMap_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isLoadWorldVectorMap_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
   static Future<List<void>> setBuildingHeight_batch(List<int> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
@@ -685,13 +1170,13 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   }
   
   
-  static Future<List<void>> closeTileOverlay_batch(List<bool> var0) async {
+  static Future<List<void>> setTextureViewDestorySync_batch(List<bool> var0) async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::closeTileOverlay_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureViewDestorySync_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
   
   
     // convert native result to dart side object
@@ -705,13 +1190,293 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   }
   
   
-  static Future<List<bool>> isTileOverlayClosed_batch() async {
+  static Future<List<bool>> getTextureViewDestorySync_batch() async {
     if (false) {
       return Future.error('all args must have same length!');
     }
   
     // invoke native method
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isTileOverlayClosed_batch', );
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureViewDestorySync_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setWorldVectorOfflineMapStyleFilePath_batch(List<String> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleFilePath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<String>> getWorldVectorOfflineMapStyleFilePath_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleFilePath_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setWorldVectorOfflineMapStyleAssetsPath_batch(List<String> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setWorldVectorOfflineMapStyleAssetsPath_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<String>> getWorldVectorOfflineMapStyleAssetsPath_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getWorldVectorOfflineMapStyleAssetsPath_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setTextureDestroyedRender_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureDestroyedRender_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> getTextureDestroyRender_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureDestroyRender_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setTextureSizeChangedInvoked_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setTextureSizeChangedInvoked_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> getTextureSizeChangedInvoked_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getTextureSizeChangedInvoked_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> disableCachedMapDataUpdate_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::disableCachedMapDataUpdate_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> isDisableCachedMapDataUpdate_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isDisableCachedMapDataUpdate_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> isSupportRecycleView_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::isSupportRecycleView_batch', );
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setSupportRecycleView_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setSupportRecycleView_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<void>> setPolyline2Enable_batch(List<bool> var0) async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::setPolyline2Enable_batch', [for (int __i__ = 0; __i__ < var0.length; __i__++) {"var0": var0[__i__]}]);
+  
+  
+    // convert native result to dart side object
+    if (resultBatch == null) {
+      return null;
+    } else {
+      final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
+    
+      return typedResult;
+    }
+  }
+  
+  
+  static Future<List<bool>> getPolyline2Enable_batch() async {
+    if (false) {
+      return Future.error('all args must have same length!');
+    }
+  
+    // invoke native method
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::getPolyline2Enable_batch', );
   
   
     // convert native result to dart side object

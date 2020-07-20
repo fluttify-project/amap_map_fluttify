@@ -60,6 +60,30 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return UIColor()..refId = __result__..tag__ = 'amap_map_fluttify';
   }
   
+  Future<bool> get_userInteractionEnabled() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_userInteractionEnabled", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<double> get_hitTestInset() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_hitTestInset", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<bool> get_showRangeEnabled() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_showRangeEnabled", {'refId': refId});
+  
+    return __result__;
+  }
+  
+  Future<MAPathShowRange> get_showRange() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_showRange", {'refId': refId});
+    kNativeObjectPool.add(MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
+  
   //endregion
 
   //region setters
@@ -75,6 +99,30 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   
   }
   
+  Future<void> set_userInteractionEnabled(bool userInteractionEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_userInteractionEnabled', {'refId': refId, "userInteractionEnabled": userInteractionEnabled});
+  
+  
+  }
+  
+  Future<void> set_hitTestInset(double hitTestInset) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_hitTestInset', {'refId': refId, "hitTestInset": hitTestInset});
+  
+  
+  }
+  
+  Future<void> set_showRangeEnabled(bool showRangeEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_showRangeEnabled', {'refId': refId, "showRangeEnabled": showRangeEnabled});
+  
+  
+  }
+  
+  Future<void> set_showRange(MAPathShowRange showRange) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_showRange', {'refId': refId, "showRange": showRange.refId});
+  
+  
+  }
+  
   //endregion
 
   //region methods
@@ -86,7 +134,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline is Ref ? (polyline as Ref)?.refId : polyline, "refId": refId});
   
   
     // handle native call
@@ -128,6 +176,34 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
     return typedResult;
   }
   
+  Future<List<bool>> get_userInteractionEnabled_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_userInteractionEnabled_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<double>> get_hitTestInset_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_hitTestInset_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<bool>> get_showRangeEnabled_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_showRangeEnabled_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<bool>().map((__result__) => __result__).toList();
+  
+    return typedResult;
+  }
+  
+  Future<List<MAPathShowRange>> get_showRange_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("MAPolylineRenderer::get_showRange_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => MAPathShowRange()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
+  
   //endregion
 
   //region setters
@@ -139,6 +215,30 @@ extension MAPolylineRenderer_Batch on List<MAPolylineRenderer> {
   
   Future<void> set_sideColor_batch(List<UIColor> sideColor) async {
     await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_sideColor_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "sideColor": sideColor[__i__].refId}]);
+  
+  
+  }
+  
+  Future<void> set_userInteractionEnabled_batch(List<bool> userInteractionEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_userInteractionEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "userInteractionEnabled": userInteractionEnabled[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_hitTestInset_batch(List<double> hitTestInset) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_hitTestInset_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "hitTestInset": hitTestInset[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_showRangeEnabled_batch(List<bool> showRangeEnabled) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_showRangeEnabled_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "showRangeEnabled": showRangeEnabled[__i__]}]);
+  
+  
+  }
+  
+  Future<void> set_showRange_batch(List<MAPathShowRange> showRange) async {
+    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAPolylineRenderer::set_showRange_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "showRange": showRange[__i__].refId}]);
   
   
   }

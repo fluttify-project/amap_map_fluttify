@@ -48,6 +48,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>iosamap</string>
+		<string>amapuri</string>
 	</array>
 </dict>
 </plist>

@@ -12,6 +12,7 @@
 #import "SubHandler/SubHandler5.h"
 #import "SubHandler/SubHandler6.h"
 #import "SubHandler/SubHandler7.h"
+#import "SubHandler/SubHandler8.h"
 #import "SubHandler/Custom/SubHandlerCustom.h"
 
 // Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
@@ -40,6 +41,7 @@ extern BOOL enableLog;
     [_handlerMap addEntriesFromDictionary: [self getSubHandler5]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler6]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandler7]];
+    [_handlerMap addEntriesFromDictionary: [self getSubHandler8]];
     [_handlerMap addEntriesFromDictionary: [self getSubHandlerCustom]];
   }
 
@@ -255,6 +257,64 @@ extern BOOL enableLog;
 
   dispatch_async(dispatch_get_main_queue(), ^{
       [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"MAMapViewDelegate::Callback"
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"MAMapViewDelegate::Callback"
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
   });
   
 }

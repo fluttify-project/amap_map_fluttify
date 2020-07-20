@@ -120,6 +120,10 @@ extension TypeOpAmapMapFluttifyIOS on Object {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAOfflineProvince', {'refId': (this as Ref).refId});
       return result;
     }
+    else if (T == MAHeatMapVectorOverlayRender) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayRender', {'refId': (this as Ref).refId});
+      return result;
+    }
     else if (T == MATileOverlayRenderer) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATileOverlayRenderer', {'refId': (this as Ref).refId});
       return result;
@@ -134,6 +138,10 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     }
     else if (T == MATouchPoi) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMATouchPoi', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == MAPathShowRange) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAPathShowRange', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == MAOfflineItemMunicipality) {
@@ -294,6 +302,22 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     }
     else if (T == MAUserLocation) {
       final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAUserLocation', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == MAHeatMapVectorNode) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorNode', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == MAHeatMapVectorItem) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorItem', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == MAHeatMapVectorOverlayOptions) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlayOptions', {'refId': (this as Ref).refId});
+      return result;
+    }
+    else if (T == MAHeatMapVectorOverlay) {
+      final result = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('RefClass::isKindOfMAHeatMapVectorOverlay', {'refId': (this as Ref).refId});
       return result;
     }
     else if (T == MAMultiPointItem) {
@@ -501,6 +525,9 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     else if (T == MAOfflineProvince) {
       return (MAOfflineProvince()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
+    else if (T == MAHeatMapVectorOverlayRender) {
+      return (MAHeatMapVectorOverlayRender()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
     else if (T == MATileOverlayRenderer) {
       return (MATileOverlayRenderer()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
@@ -512,6 +539,9 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     }
     else if (T == MATouchPoi) {
       return (MATouchPoi()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == MAPathShowRange) {
+      return (MAPathShowRange()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAOfflineItemMunicipality) {
       return (MAOfflineItemMunicipality()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
@@ -632,6 +662,18 @@ extension TypeOpAmapMapFluttifyIOS on Object {
     }
     else if (T == MAUserLocation) {
       return (MAUserLocation()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == MAHeatMapVectorNode) {
+      return (MAHeatMapVectorNode()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == MAHeatMapVectorItem) {
+      return (MAHeatMapVectorItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == MAHeatMapVectorOverlayOptions) {
+      return (MAHeatMapVectorOverlayOptions()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
+    }
+    else if (T == MAHeatMapVectorOverlay) {
+      return (MAHeatMapVectorOverlay()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;
     }
     else if (T == MAMultiPointItem) {
       return (MAMultiPointItem()..refId = (this is Ref ? (this as Ref).refId : this as int)..tag__ = 'amap_map_fluttify') as T;

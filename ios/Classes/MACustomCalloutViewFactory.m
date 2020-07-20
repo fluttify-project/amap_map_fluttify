@@ -66,7 +66,7 @@ extern BOOL enableLog;
     NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
 
     __strong __typeof(weakSelf) strongSelf = weakSelf;
-    if (strongSelf->_handlerMap[methodCall.method] != nil) {
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
       strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
     } else {
       methodResult(FlutterMethodNotImplemented);
@@ -355,6 +355,64 @@ extern BOOL enableLog;
 
   dispatch_async(dispatch_get_main_queue(), ^{
       [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
   });
   
 }

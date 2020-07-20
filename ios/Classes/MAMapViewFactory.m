@@ -66,7 +66,7 @@ extern BOOL enableLog;
     NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
 
     __strong __typeof(weakSelf) strongSelf = weakSelf;
-    if (strongSelf->_handlerMap[methodCall.method] != nil) {
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
       strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
     } else {
       methodResult(FlutterMethodNotImplemented);
@@ -1534,6 +1534,37 @@ extern BOOL enableLog;
       
           methodResult(jsonableResult);
       },
+      @"MAMapView::getHittedPolylinesWith_traverseAll": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // struct arg
+          NSValue* tappedCoordValue = (NSValue*) HEAP[args[@"tappedCoord"]];
+          CLLocationCoordinate2D tappedCoord;
+          [tappedCoordValue getValue:&tappedCoord];
+          // jsonable arg
+          BOOL traverseAll = [args[@"traverseAll"] boolValue];
+      
+          // ref
+          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAMapView@%@::getHittedPolylinesWith(%@, %@)", args[@"refId"], args[@"tappedCoord"], args[@"traverseAll"]);
+          }
+      
+          // invoke native method
+          NSArray* result = [ref getHittedPolylinesWith: tappedCoord traverseAll: traverseAll];
+      
+          // result
+          // 返回值: 列表
+          NSMutableArray* jsonableResult = [NSMutableArray array];
+          for (int __i__ = 0; __i__ < result.count; __i__++) {
+              NSObject* object = [result objectAtIndex:__i__];
+              [jsonableResult addObject: [NSNumber numberWithLong: object.hash]];
+              HEAP[[NSNumber numberWithLong: object.hash]] = object;
+          }
+      
+          methodResult(jsonableResult);
+      },
       @"MAMapView::setIndoorMapControlOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
           // args
           // struct arg
@@ -1594,28 +1625,6 @@ extern BOOL enableLog;
       
           // invoke native method
           [ref clearIndoorMapCache ];
-      
-          // result
-          // 无返回值
-          NSString* jsonableResult = @"success";
-      
-          methodResult(jsonableResult);
-      },
-      @"MAMapView::setCustomMapStyle": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // args
-          // ref arg
-          NSData* customJson = (NSData*) HEAP[args[@"customJson"]];
-      
-          // ref
-          MAMapView* ref = (MAMapView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          // print log
-          if (enableLog) {
-              NSLog(@"fluttify-objc: MAMapView@%@::setCustomMapStyle(%@)", args[@"refId"], args[@"customJson"]);
-          }
-      
-          // invoke native method
-          [ref setCustomMapStyle : customJson];
       
           // result
           // 无返回值
@@ -3811,6 +3820,64 @@ extern BOOL enableLog;
 
   dispatch_async(dispatch_get_main_queue(), ^{
       [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionWillChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
+  });
+  
+}
+
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated wasUserAction: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:[NSString stringWithFormat:@"MAMapViewDelegate::Callback@%@", @(2147483647 - _viewId)]
+            binaryMessenger:[_registrar messenger]];
+  // print log
+  if (enableLog) {
+    NSLog(@"MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction");
+  }
+
+  // convert to jsonable arg
+  // ref callback arg
+  NSNumber* argmapView = [NSNull null];
+  if (mapView != nil) {
+      argmapView = [NSNumber numberWithLong: mapView.hash];
+      HEAP[argmapView] = mapView;
+  }
+  
+  // primitive callback arg
+  NSNumber* arganimated = @(animated);
+  // primitive callback arg
+  NSNumber* argwasUserAction = @(wasUserAction);
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+      [channel invokeMethod:@"Callback::MAMapViewDelegate::mapView_regionDidChangeAnimated_wasUserAction" arguments:@{@"mapView": argmapView, @"animated": arganimated, @"wasUserAction": argwasUserAction}];
   });
   
 }

@@ -19,6 +19,7 @@ import java.util.Map;
 
 import io.flutter.plugin.common.BinaryMessenger;
 import me.yohom.amap_map_fluttify.AmapMapFluttifyPlugin.Handler;
+import me.yohom.amap_map_fluttify.sub_handler.custom.tile_provider.UrlTileProviderImpl;
 
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableLog;
 import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getHEAP;
@@ -66,6 +67,27 @@ public class SubHandlerCustom {
                 String jsonableResult = "success";
 
                 __methodResult__.success(jsonableResult);
+            });
+            put("com.amap.api.maps.model.UrlTileProviderX::create", (__rawArgs__, __methodResult__) -> {
+                Map<String, Object> __args__ = (Map<String, Object>) __rawArgs__;
+
+                final int width = (int) __args__.get("width");
+                final int height = (int) __args__.get("height");
+                final String urlTemplate = (String) __args__.get("urlTemplate");
+
+                try {
+                    final UrlTileProviderImpl provider = new UrlTileProviderImpl(width, height, urlTemplate);
+
+                    getHEAP().put(System.identityHashCode(provider), provider);
+                    __methodResult__.success(System.identityHashCode(provider));
+                } catch (Throwable throwable) {
+                    throwable.printStackTrace();
+                    if (getEnableLog()) {
+                        Log.d("Current HEAP: ", getHEAP().toString());
+                    }
+                    __methodResult__.error(throwable.getMessage(), null, null);
+                    return;
+                }
             });
         }};
     }

@@ -273,6 +273,33 @@ class GroundOverlayOption {
   }
 }
 
+/// 瓦片图创建参数
+@immutable
+class UrlTileOption {
+  /// 单位瓦片图宽度
+  final int width;
+
+  /// 单位瓦片图高度
+  final int height;
+
+  /// 瓦片图地址模板
+  ///
+  /// 瓦片图地址模板是一个包含"{x}","{y}","{z}","{scale}"的字符串,"{x}","{y}","{z}","{scale}"会被tile path的值所替换，
+  /// 并生成用来加载tile图片数据的URL 。例如 http://server/path?x={x}&y={y}&z={z}&scale={scale}
+  final String urlTemplate;
+
+  UrlTileOption({
+    @required this.width,
+    @required this.height,
+    @required this.urlTemplate,
+  });
+
+  @override
+  String toString() {
+    return 'UrlTileOption{width: $width, height: $height, urlTemplate: $urlTemplate}';
+  }
+}
+
 /// 海量点创建参数
 @immutable
 class MultiPointOption {
@@ -328,16 +355,26 @@ class PointOption {
 /// 地图移动
 @immutable
 class MapMove {
+  /// 经纬度
   final LatLng latLng;
+
+  /// 缩放等级
   final double zoom;
+
+  /// 倾斜度
   final double tilt;
+
+  /// 朝向
+  final double bearing;
+
+  /// 是否是国外
   final bool isAbroad;
 
-  MapMove({this.latLng, this.zoom, this.tilt, this.isAbroad});
+  MapMove({this.latLng, this.zoom, this.tilt, this.bearing, this.isAbroad});
 
   @override
   String toString() {
-    return 'MapDrag{latitude: ${latLng.latitude}, longitude: ${latLng.longitude}, zoom: $zoom, tilt: $tilt, isAbroad: $isAbroad}';
+    return 'MapMove{latLng: $latLng, zoom: $zoom, tilt: $tilt, bearing: $bearing, isAbroad: $isAbroad}';
   }
 }
 
@@ -669,10 +706,28 @@ class Circle {
 }
 
 /// 热力图
-class Heatmap {
-  Heatmap.android(this._androidModel);
+class HeatmapOverlay {
+  HeatmapOverlay.android(this._androidModel);
 
-  Heatmap.ios(this._iosModel, this._iosController);
+  HeatmapOverlay.ios(this._iosModel, this._iosController);
+
+  com_amap_api_maps_model_TileOverlay _androidModel;
+  MAHeatMapTileOverlay _iosModel;
+  MAMapView _iosController;
+
+  Future<void> remove() {
+    return platform(
+      android: (_) => _androidModel.remove(),
+      ios: (_) => _iosController?.removeOverlay(_iosModel),
+    );
+  }
+}
+
+/// 热力图
+class UrlTileOverlay {
+  UrlTileOverlay.android(this._androidModel);
+
+  UrlTileOverlay.ios(this._iosModel, this._iosController);
 
   com_amap_api_maps_model_TileOverlay _androidModel;
   MAHeatMapTileOverlay _iosModel;

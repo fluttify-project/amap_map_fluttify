@@ -33,6 +33,7 @@ class com_amap_api_maps_AMapException extends java_lang_Object  {
   static final String ERROR_ILLEGAL_VALUE = "非法坐标值";
   static final String AMAP_NOT_SUPPORT = "移动设备上未安装高德地图或高德地图版本较旧";
   static final String ILLEGAL_AMAP_ARGUMENT = "非法参数";
+  static final String ERROR_FAILURE_OVERSEA_AUTH = "海外鉴权失败";
   //endregion
 
   //region creators

@@ -52,6 +52,11 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
   //endregion
 
   //region getters
+  static Future<com_amap_api_maps_model_MyLocationStyleCreator> get_CREATOR() async {
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_CREATOR", );
+    kNativeObjectPool.add(com_amap_api_maps_model_MyLocationStyleCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
+    return com_amap_api_maps_model_MyLocationStyleCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
+  }
   
   //endregion
 
@@ -68,7 +73,7 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationIcon', {"var1": var1?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.model.MyLocationStyle::myLocationIcon', {"var1": var1 is Ref ? (var1 as Ref)?.refId : var1, "refId": refId});
   
   
     // handle native call
@@ -473,6 +478,12 @@ class com_amap_api_maps_model_MyLocationStyle extends java_lang_Object with andr
 
 extension com_amap_api_maps_model_MyLocationStyle_Batch on List<com_amap_api_maps_model_MyLocationStyle> {
   //region getters
+  Future<List<com_amap_api_maps_model_MyLocationStyleCreator>> get_CREATOR_batch() async {
+    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
+    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_MyLocationStyleCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
+    kNativeObjectPool.addAll(typedResult);
+    return typedResult;
+  }
   
   //endregion
 

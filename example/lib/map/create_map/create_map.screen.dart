@@ -257,8 +257,9 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   title: Center(child: Text('监听地图移动')),
                   onTap: () {
                     _controller?.setMapMoveListener(
-                      onMapMoveStart: (move) async => toast('开始移动: $move'),
-                      onMapMoveEnd: (move) async => toast('结束移动: $move'),
+                      onMapMoveStart: (move) async => debugPrint('开始移动: $move'),
+                      onMapMoving: (move) async => debugPrint('移动中: $move'),
+                      onMapMoveEnd: (move) async => debugPrint('结束移动: $move'),
                     );
                   },
                 ),
@@ -300,6 +301,13 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     final latLng =
                         await _controller?.fromScreenLocation(screenPoint);
                     toast('屏幕坐标(250, 250)对应的经纬度坐标为: $latLng');
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('设置屏幕上的某个像素点为地图中心点')),
+                  onTap: () async {
+                    final screenPoint = Point(20, 20);
+//                    await _controller?.setPointToCenter(screenPoint);
                   },
                 ),
                 ListTile(

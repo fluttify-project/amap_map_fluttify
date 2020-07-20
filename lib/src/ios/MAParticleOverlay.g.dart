@@ -63,7 +63,7 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option is Ref ? (option as Ref)?.refId : option});
   
   
     // handle native call
@@ -87,7 +87,7 @@ class MAParticleOverlay extends MAShape with MAOverlay, MAAnnotation {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption?.refId, "refId": refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption is Ref ? (overlayOption as Ref)?.refId : overlayOption, "refId": refId});
   
   
     // handle native call

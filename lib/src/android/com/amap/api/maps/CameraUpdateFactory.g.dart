@@ -178,7 +178,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point', {"var0": var0, "var1": var1?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::zoomBy__double__android_graphics_Point', {"var0": var0, "var1": var1 is Ref ? (var1 as Ref)?.refId : var1});
   
   
     // handle native call
@@ -202,7 +202,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newCameraPosition', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call
@@ -226,7 +226,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLng', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call
@@ -250,7 +250,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0?.refId, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngZoom', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1});
   
   
     // handle native call
@@ -274,7 +274,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int', {"var0": var0?.refId, "var1": var1});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1});
   
   
     // handle native call
@@ -298,7 +298,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0?.refId});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeLatLng', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0});
   
   
     // handle native call
@@ -370,7 +370,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int', {"var0": var0?.refId, "var1": var1, "var2": var2, "var3": var3});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBounds__com_amap_api_maps_model_LatLngBounds__int__int__int', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1, "var2": var2, "var3": var3});
   
   
     // handle native call
@@ -394,7 +394,7 @@ class com_amap_api_maps_CameraUpdateFactory extends java_lang_Object  {
     }
   
     // invoke native method
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0?.refId, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
+    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.CameraUpdateFactory::newLatLngBoundsRect', {"var0": var0 is Ref ? (var0 as Ref)?.refId : var0, "var1": var1, "var2": var2, "var3": var3, "var4": var4});
   
   
     // handle native call
