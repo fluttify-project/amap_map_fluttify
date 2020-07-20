@@ -66,7 +66,7 @@ extern BOOL enableLog;
     NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
 
     __strong __typeof(weakSelf) strongSelf = weakSelf;
-    if (strongSelf->_handlerMap[methodCall.method] != nil) {
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
       strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
     } else {
       methodResult(FlutterMethodNotImplemented);
