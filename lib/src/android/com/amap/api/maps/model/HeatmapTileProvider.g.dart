@@ -25,7 +25,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with 
   //endregion
 
   //region getters
-  static Future<com_amap_api_maps_model_Gradient> get_DEFAULT_GRADIENT() async {
+  static Future<com_amap_api_maps_model_Gradient> get_static_DEFAULT_GRADIENT() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.HeatmapTileProvider::get_DEFAULT_GRADIENT", );
     kNativeObjectPool.add(com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify');
     return com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify';
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_HeatmapTileProvider extends java_lang_Object with 
 
 extension com_amap_api_maps_model_HeatmapTileProvider_Batch on List<com_amap_api_maps_model_HeatmapTileProvider> {
   //region getters
-  Future<List<com_amap_api_maps_model_Gradient>> get_DEFAULT_GRADIENT_batch() async {
+  Future<List<com_amap_api_maps_model_Gradient>> get_static_DEFAULT_GRADIENT_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.HeatmapTileProvider::get_DEFAULT_GRADIENT_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_Gradient()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
     kNativeObjectPool.addAll(typedResult);

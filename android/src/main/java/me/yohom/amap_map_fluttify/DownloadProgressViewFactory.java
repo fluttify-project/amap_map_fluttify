@@ -91,9 +91,13 @@ class DownloadProgressViewFactory extends PlatformViewFactory {
     @Override
     public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
-        
 
         com.amap.api.maps.offlinemap.DownloadProgressView view = new com.amap.api.maps.offlinemap.DownloadProgressView(activity);
+
+        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
+        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
         getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 

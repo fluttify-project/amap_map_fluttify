@@ -24,10 +24,12 @@ class MACustomCalloutView_iOS extends StatefulWidget {
     Key key,
     this.onViewCreated,
     this.onDispose,
+    this.params = const <String, dynamic>{},
   }) : super(key: key);
 
   final MACustomCalloutViewCreatedCallback onViewCreated;
   final _OnUiKitViewDispose onDispose;
+  final Map<String, dynamic> params;
 
   @override
   _MACustomCalloutView_iOSState createState() => _MACustomCalloutView_iOSState();
@@ -48,6 +50,7 @@ class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      creationParams: widget.params,
     );
   }
 

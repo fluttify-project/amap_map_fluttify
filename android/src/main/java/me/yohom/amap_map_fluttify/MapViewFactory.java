@@ -317,11 +317,13 @@ class MapViewFactory extends PlatformViewFactory {
     @Override
     public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
-        // ref arg
-        Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-        com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
 
-        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity, var2);
+        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity);
+
+        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
+        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
         getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 

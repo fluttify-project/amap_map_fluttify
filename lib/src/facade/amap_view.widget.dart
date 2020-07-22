@@ -46,6 +46,7 @@ class AmapView extends StatefulWidget {
     this.tiltGestureEnabled,
     this.zoomLevel,
     this.centerCoordinate,
+    this.tilt,
     this.markers,
     this.onMarkerClicked,
     this.onMapClicked,
@@ -95,6 +96,9 @@ class AmapView extends StatefulWidget {
 
   /// 中心点坐标
   final LatLng centerCoordinate;
+
+  /// 倾斜度
+  final double tilt;
 
   /// 标记
   final List<MarkerOption> markers;
@@ -168,7 +172,6 @@ class _AmapViewState extends State<AmapView> {
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return com_amap_api_maps_TextureMapView_Android(
-                  var2: snapshot.data,
                   onDispose: _onPlatformViewDispose,
                   onViewCreated: (controller) async {
                     _controller = AmapController.android(controller, this);

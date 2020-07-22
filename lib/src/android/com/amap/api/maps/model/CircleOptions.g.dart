@@ -42,11 +42,6 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
   //endregion
 
   //region getters
-  static Future<com_amap_api_maps_model_CircleOptionsCreator> get_CREATOR() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CircleOptions::get_CREATOR", );
-    kNativeObjectPool.add(com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
-  }
   
   //endregion
 
@@ -564,12 +559,6 @@ class com_amap_api_maps_model_CircleOptions extends com_amap_api_maps_model_Base
 
 extension com_amap_api_maps_model_CircleOptions_Batch on List<com_amap_api_maps_model_CircleOptions> {
   //region getters
-  Future<List<com_amap_api_maps_model_CircleOptionsCreator>> get_CREATOR_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.CircleOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_CircleOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
   
   //endregion
 

@@ -43,11 +43,6 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
   //endregion
 
   //region getters
-  static Future<com_amap_api_maps_model_PolylineOptionsCreator> get_CREATOR() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.PolylineOptions::get_CREATOR", );
-    kNativeObjectPool.add(com_amap_api_maps_model_PolylineOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_amap_api_maps_model_PolylineOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
-  }
   
   //endregion
 
@@ -1429,12 +1424,6 @@ class com_amap_api_maps_model_PolylineOptions extends com_amap_api_maps_model_Ba
 
 extension com_amap_api_maps_model_PolylineOptions_Batch on List<com_amap_api_maps_model_PolylineOptions> {
   //region getters
-  Future<List<com_amap_api_maps_model_PolylineOptionsCreator>> get_CREATOR_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.PolylineOptions::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_PolylineOptionsCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
   
   //endregion
 

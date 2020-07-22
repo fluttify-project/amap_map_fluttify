@@ -26,7 +26,7 @@ extern BOOL enableLog;
 }
 
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
-  return [[MAAnnotationViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar];
+  return [[MAAnnotationViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar arguments: args];
 }
 
 @end
@@ -36,14 +36,16 @@ extern BOOL enableLog;
   CGRect _frame;
   NSDictionary<NSString *, Handler>* _handlerMap;
   MAAnnotationView* _view;
+  id _args;
 }
 
-- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
+- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar arguments:(id _Nullable)args {
   self = [super init];
   if (self) {
     _viewId = viewId;
     _registrar = registrar;
     _frame = frame;
+    _args = args;
   }
 
   return self;
@@ -52,7 +54,14 @@ extern BOOL enableLog;
 - (UIView *)view {
   __weak __typeof(self)weakSelf = self;
   if (_view == nil) {
+    NSDictionary<NSString*, id>* params = (NSDictionary<NSString*, id>*) _args;
+
     _view = [[MAAnnotationView alloc] initWithFrame:_frame];
+
+    ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
+    ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
     // 这里用一个magic number调整一下id
     HEAP[@(2147483647 - _viewId)] = _view;
   }
@@ -201,7 +210,7 @@ extern BOOL enableLog;
           NSInteger result = ref.zIndex;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -316,7 +325,7 @@ extern BOOL enableLog;
           BOOL result = ref.enabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -334,7 +343,7 @@ extern BOOL enableLog;
           BOOL result = ref.highlighted;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -352,7 +361,7 @@ extern BOOL enableLog;
           BOOL result = ref.selected;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -370,7 +379,7 @@ extern BOOL enableLog;
           BOOL result = ref.canShowCallout;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -426,7 +435,7 @@ extern BOOL enableLog;
           BOOL result = ref.draggable;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -444,7 +453,7 @@ extern BOOL enableLog;
           MAAnnotationViewDragState result = ref.dragState;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -462,7 +471,7 @@ extern BOOL enableLog;
           BOOL result = ref.canAdjustPositon;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },

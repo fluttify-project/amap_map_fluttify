@@ -24,10 +24,12 @@ class MAAnnotationView_iOS extends StatefulWidget {
     Key key,
     this.onViewCreated,
     this.onDispose,
+    this.params = const <String, dynamic>{},
   }) : super(key: key);
 
   final MAAnnotationViewCreatedCallback onViewCreated;
   final _OnUiKitViewDispose onDispose;
+  final Map<String, dynamic> params;
 
   @override
   _MAAnnotationView_iOSState createState() => _MAAnnotationView_iOSState();
@@ -48,6 +50,7 @@ class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      creationParams: widget.params,
     );
   }
 
