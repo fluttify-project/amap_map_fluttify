@@ -14,106 +14,12 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 extern BOOL enableLog;
 
 @implementation MAPinAnnotationViewFactory {
-  NSDictionary<NSString *, Handler>* _handlerMap;
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   self = [super init];
   if (self) {
     _registrar = registrar;
-
-    __weak __typeof(self)weakSelf = self;
-    //region method call handler
-    FlutterMethodChannel *channel = [FlutterMethodChannel
-        methodChannelWithName:@"me.yohom/amap_map_fluttify/MAPinAnnotationView"
-              binaryMessenger:[_registrar messenger]];
-
-    [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
-      NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
-
-      __strong __typeof(weakSelf) strongSelf = weakSelf;
-      if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
-        strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
-      } else {
-        methodResult(FlutterMethodNotImplemented);
-      }
-    }];
-    //endregion
-
-    //region handlers
-    _handlerMap = @{
-        @"MAPinAnnotationView::get_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAPinAnnotationView::get_pinColor");
-            }
-        
-            // ref object
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            MAPinAnnotationColor result = ref.pinColor;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAPinAnnotationView::get_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAPinAnnotationView::get_animatesDrop");
-            }
-        
-            // ref object
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.animatesDrop;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAPinAnnotationView::set_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAPinAnnotationView::set_pinColor");
-            }
-        
-            // args
-            // enum arg
-            MAPinAnnotationColor pinColor = (MAPinAnnotationColor) [args[@"pinColor"] integerValue];
-        
-            // ref
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.pinColor = pinColor;
-            methodResult(@"success");
-        },
-        
-        @"MAPinAnnotationView::set_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAPinAnnotationView::set_animatesDrop");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL animatesDrop = [args[@"animatesDrop"] boolValue];
-        
-            // ref
-            MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.animatesDrop = animatesDrop;
-            methodResult(@"success");
-        },
-        
-    };
-    //endregion
   }
 
   return self;
@@ -150,6 +56,7 @@ extern BOOL enableLog;
 }
 
 - (UIView *)view {
+  __weak __typeof(self)weakSelf = self;
   if (_view == nil) {
     NSDictionary<NSString*, id>* params = (NSDictionary<NSString*, id>*) _args;
 
@@ -162,6 +69,98 @@ extern BOOL enableLog;
     // 这里用一个magic number调整一下id
     HEAP[@(2147483647 - _viewId)] = _view;
   }
+
+  //region method call handler
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"me.yohom/amap_map_fluttify/MAPinAnnotationView"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
+    NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
+
+    __strong __typeof(weakSelf) strongSelf = weakSelf;
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
+      strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
+    } else {
+      methodResult(FlutterMethodNotImplemented);
+    }
+  }];
+  //endregion
+
+  //region handlers
+  _handlerMap = @{
+      @"MAPinAnnotationView::get_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::get_pinColor");
+          }
+      
+          // ref object
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          MAPinAnnotationColor result = ref.pinColor;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAPinAnnotationView::get_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::get_animatesDrop");
+          }
+      
+          // ref object
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.animatesDrop;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAPinAnnotationView::set_pinColor": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::set_pinColor");
+          }
+      
+          // args
+          // enum arg
+          MAPinAnnotationColor pinColor = (MAPinAnnotationColor) [args[@"pinColor"] integerValue];
+      
+          // ref
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.pinColor = pinColor;
+          methodResult(@"success");
+      },
+      
+      @"MAPinAnnotationView::set_animatesDrop": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAPinAnnotationView::set_animatesDrop");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL animatesDrop = [args[@"animatesDrop"] boolValue];
+      
+          // ref
+          MAPinAnnotationView* ref = (MAPinAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.animatesDrop = animatesDrop;
+          methodResult(@"success");
+      },
+      
+  };
+  //endregion
   return _view;
 }
 
