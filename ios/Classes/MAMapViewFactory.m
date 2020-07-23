@@ -25,6 +25,10 @@ extern BOOL enableLog;
   return self;
 }
 
+- (NSObject<FlutterMessageCodec>*)createArgsCodec {
+    return [FlutterStandardMessageCodec sharedInstance];
+}
+
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
   return [[MAMapViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar arguments: args];
 }
@@ -59,7 +63,43 @@ extern BOOL enableLog;
     _view = [[MAMapView alloc] initWithFrame:_frame];
 
     ////////////////////////////////初始化UiKitView////////////////////////////////////////
-
+      NSNumber* mapType = (NSNumber*) params[@"mapType"];
+      NSNumber* showZoomControl = (NSNumber*) params[@"showZoomControl"];
+      NSNumber* showCompass = (NSNumber*) params[@"showCompass"];
+      NSNumber* showScaleControl = (NSNumber*) params[@"showScaleControl"];
+      NSNumber* zoomGesturesEnabled = (NSNumber*) params[@"zoomGesturesEnabled"];
+      NSNumber* scrollGesturesEnabled = (NSNumber*) params[@"scrollGesturesEnabled"];
+      NSNumber* rotateGestureEnabled = (NSNumber*) params[@"rotateGestureEnabled"];
+      NSNumber* tiltGestureEnabled = (NSNumber*) params[@"tiltGestureEnabled"];
+      NSNumber* zoomLevel = (NSNumber*) params[@"zoomLevel"];
+      NSNumber* tilt = (NSNumber*) params[@"tilt"];
+      NSNumber* bearing = (NSNumber*) params[@"bearing"];
+      NSNumber* centerCoordinateLatitude = (NSNumber*) params[@"centerCoordinateLatitude"];
+      NSNumber* centerCoordinateLongitude = (NSNumber*) params[@"centerCoordinateLongitude"];
+      
+      if (mapType != nil && (NSNull*)
+          mapType != [NSNull null]) _view.mapType = [mapType intValue];
+      if (showCompass != nil && (NSNull*) showCompass != [NSNull null])
+          _view.showsCompass = [showCompass boolValue];
+      if (showScaleControl != nil && (NSNull*) showScaleControl != [NSNull null])
+          _view.showsScale = [showScaleControl boolValue];
+      if (zoomGesturesEnabled != nil && (NSNull*) zoomGesturesEnabled != [NSNull null])
+          _view.zoomEnabled = [zoomGesturesEnabled boolValue];
+      if (scrollGesturesEnabled != nil && (NSNull*) scrollGesturesEnabled != [NSNull null])
+          _view.scrollEnabled = [scrollGesturesEnabled boolValue];
+      if (rotateGestureEnabled != nil && (NSNull*) rotateGestureEnabled != [NSNull null])
+          _view.rotateEnabled = [rotateGestureEnabled boolValue];
+      if (tiltGestureEnabled != nil && (NSNull*) tiltGestureEnabled != [NSNull null])
+          _view.rotateCameraEnabled = [tiltGestureEnabled boolValue];
+      if (zoomLevel != nil && (NSNull*) zoomLevel != [NSNull null])
+          _view.zoomLevel = [zoomLevel doubleValue];
+      if (tilt != nil && (NSNull*) tilt != [NSNull null])
+          _view.cameraDegree = [tilt doubleValue];
+      if (bearing != nil && (NSNull*) bearing != [NSNull null])
+          _view.rotationDegree = [bearing doubleValue];
+      if ((centerCoordinateLatitude != nil && (NSNull*) centerCoordinateLatitude != [NSNull null])
+          && (centerCoordinateLongitude != nil && (NSNull*) centerCoordinateLongitude != [NSNull null]))
+          _view.centerCoordinate = CLLocationCoordinate2DMake([centerCoordinateLatitude doubleValue], [centerCoordinateLongitude doubleValue]);
     ////////////////////////////////初始化UiKitView////////////////////////////////////////
 
     // 这里用一个magic number调整一下id
