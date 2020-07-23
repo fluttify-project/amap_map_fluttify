@@ -42,12 +42,6 @@ class com_amap_api_maps_model_VisibleRegion extends java_lang_Object with androi
   //endregion
 
   //region getters
-  static Future<com_amap_api_maps_model_VisibleRegionCreator> get_CREATOR() async {
-    final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_CREATOR", );
-    kNativeObjectPool.add(com_amap_api_maps_model_VisibleRegionCreator()..refId = __result__..tag__ = 'amap_map_fluttify');
-    return com_amap_api_maps_model_VisibleRegionCreator()..refId = __result__..tag__ = 'amap_map_fluttify';
-  }
-  
   Future<com_amap_api_maps_model_LatLng> get_nearLeft() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_nearLeft", {'refId': refId});
     kNativeObjectPool.add(com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify');
@@ -91,13 +85,6 @@ class com_amap_api_maps_model_VisibleRegion extends java_lang_Object with androi
 
 extension com_amap_api_maps_model_VisibleRegion_Batch on List<com_amap_api_maps_model_VisibleRegion> {
   //region getters
-  Future<List<com_amap_api_maps_model_VisibleRegionCreator>> get_CREATOR_batch() async {
-    final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_CREATOR_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
-    final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_VisibleRegionCreator()..refId = __result__..tag__ = 'amap_map_fluttify').toList();
-    kNativeObjectPool.addAll(typedResult);
-    return typedResult;
-  }
-  
   Future<List<com_amap_api_maps_model_LatLng>> get_nearLeft_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.model.VisibleRegion::get_nearLeft_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<int>().map((__result__) => com_amap_api_maps_model_LatLng()..refId = __result__..tag__ = 'amap_map_fluttify').toList();

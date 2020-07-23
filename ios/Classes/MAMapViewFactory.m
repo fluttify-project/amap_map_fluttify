@@ -25,8 +25,12 @@ extern BOOL enableLog;
   return self;
 }
 
+- (NSObject<FlutterMessageCodec>*)createArgsCodec {
+  return [FlutterStandardMessageCodec sharedInstance];
+}
+
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
-  return [[MAMapViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar];
+  return [[MAMapViewPlatformView alloc] initWithViewId:viewId frame: frame registrar:_registrar arguments: args];
 }
 
 @end
@@ -36,14 +40,16 @@ extern BOOL enableLog;
   CGRect _frame;
   NSDictionary<NSString *, Handler>* _handlerMap;
   MAMapView* _view;
+  id _args;
 }
 
-- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar {
+- (instancetype)initWithViewId:(int64_t)viewId frame:(CGRect)frame registrar:(NSObject <FlutterPluginRegistrar> *)registrar arguments:(id _Nullable)args {
   self = [super init];
   if (self) {
     _viewId = viewId;
     _registrar = registrar;
     _frame = frame;
+    _args = args;
   }
 
   return self;
@@ -52,7 +58,50 @@ extern BOOL enableLog;
 - (UIView *)view {
   __weak __typeof(self)weakSelf = self;
   if (_view == nil) {
+    NSDictionary<NSString*, id>* params = (NSDictionary<NSString*, id>*) _args;
+
     _view = [[MAMapView alloc] initWithFrame:_frame];
+
+    ////////////////////////////////初始化UiKitView////////////////////////////////////////
+      NSNumber* mapType = (NSNumber*) params[@"mapType"];
+      NSNumber* showZoomControl = (NSNumber*) params[@"showZoomControl"];
+      NSNumber* showCompass = (NSNumber*) params[@"showCompass"];
+      NSNumber* showScaleControl = (NSNumber*) params[@"showScaleControl"];
+      NSNumber* zoomGesturesEnabled = (NSNumber*) params[@"zoomGesturesEnabled"];
+      NSNumber* scrollGesturesEnabled = (NSNumber*) params[@"scrollGesturesEnabled"];
+      NSNumber* rotateGestureEnabled = (NSNumber*) params[@"rotateGestureEnabled"];
+      NSNumber* tiltGestureEnabled = (NSNumber*) params[@"tiltGestureEnabled"];
+      NSNumber* zoomLevel = (NSNumber*) params[@"zoomLevel"];
+      NSNumber* tilt = (NSNumber*) params[@"tilt"];
+      NSNumber* bearing = (NSNumber*) params[@"bearing"];
+      NSNumber* centerCoordinateLatitude = (NSNumber*) params[@"centerCoordinateLatitude"];
+      NSNumber* centerCoordinateLongitude = (NSNumber*) params[@"centerCoordinateLongitude"];
+      
+      if (mapType != nil && (NSNull*)
+          mapType != [NSNull null]) _view.mapType = [mapType intValue];
+      if (showCompass != nil && (NSNull*) showCompass != [NSNull null])
+          _view.showsCompass = [showCompass boolValue];
+      if (showScaleControl != nil && (NSNull*) showScaleControl != [NSNull null])
+          _view.showsScale = [showScaleControl boolValue];
+      if (zoomGesturesEnabled != nil && (NSNull*) zoomGesturesEnabled != [NSNull null])
+          _view.zoomEnabled = [zoomGesturesEnabled boolValue];
+      if (scrollGesturesEnabled != nil && (NSNull*) scrollGesturesEnabled != [NSNull null])
+          _view.scrollEnabled = [scrollGesturesEnabled boolValue];
+      if (rotateGestureEnabled != nil && (NSNull*) rotateGestureEnabled != [NSNull null])
+          _view.rotateEnabled = [rotateGestureEnabled boolValue];
+      if (tiltGestureEnabled != nil && (NSNull*) tiltGestureEnabled != [NSNull null])
+          _view.rotateCameraEnabled = [tiltGestureEnabled boolValue];
+      if (zoomLevel != nil && (NSNull*) zoomLevel != [NSNull null])
+          _view.zoomLevel = [zoomLevel doubleValue];
+      if (tilt != nil && (NSNull*) tilt != [NSNull null])
+          _view.cameraDegree = [tilt doubleValue];
+      if (bearing != nil && (NSNull*) bearing != [NSNull null])
+          _view.rotationDegree = [bearing doubleValue];
+      if ((centerCoordinateLatitude != nil && (NSNull*) centerCoordinateLatitude != [NSNull null])
+          && (centerCoordinateLongitude != nil && (NSNull*) centerCoordinateLongitude != [NSNull null]))
+          _view.centerCoordinate = CLLocationCoordinate2DMake([centerCoordinateLatitude doubleValue], [centerCoordinateLongitude doubleValue]);
+    ////////////////////////////////初始化UiKitView////////////////////////////////////////
+
     // 这里用一个magic number调整一下id
     HEAP[@(2147483647 - _viewId)] = _view;
   }
@@ -557,7 +606,7 @@ extern BOOL enableLog;
       
           // result
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1733,7 +1782,7 @@ extern BOOL enableLog;
           MAMapType result = ref.mapType;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1851,7 +1900,7 @@ extern BOOL enableLog;
           CGFloat result = ref.zoomLevel;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1869,7 +1918,7 @@ extern BOOL enableLog;
           CGFloat result = ref.minZoomLevel;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1887,7 +1936,7 @@ extern BOOL enableLog;
           CGFloat result = ref.maxZoomLevel;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1905,7 +1954,7 @@ extern BOOL enableLog;
           CGFloat result = ref.rotationDegree;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1923,7 +1972,7 @@ extern BOOL enableLog;
           CGFloat result = ref.cameraDegree;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1941,7 +1990,7 @@ extern BOOL enableLog;
           BOOL result = ref.zoomingInPivotsAroundAnchorPoint;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1959,7 +2008,7 @@ extern BOOL enableLog;
           BOOL result = ref.zoomEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1977,7 +2026,7 @@ extern BOOL enableLog;
           BOOL result = ref.scrollEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -1995,7 +2044,7 @@ extern BOOL enableLog;
           BOOL result = ref.rotateEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2013,7 +2062,7 @@ extern BOOL enableLog;
           BOOL result = ref.rotateCameraEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2031,7 +2080,7 @@ extern BOOL enableLog;
           BOOL result = ref.skyModelEnable;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2049,7 +2098,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsBuildings;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2067,7 +2116,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsLabels;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2085,7 +2134,7 @@ extern BOOL enableLog;
           BOOL result = ref.showTraffic;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2103,7 +2152,7 @@ extern BOOL enableLog;
           CGFloat result = ref.trafficRatio;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2121,7 +2170,7 @@ extern BOOL enableLog;
           BOOL result = ref.touchPOIEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2139,7 +2188,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsCompass;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2197,7 +2246,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsScale;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2295,7 +2344,7 @@ extern BOOL enableLog;
           double result = ref.metersPerPointForCurrentZoom;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2313,7 +2362,7 @@ extern BOOL enableLog;
           BOOL result = ref.isAbroad;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2331,7 +2380,7 @@ extern BOOL enableLog;
           NSUInteger result = ref.maxRenderFrame;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2349,7 +2398,7 @@ extern BOOL enableLog;
           BOOL result = ref.isAllowDecreaseFrame;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2367,7 +2416,7 @@ extern BOOL enableLog;
           BOOL result = ref.openGLESDisabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2507,7 +2556,7 @@ extern BOOL enableLog;
           BOOL result = ref.allowsAnnotationViewSorting;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2525,7 +2574,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsUserLocation;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2562,7 +2611,7 @@ extern BOOL enableLog;
           BOOL result = ref.customizeUserLocationAccuracyCircleRepresentation;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2599,7 +2648,7 @@ extern BOOL enableLog;
           MAUserTrackingMode result = ref.userTrackingMode;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2617,7 +2666,7 @@ extern BOOL enableLog;
           BOOL result = ref.userLocationVisible;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2635,7 +2684,7 @@ extern BOOL enableLog;
           CLLocationDistance result = ref.distanceFilter;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2653,7 +2702,7 @@ extern BOOL enableLog;
           CLLocationAccuracy result = ref.desiredAccuracy;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2671,7 +2720,7 @@ extern BOOL enableLog;
           CLLocationDegrees result = ref.headingFilter;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2689,7 +2738,7 @@ extern BOOL enableLog;
           BOOL result = ref.pausesLocationUpdatesAutomatically;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2707,7 +2756,7 @@ extern BOOL enableLog;
           BOOL result = ref.allowsBackgroundLocationUpdates;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2748,7 +2797,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsIndoorMap;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2766,7 +2815,7 @@ extern BOOL enableLog;
           BOOL result = ref.showsIndoorMapControl;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },
@@ -2804,7 +2853,7 @@ extern BOOL enableLog;
           BOOL result = ref.customMapStyleEnabled;
       
           // 返回值: Value
-          id jsonableResult = @(result);
+          NSObject* jsonableResult = @(result);
       
           methodResult(jsonableResult);
       },

@@ -42,7 +42,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
   //endregion
 
   //region getters
-  static Future<double> get_MIN_OFFSET_DISTANCE() async {
+  static Future<double> get_static_MIN_OFFSET_DISTANCE() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE", );
   
     return __result__;
@@ -436,7 +436,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends java_lang_Object 
 
 extension com_amap_api_maps_utils_overlay_SmoothMoveMarker_Batch on List<com_amap_api_maps_utils_overlay_SmoothMoveMarker> {
   //region getters
-  Future<List<double>> get_MIN_OFFSET_DISTANCE_batch() async {
+  Future<List<double>> get_static_MIN_OFFSET_DISTANCE_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<double>().map((__result__) => __result__).toList();
   

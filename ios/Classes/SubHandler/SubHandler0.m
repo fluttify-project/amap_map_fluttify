@@ -93,7 +93,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -121,7 +121,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -322,7 +322,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -412,7 +412,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -433,7 +433,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -454,7 +454,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -574,7 +574,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -606,7 +606,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -749,7 +749,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -781,7 +781,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1037,7 +1037,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1496,7 +1496,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1517,7 +1517,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1538,7 +1538,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1580,7 +1580,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1601,7 +1601,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1960,7 +1960,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -1982,7 +1982,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2219,7 +2219,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2400,7 +2400,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2421,7 +2421,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2442,7 +2442,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2556,7 +2556,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2601,7 +2601,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2623,7 +2623,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2645,7 +2645,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -2741,7 +2741,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -3029,7 +3029,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -3111,7 +3111,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -3265,7 +3265,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -3827,7 +3827,7 @@ extern BOOL enableLog;
         
             // result
             // 返回值: Value
-            id jsonableResult = @(result);
+            NSObject* jsonableResult = @(result);
         
             methodResult(jsonableResult);
         },
@@ -5120,7 +5120,7 @@ extern BOOL enableLog;
         
                 // result
                 // 返回值: Value
-                id jsonableResult = @(result);
+                NSObject* jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -5151,7 +5151,7 @@ extern BOOL enableLog;
         
                 // result
                 // 返回值: Value
-                id jsonableResult = @(result);
+                NSObject* jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }
@@ -5373,7 +5373,7 @@ extern BOOL enableLog;
         
                 // result
                 // 返回值: Value
-                id jsonableResult = @(result);
+                NSObject* jsonableResult = @(result);
         
                 [resultList addObject:jsonableResult];
             }

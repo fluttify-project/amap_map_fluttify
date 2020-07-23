@@ -35,19 +35,19 @@ class MapViewFactory extends PlatformViewFactory {
         this.activity = activity;
 
         new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_MapView").setMethodCallHandler((methodCall, methodResult) -> {
-                Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
-                AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
-                if (handler != null) {
-                    try {
-                        handler.call(args, methodResult);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        methodResult.error(e.getMessage(), null, null);
-                    }
-                } else {
-                    methodResult.notImplemented();
+            Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
+            AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
+            if (handler != null) {
+                try {
+                    handler.call(args, methodResult);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    methodResult.error(e.getMessage(), null, null);
                 }
-            });
+            } else {
+                methodResult.notImplemented();
+            }
+        });
     }
 
     private BinaryMessenger messenger;
@@ -317,11 +317,13 @@ class MapViewFactory extends PlatformViewFactory {
     @Override
     public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
-        // ref arg
-        Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
-        com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
 
-        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity, var2);
+        ////////////////////////////////初始化AndroidView////////////////////////////////////////
+
+        ////////////////////////////////初始化AndroidView////////////////////////////////////////
+
+        com.amap.api.maps.MapView view = new com.amap.api.maps.MapView(activity);
+
         getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 

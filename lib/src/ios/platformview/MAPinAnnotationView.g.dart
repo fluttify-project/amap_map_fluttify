@@ -24,10 +24,12 @@ class MAPinAnnotationView_iOS extends StatefulWidget {
     Key key,
     this.onViewCreated,
     this.onDispose,
+    this.params = const <String, dynamic>{},
   }) : super(key: key);
 
   final MAPinAnnotationViewCreatedCallback onViewCreated;
   final _OnUiKitViewDispose onDispose;
+  final Map<String, dynamic> params;
 
   @override
   _MAPinAnnotationView_iOSState createState() => _MAPinAnnotationView_iOSState();
@@ -48,6 +50,7 @@ class _MAPinAnnotationView_iOSState extends State<MAPinAnnotationView_iOS> {
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      creationParams: widget.params,
     );
   }
 

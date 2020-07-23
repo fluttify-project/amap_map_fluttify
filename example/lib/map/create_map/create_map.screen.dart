@@ -24,6 +24,9 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
             child: AmapView(
               mapType: MapType.Satellite,
               showZoomControl: false,
+              tilt: 60,
+              zoomLevel: 17,
+              centerCoordinate: LatLng(29, 119),
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;

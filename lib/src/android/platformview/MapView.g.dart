@@ -24,13 +24,12 @@ class com_amap_api_maps_MapView_Android extends StatefulWidget {
     Key key,
     this.onViewCreated,
     this.onDispose,
-    this.var2,
+    this.params = const <String, dynamic>{},
   }) : super(key: key);
 
   final MapViewCreatedCallback onViewCreated;
   final _OnAndroidViewDispose onDispose;
-
-  final com_amap_api_maps_AMapOptions var2;
+  final Map<String, dynamic> params;
 
   @override
   _com_amap_api_maps_MapView_AndroidState createState() => _com_amap_api_maps_MapView_AndroidState();
@@ -51,7 +50,7 @@ class _com_amap_api_maps_MapView_AndroidState extends State<com_amap_api_maps_Ma
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
-      creationParams: {"var2": widget.var2?.refId ?? -1},
+      creationParams: widget.params,
     );
   }
 

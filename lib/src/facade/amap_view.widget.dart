@@ -46,6 +46,8 @@ class AmapView extends StatefulWidget {
     this.tiltGestureEnabled,
     this.zoomLevel,
     this.centerCoordinate,
+    this.tilt,
+    this.bearing,
     this.markers,
     this.onMarkerClicked,
     this.onMapClicked,
@@ -95,6 +97,12 @@ class AmapView extends StatefulWidget {
 
   /// 中心点坐标
   final LatLng centerCoordinate;
+
+  /// 倾斜度
+  final double tilt;
+
+  /// 地图朝向
+  final double bearing;
 
   /// 标记
   final List<MarkerOption> markers;
@@ -163,31 +171,36 @@ class _AmapViewState extends State<AmapView> {
       return Stack(
         children: <Widget>[
           if (_widgetLayer != null) _widgetLayer,
-          FutureBuilder<com_amap_api_maps_AMapOptions>(
-            future: _androidOptions(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                return com_amap_api_maps_TextureMapView_Android(
-                  var2: snapshot.data,
-                  onDispose: _onPlatformViewDispose,
-                  onViewCreated: (controller) async {
-                    _controller = AmapController.android(controller, this);
+          com_amap_api_maps_TextureMapView_Android(
+            params: {
+              'mapType': widget.mapType?.index,
+              'showZoomControl': widget.showZoomControl,
+              'showCompass': widget.showCompass,
+              'showScaleControl': widget.showScaleControl,
+              'zoomGesturesEnabled': widget.zoomGesturesEnabled,
+              'scrollGesturesEnabled': widget.scrollGesturesEnabled,
+              'rotateGestureEnabled': widget.rotateGestureEnabled,
+              'tiltGestureEnabled': widget.tiltGestureEnabled,
+              'zoomLevel': widget.zoomLevel,
+              'centerCoordinateLatitude': widget.centerCoordinate?.latitude,
+              'centerCoordinateLongitude': widget.centerCoordinate?.longitude,
+              'tilt': widget.tilt,
+              'bearing': widget.bearing,
+            },
+            onDispose: _onPlatformViewDispose,
+            onViewCreated: (controller) async {
+              _controller = AmapController.android(controller, this);
 
-                    final bundle = await android_os_Bundle.create();
-                    await controller.onCreate(bundle);
+              final bundle = await android_os_Bundle.create();
+              await controller.onCreate(bundle);
 
-                    await _initAndroid();
-                    if (widget.onMapCreated != null) {
-                      // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
-                      Future.delayed(Duration(milliseconds: 300), () => 0)
-                          .then((value) => widget.onMapCreated(_controller));
-                    }
-                    await bundle.release__();
-                  },
-                );
-              } else {
-                return Center();
+              await _initAndroid();
+              if (widget.onMapCreated != null) {
+                // 主动延迟300毫秒, 等待地图加载完成, 防止在onMapCreated里调用方法时空指针
+                Future.delayed(Duration(milliseconds: 300), () => 0)
+                    .then((value) => widget.onMapCreated(_controller));
               }
+              await bundle.release__();
             },
           ),
           _mask,
@@ -198,6 +211,21 @@ class _AmapViewState extends State<AmapView> {
         children: <Widget>[
           if (_widgetLayer != null) _widgetLayer,
           MAMapView_iOS(
+            params: {
+              'mapType': widget.mapType?.index,
+              'showZoomControl': widget.showZoomControl,
+              'showCompass': widget.showCompass,
+              'showScaleControl': widget.showScaleControl,
+              'zoomGesturesEnabled': widget.zoomGesturesEnabled,
+              'scrollGesturesEnabled': widget.scrollGesturesEnabled,
+              'rotateGestureEnabled': widget.rotateGestureEnabled,
+              'tiltGestureEnabled': widget.tiltGestureEnabled,
+              'zoomLevel': widget.zoomLevel,
+              'centerCoordinateLatitude': widget.centerCoordinate?.latitude,
+              'centerCoordinateLongitude': widget.centerCoordinate?.longitude,
+              'tilt': widget.tilt,
+              'bearing': widget.bearing,
+            },
             onDispose: _onPlatformViewDispose,
             onViewCreated: (controller) async {
               _controller = AmapController.ios(controller, this);
@@ -325,39 +353,6 @@ class _AmapViewState extends State<AmapView> {
   }
 
   Future<void> _initIOS() async {
-    if (widget.mapType != null) {
-      await _controller?.setMapType(widget.mapType);
-    }
-    if (widget.showZoomControl != null) {
-      await _controller?.showZoomControl(widget.showZoomControl);
-    }
-    if (widget.showCompass != null) {
-      await _controller?.showCompass(widget.showCompass);
-    }
-    if (widget.showScaleControl != null) {
-      await _controller?.showScaleControl(widget.showScaleControl);
-    }
-    if (widget.zoomGesturesEnabled != null) {
-      await _controller?.setZoomGesturesEnabled(widget.zoomGesturesEnabled);
-    }
-    if (widget.scrollGesturesEnabled != null) {
-      await _controller?.setScrollGesturesEnabled(widget.scrollGesturesEnabled);
-    }
-    if (widget.rotateGestureEnabled != null) {
-      await _controller?.setRotateGesturesEnabled(widget.rotateGestureEnabled);
-    }
-    if (widget.tiltGestureEnabled != null) {
-      await _controller?.setTiltGesturesEnabled(widget.tiltGestureEnabled);
-    }
-    if (widget.zoomLevel != null) {
-      await _controller?.setZoomLevel(widget.zoomLevel, animated: false);
-    }
-    if (widget.centerCoordinate != null) {
-      await _controller?.setCenterCoordinate(
-        widget.centerCoordinate,
-        animated: false,
-      );
-    }
     if (widget.markers != null && widget.markers.isNotEmpty) {
       await _controller?.addMarkers(widget.markers);
     }

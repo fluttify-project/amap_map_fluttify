@@ -24,10 +24,12 @@ class MAMapView_iOS extends StatefulWidget {
     Key key,
     this.onViewCreated,
     this.onDispose,
+    this.params = const <String, dynamic>{},
   }) : super(key: key);
 
   final MAMapViewCreatedCallback onViewCreated;
   final _OnUiKitViewDispose onDispose;
+  final Map<String, dynamic> params;
 
   @override
   _MAMapView_iOSState createState() => _MAMapView_iOSState();
@@ -48,6 +50,7 @@ class _MAMapView_iOSState extends State<MAMapView_iOS> {
       gestureRecognizers: gestureRecognizers,
       onPlatformViewCreated: _onViewCreated,
       creationParamsCodec: messageCodec,
+      creationParams: widget.params,
     );
   }
 

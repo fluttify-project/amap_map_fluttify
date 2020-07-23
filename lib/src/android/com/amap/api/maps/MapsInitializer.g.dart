@@ -43,7 +43,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //endregion
 
   //region getters
-  static Future<String> get_sdcardDir() async {
+  static Future<String> get_static_sdcardDir() async {
     final __result__ = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir", );
   
     return __result__;
@@ -52,11 +52,6 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
   //endregion
 
   //region setters
-  Future<void> set_sdcardDir(String sdcardDir) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::set_sdcardDir', {'refId': refId, "sdcardDir": sdcardDir});
-  
-  
-  }
   
   //endregion
 
@@ -850,7 +845,7 @@ class com_amap_api_maps_MapsInitializer extends java_lang_Object  {
 
 extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_MapsInitializer> {
   //region getters
-  Future<List<String>> get_sdcardDir_batch() async {
+  Future<List<String>> get_static_sdcardDir_batch() async {
     final resultBatch = await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir_batch", [for (final __item__ in this) {'refId': __item__.refId}]);
     final typedResult = (resultBatch as List).cast<String>().map((__result__) => __result__).toList();
   
@@ -860,11 +855,6 @@ extension com_amap_api_maps_MapsInitializer_Batch on List<com_amap_api_maps_Maps
   //endregion
 
   //region setters
-  Future<void> set_sdcardDir_batch(List<String> sdcardDir) async {
-    await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod('com.amap.api.maps.MapsInitializer::set_sdcardDir_batch', [for (int __i__ = 0; __i__ < this.length; __i__++) {'refId': this[__i__].refId, "sdcardDir": sdcardDir[__i__]}]);
-  
-  
-  }
   
   //endregion
 
