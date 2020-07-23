@@ -14,686 +14,12 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 extern BOOL enableLog;
 
 @implementation MAAnnotationViewFactory {
-  NSDictionary<NSString *, Handler>* _handlerMap;
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   self = [super init];
   if (self) {
     _registrar = registrar;
-
-    __weak __typeof(self)weakSelf = self;
-    //region method call handler
-    FlutterMethodChannel *channel = [FlutterMethodChannel
-        methodChannelWithName:@"me.yohom/amap_map_fluttify/MAAnnotationView"
-              binaryMessenger:[_registrar messenger]];
-
-    [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
-      NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
-
-      __strong __typeof(weakSelf) strongSelf = weakSelf;
-      if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
-        strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
-      } else {
-        methodResult(FlutterMethodNotImplemented);
-      }
-    }];
-    //endregion
-
-    //region handlers
-    _handlerMap = @{
-        @"MAAnnotationView::setSelected_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // jsonable arg
-            BOOL selected = [args[@"selected"] boolValue];
-            // jsonable arg
-            BOOL animated = [args[@"animated"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%@, %@)", args[@"refId"], args[@"selected"], args[@"animated"]);
-            }
-        
-            // invoke native method
-            [ref setSelected : selected animated: animated];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
-        @"MAAnnotationView::initWithAnnotation_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // ref arg
-            id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
-            // jsonable arg
-            NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"reuseIdentifier"]);
-            }
-        
-            // invoke native method
-            id result = [ref initWithAnnotation: annotation reuseIdentifier: reuseIdentifier];
-        
-            // result
-            // return a ref
-            HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        @"MAAnnotationView::prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-        
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse()", args[@"refId"]);
-            }
-        
-            // invoke native method
-            [ref prepareForReuse ];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
-        @"MAAnnotationView::setDragState_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // args
-            // enum arg
-            MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) [args[@"newDragState"] integerValue];
-            // jsonable arg
-            BOOL animated = [args[@"animated"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // print log
-            if (enableLog) {
-                NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%@, %@)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
-            }
-        
-            // invoke native method
-            [ref setDragState : newDragState animated: animated];
-        
-            // result
-            // 无返回值
-            NSString* jsonableResult = @"success";
-        
-            methodResult(jsonableResult);
-        },
-        @"MAAnnotationView::get_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_reuseIdentifier");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            NSString* result = ref.reuseIdentifier;
-        
-            // 返回值: jsonable
-            id jsonableResult = result;
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_zIndex");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            NSInteger result = ref.zIndex;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_annotation");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            id<MAAnnotation> result = ref.annotation;
-        
-            // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_image": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_image");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            UIImage* result = ref.image;
-        
-            // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_customCalloutView");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            MACustomCalloutView* result = ref.customCalloutView;
-        
-            // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_centerOffset");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            CGPoint result = ref.centerOffset;
-        
-            // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_calloutOffset");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            CGPoint result = ref.calloutOffset;
-        
-            // 返回值: 结构体
-            NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
-            HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_isEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_isEnabled");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.enabled;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_isHighlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_isHighlighted");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.highlighted;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_isSelected": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_isSelected");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.selected;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_canShowCallout");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.canShowCallout;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_leftCalloutAccessoryView");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            UIView* result = ref.leftCalloutAccessoryView;
-        
-            // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_rightCalloutAccessoryView");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            UIView* result = ref.rightCalloutAccessoryView;
-        
-            // return a ref
-            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_isDraggable": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_isDraggable");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.draggable;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_dragState");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            MAAnnotationViewDragState result = ref.dragState;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::get_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::get_canAdjustPositon");
-            }
-        
-            // ref object
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            // invoke native method
-            BOOL result = ref.canAdjustPositon;
-        
-            // 返回值: Value
-            NSObject* jsonableResult = @(result);
-        
-            methodResult(jsonableResult);
-        },
-        
-        @"MAAnnotationView::set_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_zIndex");
-            }
-        
-            // args
-            // jsonable arg
-            NSInteger zIndex = [args[@"zIndex"] longValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.zIndex = zIndex;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_annotation");
-            }
-        
-            // args
-            // ref arg
-            id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.annotation = annotation;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_image": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_image");
-            }
-        
-            // args
-            // ref arg
-            UIImage* image = (UIImage*) HEAP[args[@"image"]];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.image = image;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_customCalloutView");
-            }
-        
-            // args
-            // ref arg
-            MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[args[@"customCalloutView"]];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.customCalloutView = customCalloutView;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_centerOffset");
-            }
-        
-            // args
-            // struct arg
-            NSValue* centerOffsetValue = (NSValue*) HEAP[args[@"centerOffset"]];
-            CGPoint centerOffset;
-            [centerOffsetValue getValue:&centerOffset];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.centerOffset = centerOffset;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_calloutOffset");
-            }
-        
-            // args
-            // struct arg
-            NSValue* calloutOffsetValue = (NSValue*) HEAP[args[@"calloutOffset"]];
-            CGPoint calloutOffset;
-            [calloutOffsetValue getValue:&calloutOffset];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.calloutOffset = calloutOffset;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_enabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_enabled");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL enabled = [args[@"enabled"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.enabled = enabled;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_highlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_highlighted");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL highlighted = [args[@"highlighted"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.highlighted = highlighted;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_selected": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_selected");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL selected = [args[@"selected"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.selected = selected;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_canShowCallout");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL canShowCallout = [args[@"canShowCallout"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.canShowCallout = canShowCallout;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_leftCalloutAccessoryView");
-            }
-        
-            // args
-            // ref arg
-            UIView* leftCalloutAccessoryView = (UIView*) HEAP[args[@"leftCalloutAccessoryView"]];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.leftCalloutAccessoryView = leftCalloutAccessoryView;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_rightCalloutAccessoryView");
-            }
-        
-            // args
-            // ref arg
-            UIView* rightCalloutAccessoryView = (UIView*) HEAP[args[@"rightCalloutAccessoryView"]];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.rightCalloutAccessoryView = rightCalloutAccessoryView;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_draggable": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_draggable");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL draggable = [args[@"draggable"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.draggable = draggable;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_dragState");
-            }
-        
-            // args
-            // enum arg
-            MAAnnotationViewDragState dragState = (MAAnnotationViewDragState) [args[@"dragState"] integerValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.dragState = dragState;
-            methodResult(@"success");
-        },
-        
-        @"MAAnnotationView::set_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-            // print log
-            if (enableLog) {
-                NSLog(@"MAAnnotationView::set_canAdjustPositon");
-            }
-        
-            // args
-            // jsonable arg
-            BOOL canAdjustPositon = [args[@"canAdjustPositon"] boolValue];
-        
-            // ref
-            MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-        
-            ref.canAdjustPositon = canAdjustPositon;
-            methodResult(@"success");
-        },
-        
-    };
-    //endregion
   }
 
   return self;
@@ -730,6 +56,7 @@ extern BOOL enableLog;
 }
 
 - (UIView *)view {
+  __weak __typeof(self)weakSelf = self;
   if (_view == nil) {
     NSDictionary<NSString*, id>* params = (NSDictionary<NSString*, id>*) _args;
 
@@ -742,6 +69,678 @@ extern BOOL enableLog;
     // 这里用一个magic number调整一下id
     HEAP[@(2147483647 - _viewId)] = _view;
   }
+
+  //region method call handler
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"me.yohom/amap_map_fluttify/MAAnnotationView"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
+    NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
+
+    __strong __typeof(weakSelf) strongSelf = weakSelf;
+    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
+      strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
+    } else {
+      methodResult(FlutterMethodNotImplemented);
+    }
+  }];
+  //endregion
+
+  //region handlers
+  _handlerMap = @{
+      @"MAAnnotationView::setSelected_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // jsonable arg
+          BOOL selected = [args[@"selected"] boolValue];
+          // jsonable arg
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setSelected(%@, %@)", args[@"refId"], args[@"selected"], args[@"animated"]);
+          }
+      
+          // invoke native method
+          [ref setSelected : selected animated: animated];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAAnnotationView::initWithAnnotation_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // ref arg
+          id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+          // jsonable arg
+          NSString* reuseIdentifier = (NSString*) args[@"reuseIdentifier"];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::initWithAnnotation(%@, %@)", args[@"refId"], args[@"annotation"], args[@"reuseIdentifier"]);
+          }
+      
+          // invoke native method
+          id result = [ref initWithAnnotation: annotation reuseIdentifier: reuseIdentifier];
+      
+          // result
+          // return a ref
+          HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      @"MAAnnotationView::prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+      
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::prepareForReuse()", args[@"refId"]);
+          }
+      
+          // invoke native method
+          [ref prepareForReuse ];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAAnnotationView::setDragState_animated": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // args
+          // enum arg
+          MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) [args[@"newDragState"] integerValue];
+          // jsonable arg
+          BOOL animated = [args[@"animated"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // print log
+          if (enableLog) {
+              NSLog(@"fluttify-objc: MAAnnotationView@%@::setDragState(%@, %@)", args[@"refId"], args[@"newDragState"], args[@"animated"]);
+          }
+      
+          // invoke native method
+          [ref setDragState : newDragState animated: animated];
+      
+          // result
+          // 无返回值
+          NSString* jsonableResult = @"success";
+      
+          methodResult(jsonableResult);
+      },
+      @"MAAnnotationView::get_reuseIdentifier": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_reuseIdentifier");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          NSString* result = ref.reuseIdentifier;
+      
+          // 返回值: jsonable
+          id jsonableResult = result;
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_zIndex");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          NSInteger result = ref.zIndex;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_annotation");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          id<MAAnnotation> result = ref.annotation;
+      
+          // return a ref
+          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_image": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_image");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          UIImage* result = ref.image;
+      
+          // return a ref
+          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_customCalloutView");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          MACustomCalloutView* result = ref.customCalloutView;
+      
+          // return a ref
+          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_centerOffset");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          CGPoint result = ref.centerOffset;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_calloutOffset");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          CGPoint result = ref.calloutOffset;
+      
+          // 返回值: 结构体
+          NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CGPoint)];
+          HEAP[[NSNumber numberWithLong: resultValue.hash]] = resultValue;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: resultValue.hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_isEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isEnabled");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.enabled;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_isHighlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isHighlighted");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.highlighted;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_isSelected": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isSelected");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.selected;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_canShowCallout");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.canShowCallout;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_leftCalloutAccessoryView");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          UIView* result = ref.leftCalloutAccessoryView;
+      
+          // return a ref
+          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_rightCalloutAccessoryView");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          UIView* result = ref.rightCalloutAccessoryView;
+      
+          // return a ref
+          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_isDraggable": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_isDraggable");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.draggable;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_dragState");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          MAAnnotationViewDragState result = ref.dragState;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::get_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::get_canAdjustPositon");
+          }
+      
+          // ref object
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          // invoke native method
+          BOOL result = ref.canAdjustPositon;
+      
+          // 返回值: Value
+          NSObject* jsonableResult = @(result);
+      
+          methodResult(jsonableResult);
+      },
+      
+      @"MAAnnotationView::set_zIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_zIndex");
+          }
+      
+          // args
+          // jsonable arg
+          NSInteger zIndex = [args[@"zIndex"] longValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.zIndex = zIndex;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_annotation": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_annotation");
+          }
+      
+          // args
+          // ref arg
+          id<MAAnnotation> annotation = (id<MAAnnotation>) HEAP[args[@"annotation"]];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.annotation = annotation;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_image": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_image");
+          }
+      
+          // args
+          // ref arg
+          UIImage* image = (UIImage*) HEAP[args[@"image"]];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.image = image;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_customCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_customCalloutView");
+          }
+      
+          // args
+          // ref arg
+          MACustomCalloutView* customCalloutView = (MACustomCalloutView*) HEAP[args[@"customCalloutView"]];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.customCalloutView = customCalloutView;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_centerOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_centerOffset");
+          }
+      
+          // args
+          // struct arg
+          NSValue* centerOffsetValue = (NSValue*) HEAP[args[@"centerOffset"]];
+          CGPoint centerOffset;
+          [centerOffsetValue getValue:&centerOffset];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.centerOffset = centerOffset;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_calloutOffset": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_calloutOffset");
+          }
+      
+          // args
+          // struct arg
+          NSValue* calloutOffsetValue = (NSValue*) HEAP[args[@"calloutOffset"]];
+          CGPoint calloutOffset;
+          [calloutOffsetValue getValue:&calloutOffset];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.calloutOffset = calloutOffset;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_enabled": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_enabled");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL enabled = [args[@"enabled"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.enabled = enabled;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_highlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_highlighted");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL highlighted = [args[@"highlighted"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.highlighted = highlighted;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_selected": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_selected");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL selected = [args[@"selected"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.selected = selected;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_canShowCallout");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL canShowCallout = [args[@"canShowCallout"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.canShowCallout = canShowCallout;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_leftCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_leftCalloutAccessoryView");
+          }
+      
+          // args
+          // ref arg
+          UIView* leftCalloutAccessoryView = (UIView*) HEAP[args[@"leftCalloutAccessoryView"]];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.leftCalloutAccessoryView = leftCalloutAccessoryView;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_rightCalloutAccessoryView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_rightCalloutAccessoryView");
+          }
+      
+          // args
+          // ref arg
+          UIView* rightCalloutAccessoryView = (UIView*) HEAP[args[@"rightCalloutAccessoryView"]];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.rightCalloutAccessoryView = rightCalloutAccessoryView;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_draggable": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_draggable");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL draggable = [args[@"draggable"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.draggable = draggable;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_dragState": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_dragState");
+          }
+      
+          // args
+          // enum arg
+          MAAnnotationViewDragState dragState = (MAAnnotationViewDragState) [args[@"dragState"] integerValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.dragState = dragState;
+          methodResult(@"success");
+      },
+      
+      @"MAAnnotationView::set_canAdjustPositon": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+          // print log
+          if (enableLog) {
+              NSLog(@"MAAnnotationView::set_canAdjustPositon");
+          }
+      
+          // args
+          // jsonable arg
+          BOOL canAdjustPositon = [args[@"canAdjustPositon"] boolValue];
+      
+          // ref
+          MAAnnotationView* ref = (MAAnnotationView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+      
+          ref.canAdjustPositon = canAdjustPositon;
+          methodResult(@"success");
+      },
+      
+  };
+  //endregion
   return _view;
 }
 
