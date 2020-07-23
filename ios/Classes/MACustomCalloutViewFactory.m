@@ -14,15 +14,132 @@ extern NSMutableDictionary<NSNumber*, NSObject*>* HEAP;
 extern BOOL enableLog;
 
 @implementation MACustomCalloutViewFactory {
+  NSDictionary<NSString *, Handler>* _handlerMap;
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   self = [super init];
   if (self) {
     _registrar = registrar;
+
+    __weak __typeof(self)weakSelf = self;
+    //region method call handler
+    FlutterMethodChannel *channel = [FlutterMethodChannel
+        methodChannelWithName:@"me.yohom/amap_map_fluttify/MACustomCalloutView"
+              binaryMessenger:[_registrar messenger]];
+
+    [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
+      NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
+
+      __strong __typeof(weakSelf) strongSelf = weakSelf;
+      if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
+        strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
+      } else {
+        methodResult(FlutterMethodNotImplemented);
+      }
+    }];
+    //endregion
+
+    //region handlers
+    _handlerMap = @{
+        @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // args
+            // ref arg
+            UIView* customView = (UIView*) HEAP[args[@"customView"]];
+        
+            // ref
+            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // print log
+            if (enableLog) {
+                NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(%@)", args[@"refId"], args[@"customView"]);
+            }
+        
+            // invoke native method
+            id result = [ref initWithCustomView: customView];
+        
+            // result
+            // return a ref
+            HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+        
+            methodResult(jsonableResult);
+        },
+        @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACustomCalloutView::get_customView");
+            }
+        
+            // ref object
+            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // invoke native method
+            UIView* result = ref.customView;
+        
+            // return a ref
+            HEAP[[NSNumber numberWithLong: (result).hash]] = result;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
+        
+            methodResult(jsonableResult);
+        },
+        
+        @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACustomCalloutView::get_userData");
+            }
+        
+            // ref object
+            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            // invoke native method
+            NSObject* result = ref.userData;
+        
+            // return a ref
+            HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
+            NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
+        
+            methodResult(jsonableResult);
+        },
+        
+        @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
+            // print log
+            if (enableLog) {
+                NSLog(@"MACustomCalloutView::set_userData");
+            }
+        
+            // args
+            // id arg
+            id userData;
+            // jsonable
+            if ([args[@"userData"] isKindOfClass:[NSNumber class]]
+                    || [args[@"userData"] isKindOfClass:[NSString class]]
+                    || [args[@"userData"] isKindOfClass:[NSArray class]]
+                    || [args[@"userData"] isKindOfClass:[NSDictionary class]]) {
+                userData = args[@"userData"];
+            }
+            // non jsonable
+            else {
+                userData = HEAP[@([args[@"userData"] integerValue])];
+            }
+        
+            // ref
+            MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
+        
+            ref.userData = userData;
+            methodResult(@"success");
+        },
+        
+    };
+    //endregion
   }
 
   return self;
+}
+
+- (NSObject<FlutterMessageCodec>*)createArgsCodec {
+  return [FlutterStandardMessageCodec sharedInstance];
 }
 
 - (NSObject <FlutterPlatformView> *)createWithFrame:(CGRect)frame viewIdentifier:(int64_t)viewId arguments:(id _Nullable)args {
@@ -52,7 +169,6 @@ extern BOOL enableLog;
 }
 
 - (UIView *)view {
-  __weak __typeof(self)weakSelf = self;
   if (_view == nil) {
     NSDictionary<NSString*, id>* params = (NSDictionary<NSString*, id>*) _args;
 
@@ -65,117 +181,6 @@ extern BOOL enableLog;
     // 这里用一个magic number调整一下id
     HEAP[@(2147483647 - _viewId)] = _view;
   }
-
-  //region method call handler
-  FlutterMethodChannel *channel = [FlutterMethodChannel
-      methodChannelWithName:@"me.yohom/amap_map_fluttify/MACustomCalloutView"
-            binaryMessenger:[_registrar messenger]];
-
-  [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
-    NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
-
-    __strong __typeof(weakSelf) strongSelf = weakSelf;
-    if (strongSelf != nil && strongSelf->_handlerMap[methodCall.method] != nil) {
-      strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
-    } else {
-      methodResult(FlutterMethodNotImplemented);
-    }
-  }];
-  //endregion
-
-  //region handlers
-  _handlerMap = @{
-      @"MACustomCalloutView::initWithCustomView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // args
-          // ref arg
-          UIView* customView = (UIView*) HEAP[args[@"customView"]];
-      
-          // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          // print log
-          if (enableLog) {
-              NSLog(@"fluttify-objc: MACustomCalloutView@%@::initWithCustomView(%@)", args[@"refId"], args[@"customView"]);
-          }
-      
-          // invoke native method
-          id result = [ref initWithCustomView: customView];
-      
-          // result
-          // return a ref
-          HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-          NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
-      
-          methodResult(jsonableResult);
-      },
-      @"MACustomCalloutView::get_customView": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // print log
-          if (enableLog) {
-              NSLog(@"MACustomCalloutView::get_customView");
-          }
-      
-          // ref object
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          // invoke native method
-          UIView* result = ref.customView;
-      
-          // return a ref
-          HEAP[[NSNumber numberWithLong: (result).hash]] = result;
-          NSNumber* jsonableResult = [NSNumber numberWithLong: (result).hash];
-      
-          methodResult(jsonableResult);
-      },
-      
-      @"MACustomCalloutView::get_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // print log
-          if (enableLog) {
-              NSLog(@"MACustomCalloutView::get_userData");
-          }
-      
-          // ref object
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          // invoke native method
-          NSObject* result = ref.userData;
-      
-          // return a ref
-          HEAP[[NSNumber numberWithLong: ((NSObject*) result).hash]] = result;
-          NSNumber* jsonableResult = [NSNumber numberWithLong: ((NSObject*) result).hash];
-      
-          methodResult(jsonableResult);
-      },
-      
-      @"MACustomCalloutView::set_userData": ^(NSObject <FlutterPluginRegistrar> * registrar, id args, FlutterResult methodResult) {
-          // print log
-          if (enableLog) {
-              NSLog(@"MACustomCalloutView::set_userData");
-          }
-      
-          // args
-          // id arg
-          id userData;
-          // jsonable
-          if ([args[@"userData"] isKindOfClass:[NSNumber class]]
-                  || [args[@"userData"] isKindOfClass:[NSString class]]
-                  || [args[@"userData"] isKindOfClass:[NSArray class]]
-                  || [args[@"userData"] isKindOfClass:[NSDictionary class]]) {
-              userData = args[@"userData"];
-          }
-          // non jsonable
-          else {
-              userData = HEAP[@([args[@"userData"] integerValue])];
-          }
-      
-          // ref
-          MACustomCalloutView* ref = (MACustomCalloutView*) HEAP[(NSNumber*) ((NSDictionary<NSString*, NSObject*>*) args)[@"refId"]];
-      
-          ref.userData = userData;
-          methodResult(@"success");
-      },
-      
-  };
-  //endregion
   return _view;
 }
 

@@ -173,7 +173,7 @@ class _AmapViewState extends State<AmapView> {
           if (_widgetLayer != null) _widgetLayer,
           com_amap_api_maps_TextureMapView_Android(
             params: {
-              'mapType': widget.mapType.index,
+              'mapType': widget.mapType?.index,
               'showZoomControl': widget.showZoomControl,
               'showCompass': widget.showCompass,
               'showScaleControl': widget.showScaleControl,
@@ -212,7 +212,7 @@ class _AmapViewState extends State<AmapView> {
           if (_widgetLayer != null) _widgetLayer,
           MAMapView_iOS(
             params: {
-              'mapType': widget.mapType.index,
+              'mapType': widget.mapType?.index,
               'showZoomControl': widget.showZoomControl,
               'showCompass': widget.showCompass,
               'showScaleControl': widget.showScaleControl,

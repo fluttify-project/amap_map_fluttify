@@ -57,17 +57,17 @@ class TextureMapViewFactory extends PlatformViewFactory {
         // method
         put("com.amap.api.maps.TextureMapView::getMap", (__args__, __methodResult__) -> {
             // args
-
-
+        
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::getMap(" + "" + ")");
             }
-
+        
             // invoke native method
             com.amap.api.maps.AMap __result__;
             try {
@@ -80,14 +80,14 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             Integer jsonableResult = null;
             if (__result__ != null) {
                 jsonableResult = System.identityHashCode(__result__);
                 getHEAP().put(jsonableResult, __result__);
             }
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
@@ -96,16 +96,16 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // ref arg
             Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
             android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
-
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onCreate(" + var1 + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onCreate(var1);
@@ -117,26 +117,26 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.TextureMapView::onResume", (__args__, __methodResult__) -> {
             // args
-
-
+        
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onResume(" + "" + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onResume();
@@ -148,26 +148,26 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.TextureMapView::onPause", (__args__, __methodResult__) -> {
             // args
-
-
+        
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onPause(" + "" + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onPause();
@@ -179,26 +179,26 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.TextureMapView::onDestroy", (__args__, __methodResult__) -> {
             // args
-
-
+        
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onDestroy(" + "" + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onDestroy();
@@ -210,26 +210,26 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
         put("com.amap.api.maps.TextureMapView::onLowMemory", (__args__, __methodResult__) -> {
             // args
-
-
+        
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onLowMemory(" + "" + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onLowMemory();
@@ -241,10 +241,10 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
@@ -253,16 +253,16 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // ref arg
             Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
             android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
-
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::onSaveInstanceState(" + var1 + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.onSaveInstanceState(var1);
@@ -274,10 +274,10 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
         // method
@@ -285,16 +285,16 @@ class TextureMapViewFactory extends PlatformViewFactory {
             // args
             // jsonable arg
             int var1 = (int) ((Map<String, Object>) __args__).get("var1");
-
+        
             // ref
             int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.TextureMapView ref = (com.amap.api.maps.TextureMapView) getHEAP().get(refId);
-
+        
             // print log
             if (getEnableLog()) {
                 Log.d("fluttify-java", "fluttify-java: com.amap.api.maps.TextureMapView@" + refId + "::setVisibility(" + var1 + ")");
             }
-
+        
             // invoke native method
             try {
                 ref.setVisibility(var1);
@@ -306,10 +306,10 @@ class TextureMapViewFactory extends PlatformViewFactory {
                 __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
-
+        
             // convert result to jsonable result
             String jsonableResult = "success";
-
+        
             __methodResult__.success(jsonableResult);
         });
     }};
@@ -318,7 +318,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
     public PlatformView create(Context __, int id, Object params) {
         Map<String, Object> __args__ = (Map<String, Object>) params;
 
-        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+        ////////////////////////////////初始化AndroidView////////////////////////////////////////
         Integer mapType = (Integer) __args__.get("mapType");
         Boolean showZoomControl = (Boolean) __args__.get("showZoomControl");
         Boolean showCompass = (Boolean) __args__.get("showCompass");
@@ -352,7 +352,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             builder.target(new LatLng(centerCoordinateLatitude, centerCoordinateLongitude));
         }
         options.camera(builder.build());
-        ////////////////////////////////初始化UiKitView////////////////////////////////////////
+        ////////////////////////////////初始化AndroidView////////////////////////////////////////
 
         com.amap.api.maps.TextureMapView view = new com.amap.api.maps.TextureMapView(activity, options);
 
@@ -366,8 +366,7 @@ class TextureMapViewFactory extends PlatformViewFactory {
             }
 
             @Override
-            public void dispose() {
-            }
+            public void dispose() {}
         };
     }
 }

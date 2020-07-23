@@ -7,13 +7,14 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:amap_map_fluttify/src/ios/ios.export.g.dart';
-import 'package:core_location_fluttify/core_location_fluttify.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+
 import 'package:foundation_fluttify/foundation_fluttify.dart';
+import 'package:core_location_fluttify/core_location_fluttify.dart';
 
 typedef void MAMapViewCreatedCallback(MAMapView controller);
 typedef Future<void> _OnUiKitViewDispose();
