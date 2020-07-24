@@ -340,7 +340,7 @@ class _CreateMapScreenState extends State<CreateMapScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('一次性设置地图状态')),
+                  title: Center(child: Text('(专业版)一次性设置地图状态')),
                   onTap: () async {
                     _controller.setCameraPosition(
                       coordinate: getNextLatLng(),

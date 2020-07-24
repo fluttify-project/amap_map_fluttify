@@ -277,7 +277,7 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('添加在线瓦片图')),
+                  title: Center(child: Text('(专业版)添加在线瓦片图')),
                   onTap: () async {
                     await _controller?.addUrlTileOverlay(
                       UrlTileOption(
