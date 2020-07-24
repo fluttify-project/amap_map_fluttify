@@ -1,4 +1,5 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
+import 'package:amap_map_fluttify_example/utils/next_latlng.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class CreateMapScreen extends StatefulWidget {
   _CreateMapScreenState createState() => _CreateMapScreenState();
 }
 
-class _CreateMapScreenState extends State<CreateMapScreen> {
+class _CreateMapScreenState extends State<CreateMapScreen> with NextLatLng {
   AmapController _controller;
 
   @override
@@ -106,13 +107,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onTap: () async {
                     final latLng = await _controller?.getLocation();
                     toast('当前经纬度: ${latLng.latitude}, ${latLng.longitude}');
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('通过Extension获取当前位置经纬度')),
-                  onTap: () async {
-                    final latLng = await _controller?.getLocationX();
-                    toast('当前经纬度Extension: ${latLng.toString()}');
                   },
                 ),
                 ListTile(
@@ -345,61 +339,23 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                     toast('当前缩放等级: ${await _controller.getZoomLevel()}');
                   },
                 ),
+                ListTile(
+                  title: Center(child: Text('一次性设置地图状态')),
+                  onTap: () async {
+                    _controller.setCameraPosition(
+                      coordinate: getNextLatLng(),
+                      zoom: 12,
+                      tilt: 90,
+                      bearing: 80,
+                      duration: Duration(seconds: 2),
+                    );
+                  },
+                ),
               ],
             ),
           ),
         ],
       ),
-    );
-  }
-}
-
-extension on AmapController {
-  /// 本方法只是演示了如何通过dart extension去实现一个功能.
-  ///
-  /// AmapController开放了内部的[androidController]和[iosController].
-  /// 意味着插件使用者可以通过对[AmapController]进行扩展可以获得插件已提供能力之外的能力.
-  /// 如果插件使用者觉得自行扩展的能力已经足够完善, 那么可以把这个扩展方法pr到主仓库合并进[AmapController]类.
-  Future<LatLng> getLocationX() {
-    final interval = const Duration(milliseconds: 500);
-    final timeout = const Duration(seconds: 10);
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-        return Stream.periodic(interval, (_) => _)
-            .asyncMap(
-              (count) async {
-                final coord = await map.getMyLocation();
-
-                if (coord == null) {
-                  return null;
-                } else {
-                  return LatLng(await coord.latitude, await coord.longitude);
-                }
-              },
-            )
-            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
-            .firstWhere((location) => location != null)
-            .timeout(timeout, onTimeout: () => null);
-      },
-      ios: (pool) {
-        return Stream.periodic(interval, (_) => _)
-            .asyncMap(
-              (count) async {
-                final location = await iosController.get_userLocation();
-                final coord = await location.get_coordinate();
-
-                if (coord == null) {
-                  return null;
-                } else {
-                  return LatLng(await coord.latitude, await coord.longitude);
-                }
-              },
-            )
-            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
-            .firstWhere((location) => location != null)
-            .timeout(timeout, onTimeout: () => null);
-      },
     );
   }
 }

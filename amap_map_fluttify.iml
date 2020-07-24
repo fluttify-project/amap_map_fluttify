@@ -24,6 +24,8 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/build/app/intermediates/flutter/debug/flutter_assets/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/build/app/intermediates/merged_assets/debug/out/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/amap_map_fluttify/example/ios/.symlinks/plugins/amap_core_fluttify/build" />

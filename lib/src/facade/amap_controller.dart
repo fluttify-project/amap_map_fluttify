@@ -2426,6 +2426,7 @@ mixin _Pro on _Holder {
     double tilt,
     double bearing,
     bool animated = true,
+    Duration duration = const Duration(milliseconds: 500),
   }) async {
     return platform(
       android: (pool) async {
@@ -2453,7 +2454,12 @@ mixin _Pro on _Holder {
         final update = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(await builder.build());
         if (animated) {
-          await map.animateCamera__com_amap_api_maps_CameraUpdate(update);
+          await map
+              .animateCamera__com_amap_api_maps_CameraUpdate__int__com_amap_api_maps_AMap_CancelableCallback(
+            update,
+            duration.inMilliseconds,
+            null,
+          );
         } else {
           await map.moveCamera(update);
         }
@@ -2461,34 +2467,31 @@ mixin _Pro on _Holder {
         pool..add(map)..add(update);
       },
       ios: (pool) async {
+        final status = await MAMapStatus.create__();
         if (coordinate != null) {
           final latLng = await CLLocationCoordinate2D.create(
               coordinate.latitude, coordinate.longitude);
-          await _iosController.setCenterCoordinate_animated(latLng, animated);
+          await status.set_centerCoordinate(latLng);
         }
         if (zoom != null) {
-          await _iosController.setZoomLevel_animated(zoom, animated);
+          await status.set_zoomLevel(zoom);
         }
         if (tilt != null) {
-          await _iosController.setCameraDegree_animated_duration(
-              tilt, animated, 0.3);
+          await status.set_cameraDegree(tilt);
         }
         if (bearing != null) {
           final currentRotation = await _iosController.get_rotationDegree();
           if ((bearing - currentRotation).abs() > 180) {
-            await _iosController.setRotationDegree_animated_duration(
-              360 - bearing,
-              animated,
-              0.3,
-            );
+            await status.set_rotationDegree(360 - bearing);
           } else {
-            await _iosController.setRotationDegree_animated_duration(
-              bearing,
-              animated,
-              0.3,
-            );
+            await status.set_cameraDegree(bearing);
           }
         }
+        await _iosController.setMapStatus_animated_duration(
+          status,
+          animated,
+          duration.inMilliseconds / 1000,
+        );
       },
     );
   }
