@@ -2421,7 +2421,7 @@ mixin _Pro on _Holder {
 
   /// 一次性设置地图视角
   Future<void> setCameraPosition({
-    LatLng coordinate,
+    @required LatLng coordinate,
     double zoom,
     double tilt,
     double bearing,
