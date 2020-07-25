@@ -13,6 +13,8 @@ dependencies:
   oktoast: ^2.3.1+1
   decorated_flutter: ^0.12.0+1
   demo_widgets: ^0.1.1
+  sliding_up_panel: ^1.0.2
+  flutter_easyrefresh: ^2.1.1
 
 dev_dependencies:
   test: any

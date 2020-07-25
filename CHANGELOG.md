@@ -1,3 +1,6 @@
+## 1.1.0
+- 合并搜索和定位插件
+
 ## 1.0.0
 - chore: 清除deprecated接口
 - enhance: 增加autoRelease参数, 控制是否自动释放对象

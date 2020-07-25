@@ -47,7 +47,7 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                   },
                 ),
                 ContinuousSetting(
-                  head: '设置地图朝向',
+                  head: '(专业版)设置地图朝向',
                   min: 0,
                   max: 360,
                   onChanged: (value) {
@@ -56,7 +56,7 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                   },
                 ),
                 ContinuousSetting(
-                  head: '设置地图倾斜度',
+                  head: '(专业版)设置地图倾斜度',
                   min: 0,
                   max: 90,
                   onChanged: (value) {

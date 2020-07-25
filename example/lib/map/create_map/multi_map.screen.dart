@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:demo_widgets/demo_widgets.dart';
@@ -30,11 +28,6 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
-                if (Platform.isAndroid) {
-                  L.d('地图1创建完成, id为${controller.androidController.refId}');
-                } else if (Platform.isIOS) {
-                  L.d('地图1创建完成, id为${controller.iosController.refId}');
-                }
                 _controller1 = controller;
                 _controller = _controller1;
               },
@@ -46,11 +39,6 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
-                if (Platform.isAndroid) {
-                  L.d('地图2创建完成, id为${controller.androidController.refId}');
-                } else if (Platform.isIOS) {
-                  L.d('地图2创建完成, id为${controller.iosController.refId}');
-                }
                 _controller2 = controller;
               },
             ),
@@ -121,13 +109,6 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   onTap: () async {
                     final latLng = await _controller?.getLocation();
                     toast('当前经纬度: ${latLng.toString()}');
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('通过Extension获取当前位置经纬度')),
-                  onTap: () async {
-                    final latLng = await _controller?.getLocationX();
-                    toast('当前经纬度Extension: ${latLng.toString()}');
                   },
                 ),
                 ListTile(
@@ -357,56 +338,6 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
           ),
         ],
       ),
-    );
-  }
-}
-
-extension on AmapController {
-  /// 本方法只是演示了如何通过dart extension去实现一个功能.
-  ///
-  /// AmapController开放了内部的[androidController]和[iosController].
-  /// 意味着插件使用者可以通过对[AmapController]进行扩展可以获得插件已提供能力之外的能力.
-  /// 如果插件使用者觉得自行扩展的能力已经足够完善, 那么可以把这个扩展方法pr到主仓库合并进[AmapController]类.
-  Future<LatLng> getLocationX() {
-    final interval = const Duration(milliseconds: 500);
-    final timeout = const Duration(seconds: 10);
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-        return Stream.periodic(interval, (_) => _)
-            .asyncMap(
-              (count) async {
-                final coord = await map.getMyLocation();
-
-                if (coord == null) {
-                  return null;
-                } else {
-                  return LatLng(await coord.latitude, await coord.longitude);
-                }
-              },
-            )
-            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
-            .firstWhere((location) => location != null)
-            .timeout(timeout, onTimeout: () => null);
-      },
-      ios: (pool) {
-        return Stream.periodic(interval, (_) => _)
-            .asyncMap(
-              (count) async {
-                final location = await iosController.get_userLocation();
-                final coord = await location.get_coordinate();
-
-                if (coord == null) {
-                  return null;
-                } else {
-                  return LatLng(await coord.latitude, await coord.longitude);
-                }
-              },
-            )
-            .take(timeout.inMilliseconds ~/ interval.inMilliseconds)
-            .firstWhere((location) => location != null)
-            .timeout(timeout, onTimeout: () => null);
-      },
     );
   }
 }

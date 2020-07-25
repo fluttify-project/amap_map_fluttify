@@ -12,7 +12,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-
+import 'package:amap_search_fluttify/amap_search_fluttify.dart';
+import 'dart:math';
 import 'enums.dart';
 import 'extensions.dart';
 import 'models.dart';
@@ -167,6 +168,8 @@ class _AmapViewState extends State<AmapView> {
 
   @override
   Widget build(BuildContext context) {
+    final centerCoordinate =
+        widget.centerCoordinate ?? LatLng(39.91667, 116.41667);
     if (Platform.isAndroid) {
       return Stack(
         children: <Widget>[
@@ -182,8 +185,8 @@ class _AmapViewState extends State<AmapView> {
               'rotateGestureEnabled': widget.rotateGestureEnabled,
               'tiltGestureEnabled': widget.tiltGestureEnabled,
               'zoomLevel': widget.zoomLevel,
-              'centerCoordinateLatitude': widget.centerCoordinate?.latitude,
-              'centerCoordinateLongitude': widget.centerCoordinate?.longitude,
+              'centerCoordinateLatitude': centerCoordinate.latitude,
+              'centerCoordinateLongitude': centerCoordinate.longitude,
               'tilt': widget.tilt,
               'bearing': widget.bearing,
             },
@@ -221,8 +224,8 @@ class _AmapViewState extends State<AmapView> {
               'rotateGestureEnabled': widget.rotateGestureEnabled,
               'tiltGestureEnabled': widget.tiltGestureEnabled,
               'zoomLevel': widget.zoomLevel,
-              'centerCoordinateLatitude': widget.centerCoordinate?.latitude,
-              'centerCoordinateLongitude': widget.centerCoordinate?.longitude,
+              'centerCoordinateLatitude': centerCoordinate.latitude,
+              'centerCoordinateLongitude': centerCoordinate.longitude,
               'tilt': widget.tilt,
               'bearing': widget.bearing,
             },
