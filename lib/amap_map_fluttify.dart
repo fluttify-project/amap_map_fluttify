@@ -11,6 +11,9 @@
 /// [AmapController]中开放了所有控制地图需要的接口, 具体可以查看[AmapController]内的注释.
 library amap_map_fluttify;
 
+export 'package:amap_location_fluttify/amap_location_fluttify.dart';
+export 'package:amap_search_fluttify/amap_search_fluttify.dart';
+
 export 'src/facade/amap_service.dart';
 export 'src/facade/amap_view.widget.dart';
 export 'src/facade/enums.dart';
