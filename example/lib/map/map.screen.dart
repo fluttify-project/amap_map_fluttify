@@ -13,6 +13,7 @@ import 'interact_with_map/code_interaction.screen.dart';
 import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
 import 'interact_with_map/screen_shot_screen.dart';
+import 'location/geo_fence.screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
@@ -130,6 +131,17 @@ class MapDemo extends StatelessWidget {
               label: "获取静态图",
               sublabel: "StaticImageScreen",
               target: StaticImageScreen(),
+            ),
+          ],
+        ),
+        SPACE_BIG,
+        FunctionGroup(
+          headLabel: "定位",
+          children: <Widget>[
+            FunctionItem(
+              label: "(专业版)电子围栏",
+              sublabel: "GeoFenceScreen",
+              target: GeoFenceScreen(),
             ),
           ],
         ),
