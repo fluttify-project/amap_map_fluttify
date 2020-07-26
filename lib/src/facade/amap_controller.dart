@@ -37,22 +37,22 @@ class AmapController extends _Holder
   AmapController.android(com_amap_api_maps_TextureMapView _androidController,
       _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
-    this._androidController = _androidController;
+    this.androidController = _androidController;
     this._state = state;
   }
 
   /// iOS构造器
   AmapController.ios(MAMapView _iosController, _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
-    this._iosController = _iosController;
+    this.iosController = _iosController;
     this._state = state;
   }
 
   Future<void> dispose() async {
     _locateSubscription?.cancel();
 
-    await _androidController?.onPause();
-    await _androidController?.onDestroy();
+    await androidController?.onPause();
+    await androidController?.onDestroy();
 
     WidgetsBinding.instance.removeObserver(this);
   }
@@ -64,15 +64,15 @@ class AmapController extends _Holder
     // 因为这里的生命周期其实已经是App的生命周期了, 所以除了这里还需要在dispose里释放资源
     switch (state) {
       case AppLifecycleState.resumed:
-        _androidController?.onResume();
+        androidController?.onResume();
         break;
       case AppLifecycleState.inactive:
         break;
       case AppLifecycleState.paused:
-        _androidController?.onPause();
+        androidController?.onPause();
         break;
       case AppLifecycleState.detached:
-        _androidController?.onDestroy();
+        androidController?.onDestroy();
         break;
     }
   }
@@ -90,7 +90,7 @@ mixin _Community on _Holder {
   }) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         return Stream.periodic(interval, (_) => _)
             .asyncMap(
               (count) async {
@@ -111,7 +111,7 @@ mixin _Community on _Holder {
         return Stream.periodic(interval, (_) => _)
             .asyncMap(
               (count) async {
-                final location = await _iosController.get_userLocation();
+                final location = await iosController.get_userLocation();
                 final coord = await location.get_coordinate();
 
                 if (coord == null) {
@@ -135,7 +135,7 @@ mixin _Community on _Holder {
     assert(option != null);
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final locationStyle =
             await com_amap_api_maps_model_MyLocationStyle.create__();
         await locationStyle.showMyLocation(option.show);
@@ -200,14 +200,14 @@ mixin _Community on _Holder {
         pool..add(map)..add(locationStyle);
       },
       ios: (pool) async {
-        await _iosController.set_showsUserLocation(option.show);
+        await iosController.set_showsUserLocation(option.show);
 
         if (option.show) {
           if (option.interval != Duration.zero) {
             _locateSubscription?.cancel();
             _locateSubscription = Stream.periodic(option.interval, (_) => _)
                 .listen((_) async =>
-                    await _iosController.setUserTrackingMode_animated(
+                    await iosController.setUserTrackingMode_animated(
                       MAUserTrackingMode.MAUserTrackingModeFollow,
                       true,
                     ));
@@ -215,7 +215,7 @@ mixin _Community on _Holder {
 
           switch (option.myLocationType) {
             case MyLocationType.Show:
-              await _iosController.setUserTrackingMode_animated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeNone,
                 true,
               );
@@ -225,24 +225,24 @@ mixin _Community on _Holder {
             // 2. 获取当前用户位置
             // 3. 把当前地图中心点设置为用户位置
             case MyLocationType.Locate:
-              await _iosController.setUserTrackingMode_animated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeNone,
                 true,
               );
-              final myLocation = await _iosController.get_userLocation();
-              await _iosController.setCenterCoordinate_animated(
+              final myLocation = await iosController.get_userLocation();
+              await iosController.setCenterCoordinate_animated(
                 await myLocation.get_coordinate(),
                 false,
               );
               break;
             case MyLocationType.Follow:
-              await _iosController.setUserTrackingMode_animated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeFollow,
                 true,
               );
               break;
             case MyLocationType.Rotate:
-              await _iosController.setUserTrackingMode_animated(
+              await iosController.setUserTrackingMode_animated(
                 MAUserTrackingMode.MAUserTrackingModeFollowWithHeading,
                 true,
               );
@@ -273,7 +273,7 @@ mixin _Community on _Holder {
             await style.set_lineWidth(option.strokeWidth);
           }
 
-          await _iosController.updateUserLocationRepresentation(style);
+          await iosController.updateUserLocationRepresentation(style);
         } else {
           _locateSubscription?.cancel();
         }
@@ -285,7 +285,7 @@ mixin _Community on _Holder {
   Future<void> setMyLocationRotateAngle(double angle) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.setMyLocationRotateAngle((360 - angle).abs());
 
         pool..add(map);
@@ -309,13 +309,13 @@ mixin _Community on _Holder {
   Future<void> showIndoorMap(bool show) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.showIndoorMap(show);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showsIndoorMap(show);
+        await iosController.set_showsIndoorMap(show);
       },
     );
   }
@@ -324,7 +324,7 @@ mixin _Community on _Holder {
   Future<void> setMapType(MapType mapType) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         switch (mapType) {
           case MapType.Standard:
             await map.setMapType(1);
@@ -348,19 +348,19 @@ mixin _Community on _Holder {
       ios: (pool) async {
         switch (mapType) {
           case MapType.Standard:
-            await _iosController.set_mapType(MAMapType.MAMapTypeStandard);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandard);
             break;
           case MapType.Satellite:
-            await _iosController.set_mapType(MAMapType.MAMapTypeSatellite);
+            await iosController.set_mapType(MAMapType.MAMapTypeSatellite);
             break;
           case MapType.Night:
-            await _iosController.set_mapType(MAMapType.MAMapTypeStandardNight);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandardNight);
             break;
           case MapType.Navi:
-            await _iosController.set_mapType(MAMapType.MAMapTypeNavi);
+            await iosController.set_mapType(MAMapType.MAMapTypeNavi);
             break;
           case MapType.Bus:
-            await _iosController.set_mapType(MAMapType.MAMapTypeBus);
+            await iosController.set_mapType(MAMapType.MAMapTypeBus);
             break;
         }
       },
@@ -371,7 +371,7 @@ mixin _Community on _Holder {
   Future<void> setMapLanguage(Language language) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         switch (language) {
           case Language.Chinese:
             await map.setMapLanguage(com_amap_api_maps_AMap.CHINESE);
@@ -386,11 +386,11 @@ mixin _Community on _Holder {
       ios: (pool) async {
         switch (language) {
           case Language.Chinese:
-            await _iosController.performSelectorWithObject__(
+            await iosController.performSelectorWithObject__(
                 'setMapLanguage:', 0);
             break;
           case Language.English:
-            await _iosController.performSelectorWithObject__(
+            await iosController.performSelectorWithObject__(
                 'setMapLanguage:', 1);
             break;
         }
@@ -402,13 +402,13 @@ mixin _Community on _Holder {
   Future<void> showTraffic(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.setTrafficEnabled(enable);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showTraffic(enable);
+        await iosController.set_showTraffic(enable);
       },
     );
   }
@@ -417,7 +417,7 @@ mixin _Community on _Holder {
   Future<void> showZoomControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomControlsEnabled(enable);
 
@@ -433,14 +433,14 @@ mixin _Community on _Holder {
   Future<void> showCompass(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setCompassEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_showsCompass(enable);
+        await iosController.set_showsCompass(enable);
       },
     );
   }
@@ -449,7 +449,7 @@ mixin _Community on _Holder {
   Future<void> showLocateControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setMyLocationButtonEnabled(enable);
 
@@ -465,14 +465,14 @@ mixin _Community on _Holder {
   Future<void> showScaleControl(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScaleControlsEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_showsScale(enable);
+        await iosController.set_showsScale(enable);
       },
     );
   }
@@ -481,14 +481,14 @@ mixin _Community on _Holder {
   Future<void> setZoomGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_zoomEnabled(enable);
+        await iosController.set_zoomEnabled(enable);
       },
     );
   }
@@ -497,14 +497,14 @@ mixin _Community on _Holder {
   Future<void> setScrollGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScrollGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_scrollEnabled(enable);
+        await iosController.set_scrollEnabled(enable);
       },
     );
   }
@@ -513,14 +513,14 @@ mixin _Community on _Holder {
   Future<void> setRotateGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setRotateGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_rotateEnabled(enable);
+        await iosController.set_rotateEnabled(enable);
       },
     );
   }
@@ -529,14 +529,14 @@ mixin _Community on _Holder {
   Future<void> setTiltGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setTiltGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_rotateCameraEnabled(enable);
+        await iosController.set_rotateCameraEnabled(enable);
       },
     );
   }
@@ -545,17 +545,17 @@ mixin _Community on _Holder {
   Future<void> setAllGesturesEnabled(bool enable) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setAllGesturesEnabled(enable);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_zoomEnabled(enable);
-        await _iosController.set_scrollEnabled(enable);
-        await _iosController.set_rotateEnabled(enable);
-        await _iosController.set_rotateCameraEnabled(enable);
+        await iosController.set_zoomEnabled(enable);
+        await iosController.set_scrollEnabled(enable);
+        await iosController.set_rotateEnabled(enable);
+        await iosController.set_rotateCameraEnabled(enable);
       },
     );
   }
@@ -567,7 +567,7 @@ mixin _Community on _Holder {
     assert(level >= 3 && level <= 19, '缩放范围为3-19');
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
         if (animated) {
@@ -579,7 +579,7 @@ mixin _Community on _Holder {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        await _iosController.setZoomLevel_animated(level, animated);
+        await iosController.setZoomLevel_animated(level, animated);
       },
     );
   }
@@ -588,14 +588,14 @@ mixin _Community on _Holder {
   Future<double> getZoomLevel() async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final camera = await map.getCameraPosition();
 
         pool..add(map)..add(camera);
         return camera.get_zoom();
       },
       ios: (pool) async {
-        return _iosController.get_zoomLevel();
+        return iosController.get_zoomLevel();
       },
     );
   }
@@ -605,14 +605,14 @@ mixin _Community on _Holder {
     assert(byCenter != null);
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomInByScreenCenter(byCenter);
 
         pool..add(map)..add(uiSetting);
       },
       ios: (pool) async {
-        await _iosController.set_zoomingInPivotsAroundAnchorPoint(!byCenter);
+        await iosController.set_zoomingInPivotsAroundAnchorPoint(!byCenter);
       },
     );
   }
@@ -621,7 +621,7 @@ mixin _Community on _Holder {
   Future<void> zoomIn({bool animated = true}) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomIn();
         if (animated) {
@@ -633,8 +633,8 @@ mixin _Community on _Holder {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final currentLevel = await _iosController.get_zoomLevel();
-        await _iosController.setZoomLevel_animated(currentLevel + 1, animated);
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevel_animated(currentLevel + 1, animated);
       },
     );
   }
@@ -643,7 +643,7 @@ mixin _Community on _Holder {
   Future<void> zoomOut({bool animated = true}) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final cameraUpdate =
             await com_amap_api_maps_CameraUpdateFactory.zoomOut();
         if (animated) {
@@ -655,8 +655,8 @@ mixin _Community on _Holder {
         pool..add(map)..add(cameraUpdate);
       },
       ios: (pool) async {
-        final currentLevel = await _iosController.get_zoomLevel();
-        await _iosController.setZoomLevel_animated(currentLevel - 1, animated);
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevel_animated(currentLevel - 1, animated);
       },
     );
   }
@@ -679,7 +679,7 @@ mixin _Community on _Holder {
     final lng = coordinate.longitude;
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final latLng = await com_amap_api_maps_model_LatLng
             .create__double__double(lat, lng);
@@ -706,15 +706,15 @@ mixin _Community on _Holder {
       ios: (pool) async {
         final latLng = await CLLocationCoordinate2D.create(lat, lng);
         if (zoomLevel != null) {
-          await _iosController.setZoomLevel_animated(zoomLevel, animated);
+          await iosController.setZoomLevel_animated(zoomLevel, animated);
         }
         if (bearing != null) {
-          await _iosController.set_rotationDegree(bearing);
+          await iosController.set_rotationDegree(bearing);
         }
         if (tilt != null) {
-          await _iosController.set_cameraDegree(tilt);
+          await iosController.set_cameraDegree(tilt);
         }
-        await _iosController.setCenterCoordinate_animated(latLng, animated);
+        await iosController.setCenterCoordinate_animated(latLng, animated);
 
         pool..add(latLng);
       },
@@ -725,7 +725,7 @@ mixin _Community on _Holder {
   Future<LatLng> getCenterCoordinate() {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final position = await map.getCameraPosition();
         final target = await position.get_target();
@@ -739,7 +739,7 @@ mixin _Community on _Holder {
         );
       },
       ios: (pool) async {
-        final target = await _iosController.get_centerCoordinate();
+        final target = await iosController.get_centerCoordinate();
         // target不能马上释放, 因为跟返回对象有联系
         return LatLng(await target.latitude, await target.longitude);
       },
@@ -759,7 +759,7 @@ mixin _Community on _Holder {
     return platform(
       android: (pool) async {
         // 获取地图
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // marker经纬度
         final latLng = await com_amap_api_maps_model_LatLng
@@ -834,9 +834,9 @@ mixin _Community on _Holder {
         return Marker.android(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate
-            .._iosController = _iosController
+        await iosController.set_delegate(
+          iosMapDelegate
+            .._iosController = iosController
             .._annotationViewCompleter = Completer(),
         );
 
@@ -906,14 +906,14 @@ mixin _Community on _Holder {
         await annotation.addJsonableProperty__(10, option.visible);
 
         // 添加marker
-        await _iosController.addAnnotation(annotation);
+        await iosController.addAnnotation(annotation);
 
         // 等待添加完成 获取对应的view
         final annotationViewList =
-            await _iosMapDelegate._annotationViewCompleter.future;
+            await iosMapDelegate._annotationViewCompleter.future;
         pool.add(coordinate);
 
-        return Marker.ios(annotation, annotationViewList[0], _iosController);
+        return Marker.ios(annotation, annotationViewList[0], iosController);
       },
     );
   }
@@ -954,7 +954,7 @@ mixin _Community on _Holder {
     return platform(
       android: (pool) async {
         // 获取地图
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final latLngBatch = await com_amap_api_maps_model_LatLng
             .create_batch__double__double(latBatch, lngBatch);
         // marker配置
@@ -1001,9 +1001,9 @@ mixin _Community on _Holder {
         return markers.map((it) => Marker.android(it)).toList();
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate
-            .._iosController = _iosController
+        await iosController.set_delegate(
+          iosMapDelegate
+            .._iosController = iosController
             .._annotationViewCompleter = Completer(),
         );
 
@@ -1042,12 +1042,12 @@ mixin _Community on _Holder {
         await annotationBatch.addJsonableProperty_batch(10, visibleBatch);
 
         // 添加marker
-        await _iosController.addAnnotations(annotationBatch);
+        await iosController.addAnnotations(annotationBatch);
 
         // 等待添加完成 获取对应的view
         // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
         final visibleMarkers =
-            await _iosMapDelegate._annotationViewCompleter.future;
+            await iosMapDelegate._annotationViewCompleter.future;
         final annotationViewList = <MAAnnotationView>[
           for (int i = 0; i < options.length; i++)
             if (i < visibleMarkers.length) visibleMarkers[i] else null
@@ -1059,7 +1059,7 @@ mixin _Community on _Holder {
             Marker.ios(
               annotationBatch[i],
               annotationViewList[i],
-              _iosController,
+              iosController,
             )
         ];
       },
@@ -1079,7 +1079,7 @@ mixin _Community on _Holder {
     return platform(
       android: (pool) async {
         // 获取地图
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 创建平滑移动marker对象
         final marker = await com_amap_api_maps_utils_overlay_SmoothMoveMarker
@@ -1113,8 +1113,8 @@ mixin _Community on _Holder {
         return SmoothMoveMarker.android(marker);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._iosController = _iosController,
+        await iosController.set_delegate(
+          iosMapDelegate.._iosController = iosController,
         );
 
         // 创建annotation
@@ -1143,12 +1143,12 @@ mixin _Community on _Holder {
           (finished) {},
         );
 
-        await _iosController.addAnnotation(annotation);
+        await iosController.addAnnotation(annotation);
 
         pool
           ..addAll(points)
           ..add(icon);
-        return SmoothMoveMarker.ios(_iosController, animation, annotation);
+        return SmoothMoveMarker.ios(iosController, animation, annotation);
       },
     );
   }
@@ -1162,7 +1162,7 @@ mixin _Community on _Holder {
       },
       ios: (pool) async {
         final markerBatch = markers.map((it) => it.iosModel).toList();
-        await _iosController.removeAnnotations(markerBatch);
+        await iosController.removeAnnotations(markerBatch);
       },
     );
   }
@@ -1173,16 +1173,16 @@ mixin _Community on _Holder {
   Future<void> clear({bool keepMyLocation = true}) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.clear__bool(keepMyLocation);
 
         pool.add(map);
       },
       ios: (pool) async {
-        final markers = await _iosController.get_annotations();
-        final overlays = await _iosController.get_overlays();
-        await _iosController.removeAnnotations(markers);
-        await _iosController.removeOverlays(overlays);
+        final markers = await iosController.get_annotations();
+        final overlays = await iosController.get_overlays();
+        await iosController.removeAnnotations(markers);
+        await iosController.removeOverlays(overlays);
 
         pool..addAll(markers.cast<Ref>())..addAll(overlays.cast<Ref>());
       },
@@ -1193,7 +1193,7 @@ mixin _Community on _Holder {
   Future<LatLng> fromScreenLocation(Point point) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final projection = await map.getProjection();
 
         final androidPoint = await android_graphics_Point.create(
@@ -1209,8 +1209,8 @@ mixin _Community on _Holder {
       },
       ios: (pool) async {
         final cgPoint = await CGPoint.create(point.x, point.y);
-        final coord2d = await _iosController.convertPoint_toCoordinateFromView(
-            cgPoint, _iosController);
+        final coord2d = await iosController.convertPoint_toCoordinateFromView(
+            cgPoint, iosController);
 
         pool..add(cgPoint)..add(coord2d);
         return LatLng(await coord2d.latitude, await coord2d.longitude);
@@ -1222,7 +1222,7 @@ mixin _Community on _Holder {
   Future<Point> toScreenLocation(LatLng coord) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         final projection = await map.getProjection();
 
         final latLng = await com_amap_api_maps_model_LatLng
@@ -1236,8 +1236,8 @@ mixin _Community on _Holder {
       ios: (pool) async {
         final latLng = await CLLocationCoordinate2D.create(
             coord.latitude, coord.longitude);
-        final point = await _iosController.convertCoordinate_toPointToView(
-            latLng, _iosController);
+        final point = await iosController.convertCoordinate_toPointToView(
+            latLng, iosController);
 
         pool..add(latLng)..add(point);
         return Point((await point.x).toDouble(), (await point.y).toDouble());
@@ -1257,7 +1257,7 @@ mixin _Community on _Holder {
         ?.toImageData(createLocalImageConfiguration(_state.context));
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList =
@@ -1330,7 +1330,7 @@ mixin _Community on _Holder {
         return Polyline.android(polyline);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList =
@@ -1372,11 +1372,11 @@ mixin _Community on _Holder {
         }
 
         // 设置参数
-        await _iosController.addOverlay(polyline);
+        await iosController.addOverlay(polyline);
 
         pool..addAll(latLngList);
 
-        return Polyline.ios(polyline, _iosController);
+        return Polyline.ios(polyline, iosController);
       },
     );
   }
@@ -1392,7 +1392,7 @@ mixin _Community on _Holder {
 
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造折线点
         List<com_amap_api_maps_model_LatLng> latLngList =
@@ -1433,7 +1433,7 @@ mixin _Community on _Holder {
         return Polygon.android(polygon);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         // 构造折线点
         List<CLLocationCoordinate2D> latLngList =
@@ -1456,11 +1456,11 @@ mixin _Community on _Holder {
         }
 
         // 设置参数
-        await _iosController.addOverlay(polygon);
+        await iosController.addOverlay(polygon);
 
         pool.addAll(latLngList);
 
-        return Polygon.ios(polygon, _iosController);
+        return Polygon.ios(polygon, iosController);
       },
     );
   }
@@ -1471,7 +1471,7 @@ mixin _Community on _Holder {
   Future<Circle> addCircle(CircleOption option) {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造点
         final latLng =
@@ -1511,7 +1511,7 @@ mixin _Community on _Holder {
         return Circle.android(circle);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         final latLng = await CLLocationCoordinate2D.create(
           option.center.latitude,
@@ -1536,9 +1536,9 @@ mixin _Community on _Holder {
         }
 
         // 设置参数
-        await _iosController.addOverlay(circle);
+        await iosController.addOverlay(circle);
 
-        return Circle.ios(circle, _iosController);
+        return Circle.ios(circle, iosController);
       },
     );
   }
@@ -1564,7 +1564,7 @@ mixin _Community on _Holder {
 
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final overlayOptions =
             await com_amap_api_maps_model_MultiPointOverlayOptions.create__();
@@ -1601,7 +1601,7 @@ mixin _Community on _Holder {
         return MultiPointOverlay.android(multiPointOverlay);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         final overlay = await MAMultiPointOverlay.create__();
 
@@ -1626,10 +1626,10 @@ mixin _Community on _Holder {
 
         await overlay.initWithMultiPointItems(pointItemList);
 
-        _iosController.addOverlay(overlay);
+        iosController.addOverlay(overlay);
 
         pool..addAll(pointItemList)..addAll(latLngBatch);
-        return MultiPointOverlay.ios(overlay, _iosController);
+        return MultiPointOverlay.ios(overlay, iosController);
       },
     );
   }
@@ -1641,7 +1641,7 @@ mixin _Community on _Holder {
     // 准备弹窗需要的数据
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod(
           'com.amap.api.maps.AMap::setInfoWindowAdapterX',
           {'refId': map.refId},
@@ -1691,16 +1691,16 @@ mixin _Community on _Holder {
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMarkerClickListener(
-            _androidMapDelegate.._onMarkerClicked = onMarkerClicked);
+            androidMapDelegate.._onMarkerClicked = onMarkerClicked);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController
-            .set_delegate(_iosMapDelegate.._onMarkerClicked = onMarkerClicked);
+        await iosController
+            .set_delegate(iosMapDelegate.._onMarkerClicked = onMarkerClicked);
       },
     );
   }
@@ -1711,16 +1711,16 @@ mixin _Community on _Holder {
   ) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMultiPointClickListener(
-            _androidMapDelegate.._onMultiPointClicked = onMultiPointClicked);
+            androidMapDelegate.._onMultiPointClicked = onMultiPointClicked);
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onMultiPointClicked = onMultiPointClicked,
+        await iosController.set_delegate(
+          iosMapDelegate.._onMultiPointClicked = onMultiPointClicked,
         );
       },
     );
@@ -1734,10 +1734,10 @@ mixin _Community on _Holder {
   }) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMarkerDragListener(
-          _androidMapDelegate
+          androidMapDelegate
             .._onMarkerDragStart = onMarkerDragStart
             .._onMarkerDragging = onMarkerDragging
             .._onMarkerDragEnd = onMarkerDragEnd,
@@ -1746,8 +1746,8 @@ mixin _Community on _Holder {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate
+        await iosController.set_delegate(
+          iosMapDelegate
             .._onMarkerDragStart = onMarkerDragStart
             .._onMarkerDragging = onMarkerDragging
             .._onMarkerDragEnd = onMarkerDragEnd,
@@ -1760,17 +1760,17 @@ mixin _Community on _Holder {
   Future<void> setMapClickedListener(OnMapClicked onMapClick) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMapClickListener(
-          _androidMapDelegate.._onMapClick = onMapClick,
+          androidMapDelegate.._onMapClick = onMapClick,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onMapClick = onMapClick,
+        await iosController.set_delegate(
+          iosMapDelegate.._onMapClick = onMapClick,
         );
       },
     );
@@ -1780,17 +1780,17 @@ mixin _Community on _Holder {
   Future<void> setMapLongPressedListener(OnMapClicked onMapLongPress) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMapLongClickListener(
-          _androidMapDelegate.._onMapLongClick = onMapLongPress,
+          androidMapDelegate.._onMapLongClick = onMapLongPress,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onMapLongClick = onMapLongPress,
+        await iosController.set_delegate(
+          iosMapDelegate.._onMapLongClick = onMapLongPress,
         );
       },
     );
@@ -1804,10 +1804,10 @@ mixin _Community on _Holder {
   }) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnCameraChangeListener(
-          _androidMapDelegate
+          androidMapDelegate
             .._onMapMoveStart = onMapMoveStart
             .._onMapMoving = onMapMoving
             .._onMapMoveEnd = onMapMoveEnd,
@@ -1816,8 +1816,8 @@ mixin _Community on _Holder {
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate
+        await iosController.set_delegate(
+          iosMapDelegate
             .._onMapMoveStart = onMapMoveStart
             .._onMapMoving = onMapMoving
             .._onMapMoveEnd = onMapMoveEnd,
@@ -1834,17 +1834,17 @@ mixin _Community on _Holder {
   ) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnMyLocationChangeListener(
-          _androidMapDelegate.._onLocationChange = onLocationChange,
+          androidMapDelegate.._onLocationChange = onLocationChange,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onLocationChange = onLocationChange,
+        await iosController.set_delegate(
+          iosMapDelegate.._onLocationChange = onLocationChange,
         );
       },
     );
@@ -1858,8 +1858,8 @@ mixin _Community on _Holder {
         final onRequireAuth = (CLLocationManager manager) async {
           await manager?.requestAlwaysAuthorization();
         };
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
+        await iosController.set_delegate(
+          iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
         );
       },
     );
@@ -1870,16 +1870,16 @@ mixin _Community on _Holder {
     assert(onScreenShot != null);
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
         await map.getMapScreenShot(
-          _androidMapDelegate.._onSnapshot = onScreenShot,
+          androidMapDelegate.._onSnapshot = onScreenShot,
         );
 
         pool.add(map);
       },
       ios: (pool) async {
-        final rect = await _iosController.frame;
-        await _iosController.takeSnapshotInRect_withCompletionBlock(
+        final rect = await iosController.frame;
+        await iosController.takeSnapshotInRect_withCompletionBlock(
           rect,
           (image, state) async {
             await onScreenShot(await image.data);
@@ -1920,7 +1920,7 @@ mixin _Community on _Holder {
     }
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 构造选项
         final option =
@@ -1954,8 +1954,8 @@ mixin _Community on _Holder {
           pool.add(textureNSData);
         }
 
-        await _iosController.setCustomMapStyleOptions(option);
-        await _iosController.set_customMapStyleEnabled(true);
+        await iosController.setCustomMapStyleOptions(option);
+        await iosController.set_customMapStyleEnabled(true);
 
         pool.add(option);
       },
@@ -1986,7 +1986,7 @@ mixin _Community on _Holder {
 
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 西南角
         final southWest = await com_amap_api_maps_model_LatLng
@@ -2049,7 +2049,7 @@ mixin _Community on _Holder {
         // 矩形
         final rect = await MAMapRectMake(x, y, width, height);
 
-        await _iosController.setVisibleMapRect_edgePadding_animated(
+        await iosController.setVisibleMapRect_edgePadding_animated(
           rect,
           await UIEdgeInsets.create(
             padding.top,
@@ -2076,7 +2076,7 @@ mixin _Community on _Holder {
   Future<void> setMapRegionLimits(LatLng southWest, LatLng northEast) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final southWestPoint = await com_amap_api_maps_model_LatLng
             .create__double__double(southWest.latitude, southWest.longitude);
@@ -2105,7 +2105,7 @@ mixin _Community on _Holder {
           northEast.longitude - southWest.longitude,
         );
         final region = await MACoordinateRegionMake(center, span);
-        _iosController.set_limitRegion(region);
+        iosController.set_limitRegion(region);
 
         pool..add(center)..add(span)..add(region);
       },
@@ -2118,16 +2118,16 @@ mixin _Community on _Holder {
   ) async {
     await platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.setOnInfoWindowClickListener(
-          _androidMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+          androidMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
         );
         pool.add(map);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(
-          _iosMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+        await iosController.set_delegate(
+          iosMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
         );
       },
     );
@@ -2138,7 +2138,7 @@ mixin _Community on _Holder {
     assert(option != null);
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         // 创建热力图Provider
         final builder =
@@ -2168,7 +2168,7 @@ mixin _Community on _Holder {
         return HeatmapOverlay.android(heatmap);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         // 创建热力图选项
         final overlay = await MAHeatMapTileOverlay.create__();
@@ -2193,11 +2193,11 @@ mixin _Community on _Holder {
         await overlay.set_data(nodeList);
 
         // 添加热力图
-        await _iosController.addOverlay(overlay);
+        await iosController.addOverlay(overlay);
 
         pool.addAll(nodeList);
 
-        return HeatmapOverlay.ios(overlay, _iosController);
+        return HeatmapOverlay.ios(overlay, iosController);
       },
     );
   }
@@ -2209,7 +2209,7 @@ mixin _Community on _Holder {
         .toImageData(createLocalImageConfiguration(_state.context));
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final groundOverlayOption =
             await com_amap_api_maps_model_GroundOverlayOptions.create__();
@@ -2247,7 +2247,7 @@ mixin _Community on _Holder {
         return GroundOverlay.android(groundOverlay);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         final southWestPoint = await CLLocationCoordinate2D.create(
           option.southWest.latitude,
@@ -2265,7 +2265,7 @@ mixin _Community on _Holder {
             await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
 
         // 添加热力图
-        await _iosController.addOverlay(overlay);
+        await iosController.addOverlay(overlay);
 
         pool
           ..add(southWestPoint)
@@ -2273,7 +2273,7 @@ mixin _Community on _Holder {
           ..add(bounds)
           ..add(bitmap);
 
-        return GroundOverlay.ios(overlay, _iosController);
+        return GroundOverlay.ios(overlay, iosController);
       },
     );
   }
@@ -2288,7 +2288,7 @@ mixin _Pro on _Holder, _Community {
     final urlTemplate = option.urlTemplate;
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final options =
             await com_amap_api_maps_model_TileOverlayOptions.create__();
@@ -2308,7 +2308,7 @@ mixin _Pro on _Holder, _Community {
         return UrlTileOverlay.android(tile);
       },
       ios: (pool) async {
-        await _iosController.set_delegate(_iosMapDelegate);
+        await iosController.set_delegate(iosMapDelegate);
 
         final overlay = await MATileOverlay.create__();
         await overlay.initWithURLTemplate(urlTemplate);
@@ -2317,11 +2317,11 @@ mixin _Pro on _Holder, _Community {
         );
 
         // 添加热力图
-        await _iosController.addOverlay(overlay);
+        await iosController.addOverlay(overlay);
 
         pool..add(overlay);
 
-        return UrlTileOverlay.ios(overlay, _iosController);
+        return UrlTileOverlay.ios(overlay, iosController);
       },
     );
   }
@@ -2332,7 +2332,7 @@ mixin _Pro on _Holder, _Community {
   Future<void> setBearing(double bearing, {bool animated = true}) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final update =
             await com_amap_api_maps_CameraUpdateFactory.changeBearing(bearing);
@@ -2345,15 +2345,15 @@ mixin _Pro on _Holder, _Community {
         pool..add(map)..add(update);
       },
       ios: (pool) async {
-        final currentRotation = await _iosController.get_rotationDegree();
+        final currentRotation = await iosController.get_rotationDegree();
         if ((bearing - currentRotation).abs() > 180) {
-          await _iosController.setRotationDegree_animated_duration(
+          await iosController.setRotationDegree_animated_duration(
             360 - bearing,
             animated,
             0.3,
           );
         } else {
-          await _iosController.setRotationDegree_animated_duration(
+          await iosController.setRotationDegree_animated_duration(
             bearing,
             animated,
             0.3,
@@ -2367,7 +2367,7 @@ mixin _Pro on _Holder, _Community {
   Future<void> setTilt(double tilt, {bool animated = true}) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final update =
             await com_amap_api_maps_CameraUpdateFactory.changeTilt(tilt);
@@ -2380,7 +2380,7 @@ mixin _Pro on _Holder, _Community {
         pool..add(map)..add(update);
       },
       ios: (pool) async {
-        await _iosController.setCameraDegree_animated_duration(
+        await iosController.setCameraDegree_animated_duration(
           tilt,
           animated,
           0.3,
@@ -2393,13 +2393,13 @@ mixin _Pro on _Holder, _Community {
   Future<void> showBuildings(bool show) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.showBuildings(show);
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showsBuildings(show);
+        await iosController.set_showsBuildings(show);
       },
     );
   }
@@ -2408,13 +2408,13 @@ mixin _Pro on _Holder, _Community {
   Future<void> showMapText(bool show) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         await map.showMapText(show);
         pool..add(map);
       },
       ios: (pool) async {
-        await _iosController.set_showsLabels(show);
+        await iosController.set_showsLabels(show);
       },
     );
   }
@@ -2430,7 +2430,7 @@ mixin _Pro on _Holder, _Community {
   }) async {
     return platform(
       android: (pool) async {
-        final map = await _androidController.getMap();
+        final map = await androidController.getMap();
 
         final builder = await com_amap_api_maps_model_CameraPosition.builder();
         if (coordinate != null) {
@@ -2480,14 +2480,14 @@ mixin _Pro on _Holder, _Community {
           await status.set_cameraDegree(tilt);
         }
         if (bearing != null) {
-          final currentRotation = await _iosController.get_rotationDegree();
+          final currentRotation = await iosController.get_rotationDegree();
           if ((bearing - currentRotation).abs() > 180) {
             await status.set_rotationDegree(360 - bearing);
           } else {
             await status.set_cameraDegree(bearing);
           }
         }
-        await _iosController.setMapStatus_animated_duration(
+        await iosController.setMapStatus_animated_duration(
           status,
           animated,
           duration.inMilliseconds / 1000,
@@ -2638,16 +2638,16 @@ mixin _Pro on _Holder, _Community {
 }
 
 class _Holder {
-  com_amap_api_maps_TextureMapView _androidController;
-  MAMapView _iosController;
+  com_amap_api_maps_TextureMapView androidController;
+  MAMapView iosController;
 
   _AmapViewState _state;
 
   // iOS端的回调处理类
-  final _iosMapDelegate = _IOSMapDelegate();
+  final iosMapDelegate = _IOSMapDelegate();
 
   // Android端的回调处理类
-  final _androidMapDelegate = _AndroidMapDelegate();
+  final androidMapDelegate = _AndroidMapDelegate();
 
   // 定位间隔订阅事件
   StreamSubscription _locateSubscription;

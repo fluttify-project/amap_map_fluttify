@@ -449,23 +449,23 @@ class TrafficOption {
 
 /// 地图定位信息 区分于定位插件的定位信息
 class MapLocation {
-  MapLocation.android(this._androidModel);
+  MapLocation.android(this.androidModel);
 
-  MapLocation.ios(this._iosModel);
+  MapLocation.ios(this.iosModel);
 
-  android_location_Location _androidModel;
-  MAUserLocation _iosModel;
+  android_location_Location androidModel;
+  MAUserLocation iosModel;
 
   Future<LatLng> get coord {
     return platform(
       android: (pool) async {
         return LatLng(
-          await _androidModel.latitude,
-          await _androidModel.longitude,
+          await androidModel.latitude,
+          await androidModel.longitude,
         );
       },
       ios: (pool) async {
-        final location = await _iosModel.get_coordinate();
+        final location = await iosModel.get_coordinate();
         return LatLng(await location.latitude, await location.longitude);
       },
     );
@@ -473,9 +473,9 @@ class MapLocation {
 
   Future<double> get bearing {
     return platform(
-      android: (pool) => _androidModel.bearing,
+      android: (pool) => androidModel.bearing,
       ios: (pool) async {
-        final heading = await _iosModel.get_heading();
+        final heading = await iosModel.get_heading();
         return heading.magneticHeading;
       },
     );
@@ -483,9 +483,9 @@ class MapLocation {
 
   Future<double> get altitude {
     return platform(
-      android: (pool) => _androidModel.altitude,
+      android: (pool) => androidModel.altitude,
       ios: (pool) async {
-        final location = await _iosModel.get_location();
+        final location = await iosModel.get_location();
         return location.altitude;
       },
     );
@@ -493,9 +493,9 @@ class MapLocation {
 
   Future<double> get speed {
     return platform(
-      android: (pool) => _androidModel.speed,
+      android: (pool) => androidModel.speed,
       ios: (pool) async {
-        final location = await _iosModel.get_location();
+        final location = await iosModel.get_location();
         return location.speed;
       },
     );
@@ -678,36 +678,36 @@ class SmoothMoveMarker {
 
 /// 折线
 class Polyline {
-  Polyline.android(this._androidModel);
+  Polyline.android(this.androidModel);
 
-  Polyline.ios(this._iosModel, this._iosController);
+  Polyline.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_Polyline _androidModel;
-  MAPolyline _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_Polyline androidModel;
+  MAPolyline iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
 
 /// 多边形
 class Polygon {
-  Polygon.android(this._androidModel);
+  Polygon.android(this.androidModel);
 
-  Polygon.ios(this._iosModel, this._iosController);
+  Polygon.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_Polygon _androidModel;
-  MAPolygon _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_Polygon androidModel;
+  MAPolygon iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 
@@ -716,13 +716,13 @@ class Polygon {
       android: (_) async {
         final latLng = await com_amap_api_maps_model_LatLng
             .create__double__double(target.latitude, target.longitude);
-        return _androidModel.contains(latLng);
+        return androidModel.contains(latLng);
       },
       ios: (_) async {
         final latLng = await CLLocationCoordinate2D.create(
             target.latitude, target.longitude);
         final point = await MAMapPointForCoordinate(latLng);
-        final bounds = await _iosModel.get_points();
+        final bounds = await iosModel.get_points();
         return MAPolygonContainsPoint(point, bounds, bounds.length);
       },
     );
@@ -731,94 +731,94 @@ class Polygon {
 
 /// 圆形
 class Circle {
-  Circle.android(this._androidModel);
+  Circle.android(this.androidModel);
 
-  Circle.ios(this._iosModel, this._iosController);
+  Circle.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_Circle _androidModel;
-  MACircle _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_Circle androidModel;
+  MACircle iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
 
 /// 热力图
 class HeatmapOverlay {
-  HeatmapOverlay.android(this._androidModel);
+  HeatmapOverlay.android(this.androidModel);
 
-  HeatmapOverlay.ios(this._iosModel, this._iosController);
+  HeatmapOverlay.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_TileOverlay _androidModel;
-  MAHeatMapTileOverlay _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_TileOverlay androidModel;
+  MAHeatMapTileOverlay iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
 
 /// 热力图
 class UrlTileOverlay {
-  UrlTileOverlay.android(this._androidModel);
+  UrlTileOverlay.android(this.androidModel);
 
-  UrlTileOverlay.ios(this._iosModel, this._iosController);
+  UrlTileOverlay.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_TileOverlay _androidModel;
-  MAHeatMapTileOverlay _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_TileOverlay androidModel;
+  MAHeatMapTileOverlay iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
 
 /// 图片覆盖物
 class GroundOverlay {
-  GroundOverlay.android(this._androidModel);
+  GroundOverlay.android(this.androidModel);
 
-  GroundOverlay.ios(this._iosModel, this._iosController);
+  GroundOverlay.ios(this.iosModel, this.iosController);
 
-  com_amap_api_maps_model_GroundOverlay _androidModel;
-  MAGroundOverlay _iosModel;
-  MAMapView _iosController;
+  com_amap_api_maps_model_GroundOverlay androidModel;
+  MAGroundOverlay iosModel;
+  MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
 
 /// 海量点
 class MultiPointOverlay {
-  MultiPointOverlay.android(this._androidModel)
-      : _iosModel = null,
-        _iosController = null;
+  MultiPointOverlay.android(this.androidModel)
+      : iosModel = null,
+        iosController = null;
 
-  MultiPointOverlay.ios(this._iosModel, this._iosController)
-      : _androidModel = null;
+  MultiPointOverlay.ios(this.iosModel, this.iosController)
+      : androidModel = null;
 
-  final com_amap_api_maps_model_MultiPointOverlay _androidModel;
+  final com_amap_api_maps_model_MultiPointOverlay androidModel;
 
-  final MAMultiPointOverlay _iosModel;
-  final MAMapView _iosController;
+  final MAMultiPointOverlay iosModel;
+  final MAMapView iosController;
 
   Future<void> remove() {
     return platform(
-      android: (_) => _androidModel.remove(),
-      ios: (_) => _iosController?.removeOverlay(_iosModel),
+      android: (_) => androidModel.remove(),
+      ios: (_) => iosController?.removeOverlay(iosModel),
     );
   }
 }
