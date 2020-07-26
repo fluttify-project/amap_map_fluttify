@@ -415,6 +415,38 @@ class TraceLocation {
   }
 }
 
+/// 交通配置
+@immutable
+class TrafficOption {
+  /// 是否显示
+  final bool show;
+
+  /// 通畅路段颜色
+  final Color goodColor;
+
+  /// 缓行路段颜色
+  final Color badColor;
+
+  /// 拥堵路段颜色
+  final Color terribleColor;
+
+  /// 未知路段颜色
+  final Color unknownColor;
+
+  TrafficOption({
+    @required this.show,
+    this.goodColor = Colors.green,
+    this.badColor = Colors.yellow,
+    this.terribleColor = Colors.red,
+    this.unknownColor = Colors.blue,
+  }) : assert(show != null);
+
+  @override
+  String toString() {
+    return 'TrafficOption{show: $show, goodColor: $goodColor, badColor: $badColor, terribleColor: $terribleColor, unknownColor: $unknownColor}';
+  }
+}
+
 /// 地图定位信息 区分于定位插件的定位信息
 class MapLocation {
   MapLocation.android(this._androidModel);
@@ -619,17 +651,27 @@ class Marker {
 
 /// 平滑移动点
 class SmoothMoveMarker {
-  SmoothMoveMarker.android(this._androidModel);
+  SmoothMoveMarker.android(this.androidModel);
 
-  SmoothMoveMarker.ios(this._iosAnimation);
+  SmoothMoveMarker.ios(this.iosController, this.iosAnimation, this.annotation);
 
-  com_amap_api_maps_utils_overlay_SmoothMoveMarker _androidModel;
-  MAAnnotationMoveAnimation _iosAnimation;
+  com_amap_api_maps_utils_overlay_SmoothMoveMarker androidModel;
+
+  MAMapView iosController;
+  MAAnnotationMoveAnimation iosAnimation;
+  MAAnimatedAnnotation annotation;
+
+  Future<void> remove() async {
+    return platform(
+      android: (pool) => androidModel.removeMarker(),
+      ios: (pool) => iosController.removeAnnotation(annotation),
+    );
+  }
 
   Future<void> stop() async {
     return platform(
-      android: (pool) => _androidModel.stopMove(),
-      ios: (pool) => _iosAnimation.cancel(),
+      android: (pool) => androidModel.stopMove(),
+      ios: (pool) => iosAnimation.cancel(),
     );
   }
 }
@@ -781,33 +823,19 @@ class MultiPointOverlay {
   }
 }
 
-@immutable
-class TrafficOption {
-  /// 是否显示
-  final bool show;
+/// 回放轨迹
+class PlaybackTrace {
+  PlaybackTrace(this.marker, this.polyline);
 
-  /// 通畅路段颜色
-  final Color goodColor;
+  final SmoothMoveMarker marker;
+  final Polyline polyline;
 
-  /// 缓行路段颜色
-  final Color badColor;
+  Future<void> remove() async {
+    await marker.remove();
+    await polyline.remove();
+  }
 
-  /// 拥堵路段颜色
-  final Color terribleColor;
-
-  /// 未知路段颜色
-  final Color unknownColor;
-
-  TrafficOption({
-    @required this.show,
-    this.goodColor = Colors.green,
-    this.badColor = Colors.yellow,
-    this.terribleColor = Colors.red,
-    this.unknownColor = Colors.blue,
-  }) : assert(show != null);
-
-  @override
-  String toString() {
-    return 'TrafficOption{show: $show, goodColor: $goodColor, badColor: $badColor, terribleColor: $terribleColor, unknownColor: $unknownColor}';
+  Future<void> stop() async {
+    await marker.stop();
   }
 }

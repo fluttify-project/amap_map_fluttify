@@ -1148,7 +1148,7 @@ mixin _Community on _Holder {
         pool
           ..addAll(points)
           ..add(icon);
-        return SmoothMoveMarker.ios(animation);
+        return SmoothMoveMarker.ios(_iosController, animation, annotation);
       },
     );
   }
@@ -2612,22 +2612,28 @@ mixin _Pro on _Holder, _Community {
     }
   }
 
-  /// 添加地区轮廓
-  ///
-  /// 地区轮廓经纬度列表[boundary], 轮廓宽度[width], 轮廓颜色[strokeColor], 填充颜色[fillColor]
-  Future<Polygon> addDistrictOutlineWithData(
-    List<LatLng> boundary, {
+  /// 添加回放轨迹
+  Future<PlaybackTrace> addPlaybackTrace(
+    List<LatLng> coordinateList, {
     double width = 5,
     Color strokeColor = Colors.green,
-    Color fillColor = Colors.transparent,
+    @required ImageProvider iconProvider,
+    @required Duration duration,
   }) async {
-    assert(boundary != null && boundary.isNotEmpty);
-    return addPolygon(PolygonOption(
-      latLngList: boundary,
+    assert(coordinateList != null && coordinateList.isNotEmpty);
+    // 画轨迹线
+    final polyline = await addPolyline(PolylineOption(
+      latLngList: coordinateList,
       width: width,
       strokeColor: strokeColor,
-      fillColor: fillColor,
     ));
+    final marker = await addSmoothMoveMarker(SmoothMoveMarkerOption(
+      path: coordinateList,
+      duration: duration,
+      iconProvider: iconProvider,
+    ));
+
+    return PlaybackTrace(marker, polyline);
   }
 }
 

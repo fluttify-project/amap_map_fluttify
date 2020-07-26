@@ -22,6 +22,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
     with NextLatLng {
   AmapController _controller;
   Polyline _currentPolyline;
+  PlaybackTrace _playbackTrace;
   List<LatLng> _pointList = [];
 
   @override
@@ -35,6 +36,7 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
             child: Stack(
               children: <Widget>[
                 AmapView(
+                  tilt: 90,
                   zoomLevel: 7,
                   onMapCreated: (controller) async {
                     _controller = controller;
@@ -98,6 +100,32 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                 ListTile(
                   title: Center(child: Text('删除折线')),
                   onTap: () => _currentPolyline?.remove(),
+                ),
+                ListTile(
+                  title: Center(child: Text('添加回放轨迹')),
+                  onTap: () async {
+                    final result = await AmapSearch.instance.searchDriveRoute(
+                      from: LatLng(29.263124, 119.466172),
+                      to: LatLng(29.240359, 119.45201),
+                    );
+                    final pathList = await result.drivePathList;
+                    final stepList = [
+                      for (final path in pathList) ...await path.driveStepList
+                    ];
+                    final latLngList = [
+                      for (final step in stepList) ...await step.polyline
+                    ];
+                    _playbackTrace = await _controller.addPlaybackTrace(
+                      latLngList,
+                      iconProvider: _assetsIcon1,
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Center(child: Text('删除回放轨迹')),
+                  onTap: () async {
+                    _playbackTrace?.remove();
+                  },
                 ),
                 DiscreteSetting(
                   head: '选择始末端样式',
