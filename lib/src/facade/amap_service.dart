@@ -27,12 +27,14 @@ final _traceListener = _TraceListener();
 
 /// 除了地图以外的功能放在这里, 比如说sdk初始化
 class AmapService {
+  static AmapService instance = AmapService._();
+
   AmapService._();
 
-  static String _webKey;
+  String _webKey;
 
   /// 设置ios和android的app key
-  static Future<void> init({
+  Future<void> init({
     @required String iosKey,
     @required String androidKey,
     String webApiKey,
@@ -51,7 +53,7 @@ class AmapService {
   /// 计算两点间的直线距离
   ///
   /// 计算点1[point1]和点2[point2]的距离
-  static Future<double> calculateDistance(LatLng point1, LatLng point2) async {
+  Future<double> calculateDistance(LatLng point1, LatLng point2) async {
     return platform(
       android: (pool) async {
         // 点1
@@ -95,7 +97,7 @@ class AmapService {
   /// 转换其他坐标系到高德坐标系
   ///
   /// [coord]待转换坐标, [fromType]待转换坐标的坐标系
-  static Future<LatLng> convertCoord(LatLng coord, CoordType fromType) async {
+  Future<LatLng> convertCoord(LatLng coord, CoordType fromType) async {
     return platform(
       android: (pool) async {
         final context = await android_app_Activity.get();
@@ -194,7 +196,7 @@ class AmapService {
   /// 计算面积 (iOS未完成)
   ///
   /// 计算指定左上角[leftTop]和右下角[rightBottom]的矩形的面积
-  static Future<double> calculateArea(
+  Future<double> calculateArea(
     LatLng leftTop,
     LatLng rightBottom,
   ) async {
@@ -244,7 +246,7 @@ class AmapService {
   ///
   /// [target]目的地, [appName]当前应用名称, [dev]是否偏移(0:lat和lon是已经加密后的,不需要国测加密;1:需要国测加密)
   /// !注意: iOS端需要在Info.plist配置白名单, 可以参考example工程的配置(LSApplicationQueriesSchemes), 具体文档详见 https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
-  static Future<void> navigateDrive(
+  Future<void> navigateDrive(
     LatLng target, {
     String appName = 'appname',
     int dev = 1,
@@ -275,7 +277,7 @@ class AmapService {
   ///
   /// [target]目的地, [appName]当前应用名称, [dev]是否偏移(0:lat和lon是已经加密后的,不需要国测加密;1:需要国测加密)
   /// !注意: iOS端需要在Info.plist配置白名单, 可以参考example工程的配置(LSApplicationQueriesSchemes), 具体文档详见 https://lbs.amap.com/api/amap-mobile/guide/ios/ios-uri-information
-  static Future<void> navigateRide(
+  Future<void> navigateRide(
     LatLng target, {
     String appName = 'appname',
     int dev = 1,
@@ -294,7 +296,7 @@ class AmapService {
   ///
   /// 指定轨迹id[traceId]和轨迹点列表[locationList], 处理过程回调为[onTraceProcessing],
   /// 处理完成回调为[onTraceFinished], 处理失败回调为[onTraceFailed].
-  static Future<void> queryProcessedTrace(
+  Future<void> queryProcessedTrace(
     int traceId,
     List<TraceLocation> locationList, {
     OnTraceProcessing onTraceProcessing,
@@ -350,7 +352,7 @@ class AmapService {
   }
 
   /// 打开离线地图管理器
-  static Future<void> openOfflineMapManager() async {
+  Future<void> openOfflineMapManager() async {
     platform(
       android: (pool) async {
         await startActivity(
@@ -363,7 +365,7 @@ class AmapService {
   }
 
   /// 获取静态图片
-  static Future<Uint8List> fetchStaticMapImage(
+  Future<Uint8List> fetchStaticMapImage(
     LatLng coordinate, {
     int zoomLevel = 10,
     Size size = const Size(400, 400),

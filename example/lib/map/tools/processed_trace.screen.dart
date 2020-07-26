@@ -66,7 +66,7 @@ class ProcessedTraceStateScreen extends State<ProcessedTraceScreen> {
           ),
           RaisedButton(
             onPressed: () async {
-              await AmapService.queryProcessedTrace(
+              await AmapService.instance.queryProcessedTrace(
                 1,
                 [
                   TraceLocation(

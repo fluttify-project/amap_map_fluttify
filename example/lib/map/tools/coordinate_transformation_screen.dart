@@ -55,8 +55,8 @@ class _CoordinateTransformationStateScreen
             children: <Widget>[
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.GPS);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.GPS);
                   setState(() {
                     _target = result;
                   });
@@ -65,8 +65,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.Google);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.Google);
                   setState(() {
                     _target = result;
                   });
@@ -75,8 +75,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.MapBar);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.MapBar);
                   setState(() {
                     _target = result;
                   });
@@ -85,8 +85,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.Baidu);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.Baidu);
                   setState(() {
                     _target = result;
                   });
@@ -95,8 +95,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.MapABC);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.MapABC);
                   setState(() {
                     _target = result;
                   });
@@ -105,8 +105,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.SosoMap);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.SosoMap);
                   setState(() {
                     _target = result;
                   });
@@ -115,8 +115,8 @@ class _CoordinateTransformationStateScreen
               ),
               RaisedButton(
                 onPressed: () async {
-                  final result =
-                      await AmapService.convertCoord(_coord, CoordType.Aliyun);
+                  final result = await AmapService.instance
+                      .convertCoord(_coord, CoordType.Aliyun);
                   setState(() {
                     _target = result;
                   });

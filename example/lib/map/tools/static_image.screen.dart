@@ -22,7 +22,9 @@ class _StaticImageScreenState extends State<StaticImageScreen> {
           children: [
             RaisedButton(
               onPressed: () {
-                AmapService.fetchStaticMapImage(LatLng(30, 120)).then((value) {
+                AmapService.instance
+                    .fetchStaticMapImage(LatLng(30, 120))
+                    .then((value) {
                   setState(() {
                     _imageData = value;
                   });
