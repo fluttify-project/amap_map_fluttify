@@ -1708,101 +1708,12 @@ mixin _Community on _Holder {
 mixin _Pro on _Holder, _Community {
   /// 添加瓦片图
   Future<UrlTileOverlay> addUrlTileOverlay(UrlTileOption option) async {
-    assert(option != null);
-    final width = option.width;
-    final height = option.height;
-    final urlTemplate = option.urlTemplate;
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        final options =
-            await com_amap_api_maps_model_TileOverlayOptions.create__();
-        final provider = await com_amap_api_maps_model_UrlTileProvider_X.create(
-            width, height, urlTemplate);
-        await options.tileProvider(provider);
-        await options.diskCacheEnabled(true);
-        await options.diskCacheSize(100000);
-        await options.memoryCacheEnabled(true);
-        await options.memCacheSize(100000);
-        await options.zIndex(-9999);
-
-        // 进行添加
-        final tile = await map.addTileOverlay(options);
-        pool..add(map)..add(options)..add(provider);
-
-        return UrlTileOverlay.android(tile);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(iosMapDelegate);
-
-        final overlay = await MATileOverlay.create__();
-        await overlay.initWithURLTemplate(urlTemplate);
-        await overlay.set_tileSize(
-          await CGSize.create(width.toDouble(), height.toDouble()),
-        );
-
-        // 添加热力图
-        await iosController.addOverlay(overlay);
-
-        pool..add(overlay);
-
-        return UrlTileOverlay.ios(overlay, iosController);
-      },
-    );
+    throw UnimplementedError('请联系qq 382146139购买专业版');
   }
 
   /// 自定义弹窗
   Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
-    final imageData = (await state.widgetToImageData([widget]))[0];
-
-    // 准备弹窗需要的数据
-    await platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-        await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod(
-          'com.amap.api.maps.AMap::setInfoWindowAdapterX',
-          {'refId': map.refId},
-        );
-        final bitmap = await android_graphics_Bitmap.create(imageData);
-        await pushStack('infoWindow', bitmap);
-
-        pool..add(map)..add(bitmap);
-      },
-      ios: (pool) async {
-        // 创建弹窗view
-        final bitmap = await UIImage.create(imageData);
-        final imageView = await UIImageView.create(bitmap);
-
-        final frame = await imageView.frame;
-        final width = await frame.width;
-        final height = await frame.height;
-
-        // 去掉默认的弹窗
-        await marker.annotationView.set_canShowCallout(
-          false,
-          viewChannel: false,
-        );
-        // 由于默认偏移量是0, 这里根据弹窗view设置一下偏移量
-        await marker.annotationView.set_calloutOffset(
-          await CGPoint.create(-width / 2, -height),
-          viewChannel: false,
-        );
-
-        // 创建自定义弹窗
-        final calloutView = await MACustomCalloutView.create__();
-        await calloutView.initWithCustomView(imageView, viewChannel: false);
-
-        // 设置自定义弹窗
-        await marker.annotationView
-            .set_customCalloutView(calloutView, viewChannel: false);
-
-        pool..add(bitmap)..add(imageView)..add(calloutView);
-      },
-    );
-
-    // 显示弹窗
-    await marker.showInfoWindow();
+    throw UnimplementedError('请联系qq 382146139购买专业版');
   }
 }
 
