@@ -355,7 +355,7 @@ extension AmapControllerX on AmapController {
     );
   }
 
-  /// 批量添加marker
+  /// 添加平滑移动marker
   ///
   /// 根据[options]批量创建Marker
   Future<SmoothMoveMarker> addSmoothMoveMarker(
