@@ -14,7 +14,6 @@ library amap_map_fluttify;
 export 'package:amap_location_fluttify/amap_location_fluttify.dart';
 export 'package:amap_search_fluttify/amap_search_fluttify.dart';
 
-export 'src/facade/amap_controller.x.dart';
 export 'src/facade/amap_service.dart';
 export 'src/facade/amap_view.widget.dart';
 export 'src/facade/enums.dart';

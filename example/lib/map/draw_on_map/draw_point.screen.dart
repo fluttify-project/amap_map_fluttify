@@ -98,20 +98,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                         object: '自定义数据${random.nextDouble()}',
                       ),
                     );
-                    await _controller?.setMarkerClickedListener((marker) async {
-                      await _controller.showCustomInfoWindow(
-                        marker,
-                        Container(
-                          width: 128,
-                          height: 222,
-                          decoration: BoxDecoration(
-                            color: Colors.yellow,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Text(await marker.title),
-                        ),
-                      );
-                    });
                     _markers.add(marker);
                   },
                 ),
@@ -240,25 +226,6 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('将地图缩放至可以显示所有Marker')),
-                  onTap: () async {
-                    Stream.fromIterable(_markers)
-                        .asyncMap((marker) => marker.location)
-                        .toList()
-                        .then((boundary) {
-                      debugPrint('boundary: $boundary');
-                      _controller
-                          .zoomToSpan(
-                            boundary,
-                            padding: EdgeInsets.only(bottom: 100),
-                          )
-                          .then((value) =>
-                              Future.delayed(Duration(milliseconds: 300)))
-                          .then((value) => _controller?.setTilt(40));
-                    });
-                  },
-                ),
-                ListTile(
                   title: Center(child: Text('监听Marker弹窗事件')),
                   onTap: () async {
                     await _controller
@@ -269,77 +236,11 @@ class DrawPointScreenState extends State<DrawPointScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('画热力图')),
-                  onTap: () async {
-                    await _controller?.addHeatmapTileOverlay(
-                      HeatmapTileOption(latLngList: getNextBatchLatLng(50)),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('(专业版)添加在线瓦片图')),
-                  onTap: () async {
-                    await _controller?.addUrlTileOverlay(
-                      UrlTileOption(
-                        width: 256,
-                        height: 256,
-                        urlTemplate:
-//                        'http://tile.opencyclemap.org/cycle/{scale}/{x}/{y}.png', // 由于没有api key, 这个链接无法显示瓦片
-                            'https://c2.hoopchina.com.cn/uploads/star/event/images/200709/bmiddle-34faa76c78ff3ba7a67282d64ff3c081135d4743.jpg?x-oss-process=image/resize,w_780,312',
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('添加平滑移动点')),
-                  onTap: () async {
-                    _moveMarker = await _controller?.addSmoothMoveMarker(
-                      SmoothMoveMarkerOption(
-                        path: [for (int i = 0; i < 10; i++) getNextLatLng()],
-                        iconProvider: _assetsIcon1,
-                        duration: Duration(seconds: 10),
-                      ),
-                    );
-                    Future.delayed(
-                      Duration(seconds: 5),
-                      () => _moveMarker.stop(),
-                    );
-                  },
-                ),
-                ListTile(
                   title: Center(child: Text('进入二级地图页面')),
                   onTap: () async {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (_) => DrawPointScreen()),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('添加海量点')),
-                  onTap: () async {
-                    _multiPointOverlay =
-                        await _controller?.addMultiPointOverlay(
-                      MultiPointOption(
-                        pointList: [
-                          for (int i = 0; i < 10000; i++)
-                            PointOption(
-                              latLng: getNextLatLng(),
-                              id: i.toString(),
-                              title: 'Point$i',
-                              snippet: 'Snippet$i',
-                              object: 'Object$i',
-                            )
-                        ],
-                        iconProvider: _assetsIcon1,
-                      ),
-                    );
-                    await _controller?.setMultiPointClickedListener(
-                      (id, title, snippet, object) async {
-                        toast(
-                          'id: $id, title: $title, snippet: $snippet, object: $object',
-                        );
-                      },
                     );
                   },
                 ),

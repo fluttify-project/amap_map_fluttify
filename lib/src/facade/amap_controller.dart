@@ -1705,17 +1705,7 @@ mixin _Community on _Holder {
 }
 
 /// 无法直接扩展的部分, 需要原生代码
-mixin _Pro on _Holder, _Community {
-  /// 添加瓦片图
-  Future<UrlTileOverlay> addUrlTileOverlay(UrlTileOption option) async {
-    throw UnimplementedError('请联系qq 382146139购买专业版');
-  }
-
-  /// 自定义弹窗
-  Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
-    throw UnimplementedError('请联系qq 382146139购买专业版');
-  }
-}
+mixin _Pro on _Holder, _Community {}
 
 class _Holder {
   com_amap_api_maps_TextureMapView androidController;

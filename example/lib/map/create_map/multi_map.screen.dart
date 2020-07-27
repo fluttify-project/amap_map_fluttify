@@ -274,15 +274,6 @@ class _MultiMapScreenState extends State<MultiMapScreen> {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('自定义地图')),
-                  onTap: () {
-                    _controller?.setCustomMapStyle(
-                      styleDataPath: 'raw/style.data',
-                      styleExtraPath: 'raw/style_extra.data',
-                    );
-                  },
-                ),
-                ListTile(
                   title: Center(child: Text('经纬度坐标转屏幕坐标')),
                   onTap: () async {
                     final centerLatLng =

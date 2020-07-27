@@ -273,15 +273,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> with NextLatLng {
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('自定义地图')),
-                  onTap: () {
-                    _controller?.setCustomMapStyle(
-                      styleDataPath: 'raw/style.data',
-                      styleExtraPath: 'raw/style_extra.data',
-                    );
-                  },
-                ),
-                ListTile(
                   title: Center(child: Text('经纬度坐标转屏幕坐标')),
                   onTap: () async {
                     final centerLatLng =
@@ -337,18 +328,6 @@ class _CreateMapScreenState extends State<CreateMapScreen> with NextLatLng {
                   title: Center(child: Text('获取当前缩放等级')),
                   onTap: () async {
                     toast('当前缩放等级: ${await _controller.getZoomLevel()}');
-                  },
-                ),
-                ListTile(
-                  title: Center(child: Text('(专业版)一次性设置地图状态')),
-                  onTap: () async {
-                    _controller.setCameraPosition(
-                      coordinate: getNextLatLng(),
-                      zoom: 12,
-                      tilt: 90,
-                      bearing: 80,
-                      duration: Duration(seconds: 2),
-                    );
                   },
                 ),
               ],

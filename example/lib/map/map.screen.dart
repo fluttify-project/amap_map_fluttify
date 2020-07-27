@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'create_map/create_map.screen.dart';
 import 'create_map/multi_map.screen.dart';
 import 'draw_on_map/draw_circle.screen.dart';
-import 'draw_on_map/draw_ground_overlay.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
 import 'draw_on_map/draw_polyline.screen.dart';
@@ -13,7 +12,6 @@ import 'interact_with_map/code_interaction.screen.dart';
 import 'interact_with_map/control_interaction.screen.dart';
 import 'interact_with_map/gesture_interaction.screen.dart';
 import 'interact_with_map/screen_shot_screen.dart';
-import 'location/geo_fence.screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
@@ -91,11 +89,6 @@ class MapDemo extends StatelessWidget {
               sublabel: 'DrawPolygonScreen',
               target: DrawPolygonScreen(),
             ),
-            FunctionItem(
-              label: '绘制图片覆盖物',
-              sublabel: 'DrawGroundOverlayScreen',
-              target: DrawGroundOverlayScreen(),
-            ),
           ],
         ),
         SPACE_BIG,
@@ -137,13 +130,7 @@ class MapDemo extends StatelessWidget {
         SPACE_BIG,
         FunctionGroup(
           headLabel: "定位",
-          children: <Widget>[
-            FunctionItem(
-              label: "(专业版)电子围栏",
-              sublabel: "GeoFenceScreen",
-              target: GeoFenceScreen(),
-            ),
-          ],
+          children: <Widget>[],
         ),
       ],
     );

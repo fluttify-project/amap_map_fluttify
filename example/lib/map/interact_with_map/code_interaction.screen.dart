@@ -46,23 +46,6 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                     _controller?.setZoomLevel(value);
                   },
                 ),
-                ContinuousSetting(
-                  head: '(专业版)设置地图朝向',
-                  min: 0,
-                  max: 360,
-                  onChanged: (value) {
-                    debugPrint('bearing value: $value');
-                    _controller?.setBearing(value);
-                  },
-                ),
-                ContinuousSetting(
-                  head: '(专业版)设置地图倾斜度',
-                  min: 0,
-                  max: 90,
-                  onChanged: (value) {
-                    _controller?.setTilt(value);
-                  },
-                ),
                 DiscreteSetting(
                   head: '放大/缩小一个等级',
                   options: ['放大', '缩小'],

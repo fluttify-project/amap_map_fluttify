@@ -72,15 +72,6 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                   },
                 ),
                 ListTile(
-                  title: Center(child: Text('将地图缩放至可以显示所有Marker')),
-                  onTap: () async {
-                    _controller?.zoomToSpan(
-                      _pointList,
-                      padding: EdgeInsets.only(top: 100),
-                    );
-                  },
-                ),
-                ListTile(
                   title: Center(child: Text('添加线(自定义纹理)')),
                   onTap: () async {
                     await _currentPolyline?.remove();
@@ -100,26 +91,6 @@ class _DrawPolylineScreenState extends State<DrawPolylineScreen>
                 ListTile(
                   title: Center(child: Text('删除折线')),
                   onTap: () => _currentPolyline?.remove(),
-                ),
-                ListTile(
-                  title: Center(child: Text('添加回放轨迹')),
-                  onTap: () async {
-                    final result = await AmapSearch.instance.searchDriveRoute(
-                      from: LatLng(29.263124, 119.466172),
-                      to: LatLng(29.240359, 119.45201),
-                    );
-                    final pathList = await result.drivePathList;
-                    final stepList = [
-                      for (final path in pathList) ...await path.driveStepList
-                    ];
-                    final latLngList = [
-                      for (final step in stepList) ...await step.polyline
-                    ];
-                    _playbackTrace = await _controller.addPlaybackTrace(
-                      latLngList,
-                      iconProvider: _assetsIcon1,
-                    );
-                  },
                 ),
                 ListTile(
                   title: Center(child: Text('删除回放轨迹')),
