@@ -38,14 +38,14 @@ class AmapController extends _Holder
       _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
     this.androidController = _androidController;
-    this._state = state;
+    this.state = state;
   }
 
   /// iOS构造器
   AmapController.ios(MAMapView _iosController, _AmapViewState state) {
     WidgetsBinding.instance.addObserver(this);
     this.iosController = _iosController;
-    this._state = state;
+    this.state = state;
   }
 
   Future<void> dispose() async {
@@ -171,7 +171,7 @@ mixin _Community on _Holder {
           // 定位图标
           if (option.iconProvider != null) {
             final imageData = await option.iconProvider
-                .toImageData(createLocalImageConfiguration(_state.context));
+                .toImageData(createLocalImageConfiguration(state.context));
             final bitmap = await android_graphics_Bitmap.create(imageData);
             final bitmapDescriptor =
                 await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -254,7 +254,7 @@ mixin _Community on _Holder {
           // 定位图标
           if (option.iconProvider != null) {
             final imageData = await option.iconProvider
-                .toImageData(createLocalImageConfiguration(_state.context));
+                .toImageData(createLocalImageConfiguration(state.context));
             final bitmap = await UIImage.create(imageData);
             await style.set_image(bitmap);
           }
@@ -783,7 +783,7 @@ mixin _Community on _Holder {
         // 普通图片
         if (option.iconProvider != null) {
           Uint8List iconData = await option.iconProvider
-              .toImageData(createLocalImageConfiguration(_state.context));
+              .toImageData(createLocalImageConfiguration(state.context));
 
           final bitmap = await android_graphics_Bitmap.create(iconData);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -795,7 +795,7 @@ mixin _Community on _Holder {
         // widget as marker
         else if (option.widget != null) {
           List<Uint8List> iconData =
-              await _state.widgetToImageData([option.widget]);
+              await state.widgetToImageData([option.widget]);
 
           final bitmap = await android_graphics_Bitmap.create(iconData[0]);
           final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
@@ -836,8 +836,8 @@ mixin _Community on _Holder {
       ios: (pool) async {
         await iosController.set_delegate(
           iosMapDelegate
-            .._iosController = iosController
-            .._annotationViewCompleter = Completer(),
+            ..iosController = iosController
+            ..annotationViewCompleter = Completer(),
         );
 
         // 创建marker
@@ -860,7 +860,7 @@ mixin _Community on _Holder {
         // 普通图片
         if (option.iconProvider != null) {
           Uint8List iconData = await option.iconProvider
-              .toImageData(createLocalImageConfiguration(_state.context));
+              .toImageData(createLocalImageConfiguration(state.context));
 
           final icon = await UIImage.create(iconData);
 
@@ -872,7 +872,7 @@ mixin _Community on _Holder {
         // widget as marker
         else if (option.widget != null) {
           List<Uint8List> iconData =
-              await _state.widgetToImageData([option.widget]);
+              await state.widgetToImageData([option.widget]);
 
           final icon = await UIImage.create(iconData[0]);
 
@@ -910,7 +910,7 @@ mixin _Community on _Holder {
 
         // 等待添加完成 获取对应的view
         final annotationViewList =
-            await iosMapDelegate._annotationViewCompleter.future;
+            await iosMapDelegate.annotationViewCompleter.future;
         pool.add(coordinate);
 
         return Marker.ios(annotation, annotationViewList[0], iosController);
@@ -943,9 +943,9 @@ mixin _Community on _Holder {
         for (final option in options)
           if (option.iconProvider != null)
             option.iconProvider
-                .toImageData(createLocalImageConfiguration(_state.context))
+                .toImageData(createLocalImageConfiguration(state.context))
       ]),
-      ...await _state.widgetToImageData(options
+      ...await state.widgetToImageData(options
           .where((element) => element.widget != null)
           .map((e) => e.widget)
           .toList()),
@@ -1003,8 +1003,8 @@ mixin _Community on _Holder {
       ios: (pool) async {
         await iosController.set_delegate(
           iosMapDelegate
-            .._iosController = iosController
-            .._annotationViewCompleter = Completer(),
+            ..iosController = iosController
+            ..annotationViewCompleter = Completer(),
         );
 
         // 创建marker
@@ -1047,7 +1047,7 @@ mixin _Community on _Holder {
         // 等待添加完成 获取对应的view
         // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
         final visibleMarkers =
-            await iosMapDelegate._annotationViewCompleter.future;
+            await iosMapDelegate.annotationViewCompleter.future;
         final annotationViewList = <MAAnnotationView>[
           for (int i = 0; i < options.length; i++)
             if (i < visibleMarkers.length) visibleMarkers[i] else null
@@ -1062,93 +1062,6 @@ mixin _Community on _Holder {
               iosController,
             )
         ];
-      },
-    );
-  }
-
-  /// 批量添加marker
-  ///
-  /// 根据[options]批量创建Marker
-  Future<SmoothMoveMarker> addSmoothMoveMarker(
-      SmoothMoveMarkerOption option) async {
-    assert(option != null);
-    final latitudeBatch = option.path.map((e) => e.latitude).toList();
-    final longitudeBatch = option.path.map((e) => e.longitude).toList();
-    final iconData = await option.iconProvider
-        ?.toImageData(createLocalImageConfiguration(_state.context));
-    return platform(
-      android: (pool) async {
-        // 获取地图
-        final map = await androidController.getMap();
-
-        // 创建平滑移动marker对象
-        final marker = await com_amap_api_maps_utils_overlay_SmoothMoveMarker
-            .create__com_amap_api_maps_AMap(map);
-
-        // 创建marker的图标
-        final bitmap = await android_graphics_Bitmap.create(iconData);
-        final bitmapDescriptor =
-            await com_amap_api_maps_model_BitmapDescriptorFactory
-                .fromBitmap(bitmap);
-
-        // 设置图标
-        await marker.setDescriptor(bitmapDescriptor);
-
-        // 动画途经点
-        final points = await com_amap_api_maps_model_LatLng
-            .create_batch__double__double(latitudeBatch, longitudeBatch);
-
-        // 设置途经点
-        await marker.setPoints(points);
-        // 设置动画时长
-        await marker.setTotalDuration(option.duration.inSeconds);
-        // 执行动画
-        await marker.startSmoothMove();
-
-        pool
-          ..add(map)
-          ..add(bitmap)
-          ..add(bitmapDescriptor)
-          ..addAll(points);
-        return SmoothMoveMarker.android(marker);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(
-          iosMapDelegate.._iosController = iosController,
-        );
-
-        // 创建annotation
-        final annotation = await MAAnimatedAnnotation.create__();
-
-        // 动画途经点
-        final points = await CLLocationCoordinate2D.create_batch(
-            latitudeBatch, longitudeBatch);
-
-        // 设置图片
-        // 普通图片
-        final icon = await UIImage.create(iconData);
-        // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-        await annotation.addProperty__(1, icon);
-
-        // 设置起始点
-        await annotation.set_coordinate(points[0]);
-
-        // 添加动画
-        final animation = await annotation
-            .addMoveAnimationWithKeyCoordinates_count_withDuration_withName_completeCallback(
-          points,
-          points.length,
-          option.duration.inSeconds.toDouble(),
-          'name',
-          (finished) {},
-        );
-
-        await iosController.addAnnotation(annotation);
-
-        pool
-          ..addAll(points)
-          ..add(icon);
-        return SmoothMoveMarker.ios(iosController, animation, annotation);
       },
     );
   }
@@ -1254,7 +1167,7 @@ mixin _Community on _Holder {
     final latitudeBatch = option.latLngList.map((e) => e.latitude).toList();
     final longitudeBatch = option.latLngList.map((e) => e.longitude).toList();
     final textureData = await option.textureProvider
-        ?.toImageData(createLocalImageConfiguration(_state.context));
+        ?.toImageData(createLocalImageConfiguration(state.context));
     return platform(
       android: (pool) async {
         final map = await androidController.getMap();
@@ -1343,7 +1256,7 @@ mixin _Community on _Holder {
 
         // 宽度和颜色需要设置到STACK里去
         if (option.width != null) {
-          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
           polyline.addJsonableProperty__(1, option.width / pixelRatio);
         }
         // 颜色
@@ -1445,7 +1358,7 @@ mixin _Community on _Holder {
             latLngList, latLngList.length);
 
         if (option.width != null) {
-          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
           polygon.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
@@ -1525,7 +1438,7 @@ mixin _Community on _Holder {
         );
 
         if (option.width != null) {
-          final pixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
+          final pixelRatio = MediaQuery.of(state.context).devicePixelRatio;
           circle.addJsonableProperty__(1, option.width / pixelRatio);
         }
         if (option.strokeColor != null) {
@@ -1543,150 +1456,6 @@ mixin _Community on _Holder {
     );
   }
 
-  /// 添加海量点
-  Future<MultiPointOverlay> addMultiPointOverlay(
-      MultiPointOption option) async {
-    assert(option != null && option.pointList.isNotEmpty);
-
-    final latitudeBatch =
-        option.pointList.map((it) => it.latLng.latitude).toList();
-    final longitudeBatch =
-        option.pointList.map((it) => it.latLng.longitude).toList();
-    final idBatch = option.pointList.map((it) => it.id).toList();
-    final titleBatch = option.pointList.map((it) => it.title).toList();
-    final snippetBatch = option.pointList.map((it) => it.snippet).toList();
-    final objectBatch = option.pointList.map((it) => it.object).toList();
-    Uint8List iconData;
-    if (option.iconProvider != null) {
-      iconData = await option.iconProvider
-          .toImageData(createLocalImageConfiguration(_state.context));
-    }
-
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        final overlayOptions =
-            await com_amap_api_maps_model_MultiPointOverlayOptions.create__();
-
-        final latLngBatch = await com_amap_api_maps_model_LatLng
-            .create_batch__double__double(latitudeBatch, longitudeBatch);
-
-        // 设置marker图标
-        // 普通图片
-        if (iconData != null) {
-          final bitmap = await android_graphics_Bitmap.create(iconData);
-          final icon = await com_amap_api_maps_model_BitmapDescriptorFactory
-              .fromBitmap(bitmap);
-          await overlayOptions.icon(icon);
-
-          pool..add(bitmap)..add(icon);
-        }
-
-        final multiPointOverlay =
-            await map.addMultiPointOverlay(overlayOptions);
-
-        final multiPointList = await com_amap_api_maps_model_MultiPointItem
-            .create_batch__com_amap_api_maps_model_LatLng(latLngBatch);
-        await multiPointList.setCustomerId_batch(idBatch);
-        await multiPointList.setTitle_batch(titleBatch);
-        await multiPointList.setSnippet_batch(snippetBatch);
-        await multiPointList.setObject_batch(objectBatch);
-
-        await multiPointOverlay.setItems(multiPointList);
-
-        pool
-          ..add(map)
-          ..addAll(latLngBatch);
-        return MultiPointOverlay.android(multiPointOverlay);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(iosMapDelegate);
-
-        final overlay = await MAMultiPointOverlay.create__();
-
-        final length = option.pointList.length;
-        final pointItemList = await MAMultiPointItem.create_batch__(length);
-
-        final latLngBatch = await CLLocationCoordinate2D.create_batch(
-            latitudeBatch, longitudeBatch);
-
-        // 设置marker图标
-        // 普通图片
-        if (iconData != null) {
-          final bitmap = await UIImage.create(iconData);
-          await overlay.addProperty__(1, bitmap);
-          pool.add(bitmap);
-        }
-        await pointItemList.set_coordinate_batch(latLngBatch);
-        await pointItemList.set_customID_batch(idBatch);
-        await pointItemList.set_title_batch(titleBatch);
-        await pointItemList.set_subtitle_batch(snippetBatch);
-        await pointItemList.addJsonableProperty_batch(1, objectBatch);
-
-        await overlay.initWithMultiPointItems(pointItemList);
-
-        iosController.addOverlay(overlay);
-
-        pool..addAll(pointItemList)..addAll(latLngBatch);
-        return MultiPointOverlay.ios(overlay, iosController);
-      },
-    );
-  }
-
-  /// 自定义弹窗
-  Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
-    final imageData = (await _state.widgetToImageData([widget]))[0];
-
-    // 准备弹窗需要的数据
-    await platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-        await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod(
-          'com.amap.api.maps.AMap::setInfoWindowAdapterX',
-          {'refId': map.refId},
-        );
-        final bitmap = await android_graphics_Bitmap.create(imageData);
-        await pushStack('infoWindow', bitmap);
-
-        pool..add(map)..add(bitmap);
-      },
-      ios: (pool) async {
-        // 创建弹窗view
-        final bitmap = await UIImage.create(imageData);
-        final imageView = await UIImageView.create(bitmap);
-
-        final frame = await imageView.frame;
-        final width = await frame.width;
-        final height = await frame.height;
-
-        // 去掉默认的弹窗
-        await marker.annotationView.set_canShowCallout(
-          false,
-          viewChannel: false,
-        );
-        // 由于默认偏移量是0, 这里根据弹窗view设置一下偏移量
-        await marker.annotationView.set_calloutOffset(
-          await CGPoint.create(-width / 2, -height),
-          viewChannel: false,
-        );
-
-        // 创建自定义弹窗
-        final calloutView = await MACustomCalloutView.create__();
-        await calloutView.initWithCustomView(imageView, viewChannel: false);
-
-        // 设置自定义弹窗
-        await marker.annotationView
-            .set_customCalloutView(calloutView, viewChannel: false);
-
-        pool..add(bitmap)..add(imageView)..add(calloutView);
-      },
-    );
-
-    // 显示弹窗
-    await marker.showInfoWindow();
-  }
-
   /// 设置marker点击监听事件
   Future<void> setMarkerClickedListener(OnMarkerClicked onMarkerClicked) async {
     await platform(
@@ -1694,34 +1463,13 @@ mixin _Community on _Holder {
         final map = await androidController.getMap();
 
         await map.setOnMarkerClickListener(
-            androidMapDelegate.._onMarkerClicked = onMarkerClicked);
+            androidMapDelegate..onMarkerClicked = onMarkerClicked);
 
         pool..add(map);
       },
       ios: (pool) async {
         await iosController
-            .set_delegate(iosMapDelegate.._onMarkerClicked = onMarkerClicked);
-      },
-    );
-  }
-
-  /// 设置海量点点击监听事件
-  Future<void> setMultiPointClickedListener(
-    OnMultiPointClicked onMultiPointClicked,
-  ) async {
-    await platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        await map.setOnMultiPointClickListener(
-            androidMapDelegate.._onMultiPointClicked = onMultiPointClicked);
-
-        pool..add(map);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(
-          iosMapDelegate.._onMultiPointClicked = onMultiPointClicked,
-        );
+            .set_delegate(iosMapDelegate..onMarkerClicked = onMarkerClicked);
       },
     );
   }
@@ -1738,9 +1486,9 @@ mixin _Community on _Holder {
 
         await map.setOnMarkerDragListener(
           androidMapDelegate
-            .._onMarkerDragStart = onMarkerDragStart
-            .._onMarkerDragging = onMarkerDragging
-            .._onMarkerDragEnd = onMarkerDragEnd,
+            ..onMarkerDragStarted = onMarkerDragStart
+            ..onMarkerDragging = onMarkerDragging
+            ..onMarkerDragEnded = onMarkerDragEnd,
         );
 
         pool..add(map);
@@ -1748,9 +1496,9 @@ mixin _Community on _Holder {
       ios: (pool) async {
         await iosController.set_delegate(
           iosMapDelegate
-            .._onMarkerDragStart = onMarkerDragStart
-            .._onMarkerDragging = onMarkerDragging
-            .._onMarkerDragEnd = onMarkerDragEnd,
+            ..onMarkerDragStarted = onMarkerDragStart
+            ..onMarkerDragging = onMarkerDragging
+            ..onMarkerDragEnded = onMarkerDragEnd,
         );
       },
     );
@@ -1763,14 +1511,14 @@ mixin _Community on _Holder {
         final map = await androidController.getMap();
 
         await map.setOnMapClickListener(
-          androidMapDelegate.._onMapClick = onMapClick,
+          androidMapDelegate..onMapClicked = onMapClick,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          iosMapDelegate.._onMapClick = onMapClick,
+          iosMapDelegate..onMapClicked = onMapClick,
         );
       },
     );
@@ -1783,14 +1531,14 @@ mixin _Community on _Holder {
         final map = await androidController.getMap();
 
         await map.setOnMapLongClickListener(
-          androidMapDelegate.._onMapLongClick = onMapLongPress,
+          androidMapDelegate..onMapLongClicked = onMapLongPress,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          iosMapDelegate.._onMapLongClick = onMapLongPress,
+          iosMapDelegate..onMapLongClicked = onMapLongPress,
         );
       },
     );
@@ -1808,9 +1556,9 @@ mixin _Community on _Holder {
 
         await map.setOnCameraChangeListener(
           androidMapDelegate
-            .._onMapMoveStart = onMapMoveStart
-            .._onMapMoving = onMapMoving
-            .._onMapMoveEnd = onMapMoveEnd,
+            ..onMapMoveStart = onMapMoveStart
+            ..onMapMoving = onMapMoving
+            ..onMapMoveEnd = onMapMoveEnd,
         );
 
         pool..add(map);
@@ -1818,9 +1566,9 @@ mixin _Community on _Holder {
       ios: (pool) async {
         await iosController.set_delegate(
           iosMapDelegate
-            .._onMapMoveStart = onMapMoveStart
-            .._onMapMoving = onMapMoving
-            .._onMapMoveEnd = onMapMoveEnd,
+            ..onMapMoveStart = onMapMoveStart
+            ..onMapMoving = onMapMoving
+            ..onMapMoveEnd = onMapMoveEnd,
         );
       },
     );
@@ -1837,14 +1585,14 @@ mixin _Community on _Holder {
         final map = await androidController.getMap();
 
         await map.setOnMyLocationChangeListener(
-          androidMapDelegate.._onLocationChange = onLocationChange,
+          androidMapDelegate..onLocationChange = onLocationChange,
         );
 
         pool..add(map);
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          iosMapDelegate.._onLocationChange = onLocationChange,
+          iosMapDelegate..onLocationChange = onLocationChange,
         );
       },
     );
@@ -1859,7 +1607,7 @@ mixin _Community on _Holder {
           await manager?.requestAlwaysAuthorization();
         };
         await iosController.set_delegate(
-          iosMapDelegate.._onRequireAlwaysAuth = onRequireAuth,
+          iosMapDelegate..onRequireAlwaysAuth = onRequireAuth,
         );
       },
     );
@@ -1872,7 +1620,7 @@ mixin _Community on _Holder {
       android: (pool) async {
         final map = await androidController.getMap();
         await map.getMapScreenShot(
-          androidMapDelegate.._onSnapshot = onScreenShot,
+          androidMapDelegate..onSnapshot = onScreenShot,
         );
 
         pool.add(map);
@@ -1888,184 +1636,6 @@ mixin _Community on _Holder {
         );
 
         pool.add(rect);
-      },
-    );
-  }
-
-  /// 自定义地图
-  ///
-  /// 三个参数对应自定义地图压缩包内的三个文件
-  Future<void> setCustomMapStyle({
-    String styleDataPath,
-    String styleExtraPath,
-    String texturePath,
-  }) async {
-    Uint8List styleData;
-    if (styleDataPath != null) {
-      styleData = await rootBundle
-          .load(styleDataPath)
-          .then((byteData) => byteData.buffer.asUint8List());
-    }
-    Uint8List styleExtra;
-    if (styleExtraPath != null) {
-      styleExtra = await rootBundle
-          .load(styleExtraPath)
-          .then((byteData) => byteData.buffer.asUint8List());
-    }
-    Uint8List texture;
-    if (texturePath != null) {
-      texture = await rootBundle
-          .load(texturePath)
-          .then((byteData) => byteData.buffer.asUint8List());
-    }
-    await platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        // 构造选项
-        final option =
-            await com_amap_api_maps_model_CustomMapStyleOptions.create__();
-        await option.setEnable(true);
-        if (styleData != null) await option.setStyleData(styleData);
-        if (styleExtra != null) await option.setStyleExtraData(styleExtra);
-        if (texture != null) await option.setStyleTextureData(texture);
-
-        await map.setCustomMapStyle(option);
-
-        pool..add(map)..add(option);
-      },
-      ios: (pool) async {
-        // 构造选项
-        final option = await MAMapCustomStyleOptions.create__();
-
-        if (styleData != null) {
-          final styleDataNSData = await NSData.createWithUint8List(styleData);
-          await option.set_styleData(styleDataNSData);
-          pool.add(styleDataNSData);
-        }
-        if (styleExtra != null) {
-          final styleExtraNSData = await NSData.createWithUint8List(styleExtra);
-          await option.set_styleExtraData(styleExtraNSData);
-          pool.add(styleExtraNSData);
-        }
-        if (texture != null) {
-          final textureNSData = await NSData.createWithUint8List(texture);
-          await option.set_styleTextureData(textureNSData);
-          pool.add(textureNSData);
-        }
-
-        await iosController.setCustomMapStyleOptions(option);
-        await iosController.set_customMapStyleEnabled(true);
-
-        pool.add(option);
-      },
-    );
-  }
-
-  /// 将指定的经纬度列表(包括但不限于marker, polyline, polygon等)调整至同一屏幕中显示
-  ///
-  /// [bounds]边界点形成的边界, [padding]地图内边距
-  Future<void> zoomToSpan(
-    List<LatLng> bounds, {
-    EdgeInsets padding = const EdgeInsets.all(50),
-    bool animated = true,
-  }) async {
-    final double minLat = await Stream.fromIterable(bounds)
-        .reduce((pre, cur) => pre.latitude < cur.latitude ? pre : cur)
-        .then((bottom) => bottom.latitude);
-    final double minLng = await Stream.fromIterable(bounds)
-        .reduce((pre, cur) => pre.longitude < cur.longitude ? pre : cur)
-        .then((left) => left.longitude);
-    final double maxLat = await Stream.fromIterable(bounds)
-        .reduce((pre, cur) => pre.latitude > cur.latitude ? pre : cur)
-        .then((top) => top.latitude);
-    final double maxLng = await Stream.fromIterable(bounds)
-        .reduce((pre, cur) => pre.longitude > cur.longitude ? pre : cur)
-        .then((right) => right.longitude);
-    final devicePixelRatio = MediaQuery.of(_state.context).devicePixelRatio;
-
-    await platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        // 西南角
-        final southWest = await com_amap_api_maps_model_LatLng
-            .create__double__double(minLat, minLng);
-        // 东北角
-        final northEast = await com_amap_api_maps_model_LatLng
-            .create__double__double(maxLat, maxLng);
-
-        // 可视区域矩形
-        final rect = await com_amap_api_maps_model_LatLngBounds
-            .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
-                southWest, northEast);
-
-        // 更新对象 android端由于单位是像素, 所以这里要乘以当前设备的像素密度
-        final cameraUpdate =
-            await com_amap_api_maps_CameraUpdateFactory.newLatLngBoundsRect(
-          rect,
-          (padding.left * devicePixelRatio).toInt(),
-          (padding.right.toInt() * devicePixelRatio).toInt(),
-          (padding.top.toInt() * devicePixelRatio).toInt(),
-          (padding.bottom.toInt() * devicePixelRatio).toInt(),
-        );
-
-        if (animated) {
-          await map.animateCamera__com_amap_api_maps_CameraUpdate(cameraUpdate);
-        } else {
-          await map.moveCamera(cameraUpdate);
-        }
-
-        pool
-          ..add(map)
-          ..add(southWest)
-          ..add(northEast)
-          ..add(rect)
-          ..add(cameraUpdate);
-      },
-      ios: (pool) async {
-        // 由于屏幕坐标的(0, 0)左上角, 所以需要西北角和东南角
-        // 西北角
-        final northWest = await CLLocationCoordinate2D.create(maxLat, minLng);
-        // 东南角
-        final southEast = await CLLocationCoordinate2D.create(minLat, maxLng);
-
-        // 西北角屏幕坐标
-        final northWestPoint = await MAMapPointForCoordinate(northWest);
-        // 东南角屏幕坐标
-        final southEastPoint = await MAMapPointForCoordinate(southEast);
-
-        // 矩形原点x
-        final x = await northWestPoint.get_x();
-        // 矩形原点y
-        final y = await northWestPoint.get_y();
-        // 矩形宽度
-        final width =
-            (await southEastPoint.get_x() - await northWestPoint.get_x()).abs();
-        // 矩形高度
-        final height =
-            (await southEastPoint.get_y() - await northWestPoint.get_y()).abs();
-
-        // 矩形
-        final rect = await MAMapRectMake(x, y, width, height);
-
-        await iosController.setVisibleMapRect_edgePadding_animated(
-          rect,
-          await UIEdgeInsets.create(
-            padding.top,
-            padding.left,
-            padding.bottom,
-            padding.right,
-          ),
-          animated,
-        );
-
-        pool
-          ..add(northWest)
-          ..add(southEast)
-          ..add(northWestPoint)
-          ..add(southEastPoint)
-          ..add(rect);
       },
     );
   }
@@ -2121,159 +1691,14 @@ mixin _Community on _Holder {
         final map = await androidController.getMap();
 
         await map.setOnInfoWindowClickListener(
-          androidMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+          androidMapDelegate..onInfoWindowClicked = onInfoWindowClicked,
         );
         pool.add(map);
       },
       ios: (pool) async {
         await iosController.set_delegate(
-          iosMapDelegate.._onInfoWindowClicked = onInfoWindowClicked,
+          iosMapDelegate..onInfoWindowClicked = onInfoWindowClicked,
         );
-      },
-    );
-  }
-
-  /// 添加热力图
-  Future<HeatmapOverlay> addHeatmapTileOverlay(HeatmapTileOption option) async {
-    assert(option != null);
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        // 创建热力图Provider
-        final builder =
-            await com_amap_api_maps_model_HeatmapTileProvider_Builder
-                .create__();
-        List<com_amap_api_maps_model_LatLng> latLngList = [];
-        for (final latLng in option.latLngList) {
-          latLngList.add(await com_amap_api_maps_model_LatLng
-              .create__double__double(latLng.latitude, latLng.longitude));
-        }
-        await builder.data(latLngList);
-
-        // 创建Tile Overlay选项
-        final tileOverlayOption =
-            await com_amap_api_maps_model_TileOverlayOptions.create__();
-        await tileOverlayOption.tileProvider(await builder.build());
-
-        // 添加热力图
-        final heatmap = await map.addTileOverlay(tileOverlayOption);
-
-        pool
-          ..add(map)
-          ..add(builder)
-          ..addAll(latLngList)
-          ..add(tileOverlayOption);
-
-        return HeatmapOverlay.android(heatmap);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(iosMapDelegate);
-
-        // 创建热力图选项
-        final overlay = await MAHeatMapTileOverlay.create__();
-
-        // 构造热力图结点
-        List<MAHeatMapNode> nodeList = [];
-        for (final latLng in option.latLngList) {
-          final node = await MAHeatMapNode.create__();
-          final coordinate = await CLLocationCoordinate2D.create(
-            latLng.latitude,
-            latLng.longitude,
-          );
-          pool..add(node)..add(coordinate);
-
-          // 坐标点
-          await node.set_coordinate(coordinate);
-          // 权重值 暂时全部都为1
-          await node.set_intensity(1);
-          nodeList.add(node);
-        }
-        // 添加结点数据
-        await overlay.set_data(nodeList);
-
-        // 添加热力图
-        await iosController.addOverlay(overlay);
-
-        pool.addAll(nodeList);
-
-        return HeatmapOverlay.ios(overlay, iosController);
-      },
-    );
-  }
-
-  /// 添加图片覆盖物
-  Future<GroundOverlay> addGroundOverlay(GroundOverlayOption option) async {
-    assert(option != null);
-    final imageData = await option.imageProvider
-        .toImageData(createLocalImageConfiguration(_state.context));
-    return platform(
-      android: (pool) async {
-        final map = await androidController.getMap();
-
-        final groundOverlayOption =
-            await com_amap_api_maps_model_GroundOverlayOptions.create__();
-
-        // 创建图片边界
-        final southWestPoint =
-            await com_amap_api_maps_model_LatLng.create__double__double(
-                option.southWest.latitude, option.southWest.longitude);
-        final northEastPoint =
-            await com_amap_api_maps_model_LatLng.create__double__double(
-                option.northEast.latitude, option.northEast.longitude);
-
-        final bounds = await com_amap_api_maps_model_LatLngBounds
-            .create__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng(
-                southWestPoint, northEastPoint);
-        await groundOverlayOption.positionFromBounds(bounds);
-
-        // 创建图片
-        final bitmap = await android_graphics_Bitmap.create(imageData);
-        final descriptor = await com_amap_api_maps_model_BitmapDescriptorFactory
-            .fromBitmap(bitmap);
-        await groundOverlayOption.image(descriptor);
-
-        // 进行添加
-        final groundOverlay = await map.addGroundOverlay(groundOverlayOption);
-
-        bitmap.recycle();
-        pool
-          ..add(map)
-          ..add(groundOverlayOption)
-          ..add(southWestPoint)
-          ..add(descriptor)
-          ..add(northEastPoint);
-
-        return GroundOverlay.android(groundOverlay);
-      },
-      ios: (pool) async {
-        await iosController.set_delegate(iosMapDelegate);
-
-        final southWestPoint = await CLLocationCoordinate2D.create(
-          option.southWest.latitude,
-          option.southWest.longitude,
-        );
-        final northEastPoint = await CLLocationCoordinate2D.create(
-          option.northEast.latitude,
-          option.northEast.longitude,
-        );
-        final bounds =
-            await MACoordinateBoundsMake(northEastPoint, southWestPoint);
-
-        final bitmap = await UIImage.create(imageData);
-        final overlay =
-            await MAGroundOverlay.groundOverlayWithBounds_icon(bounds, bitmap);
-
-        // 添加热力图
-        await iosController.addOverlay(overlay);
-
-        pool
-          ..add(southWestPoint)
-          ..add(northEastPoint)
-          ..add(bounds)
-          ..add(bitmap);
-
-        return GroundOverlay.ios(overlay, iosController);
       },
     );
   }
@@ -2326,13 +1751,66 @@ mixin _Pro on _Holder, _Community {
       },
     );
   }
+
+  /// 自定义弹窗
+  Future<void> showCustomInfoWindow(Marker marker, Widget widget) async {
+    final imageData = (await state.widgetToImageData([widget]))[0];
+
+    // 准备弹窗需要的数据
+    await platform(
+      android: (pool) async {
+        final map = await androidController.getMap();
+        await MethodChannel('me.yohom/amap_map_fluttify').invokeMethod(
+          'com.amap.api.maps.AMap::setInfoWindowAdapterX',
+          {'refId': map.refId},
+        );
+        final bitmap = await android_graphics_Bitmap.create(imageData);
+        await pushStack('infoWindow', bitmap);
+
+        pool..add(map)..add(bitmap);
+      },
+      ios: (pool) async {
+        // 创建弹窗view
+        final bitmap = await UIImage.create(imageData);
+        final imageView = await UIImageView.create(bitmap);
+
+        final frame = await imageView.frame;
+        final width = await frame.width;
+        final height = await frame.height;
+
+        // 去掉默认的弹窗
+        await marker.annotationView.set_canShowCallout(
+          false,
+          viewChannel: false,
+        );
+        // 由于默认偏移量是0, 这里根据弹窗view设置一下偏移量
+        await marker.annotationView.set_calloutOffset(
+          await CGPoint.create(-width / 2, -height),
+          viewChannel: false,
+        );
+
+        // 创建自定义弹窗
+        final calloutView = await MACustomCalloutView.create__();
+        await calloutView.initWithCustomView(imageView, viewChannel: false);
+
+        // 设置自定义弹窗
+        await marker.annotationView
+            .set_customCalloutView(calloutView, viewChannel: false);
+
+        pool..add(bitmap)..add(imageView)..add(calloutView);
+      },
+    );
+
+    // 显示弹窗
+    await marker.showInfoWindow();
+  }
 }
 
 class _Holder {
   com_amap_api_maps_TextureMapView androidController;
   MAMapView iosController;
 
-  _AmapViewState _state;
+  _AmapViewState state;
 
   // iOS端的回调处理类
   final iosMapDelegate = _IOSMapDelegate();
