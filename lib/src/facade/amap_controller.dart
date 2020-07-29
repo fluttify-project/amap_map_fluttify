@@ -164,6 +164,12 @@ mixin _Community on _Holder {
                     .LOCATION_TYPE_LOCATION_ROTATE,
               );
               break;
+            case MyLocationType.RotateLocateNoCenter:
+              await locationStyle.myLocationType(
+                com_amap_api_maps_model_MyLocationStyle
+                    .LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER,
+              );
+              break;
           }
           // 定位间隔
           await locationStyle.interval(option.interval.inMilliseconds);
