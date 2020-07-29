@@ -1,7 +1,6 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify_example/utils/misc.dart';
-import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
+import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
 
 //const beijing = LatLng(39.90960, 116.397228);
@@ -31,9 +30,6 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
             child: AmapView(
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-                  await controller.showMyLocation(false);
-                }
               },
             ),
           ),
@@ -71,20 +67,18 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                     switch (value) {
                       case '广州':
                         _controller?.setCenterCoordinate(
-                          23.16,
-                          113.23,
+                          LatLng(23.16, 113.23),
                           animated: false,
                         );
                         break;
                       case '北京':
                         _controller?.setCenterCoordinate(
-                          39.90960,
-                          116.397228,
+                          LatLng(39.90960, 116.397228),
                           animated: true,
                         );
                         break;
                       case '上海':
-                        _controller?.setCenterCoordinate(31.22, 121.48);
+                        _controller?.setCenterCoordinate(LatLng(31.22, 121.48));
                         break;
                     }
                   },

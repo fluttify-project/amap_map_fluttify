@@ -6,6 +6,10 @@ buildscript {
         google()
         jcenter()
         maven { url 'http://download.flutter.io' }
+        maven { url "https://oss.sonatype.org/content/groups/public" }
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
+        maven { url 'http://developer.huawei.com/repo/' }
     }
 
     dependencies {
@@ -17,6 +21,11 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'http://download.flutter.io' }
+        maven { url "https://oss.sonatype.org/content/groups/public" }
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://dl.bintray.com/aweme-open-sdk-team/public" }
+        maven { url 'http://developer.huawei.com/repo/' }
     }
 }
 
@@ -40,6 +49,13 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
     }
+    packagingOptions {
+        merge 'res/values/values.xml'
+        merge 'AndroidManifest.xml'
+        merge 'R.txt'
+        merge 'classes.jar'
+        merge 'proguard.txt'
+    }
     buildTypes {
         release {
             consumerProguardFiles "proguard-rules.pro"
@@ -48,8 +64,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     compileOnly rootProject.findProject(":foundation_fluttify")
     // flutter plugin dependency
     compileOnly rootProject.findProject(":amap_core_fluttify")

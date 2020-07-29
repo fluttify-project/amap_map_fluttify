@@ -1,22 +1,49 @@
 ![Logo](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Logo-Landscape.png?raw=true)
 
-# 高德 `地图`组件
-
+# 高德地图 地图组件 Flutter插件
 [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify)
-![CI](https://github.com/fluttify-project/amap_map_fluttify/workflows/CI/badge.svg)
-[![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-Dart接口基于[Fluttify](https://github.com/yohom/fluttify-core-example)引擎生成. dartdoc[接口文档](https://pub.flutter-io.cn/documentation/amap_map_fluttify/latest/). [CHANGELOG](https://github.com/fluttify-project/amap_map_fluttify/blob/master/CHANGELOG.md). [常见问题对应手册](https://github.com/fluttify-project/amap_map_fluttify/blob/master/Troubleshooting.md).
+## 由于精力有限, `1.0.0`版本开始, 作为社区版(0.x版本)将不再新增功能, 如果现有接口不能满足你的需求, 请使用专业版.
 
-如果你需要用到地图, 定位和搜索三个组件, 建议使用[amap_all_fluttify](https://github.com/fluttify-project/amap_all_fluttify), 这个插件集合了以上三个插件, 并约束了版本, 兼容性会更好.
+**专业版为付费插件, 如有需要请联系qq 382146139**<br/>
+**专业版为付费插件, 如有需要请联系qq 382146139**<br/>
+**专业版为付费插件, 如有需要请联系qq 382146139**<br/>
 
-## DEMO 与 打赏
+[专业版demo apk下载](https://github.com/fluttify-project/fluttify-project/raw/master/resources/amap_map_fluttify/%E5%9C%B0%E5%9B%BE-2020-07-25.apk)
 
-| Demo | 微信赞助 | 支付宝赞助 |
-| :----------: | :----------: | :----------: |
-| 扫描二维码 <br> 或者 <br> [点击下载](https://github.com/fluttify-project/amap_map_fluttify/blob/master/example/build/app/outputs/apk/release/app-release.apk?raw=true) </br> ![Example](assets/amap_map_fluttify_apk.png) | 如果项目帮到了你 </br> 不妨请作者喝杯奶茶 :) </br> ![微信](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/WechatIMG111.jpeg?raw=true) | 开源不易 </br> 你的star是我最大的动力 </br> ![支付宝](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/1557492318.jpg?raw=true) |
+# 静态扩展方案
+现提供静态扩展方案, 如果社区版没有提供你需要的功能, 但是又用不到专业版里的所有功能, 那么本方案提供以`方法`为单位的收费方式.
+计费方式请参考[技术支持方案](https://github.com/fluttify-project/technical-support-plan/blob/master/README.md#%E6%96%B0%E5%8A%9F%E8%83%BD).
+静态扩展方案最终会提供一个**类扩展**(目前支持为`AmapController`进行扩展)给用户.
 
-安装: 
+### 如何使用静态扩展
+把扩展类拷贝进工程, 然后在使用地图的文件内`import`该类扩展之后, 与先前一样使用`AmapController`即可.
+
+### 使用静态扩展方案的前提
+- 必须使用社区版`0.25.0`以上的版本，`0.25.0`版本专门为静态扩展方案做了优化，如果使用之前的版本，将不保证扩展能使用；
+- `0.25.0`版本已整合`amap_location_fluttify`和`amap_search_fluttify`, 因此`amap_all_fluttify`已被标记为`过时`. 如果只需要定位或搜索, 可以只依赖定位或搜索插件, 如果需要地图的同时需要搜索和定位, 则直接依赖`amap_map_fluttify`即可.
+- `0.25.0`版本针对扩展方案进行了优化, 原先所有通过静态方法调用的接口, 一律改成单例模式. 影响到的类主要有`AmapService`, `AmapLocation`, `AmapSearch`, 迁移时只需`AmapService`→`AmapService.instance`, `AmapLocation`→`AmapLocation.instance`, `AmapSearch`→`AmapSearch.instance`即可.
+
+# Fluttify系列插件
+|  名称  | 描述 | 仓库 |
+|:-----:|:-----:|:-----:|
+| [高德地图](https://github.com/fluttify-project/amap_map_fluttify)  |  高德地图地图组件, 提供地图控件 | [![pub package](https://img.shields.io/pub/v/amap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_map_fluttify) |
+| [高德定位](https://github.com/fluttify-project/amap_location_fluttify)  |  高德地图定位组件, 提供独立的定位功能 | [![pub package](https://img.shields.io/pub/v/amap_location_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_location_fluttify) |
+| [高德搜索](https://github.com/fluttify-project/amap_search_fluttify)  |  高德地图搜索组件, 提供poi搜索等功能 | [![pub package](https://img.shields.io/pub/v/amap_search_fluttify.svg)](https://pub.Flutter-io.cn/packages/amap_search_fluttify) |
+| [百度地图](https://github.com/fluttify-project/bmap_map_fluttify)  |  百度地图, 包含了地图控件, 定位以及搜索poi等功能 | [![pub package](https://img.shields.io/pub/v/bmap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/bmap_map_fluttify) |
+| [百度人脸识别](https://github.com/fluttify-project/baidu_face_flutter)  |  百度人脸识别, 提供活体检测等功能 | [![pub package](https://img.shields.io/pub/v/baidu_face_flutter.svg)](https://pub.Flutter-io.cn/packages/baidu_face_flutter) |
+| [网易直播](https://github.com/fluttify-project/netease_live_fluttify)  |  网易直播推流组件 | [![pub package](https://img.shields.io/pub/v/netease_live_fluttify.svg)](https://pub.Flutter-io.cn/packages/netease_live_fluttify) |
+| [网易云信](https://github.com/fluttify-project/nim_fluttify)  |  网易云信 IM组件 | [![pub package](https://img.shields.io/pub/v/nim_fluttify.svg)](https://pub.Flutter-io.cn/packages/nim_fluttify) |
+| [腾讯直播](https://github.com/fluttify-project/tencent_live_fluttify)  |  腾讯直播, 包含推流组件和播放组件 | [![pub package](https://img.shields.io/pub/v/tencent_live_fluttify.svg)](https://pub.Flutter-io.cn/packages/tencent_live_fluttify) |
+| [腾讯IM](https://github.com/fluttify-project/tim_fluttify)  |  腾讯IM组件 | [![pub package](https://img.shields.io/pub/v/tim_fluttify.svg)](https://pub.Flutter-io.cn/packages/tim_fluttify) |
+| [腾讯地图](https://github.com/fluttify-project/tmap_map_fluttify)  |  腾讯地图组件 | [![pub package](https://img.shields.io/pub/v/tmap_map_fluttify.svg)](https://pub.Flutter-io.cn/packages/tmap_map_fluttify) |
+| [讯飞语音合成](https://github.com/fluttify-project/xftts_fluttify)  |  腾讯语言合成组件, 提供文字转语言功能 | [![pub package](https://img.shields.io/pub/v/xftts_fluttify.svg)](https://pub.flutter-io.cn/packages/xftts_fluttify) |
+| [极光统计](https://github.com/fluttify-project/janalytics_fluttify)  |  极光统计组件, 提供异常上报等功能 | [![pub package](https://img.shields.io/pub/v/janalytics_fluttify.svg)](https://pub.flutter-io.cn/packages/janalytics_fluttify) |
+| [阿里云RTC](https://github.com/fluttify-project/ali_rtc_fluttify)  |  阿里云实时音视频 | [![pub package](https://img.shields.io/pub/v/ali_rtc_fluttify.svg)](https://pub.flutter-io.cn/packages/ali_rtc_fluttify) |
+| [环信](https://github.com/fluttify-project/easemob_im_fluttify)  |  环信IM | [![pub package](https://img.shields.io/pub/v/easemob_im_fluttify.svg)](https://pub.flutter-io.cn/packages/easemob_im_fluttify) |
+| [未完待续...](https://github.com/fluttify-project)  |  如有其它需求, 请联系qq 382146139 | ![fluttify](https://img.shields.io/badge/fluttify-welcom-green) |
+
+## 依赖
 ```yaml
 dependencies:
   flutter:
@@ -24,131 +51,157 @@ dependencies:
   amap_map_fluttify: ^x.x.x
 ```
 
-导入:
+## 配置
+### Android
+1. 注意在app/build.gradle的android块中配置签名信息, 并在buildTypes块中指定签名信息, 否则将无法匹配到你在高德后台配置的appkey, 例如:
+```groovy
+android {
+    signingConfigs {
+        release {
+            keyAlias 'amap_map_test'
+            keyPassword 'amap_map_test'
+            storeFile file('../amap_map_test.jks')
+            storePassword 'amap_map_test'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        profile {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+```
+
+### iOS
+1. 使用地图需要使能UiKitView, 在Info.plist中添加:
+```xml
+<key>io.flutter.embedded_views_preview</key>
+<string>YES</string>
+```
+2. 定位需要声明权限, 在Info.plist中添加:
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>需要定位权限</string>
+```
+3. 调用高德地图需要添加白名单:
+```dart
+<key>LSApplicationQueriesSchemes</key>
+<array>
+	<string>iosamap</string>
+	<string>amapuri</string>
+</array>
+```
+
+## 导入
 ```dart
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
 ```
 
-使用:
-```dart 
-/// !!使用真机调试!!
-/// !注意: 只要是返回Future的方法, 一律使用`await`修饰, 确保当前方法执行完成后再执行下一行, 在不能使用`await`修饰的环境下, 在`then`方法中执行下一步.
-/// 
-/// Swift工程需要注释掉Podfile中的`use_frameworks!`
-/// 
-/// 初始化(0.17.0开始可以不用配置AndroidManifest.xml):
-await AmapService.init(iosKey: '7a04506d15fdb7585707f7091d715ef4', androidKey: '7c9daac55e90a439f7b4304b465297fa');
-/// 如果你觉得引擎的日志太多, 可以关闭Fluttify引擎的日志
-await enableFluttifyLog(false); // 关闭log
+## 使用
+参考[wiki](https://github.com/fluttify-project/amap_map_fluttify/wiki).
 
-class AmapWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return AmapView(
-      // 地图类型
-      mapType: MapType.Standard,
-      // 是否显示缩放控件
-      showZoomControl: true,
-      // 是否显示指南针控件
-      showCompass: true,
-      // 是否显示比例尺控件
-      showScaleControl: true,
-      // 是否使能缩放手势
-      zoomGesturesEnabled: true,
-      // 是否使能滚动手势
-      scrollGesturesEnabled: true,
-      // 是否使能旋转手势
-      rotateGestureEnabled: true,
-      // 是否使能倾斜手势
-      tiltGestureEnabled: true,
-      // 缩放级别
-      zoomLevel: 10, 
-      // 中心点坐标
-      centerCoordinate: LatLng(39, 116),
-      // 标记
-      markers: <MarkerOption>[], 
-      // 标识点击回调
-      onMarkerClick: (Marker marker) {},
-      // 地图点击回调
-      onMapClick: (LatLng coord) {},
-      // 地图拖动回调
-      onMapDrag: (MapDrag drag) {},
-      // 地图创建完成回调
-      onMapCreated: (controller) async {
-        // requestPermission是权限请求方法, 需要你自己实现 
-        // 如果不知道怎么处理, 可以参考example工程的实现, example过程依赖了`permission_handler`插件.
-        if (await requestPermission()) {
-          await controller.showMyLocation(true);
-        }
-      },
-    );
-  }
-}
-```
+## 社区
+| QQ群 |
+| :----------: |
+| <img src="https://github.com/fluttify-project/fluttify-project/blob/master/resources/1593774713224_temp_qrcode_share_9993.png?raw=true" height="300"> | 
 
-`requestPermission`的参考实现(需要依赖`permission_handler`插件): 
-```dart
-import 'package:decorated_flutter/decorated_flutter.dart';
-import 'package:permission_handler/permission_handler.dart';
+## 社区版与专业版
+|  显示地图  | 社区版 | 静态扩展 | 专业版 |
+|:-----:|:-----:|:-----:|:-----:|
+|  获取当前位置  |  ✅ |  ✅  | ✅ |
+|  显示我的位置  |  ✅ |  ✅  | ✅ |
+|  是否显示室内地图  |  ✅ |  ✅   | ✅ |
+|  选择显示图层  |  ✅ |  ✅   | ✅ |
+|  选择地图语言  |  ✅ |  ✅   | ✅ |
+|  显示路况信息  |  ✅ |  ✅   | ✅ |
+|  显示缩放控件  |  ✅ |  ✅   | ✅ |
+|  显示指南针  |  ✅ |  ✅   | ✅ |
+|  显示定位按钮  |  ✅ |  ✅   | ✅ |
+|  显示比例尺控件  |  ✅ |  ✅   | ✅ |
+|  缩放手势使能  |  ✅ |  ✅   | ✅ |
+|  滑动手势使能  |  ✅ |  ✅   | ✅ |
+|  旋转手势使能  |  ✅ |  ✅   | ✅ |
+|  旋转手势使能  |  ✅ |  ✅   | ✅ |
+|  设置缩放大小  |  ✅ |  ✅   | ✅ |
+|  设置缩放是否以中心点为锚点  |  ✅ |  ✅   | ✅ |
+|  显示/隐藏3D楼块效果  | ☑️ |  ✅   | ✅ |
+|  显示/隐藏地图上的文字标注  |  ☑️ |  ✅   | ✅ |
+|  同时设置缩放/倾斜/朝向/坐标并动画  |  ☑️ |  ✅   | ✅ |
 
-Future<bool> requestPermission() async {
-  final permissions =
-      await PermissionHandler().requestPermissions([PermissionGroup.location]);
+|  在地图上绘制  | 社区版 | 静态扩展 | 专业版 |
+|:-----:|:-----:|:-----:|:-----:|
+|  批量添加marker  |  ✅ |  ✅   |  ✅   |
+|  把marker列表从地图上移除  |  ✅ |  ✅   |  ✅   |
+|  清除地图上所有覆盖物  |  ✅ |  ✅   |  ✅   |
+|  添加折线  |  ✅ |  ✅   |  ✅   |
+|  添加多边形  |  ✅ |  ✅   |  ✅   |
+|  添加圆  |  ✅ |  ✅   |  ✅   |
+|  设置marker点击监听事件  |  ✅ |  ✅   |  ✅   |
+|  设置marker拖动监听事件  |  ✅ |  ✅   |  ✅   |
+|  Marker弹窗点击事件监听  |  ✅ |  ✅   |  ✅   |
+|  添加平滑移动marker  | ☑️ |  ✅   | ✅ |
+|  添加海量点  | ☑️ |  ✅   | ✅ |
+|  自定义弹窗  | ☑️ |  ☑️  | ✅ |
+|  设置海量点点击监听事件  | ☑️ |  ✅   | ✅ |
+|  截图  | ✅  |  ✅   | ✅ |
+|  自定义地图  | ☑️ |  ✅   | ✅ |
+|  添加热力图  | ☑️ |  ✅   | ✅ |
+|  添加图片覆盖物  | ☑️  |  ✅   | ✅ |
+|  将指定的经纬度列表调整至同一屏幕中显示  | ☑️ |  ✅   | ✅ |
+|  添加瓦片图  | ☑️  |  ☑️   | ✅ |
+|  输入起始点添加驾车路线  | ☑️  |  ✅   | ✅ |
+|  输入地区名称添加地区轮廓  | ☑️  |  ✅   | ✅ |
+|  添加回放轨迹  | ☑️  |  ✅   | ✅ |
 
-  if (permissions[PermissionGroup.location] == PermissionStatus.granted) {
-    return true;
-  } else {
-    toast('需要定位权限!');
-    return false;
-  }
-}
-```
+|  与地图交互  | 社区版 | 静态扩展 |专业版 |
+|:-----:|:-----:|:-----:|:-----:|
+|  监听地图点击事件  |  ✅ |  ✅   | ✅ |
+|  监听地图长按事件  |  ✅ |  ✅   | ✅ |
+|  监听地图移动开始  |  ✅ |  ✅   | ✅ |
+|  监听地图移动中  | ✅ |  ✅   | ✅ |
+|  监听地图移动结束  |  ✅ |  ✅   | ✅ |
+|  限制地图的显示范围  |  ✅ |  ✅   | ✅ |
+|  获取当前缩放大小  |  ✅ |  ✅   | ✅ |
+|  放大/缩小一个等级  |  ✅ |  ✅   | ✅ |
+|  设置地图中心点  |  ✅ |  ✅   | ✅ |
+|  获取地图中心点  |  ✅ |  ✅   | ✅ |
+|  屏幕坐标转经纬度坐标  |  ✅ |  ✅   | ✅ |
+|  经纬度坐标转屏幕坐标  |  ✅ |  ✅   | ✅ |
+|  设置地图朝向  | ☑️ |  ✅   | ✅ |
+|  设置地图倾斜度  | ☑️ |  ✅   | ✅ |
 
-iOS `Info.plist`配置:
-```xml
-/// 使用PlatformView的声明
-<key>io.flutter.embedded_views_preview</key>
-<string>YES</string>
-/// 定位权限声明
-<key>NSLocationWhenInUseUsageDescription</key>
-<string>需要定位权限</string>
-/// 高德地图app白名单 打开高德地图时使用
-<key>LSApplicationQueriesSchemes</key>
-<array>
-	<string>iosamap</string>
-</array>
-```
+|  导航  | 社区版 |静态扩展 | 专业版 |
+|:-----:|:-----:|:-----:|:-----:|
+|  跳转高德app驾车导航  |  ✅ |  ✅   | ✅ |
+|  跳转高德app骑行导航  |  ☑️ |  ✅   | ✅ |
+|  内置导航组件  |  ☑️ |  ✅   | ✅ |
+|  可嵌入的导航Widget  |  ☑️ |  ✅   | ✅ |
 
-## 版本规划
-### 版本的语义化
-    - +版本号迭代表示引擎更新，完善引擎能力以及修复引擎bug;
-    - 小版本号迭代表示无破坏性更新, 包括功能增加和bug修复;
-    - 次版本号迭代表示有破坏性更新, 包括但不限于接口改动, 类名改动等;
-    - 主版本号迭代表示底层高德SDK更换;
-### 功能开发/bug修复(优先级从高到低)
-    1. 提供详细android文档和ios文档;
-    2. 按照issue模板提供对应信息;
-    3. 用户需求度;
-
-## FAQ
-- 这个项目跟`amap_base`有什么联系和区别?
-    - 联系: 除了是同一个作者开发的之外没有联系; 
-    - 区别: `amap_base`使用的是常规的开发方式, 还是以`MethodChannel`为中心在dart和原生以及各个原生平台之间斡旋. 而`fluttify`系列插件是在[fluttify](https://github.com/fluttify-project/fluttify-core-example)引擎生成的dart接口之上去开发插件, 屏蔽了原生代码, 开发插件时不再需要在不同的原生代码之间斡旋, 只需要专注于整合不同平台的api即可.
-
-## qq群
-<img src="https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/QQ%E7%BE%A4.png?raw=true" height="250">
+|  其他  | 社区版 |静态扩展 | 专业版 |
+|:-----:|:-----:|:-----:|:-----:|
+|  NO-IDFA  |  ☑️ |  ✅   | ✅ |
+|  获取地图静态图片  |  ☑️ |  ✅   | ✅ |
+|  电子围栏  |  ☑️ |  ✅   | ✅ |
 
 ## LICENSE
-> Copyright 2019 yohom
->   
-> Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
->
->    http://www.apache.org/licenses/LICENSE-2.0
+> Copyright (C) 2020 yohom
 > 
->  Unless required by applicable law or agreed to in writing, software
->  distributed under the License is distributed on an "AS IS" BASIS,
->  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
->  See the License for the specific language governing permissions and
->  limitations under the License.
+> This program is free software: you can redistribute it and/or modify
+> it under the terms of the GNU General Public License as published by
+> the Free Software Foundation, either version 3 of the License, or
+> (at your option) any later version.
+> 
+> This program is distributed in the hope that it will be useful,
+> but WITHOUT ANY WARRANTY; without even the implied warranty of
+> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+> GNU General Public License for more details.
+> 
+> You should have received a copy of the GNU General Public License
+> along with this program.  If not, see <https://www.gnu.org/licenses/>.

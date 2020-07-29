@@ -1,10 +1,9 @@
 import 'package:amap_map_fluttify/amap_map_fluttify.dart';
-import 'package:amap_map_fluttify_example/utils/utils.export.dart';
-import 'package:amap_map_fluttify_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
+import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
 
-final _assetsIcon = Uri.parse('images/test_icon.png');
+final _assetsIcon = AssetImage('images/test_icon.png');
 
 class CreateMapScreen extends StatefulWidget {
   @override
@@ -23,16 +22,11 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
           Flexible(
             flex: 1,
             child: AmapView(
+              mapType: MapType.Satellite,
               showZoomControl: false,
               maskDelay: Duration(milliseconds: 500),
               onMapCreated: (controller) async {
                 _controller = controller;
-                if (await requestPermission()) {
-//                  await controller.showMyLocation(true);
-//                  final latLng = await _controller?.getLocation(
-//                      delay: Duration(seconds: 1));
-//                  toast('当前经纬度: ${latLng.toString()}');
-                }
               },
             ),
           ),
@@ -43,15 +37,72 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
               children: <Widget>[
                 BooleanSetting(
                   head: '是否显示定位',
-                  onSelected: (value) {
-                    _controller?.showMyLocation(value);
+                  onSelected: (value) async {
+                    await _controller?.showMyLocation(MyLocationOption(
+                      show: value,
+                      iconProvider: AssetImage('images/test_icon.png'),
+                    ));
+                  },
+                ),
+                DiscreteSetting(
+                  head: '选择定位模式',
+                  options: <String>[
+                    '只定位不移动地图到中心',
+                    '定位一次并移动地图到中心',
+                    '连续定位并跟随',
+                    '连续定位跟随方向',
+                  ],
+                  onSelected: (String value) async {
+                    if (value == '只定位不移动地图到中心') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Show,
+                      ));
+                    } else if (value == '定位一次并移动地图到中心') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Locate,
+                      ));
+                    } else if (value == '连续定位并跟随') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Follow,
+                      ));
+                    } else if (value == '连续定位跟随方向') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Rotate,
+                      ));
+                    }
+                  },
+                ),
+                DiscreteSetting(
+                  head: '选择定位间隔时间',
+                  options: <String>[
+                    '1秒',
+                    '3秒',
+                    '5秒',
+                  ],
+                  onSelected: (String value) async {
+                    if (value == '1秒') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Follow,
+                        interval: Duration(seconds: 1),
+                      ));
+                    } else if (value == '3秒') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Follow,
+                        interval: Duration(seconds: 3),
+                      ));
+                    } else if (value == '5秒') {
+                      await _controller?.showMyLocation(MyLocationOption(
+                        myLocationType: MyLocationType.Follow,
+                        interval: Duration(seconds: 5),
+                      ));
+                    }
                   },
                 ),
                 ListTile(
                   title: Center(child: Text('获取当前位置经纬度')),
                   onTap: () async {
                     final latLng = await _controller?.getLocation();
-                    toast('当前经纬度: ${latLng.toString()}');
+                    toast('当前经纬度: ${latLng.latitude}, ${latLng.longitude}');
                   },
                 ),
                 ListTile(
@@ -64,11 +115,10 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                 ListTile(
                   title: Center(child: Text('使用自定义定位图标')),
                   onTap: () async {
-                    await _controller?.showMyLocation(
-                      true,
-                      iconUri: _assetsIcon,
-                      imageConfig: createLocalImageConfiguration(context),
-                    );
+                    await _controller?.showMyLocation(MyLocationOption(
+                      myLocationType: MyLocationType.Rotate,
+                      iconProvider: _assetsIcon,
+                    ));
                   },
                 ),
                 BooleanSetting(
@@ -120,25 +170,22 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.red,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '绿色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.green,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '蓝色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           strokeColor: Colors.blue,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                     }
                   },
@@ -149,25 +196,22 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '红色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.red,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '绿色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.green,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                       case '蓝色':
-                        _controller?.showMyLocation(
-                          true,
+                        _controller?.showMyLocation(MyLocationOption(
                           fillColor: Colors.blue,
                           strokeWidth: 2,
-                        );
+                        ));
                         break;
                     }
                   },
@@ -178,13 +222,19 @@ class _CreateMapScreenState extends State<CreateMapScreen> {
                   onSelected: (value) {
                     switch (value) {
                       case '2':
-                        _controller?.showMyLocation(true, strokeWidth: 2);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 2,
+                        ));
                         break;
                       case '4':
-                        _controller?.showMyLocation(true, strokeWidth: 4);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 4,
+                        ));
                         break;
                       case '8':
-                        _controller?.showMyLocation(true, strokeWidth: 8);
+                        _controller?.showMyLocation(MyLocationOption(
+                          strokeWidth: 8,
+                        ));
                         break;
                     }
                   },

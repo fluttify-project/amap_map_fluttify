@@ -4,16 +4,16 @@
 Pod::Spec.new do |s|
   s.name             = 'amap_map_fluttify'
   s.version          = '0.0.1'
-  s.summary          = 'An `Amap` Map Component, Powered By `Fluttify` Engine, Which Generates Dart Interface For Native SDK.'
+  s.summary          = 'An `Amap` Map Component, Powered By `Fluttify` Compiler, A Dart Bindings Generator For Native SDK.'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
   s.homepage         = 'https://github.com/fluttify-project/amap_map_fluttify'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'yohom' => '382146139@qq.com' }
+  s.author           = { 'yohom' => 'yohombao@qq.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
-  s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = ['Classes/**/*.h', 'Vendors/*.h'] # 只接收顶层的.h文件, 防止framework下面的.h文件被包含
   s.dependency 'Flutter'
   s.dependency 'foundation_fluttify'
   # flutter plugin dependency
@@ -22,11 +22,12 @@ A new flutter plugin project.
   # sdk dependency
   s.dependency 'AMap3DMap', '~> 6.9.0'
 
+  s.static_framework = true
   s.ios.deployment_target = '8.0'
   # include project framework
-  s.vendored_frameworks = '**/*.framework'
+  s.vendored_frameworks = 'Vendors/*.framework'
   # include project .a
-  s.vendored_libraries = '**/*.a'
+  s.vendored_libraries = 'Vendors/*.a'
   # ios system framework
   s.frameworks = [
         
@@ -36,9 +37,9 @@ A new flutter plugin project.
         
   ]
   # resources
-  s.resources = '*.framework/*.bundle'
+  s.resources = 'Vendors/**/*.bundle'
   # s.resource_bundles = {
-  #   'amap_map_fluttify' => ['*.framework/*.bundle']
+  #   'amap_map_fluttify' => ['Vendors/*.framework/*.bundle']
   # }
 end
 

@@ -1,3 +1,139 @@
+## 1.0.0
+- chore: 清除deprecated接口
+- enhance: 增加autoRelease参数, 控制是否自动释放对象
+- enhance: 社区版接口
+
+## 0.23.4
+- enhance: 优化批量widget marker速度
+- feat: 设置地图长按监听事件
+- feat: **自定义InfoWindow**
+- docs: 更新群聊信息
+
+## 0.23.3
+- enhance: 枚举优化
+- enhance: 简化图片逻辑
+- feat: 删除海量点
+
+## 0.23.2
+- roll engine #1aee42f3
+
+## 0.23.1
+- fix: 给snippet和title默认设置为空字符串, 防止ios端崩溃
+
+## 0.23.0
+- roll engine #ee5b257c
+- docs: 配置key的说明
+- chore: 重新创建ios工程
+- docs: 调整权限申请示例
+- enhance: [breaking change] ios端的marker不再需要设置width和height
+- fix: addMarkers返回类型不匹配的问题
+- feat: 添加图片覆盖物
+
+## 0.22.2
+- enhance: Marker添加修改icon的方法
+
+## 0.22.1
+- roll engine #57fc8440 (适配Flutter 1.17)
+
+## 0.22.0
+- enhance: 提升依赖
+
+## 0.21.0
+- enhance: _uri2ImageData增加package参数
+- enhance: [breaking change] setCenterCoordinate经纬度参数合并为LatLng类型
+- enhance: clear方法增加一个可选参数 keepMyLocation 用来区分是否需要保留自己的位置的
+- fix: 没有配置默认图片时, addMarkers错误处理
+- enhance: 调整线 框 圆的默认宽度
+- feat: 添加海量点
+- enhance: [breaking change] zoomToSpan方法的padding参数改为EdgeInsets类型
+
+## 0.20.0
+- enhance: 提升底层依赖
+- roll engine #cced4adc
+- docs: 优化README
+- enhance: [breaking change] 优化clearMarkers方法, 增加List<Marker>参数, 统一android和ios两端的行为
+- enhance: 批量添加marker使用批处理提升速度
+- enhance: 优化ios端MyLocationType.Locate的逻辑
+
+## 0.19.2
+- fix: ios端多实例delegate的处理
+- roll engine #37387b7e
+
+## 0.19.1
+- fix: tag -> tag__
+
+## 0.19.0
+- enhance: 提升底层依赖
+
+## 0.18.3
+- feat: 增加打开离线地图管理器
+
+## 0.18.2
+- fix: 调用fromScreenLocation后调用Circle.remove方法报错处理
+- fix: ios端回调无效处理
+
+## 0.18.1
+- roll engine #5191928e
+- enhance: ios端Marker去除setCoordinate和setVisible方法, 防止阻塞
+
+## 0.18.0
+- enhance: [breaking change] 优化定位api (#183, #182)
+- fix: addMarkers的rotateAngle无效修正
+- docs: 更新技术支持相关信息
+- enhance: Marker锚点默认为(0, 0.5)
+
+## 0.17.21
+- roll engine #481e45c1
+
+## 0.17.20
+- roll engine #dbad1c35
+
+## 0.17.19
+- feat: 轨迹纠偏实现 (#118)
+- enhance: 清除marker使用批处理
+
+## 0.17.18
+- roll engine #5fd57b0
+- fix: Neither user 10426 nor current process has android.permission.WAKE_LOCK 错误处理
+
+## 0.17.17
+- enhance: TraceLocation转换使用批处理优化
+- enhance: addPolyline和addPolygon使用批处理创建经纬度列表, 提升性能 related #160
+
+## 0.17.16
+- feat: Marker添加更改坐标的方法
+- feat: Marker添加setVisible方法, 设置marker是否可见
+
+## 0.17.15
+- enhance: 借用新的release_batch方法释放对象, 提升性能
+
+## 0.17.14
+- fix: 当marker图片过大时, 点击事件只有左上角有效 处理
+
+## 0.17.13
+- enhance: build.gradle加入国内源
+- enhance: showMyLocation增加定位模式的参数
+
+## 0.17.12
+- feat: 热力图实现
+
+## 0.17.11
+- enhance: 加载图片时，做一个缓存
+
+## 0.17.10
+- roll engine #69360c9
+
+## 0.17.9
+- docs: 去除swift项目说明
+- enhance: MarkerOption增加width和height参数, 仅限ios
+
+## 0.17.8
+- 提升依赖
+
+## 0.17.7
+- enhance: ios端合并mapViewMapDidMoveByUser和mapViewMapDidZoomByUser.
+- fix: onMapCreated空判断
+
 ## 0.17.6
 - feat: 增加轨迹功能 (#63)
 - docs: README加入apk下载链接

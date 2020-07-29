@@ -7,6 +7,7 @@ package me.yohom.amap_map_fluttify;
 import android.content.Context;
 import android.view.View;
 import android.util.Log;
+import android.app.Activity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,37 +28,39 @@ import static me.yohom.foundation_fluttify.FoundationFluttifyPluginKt.getEnableL
 @SuppressWarnings("ALL")
 class WearMapViewFactory extends PlatformViewFactory {
 
-    WearMapViewFactory(BinaryMessenger messenger) {
+    WearMapViewFactory(BinaryMessenger messenger, Activity activity) {
         super(StandardMessageCodec.INSTANCE);
 
         this.messenger = messenger;
+        this.activity = activity;
 
         new MethodChannel(messenger, "me.yohom/amap_map_fluttify/com_amap_api_maps_WearMapView").setMethodCallHandler((methodCall, methodResult) -> {
-                    Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
-                    AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
-                    if (handler != null) {
-                        try {
-                            handler.call(args, methodResult);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            methodResult.error(e.getMessage(), null, null);
-                        }
-                    } else {
-                        methodResult.notImplemented();
+                Map<String, Object> args = (Map<String, Object>) methodCall.arguments;
+                AmapMapFluttifyPlugin.Handler handler = handlerMap.get(methodCall.method);
+                if (handler != null) {
+                    try {
+                        handler.call(args, methodResult);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        methodResult.error(e.getMessage(), null, null);
                     }
-                });
+                } else {
+                    methodResult.notImplemented();
+                }
+            });
     }
 
     private BinaryMessenger messenger;
+    private Activity activity;
 
     private final Map<String, AmapMapFluttifyPlugin.Handler> handlerMap = new HashMap<String, AmapMapFluttifyPlugin.Handler>() {{
         // method
-        put("com.amap.api.maps.WearMapView::getMap", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::getMap", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -66,36 +69,36 @@ class WearMapViewFactory extends PlatformViewFactory {
             }
         
             // invoke native method
-            com.amap.api.maps.AMap result;
+            com.amap.api.maps.AMap __result__;
             try {
-                result = ref.getMap();
+                __result__ = ref.getMap();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            if (result != null) {
-                int returnRefId = result.hashCode();
-                getHEAP().put(returnRefId, result);
-        
-                methodResult.success(returnRefId);
-            } else {
-                methodResult.success(null);
+            // convert result to jsonable result
+            Integer jsonableResult = null;
+            if (__result__ != null) {
+                jsonableResult = System.identityHashCode(__result__);
+                getHEAP().put(jsonableResult, __result__);
             }
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onCreate", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onCreate", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -111,20 +114,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onResume", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onResume", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -140,20 +145,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onPause", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onPause", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -169,20 +176,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onDestroy", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onDestroy", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -198,20 +207,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onLowMemory", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onLowMemory", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -227,21 +238,24 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onSaveInstanceState", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onSaveInstanceState", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -257,21 +271,23 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::setVisibility", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::setVisibility", (__args__, __methodResult__) -> {
             // args
             // jsonable arg
-            int var1 = (int) args.get("var1");
+            int var1 = (int) ((Map<String, Object>) __args__).get("var1");
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -287,20 +303,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::setOnDismissCallbackListener", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::setOnDismissCallbackListener", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -311,53 +329,64 @@ class WearMapViewFactory extends PlatformViewFactory {
             // invoke native method
             try {
                 ref.setOnDismissCallbackListener(new com.amap.api.maps.WearMapView.OnDismissCallback() {
-                // method channel
-                MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
-        
-                // call dart method
-                @Override
-                public void onDismiss() {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
-                    }
-        
-                    // convert to jsonable data
-        
+                    // method channel
+                    MethodChannel callbackChannel = new MethodChannel(messenger, "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback");
+                    android.os.Handler handler = new android.os.Handler(android.os.Looper.getMainLooper());
         
                     // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
-                            new HashMap<String, Object>() {{
-                
-                            }}
-                    );
+                    @Override
+                    public void onDismiss() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onDismiss(" + "" + ")");
+                        }
         
-                    // method result
+                        // convert to jsonable data
         
-                }
         
-                @Override
-                public void onNotifySwipe() {
-                    // print log
-                    if (getEnableLog()) {
-                        Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                        // call dart method
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callbackChannel.invokeMethod(
+                                    "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
+                                    new HashMap<String, Object>() {{
+                    
+                                    }}
+                                );
+                            }
+                        });
+        
+                        // method result
+        
                     }
         
-                    // convert to jsonable data
+                    @Override
+                    public void onNotifySwipe() {
+                        // print log
+                        if (getEnableLog()) {
+                            Log.d("java-callback", "fluttify-java-callback: onNotifySwipe(" + "" + ")");
+                        }
+        
+                        // convert to jsonable data
         
         
-                    // call dart method
-                    callbackChannel.invokeMethod(
-                            "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
-                            new HashMap<String, Object>() {{
-                
-                            }}
-                    );
+                        // call dart method
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                callbackChannel.invokeMethod(
+                                    "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
+                                    new HashMap<String, Object>() {{
+                    
+                                    }}
+                                );
+                            }
+                        });
         
-                    // method result
+                        // method result
         
-                }
+                    }
         
             });
             } catch (Throwable throwable) {
@@ -365,20 +394,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onDismiss", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onDismiss", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -394,21 +425,24 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onEnterAmbient", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onEnterAmbient", (__args__, __methodResult__) -> {
             // args
             // ref arg
-            android.os.Bundle var1 = (android.os.Bundle) getHEAP().get((int) args.get("var1"));
+            Integer __var1RefId__ = (Integer) ((Map<String, Object>) __args__).get("var1");
+            android.os.Bundle var1 = __var1RefId__ != null ? (android.os.Bundle) getHEAP().get(__var1RefId__) : null;
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -424,20 +458,22 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
         // method
-        put("com.amap.api.maps.WearMapView::onExitAmbient", (args, methodResult) -> {
+        put("com.amap.api.maps.WearMapView::onExitAmbient", (__args__, __methodResult__) -> {
             // args
         
         
             // ref
-            int refId = (int) args.get("refId");
+            int refId = (int) ((Map<String, Object>) __args__).get("refId");
             com.amap.api.maps.WearMapView ref = (com.amap.api.maps.WearMapView) getHEAP().get(refId);
         
             // print log
@@ -453,23 +489,26 @@ class WearMapViewFactory extends PlatformViewFactory {
                 if (getEnableLog()) {
                     Log.d("Current HEAP: ", getHEAP().toString());
                 }
-                methodResult.error(throwable.getMessage(), null, null);
+                __methodResult__.error(throwable.getMessage(), null, null);
                 return;
             }
         
-            // result
-            methodResult.success("success");
+            // convert result to jsonable result
+            String jsonableResult = "success";
+        
+            __methodResult__.success(jsonableResult);
         });
     }};
 
     @Override
-    public PlatformView create(Context context, int id, Object params) {
-        Map<String, Object> args = (Map<String, Object>) params;
+    public PlatformView create(Context __, int id, Object params) {
+        Map<String, Object> __args__ = (Map<String, Object>) params;
         // ref arg
-        com.amap.api.maps.AMapOptions var2 = (com.amap.api.maps.AMapOptions) getHEAP().get((int) args.get("var2"));
+        Integer __var2RefId__ = (Integer) ((Map<String, Object>) __args__).get("var2");
+        com.amap.api.maps.AMapOptions var2 = __var2RefId__ != null ? (com.amap.api.maps.AMapOptions) getHEAP().get(__var2RefId__) : null;
 
-        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView(context, var2);
-        getHEAP().put(id, view);
+        com.amap.api.maps.WearMapView view = new com.amap.api.maps.WearMapView(activity, var2);
+        getHEAP().put(Integer.MAX_VALUE - id, view);
         return new PlatformView() {
 
             // add to HEAP

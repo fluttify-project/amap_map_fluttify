@@ -1,10 +1,11 @@
-import 'package:amap_map_fluttify_example/widgets/dimens.dart';
-import 'package:amap_map_fluttify_example/widgets/function_group.widget.dart';
-import 'package:amap_map_fluttify_example/widgets/function_item.widget.dart';
+import 'package:decorated_flutter/decorated_flutter.dart';
+import 'package:demo_widgets/demo_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/create_map.screen.dart';
+import 'create_map/multi_map.screen.dart';
 import 'draw_on_map/draw_circle.screen.dart';
+import 'draw_on_map/draw_ground_overlay.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
 import 'draw_on_map/draw_polyline.screen.dart';
@@ -15,6 +16,8 @@ import 'interact_with_map/screen_shot_screen.dart';
 import 'tools/calcute_distance_screen.dart';
 import 'tools/coordinate_transformation_screen.dart';
 import 'tools/launch_amap_screen.dart';
+import 'tools/offline_manager_screen.dart';
+import 'tools/processed_trace.screen.dart';
 
 class MapDemo extends StatelessWidget {
   @override
@@ -28,6 +31,11 @@ class MapDemo extends StatelessWidget {
               label: '显示地图',
               sublabel: 'CreateMapScreen',
               target: CreateMapScreen(),
+            ),
+            FunctionItem(
+              label: '显示多地图',
+              sublabel: 'MultiMapScreen',
+              target: MultiMapScreen(),
             ),
           ],
         ),
@@ -81,6 +89,11 @@ class MapDemo extends StatelessWidget {
               sublabel: 'DrawPolygonScreen',
               target: DrawPolygonScreen(),
             ),
+            FunctionItem(
+              label: '绘制图片覆盖物',
+              sublabel: 'DrawGroundOverlayScreen',
+              target: DrawGroundOverlayScreen(),
+            ),
           ],
         ),
         SPACE_BIG,
@@ -101,6 +114,16 @@ class MapDemo extends StatelessWidget {
               label: "调用高德地图",
               sublabel: "LaunchAmapScreen",
               target: LaunchAmapScreen(),
+            ),
+            FunctionItem(
+              label: "轨迹纠偏",
+              sublabel: "ProcessedTraceScreen",
+              target: ProcessedTraceScreen(),
+            ),
+            FunctionItem(
+              label: "离线地图",
+              sublabel: "OfflineManagerScreen",
+              target: OfflineManagerScreen(),
             ),
           ],
         ),
