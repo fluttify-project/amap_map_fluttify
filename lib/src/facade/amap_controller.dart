@@ -865,7 +865,7 @@ mixin _Community on _Holder {
           final icon = await UIImage.create(iconData);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty__(1, icon);
+          await annotation.setIcon(icon);
 
           pool..add(icon);
         }
@@ -877,43 +877,39 @@ mixin _Community on _Holder {
           final icon = await UIImage.create(iconData[0]);
 
           // 由于ios端的icon参数在回调中设置, 需要添加属性来实现
-          await annotation.addProperty__(1, icon);
+          await annotation.setIcon(icon);
 
           pool..add(icon);
         }
         // 是否可拖拽
         if (option.draggable != null) {
-          await annotation.addJsonableProperty__(2, option.draggable);
+          await annotation.setDraggable(option.draggable);
         }
         // 旋转角度
         if (option.rotateAngle != null) {
-          await annotation.addJsonableProperty__(3, option.rotateAngle);
+          await annotation.setRotateAngle(option.rotateAngle);
         }
         // 是否允许弹窗
         if (option.infoWindowEnabled != null) {
-          annotation.addJsonableProperty__(4, option.infoWindowEnabled);
+          annotation.setInfoWindowEnabled(option.infoWindowEnabled);
         }
         // 锚点
         if (option.anchorU != null || option.anchorV != null) {
-          await annotation.addJsonableProperty__(5, option.anchorU);
-          await annotation.addJsonableProperty__(6, option.anchorV);
+          await annotation.setAnchor(option.anchorU, option.anchorV);
         }
         // 自定义数据
         if (option.object != null) {
-          await annotation.addJsonableProperty__(7, option.object);
+          await annotation.setObject(option.object);
         }
         // 是否可见
-        await annotation.addJsonableProperty__(10, option.visible);
+        await annotation.setVisible(option.visible);
 
         // 添加marker
         await iosController.addAnnotation(annotation);
 
-        // 等待添加完成 获取对应的view
-        final annotationViewList =
-            await iosMapDelegate.annotationViewCompleter.future;
         pool.add(coordinate);
 
-        return Marker.ios(annotation, annotationViewList[0], iosController);
+        return Marker.ios(annotation, iosController);
       },
     );
   }
@@ -1023,44 +1019,29 @@ mixin _Community on _Holder {
         // 设置图片
         if (iconDataBatch.isNotEmpty) {
           final iconBatch = await UIImage.create_batch(iconDataBatch);
-          await annotationBatch.addProperty_batch(1, iconBatch);
+          await annotationBatch.setIcon(iconBatch);
           pool.addAll(iconBatch);
         }
         // 是否可拖拽
-        await annotationBatch.addJsonableProperty_batch(2, draggableBatch);
+        await annotationBatch.setDraggable(draggableBatch);
         // 旋转角度
-        await annotationBatch.addJsonableProperty_batch(3, rotateAngleBatch);
+        await annotationBatch.setRotateAngle(rotateAngleBatch);
         // 是否允许弹窗
-        await annotationBatch.addJsonableProperty_batch(
-            4, infoWindowEnabledBatch);
+        await annotationBatch.setInfoWindowEnabled(infoWindowEnabledBatch);
         // 锚点
-        await annotationBatch.addJsonableProperty_batch(5, anchorUBatch);
-        await annotationBatch.addJsonableProperty_batch(6, anchorVBatch);
+        await annotationBatch.setAnchor(anchorUBatch, anchorVBatch);
         // 自定义数据
-        await annotationBatch.addJsonableProperty_batch(7, objectBatch);
+        await annotationBatch.setObject(objectBatch);
         // 是否可见
-        await annotationBatch.addJsonableProperty_batch(10, visibleBatch);
+        await annotationBatch.setVisible(visibleBatch);
 
         // 添加marker
         await iosController.addAnnotations(annotationBatch);
 
-        // 等待添加完成 获取对应的view
-        // 由于只有可见marker才会返回, 防止返回的marker数量和option数量不一致, 这里强制给一个options数量的列表来装返回的marker
-        final visibleMarkers =
-            await iosMapDelegate.annotationViewCompleter.future;
-        final annotationViewList = <MAAnnotationView>[
-          for (int i = 0; i < options.length; i++)
-            if (i < visibleMarkers.length) visibleMarkers[i] else null
-        ];
-
         pool.addAll(coordinateBatch);
         return [
           for (int i = 0; i < options.length; i++)
-            Marker.ios(
-              annotationBatch[i],
-              annotationViewList[i],
-              iosController,
-            )
+            Marker.ios(annotationBatch[i], iosController)
         ];
       },
     );

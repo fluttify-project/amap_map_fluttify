@@ -51,7 +51,6 @@ class _IOSMapDelegate extends NSObject
           // 解决办法很简单, 把refId取出来放到目标实体类里就行了
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
           iosController,
         ),
       );
@@ -77,7 +76,6 @@ class _IOSMapDelegate extends NSObject
       await onMarkerDragStarted(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
           iosController,
         ),
       );
@@ -89,7 +87,6 @@ class _IOSMapDelegate extends NSObject
       await onMarkerDragging(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
           iosController,
         ),
       );
@@ -100,7 +97,6 @@ class _IOSMapDelegate extends NSObject
       await onMarkerDragEnded(
         Marker.ios(
           await view.get_annotation(viewChannel: false),
-          view,
           iosController,
         ),
       );
@@ -269,7 +265,6 @@ class _IOSMapDelegate extends NSObject
         Marker.ios(
           MAPointAnnotation()
             ..refId = (await view.get_annotation(viewChannel: false)).refId,
-          view,
           iosController,
         ),
       );
